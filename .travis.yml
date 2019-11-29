@@ -1,0 +1,41 @@
+language: node_js
+
+node_js:
+    - 13
+
+branches:
+    only:
+        - master
+cache:
+    directories:
+        - node_modules
+install:
+    - travis_retry yarn
+
+script:
+    - yarn bootstrap
+    - yarn lint
+    - yarn test:all
+    - yarn build:docs
+    - yarn build:components
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GH_TOKEN
+    local_dir: docs
+    on:
+        branch: master
+
+jobs:
+    include:
+        - stage: release
+          node_js: lts/*
+          deploy:
+              provider: script
+              skip_cleanup: true
+              script:
+                  - yarn semantic-release
+
+notifications:
+    email: false
