@@ -1,0 +1,25 @@
+---
+name: AspectRatio
+route: /AspectRatio
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import AspectRatio from './src';
+
+# AspectRatio
+
+## When to use
+
+- **AspectRatios are containers that maintain a height/width ratio**. A ratio of 1:2 will have a height 50% of the width.
+
+## Props
+
+<Props of={AspectRatio} />
+
+## Examples
+
+<Playground>
+    <AspectRatio ratio="1/2" />
+    <AspectRatio ratio={{ x: 1, y: 3 }} />
+</Playground>
