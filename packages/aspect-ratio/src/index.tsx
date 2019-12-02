@@ -30,7 +30,7 @@ const padding = (ratioProp: string | Ratio): string =>
     `padding-bottom: calc(100% / ${ratio(ratioProp).y})`;
 
 const AspectRatio: React.FC<AspectRatioProps> = styled.div<AspectRatioProps>`
-    ${({ ratio }): string => width(ratio) && padding(ratio)};
+    ${({ ratio }): string => `${width(ratio)}; ${padding(ratio)};`};
     height: 0;
 `;
 
