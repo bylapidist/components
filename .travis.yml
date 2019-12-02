@@ -19,14 +19,6 @@ script:
     - yarn build:docs
     - yarn build:components
 
-deploy:
-    provider: pages
-    skip_cleanup: true
-    github_token: $GH_TOKEN
-    local_dir: docs
-    on:
-        branch: master
-
 jobs:
     include:
         - stage: release
@@ -35,6 +27,7 @@ jobs:
               provider: script
               skip_cleanup: true
               script:
+                  - yarn gh-pages -t -d docs
                   - yarn semantic-release
 
 notifications:
