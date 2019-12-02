@@ -27,8 +27,7 @@ jobs:
               provider: script
               skip_cleanup: true
               script:
-                  - yarn gh-pages --repo "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" -t -d docs
-                  - yarn semantic-release
+                  - yarn gh-pages --repo "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" -t -d docs && yarn semantic-release
 
 notifications:
     email: false
