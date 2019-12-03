@@ -20,6 +20,21 @@ import AspectRatio from './src';
 ## Examples
 
 <Playground>
-    <AspectRatio ratio="1/2" />
-    <AspectRatio ratio={{ x: 1, y: 3 }} />
+    <div style={{ width: '640px', margin: '0 auto', textAlign: 'center' }}>
+        <AspectRatio ratio={{ x: 16, y: 9 }} style={{ border: '1px solid grey', marginBottom: '20px' }}>
+            <p>16/9</p>
+        </AspectRatio>
+        <AspectRatio ratio="2/1" style={{ border: '1px solid grey', marginBottom: '20px' }}>
+            <p>2/1</p>
+        </AspectRatio>
+        <AspectRatio ratio="1" style={{ border: '1px solid grey', marginBottom: '20px' }}>
+            <p>1/1</p>
+        </AspectRatio>
+        <AspectRatio ratio="3/4" style={{ border: '1px solid grey', marginBottom: '20px' }}>
+            <p>3/4</p>
+        </AspectRatio>
+        <AspectRatio ratio="4/3" style={{ border: '1px solid grey', marginBottom: '20px' }}>
+            <p>4/3</p>
+        </AspectRatio>
+    </div>
 </Playground>

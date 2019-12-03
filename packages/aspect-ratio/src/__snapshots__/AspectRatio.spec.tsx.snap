@@ -1,10 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`it works with an inner image 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.c0:before {
+  padding-bottom: calc(100% / (1 / 3));
+  display: block;
+  content: '';
+}
+
+.c0 > :first-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.c0 > img {
+  height: auto;
+}
+
+<div
+  className="c0"
+>
+  <img
+    alt="cats"
+    src="https://catpictures.test"
+  />
+</div>
+`;
+
 exports[`it works with object ratio 1`] = `
 .c0 {
-  width: calc(100% * 1);
-  padding-bottom: calc(100% / 3);
-  height: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.c0:before {
+  padding-bottom: calc(100% / (1 / 3));
+  display: block;
+  content: '';
+}
+
+.c0 > :first-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.c0 > img {
+  height: auto;
 }
 
 <div
@@ -18,9 +73,28 @@ exports[`it works with object ratio 1`] = `
 
 exports[`it works with string ratio 1`] = `
 .c0 {
-  width: calc(100% * 1);
-  padding-bottom: calc(100% / 3);
-  height: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.c0:before {
+  padding-bottom: calc(100% / (1 / 3));
+  display: block;
+  content: '';
+}
+
+.c0 > :first-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.c0 > img {
+  height: auto;
 }
 
 <div

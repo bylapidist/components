@@ -14,7 +14,7 @@ export interface AspectRatioProps {
 
 const splitRatio = (ratioProp: string): Ratio => ({
     x: ratioProp.split('/')[0],
-    y: ratioProp.split('/')[1]
+    y: ratioProp.split('/')[1] || 1
 });
 
 const ratio = (ratioProp: string | Ratio): Ratio =>
@@ -23,15 +23,34 @@ const ratio = (ratioProp: string | Ratio): Ratio =>
         ? (ratioProp as Ratio)
         : splitRatio(`${ratioProp}`);
 
-const width = (ratioProp: string | Ratio): string =>
-    `width: calc(100% * ${ratio(ratioProp).x})`;
-
 const padding = (ratioProp: string | Ratio): string =>
-    `padding-bottom: calc(100% / ${ratio(ratioProp).y})`;
+    `padding-bottom: calc(100% / (${ratio(ratioProp).x} / ${
+        ratio(ratioProp).y
+    }))`;
 
 const AspectRatio: React.FC<AspectRatioProps> = styled.div<AspectRatioProps>`
-    ${({ ratio }): string => `${width(ratio)}; ${padding(ratio)};`};
-    height: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    :before {
+        ${({ ratio }): string => `${padding(ratio)};`};
+        display: block;
+        content: '';
+    }
+
+    > :first-child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    > img {
+        height: auto;
+    }
 `;
 
 export default AspectRatio;

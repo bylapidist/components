@@ -25,3 +25,11 @@ test('it works with object ratio', () => {
         .toJSON();
     expect(tree).toMatchSnapshot();
 });
+
+test('it works with an inner image', () => {
+    const img = <img src="https://catpictures.test" alt="cats" />;
+    const tree = renderer
+        .create(<AspectRatio ratio={{ x: 1, y: 3 }}>{img}</AspectRatio>)
+        .toJSON();
+    expect(tree).toMatchSnapshot();
+});
