@@ -13,7 +13,8 @@
         "access": "public"
     },
     "dependencies": {
-        "@lapidist/design-tokens": "^1.0.0"
+        "@lapidist/design-tokens": "^1.0.0",
+        "@lapidist/theme-provider": "^1.7.0"
     },
     "release": {
         "analyzeCommits": {
