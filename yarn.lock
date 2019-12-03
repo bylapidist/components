@@ -1282,6 +1282,13 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
+"@lapidist/design-tokens@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@lapidist/design-tokens/-/design-tokens-1.0.0.tgz#edb51fa21d48a3588e06fdbaf82c7ca326550674"
+  integrity sha512-H7t5v/ok6sBxvSKqFKF/SAU3n2iTEkYsyXlZd2TYIQc6oWhXzm2Tf3zw57Kckm7ZrvkMwjGgncmhaHYLjo0m/A==
+  dependencies:
+    "@lapidist/theme-provider" "^1.5.0"
+
 "@lapidist/linting@^1.3.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@lapidist/linting/-/linting-1.4.0.tgz#8556e244d266df302f484f4b26e5fd1c300413cc"
@@ -1300,6 +1307,11 @@
     eslint-plugin-react "7.17.0"
     eslint-plugin-react-hooks "^2.3.0"
     prettier "^1.19.1"
+
+"@lapidist/theme-provider@^1.5.0":
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.6.0.tgz#57a48b8593a33088125a4aa80ef12b335368a632"
+  integrity sha512-nj4Ylcdg5f0gfyDto0Dkt31zhnNLscle8j0mmc0ghw5TzzgWh1l21M4Tt/7mpqcM57zaT9VRCkNbExTRMmM0Ew==
 
 "@lerna/add@3.19.0":
   version "3.19.0"

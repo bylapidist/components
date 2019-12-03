@@ -1,5 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import {
+    defaultBorderRadius,
+    defaultBoxShadow,
+    defaultTransition,
+    focus,
+    fontFamilyRegular,
+    fontSizeMedium,
+    relative
+} from '@lapidist/design-tokens';
+import { defaultTheme } from '@lapidist/theme-provider';
+import { ColorGroup } from '@lapidist/theme-provider/src/defaultTheme';
 
 export interface ButtonProps {
     /** The Button's id. */
@@ -22,6 +33,61 @@ export interface ButtonProps {
     readonly loading?: boolean;
 }
 
+const buttonStyles = (
+    colorGroup: ColorGroup,
+    block = false,
+    outline = false,
+    small = false,
+    loading = false
+) => `
+    ${relative()};
+    display: ${block ? 'flex' : 'inline-flex'};
+    width: ${block ? '100%' : 'auto'};
+    min-width: calc(${defaultTheme.sizing.xxl} * 2);
+    height: ${small ? defaultTheme.sizing.xxl : defaultTheme.sizing.xxxl};
+    color: ${
+        outline
+            ? colorGroup.base
+            : loading
+            ? 'transparent'
+            : defaultTheme.colors.greys.lightest
+    };
+    background-color: ${outline || loading ? 'transparent' : colorGroup.base};
+    border: ${defaultTheme.sizing.xxxs}
+        ${outline || loading ? colorGroup.base : 'transparent'}
+        solid;
+    margin-right: ${defaultTheme.sizing.s};
+    margin-bottom: ${defaultTheme.sizing.s};
+    padding: 0;
+    justify-content: center;
+
+    :disabled {
+        cursor: not-allowed;
+        opacity: ${loading ? '1' : '0.6'};
+        color: ${loading ? 'transparent' : colorGroup.base};
+        background-color: ${
+            outline
+                ? colorGroup.light
+                : loading
+                ? 'transparent'
+                : colorGroup.dark
+        };
+    }
+
+    :hover:not(:disabled) {
+        cursor: pointer;
+        color: ${colorGroup.dark};
+        background-color: ${colorGroup.light};
+    }
+`;
+
+const ButtonText: React.FC = styled.div`
+    text-align: center;
+    line-height: 1.18;
+    letter-spacing: 1px;
+    text-decoration: none;
+`;
+
 export const Button: React.FC<ButtonProps> = ({
     id,
     className,
@@ -37,8 +103,69 @@ export const Button: React.FC<ButtonProps> = ({
         onClick={handleClick}
         disabled={disabled || loading}
     >
-        {text}
+        <ButtonText>{text}</ButtonText>
     </button>
 );
 
-export default styled(Button)``;
+const DefaultButton: React.FC<ButtonProps> = styled(Button)`
+    ${defaultTransition()};
+    ${defaultBoxShadow()};
+    ${fontFamilyRegular()};
+    ${defaultBorderRadius()};
+    ${fontSizeMedium()};
+    ${focus()};
+    ${(props) =>
+        buttonStyles(
+            defaultTheme.colors.greys,
+            props.block,
+            props.outline,
+            props.small,
+            props.loading
+        )};
+`;
+
+export const PrimaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
+    ${(props) =>
+        buttonStyles(
+            defaultTheme.colors.blues,
+            props.block,
+            props.outline,
+            props.small,
+            props.loading
+        )};
+`;
+
+export const SecondaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
+    ${(props) =>
+        buttonStyles(
+            defaultTheme.colors.greens,
+            props.block,
+            props.outline,
+            props.small,
+            props.loading
+        )};
+`;
+
+export const TertiaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
+    ${(props) =>
+        buttonStyles(
+            defaultTheme.colors.yellows,
+            props.block,
+            props.outline,
+            props.small,
+            props.loading
+        )};
+`;
+
+export const DangerButton: React.FC<ButtonProps> = styled(DefaultButton)`
+    ${(props) =>
+        buttonStyles(
+            defaultTheme.colors.reds,
+            props.block,
+            props.outline,
+            props.small,
+            props.loading
+        )};
+`;
+
+export default DefaultButton;

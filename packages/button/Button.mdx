@@ -5,7 +5,14 @@ menu: Components
 ---
 
 import { Playground, Props } from 'docz';
-import Button from './src';
+import ThemeProvider from '@lapidist/theme-provider';
+import Button, { 
+    DangerButton,
+    DefaultButton,
+    PrimaryButton,
+    SecondaryButton,
+    TertiaryButton
+} from './src';
 
 # Button
 
@@ -25,41 +32,219 @@ import Button from './src';
 ### Default Button
 
 <Playground>
-    <Button
-        text="Click me"
-        block
-    />
-    <Button
-        text="Click me"
-        block
-        loading
-    />
-    <Button
-        text="Click me"
-        block
-        outline
-    />
-    <Button
-        text="Click me"
-    />
-    <Button
-        text="Click me"
-        disabled
-    />
-    <Button
-        text="Click me"
-        outline
-        small
-    />
-    <Button
-        text="Click me"
-        small
-        loading
-    />
-    <Button
-        text="Click me"
-        outline
-        disabled
-        small
-    />
+    <ThemeProvider>
+        <Button
+            text="Click me"
+            block
+        />
+        <Button
+            text="Click me"
+            block
+            loading
+        />
+        <Button
+            text="Click me"
+            block
+            outline
+        />
+        <Button
+            text="Click me"
+        />
+        <Button
+            text="Click me"
+            disabled
+        />
+        <Button
+            text="Click me"
+            outline
+            small
+        />
+        <Button
+            text="Click me"
+            small
+            loading
+        />
+        <Button
+            text="Click me"
+            outline
+            disabled
+            small
+        />
+    </ThemeProvider>
+</Playground>
+
+### Primary Button
+
+<Playground>
+    <ThemeProvider>
+        <PrimaryButton
+            text="Click me"
+            block
+        />
+        <PrimaryButton
+            text="Click me"
+            block
+            loading
+        />
+        <PrimaryButton
+            text="Click me"
+            block
+            outline
+        />
+        <PrimaryButton
+            text="Click me"
+        />
+        <PrimaryButton
+            text="Click me"
+            disabled
+        />
+        <PrimaryButton
+            text="Click me"
+            outline
+            small
+        />
+        <PrimaryButton
+            text="Click me"
+            small
+            loading
+        />
+        <PrimaryButton
+            text="Click me"
+            outline
+            disabled
+            small
+        />
+    </ThemeProvider>
+</Playground>
+
+### Secondary Button
+
+<Playground>
+    <ThemeProvider>
+        <SecondaryButton
+            text="Click me"
+            block
+        />
+        <SecondaryButton
+            text="Click me"
+            block
+            loading
+        />
+        <SecondaryButton
+            text="Click me"
+            block
+            outline
+        />
+        <SecondaryButton
+            text="Click me"
+        />
+        <SecondaryButton
+            text="Click me"
+            disabled
+        />
+        <SecondaryButton
+            text="Click me"
+            outline
+            small
+        />
+        <SecondaryButton
+            text="Click me"
+            small
+            loading
+        />
+        <SecondaryButton
+            text="Click me"
+            outline
+            disabled
+            small
+        />
+    </ThemeProvider>
+</Playground>
+
+### Tertiary Button
+
+<Playground>
+    <ThemeProvider>
+        <TertiaryButton
+            text="Click me"
+            block
+        />
+        <TertiaryButton
+            text="Click me"
+            block
+            loading
+        />
+        <TertiaryButton
+            text="Click me"
+            block
+            outline
+        />
+        <TertiaryButton
+            text="Click me"
+        />
+        <TertiaryButton
+            text="Click me"
+            disabled
+        />
+        <TertiaryButton
+            text="Click me"
+            outline
+            small
+        />
+        <TertiaryButton
+            text="Click me"
+            small
+            loading
+        />
+        <TertiaryButton
+            text="Click me"
+            outline
+            disabled
+            small
+        />
+    </ThemeProvider>
+</Playground>
+
+### Danger Button
+
+<Playground>
+    <ThemeProvider>
+        <DangerButton
+            text="Click me"
+            block
+        />
+        <DangerButton
+            text="Click me"
+            block
+            loading
+        />
+        <DangerButton
+            text="Click me"
+            block
+            outline
+        />
+        <DangerButton
+            text="Click me"
+        />
+        <DangerButton
+            text="Click me"
+            disabled
+        />
+        <DangerButton
+            text="Click me"
+            outline
+            small
+        />
+        <DangerButton
+            text="Click me"
+            small
+            loading
+        />
+        <DangerButton
+            text="Click me"
+            outline
+            disabled
+            small
+        />
+    </ThemeProvider>
 </Playground>
