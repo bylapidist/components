@@ -107,7 +107,7 @@ export const Button: React.FC<ButtonProps> = ({
     </button>
 );
 
-const DefaultButton: React.FC<ButtonProps> = styled(Button)`
+export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
     ${defaultTransition()};
     ${defaultBoxShadow()};
     ${fontFamilyRegular()};
