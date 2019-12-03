@@ -1,0 +1,65 @@
+---
+name: Button
+route: /components/Button
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Button from './src';
+
+# Button
+
+## When to use
+
+- **Buttons are used to initialise an action.** They have labels that express what action happens when the user interacts with it.
+- **Buttons are used primarily for actions.** Examples include Add, Save, Delete, or Create.
+- **Do not use buttons as navigation elements.** Instead, use [links](#) for navigation.
+- **Primary buttons always appear to the right.** Secondary buttons appear to the left of the primary button.
+
+## Props
+
+<Props of={Button} />
+
+## Examples
+
+### Default Button
+
+<Playground>
+    <Button
+        text="Click me"
+        block
+    />
+    <Button
+        text="Click me"
+        block
+        loading
+    />
+    <Button
+        text="Click me"
+        block
+        outline
+    />
+    <Button
+        text="Click me"
+    />
+    <Button
+        text="Click me"
+        disabled
+    />
+    <Button
+        text="Click me"
+        outline
+        small
+    />
+    <Button
+        text="Click me"
+        small
+        loading
+    />
+    <Button
+        text="Click me"
+        outline
+        disabled
+        small
+    />
+</Playground>

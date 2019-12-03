@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+<button
+  className=""
+  disabled={false}
+  type="button"
+>
+  Click me
+</button>
+`;
+
+exports[`it works as block 1`] = `
+<button
+  className=""
+  disabled={false}
+  type="button"
+>
+  Click me
+</button>
+`;
+
+exports[`it works as block loading 1`] = `
+<button
+  className=""
+  disabled={true}
+  type="button"
+>
+  Click me
+</button>
+`;
+
+exports[`it works as block outline 1`] = `
+<button
+  className=""
+  disabled={false}
+  type="button"
+>
+  Click me
+</button>
+`;
+
+exports[`it works as disabled 1`] = `
+<button
+  className=""
+  disabled={true}
+  type="button"
+>
+  Click me
+</button>
+`;
+
+exports[`it works as outline small 1`] = `
+<button
+  className=""
+  disabled={false}
+  type="button"
+>
+  Click me
+</button>
+`;
+
+exports[`it works as outline small disabled 1`] = `
+<button
+  className=""
+  disabled={true}
+  type="button"
+>
+  Click me
+</button>
+`;
+
+exports[`it works as small loading 1`] = `
+<button
+  className=""
+  disabled={true}
+  type="button"
+>
+  Click me
+</button>
+`;
