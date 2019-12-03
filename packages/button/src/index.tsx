@@ -39,7 +39,7 @@ const buttonStyles = (
     outline = false,
     small = false,
     loading = false
-) => `
+): string => `
     ${relative()};
     display: ${block ? 'flex' : 'inline-flex'};
     width: ${block ? '100%' : 'auto'};
@@ -114,7 +114,7 @@ const DefaultButton: React.FC<ButtonProps> = styled(Button)`
     ${defaultBorderRadius()};
     ${fontSizeMedium()};
     ${focus()};
-    ${(props) =>
+    ${(props): string =>
         buttonStyles(
             defaultTheme.colors.greys,
             props.block,
@@ -125,7 +125,7 @@ const DefaultButton: React.FC<ButtonProps> = styled(Button)`
 `;
 
 export const PrimaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
-    ${(props) =>
+    ${(props): string =>
         buttonStyles(
             defaultTheme.colors.blues,
             props.block,
@@ -136,7 +136,7 @@ export const PrimaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
 `;
 
 export const SecondaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
-    ${(props) =>
+    ${(props): string =>
         buttonStyles(
             defaultTheme.colors.greens,
             props.block,
@@ -147,7 +147,7 @@ export const SecondaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
 `;
 
 export const TertiaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
-    ${(props) =>
+    ${(props): string =>
         buttonStyles(
             defaultTheme.colors.yellows,
             props.block,
@@ -158,7 +158,7 @@ export const TertiaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
 `;
 
 export const DangerButton: React.FC<ButtonProps> = styled(DefaultButton)`
-    ${(props) =>
+    ${(props): string =>
         buttonStyles(
             defaultTheme.colors.reds,
             props.block,

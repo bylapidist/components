@@ -1,81 +1,569 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it works 1`] = `
+.c1 {
+  text-align: center;
+  line-height: 1.18;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  font-family: 'SofiaProRegular',sans-serif;
+  border-radius: 0;
+  font-size: 16px;
+  outline: 2px transparent;
+  outline-offset: 2px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+  min-width: calc(45px * 2);
+  height: 57px;
+  color: #ffffff;
+  background-color: #66687d;
+  border: 2px transparent solid;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:focus {
+  outline: 2px solid #ebc764;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  color: #66687d;
+  background-color: #292b3e;
+}
+
+.c0:hover:not(:disabled) {
+  cursor: pointer;
+  color: #292b3e;
+  background-color: #f3f5f9;
+}
+
 <button
-  className=""
+  className="c0"
   disabled={false}
   type="button"
 >
-  Click me
+  <div
+    className="c1"
+  >
+    Click me
+  </div>
 </button>
 `;
 
 exports[`it works as block 1`] = `
+.c1 {
+  text-align: center;
+  line-height: 1.18;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  font-family: 'SofiaProRegular',sans-serif;
+  border-radius: 0;
+  font-size: 16px;
+  outline: 2px transparent;
+  outline-offset: 2px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: calc(45px * 2);
+  height: 57px;
+  color: #ffffff;
+  background-color: #66687d;
+  border: 2px transparent solid;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:focus {
+  outline: 2px solid #ebc764;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  color: #66687d;
+  background-color: #292b3e;
+}
+
+.c0:hover:not(:disabled) {
+  cursor: pointer;
+  color: #292b3e;
+  background-color: #f3f5f9;
+}
+
 <button
-  className=""
+  className="c0"
   disabled={false}
   type="button"
 >
-  Click me
+  <div
+    className="c1"
+  >
+    Click me
+  </div>
 </button>
 `;
 
 exports[`it works as block loading 1`] = `
+.c1 {
+  text-align: center;
+  line-height: 1.18;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  font-family: 'SofiaProRegular',sans-serif;
+  border-radius: 0;
+  font-size: 16px;
+  outline: 2px transparent;
+  outline-offset: 2px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: calc(45px * 2);
+  height: 57px;
+  color: transparent;
+  background-color: transparent;
+  border: 2px #66687d solid;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:focus {
+  outline: 2px solid #ebc764;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  color: transparent;
+  background-color: transparent;
+}
+
+.c0:hover:not(:disabled) {
+  cursor: pointer;
+  color: #292b3e;
+  background-color: #f3f5f9;
+}
+
 <button
-  className=""
+  className="c0"
   disabled={true}
   type="button"
 >
-  Click me
+  <div
+    className="c1"
+  >
+    Click me
+  </div>
 </button>
 `;
 
 exports[`it works as block outline 1`] = `
+.c1 {
+  text-align: center;
+  line-height: 1.18;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  font-family: 'SofiaProRegular',sans-serif;
+  border-radius: 0;
+  font-size: 16px;
+  outline: 2px transparent;
+  outline-offset: 2px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: calc(45px * 2);
+  height: 57px;
+  color: #66687d;
+  background-color: transparent;
+  border: 2px #66687d solid;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:focus {
+  outline: 2px solid #ebc764;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  color: #66687d;
+  background-color: #f3f5f9;
+}
+
+.c0:hover:not(:disabled) {
+  cursor: pointer;
+  color: #292b3e;
+  background-color: #f3f5f9;
+}
+
 <button
-  className=""
+  className="c0"
   disabled={false}
   type="button"
 >
-  Click me
+  <div
+    className="c1"
+  >
+    Click me
+  </div>
 </button>
 `;
 
 exports[`it works as disabled 1`] = `
+.c1 {
+  text-align: center;
+  line-height: 1.18;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  font-family: 'SofiaProRegular',sans-serif;
+  border-radius: 0;
+  font-size: 16px;
+  outline: 2px transparent;
+  outline-offset: 2px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+  min-width: calc(45px * 2);
+  height: 57px;
+  color: #ffffff;
+  background-color: #66687d;
+  border: 2px transparent solid;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:focus {
+  outline: 2px solid #ebc764;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  color: #66687d;
+  background-color: #292b3e;
+}
+
+.c0:hover:not(:disabled) {
+  cursor: pointer;
+  color: #292b3e;
+  background-color: #f3f5f9;
+}
+
 <button
-  className=""
+  className="c0"
   disabled={true}
   type="button"
 >
-  Click me
+  <div
+    className="c1"
+  >
+    Click me
+  </div>
 </button>
 `;
 
 exports[`it works as outline small 1`] = `
+.c1 {
+  text-align: center;
+  line-height: 1.18;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  font-family: 'SofiaProRegular',sans-serif;
+  border-radius: 0;
+  font-size: 16px;
+  outline: 2px transparent;
+  outline-offset: 2px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+  min-width: calc(45px * 2);
+  height: 45px;
+  color: #66687d;
+  background-color: transparent;
+  border: 2px #66687d solid;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:focus {
+  outline: 2px solid #ebc764;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  color: #66687d;
+  background-color: #f3f5f9;
+}
+
+.c0:hover:not(:disabled) {
+  cursor: pointer;
+  color: #292b3e;
+  background-color: #f3f5f9;
+}
+
 <button
-  className=""
+  className="c0"
   disabled={false}
   type="button"
 >
-  Click me
+  <div
+    className="c1"
+  >
+    Click me
+  </div>
 </button>
 `;
 
 exports[`it works as outline small disabled 1`] = `
+.c1 {
+  text-align: center;
+  line-height: 1.18;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  font-family: 'SofiaProRegular',sans-serif;
+  border-radius: 0;
+  font-size: 16px;
+  outline: 2px transparent;
+  outline-offset: 2px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+  min-width: calc(45px * 2);
+  height: 45px;
+  color: #66687d;
+  background-color: transparent;
+  border: 2px #66687d solid;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:focus {
+  outline: 2px solid #ebc764;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  color: #66687d;
+  background-color: #f3f5f9;
+}
+
+.c0:hover:not(:disabled) {
+  cursor: pointer;
+  color: #292b3e;
+  background-color: #f3f5f9;
+}
+
 <button
-  className=""
+  className="c0"
   disabled={true}
   type="button"
 >
-  Click me
+  <div
+    className="c1"
+  >
+    Click me
+  </div>
 </button>
 `;
 
 exports[`it works as small loading 1`] = `
+.c1 {
+  text-align: center;
+  line-height: 1.18;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  font-family: 'SofiaProRegular',sans-serif;
+  border-radius: 0;
+  font-size: 16px;
+  outline: 2px transparent;
+  outline-offset: 2px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+  min-width: calc(45px * 2);
+  height: 45px;
+  color: transparent;
+  background-color: transparent;
+  border: 2px #66687d solid;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:focus {
+  outline: 2px solid #ebc764;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  color: transparent;
+  background-color: transparent;
+}
+
+.c0:hover:not(:disabled) {
+  cursor: pointer;
+  color: #292b3e;
+  background-color: #f3f5f9;
+}
+
 <button
-  className=""
+  className="c0"
   disabled={true}
   type="button"
 >
-  Click me
+  <div
+    className="c1"
+  >
+    Click me
+  </div>
 </button>
 `;
