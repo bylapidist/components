@@ -189,10 +189,13 @@ export const position = (position: Position | 'fill-parent'): string => {
 };
 
 export const fontFamilyRegular = (): string =>
-    `font-family: 'SofiaProRegular', sans-serif`;
+    `font-family: 'Montserrat'; sans-serif; font-weight: 400`;
+
+export const fontFamilyMedium = (): string =>
+    `font-family: 'Montserrat', sans-serif; sans-serif; font-weight: 600`;
 
 export const fontFamilyBold = (): string =>
-    `font-family: 'SofiaProBold', sans-serif`;
+    `font-family: 'Montserrat', sans-serif; sans-serif; font-weight: 700`;
 
 export const fontSizeExtraSmall = (): string =>
     `font-size: ${defaultTheme.sizing.xs}`;
