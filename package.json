@@ -14,6 +14,7 @@
         "build:docs": "docz build",
         "build:components": "lerna run build",
         "test": "lerna run test",
+        "snapshots": "yarn test -- -- -u",
         "semantic-release": "lerna exec --concurrency 1 -- semantic-release -e semantic-release-monorepo"
     },
     "workspaces": [
