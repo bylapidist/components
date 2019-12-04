@@ -6,6 +6,7 @@
     "license": "MIT",
     "private": true,
     "scripts": {
+        "create-component": "yarn plop",
         "prepare": "lerna bootstrap",
         "lint": "eslint -c .eslintrc.js . --ext js,ts,tsx",
         "fix": "eslint --fix -c .eslintrc.js . --ext js,ts,tsx",
@@ -36,6 +37,7 @@
         "jest": "^24.9.0",
         "jest-styled-components": "^6.3.4",
         "lerna": "^3.19.0",
+        "plop": "^2.5.3",
         "react-test-renderer": "^16.12.0",
         "semantic-release": "^15.13.31",
         "semantic-release-monorepo": "^6.1.1",
