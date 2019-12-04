@@ -1,0 +1,15 @@
+import React from 'react';
+import styled from 'styled-components';
+
+export interface {{componentName}}Props {
+    /** The {{componentName}}'s id. */
+    readonly id?: string;
+    /** The {{componentName}}'s classname. */
+    readonly className?: string;
+    /** The {{componentName}}'s children. */
+    readonly children?: React.ReactNode;
+}
+
+const {{componentName}}: React.FC<{{componentName}}Props> = styled.div<{{componentName}}Props>``;
+
+export default {{componentName}};
