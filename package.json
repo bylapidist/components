@@ -9,7 +9,6 @@
         "prepare": "lerna bootstrap",
         "lint": "eslint -c .eslintrc.js . --ext js,ts,tsx",
         "fix": "eslint --fix -c .eslintrc.js . --ext js,ts,tsx",
-        "docs": "cd docs && yarn start",
         "watch": "tsc -p tsconfig.dev.json -w",
         "watch:tests": "lerna exec --stream -- jest --watch --no-coverage",
         "build": "lerna run build",
