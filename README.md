@@ -6,4 +6,4 @@
 [![Build Status](https://travis-ci.org/bylapidist/components.svg?branch=master)](https://travis-ci.org/bylapidist/components)
 
 ## License
-`@lapidist/linting` is licensed under the MIT license. See LICENSE for the full text.
+`@lapidist/components` is licensed under the MIT license. See LICENSE for the full text.
