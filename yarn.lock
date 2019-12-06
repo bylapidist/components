@@ -403,13 +403,6 @@
   resolved "https://registry.npmjs.org/@lapidist/design-tokens/-/design-tokens-1.12.0.tgz#02abb93c486edbceac70a42772eaf2dced39369e"
   integrity sha512-qdLLt5sy55tSnOhTlvke6BME4Uahq64Xe1bN7qm8zlxWE4G7UHcGKr9zydqFlB7U4hTUjOpe3/tNibK1MhTLuA==
 
-"@lapidist/design-tokens@^1.6.0":
-  version "1.10.0"
-  resolved "https://registry.npmjs.org/@lapidist/design-tokens/-/design-tokens-1.10.0.tgz#f9a6596c03b5b61f4fa335c8c40507cb3c1ff1a8"
-  integrity sha512-78FwdQK5WMT68GLwq8VS2PpeNMhA0RXCSlcsHseu1Ev7mxBQLiIGi088LbvXBTv1Vad6zfDvz6lCIQfWBpwR8A==
-  dependencies:
-    "@lapidist/theme-provider" "^1.5.0"
-
 "@lapidist/linting@^1.4.0":
   version "1.4.0"
   resolved "https://registry.npmjs.org/@lapidist/linting/-/linting-1.4.0.tgz#8556e244d266df302f484f4b26e5fd1c300413cc"
@@ -430,17 +423,9 @@
     prettier "^1.19.1"
 
 "@lapidist/logo@^1.1.0":
-  version "1.3.0"
-  resolved "https://registry.npmjs.org/@lapidist/logo/-/logo-1.3.0.tgz#b0d224d123e5d41e0cf74c46cf17492725de478a"
-  integrity sha512-7MhhJrkgOz3/DPDJrjEfcMNwKeOgQaS0ECdMpRcSgSU3H2ay5ItOrdOadjJAseOj/rlktxVReyPnkaA6fEUl2A==
-  dependencies:
-    "@lapidist/design-tokens" "^1.6.0"
-    "@lapidist/theme-provider" "^1.12.0"
-
-"@lapidist/theme-provider@^1.12.0", "@lapidist/theme-provider@^1.5.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.16.0.tgz#bb560928446d11766a8492918f0a0a4a5bfa2d2b"
-  integrity sha512-IvkrSC4FvCgKbXNvPKEhS78ZqtctXs4wsfMheHj34yb6FIAdHR/v374+/1YSDaGi+l99kKt2/d06HyDhtCtf1g==
+  version "1.5.0"
+  resolved "https://registry.npmjs.org/@lapidist/logo/-/logo-1.5.0.tgz#776dd3e1531f54dc01be9a6e4d8ba1af5e038c9b"
+  integrity sha512-Y4H24hN9CI1iI1WQ308lV6JcWWM1hVhtgKLPHILorgsSRYdYPTAYaPwi7pVJSBD8n/xk146cgQF7sZLk8rtHMg==
 
 "@lapidist/theme-provider@^1.18.0":
   version "1.18.0"
@@ -1207,7 +1192,7 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@semantic-release/commit-analyzer@^6.1.0", "@semantic-release/commit-analyzer@^6.3.3":
+"@semantic-release/commit-analyzer@^6.1.0":
   version "6.3.3"
   resolved "https://registry.npmjs.org/@semantic-release/commit-analyzer/-/commit-analyzer-6.3.3.tgz#885f7e46e2f0aef23a23be0904dbf18d6ece45ca"
   integrity sha512-Pyv1ZL2u5AIOY4YbxFCAB5J1PEh5yON8ylbfiPiriDGGW6Uu1U3Y8lysMtWu+FUD5x7tSnyIzhqx0+fxPxqbgw==
@@ -2319,7 +2304,7 @@ bs-logger@0.x:
   dependencies:
     fast-json-stable-stringify "2.x"
 
-bser@^2.0.0:
+bser@2.1.1:
   version "2.1.1"
   resolved "https://registry.npmjs.org/bser/-/bser-2.1.1.tgz#e6787da20ece9d07998533cfd9de6f5c38f4bc05"
   integrity sha512-gQxTNE/GAfIIrmHLUE3oJyp5FO6HRBfhjnw4/wMmA63ZGDJnWBmgY/lyQBpnDUkGmAhbSe39tx2d/iTOAfglwQ==
@@ -3232,7 +3217,7 @@ debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   dependencies:
     ms "^2.1.1"
 
-debuglog@^1.0.1:
+debuglog@*, debuglog@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/debuglog/-/debuglog-1.0.1.tgz#aa24ffb9ac3df9a2351837cfb2d279360cd78492"
   integrity sha1-qiT/uaw9+aI1GDfPstJ5NgzXhJI=
@@ -4079,11 +4064,11 @@ fastq@^1.6.0:
     reusify "^1.0.0"
 
 fb-watchman@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/fb-watchman/-/fb-watchman-2.0.0.tgz#54e9abf7dfa2f26cd9b1636c588c1afc05de5d58"
-  integrity sha1-VOmr99+i8mzZsWNsWIwa/AXeXVg=
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/fb-watchman/-/fb-watchman-2.0.1.tgz#fc84fb39d2709cf3ff6d743706157bb5708a8a85"
+  integrity sha512-DkPJKQeY6kKwmuMretBhr7G6Vodr7bFwDYTXIkfG1gjvNpaxBTQV3PbXg6bR1c1UP4jPOX0jHUbbHANL9vRjVg==
   dependencies:
-    bser "^2.0.0"
+    bser "2.1.1"
 
 figgy-pudding@^3.4.1, figgy-pudding@^3.5.1:
   version "3.5.1"
@@ -4913,7 +4898,7 @@ import-local@^2.0.0:
     pkg-dir "^3.0.0"
     resolve-cwd "^2.0.0"
 
-imurmurhash@^0.1.4:
+imurmurhash@*, imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.npmjs.org/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
@@ -6318,6 +6303,11 @@ lockfile@^1.0.4:
   dependencies:
     signal-exit "^3.0.2"
 
+lodash._baseindexof@*:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/lodash._baseindexof/-/lodash._baseindexof-3.1.0.tgz#fe52b53a1c6761e42618d654e4a25789ed61822c"
+  integrity sha1-/lK1OhxnYeQmGNZU5KJXie1hgiw=
+
 lodash._baseuniq@~4.6.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/lodash._baseuniq/-/lodash._baseuniq-4.6.0.tgz#0ebb44e456814af7905c6212fa2c9b2d51b841e8"
@@ -6326,10 +6316,32 @@ lodash._baseuniq@~4.6.0:
     lodash._createset "~4.0.0"
     lodash._root "~3.0.0"
 
+lodash._bindcallback@*:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
+  integrity sha1-5THCdkTPi1epnhftlbNcdIeJOS4=
+
+lodash._cacheindexof@*:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/lodash._cacheindexof/-/lodash._cacheindexof-3.0.2.tgz#3dc69ac82498d2ee5e3ce56091bafd2adc7bde92"
+  integrity sha1-PcaayCSY0u5ePOVgkbr9Ktx73pI=
+
+lodash._createcache@*:
+  version "3.1.2"
+  resolved "https://registry.npmjs.org/lodash._createcache/-/lodash._createcache-3.1.2.tgz#56d6a064017625e79ebca6b8018e17440bdcf093"
+  integrity sha1-VtagZAF2JeeevKa4AY4XRAvc8JM=
+  dependencies:
+    lodash._getnative "^3.0.0"
+
 lodash._createset@~4.0.0:
   version "4.0.3"
   resolved "https://registry.npmjs.org/lodash._createset/-/lodash._createset-4.0.3.tgz#0f4659fbb09d75194fa9e2b88a6644d363c9fe26"
   integrity sha1-D0ZZ+7CddRlPqeK4imZE02PJ/iY=
+
+lodash._getnative@*, lodash._getnative@^3.0.0:
+  version "3.9.1"
+  resolved "https://registry.npmjs.org/lodash._getnative/-/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
+  integrity sha1-VwvH3t5G1hzc3mh9ZdPuy6o6r/U=
 
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
@@ -6380,6 +6392,11 @@ lodash.memoize@4.x:
   version "4.1.2"
   resolved "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
+
+lodash.restparam@*:
+  version "3.6.1"
+  resolved "https://registry.npmjs.org/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
+  integrity sha1-k2pOMJ7zMKdkXtQUWYbIWuWyCAU=
 
 lodash.set@^4.3.2:
   version "4.3.2"
