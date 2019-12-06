@@ -16,8 +16,14 @@
         "analyzeCommits": {
             "preset": "angular",
             "releaseRules": [
-                {"type": "build", "release": "minor"}
+                {
+                    "type": "build",
+                    "release": "minor"
+                }
             ]
         }
+    },
+    "dependencies": {
+        "@lapidist/theme-provider": "^1.15.0"
     }
 }

@@ -1,15 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
+import { defaultTheme } from '@lapidist/theme-provider';
 
 export interface ImageProps {
     /** The Image's id. */
     readonly id?: string;
     /** The Image's classname. */
     readonly className?: string;
-    /** The Image's children. */
-    readonly children?: React.ReactNode;
+    /** The Image's alt tag. */
+    readonly alt?: string;
+    /** The Image's src. */
+    readonly src: string;
 }
 
-const Image: React.FC<ImageProps> = styled.div<ImageProps>``;
+const ImageContainer: React.FC<ImageProps> = ({ id, className, src, alt }) => (
+    <img id={id} className={className} src={src} alt={alt} />
+);
+
+const Image: React.FC<ImageProps> = styled(ImageContainer)<ImageProps>`
+    padding-bottom: ${defaultTheme.sizing.m};
+    display: block;
+    width: 100%;
+`;
 
 export default Image;

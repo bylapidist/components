@@ -6,11 +6,7 @@ import Image from './index';
 
 test('it works', () => {
     const tree = renderer
-        .create(
-            <Image>
-                <p>Hello world!</p>
-            </Image>
-        )
+        .create(<Image src="https://placehold.it/500x500" alt="image" />)
         .toJSON();
     expect(tree).toMatchSnapshot();
 });

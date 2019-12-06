@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c0 {
+  padding-bottom: 16px;
+  display: block;
+  width: 100%;
+}
+
+<img
+  alt="image"
+  className="c0"
+  src="https://placehold.it/500x500"
+/>
+`;
