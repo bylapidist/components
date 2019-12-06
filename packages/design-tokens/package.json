@@ -12,9 +12,6 @@
     "publishConfig": {
         "access": "public"
     },
-    "dependencies": {
-        "@lapidist/theme-provider": "^1.5.0"
-    },
     "release": {
         "analyzeCommits": {
             "preset": "angular",

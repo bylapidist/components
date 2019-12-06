@@ -22,9 +22,5 @@
                 }
             ]
         }
-    },
-    "dependencies": {
-        "@lapidist/design-tokens": "^1.6.0",
-        "@lapidist/theme-provider": "^1.12.0"
     }
 }
