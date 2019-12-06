@@ -1,0 +1,9 @@
+*.ts
+!*.d.ts
+*.spec.js
+*.spec.d.ts
+*.tsx
+*.mdx
+tsconfig.json
+__snapshots__
+jest.config.js
