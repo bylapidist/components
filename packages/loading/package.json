@@ -12,17 +12,6 @@
     "publishConfig": {
         "access": "public"
     },
-    "release": {
-        "analyzeCommits": {
-            "preset": "angular",
-            "releaseRules": [
-                {
-                    "type": "build",
-                    "release": "minor"
-                }
-            ]
-        }
-    },
     "dependencies": {
         "@lapidist/logo": "^1.1.0"
     }

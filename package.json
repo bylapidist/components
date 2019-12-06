@@ -8,8 +8,8 @@
     "scripts": {
         "create-component": "yarn plop",
         "prepare": "lerna bootstrap",
-        "lint": "eslint -c .eslintrc.js . --ext js,ts,tsx",
-        "fix": "eslint --fix -c .eslintrc.js . --ext js,ts,tsx",
+        "lint": "eslint . --ext js,ts,tsx",
+        "fix": "eslint --fix . --ext js,ts,tsx",
         "watch": "tsc -p tsconfig.dev.json -w",
         "watch:tests": "lerna exec --stream -- jest --watch --no-coverage",
         "build": "lerna run build",
@@ -21,17 +21,16 @@
         "packages/*"
     ],
     "dependencies": {
-        "@lapidist/design-tokens": "^1.10.0",
-        "@lapidist/theme-provider": "^1.16.0",
+        "@lapidist/design-tokens": "^1.12.0",
+        "@lapidist/theme-provider": "^1.18.0",
         "react": "^16.12.0",
         "react-dom": "^16.12.0",
         "styled-components": "^4.4.1"
     },
     "devDependencies": {
-        "@lapidist/linting": "^1.3.0",
-        "@semantic-release/commit-analyzer": "^6.3.3",
+        "@lapidist/linting": "^1.4.0",
         "@types/jest": "^24.0.23",
-        "@types/react": "^16.9.13",
+        "@types/react": "^16.9.15",
         "@types/react-dom": "^16.9.4",
         "@types/react-test-renderer": "^16.9.1",
         "@types/styled-components": "^4.4.0",
@@ -43,11 +42,10 @@
         "semantic-release": "^15.13.31",
         "semantic-release-monorepo": "^6.1.1",
         "ts-jest": "^24.2.0",
-        "typescript": "^3.7.2",
-        "webpack": "4.41.2"
+        "typescript": "^3.7.3"
     },
     "peerDependencies": {
-        "react": "^16.8.0",
-        "styled-components": "4.x"
+        "react": "^16.12.0",
+        "styled-components": "^4.*"
     }
 }
