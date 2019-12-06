@@ -22,8 +22,5 @@
                 }
             ]
         }
-    },
-    "dependencies": {
-        "@lapidist/theme-provider": "^1.15.0"
     }
 }

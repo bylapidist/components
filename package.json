@@ -21,7 +21,8 @@
         "packages/*"
     ],
     "dependencies": {
-        "@lapidist/theme-provider": "^1.12.0",
+        "@lapidist/design-tokens": "^1.10.0",
+        "@lapidist/theme-provider": "^1.16.0",
         "react": "^16.12.0",
         "react-dom": "^16.12.0",
         "styled-components": "^4.4.1"
