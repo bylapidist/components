@@ -419,6 +419,13 @@
   dependencies:
     "@lapidist/theme-provider" "^1.5.0"
 
+"@lapidist/design-tokens@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.npmjs.org/@lapidist/design-tokens/-/design-tokens-1.8.0.tgz#4e875a91ac51ce08fb0813dbae5badb24ec7cc91"
+  integrity sha512-wMSudi2eAHPh4akS/pMqz7Jb2U9h/3JJdDcLZqFNbmx543McOUBf9JM5+Zc5LU/52o2qvq0pX8S1ZuJdRLx0DQ==
+  dependencies:
+    "@lapidist/theme-provider" "^1.5.0"
+
 "@lapidist/linting@^1.3.0":
   version "1.4.0"
   resolved "https://registry.npmjs.org/@lapidist/linting/-/linting-1.4.0.tgz#8556e244d266df302f484f4b26e5fd1c300413cc"
@@ -438,6 +445,14 @@
     eslint-plugin-react-hooks "^2.3.0"
     prettier "^1.19.1"
 
+"@lapidist/logo@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/@lapidist/logo/-/logo-1.1.0.tgz#3a4b83a53cc426dccd4608f13c633a75ee1ef90c"
+  integrity sha512-Tr5RgK70QcoIo3NdZB+X4rCIFV6XGGzx2g3wc5mIlo6XRJ6Iu+ylg1K67HnSIh4pQDi93BkU2vzllZ4ZJVCpDw==
+  dependencies:
+    "@lapidist/design-tokens" "^1.6.0"
+    "@lapidist/theme-provider" "^1.12.0"
+
 "@lapidist/theme-provider@^1.12.0":
   version "1.12.0"
   resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.12.0.tgz#bcba4733101c870dd9a9399f6cd10d218ff8f552"
@@ -447,6 +462,11 @@
   version "1.13.0"
   resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.13.0.tgz#dec0a8b408461867cba0c5136d464d74775457fb"
   integrity sha512-2Fv5ObyVplWOlrOeBMzZvXdguMxymcdmxL0+l7s2un9YMt98JoZUhz4h9GKauVoFesCxqZBnKKwBIw7SKUNFng==
+
+"@lapidist/theme-provider@^1.14.0":
+  version "1.14.0"
+  resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.14.0.tgz#30d0b7fc5aac14299321fcd9cbcf819faab97ed3"
+  integrity sha512-26IxvlE7H4s0G05kjfPoouQTVmJfwh/VDmF8cZu23BvIANs92hLzZmYeE/g4Hd/VYf4lCzCIsfe51C7ELRDHwQ==
 
 "@lapidist/theme-provider@^1.5.0", "@lapidist/theme-provider@^1.7.0":
   version "1.9.0"

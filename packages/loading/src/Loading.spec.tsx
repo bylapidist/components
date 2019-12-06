@@ -5,12 +5,6 @@ import 'jest-styled-components';
 import Loading from './index';
 
 test('it works', () => {
-    const tree = renderer
-        .create(
-            <Loading>
-                <p>Hello world!</p>
-            </Loading>
-        )
-        .toJSON();
+    const tree = renderer.create(<Loading />).toJSON();
     expect(tree).toMatchSnapshot();
 });
