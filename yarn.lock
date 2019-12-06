@@ -468,6 +468,11 @@
   resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.14.0.tgz#30d0b7fc5aac14299321fcd9cbcf819faab97ed3"
   integrity sha512-26IxvlE7H4s0G05kjfPoouQTVmJfwh/VDmF8cZu23BvIANs92hLzZmYeE/g4Hd/VYf4lCzCIsfe51C7ELRDHwQ==
 
+"@lapidist/theme-provider@^1.15.0":
+  version "1.15.0"
+  resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.15.0.tgz#7797a3b0196e594945e0d8a670c38be1ba6d357c"
+  integrity sha512-euOmSZFKvv/v5+pLKnW6iRp7rp98QrZDohaFDUIb124G58RZNn4Jl/mV4HqmSwxBxILlWFHw2BZiIVj1+YJw8A==
+
 "@lapidist/theme-provider@^1.5.0", "@lapidist/theme-provider@^1.7.0":
   version "1.9.0"
   resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.9.0.tgz#5f90c86b4a99e0974b76d798d4adc16ab2aa7cc9"
