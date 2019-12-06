@@ -42,9 +42,7 @@ const LoadingContainer: React.FC<LoadingProps> = ({
     </div>
 );
 
-const Loading: React.FC<LoadingProps> = styled(LoadingContainer)<
-    LoadingProps
->`
+const Loading: React.FC<LoadingProps> = styled(LoadingContainer)<LoadingProps>`
     ${absolute()};
     ${fillParent()};
 `;
