@@ -17,8 +17,8 @@ exports[`it works 1`] = `
   text-decoration: none;
   color: #17a3a5;
   margin: 0 0 16px;
-  -webkit-transition: background-color cubic-bezier(0.6,0.04,0.98,0.7), color cubic-bezier(0.6,0.04,0.98,0.7);
-  transition: background-color cubic-bezier(0.6,0.04,0.98,0.7), color cubic-bezier(0.6,0.04,0.98,0.7);
+  -webkit-transition: background-color cubic-bezier(0.6,0.04,0.98,0.7),color cubic-bezier(0.6,0.04,0.98,0.7);
+  transition: background-color cubic-bezier(0.6,0.04,0.98,0.7),color cubic-bezier(0.6,0.04,0.98,0.7);
 }
 
 .c0:focus {
