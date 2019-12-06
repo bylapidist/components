@@ -1,0 +1,31 @@
+{
+    "name": "@lapidist/loading",
+    "version": "0.0.0",
+    "description": "Loading component",
+    "author": "Brett Dorrans <hello@lapidist.net>",
+    "license": "MIT",
+    "main": "src/index.js",
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "test": "jest"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "release": {
+        "analyzeCommits": {
+            "preset": "angular",
+            "releaseRules": [
+                {
+                    "type": "build",
+                    "release": "minor"
+                }
+            ]
+        }
+    },
+    "dependencies": {
+        "@lapidist/design-tokens": "^1.8.0",
+        "@lapidist/logo": "^1.1.0",
+        "@lapidist/theme-provider": "^1.14.0"
+    }
+}
