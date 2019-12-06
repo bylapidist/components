@@ -412,6 +412,13 @@
   dependencies:
     "@lapidist/theme-provider" "^1.5.0"
 
+"@lapidist/design-tokens@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.npmjs.org/@lapidist/design-tokens/-/design-tokens-1.7.0.tgz#b03f7ead10d5b67cd8128bf433ba359d902fc37d"
+  integrity sha512-K8mOejgIuY4GsV3lzfwzzkdlwCQRxNnJBeUjYNXuscSEHndtXv3Fd0aLbBojSyStSCNU9Z38UVyUJUIwNFjYNQ==
+  dependencies:
+    "@lapidist/theme-provider" "^1.5.0"
+
 "@lapidist/linting@^1.3.0":
   version "1.4.0"
   resolved "https://registry.npmjs.org/@lapidist/linting/-/linting-1.4.0.tgz#8556e244d266df302f484f4b26e5fd1c300413cc"
@@ -435,6 +442,11 @@
   version "1.12.0"
   resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.12.0.tgz#bcba4733101c870dd9a9399f6cd10d218ff8f552"
   integrity sha512-nkbyeL6dHUMkFuU30CNF9BcVzazpTAkiHjQrBH08ja6fJhKhByBWIl2vO3K7o+gFpAdTG6MDb0FR+2iQgrlOrQ==
+
+"@lapidist/theme-provider@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.13.0.tgz#dec0a8b408461867cba0c5136d464d74775457fb"
+  integrity sha512-2Fv5ObyVplWOlrOeBMzZvXdguMxymcdmxL0+l7s2un9YMt98JoZUhz4h9GKauVoFesCxqZBnKKwBIw7SKUNFng==
 
 "@lapidist/theme-provider@^1.5.0", "@lapidist/theme-provider@^1.7.0":
   version "1.9.0"
