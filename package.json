@@ -31,7 +31,7 @@
         "@lapidist/linting": "^1.4.0",
         "@semantic-release/commit-analyzer": "^6.3.3",
         "@types/jest": "^24.0.23",
-        "@types/react": "^16.9.15",
+        "@types/react": "^16.9.13",
         "@types/react-dom": "^16.9.4",
         "@types/react-test-renderer": "^16.9.1",
         "@types/styled-components": "^4.4.0",
@@ -40,10 +40,11 @@
         "lerna": "^3.19.0",
         "plop": "^2.5.3",
         "react-test-renderer": "^16.12.0",
-        "semantic-release": "^15.13.30",
+        "semantic-release": "^15.13.31",
         "semantic-release-monorepo": "^6.1.1",
         "ts-jest": "^24.2.0",
-        "typescript": "^3.7.3"
+        "typescript": "^3.7.2",
+        "webpack": "4.41.2"
     },
     "peerDependencies": {
         "react": "^16.12.0",
