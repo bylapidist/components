@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works as h1 1`] = `
+.c0 {
+  font-size: 36px;
+}
+
+.c1 {
+  font-family: 'Montserrat',sans-serif;
+  display: block;
+  width: 100%;
+  margin: 0 0 4px;
+  color: #292b3e;
+  line-height: 1.6;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+}
+
+<h1
+  className="c0 c1"
+>
+  H1
+</h1>
+`;
+
+exports[`it works as h2 1`] = `
+.c0 {
+  font-size: 24px;
+}
+
+.c1 {
+  font-family: 'Montserrat',sans-serif;
+  display: block;
+  width: 100%;
+  margin: 0 0 4px;
+  color: #292b3e;
+  line-height: 1.6;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+}
+
+<h2
+  className="c0 c1"
+>
+  H2
+</h2>
+`;
+
+exports[`it works as h3 1`] = `
+.c0 {
+  font-size: 16px;
+}
+
+.c1 {
+  font-family: 'Montserrat',sans-serif;
+  display: block;
+  width: 100%;
+  margin: 0 0 4px;
+  color: #292b3e;
+  line-height: 1.6;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+}
+
+<h3
+  className="c0 c1"
+>
+  H3
+</h3>
+`;
+
+exports[`it works as h4 1`] = `
+.c0 {
+  font-size: 14px;
+}
+
+.c1 {
+  font-family: 'Montserrat',sans-serif;
+  display: block;
+  width: 100%;
+  margin: 0 0 4px;
+  color: #292b3e;
+  line-height: 1.6;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+}
+
+<h4
+  className="c0 c1"
+>
+  H4
+</h4>
+`;
+
+exports[`it works as h5 1`] = `
+.c0 {
+  font-size: 14px;
+}
+
+.c1 {
+  font-family: 'Montserrat',sans-serif;
+  display: block;
+  width: 100%;
+  margin: 0 0 4px;
+  color: #292b3e;
+  line-height: 1.6;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+}
+
+<h5
+  className="c0 c1"
+>
+  H5
+</h5>
+`;
+
+exports[`it works as h6 1`] = `
+.c0 {
+  font-size: 14px;
+}
+
+.c1 {
+  font-family: 'Montserrat',sans-serif;
+  display: block;
+  width: 100%;
+  margin: 0 0 4px;
+  color: #292b3e;
+  line-height: 1.6;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+}
+
+<h6
+  className="c0 c1"
+>
+  H6
+</h6>
+`;
