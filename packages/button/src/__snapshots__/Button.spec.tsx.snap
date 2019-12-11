@@ -2,6 +2,7 @@
 
 exports[`it works 1`] = `
 .c0 {
+  padding: 0 14px;
   text-align: center;
   line-height: 1.18;
   -webkit-letter-spacing: 1px;
@@ -26,6 +27,7 @@ exports[`it works 1`] = `
 
 exports[`it works as block 1`] = `
 .c0 {
+  padding: 0 14px;
   text-align: center;
   line-height: 1.18;
   -webkit-letter-spacing: 1px;
@@ -50,6 +52,7 @@ exports[`it works as block 1`] = `
 
 exports[`it works as block loading 1`] = `
 .c0 {
+  padding: 0 14px;
   text-align: center;
   line-height: 1.18;
   -webkit-letter-spacing: 1px;
@@ -74,6 +77,7 @@ exports[`it works as block loading 1`] = `
 
 exports[`it works as block outline 1`] = `
 .c0 {
+  padding: 0 14px;
   text-align: center;
   line-height: 1.18;
   -webkit-letter-spacing: 1px;
@@ -98,6 +102,7 @@ exports[`it works as block outline 1`] = `
 
 exports[`it works as disabled 1`] = `
 .c0 {
+  padding: 0 14px;
   text-align: center;
   line-height: 1.18;
   -webkit-letter-spacing: 1px;
@@ -122,6 +127,7 @@ exports[`it works as disabled 1`] = `
 
 exports[`it works as outline small 1`] = `
 .c0 {
+  padding: 0 14px;
   text-align: center;
   line-height: 1.18;
   -webkit-letter-spacing: 1px;
@@ -146,6 +152,7 @@ exports[`it works as outline small 1`] = `
 
 exports[`it works as outline small disabled 1`] = `
 .c0 {
+  padding: 0 14px;
   text-align: center;
   line-height: 1.18;
   -webkit-letter-spacing: 1px;
@@ -170,6 +177,7 @@ exports[`it works as outline small disabled 1`] = `
 
 exports[`it works as small loading 1`] = `
 .c0 {
+  padding: 0 14px;
   text-align: center;
   line-height: 1.18;
   -webkit-letter-spacing: 1px;

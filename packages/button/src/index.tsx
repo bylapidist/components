@@ -82,6 +82,7 @@ const buttonStyles = (
 `;
 
 const ButtonText: React.FC = styled.div`
+    padding: 0 ${defaultTheme.sizing.s};
     text-align: center;
     line-height: 1.18;
     letter-spacing: 1px;
