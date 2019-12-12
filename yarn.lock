@@ -396,9 +396,9 @@
   resolved "https://registry.npmjs.org/@lapidist/design-tokens/-/design-tokens-1.12.0.tgz#02abb93c486edbceac70a42772eaf2dced39369e"
   integrity sha512-qdLLt5sy55tSnOhTlvke6BME4Uahq64Xe1bN7qm8zlxWE4G7UHcGKr9zydqFlB7U4hTUjOpe3/tNibK1MhTLuA==
 
-"@lapidist/linting@^1.4.0":
+"@lapidist/linting@^1.7.0":
   version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@lapidist/linting/-/linting-1.7.0.tgz#2642cbc4fc739456be4ae64a9df0b7ce13bd08ad"
+  resolved "https://registry.npmjs.org/@lapidist/linting/-/linting-1.7.0.tgz#2642cbc4fc739456be4ae64a9df0b7ce13bd08ad"
   integrity sha512-XPaRdDbq/0qr/5FWExidKSQuamPiQ5lyoTqiCGZ5arLZnLZHDPrZts7wCHqLdiqLV0BUO1ziyTZCoTJ+/m39zA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.9.0"
@@ -1336,9 +1336,9 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.9.13":
+"@types/react@*", "@types/react@^16.9.16":
   version "16.9.16"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.16.tgz#4f12515707148b1f53a8eaa4341dae5dfefb066d"
+  resolved "https://registry.npmjs.org/@types/react/-/react-16.9.16.tgz#4f12515707148b1f53a8eaa4341dae5dfefb066d"
   integrity sha512-dQ3wlehuBbYlfvRXfF5G+5TbZF3xqgkikK7DWAsQXe2KnzV+kjD4W2ea+ThCrKASZn9h98bjjPzoTYzfRqyBkw==
   dependencies:
     "@types/prop-types" "*"
@@ -1349,9 +1349,9 @@
   resolved "https://registry.npmjs.org/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
 
-"@types/styled-components@^4.4.0":
+"@types/styled-components@^4.4.1":
   version "4.4.1"
-  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-4.4.1.tgz#bc40cf5ce0708032f4b148b04ab3c470d3e74026"
+  resolved "https://registry.npmjs.org/@types/styled-components/-/styled-components-4.4.1.tgz#bc40cf5ce0708032f4b148b04ab3c470d3e74026"
   integrity sha512-cQXT4pkAkM0unk/s26UBrJx9RmJ2rNUn2aDTgzp1rtu+tTkScebE78jbxNWhlqkA43XF3d41CcDlyl9Ldotm2g==
   dependencies:
     "@types/hoist-non-react-statics" "*"
@@ -7576,7 +7576,7 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.7.2:
+typescript@^3.7.3:
   version "3.7.3"
   resolved "https://registry.npmjs.org/typescript/-/typescript-3.7.3.tgz#b36840668a16458a7025b9eabfad11b66ab85c69"
   integrity sha512-Mcr/Qk7hXqFBXMN7p7Lusj1ktCBydylfQM/FZCk5glCNQJrCUKPkMHdo9R0MTFWsC/4kPFvDS0fDPvukfCkFsw==
