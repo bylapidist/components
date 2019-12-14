@@ -5,8 +5,6 @@
 [![Dev Dependencies](https://david-dm.org/bylapidist/components/dev-status.svg)](https://david-dm.org/bylapidist/components?type=dev)
 [![Build Status](https://travis-ci.org/bylapidist/components.svg?branch=master)](https://travis-ci.org/bylapidist/components)
 
-## Components
-
 | Name                           | Version                        |
 | ------------------------------ | ------------------------------ |
 | @lapidist/aspect-ratio         | ![npm](https://img.shields.io/npm/v/@lapidist/aspect-ratio)
