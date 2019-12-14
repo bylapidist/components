@@ -420,10 +420,10 @@
   resolved "https://registry.npmjs.org/@lapidist/logo/-/logo-1.5.0.tgz#776dd3e1531f54dc01be9a6e4d8ba1af5e038c9b"
   integrity sha512-Y4H24hN9CI1iI1WQ308lV6JcWWM1hVhtgKLPHILorgsSRYdYPTAYaPwi7pVJSBD8n/xk146cgQF7sZLk8rtHMg==
 
-"@lapidist/theme-provider@^1.18.0":
-  version "1.18.0"
-  resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.18.0.tgz#872532e7954f13c0a487e08f071c63bc43322886"
-  integrity sha512-lV8HZYS/5jf0VVf/P8DsXEGqpZDuwZtX1JK0jmsaB1XAErtiDfn96i3Q7X3ax3O15h6k8dKheOGFDRGd9lHlNQ==
+"@lapidist/theme-provider@^1.19.0":
+  version "1.19.0"
+  resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.19.0.tgz#e2b7f43576394c54ebbc7cb27a142072f1583f0a"
+  integrity sha512-nk4TF6RfmHZIV5p0NTzmHv/ytEb/6XFDy3ACP4jZWuoIa9eg3GCzh1r6wuWlsBlypsuUQnmoPS5KE3dR6D/4ow==
 
 "@lerna/add@3.19.0":
   version "3.19.0"
