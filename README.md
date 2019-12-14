@@ -12,6 +12,7 @@
 | @lapidist/container            | ![npm](https://img.shields.io/npm/v/@lapidist/container)
 | @lapidist/design-tokens        | ![npm](https://img.shields.io/npm/v/@lapidist/design-tokens)
 | @lapidist/image                | ![npm](https://img.shields.io/npm/v/@lapidist/image)
+| @lapidist/list                 | ![npm](https://img.shields.io/npm/v/@lapidist/list)
 | @lapidist/loading              | ![npm](https://img.shields.io/npm/v/@lapidist/loading)
 | @lapidist/logo                 | ![npm](https://img.shields.io/npm/v/@lapidist/logo)
 | @lapidist/paragraph            | ![npm](https://img.shields.io/npm/v/@lapidist/paragraph)
