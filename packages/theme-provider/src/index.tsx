@@ -3,7 +3,12 @@ import {
     ThemeProvider as StyledThemeProvider,
     createGlobalStyle
 } from 'styled-components';
-import defaultTheme from './defaultTheme';
+import defaultTheme, {
+    ColorGroup,
+    SizingGroup,
+    BreakpointGroup,
+    DefaultTheme
+} from './defaultTheme';
 
 const GlobalStyle = createGlobalStyle`
     html, body, div, span, applet, object, iframe,
@@ -48,5 +53,5 @@ const ThemeProvider: React.FC = ({ children }) => (
     </>
 );
 
-export { defaultTheme };
+export { defaultTheme, ColorGroup, SizingGroup, BreakpointGroup, DefaultTheme };
 export default ThemeProvider;
