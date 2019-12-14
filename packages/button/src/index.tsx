@@ -89,24 +89,33 @@ const ButtonText: React.FC = styled.div`
     text-decoration: none;
 `;
 
-export const Button: React.FC<ButtonProps> = ({
-    id,
-    className,
-    text,
-    handleClick = undefined,
-    disabled = false,
-    loading = false
-}) => (
-    <button
-        id={id}
-        className={className}
-        type="button"
-        onClick={handleClick}
-        disabled={disabled || loading}
-    >
-        <ButtonText>{text}</ButtonText>
-    </button>
-);
+export const Button: React.FC<ButtonProps> = React.forwardRef<
+    HTMLButtonElement,
+    ButtonProps
+>(function Button(
+    {
+        id,
+        className,
+        text,
+        handleClick = undefined,
+        disabled = false,
+        loading = false
+    },
+    ref
+) {
+    return (
+        <button
+            id={id}
+            className={className}
+            type="button"
+            onClick={handleClick}
+            disabled={disabled || loading}
+            ref={ref}
+        >
+            <ButtonText>{text}</ButtonText>
+        </button>
+    );
+});
 
 export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
     ${defaultTransition()};
