@@ -15,6 +15,7 @@
 | @lapidist/list                 | ![npm](https://img.shields.io/npm/v/@lapidist/list)
 | @lapidist/loading              | ![npm](https://img.shields.io/npm/v/@lapidist/loading)
 | @lapidist/logo                 | ![npm](https://img.shields.io/npm/v/@lapidist/logo)
+| @lapidist/panel                | ![npm](https://img.shields.io/npm/v/@lapidist/panel)
 | @lapidist/paragraph            | ![npm](https://img.shields.io/npm/v/@lapidist/paragraph)
 | @lapidist/theme-provider       | ![npm](https://img.shields.io/npm/v/@lapidist/theme-provider)
 | @lapidist/title                | ![npm](https://img.shields.io/npm/v/@lapidist/title)

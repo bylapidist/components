@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c0 {
+  background: #66687d;
+  border: 2px transparent;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with color 1`] = `
+.c0 {
+  background: transparent;
+  border: 2px #555;
+}
+
+<div
+  className="c0"
+  color="#555"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with elevated 1`] = `
+.c0 {
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  background: #66687d;
+  border: 2px transparent;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with outline 1`] = `
+.c0 {
+  background: transparent;
+  border: 2px #66687d;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with outline and color 1`] = `
+.c0 {
+  background: transparent;
+  border: 2px #555;
+}
+
+<div
+  className="c0"
+  color="#555"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with outline and color and elevated 1`] = `
+.c0 {
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  background: transparent;
+  border: 2px #555;
+}
+
+<div
+  className="c0"
+  color="#555"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with rounded 1`] = `
+.c0 {
+  border-radius: 0;
+  background: #66687d;
+  border: 2px transparent;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
