@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works with elements 1`] = `
+<ul
+  className=""
+>
+  <li
+    className=""
+  >
+    <p>
+      hello
+    </p>
+  </li>
+  <li
+    className=""
+  >
+    <p>
+      world
+    </p>
+  </li>
+</ul>
+`;
+
+exports[`it works with ordered 1`] = `
+<ol
+  className=""
+>
+  <li
+    className=""
+  >
+    hello
+  </li>
+  <li
+    className=""
+  >
+    world
+  </li>
+</ol>
+`;
+
+exports[`it works with strings 1`] = `
+<ul
+  className=""
+>
+  <li
+    className=""
+  >
+    hello
+  </li>
+  <li
+    className=""
+  >
+    world
+  </li>
+</ul>
+`;
+
+exports[`it works with unordered 1`] = `
+<ul
+  className=""
+>
+  <li
+    className=""
+  >
+    hello
+  </li>
+  <li
+    className=""
+  >
+    world
+  </li>
+</ul>
+`;
