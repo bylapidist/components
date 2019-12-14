@@ -9,8 +9,7 @@ import {
     fontSizeMedium,
     relative
 } from '@lapidist/design-tokens';
-import { defaultTheme } from '@lapidist/theme-provider';
-import { ColorGroup } from '@lapidist/theme-provider/src/defaultTheme';
+import { defaultTheme, ColorGroup } from '@lapidist/theme-provider';
 
 export interface ButtonProps {
     /** The Button's id. */
