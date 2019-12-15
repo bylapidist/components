@@ -26,6 +26,7 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "skipLibCheck": true,
+        "preserveSymlinks": true,
         "lib": ["es2017", "dom"],
         "typeRoots": ["node_modules/@types", "./types"],
         "jsx": "react"

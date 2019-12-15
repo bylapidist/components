@@ -391,11 +391,6 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@lapidist/design-tokens@^1.12.0":
-  version "1.12.0"
-  resolved "https://registry.npmjs.org/@lapidist/design-tokens/-/design-tokens-1.12.0.tgz#02abb93c486edbceac70a42772eaf2dced39369e"
-  integrity sha512-qdLLt5sy55tSnOhTlvke6BME4Uahq64Xe1bN7qm8zlxWE4G7UHcGKr9zydqFlB7U4hTUjOpe3/tNibK1MhTLuA==
-
 "@lapidist/linting@^1.7.0":
   version "1.7.0"
   resolved "https://registry.npmjs.org/@lapidist/linting/-/linting-1.7.0.tgz#2642cbc4fc739456be4ae64a9df0b7ce13bd08ad"
@@ -420,10 +415,10 @@
   resolved "https://registry.npmjs.org/@lapidist/logo/-/logo-1.5.0.tgz#776dd3e1531f54dc01be9a6e4d8ba1af5e038c9b"
   integrity sha512-Y4H24hN9CI1iI1WQ308lV6JcWWM1hVhtgKLPHILorgsSRYdYPTAYaPwi7pVJSBD8n/xk146cgQF7sZLk8rtHMg==
 
-"@lapidist/theme-provider@^1.19.0":
-  version "1.19.0"
-  resolved "https://registry.npmjs.org/@lapidist/theme-provider/-/theme-provider-1.19.0.tgz#e2b7f43576394c54ebbc7cb27a142072f1583f0a"
-  integrity sha512-nk4TF6RfmHZIV5p0NTzmHv/ytEb/6XFDy3ACP4jZWuoIa9eg3GCzh1r6wuWlsBlypsuUQnmoPS5KE3dR6D/4ow==
+"@lapidist/panel@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@lapidist/panel/-/panel-1.0.0.tgz#226005feb94bdec6dfb163dd7b8c9fc86ee5a0fd"
+  integrity sha512-17a58TfSlnUywRe+higXFVTeB6LeGHofr7ne87L/c2dy6WgYdA7rXnbuGQWWABpTz2SbLwHojhQNGqMgOASItA==
 
 "@lerna/add@3.19.0":
   version "3.19.0"
