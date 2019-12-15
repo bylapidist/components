@@ -40,7 +40,6 @@ const ButtonInner: React.FC<PanelProps> = styled(Panel)<PanelProps>`
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 ${defaultTheme.sizing.s};
     text-align: center;
     line-height: 1.18;
     letter-spacing: 1px;
@@ -50,6 +49,9 @@ const ButtonInner: React.FC<PanelProps> = styled(Panel)<PanelProps>`
 const ButtonText: React.FC = styled.span`
     ${absolute()};
     top: 50%;
+    left: 0;
+    right: 0;
+    padding: 0 ${defaultTheme.sizing.s};
     transform: translateY(-50%);
 `;
 
@@ -102,7 +104,6 @@ export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
     ${focus()};
     background: none;
     border: none;
-    min-width: calc(${defaultTheme.sizing.xxl} * 2);
     height: ${({ small }): string =>
         small ? defaultTheme.sizing.xxl : defaultTheme.sizing.xxxl};
     display: ${({ block }): string => (block ? 'flex' : 'inline-flex')};
