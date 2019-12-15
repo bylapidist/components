@@ -5,7 +5,8 @@ import {
     focus,
     fontFamilyRegular,
     fontSizeMedium,
-    relative
+    relative,
+    absolute
 } from '@lapidist/design-tokens';
 import { defaultTheme, ColorGroup } from '@lapidist/theme-provider';
 import Panel, { PanelProps } from '@lapidist/panel';
@@ -34,11 +35,22 @@ export interface ButtonProps {
 }
 
 const ButtonInner: React.FC<PanelProps> = styled(Panel)<PanelProps>`
+    ${absolute()};
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: 0 ${defaultTheme.sizing.s};
     text-align: center;
     line-height: 1.18;
     letter-spacing: 1px;
     text-decoration: none;
+`;
+
+const ButtonText: React.FC = styled.span`
+    ${absolute()};
+    top: 50%;
+    transform: translateY(-50%);
 `;
 
 export const Button: React.FC<ButtonProps> = React.forwardRef<
@@ -76,7 +88,7 @@ export const Button: React.FC<ButtonProps> = React.forwardRef<
                 elevated
                 rounded
             >
-                {text}
+                <ButtonText>{text}</ButtonText>
             </ButtonInner>
         </button>
     );
@@ -88,6 +100,8 @@ export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
     ${fontFamilyRegular()};
     ${fontSizeMedium()};
     ${focus()};
+    background: none;
+    border: none;
     min-width: calc(${defaultTheme.sizing.xxl} * 2);
     height: ${({ small }): string =>
         small ? defaultTheme.sizing.xxl : defaultTheme.sizing.xxxl};

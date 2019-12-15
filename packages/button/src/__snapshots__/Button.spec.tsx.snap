@@ -6,6 +6,11 @@ exports[`it works 1`] = `
   border-radius: 0;
   background: #66687d;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -17,6 +22,14 @@ exports[`it works 1`] = `
   text-decoration: none;
 }
 
+.c1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 <button
   disabled={false}
   type="button"
@@ -25,7 +38,11 @@ exports[`it works 1`] = `
     className="c0"
     color="#66687d"
   >
-    Click me
+    <span
+      className="c1"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -36,6 +53,11 @@ exports[`it works as block 1`] = `
   border-radius: 0;
   background: #66687d;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -45,6 +67,14 @@ exports[`it works as block 1`] = `
   letter-spacing: 1px;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 <button
@@ -55,7 +85,11 @@ exports[`it works as block 1`] = `
     className="c0"
     color="#66687d"
   >
-    Click me
+    <span
+      className="c1"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -66,6 +100,11 @@ exports[`it works as block loading 1`] = `
   border-radius: 0;
   background: transparent;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -75,6 +114,14 @@ exports[`it works as block loading 1`] = `
   letter-spacing: 1px;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 <button
@@ -85,7 +132,11 @@ exports[`it works as block loading 1`] = `
     className="c0"
     color="transparent"
   >
-    Click me
+    <span
+      className="c1"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -96,6 +147,11 @@ exports[`it works as block outline 1`] = `
   border-radius: 0;
   background: transparent;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -105,6 +161,14 @@ exports[`it works as block outline 1`] = `
   letter-spacing: 1px;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 <button
@@ -115,7 +179,11 @@ exports[`it works as block outline 1`] = `
     className="c0"
     color="transparent"
   >
-    Click me
+    <span
+      className="c1"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -126,6 +194,11 @@ exports[`it works as danger 1`] = `
   border-radius: 0;
   background: #b41e25;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -137,6 +210,14 @@ exports[`it works as danger 1`] = `
   text-decoration: none;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .c0 {
   position: relative;
   -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
@@ -145,6 +226,8 @@ exports[`it works as danger 1`] = `
   font-size: 16px;
   outline: 2px transparent;
   outline-offset: 2px;
+  background: none;
+  border: none;
   min-width: calc(45px * 2);
   height: 57px;
   display: -webkit-inline-box;
@@ -186,7 +269,11 @@ exports[`it works as danger 1`] = `
     className="c1"
     color="#b41e25"
   >
-    Click me
+    <span
+      className="c2"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -197,6 +284,11 @@ exports[`it works as default 1`] = `
   border-radius: 0;
   background: #66687d;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -208,6 +300,14 @@ exports[`it works as default 1`] = `
   text-decoration: none;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .c0 {
   position: relative;
   -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
@@ -216,6 +316,8 @@ exports[`it works as default 1`] = `
   font-size: 16px;
   outline: 2px transparent;
   outline-offset: 2px;
+  background: none;
+  border: none;
   min-width: calc(45px * 2);
   height: 57px;
   display: -webkit-inline-box;
@@ -257,7 +359,11 @@ exports[`it works as default 1`] = `
     className="c1"
     color="#66687d"
   >
-    Click me
+    <span
+      className="c2"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -268,6 +374,11 @@ exports[`it works as disabled 1`] = `
   border-radius: 0;
   background: #66687d;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -279,6 +390,14 @@ exports[`it works as disabled 1`] = `
   text-decoration: none;
 }
 
+.c1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 <button
   disabled={true}
   type="button"
@@ -287,7 +406,11 @@ exports[`it works as disabled 1`] = `
     className="c0"
     color="#66687d"
   >
-    Click me
+    <span
+      className="c1"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -298,6 +421,11 @@ exports[`it works as outline small 1`] = `
   border-radius: 0;
   background: transparent;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -307,6 +435,14 @@ exports[`it works as outline small 1`] = `
   letter-spacing: 1px;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 <button
@@ -317,7 +453,11 @@ exports[`it works as outline small 1`] = `
     className="c0"
     color="transparent"
   >
-    Click me
+    <span
+      className="c1"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -328,6 +468,11 @@ exports[`it works as outline small disabled 1`] = `
   border-radius: 0;
   background: transparent;
   border: 2px #66687d;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -337,6 +482,14 @@ exports[`it works as outline small disabled 1`] = `
   letter-spacing: 1px;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 <button
@@ -347,7 +500,11 @@ exports[`it works as outline small disabled 1`] = `
     className="c0"
     color="#66687d"
   >
-    Click me
+    <span
+      className="c1"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -358,6 +515,11 @@ exports[`it works as primary 1`] = `
   border-radius: 0;
   background: #17a3a5;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -369,6 +531,14 @@ exports[`it works as primary 1`] = `
   text-decoration: none;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .c0 {
   position: relative;
   -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
@@ -377,6 +547,8 @@ exports[`it works as primary 1`] = `
   font-size: 16px;
   outline: 2px transparent;
   outline-offset: 2px;
+  background: none;
+  border: none;
   min-width: calc(45px * 2);
   height: 57px;
   display: -webkit-inline-box;
@@ -418,7 +590,11 @@ exports[`it works as primary 1`] = `
     className="c1"
     color="#17a3a5"
   >
-    Click me
+    <span
+      className="c2"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -429,6 +605,11 @@ exports[`it works as secondary 1`] = `
   border-radius: 0;
   background: #72af5d;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -440,6 +621,14 @@ exports[`it works as secondary 1`] = `
   text-decoration: none;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .c0 {
   position: relative;
   -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
@@ -448,6 +637,8 @@ exports[`it works as secondary 1`] = `
   font-size: 16px;
   outline: 2px transparent;
   outline-offset: 2px;
+  background: none;
+  border: none;
   min-width: calc(45px * 2);
   height: 57px;
   display: -webkit-inline-box;
@@ -489,7 +680,11 @@ exports[`it works as secondary 1`] = `
     className="c1"
     color="#72af5d"
   >
-    Click me
+    <span
+      className="c2"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -500,6 +695,11 @@ exports[`it works as small loading 1`] = `
   border-radius: 0;
   background: transparent;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -509,6 +709,14 @@ exports[`it works as small loading 1`] = `
   letter-spacing: 1px;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 <button
@@ -519,7 +727,11 @@ exports[`it works as small loading 1`] = `
     className="c0"
     color="transparent"
   >
-    Click me
+    <span
+      className="c1"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
@@ -530,6 +742,11 @@ exports[`it works as tertiary 1`] = `
   border-radius: 0;
   background: #ebc764;
   border: 2px transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0 14px;
   text-align: center;
   line-height: 1.18;
@@ -541,6 +758,14 @@ exports[`it works as tertiary 1`] = `
   text-decoration: none;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .c0 {
   position: relative;
   -webkit-transition: all 0.12s cubic-bezier(0.6,0.04,0.98,0.7);
@@ -549,6 +774,8 @@ exports[`it works as tertiary 1`] = `
   font-size: 16px;
   outline: 2px transparent;
   outline-offset: 2px;
+  background: none;
+  border: none;
   min-width: calc(45px * 2);
   height: 57px;
   display: -webkit-inline-box;
@@ -590,7 +817,11 @@ exports[`it works as tertiary 1`] = `
     className="c1"
     color="#ebc764"
   >
-    Click me
+    <span
+      className="c2"
+    >
+      Click me
+    </span>
   </div>
 </button>
 `;
