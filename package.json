@@ -15,7 +15,7 @@
         "build": "lerna run build --stream",
         "test": "lerna run test --stream",
         "snapshots": "yarn test -- -- -u",
-        "semantic-release": "npm i --no-save semantic-release @lapidist/semantic-release-monorepo && lerna exec --concurrency 1 -- npx semantic-release -e semantic-release-monorepo"
+        "semantic-release": "npm i --no-save semantic-release @lapidist/semantic-release-monorepo && lerna exec --concurrency 1 -- npx semantic-release -e @lapidist/semantic-release-monorepo"
     },
     "workspaces": [
         "packages/*"
