@@ -7,7 +7,7 @@ import {
     fontSizeMedium,
     relative
 } from '@lapidist/design-tokens';
-import { defaultTheme } from '@lapidist/theme-provider';
+import { defaultTheme, ColorGroup } from '@lapidist/theme-provider';
 import Panel, { PanelProps } from '@lapidist/panel';
 
 export interface ButtonProps {
@@ -29,8 +29,8 @@ export interface ButtonProps {
     readonly small?: boolean;
     /** The Button's loading state. Makes the button disabled and display loading icon. */
     readonly loading?: boolean;
-    /** The Button's color. Changes the background color or outline. */
-    readonly color?: string;
+    /** The Button's color group. Changes the background color or outline. */
+    readonly colorGroup?: ColorGroup;
 }
 
 const ButtonInner: React.FC<PanelProps> = styled(Panel)<PanelProps>`
@@ -53,7 +53,7 @@ export const Button: React.FC<ButtonProps> = React.forwardRef<
         disabled = false,
         loading = false,
         outline = false,
-        color = defaultTheme.colors.greys.base
+        colorGroup = defaultTheme.colors.greys
     },
     ref
 ) {
@@ -66,7 +66,16 @@ export const Button: React.FC<ButtonProps> = React.forwardRef<
             disabled={disabled || loading}
             ref={ref}
         >
-            <ButtonInner outline={outline} color={color} elevated rounded>
+            <ButtonInner
+                outline={outline}
+                color={
+                    (outline || loading) && !disabled
+                        ? 'transparent'
+                        : colorGroup.base
+                }
+                elevated
+                rounded
+            >
                 {text}
             </ButtonInner>
         </button>
@@ -80,23 +89,35 @@ export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
     ${fontSizeMedium()};
     ${focus()};
     min-width: calc(${defaultTheme.sizing.xxl} * 2);
-    height: ${(props): string =>
-        props.small ? defaultTheme.sizing.xxl : defaultTheme.sizing.xxxl};
-    display: ${(props): string => (props.block ? 'flex' : 'inline-flex')};
-    width: ${(props): string => (props.block ? '100%' : 'auto')};
+    height: ${({ small }): string =>
+        small ? defaultTheme.sizing.xxl : defaultTheme.sizing.xxxl};
+    display: ${({ block }): string => (block ? 'flex' : 'inline-flex')};
+    width: ${({ block }): string => (block ? '100%' : 'auto')};
     margin-right: ${defaultTheme.sizing.s};
     margin-bottom: ${defaultTheme.sizing.s};
     padding: 0;
     justify-content: center;
-    color: ${(props): string =>
-        props.outline
-            ? props.color || defaultTheme.colors.greys.base
+    opacity: ${({ disabled, loading }): string =>
+        disabled || loading ? '0.6' : '1'};
+    color: ${({
+        outline,
+        loading,
+        colorGroup = defaultTheme.colors.greys
+    }): string =>
+        outline
+            ? colorGroup.base
+            : loading
+            ? 'transparent'
             : defaultTheme.colors.greys.lightest};
 
     :disabled {
         cursor: not-allowed;
-        opacity: ${(props): string =>
-            props.disabled || props.loading ? '0.6' : '1'};
+        opacity: ${({ disabled, loading }): string =>
+            disabled || loading ? '0.6' : '0.8'};
+        color: ${({
+            loading,
+            colorGroup = defaultTheme.colors.greys
+        }): string => (loading ? 'transparent' : colorGroup.base)};
     }
 
     :hover:not(:disabled) {
@@ -105,19 +126,19 @@ export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
 `;
 
 export const PrimaryButton: React.FC<ButtonProps> = (props) => (
-    <DefaultButton color={defaultTheme.colors.blues.base} {...props} />
+    <DefaultButton colorGroup={defaultTheme.colors.blues} {...props} />
 );
 
 export const SecondaryButton: React.FC<ButtonProps> = (props) => (
-    <DefaultButton color={defaultTheme.colors.greens.base} {...props} />
+    <DefaultButton colorGroup={defaultTheme.colors.greens} {...props} />
 );
 
 export const TertiaryButton: React.FC<ButtonProps> = (props) => (
-    <DefaultButton color={defaultTheme.colors.yellows.base} {...props} />
+    <DefaultButton colorGroup={defaultTheme.colors.yellows} {...props} />
 );
 
 export const DangerButton: React.FC<ButtonProps> = (props) => (
-    <DefaultButton color={defaultTheme.colors.reds.base} {...props} />
+    <DefaultButton colorGroup={defaultTheme.colors.reds} {...props} />
 );
 
 export default DefaultButton;
