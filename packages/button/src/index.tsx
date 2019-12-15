@@ -1,15 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-    defaultBorderRadius,
-    defaultBoxShadow,
     defaultTransition,
     focus,
     fontFamilyRegular,
     fontSizeMedium,
     relative
 } from '@lapidist/design-tokens';
-import { defaultTheme, ColorGroup } from '@lapidist/theme-provider';
+import { defaultTheme } from '@lapidist/theme-provider';
+import Panel, { PanelProps } from '@lapidist/panel';
 
 export interface ButtonProps {
     /** The Button's id. */
@@ -30,57 +29,11 @@ export interface ButtonProps {
     readonly small?: boolean;
     /** The Button's loading state. Makes the button disabled and display loading icon. */
     readonly loading?: boolean;
+    /** The Button's color. Changes the background color or outline. */
+    readonly color?: string;
 }
 
-const buttonStyles = (
-    colorGroup: ColorGroup,
-    block = false,
-    outline = false,
-    small = false,
-    loading = false
-): string => `
-    ${relative()};
-    display: ${block ? 'flex' : 'inline-flex'};
-    width: ${block ? '100%' : 'auto'};
-    min-width: calc(${defaultTheme.sizing.xxl} * 2);
-    height: ${small ? defaultTheme.sizing.xxl : defaultTheme.sizing.xxxl};
-    color: ${
-        outline
-            ? colorGroup.base
-            : loading
-            ? 'transparent'
-            : defaultTheme.colors.greys.lightest
-    };
-    background-color: ${outline || loading ? 'transparent' : colorGroup.base};
-    border: ${defaultTheme.sizing.xxxs}
-        ${outline || loading ? colorGroup.base : 'transparent'}
-        solid;
-    margin-right: ${defaultTheme.sizing.s};
-    margin-bottom: ${defaultTheme.sizing.s};
-    padding: 0;
-    justify-content: center;
-
-    :disabled {
-        cursor: not-allowed;
-        opacity: ${loading ? '1' : '0.6'};
-        color: ${loading ? 'transparent' : colorGroup.base};
-        background-color: ${
-            outline
-                ? colorGroup.light
-                : loading
-                ? 'transparent'
-                : colorGroup.dark
-        };
-    }
-
-    :hover:not(:disabled) {
-        cursor: pointer;
-        color: ${colorGroup.dark};
-        background-color: ${colorGroup.light};
-    }
-`;
-
-const ButtonText: React.FC = styled.div`
+const ButtonInner: React.FC<PanelProps> = styled(Panel)<PanelProps>`
     padding: 0 ${defaultTheme.sizing.s};
     text-align: center;
     line-height: 1.18;
@@ -98,7 +51,9 @@ export const Button: React.FC<ButtonProps> = React.forwardRef<
         text,
         handleClick = undefined,
         disabled = false,
-        loading = false
+        loading = false,
+        outline = false,
+        color = defaultTheme.colors.greys.base
     },
     ref
 ) {
@@ -111,70 +66,58 @@ export const Button: React.FC<ButtonProps> = React.forwardRef<
             disabled={disabled || loading}
             ref={ref}
         >
-            <ButtonText>{text}</ButtonText>
+            <ButtonInner outline={outline} color={color} elevated rounded>
+                {text}
+            </ButtonInner>
         </button>
     );
 });
 
 export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
+    ${relative()};
     ${defaultTransition()};
-    ${defaultBoxShadow()};
     ${fontFamilyRegular()};
-    ${defaultBorderRadius()};
     ${fontSizeMedium()};
     ${focus()};
-    ${(props): string =>
-        buttonStyles(
-            defaultTheme.colors.greys,
-            props.block,
-            props.outline,
-            props.small,
-            props.loading
-        )};
+    min-width: calc(${defaultTheme.sizing.xxl} * 2);
+    height: ${(props): string =>
+        props.small ? defaultTheme.sizing.xxl : defaultTheme.sizing.xxxl};
+    display: ${(props): string => (props.block ? 'flex' : 'inline-flex')};
+    width: ${(props): string => (props.block ? '100%' : 'auto')};
+    margin-right: ${defaultTheme.sizing.s};
+    margin-bottom: ${defaultTheme.sizing.s};
+    padding: 0;
+    justify-content: center;
+    color: ${(props): string =>
+        props.outline
+            ? props.color || defaultTheme.colors.greys.base
+            : defaultTheme.colors.greys.lightest};
+
+    :disabled {
+        cursor: not-allowed;
+        opacity: ${(props): string =>
+            props.disabled || props.loading ? '0.6' : '1'};
+    }
+
+    :hover:not(:disabled) {
+        cursor: pointer;
+    }
 `;
 
-export const PrimaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
-    ${(props): string =>
-        buttonStyles(
-            defaultTheme.colors.blues,
-            props.block,
-            props.outline,
-            props.small,
-            props.loading
-        )};
-`;
+export const PrimaryButton: React.FC<ButtonProps> = (props) => (
+    <DefaultButton color={defaultTheme.colors.blues.base} {...props} />
+);
 
-export const SecondaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
-    ${(props): string =>
-        buttonStyles(
-            defaultTheme.colors.greens,
-            props.block,
-            props.outline,
-            props.small,
-            props.loading
-        )};
-`;
+export const SecondaryButton: React.FC<ButtonProps> = (props) => (
+    <DefaultButton color={defaultTheme.colors.greens.base} {...props} />
+);
 
-export const TertiaryButton: React.FC<ButtonProps> = styled(DefaultButton)`
-    ${(props): string =>
-        buttonStyles(
-            defaultTheme.colors.yellows,
-            props.block,
-            props.outline,
-            props.small,
-            props.loading
-        )};
-`;
+export const TertiaryButton: React.FC<ButtonProps> = (props) => (
+    <DefaultButton color={defaultTheme.colors.yellows.base} {...props} />
+);
 
-export const DangerButton: React.FC<ButtonProps> = styled(DefaultButton)`
-    ${(props): string =>
-        buttonStyles(
-            defaultTheme.colors.reds,
-            props.block,
-            props.outline,
-            props.small,
-            props.loading
-        )};
-`;
+export const DangerButton: React.FC<ButtonProps> = (props) => (
+    <DefaultButton color={defaultTheme.colors.reds.base} {...props} />
+);
 
 export default DefaultButton;
