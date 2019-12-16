@@ -391,10 +391,15 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
+"@lapidist/design-tokens@^1.12.0":
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/@lapidist/design-tokens/-/design-tokens-1.12.0.tgz#02abb93c486edbceac70a42772eaf2dced39369e"
+  integrity sha512-qdLLt5sy55tSnOhTlvke6BME4Uahq64Xe1bN7qm8zlxWE4G7UHcGKr9zydqFlB7U4hTUjOpe3/tNibK1MhTLuA==
+
 "@lapidist/linting@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.npmjs.org/@lapidist/linting/-/linting-1.7.0.tgz#2642cbc4fc739456be4ae64a9df0b7ce13bd08ad"
-  integrity sha512-XPaRdDbq/0qr/5FWExidKSQuamPiQ5lyoTqiCGZ5arLZnLZHDPrZts7wCHqLdiqLV0BUO1ziyTZCoTJ+/m39zA==
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@lapidist/linting/-/linting-1.8.0.tgz#86a27dbd3b061c412e4394cde8811b5c58d7a4cd"
+  integrity sha512-xwjgDCYh1PR3eaKfz+mD8VXYMbnE5h3WTb2uAR98Ce7KGnfsAI5qH+AHqAOka2qoM1aseRKagpcHqs3j3yKaRQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.9.0"
     "@typescript-eslint/parser" "^2.9.0"
@@ -419,6 +424,11 @@
   version "1.0.0"
   resolved "https://registry.npmjs.org/@lapidist/panel/-/panel-1.0.0.tgz#226005feb94bdec6dfb163dd7b8c9fc86ee5a0fd"
   integrity sha512-17a58TfSlnUywRe+higXFVTeB6LeGHofr7ne87L/c2dy6WgYdA7rXnbuGQWWABpTz2SbLwHojhQNGqMgOASItA==
+
+"@lapidist/theme-provider@^1.19.0":
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@lapidist/theme-provider/-/theme-provider-1.19.0.tgz#e2b7f43576394c54ebbc7cb27a142072f1583f0a"
+  integrity sha512-nk4TF6RfmHZIV5p0NTzmHv/ytEb/6XFDy3ACP4jZWuoIa9eg3GCzh1r6wuWlsBlypsuUQnmoPS5KE3dR6D/4ow==
 
 "@lerna/add@3.19.0":
   version "3.19.0"
