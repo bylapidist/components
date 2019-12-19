@@ -1,0 +1,18 @@
+{
+    "name": "@lapidist/nav-bar",
+    "version": "0.0.0",
+    "description": "NavBar component",
+    "author": "Brett Dorrans <hello@lapidist.net>",
+    "license": "MIT",
+    "main": "src/index.js",
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "test": "jest"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@lapidist/panel": "^1.0.0"
+    }
+}
