@@ -6,7 +6,7 @@ exports[`it works 1`] = `
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   height: 45px;
-  padding: 16px;
+  padding: 2px;
   line-height: 45px;
 }
 
@@ -83,7 +83,7 @@ exports[`it works nested 1`] = `
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   height: 45px;
-  padding: 16px;
+  padding: 2px;
   line-height: 45px;
 }
 
@@ -178,7 +178,7 @@ exports[`it works without footer 1`] = `
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   height: 45px;
-  padding: 16px;
+  padding: 2px;
   line-height: 45px;
 }
 
@@ -305,7 +305,7 @@ exports[`it works without sidebar 1`] = `
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   height: 45px;
-  padding: 16px;
+  padding: 2px;
   line-height: 45px;
 }
 

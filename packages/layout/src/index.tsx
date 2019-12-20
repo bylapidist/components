@@ -52,7 +52,7 @@ const FooterWrapper: React.FC<LayoutProps> = ({ id, className, footer }) => (
 const Header: React.FC<LayoutProps> = styled(HeaderWrapper)`
     flex: 0 0 auto;
     height: ${defaultTheme.sizing.xxl};
-    padding: ${defaultTheme.sizing.m};
+    padding: ${defaultTheme.sizing.xxxs};
     line-height: ${defaultTheme.sizing.xxl};
 `;
 
