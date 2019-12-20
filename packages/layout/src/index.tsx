@@ -7,6 +7,8 @@ export interface LayoutProps {
     readonly id?: string;
     /** The Layout's classname. */
     readonly className?: string;
+    /** The Layout's children. */
+    readonly children?: React.ReactNode;
     /** The Layout's header. */
     readonly header?: React.ReactNode;
     /** The Layout's sidebar. */
@@ -29,9 +31,15 @@ const SidebarWrapper: React.FC<LayoutProps> = ({ id, className, sidebar }) => (
     </section>
 );
 
-const MainWrapper: React.FC<LayoutProps> = ({ id, className, main }) => (
+const MainWrapper: React.FC<LayoutProps> = ({
+    id,
+    className,
+    children,
+    main
+}) => (
     <main id={id} className={className}>
         {main}
+        {children}
     </main>
 );
 
@@ -66,6 +74,7 @@ const Footer: React.FC<LayoutProps> = styled(FooterWrapper)`
 const LayoutWrapper: React.FC<LayoutProps> = ({
     id,
     className,
+    children,
     header,
     sidebar,
     main,
@@ -74,7 +83,7 @@ const LayoutWrapper: React.FC<LayoutProps> = ({
     <div id={id} className={className}>
         {header && <Header header={header} />}
         {sidebar && <Sidebar sidebar={sidebar} />}
-        {main && <Main main={main} />}
+        {(main || children) && <Main main={main}>{children}</Main>}
         {footer && <Footer footer={footer} />}
     </div>
 );
@@ -82,7 +91,7 @@ const LayoutWrapper: React.FC<LayoutProps> = ({
 const Layout: React.FC<LayoutProps> = styled(LayoutWrapper)`
     display: flex;
     flex: auto;
-    flex-direction: column;
+    flex-direction: ${({ sidebar }): string => (sidebar ? 'row' : 'column')};
     min-height: 0;
 `;
 

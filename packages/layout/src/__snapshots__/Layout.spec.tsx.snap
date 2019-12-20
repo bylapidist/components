@@ -37,9 +37,9 @@ exports[`it works 1`] = `
   -webkit-flex: auto;
   -ms-flex: auto;
   flex: auto;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   min-height: 0;
 }
 
@@ -69,6 +69,290 @@ exports[`it works 1`] = `
   </main>
   <footer
     className="c4"
+  >
+    <p>
+      Footer
+    </p>
+  </footer>
+</div>
+`;
+
+exports[`it works nested 1`] = `
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 45px;
+  padding: 16px;
+  line-height: 45px;
+}
+
+.c2 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+  min-width: 0;
+}
+
+.c3 {
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  min-height: 0;
+}
+
+.c4 {
+  padding: 16px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 0;
+}
+
+<div
+  className="c0"
+>
+  <header
+    className="c1"
+  >
+    <p>
+      Header
+    </p>
+  </header>
+  <section
+    className="c2"
+  >
+    <p>
+      Sidebar
+    </p>
+  </section>
+  <main
+    className="c3"
+  >
+    <p>
+      Main
+    </p>
+    <div
+      className="c0"
+    >
+      <section
+        className="c2"
+      >
+        <p>
+          Sidebar
+        </p>
+      </section>
+      <main
+        className="c3"
+      >
+        <p>
+          Nested
+        </p>
+      </main>
+    </div>
+  </main>
+  <footer
+    className="c4"
+  >
+    <p>
+      Footer
+    </p>
+  </footer>
+</div>
+`;
+
+exports[`it works without footer 1`] = `
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 45px;
+  padding: 16px;
+  line-height: 45px;
+}
+
+.c2 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+  min-width: 0;
+}
+
+.c3 {
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  min-height: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 0;
+}
+
+<div
+  className="c0"
+>
+  <header
+    className="c1"
+  >
+    <p>
+      Header
+    </p>
+  </header>
+  <section
+    className="c2"
+  >
+    <p>
+      Sidebar
+    </p>
+  </section>
+  <main
+    className="c3"
+  >
+    <p>
+      Main
+    </p>
+  </main>
+</div>
+`;
+
+exports[`it works without header 1`] = `
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+  min-width: 0;
+}
+
+.c2 {
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  min-height: 0;
+}
+
+.c3 {
+  padding: 16px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 0;
+}
+
+<div
+  className="c0"
+>
+  <section
+    className="c1"
+  >
+    <p>
+      Sidebar
+    </p>
+  </section>
+  <main
+    className="c2"
+  >
+    <p>
+      Main
+    </p>
+  </main>
+  <footer
+    className="c3"
+  >
+    <p>
+      Footer
+    </p>
+  </footer>
+</div>
+`;
+
+exports[`it works without sidebar 1`] = `
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 45px;
+  padding: 16px;
+  line-height: 45px;
+}
+
+.c2 {
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  min-height: 0;
+}
+
+.c3 {
+  padding: 16px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+}
+
+<div
+  className="c0"
+>
+  <header
+    className="c1"
+  >
+    <p>
+      Header
+    </p>
+  </header>
+  <main
+    className="c2"
+  >
+    <p>
+      Main
+    </p>
+  </main>
+  <footer
+    className="c3"
   >
     <p>
       Footer
