@@ -89,12 +89,14 @@ const Layout: React.FC<LayoutProps> = ({
 }) => (
     <div id={id} className={className}>
         {header && <Header header={header} />}
-        {sidebar && (
+        {sidebar ? (
             <LayoutWrapper sidebar={sidebar}>
                 <Sidebar sidebar={sidebar} />
+                <Main main={main}>{children}</Main>
             </LayoutWrapper>
+        ) : (
+            <Main main={main}>{children}</Main>
         )}
-        {(main || children) && <Main main={main}>{children}</Main>}
         {footer && <Footer footer={footer} />}
     </div>
 );

@@ -61,14 +61,14 @@ exports[`it works 1`] = `
         Sidebar
       </p>
     </aside>
+    <main
+      className="c3"
+    >
+      <p>
+        Main
+      </p>
+    </main>
   </section>
-  <main
-    className="c3"
-  >
-    <p>
-      Main
-    </p>
-  </main>
   <footer
     className="c4"
   >
@@ -140,34 +140,34 @@ exports[`it works nested 1`] = `
         Sidebar
       </p>
     </aside>
-  </section>
-  <main
-    className="c3"
-  >
-    <p>
-      Main
-    </p>
-    <div>
-      <section
-        className="c1"
-      >
-        <aside
-          className="c2"
+    <main
+      className="c3"
+    >
+      <p>
+        Main
+      </p>
+      <div>
+        <section
+          className="c1"
         >
-          <p>
-            Sidebar
-          </p>
-        </aside>
-      </section>
-      <main
-        className="c3"
-      >
-        <p>
-          Nested
-        </p>
-      </main>
-    </div>
-  </main>
+          <aside
+            className="c2"
+          >
+            <p>
+              Sidebar
+            </p>
+          </aside>
+          <main
+            className="c3"
+          >
+            <p>
+              Nested
+            </p>
+          </main>
+        </section>
+      </div>
+    </main>
+  </section>
   <footer
     className="c4"
   >
@@ -235,14 +235,14 @@ exports[`it works without footer 1`] = `
         Sidebar
       </p>
     </aside>
+    <main
+      className="c3"
+    >
+      <p>
+        Main
+      </p>
+    </main>
   </section>
-  <main
-    className="c3"
-  >
-    <p>
-      Main
-    </p>
-  </main>
 </div>
 `;
 
@@ -291,14 +291,14 @@ exports[`it works without header 1`] = `
         Sidebar
       </p>
     </aside>
+    <main
+      className="c2"
+    >
+      <p>
+        Main
+      </p>
+    </main>
   </section>
-  <main
-    className="c2"
-  >
-    <p>
-      Main
-    </p>
-  </main>
   <footer
     className="c3"
   >
