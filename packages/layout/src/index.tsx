@@ -26,9 +26,9 @@ const HeaderWrapper: React.FC<LayoutProps> = ({ id, className, header }) => (
 );
 
 const SidebarWrapper: React.FC<LayoutProps> = ({ id, className, sidebar }) => (
-    <section id={id} className={className}>
+    <aside id={id} className={className}>
         {sidebar}
-    </section>
+    </aside>
 );
 
 const MainWrapper: React.FC<LayoutProps> = ({
@@ -71,7 +71,14 @@ const Footer: React.FC<LayoutProps> = styled(FooterWrapper)`
     padding: ${defaultTheme.sizing.m};
 `;
 
-const LayoutWrapper: React.FC<LayoutProps> = ({
+const LayoutWrapper: React.FC<LayoutProps> = styled.section<LayoutProps>`
+    display: flex;
+    flex: auto;
+    flex-direction: ${({ sidebar }): string => (sidebar ? 'row' : 'column')};
+    min-height: 0;
+`;
+
+const Layout: React.FC<LayoutProps> = ({
     id,
     className,
     children,
@@ -82,17 +89,14 @@ const LayoutWrapper: React.FC<LayoutProps> = ({
 }) => (
     <div id={id} className={className}>
         {header && <Header header={header} />}
-        {sidebar && <Sidebar sidebar={sidebar} />}
+        {sidebar && (
+            <LayoutWrapper sidebar={sidebar}>
+                <Sidebar sidebar={sidebar} />
+            </LayoutWrapper>
+        )}
         {(main || children) && <Main main={main}>{children}</Main>}
         {footer && <Footer footer={footer} />}
     </div>
 );
-
-const Layout: React.FC<LayoutProps> = styled(LayoutWrapper)`
-    display: flex;
-    flex: auto;
-    flex-direction: ${({ sidebar }): string => (sidebar ? 'row' : 'column')};
-    min-height: 0;
-`;
 
 export default Layout;
