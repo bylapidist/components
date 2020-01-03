@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it works 1`] = `
-.c1 {
+.c0 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -29,7 +29,7 @@ exports[`it works 1`] = `
   padding: 16px;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,22 +43,24 @@ exports[`it works 1`] = `
   min-height: 0;
 }
 
-<div
-  className="c0"
->
+<div>
   <header
-    className="c1"
+    className="c0"
   >
     <p>
       Header
     </p>
   </header>
   <section
-    className="c2"
+    className="c1"
   >
-    <p>
-      Sidebar
-    </p>
+    <aside
+      className="c2"
+    >
+      <p>
+        Sidebar
+      </p>
+    </aside>
   </section>
   <main
     className="c3"
@@ -78,7 +80,7 @@ exports[`it works 1`] = `
 `;
 
 exports[`it works nested 1`] = `
-.c1 {
+.c0 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -106,7 +108,7 @@ exports[`it works nested 1`] = `
   padding: 16px;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -120,22 +122,24 @@ exports[`it works nested 1`] = `
   min-height: 0;
 }
 
-<div
-  className="c0"
->
+<div>
   <header
-    className="c1"
+    className="c0"
   >
     <p>
       Header
     </p>
   </header>
   <section
-    className="c2"
+    className="c1"
   >
-    <p>
-      Sidebar
-    </p>
+    <aside
+      className="c2"
+    >
+      <p>
+        Sidebar
+      </p>
+    </aside>
   </section>
   <main
     className="c3"
@@ -143,15 +147,17 @@ exports[`it works nested 1`] = `
     <p>
       Main
     </p>
-    <div
-      className="c0"
-    >
+    <div>
       <section
-        className="c2"
+        className="c1"
       >
-        <p>
-          Sidebar
-        </p>
+        <aside
+          className="c2"
+        >
+          <p>
+            Sidebar
+          </p>
+        </aside>
       </section>
       <main
         className="c3"
@@ -173,7 +179,7 @@ exports[`it works nested 1`] = `
 `;
 
 exports[`it works without footer 1`] = `
-.c1 {
+.c0 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -197,7 +203,7 @@ exports[`it works without footer 1`] = `
   min-height: 0;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -211,22 +217,24 @@ exports[`it works without footer 1`] = `
   min-height: 0;
 }
 
-<div
-  className="c0"
->
+<div>
   <header
-    className="c1"
+    className="c0"
   >
     <p>
       Header
     </p>
   </header>
   <section
-    className="c2"
+    className="c1"
   >
-    <p>
-      Sidebar
-    </p>
+    <aside
+      className="c2"
+    >
+      <p>
+        Sidebar
+      </p>
+    </aside>
   </section>
   <main
     className="c3"
@@ -272,15 +280,17 @@ exports[`it works without header 1`] = `
   min-height: 0;
 }
 
-<div
-  className="c0"
->
+<div>
   <section
-    className="c1"
+    className="c0"
   >
-    <p>
-      Sidebar
-    </p>
+    <aside
+      className="c1"
+    >
+      <p>
+        Sidebar
+      </p>
+    </aside>
   </section>
   <main
     className="c2"
@@ -300,7 +310,7 @@ exports[`it works without header 1`] = `
 `;
 
 exports[`it works without sidebar 1`] = `
-.c1 {
+.c0 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -309,50 +319,34 @@ exports[`it works without sidebar 1`] = `
   line-height: 45px;
 }
 
-.c2 {
+.c1 {
   -webkit-flex: auto;
   -ms-flex: auto;
   flex: auto;
   min-height: 0;
 }
 
-.c3 {
+.c2 {
   padding: 16px;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-}
-
-<div
-  className="c0"
->
+<div>
   <header
-    className="c1"
+    className="c0"
   >
     <p>
       Header
     </p>
   </header>
   <main
-    className="c2"
+    className="c1"
   >
     <p>
       Main
     </p>
   </main>
   <footer
-    className="c3"
+    className="c2"
   >
     <p>
       Footer
