@@ -3,7 +3,7 @@ import styled, { StyledComponent } from 'styled-components';
 
 export type ListType = 'ol' | 'ul';
 
-export interface ListItem {
+export interface ListItemProps {
     item: JSX.Element | string;
     key: string | number;
 }
@@ -14,7 +14,7 @@ export interface ListProps {
     /** The List's classname. */
     readonly className?: string;
     /** The List's items. */
-    readonly items: ListItem[];
+    readonly items: ListItemProps[];
     /** The List's type. */
     readonly type?: ListType;
 }
@@ -34,9 +34,9 @@ export const ListItem: StyledComponent<
     HTMLAttributes<HTMLLIElement>
 > = styled.li``;
 
-const Items: React.FC<{ items: ListItem[] }> = ({ items }) => (
+const Items: React.FC<{ items: ListItemProps[] }> = ({ items }) => (
     <>
-        {items.map((props: ListItem) => (
+        {items.map((props: ListItemProps) => (
             <ListItem key={props.key}>{props.item}</ListItem>
         ))}
     </>
@@ -44,7 +44,7 @@ const Items: React.FC<{ items: ListItem[] }> = ({ items }) => (
 
 const OrderedOrUnordered = (
     Component: React.FC,
-    items: ListItem[]
+    items: ListItemProps[]
 ): JSX.Element => (
     <Component>
         <Items items={items} />
