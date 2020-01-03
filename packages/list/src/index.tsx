@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { HTMLAttributes } from 'react';
+import styled, { StyledComponent } from 'styled-components';
 
 export type ListType = 'ol' | 'ul';
 
@@ -19,11 +19,20 @@ export interface ListProps {
     readonly type?: ListType;
 }
 
-const Ordered: React.FC = styled.ol``;
+const Ordered: StyledComponent<
+    'ol',
+    HTMLAttributes<HTMLOListElement>
+> = styled.ol``;
 
-const Unordered: React.FC = styled.ul``;
+const Unordered: StyledComponent<
+    'ul',
+    HTMLAttributes<HTMLUListElement>
+> = styled.ul``;
 
-export const ListItem: React.FC = styled.li``;
+export const ListItem: StyledComponent<
+    'li',
+    HTMLAttributes<HTMLLIElement>
+> = styled.li``;
 
 const Items: React.FC<{ items: ListItem[] }> = ({ items }) => (
     <>
