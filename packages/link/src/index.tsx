@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-    absolute,
     fontFamilyRegular,
-    relative,
     focus,
     defaultEasing
 } from '@lapidist/design-tokens';
@@ -27,7 +25,6 @@ const LinkContainer: React.FC<LinkProps> = ({ id, className, title, href }) => (
 );
 
 const Link: React.FC<LinkProps> = styled(LinkContainer)<LinkProps>`
-    ${relative()};
     ${fontFamilyRegular()};
     ${focus()};
 
@@ -38,26 +35,14 @@ const Link: React.FC<LinkProps> = styled(LinkContainer)<LinkProps>`
     text-decoration: none;
     color: ${defaultTheme.colors.blues.base};
     margin: 0 0 ${defaultTheme.sizing.m};
-    transition: background-color ${defaultEasing()}, color ${defaultEasing()};
-
-    :after {
-        ${absolute()};
-
-        width: 100%;
-        height: ${defaultTheme.sizing.xxxs};
-        top: 90%;
-        left: 0;
-        right: 0;
-        background: ${defaultTheme.colors.blues.light};
-        content: '';
-    }
+    transition: color ${defaultEasing()}, border ${defaultEasing()};
+    border-bottom: ${defaultTheme.sizing.xxxs} solid
+        ${defaultTheme.colors.blues.light};
 
     :hover {
         color: ${defaultTheme.colors.blues.dark};
-
-        :after {
-            background: ${defaultTheme.colors.blues.base};
-        }
+        border-bottom: ${defaultTheme.sizing.xxxs} solid
+            ${defaultTheme.colors.blues.base};
     }
 `;
 
