@@ -397,9 +397,9 @@
   integrity sha512-qdLLt5sy55tSnOhTlvke6BME4Uahq64Xe1bN7qm8zlxWE4G7UHcGKr9zydqFlB7U4hTUjOpe3/tNibK1MhTLuA==
 
 "@lapidist/linting@^1.14.0":
-  version "1.15.0"
-  resolved "https://registry.yarnpkg.com/@lapidist/linting/-/linting-1.15.0.tgz#c5d827fbb8d4236044102e6e951308b994b9dbf4"
-  integrity sha512-MNovg5xhM4suhvyDceGp+n1j1AEfg8b47JoQPkrodp7ygqsov62rfjf2aMniJzkNOcZctLBPPnDSQaWuh2V/jw==
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/@lapidist/linting/-/linting-1.16.0.tgz#ea73cdd8bac69cad4c02f267bcfe9858c07e3b1e"
+  integrity sha512-+g+44rkeUV5t83FSPf53dZasoKZYfnFupqKZdm2cjGRvSUqCMigKr7KV2AdO/LIWgwatC8QEGLVGE6+LUAfSEQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.9.0"
     "@typescript-eslint/parser" "^2.9.0"
