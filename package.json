@@ -33,7 +33,7 @@
         "@types/react": "^16.9.17",
         "@types/react-dom": "^16.9.4",
         "@types/react-test-renderer": "^16.9.1",
-        "@types/styled-components": "^4.4.1",
+        "@types/styled-components": "^5.0.0",
         "jest": "^25.1.0",
         "jest-styled-components": "^6.3.4",
         "lerna": "^3.20.2",
