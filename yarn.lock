@@ -573,9 +573,9 @@
   integrity sha512-qdLLt5sy55tSnOhTlvke6BME4Uahq64Xe1bN7qm8zlxWE4G7UHcGKr9zydqFlB7U4hTUjOpe3/tNibK1MhTLuA==
 
 "@lapidist/linting@^1.14.0":
-  version "1.26.0"
-  resolved "https://registry.yarnpkg.com/@lapidist/linting/-/linting-1.26.0.tgz#bafef084c13077eb2390e98c248e197bd89a6763"
-  integrity sha512-34lOp8bcr+F+59QK5B6lFybg1C/6x4kz+uNuL1nBiPz0ZOoHpT6dpysDeOi+zC1cq5khs/Ls1yp2sgQGMsiSbg==
+  version "1.28.0"
+  resolved "https://registry.yarnpkg.com/@lapidist/linting/-/linting-1.28.0.tgz#c25641a6abe6ae2558c3b33a6b9f48153e269be4"
+  integrity sha512-12T/7y55LITHJovGr+8igpQg+3EFQATm185EPUNKuSsGzc8mq8UFeWLf1KegPK45JPfVpuE7Xasg/f0mxwp3/w==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.9.0"
     "@typescript-eslint/parser" "^2.9.0"
@@ -588,8 +588,8 @@
     eslint-plugin-prettier "^3.1.1"
     eslint-plugin-promise "4.2.1"
     eslint-plugin-react "7.19.0"
-    eslint-plugin-react-hooks "^2.3.0"
-    prettier "^1.19.1"
+    eslint-plugin-react-hooks "^3.0.0"
+    prettier "^2.0.2"
 
 "@lapidist/logo@^1.1.0":
   version "1.5.0"
@@ -3237,10 +3237,10 @@ eslint-plugin-promise@4.2.1:
   resolved "https://registry.npmjs.org/eslint-plugin-promise/-/eslint-plugin-promise-4.2.1.tgz#845fd8b2260ad8f82564c1222fce44ad71d9418a"
   integrity sha512-VoM09vT7bfA7D+upt+FjeBO5eHIJQBUWki1aPvB+vbNiHS3+oGIJGIeyBtKQTME6UPXXy3vV07OL1tHd3ANuDw==
 
-eslint-plugin-react-hooks@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.3.0.tgz#53e073961f1f5ccf8dd19558036c1fac8c29d99a"
-  integrity sha512-gLKCa52G4ee7uXzdLiorca7JIQZPPXRAQDXV83J4bUEeUuc5pIEyZYAZ45Xnxe5IuupxEqHS+hUhSLIimK1EMw==
+eslint-plugin-react-hooks@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-3.0.0.tgz#9e80c71846eb68dd29c3b21d832728aa66e5bd35"
+  integrity sha512-EjxTHxjLKIBWFgDJdhKKzLh5q+vjTFrqNZX36uIxWS4OfyXe5DawqPj3U5qeJ1ngLwatjzQnmR0Lz0J0YH3kxw==
 
 eslint-plugin-react@7.19.0:
   version "7.19.0"
@@ -6652,10 +6652,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^1.19.1:
-  version "1.19.1"
-  resolved "https://registry.npmjs.org/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
-  integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
+prettier@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.2.tgz#1ba8f3eb92231e769b7fcd7cb73ae1b6b74ade08"
+  integrity sha512-5xJQIPT8BraI7ZnaDwSbu5zLrB6vvi8hVV58yHQ+QK64qrY40dULy0HSRlQ2/2IdzeBpjhDkqdcFBnFeDEMVdg==
 
 pretty-format@^25.1.0:
   version "25.1.0"
@@ -7269,7 +7269,7 @@ saxes@^3.1.9:
   dependencies:
     xmlchars "^2.1.1"
 
-scheduler@^0.19.0, scheduler@^0.19.1:
+scheduler@^0.19.1:
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.19.1.tgz#4f3e2ed2c1a7d65681f4c854fa8c5a1ccb40f196"
   integrity sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
