@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-module.exports = function(plop) {
+module.exports = function (plop) {
     plop.setGenerator('package', {
         description: 'Create a new package',
         prompts: [
