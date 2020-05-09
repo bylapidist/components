@@ -23,27 +23,27 @@
     "dependencies": {
         "@lapidist/design-tokens": "^1.12.0",
         "@lapidist/theme-provider": "^1.19.0",
-        "react": "^16.12.0",
-        "react-dom": "^16.12.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
         "styled-components": "^4.4.1"
     },
     "devDependencies": {
-        "@lapidist/linting": "^1.14.0",
-        "@types/jest": "^25.1.2",
-        "@types/react": "^16.9.17",
-        "@types/react-dom": "^16.9.4",
-        "@types/react-test-renderer": "^16.9.1",
-        "@types/styled-components": "^5.0.1",
-        "jest": "^25.1.0",
-        "jest-styled-components": "^6.3.4",
+        "@lapidist/linting": "^1.31.0",
+        "@types/jest": "^25.2.1",
+        "@types/react": "^16.9.34",
+        "@types/react-dom": "^16.9.7",
+        "@types/react-test-renderer": "^16.9.2",
+        "@types/styled-components": "^5.1.0",
+        "jest": "^26.0.1",
+        "jest-styled-components": "^7.0.2",
         "lerna": "^3.20.2",
-        "plop": "^2.5.3",
-        "react-test-renderer": "^16.12.0",
-        "ts-jest": "^25.0.0",
-        "typescript": "^3.7.4"
+        "plop": "^2.6.0",
+        "react-test-renderer": "^16.13.1",
+        "ts-jest": "^25.5.1",
+        "typescript": "^3.8.3"
     },
     "peerDependencies": {
-        "react": "^16.12.0",
-        "styled-components": "^4.*"
+        "react": "^16.13.1",
+        "styled-components": "^5.*"
     }
 }
