@@ -37,7 +37,7 @@ exports[`it works 1`] = `
   type="button"
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="#66687d"
   >
     <span
@@ -86,7 +86,7 @@ exports[`it works as block 1`] = `
   type="button"
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="#66687d"
   >
     <span
@@ -135,7 +135,7 @@ exports[`it works as block loading 1`] = `
   type="button"
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="transparent"
   >
     <span
@@ -184,7 +184,7 @@ exports[`it works as block outline 1`] = `
   type="button"
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="transparent"
   >
     <span
@@ -275,7 +275,7 @@ exports[`it works as danger 1`] = `
   type="button"
 >
   <div
-    className="c1"
+    className="sc-AxjAm c1"
     color="#b41e25"
   >
     <span
@@ -366,7 +366,7 @@ exports[`it works as default 1`] = `
   type="button"
 >
   <div
-    className="c1"
+    className="sc-AxjAm c1"
     color="#66687d"
   >
     <span
@@ -415,7 +415,7 @@ exports[`it works as disabled 1`] = `
   type="button"
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="#66687d"
   >
     <span
@@ -464,7 +464,7 @@ exports[`it works as outline small 1`] = `
   type="button"
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="transparent"
   >
     <span
@@ -513,7 +513,7 @@ exports[`it works as outline small disabled 1`] = `
   type="button"
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="#66687d"
   >
     <span
@@ -604,7 +604,7 @@ exports[`it works as primary 1`] = `
   type="button"
 >
   <div
-    className="c1"
+    className="sc-AxjAm c1"
     color="#17a3a5"
   >
     <span
@@ -695,7 +695,7 @@ exports[`it works as secondary 1`] = `
   type="button"
 >
   <div
-    className="c1"
+    className="sc-AxjAm c1"
     color="#72af5d"
   >
     <span
@@ -744,7 +744,7 @@ exports[`it works as small loading 1`] = `
   type="button"
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="transparent"
   >
     <span
@@ -835,7 +835,7 @@ exports[`it works as tertiary 1`] = `
   type="button"
 >
   <div
-    className="c1"
+    className="sc-AxjAm c1"
     color="#ebc764"
   >
     <span

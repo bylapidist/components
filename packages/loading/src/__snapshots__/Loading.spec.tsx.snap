@@ -3,10 +3,8 @@
 exports[`it works 1`] = `
 .c2 {
   fill: #72af5d;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
-  -webkit-animation-name: thinking;
-  animation-name: thinking;
+  -webkit-animation-duration: 0.8s  animation-name:thinking;
+  animation-duration: 0.8s  animation-name:thinking;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
@@ -15,10 +13,8 @@ exports[`it works 1`] = `
 
 .c3 {
   fill: #17a3a5;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
-  -webkit-animation-name: thinking;
-  animation-name: thinking;
+  -webkit-animation-duration: 0.8s  animation-name:thinking;
+  animation-duration: 0.8s  animation-name:thinking;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
@@ -29,10 +25,8 @@ exports[`it works 1`] = `
 
 .c4 {
   fill: #ebc764;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
-  -webkit-animation-name: thinking;
-  animation-name: thinking;
+  -webkit-animation-duration: 0.8s  animation-name:thinking;
+  animation-duration: 0.8s  animation-name:thinking;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
@@ -72,20 +66,20 @@ exports[`it works 1`] = `
   className="c0"
 >
   <svg
-    className="c1"
+    className="sc-AxhUy c1"
   >
     <polygon
-      className="c2"
+      className="sc-AxjAm c2"
       color="#72af5d"
       points="0,0 0,18 18,18"
     />
     <polygon
-      className="c3"
+      className="sc-AxjAm c3"
       color="#17a3a5"
       points="0,18 0,36 18,36"
     />
     <polygon
-      className="c4"
+      className="sc-AxjAm c4"
       color="#ebc764"
       points="18,0 18,36 36,18"
     />
