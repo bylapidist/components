@@ -1,0 +1,6 @@
+.dependabot
+.github
+src
+tsconfig.json
+tsconfig.dev.json
+*.tgz
