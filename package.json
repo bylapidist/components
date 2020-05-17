@@ -4,7 +4,9 @@
     "description": "Lapidist components",
     "author": "Brett Dorrans <hello@lapidist.net>",
     "license": "MIT",
-    "private": true,
+    "publishConfig": {
+        "access": "public"
+    },
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
     "scripts": {
