@@ -20,7 +20,7 @@ export interface PanelProps {
     readonly color?: string;
 }
 
-const Panel: React.FC<PanelProps> = styled.div<PanelProps>`
+export const Panel: React.FC<PanelProps> = styled.div<PanelProps>`
     ${({ elevated = false }): string => (elevated ? defaultBoxShadow() : '')};
     ${({ rounded = false }): string => (rounded ? defaultBorderRadius() : '')};
     ${({ outline = false, color = defaultTheme.colors.greys.base }): string =>
@@ -29,4 +29,4 @@ const Panel: React.FC<PanelProps> = styled.div<PanelProps>`
             : `background: ${color}; border: ${defaultTheme.sizing.xxxs} transparent`};
 `;
 
-export default Panel;
+Panel.displayName = 'Panel';

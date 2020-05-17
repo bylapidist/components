@@ -9,7 +9,7 @@ import {
     absolute
 } from '../design-tokens';
 import { defaultTheme, ColorGroup } from '../theme-provider';
-import Panel, { PanelProps } from '../panel';
+import { Panel, PanelProps } from '../panel';
 
 export interface ButtonProps {
     /** The Button's id. */
@@ -140,20 +140,28 @@ export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
     }
 `;
 
+DefaultButton.displayName = 'Button';
+
 export const PrimaryButton: React.FC<ButtonProps> = (props) => (
     <DefaultButton colorGroup={defaultTheme.colors.blues} {...props} />
 );
+
+PrimaryButton.displayName = 'PrimaryButton';
 
 export const SecondaryButton: React.FC<ButtonProps> = (props) => (
     <DefaultButton colorGroup={defaultTheme.colors.greens} {...props} />
 );
 
+SecondaryButton.displayName = 'SecondaryButton';
+
 export const TertiaryButton: React.FC<ButtonProps> = (props) => (
     <DefaultButton colorGroup={defaultTheme.colors.yellows} {...props} />
 );
+
+TertiaryButton.displayName = 'TertiaryButton';
 
 export const DangerButton: React.FC<ButtonProps> = (props) => (
     <DefaultButton colorGroup={defaultTheme.colors.reds} {...props} />
 );
 
-export default DefaultButton;
+DangerButton.displayName = 'DangerButton';

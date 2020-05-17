@@ -78,7 +78,7 @@ const LayoutWrapper: React.FC<LayoutProps> = styled.section<LayoutProps>`
     min-height: 0;
 `;
 
-const Layout: React.FC<LayoutProps> = ({
+export const Layout: React.FC<LayoutProps> = ({
     id,
     className,
     children,
@@ -101,4 +101,4 @@ const Layout: React.FC<LayoutProps> = ({
     </div>
 );
 
-export default Layout;
+Layout.displayName = 'Layout';

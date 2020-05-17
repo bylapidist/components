@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import Image from './index';
+import { Image } from './index';
 
 test('it works', () => {
     const tree = renderer

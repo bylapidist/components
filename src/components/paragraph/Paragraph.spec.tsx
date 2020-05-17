@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import Paragraph from './index';
+import { Paragraph } from './index';
 
 test('it works', () => {
     const tree = renderer.create(<Paragraph>Hello world!</Paragraph>).toJSON();

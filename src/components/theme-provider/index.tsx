@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
     table { border-collapse: collapse; border-spacing: 0; }
 `;
 
-const ThemeProvider: React.FC = ({ children }) => (
+export const ThemeProvider: React.FC = ({ children }) => (
     <>
         <GlobalStyle />
         <StyledThemeProvider theme={defaultTheme}>
@@ -53,5 +53,6 @@ const ThemeProvider: React.FC = ({ children }) => (
     </>
 );
 
+ThemeProvider.displayName = 'ThemeProvider';
+
 export { defaultTheme, ColorGroup, SizingGroup, BreakpointGroup, DefaultTheme };
-export default ThemeProvider;

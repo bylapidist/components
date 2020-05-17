@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { absolute, fillParent } from '../design-tokens';
 import { defaultTheme } from '../theme-provider';
-import Logo, { LogoProps } from '../logo';
+import { Logo, LogoProps } from '../logo';
 
 export interface LoadingProps {
     /** The Loading's id. */
@@ -42,9 +42,11 @@ const LoadingContainer: React.FC<LoadingProps> = ({
     </div>
 );
 
-const Loading: React.FC<LoadingProps> = styled(LoadingContainer)<LoadingProps>`
+export const Loading: React.FC<LoadingProps> = styled(LoadingContainer)<
+    LoadingProps
+>`
     ${absolute()};
     ${fillParent()};
 `;
 
-export default Loading;
+Loading.displayName = 'Loading';

@@ -101,7 +101,7 @@ const SVGLogo: React.FC<LogoProps> = ({
     </svg>
 );
 
-const Logo: React.FC<LogoProps> = styled(SVGLogo)<LogoProps>`
+export const Logo: React.FC<LogoProps> = styled(SVGLogo)<LogoProps>`
     ${relative()};
 
     display: block;
@@ -109,4 +109,4 @@ const Logo: React.FC<LogoProps> = styled(SVGLogo)<LogoProps>`
     height: ${(props): string => props.size};
 `;
 
-export default Logo;
+Logo.displayName = 'Logo';
