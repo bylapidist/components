@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c2 {
+  fill: #72af5d;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-name: thinking;
+  animation-name: thinking;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.c3 {
+  fill: #17a3a5;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-name: thinking;
+  animation-name: thinking;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.c4 {
+  fill: #ebc764;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-name: thinking;
+  animation-name: thinking;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  opacity: 0.9;
+  width: 36px;
+}
+
+.c0 {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="sc-AxhUy c1"
+  >
+    <polygon
+      className="sc-AxjAm c2"
+      color="#72af5d"
+      points="0,0 0,18 18,18"
+    />
+    <polygon
+      className="sc-AxjAm c3"
+      color="#17a3a5"
+      points="0,18 0,36 18,36"
+    />
+    <polygon
+      className="sc-AxjAm c4"
+      color="#ebc764"
+      points="18,0 18,36 36,18"
+    />
+  </svg>
+</div>
+`;

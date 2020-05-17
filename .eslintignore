@@ -1,5 +1,2 @@
-**/node_modules/
-packages/**/src/*.js
-packages/**/src/*.d.ts
-.docz/
-docs/
+node_modules/
+dist/
