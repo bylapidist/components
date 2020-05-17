@@ -16,7 +16,7 @@ export interface ContainerProps {
     readonly padding?: string;
 }
 
-const Container: React.FC<ContainerProps> = styled.div<ContainerProps>`
+export const Container: React.FC<ContainerProps> = styled.div<ContainerProps>`
     ${relative()};
     ${centeredHorizontal()};
 
@@ -29,4 +29,4 @@ const Container: React.FC<ContainerProps> = styled.div<ContainerProps>`
     }
 `;
 
-export default Container;
+Container.displayName = 'Container';

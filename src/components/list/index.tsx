@@ -51,7 +51,7 @@ const OrderedOrUnordered = (
     </Component>
 );
 
-const List: React.FC<ListProps> = ({ type = 'ul', items }) =>
+export const List: React.FC<ListProps> = ({ type = 'ul', items }) =>
     OrderedOrUnordered(type == 'ol' ? Ordered : Unordered, items);
 
-export default List;
+List.displayName = 'List';

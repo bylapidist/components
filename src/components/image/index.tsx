@@ -17,10 +17,10 @@ const ImageContainer: React.FC<ImageProps> = ({ id, className, src, alt }) => (
     <img id={id} className={className} src={src} alt={alt} />
 );
 
-const Image: React.FC<ImageProps> = styled(ImageContainer)<ImageProps>`
+export const Image: React.FC<ImageProps> = styled(ImageContainer)<ImageProps>`
     padding-bottom: ${defaultTheme.sizing.m};
     display: block;
     width: 100%;
 `;
 
-export default Image;
+Image.displayName = 'Image';

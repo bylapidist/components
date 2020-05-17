@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import List from './index';
+import { List } from './index';
 
 test('it works with strings', () => {
     const tree = renderer

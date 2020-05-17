@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import Title from './index';
+import { Title } from './index';
 
 test('it works as h1', () => {
     const tree = renderer.create(<Title size={1}>H1</Title>).toJSON();

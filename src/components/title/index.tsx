@@ -66,7 +66,7 @@ const TitleBySize: React.FC<TitleProps> = ({ id, className, children, size }) =>
         </H1Title>
     );
 
-const Title: React.FC<TitleProps> = styled(TitleBySize)<TitleProps>`
+export const Title: React.FC<TitleProps> = styled(TitleBySize)<TitleProps>`
     ${fontFamilyBold()};
 
     display: block;
@@ -77,4 +77,4 @@ const Title: React.FC<TitleProps> = styled(TitleBySize)<TitleProps>`
     letter-spacing: 0.8px;
 `;
 
-export default Title;
+Title.displayName = 'Title';

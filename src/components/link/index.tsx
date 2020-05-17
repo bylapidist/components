@@ -20,7 +20,7 @@ const LinkContainer: React.FC<LinkProps> = ({ id, className, title, href }) => (
     </a>
 );
 
-const Link: React.FC<LinkProps> = styled(LinkContainer)<LinkProps>`
+export const Link: React.FC<LinkProps> = styled(LinkContainer)<LinkProps>`
     ${fontFamilyRegular()};
     ${focus()};
 
@@ -42,4 +42,4 @@ const Link: React.FC<LinkProps> = styled(LinkContainer)<LinkProps>`
     }
 `;
 
-export default Link;
+Link.displayName = 'Link';

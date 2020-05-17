@@ -35,7 +35,7 @@ export interface ParagraphProps {
     readonly size?: ParagraphSize;
 }
 
-const Paragraph: React.FC<ParagraphProps> = styled.div<ParagraphProps>`
+export const Paragraph: React.FC<ParagraphProps> = styled.div<ParagraphProps>`
     ${({ weight = 'regular' }): string => {
         switch (weight) {
             case 'bold':
@@ -74,4 +74,4 @@ const Paragraph: React.FC<ParagraphProps> = styled.div<ParagraphProps>`
     letter-spacing: 0.8px;
 `;
 
-export default Paragraph;
+Paragraph.displayName = 'Paragraph';

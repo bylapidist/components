@@ -28,7 +28,9 @@ const padding = (ratioProp: string | Ratio): string =>
         ratio(ratioProp).y
     }))`;
 
-const AspectRatio: React.FC<AspectRatioProps> = styled.div<AspectRatioProps>`
+export const AspectRatio: React.FC<AspectRatioProps> = styled.div<
+    AspectRatioProps
+>`
     position: relative;
     width: 100%;
     height: 100%;
@@ -53,4 +55,4 @@ const AspectRatio: React.FC<AspectRatioProps> = styled.div<AspectRatioProps>`
     }
 `;
 
-export default AspectRatio;
+AspectRatio.displayName = 'AspectRatio';
