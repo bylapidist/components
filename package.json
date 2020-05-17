@@ -17,7 +17,8 @@
         "watch:tests": "jest --watch",
         "build": "rimraf dist && cross-env NODE_ENV=production tsc -p tsconfig.json",
         "test": "cross-env NODE_ENV=test jest",
-        "snapshots": "cross-env NODE_ENV=test jest -u"
+        "snapshots": "cross-env NODE_ENV=test jest -u",
+        "prepublishOnly": "npm run build"
     },
     "devDependencies": {
         "@lapidist/linting": "^1.35.3",
