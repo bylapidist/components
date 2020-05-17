@@ -1,49 +1,48 @@
 {
     "name": "@lapidist/components",
     "version": "0.0.0",
-    "description": "Lapidist components monorepo",
+    "description": "Lapidist components",
     "author": "Brett Dorrans <hello@lapidist.net>",
     "license": "MIT",
     "private": true,
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
     "scripts": {
         "create-component": "yarn plop",
-        "prepare": "lerna bootstrap",
         "lint": "eslint . --ext js,ts,tsx",
         "fix": "eslint --fix . --ext js,ts,tsx",
         "watch": "tsc -p tsconfig.dev.json -w",
-        "watch:tests": "lerna exec --stream -- jest --watch --no-coverage",
-        "build": "lerna run build --stream",
-        "test": "lerna run test --stream",
-        "snapshots": "yarn test -- -- -u",
-        "semantic-release": "npm i --no-save semantic-release semantic-release-monorepo && lerna exec --concurrency 1 -- npx semantic-release -e semantic-release-monorepo"
-    },
-    "workspaces": [
-        "packages/*"
-    ],
-    "dependencies": {
-        "@lapidist/design-tokens": "^1.12.0",
-        "@lapidist/theme-provider": "^1.19.0",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "styled-components": "^5.1.0"
+        "watch:tests": "jest --watch",
+        "build": "rimraf dist && cross-env NODE_ENV=production tsc -p tsconfig.json",
+        "test": "cross-env NODE_ENV=test jest",
+        "snapshots": "cross-env NODE_ENV=test jest -u"
     },
     "devDependencies": {
-        "@lapidist/linting": "^1.31.0",
+        "@lapidist/linting": "^1.35.3",
         "@types/jest": "^25.2.2",
         "@types/react": "^16.9.35",
         "@types/react-dom": "^16.9.8",
         "@types/react-test-renderer": "^16.9.2",
         "@types/styled-components": "^5.1.0",
+        "cross-env": "^7.0.2",
         "jest": "^26.0.1",
         "jest-styled-components": "^7.0.2",
         "lerna": "^3.21.0",
         "plop": "^2.6.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
         "react-test-renderer": "^16.13.1",
+        "rimraf": "^3.0.2",
+        "styled-components": "^5.1.0",
         "ts-jest": "^26.0.0",
         "typescript": "^3.9.2"
     },
     "peerDependencies": {
         "react": "^16.13.1",
-        "styled-components": "^5.*"
+        "react-dom": "^16.13.1",
+        "styled-components": "^5.x"
+    },
+    "engines": {
+        "node": ">=12.0.0"
     }
 }
