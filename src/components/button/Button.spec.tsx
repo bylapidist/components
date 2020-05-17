@@ -3,8 +3,8 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 import {
+    BaseButton,
     Button,
-    DefaultButton,
     DangerButton,
     PrimaryButton,
     SecondaryButton,
@@ -12,12 +12,12 @@ import {
 } from './index';
 
 test('it works', () => {
-    const tree = renderer.create(<Button text="Click me" />).toJSON();
+    const tree = renderer.create(<BaseButton text="Click me" />).toJSON();
     expect(tree).toMatchSnapshot();
 });
 
 test('it works as default', () => {
-    const tree = renderer.create(<DefaultButton text="Click me" />).toJSON();
+    const tree = renderer.create(<Button text="Click me" />).toJSON();
     expect(tree).toMatchSnapshot();
 });
 

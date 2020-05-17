@@ -13,6 +13,8 @@
         "create-component": "yarn plop",
         "lint": "eslint . --ext js,ts,tsx",
         "fix": "eslint --fix . --ext js,ts,tsx",
+        "styleguide": "cross-env NODE_ENV=development docz build && docz serve",
+        "styleguide:build": "cross-env NODE_ENV=production docz build",
         "watch": "tsc -p tsconfig.dev.json -w",
         "watch:tests": "jest --watch",
         "build": "rimraf dist && cross-env NODE_ENV=production tsc -p tsconfig.json",
@@ -21,13 +23,14 @@
         "prepublishOnly": "npm run build"
     },
     "devDependencies": {
-        "@lapidist/linting": "^1.35.3",
+        "@lapidist/linting": "^1.35.5",
         "@types/jest": "^25.2.2",
         "@types/react": "^16.9.35",
         "@types/react-dom": "^16.9.8",
         "@types/react-test-renderer": "^16.9.2",
         "@types/styled-components": "^5.1.0",
         "cross-env": "^7.0.2",
+        "docz": "^2.3.1",
         "jest": "^26.0.1",
         "jest-styled-components": "^7.0.2",
         "lerna": "^3.21.0",
@@ -46,5 +49,6 @@
     },
     "engines": {
         "node": ">=12.0.0"
-    }
+    },
+    "dependencies": {}
 }

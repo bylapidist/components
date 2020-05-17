@@ -55,7 +55,7 @@ const ButtonText: React.FC = styled.span`
     transform: translateY(-50%);
 `;
 
-export const Button: React.FC<ButtonProps> = React.forwardRef<
+export const BaseButton: React.FC<ButtonProps> = React.forwardRef<
     HTMLButtonElement,
     ButtonProps
 >(function Button(
@@ -96,7 +96,7 @@ export const Button: React.FC<ButtonProps> = React.forwardRef<
     );
 });
 
-export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
+export const Button: React.FC<ButtonProps> = styled(BaseButton)`
     ${relative()};
     ${defaultTransition()};
     ${fontFamilyRegular()};
@@ -140,7 +140,7 @@ export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
     }
 `;
 
-DefaultButton.displayName = 'Button';
+Button.displayName = 'Button';
 
 export const PrimaryButton: React.FC<ButtonProps> = (props) => (
     <DefaultButton colorGroup={defaultTheme.colors.blues} {...props} />

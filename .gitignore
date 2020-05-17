@@ -66,6 +66,10 @@ node_modules/
 # next export
 **/out/
 
+# docz export
+.docz
+styleguide/
+
 # built components
 components/**/src/*.d.ts
 components/**/src/*.js

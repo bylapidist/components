@@ -1,0 +1,38 @@
+---
+name: Button
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import { Button } from './index';
+
+# Button
+
+<Props of={Button} />
+
+## Basic usage
+
+<Playground>
+    <Button text="Click me" />
+</Playground>
+
+## Button types
+
+<Playground>
+    <PrimaryButton text="Click me" />
+    <SecondaryButton text="Click me" />
+    <TertiaryButton text="Click me" />
+    <DangerButton text="Click me" />
+</Playground>
+
+## Button modifiers
+
+<Playground>
+    <Button text="Click me" block />
+    <Button text="Click me" block loading />
+    <Button text="Click me" block outline />
+    <Button text="Click me" disabled />
+    <Button text="Click me" outline small />
+    <Button text="Click me" small loading />
+    <Button text="Click me" outline disabled small />
+</Playground>
