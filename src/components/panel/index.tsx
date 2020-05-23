@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { FlattenSimpleInterpolation } from 'styled-components';
 import { defaultBorderRadius, defaultBoxShadow } from '../design-tokens';
 import { defaultTheme } from '../theme-provider';
 
@@ -21,7 +21,8 @@ export interface PanelProps {
 }
 
 export const Panel: React.FC<PanelProps> = styled.div<PanelProps>`
-    ${({ elevated = false }): string => (elevated ? defaultBoxShadow() : '')};
+    ${({ elevated = false }): FlattenSimpleInterpolation | string =>
+        elevated ? defaultBoxShadow() : ''};
     ${({ rounded = false }): string => (rounded ? defaultBorderRadius() : '')};
     ${({ outline = false, color = defaultTheme.colors.greys.base }): string =>
         outline

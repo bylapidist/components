@@ -48,10 +48,10 @@ exports[`it works 1`] = `
 exports[`it works animated 1`] = `
 .c1 {
   fill: #72af5d;
+  -webkit-animation: dTTrEC;
+  animation: dTTrEC;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-name: slide-right;
-  animation-name: slide-right;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
@@ -60,10 +60,10 @@ exports[`it works animated 1`] = `
 
 .c2 {
   fill: #17a3a5;
+  -webkit-animation: fOlPOW;
+  animation: fOlPOW;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-name: slide-up-left;
-  animation-name: slide-up-left;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
@@ -74,10 +74,8 @@ exports[`it works animated 1`] = `
 
 .c3 {
   fill: #ebc764;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
-  -webkit-animation-name: slide-down;
-  animation-name: slide-down;
+  -webkit-animation: kJzVPa;
+  animation: kJzVPa;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
@@ -119,10 +117,10 @@ exports[`it works animated 1`] = `
 exports[`it works thinking 1`] = `
 .c1 {
   fill: #72af5d;
+  -webkit-animation: hzFDkX;
+  animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-name: thinking;
-  animation-name: thinking;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
@@ -131,10 +129,10 @@ exports[`it works thinking 1`] = `
 
 .c2 {
   fill: #17a3a5;
+  -webkit-animation: hzFDkX;
+  animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-name: thinking;
-  animation-name: thinking;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
@@ -145,10 +143,10 @@ exports[`it works thinking 1`] = `
 
 .c3 {
   fill: #ebc764;
+  -webkit-animation: hzFDkX;
+  animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-name: thinking;
-  animation-name: thinking;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;

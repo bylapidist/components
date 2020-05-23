@@ -3,10 +3,10 @@
 exports[`it works 1`] = `
 .c2 {
   fill: #72af5d;
+  -webkit-animation: hzFDkX;
+  animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-name: thinking;
-  animation-name: thinking;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
@@ -15,10 +15,10 @@ exports[`it works 1`] = `
 
 .c3 {
   fill: #17a3a5;
+  -webkit-animation: hzFDkX;
+  animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-name: thinking;
-  animation-name: thinking;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
@@ -29,10 +29,10 @@ exports[`it works 1`] = `
 
 .c4 {
   fill: #ebc764;
+  -webkit-animation: hzFDkX;
+  animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-name: thinking;
-  animation-name: thinking;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;

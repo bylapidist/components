@@ -1,12 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {
+    DefaultTheme,
+    FlattenInterpolation,
+    ThemeProps
+} from 'styled-components';
 import {
     slideRight,
     slideDown,
     slideUpLeft,
     stripUnit,
-    thinking,
-    relative
+    relative,
+    thinking
 } from '../design-tokens';
 import { defaultTheme } from '../theme-provider';
 
@@ -50,22 +54,25 @@ const Triangle: React.FC<TriangleProps> = styled.polygon<TriangleProps>`
 `;
 
 const BUp: React.FC<TriangleProps> = styled(Triangle)`
-    ${(props): string | false =>
+    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
         props.animated && !props.thinking && slideRight()};
-    ${(props): string | false => props.thinking && thinking()};
+    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
+        props.thinking && thinking()};
 `;
 
 const BDown: React.FC<TriangleProps> = styled(Triangle)`
-    ${(props): string | false =>
+    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
         props.animated && !props.thinking && slideUpLeft()};
-    ${(props): string | false => props.thinking && thinking()};
+    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
+        props.thinking && thinking()};
     animation-delay: 0.1s;
 `;
 
 const D: React.FC<TriangleProps> = styled(Triangle)`
-    ${(props): string | false =>
+    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
         props.animated && !props.thinking && slideDown()}
-    ${(props): string | false => props.thinking && thinking()};
+    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
+        props.thinking && thinking()};
     animation-delay: 0.2s;
 `;
 

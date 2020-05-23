@@ -1,4 +1,12 @@
 import { defaultTheme } from '../theme-provider';
+import {
+    css,
+    DefaultTheme,
+    FlattenInterpolation,
+    FlattenSimpleInterpolation,
+    keyframes,
+    ThemeProps
+} from 'styled-components';
 
 export type Position =
     | 'top-right'
@@ -61,110 +69,118 @@ export const breakpoint = (device: Device = 'laptop-large'): string => {
 };
 
 export const defaultAnimationDuration = (): string =>
-    `animation-duration: 0.8s`;
+    'animation-duration: 0.8s';
 
-export const defaultBoxShadow = (): string => `
+export const defaultBoxShadow = (): FlattenSimpleInterpolation => css`
     box-shadow: ${boxShadow(
-        '0',
-        defaultTheme.sizing.xxxs,
-        defaultTheme.sizing.xs,
-        opacity(defaultTheme.colors.greys.light, 0.025)
-    )}, ${boxShadow(
-    '0',
-    defaultTheme.sizing.xxxs,
-    defaultTheme.sizing.xs,
-    opacity(defaultTheme.colors.greys.light, 0.035)
-)};
+            '0',
+            defaultTheme.sizing.xxxs,
+            defaultTheme.sizing.xs,
+            opacity(defaultTheme.colors.greys.light, 0.025)
+        )},
+        ${boxShadow(
+            '0',
+            defaultTheme.sizing.xxxs,
+            defaultTheme.sizing.xs,
+            opacity(defaultTheme.colors.greys.light, 0.035)
+        )};
 `;
 
 export const defaultBorderRadius = (): string => `border-radius: 0`;
 
 export const defaultEasing = (): string => `cubic-bezier(0.6, 0.04, 0.98, 0.7)`;
 
-export const defaultTransition = (): string =>
-    `transition: all 0.12s ${defaultEasing()}`;
+export const defaultTransition = (): FlattenSimpleInterpolation =>
+    css`
+        transition: all 0.12s ${defaultEasing()};
+    `;
 
-export const slideRight = (): string => `
-    ${defaultAnimationDuration()};
-
-    animation-name: slide-right;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-
-    @keyframes slide-right {
-        0% { transform: translate3d(-100%,0,0) }
-        80% { transform: translateZ(0) }
-        90% { transform: translate3d(-5%,0,0) }
-        to { transform: translateZ(0) }
-    }
+const thinkingKeyframes = keyframes`
+    0% { opacity: 1 }
+    50% { opacity: 0.6 }
+    100% { opacity: 1 }
 `;
 
-export const thinking = (): string => `
-    ${defaultAnimationDuration()};
-
-    animation-name: thinking;
+const thinkingAnimation = css`
+    ${thinkingKeyframes};
+    ${defaultAnimationDuration};
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-
-    @keyframes thinking {
-        0% { opacity: 1 }
-        50% { opacity: 0.6 }
-        100% { opacity: 1 }
-    }
 `;
 
-export const slideUpLeft = (): string => `
-    ${defaultAnimationDuration()};
+export const thinking = (): FlattenInterpolation<
+    ThemeProps<DefaultTheme>
+> => css`
+    animation: ${thinkingAnimation};
+`;
 
-    animation-name: slide-up-left;
+const slideRightKeyframes = keyframes`
+    0% { transform: translate3d(-100%,0,0) }
+    80% { transform: translateZ(0) }
+    90% { transform: translate3d(-5%,0,0) }
+    to { transform: translateZ(0) }
+`;
+
+const slideRightAnimation = css`
+    ${slideRightKeyframes};
+    ${defaultAnimationDuration};
     animation-iteration-count: 1;
     animation-timing-function: linear;
-
-    @keyframes slide-up-left {
-        0% { transform: translate3d(100%,100%,0) }
-        80% { transform: translateZ(0) }
-        90% { transform: translate3d(5%,5%,0) }
-        to { transform: translateZ(0) }
-    }
 `;
 
-export const slideDown = (): string => `
-    ${defaultAnimationDuration()};
+export const slideRight = (): FlattenInterpolation<
+    ThemeProps<DefaultTheme>
+> => css`
+    animation: ${slideRightAnimation};
+`;
 
-    animation-name: slide-down;
+const slideUpLeftKeyframes = keyframes`
+    0% { transform: translate3d(100%,100%,0) }
+    80% { transform: translateZ(0) }
+    90% { transform: translate3d(5%,5%,0) }
+    to { transform: translateZ(0) }
+`;
+
+const slideUpLeftAnimation = css`
+    ${slideUpLeftKeyframes};
+    ${defaultAnimationDuration};
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+`;
+
+export const slideUpLeft = (): FlattenInterpolation<
+    ThemeProps<DefaultTheme>
+> => css`
+    animation: ${slideUpLeftAnimation};
+`;
+
+const slideDownKeyframes = keyframes`
+    0% { transform: translate3d(0,-100%,0) }
+    80% { transform: translateZ(0) }
+    90% { transform: translate3d(0,-5%,0) }
+    to { transform: translateZ(0) }
+`;
+
+const slideDownAnimation = css`
+    ${slideDownKeyframes};
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-duration: 0.4s;
-
-    @keyframes slide-down {
-        0% { transform: translate3d(0,-100%,0) }
-        80% { transform: translateZ(0) }
-        90% { transform: translate3d(0,-5%,0) }
-        to { transform: translateZ(0) }
-    }
 `;
 
-export const rotate = (): string => `
-    ${defaultAnimationDuration()};
-
-    animation-name: rotate-flip;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
-
-    @keyframes rotate-flip {
-        0% { transform: scale(1) rotate(0) }
-        50% { transform: scale(1.2) rotateZ(180deg) }
-        100% { transform: scale(1) rotateZ(360deg) }
-    }
+export const slideDown = (): FlattenInterpolation<
+    ThemeProps<DefaultTheme>
+> => css`
+    animation: ${slideDownAnimation};
 `;
 
-export const focus = (): string => `
+export const focus = (): FlattenSimpleInterpolation => css`
     outline: ${defaultTheme.sizing.xxxs} transparent;
     outline-offset: ${defaultTheme.sizing.xxxs};
 
     :focus {
-        outline: ${defaultTheme.sizing.xxxs} solid ${defaultTheme.colors.yellows.base};
+        outline: ${defaultTheme.sizing.xxxs} solid
+            ${defaultTheme.colors.yellows.base};
     }
 `;
 
@@ -217,11 +233,11 @@ export const fontSizeGigantic = (): string =>
 
 export const centeredHorizontal = (): string => `margin: 0 auto`;
 
-export const fillParent = (): string => `
+export const fillParent = (): FlattenSimpleInterpolation => css`
     ${absolute()};
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%
+    width: 100%;
 `;
