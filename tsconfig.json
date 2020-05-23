@@ -5,8 +5,12 @@
         "moduleResolution": "node",
         "module": "commonjs",
         "outDir": "dist",
+        "lib": ["es2017", "dom"],
+        "typeRoots": ["node_modules/@types", "./types"],
+        "jsx": "react",
         "declaration": true,
-        "inlineSourceMap": false,
+        "inlineSourceMap": true,
+        "inlineSources": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "strict": true,
@@ -29,16 +33,16 @@
         "skipLibCheck": true,
         "preserveSymlinks": true,
 	    "sourceMap": false,
-        "lib": ["es2017", "dom"],
-        "typeRoots": ["node_modules/@types", "./types"],
-        "jsx": "react",
+        "forceConsistentCasingInFileNames": true
     },
-    "include": [
-        "./src/**/*"
+    "files": [
+        "./src/index.ts"
     ],
     "exclude": [
         "node_modules",
-        "src/**/*.test.tsx",
-        "src/**/*.test.ts"
-    ]
+        "src/**/*.spec.tsx",
+        "src/**/*.spec.ts"
+    ],
+    "compileOnSave": false,
+    "buildOnSave": false
 }
