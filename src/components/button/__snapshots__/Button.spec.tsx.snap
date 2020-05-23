@@ -2,7 +2,7 @@
 
 exports[`it works 1`] = `
 .c0 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: #66687d;
   border: 2px transparent;
@@ -51,7 +51,7 @@ exports[`it works 1`] = `
 
 exports[`it works as block 1`] = `
 .c0 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: #66687d;
   border: 2px transparent;
@@ -100,7 +100,7 @@ exports[`it works as block 1`] = `
 
 exports[`it works as block loading 1`] = `
 .c0 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: transparent;
   border: 2px transparent;
@@ -149,7 +149,7 @@ exports[`it works as block loading 1`] = `
 
 exports[`it works as block outline 1`] = `
 .c0 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: transparent;
   border: 2px transparent;
@@ -198,7 +198,7 @@ exports[`it works as block outline 1`] = `
 
 exports[`it works as danger 1`] = `
 .c1 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: #b41e25;
   border: 2px transparent;
@@ -289,7 +289,7 @@ exports[`it works as danger 1`] = `
 
 exports[`it works as default 1`] = `
 .c1 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: #66687d;
   border: 2px transparent;
@@ -380,7 +380,7 @@ exports[`it works as default 1`] = `
 
 exports[`it works as disabled 1`] = `
 .c0 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: #66687d;
   border: 2px transparent;
@@ -429,7 +429,7 @@ exports[`it works as disabled 1`] = `
 
 exports[`it works as outline small 1`] = `
 .c0 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: transparent;
   border: 2px transparent;
@@ -478,7 +478,7 @@ exports[`it works as outline small 1`] = `
 
 exports[`it works as outline small disabled 1`] = `
 .c0 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: transparent;
   border: 2px #66687d;
@@ -527,7 +527,7 @@ exports[`it works as outline small disabled 1`] = `
 
 exports[`it works as primary 1`] = `
 .c1 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: #17a3a5;
   border: 2px transparent;
@@ -618,7 +618,7 @@ exports[`it works as primary 1`] = `
 
 exports[`it works as secondary 1`] = `
 .c1 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: #72af5d;
   border: 2px transparent;
@@ -709,7 +709,7 @@ exports[`it works as secondary 1`] = `
 
 exports[`it works as small loading 1`] = `
 .c0 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: transparent;
   border: 2px transparent;
@@ -758,7 +758,7 @@ exports[`it works as small loading 1`] = `
 
 exports[`it works as tertiary 1`] = `
 .c1 {
-  box-shadow: 0 2px 10px rgba(243,245,249,0.025),0 2px 10px rgba(243,245,249,0.035);
+  box-shadow: 0 2px 10px rgba(243,245,249,0.025), 0 2px 10px rgba(243,245,249,0.035);
   border-radius: 0;
   background: #ebc764;
   border: 2px transparent;
