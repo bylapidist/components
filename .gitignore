@@ -67,9 +67,10 @@ node_modules/
 **/out/
 
 # built components
-components/**/src/*.d.ts
-components/**/src/*.js
 dist/
+
+# coverage
+coverage/
 
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
