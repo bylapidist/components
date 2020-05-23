@@ -12,6 +12,7 @@ Opinionated [React](https://reactjs.org/) UI library, built with [styled compone
 [![npm](https://img.shields.io/npm/v/@lapidist/components)](https://www.npmjs.com/package/@lapidist/components)
 ![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/bylapidist/components/dev/react)
 ![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/bylapidist/components/dev/typescript)
+[![codecov](https://codecov.io/gh/bylapidist/components/branch/master/graph/badge.svg)](https://codecov.io/gh/bylapidist/components)
 [![Node](https://img.shields.io/node/v/@lapidist/components)](https://www.npmjs.com/package/@lapidist/components)
 [![Dependencies](https://david-dm.org/bylapidist/components/status.svg?style=flat)](https://david-dm.org/bylapidist/components)
 [![Dev Dependencies](https://david-dm.org/bylapidist/components/dev-status.svg)](https://david-dm.org/bylapidist/components?type=dev)
