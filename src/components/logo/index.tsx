@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, {
+    css,
     DefaultTheme,
     FlattenInterpolation,
     ThemeProps
@@ -42,38 +43,45 @@ const bDown = (offset: number): string =>
 const d = (offset: number): string =>
     `${offset * 0.5},0 ${offset * 0.5},${offset} ${offset},${offset * 0.5}`;
 
-interface TriangleProps {
+export interface TriangleProps {
     readonly points: string;
     readonly color: string;
     readonly animated: boolean;
     readonly thinking: boolean;
 }
 
+export const logoAnimation = (
+    props: TriangleProps,
+    slideAnimation: FlattenInterpolation<
+        ThemeProps<DefaultTheme>
+    > | null = null,
+    thinkingAnimation: FlattenInterpolation<
+        ThemeProps<DefaultTheme>
+    > | null = null,
+    delay = '0'
+): FlattenInterpolation<ThemeProps<DefaultTheme>> => css`
+    ${props.animated && !props.thinking && slideAnimation};
+    ${props.thinking && thinkingAnimation};
+    animation-delay: ${delay};
+`;
+
 const Triangle: React.FC<TriangleProps> = styled.polygon<TriangleProps>`
     fill: ${(props): string => props.color};
 `;
 
 const BUp: React.FC<TriangleProps> = styled(Triangle)`
-    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
-        props.animated && !props.thinking && slideRight()};
-    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
-        props.thinking && thinking()};
+    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> =>
+        logoAnimation(props, slideRight(), thinking())}
 `;
 
 const BDown: React.FC<TriangleProps> = styled(Triangle)`
-    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
-        props.animated && !props.thinking && slideUpLeft()};
-    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
-        props.thinking && thinking()};
-    animation-delay: 0.1s;
+    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> =>
+        logoAnimation(props, slideUpLeft(), thinking(), '0.1s')}
 `;
 
 const D: React.FC<TriangleProps> = styled(Triangle)`
-    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
-        props.animated && !props.thinking && slideDown()}
-    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> | false =>
-        props.thinking && thinking()};
-    animation-delay: 0.2s;
+    ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> =>
+        logoAnimation(props, slideDown(), thinking(), '0.2s')}
 `;
 
 const SVGLogo: React.FC<LogoProps> = ({

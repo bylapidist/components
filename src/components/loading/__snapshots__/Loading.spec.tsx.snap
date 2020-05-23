@@ -11,6 +11,8 @@ exports[`it works 1`] = `
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
 }
 
 .c3 {

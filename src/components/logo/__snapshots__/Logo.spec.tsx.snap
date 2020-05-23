@@ -3,6 +3,8 @@
 exports[`it works 1`] = `
 .c1 {
   fill: #72af5d;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
 }
 
 .c2 {
@@ -56,6 +58,8 @@ exports[`it works animated 1`] = `
   animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
 }
 
 .c2 {
@@ -125,6 +129,8 @@ exports[`it works thinking 1`] = `
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
 }
 
 .c2 {
@@ -186,6 +192,8 @@ exports[`it works thinking 1`] = `
 exports[`it works with different colours 1`] = `
 .c1 {
   fill: #fff;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
 }
 
 .c2 {
