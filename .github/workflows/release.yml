@@ -29,3 +29,15 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
               run: npx semantic-release
+            - name: Build styleguide
+              run: |
+                  npm run build:styleguide
+                  touch styleguide/.nojekyll
+                  echo "components.lapidist.net" >> styleguide/CNAME
+            - name: Deploy styleguide
+              uses: JamesIves/github-pages-deploy-action@releases/v3
+                  with:
+                      ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}
+                      BRANCH: gh-pages
+                      FOLDER: styleguide
+
