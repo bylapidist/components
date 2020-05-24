@@ -11,5 +11,6 @@ jest.config.js
 .gitignore
 .npmignore
 .eslintignore
+.lintstagedrc
 coverage
 *.tgz
