@@ -25,6 +25,18 @@ export type Device =
     | 'laptop-medium'
     | 'laptop-large';
 
+export const allDevices: Device[] = [
+    'mobile-small',
+    'mobile-medium',
+    'mobile-large',
+    'tablet-small',
+    'tablet-medium',
+    'tablet-large',
+    'laptop-small',
+    'laptop-medium',
+    'laptop-large'
+];
+
 const r = (color: string): number => parseInt(color.slice(1, 3), 16);
 
 const g = (color: string): number => parseInt(color.slice(3, 5), 16);
@@ -66,6 +78,24 @@ export const breakpoint = (device: Device = 'laptop-large'): string => {
         default:
             return `(min-width: ${defaultTheme.breakpoints.laptop.l})`;
     }
+};
+
+export interface AllMediaQueries {
+    [device: string]: string;
+}
+
+export const allMediaQueries = (): AllMediaQueries => {
+    return {
+        'mobile-small': breakpoint('mobile-small'),
+        'mobile-medium': breakpoint('mobile-medium'),
+        'mobile-large': breakpoint('mobile-large'),
+        'tablet-small': breakpoint('tablet-small'),
+        'tablet-medium': breakpoint('tablet-medium'),
+        'tablet-large': breakpoint('tablet-large'),
+        'laptop-small': breakpoint('laptop-small'),
+        'laptop-medium': breakpoint('laptop-medium'),
+        'laptop-large': breakpoint('laptop-large')
+    };
 };
 
 export const defaultAnimationDuration = (): string =>
