@@ -140,28 +140,24 @@ export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
     }
 `;
 
+const generateButton: React.FC<ButtonProps> = ({ colorGroup, ...props }) => {
+    return <DefaultButton colorGroup={colorGroup} {...props} />;
+};
+
+export const PrimaryButton: React.FC<ButtonProps> = (props) =>
+    generateButton({ colorGroup: defaultTheme.colors.blues, ...props });
+
+export const SecondaryButton: React.FC<ButtonProps> = (props) =>
+    generateButton({ colorGroup: defaultTheme.colors.greens, ...props });
+
+export const TertiaryButton: React.FC<ButtonProps> = (props) =>
+    generateButton({ colorGroup: defaultTheme.colors.yellows, ...props });
+
+export const DangerButton: React.FC<ButtonProps> = (props) =>
+    generateButton({ colorGroup: defaultTheme.colors.reds, ...props });
+
 DefaultButton.displayName = 'Button';
-
-export const PrimaryButton: React.FC<ButtonProps> = (props) => (
-    <DefaultButton colorGroup={defaultTheme.colors.blues} {...props} />
-);
-
 PrimaryButton.displayName = 'PrimaryButton';
-
-export const SecondaryButton: React.FC<ButtonProps> = (props) => (
-    <DefaultButton colorGroup={defaultTheme.colors.greens} {...props} />
-);
-
 SecondaryButton.displayName = 'SecondaryButton';
-
-export const TertiaryButton: React.FC<ButtonProps> = (props) => (
-    <DefaultButton colorGroup={defaultTheme.colors.yellows} {...props} />
-);
-
 TertiaryButton.displayName = 'TertiaryButton';
-
-export const DangerButton: React.FC<ButtonProps> = (props) => (
-    <DefaultButton colorGroup={defaultTheme.colors.reds} {...props} />
-);
-
 DangerButton.displayName = 'DangerButton';
