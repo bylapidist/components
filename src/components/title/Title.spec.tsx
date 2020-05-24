@@ -36,6 +36,6 @@ test('it works as h6', () => {
 
 test('it maps to the correct title element', () => {
     const tree = renderer.create(<TitleBySize size={3}>H3</TitleBySize>);
-    expect(tree).toMatchSnapshot();
+    expect(tree.toJSON()).toMatchSnapshot();
     expect(tree.root.findByType('h3')).toBeTruthy();
 });

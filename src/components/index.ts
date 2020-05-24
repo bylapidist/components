@@ -9,5 +9,6 @@ export * from './loading';
 export * from './logo';
 export * from './panel';
 export * from './paragraph';
+export * from './responsive';
 export * from './theme-provider';
 export * from './title';
