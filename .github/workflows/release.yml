@@ -10,31 +10,49 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v2
+
             - name: Setup Node.js
               uses: actions/setup-node@v1
               with:
                   node-version: 13
+
+            - name: Get node.js cache directory
+              id: node-cache-dir
+              run: echo "::set-output name=dir::$(npm config get cache)"
+
+            - name: Cache npm dependencies
+              uses: actions/cache@v1
+              with:
+                  path: ${{ steps.node-cache-dir.outputs.dir }}
+                  key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+                  restore-keys: ${{ runner.os }}-node-
+
             - name: Install dependencies
               run: npm ci
+
             - name: Run tests
               run: npm run test
+
             - name: Upload coverage to Codecov
               uses: codecov/codecov-action@v1
               with:
                   token: ${{ secrets.CODECOV_TOKEN }}
                   file: ./coverage/coverage-final.json
                   flags: unittests
+
             - name: Release
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
               run: npx semantic-release
+
             - name: Build styleguide
               run: |
                   git fetch --depth=1 origin +refs/tags/*:refs/tags/*
                   npm run build:styleguide
                   touch styleguide/.nojekyll
                   echo "components.lapidist.net" >> styleguide/CNAME
+
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@releases/v3
               with:
