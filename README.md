@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="60" src="https://lapidist.net/logo.svg" alt="Lapidist Logo"/>
+    <img width="120" src="https://lapidist.net/logo.svg" alt="Lapidist Logo"/>
 </p>
 
 <h1 align="center">@lapidist/components</h1>
