@@ -30,7 +30,6 @@ jobs:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
               run: npx semantic-release
             - name: Build styleguide
-              uses: actions/checkout@v2
               run: |
                   git fetch --depth=1 origin +refs/tags/*:refs/tags/*
                   npm run build:styleguide
