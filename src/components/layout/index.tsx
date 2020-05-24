@@ -8,7 +8,7 @@ export interface LayoutProps {
     /** The Layout's classname. */
     readonly className?: string;
     /** The Layout's children. */
-    readonly children?: React.ReactNode;
+    readonly children?: React.ReactNode | React.ReactNode[];
     /** The Layout's header. */
     readonly header?: React.ReactNode;
     /** The Layout's sidebar. */
@@ -19,35 +19,46 @@ export interface LayoutProps {
     readonly footer?: React.ReactNode;
 }
 
-const HeaderWrapper: React.FC<LayoutProps> = ({ id, className, header }) => (
-    <header id={id} className={className}>
-        {header}
-    </header>
-);
+const generateWrapper: React.FC<LayoutProps & { type: string }> = ({
+    id,
+    className,
+    children,
+    type
+}) => {
+    return React.createElement(
+        type,
+        {
+            id,
+            className
+        },
+        [children]
+    );
+};
 
-const SidebarWrapper: React.FC<LayoutProps> = ({ id, className, sidebar }) => (
-    <aside id={id} className={className}>
-        {sidebar}
-    </aside>
-);
+const HeaderWrapper: React.FC<LayoutProps> = ({ id, className, header }) =>
+    generateWrapper({ type: 'header', id, className, children: [header] });
+
+const SidebarWrapper: React.FC<LayoutProps> = ({ id, className, sidebar }) =>
+    generateWrapper({ type: 'aside', id, className, children: [sidebar] });
 
 const MainWrapper: React.FC<LayoutProps> = ({
     id,
     className,
     children,
     main
-}) => (
-    <main id={id} className={className}>
-        {main}
-        {children}
-    </main>
-);
+}) =>
+    generateWrapper({
+        type: 'main',
+        id,
+        className,
+        children: [main, children]
+    });
 
-const FooterWrapper: React.FC<LayoutProps> = ({ id, className, footer }) => (
-    <footer id={id} className={className}>
-        {footer}
-    </footer>
-);
+const FooterWrapper: React.FC<LayoutProps> = ({ id, className, footer }) =>
+    generateWrapper({ type: 'footer', id, className, children: [footer] });
+
+const SectionWrapper: React.FC<LayoutProps> = ({ id, className, children }) =>
+    generateWrapper({ type: 'section', id, className, children });
 
 const Header: React.FC<LayoutProps> = styled(HeaderWrapper)`
     flex: 0 0 auto;
@@ -71,7 +82,7 @@ const Footer: React.FC<LayoutProps> = styled(FooterWrapper)`
     padding: ${defaultTheme.sizing.m};
 `;
 
-const LayoutWrapper: React.FC<LayoutProps> = styled.section<LayoutProps>`
+const Section: React.FC<LayoutProps> = styled(SectionWrapper)`
     display: flex;
     flex: auto;
     flex-direction: ${({ sidebar }): string => (sidebar ? 'row' : 'column')};
@@ -88,16 +99,20 @@ export const Layout: React.FC<LayoutProps> = ({
     footer
 }) => (
     <div id={id} className={className}>
-        {header && <Header header={header} />}
+        {header && <Header key="header" header={header} />}
         {sidebar ? (
-            <LayoutWrapper sidebar={sidebar}>
-                <Sidebar sidebar={sidebar} />
-                <Main main={main}>{children}</Main>
-            </LayoutWrapper>
+            <Section key="section" sidebar={sidebar}>
+                <Sidebar key="sidebar" sidebar={sidebar} />
+                <Main key="main" main={main}>
+                    {children}
+                </Main>
+            </Section>
         ) : (
-            <Main main={main}>{children}</Main>
+            <Main key="main" main={main}>
+                {children}
+            </Main>
         )}
-        {footer && <Footer footer={footer} />}
+        {footer && <Footer key="footer" footer={footer} />}
     </div>
 );
 

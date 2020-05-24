@@ -33,7 +33,8 @@
         "skipLibCheck": true,
         "preserveSymlinks": true,
 	    "sourceMap": false,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "downlevelIteration": true
     },
     "files": [
         "./src/index.ts"
