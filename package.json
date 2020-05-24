@@ -17,6 +17,7 @@
         "lapidist"
     ],
     "scripts": {
+        "styleguide": "styleguidist server",
         "lint": "npm run lint:css && npm run lint:js",
         "lint:css": "stylelint './src/**/*.tsx'",
         "lint:js": "eslint . --ext js,ts,tsx",
@@ -28,6 +29,7 @@
         "build:bundle": "cross-env NODE_ENV=production webpack",
         "build:es5": "cross-env NODE_ENV=production tsc --outDir dist/es5 -p tsconfig.json",
         "build:es6": "cross-env NODE_ENV=production tsc -m es6 --outDir dist/es6 -p tsconfig.json",
+        "build:styleguide": "cross-env NODE_ENV=production styleguidist build",
         "bundle:analysis": "npm run build:bundle -- --config ./webpack.analyzer.config.js",
         "test": "npm run lint && npm run test:unit",
         "test:unit": "cross-env NODE_ENV=test jest --coverage",
@@ -49,7 +51,9 @@
         "jest-styled-components": "^7.0.2",
         "lint-staged": "^10.2.6",
         "react": "^16.13.1",
+        "react-docgen-typescript": "^1.16.5",
         "react-dom": "^16.13.1",
+        "react-styleguidist": "^11.0.6",
         "react-test-renderer": "^16.13.1",
         "rimraf": "^3.0.2",
         "source-map-loader": "^0.2.4",
@@ -57,6 +61,7 @@
         "stylelint": "^13.5.0",
         "stylelint-config-recommended": "^3.0.0",
         "stylelint-config-styled-components": "^0.1.1",
+        "stylelint-no-unsupported-browser-features": "^4.0.0",
         "stylelint-processor-styled-components": "^1.10.0",
         "ts-jest": "^26.0.0",
         "typescript": "^3.9.2",
@@ -73,6 +78,13 @@
     "engines": {
         "node": ">=12.0.0"
     },
+    "browserslist": [
+        "> 0.55%",
+        "not IE 11",
+        "not IE_Mob 11",
+        "not Op_Mini all",
+        "not Safari < 12"
+    ],
     "husky": {
         "hooks": {
             "pre-commit": "tsc --noEmit && lint-staged"
