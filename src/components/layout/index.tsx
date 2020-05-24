@@ -8,15 +8,15 @@ export interface LayoutProps {
     /** The Layout's classname. */
     readonly className?: string;
     /** The Layout's children. */
-    readonly children?: React.ReactNode | React.ReactNode[];
+    readonly children?: React.ReactNode[] | React.ReactNode;
     /** The Layout's header. */
-    readonly header?: React.ReactNode;
+    readonly header?: JSX.Element;
     /** The Layout's sidebar. */
-    readonly sidebar?: React.ReactNode;
+    readonly sidebar?: JSX.Element;
     /** The Layout's main content. */
-    readonly main?: React.ReactNode;
+    readonly main?: JSX.Element;
     /** The Layout's footer. */
-    readonly footer?: React.ReactNode;
+    readonly footer?: JSX.Element;
 }
 
 const generateWrapper: React.FC<LayoutProps & { type: string }> = ({
@@ -24,38 +24,33 @@ const generateWrapper: React.FC<LayoutProps & { type: string }> = ({
     className,
     children,
     type
-}) => {
-    return React.createElement(
+}) =>
+    React.createElement(
         type,
         {
             id,
             className
         },
-        [children]
+        children
     );
-};
 
 const HeaderWrapper: React.FC<LayoutProps> = ({ id, className, header }) =>
-    generateWrapper({ type: 'header', id, className, children: [header] });
+    generateWrapper({ type: 'header', id, className, children: header });
 
 const SidebarWrapper: React.FC<LayoutProps> = ({ id, className, sidebar }) =>
-    generateWrapper({ type: 'aside', id, className, children: [sidebar] });
+    generateWrapper({ type: 'aside', id, className, children: sidebar });
 
-const MainWrapper: React.FC<LayoutProps> = ({
-    id,
-    className,
-    children,
-    main
-}) =>
-    generateWrapper({
+const MainWrapper: React.FC<LayoutProps> = ({ id, className, children }) => {
+    return generateWrapper({
         type: 'main',
         id,
         className,
-        children: [main, children]
+        children
     });
+};
 
 const FooterWrapper: React.FC<LayoutProps> = ({ id, className, footer }) =>
-    generateWrapper({ type: 'footer', id, className, children: [footer] });
+    generateWrapper({ type: 'footer', id, className, children: footer });
 
 const SectionWrapper: React.FC<LayoutProps> = ({ id, className, children }) =>
     generateWrapper({ type: 'section', id, className, children });
@@ -99,20 +94,22 @@ export const Layout: React.FC<LayoutProps> = ({
     footer
 }) => (
     <div id={id} className={className}>
-        {header && <Header key="header" header={header} />}
+        {header && <Header header={header} />}
         {sidebar ? (
-            <Section key="section" sidebar={sidebar}>
-                <Sidebar key="sidebar" sidebar={sidebar} />
-                <Main key="main" main={main}>
+            <Section sidebar={sidebar}>
+                <Sidebar sidebar={sidebar} />
+                <Main>
+                    {main}
                     {children}
                 </Main>
             </Section>
         ) : (
-            <Main key="main" main={main}>
+            <Main>
+                {main}
                 {children}
             </Main>
         )}
-        {footer && <Footer key="footer" footer={footer} />}
+        {footer && <Footer footer={footer} />}
     </div>
 );
 
