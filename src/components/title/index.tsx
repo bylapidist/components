@@ -5,10 +5,10 @@ import {
     fontSizeExtraLarge,
     fontSizeLarge,
     fontSizeMedium,
-    fontSizeSmall
-} from '../design-tokens';
+    fontSizeSmall,
+    PropsWithIdAndClassname
+} from '../../utilities';
 import { defaultTheme } from '../theme-provider';
-import { PropsWithIdAndClassname } from '../../utilities';
 
 export type TitleSize = 1 | 2 | 3 | 4 | 5 | 6;
 

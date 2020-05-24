@@ -11,10 +11,10 @@ import {
     slideUpLeft,
     stripUnit,
     relative,
-    thinking
-} from '../design-tokens';
+    thinking,
+    PropsWithIdAndClassname
+} from '../../utilities';
 import { defaultTheme } from '../theme-provider';
-import { PropsWithIdAndClassname } from '../../utilities';
 
 export interface LogoProps extends PropsWithIdAndClassname {
     /** The Logo's top left triangle color. */

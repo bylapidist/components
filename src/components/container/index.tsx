@@ -1,8 +1,12 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import { breakpoint, centeredHorizontal, relative } from '../design-tokens';
+import {
+    breakpoint,
+    centeredHorizontal,
+    relative,
+    PropsWithIdAndClassname
+} from '../../utilities';
 import { defaultTheme } from '../theme-provider';
-import { PropsWithIdAndClassname } from '../../utilities';
 
 export interface ContainerProps
     extends PropsWithIdAndClassname,

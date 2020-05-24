@@ -8,10 +8,10 @@ import {
     fontSizeMedium,
     fontSizeLarge,
     fontSizeExtraLarge,
-    fontSizeGigantic
-} from '../design-tokens';
+    fontSizeGigantic,
+    PropsWithIdAndClassname
+} from '../../utilities';
 import { defaultTheme } from '../theme-provider';
-import { PropsWithIdAndClassname } from '../../utilities';
 
 export type ParagraphWeight = 'regular' | 'bold';
 
