@@ -7,8 +7,6 @@
 - [ ] Are you reporting to the correct repository?
 - [ ] Did you perform a search in the issues?
 
-For more information, see the `CONTRIBUTING` guide.
-
 ### Versions
 
 You can get this information from executing `npm version`.
