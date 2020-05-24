@@ -1,5 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`it maps to the correct title element 1`] = `
+.c0 {
+  font-size: 16px;
+}
+
+<h3
+  className="c0"
+>
+  H3
+</h3>
+`;
+
 exports[`it works as h1 1`] = `
 .c0 {
   font-size: 36px;

@@ -20,51 +20,56 @@ export interface TitleProps {
     readonly size?: TitleSize;
 }
 
+interface TitleMapper {
+    [level: number]: React.FC<TitleProps>;
+}
+
 const H1Title: React.FC<TitleProps> = styled.h1`
     ${fontSizeExtraLarge()};
 `;
+
 const H2Title: React.FC<TitleProps> = styled.h2`
     ${fontSizeLarge()};
 `;
+
 const H3Title: React.FC<TitleProps> = styled.h3`
     ${fontSizeMedium()};
 `;
+
 const H4Title: React.FC<TitleProps> = styled.h4`
     ${fontSizeSmall()};
 `;
+
 const H5Title: React.FC<TitleProps> = styled.h5`
     ${fontSizeSmall()};
 `;
+
 const H6Title: React.FC<TitleProps> = styled.h6`
     ${fontSizeSmall()};
 `;
 
-const TitleBySize: React.FC<TitleProps> = ({ id, className, children, size }) =>
-    size === 2 ? (
-        <H2Title id={id} className={className}>
+const titles: TitleMapper = {
+    1: H1Title,
+    2: H2Title,
+    3: H3Title,
+    4: H4Title,
+    5: H5Title,
+    6: H6Title
+};
+
+export const TitleBySize: React.FC<TitleProps> = ({
+    id,
+    className,
+    children,
+    size = 1
+}) => {
+    const TitleToUse = titles[size];
+    return (
+        <TitleToUse id={id} className={className}>
             {children}
-        </H2Title>
-    ) : size === 3 ? (
-        <H3Title id={id} className={className}>
-            {children}
-        </H3Title>
-    ) : size === 4 ? (
-        <H4Title id={id} className={className}>
-            {children}
-        </H4Title>
-    ) : size === 5 ? (
-        <H5Title id={id} className={className}>
-            {children}
-        </H5Title>
-    ) : size === 6 ? (
-        <H6Title id={id} className={className}>
-            {children}
-        </H6Title>
-    ) : (
-        <H1Title id={id} className={className}>
-            {children}
-        </H1Title>
+        </TitleToUse>
     );
+};
 
 export const Title: React.FC<TitleProps> = styled(TitleBySize)<TitleProps>`
     ${fontFamilyBold()};
