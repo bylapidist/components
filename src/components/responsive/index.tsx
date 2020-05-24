@@ -1,5 +1,10 @@
 import React, { PropsWithChildren } from 'react';
-import { breakpoint, Device, PropsWithIdAndClassname } from '../../utilities';
+import {
+    allDevices,
+    allMediaQueries,
+    Device,
+    PropsWithIdAndClassname
+} from '../../utilities';
 
 export interface ResponsiveProps
     extends PropsWithIdAndClassname,
@@ -17,14 +22,22 @@ export class Responsive extends React.Component<
     ResponsiveState
 > {
     private triggerAtMediaQueries: { [device: string]: MediaQueryList } = {};
+    private readonly allMediaQueries: {
+        [device: string]: string;
+    } = allMediaQueries();
 
     private matchesQuery(): Device | undefined {
         const queries = this.triggerAtMediaQueries;
+        const matchingDevices: Device[] = [];
 
         for (const device of Object.keys(queries)) {
             if (queries[device].matches) {
-                return device as Device;
+                matchingDevices.push(device as Device);
             }
+        }
+
+        if (matchingDevices.length > 0) {
+            return matchingDevices.pop();
         }
 
         return undefined;
@@ -44,37 +57,34 @@ export class Responsive extends React.Component<
             matches: undefined
         };
 
-        const devicesToRenderAt: Device[] = device
-            ? [device]
-            : ['mobile-large', 'tablet-large', 'laptop-large'];
+        const devicesToRenderAt: Device[] = device ? [device] : [...allDevices];
 
         for (const deviceToRenderAt of devicesToRenderAt) {
             this.triggerAtMediaQueries[deviceToRenderAt] = window.matchMedia(
-                breakpoint(deviceToRenderAt)
+                this.allMediaQueries[deviceToRenderAt]
             );
         }
     }
 
     componentDidMount(): void {
         const { device } = this.props;
-        const devicesToRenderAt: Device[] = device
-            ? [device]
-            : ['mobile-large', 'tablet-large', 'laptop-large'];
+        const devicesToRenderAt: Device[] = device ? [device] : [...allDevices];
 
         for (const deviceToRenderAt of devicesToRenderAt) {
             this.triggerAtMediaQueries[deviceToRenderAt] = window.matchMedia(
-                breakpoint(deviceToRenderAt)
+                this.allMediaQueries[deviceToRenderAt]
             );
             this.triggerAtMediaQueries[deviceToRenderAt].addListener(
-                this.updateMatches
+                this.updateMatches.bind(this)
             );
+            this.updateMatches();
         }
     }
 
     componentWillUnmount(): void {
         for (const device of Object.keys(this.triggerAtMediaQueries)) {
             this.triggerAtMediaQueries[device].removeListener(
-                this.updateMatches
+                this.updateMatches.bind(this)
             );
         }
     }
