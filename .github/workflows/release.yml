@@ -39,5 +39,5 @@ jobs:
               with:
                   ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}
                   BRANCH: gh-pages
-                  FOLDER: public
+                  FOLDER: styleguide
 
