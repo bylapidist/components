@@ -3,12 +3,9 @@ import styled from 'styled-components';
 import { absolute, fillParent } from '../design-tokens';
 import { defaultTheme } from '../theme-provider';
 import { Logo, LogoProps } from '../logo';
+import { PropsWithIdAndClassname } from '../../utilities';
 
-export interface LoadingProps {
-    /** The Loading's id. */
-    readonly id?: string;
-    /** The Loading's classname. */
-    readonly className?: string;
+export interface LoadingProps extends PropsWithIdAndClassname {
     /** The Loading's size. */
     readonly size?: string;
     /** The Loading's color. */

@@ -1,14 +1,11 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { defaultTheme } from '../theme-provider';
+import { PropsWithIdAndClassname } from '../../utilities/common';
 
-export interface LayoutProps {
-    /** The Layout's id. */
-    readonly id?: string;
-    /** The Layout's classname. */
-    readonly className?: string;
-    /** The Layout's children. */
-    readonly children?: React.ReactNode[] | React.ReactNode;
+export interface LayoutProps
+    extends PropsWithIdAndClassname,
+        PropsWithChildren<{}> {
     /** The Layout's header. */
     readonly header?: JSX.Element;
     /** The Layout's sidebar. */

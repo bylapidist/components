@@ -1,15 +1,12 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import styled, { FlattenSimpleInterpolation } from 'styled-components';
 import { defaultBorderRadius, defaultBoxShadow } from '../design-tokens';
 import { defaultTheme } from '../theme-provider';
+import { PropsWithIdAndClassname } from '../../utilities';
 
-export interface PanelProps {
-    /** The Panel's id. */
-    readonly id?: string;
-    /** The Panel's classname. */
-    readonly className?: string;
-    /** The Panel's children. */
-    readonly children?: React.ReactNode;
+export interface PanelProps
+    extends PropsWithIdAndClassname,
+        PropsWithChildren<{}> {
     /** The Panel's elevated state. Gives a box shadow. */
     readonly elevated?: boolean;
     /** The Panel's rounded state. Gives a rounded border. */

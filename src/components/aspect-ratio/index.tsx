@@ -1,13 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { PropsWithIdAndClassname } from '../../utilities';
 
 export type Ratio = { x: number | string; y: number | string };
 
-export interface AspectRatioProps {
-    /** The AspectRatio's id. */
-    readonly id?: string;
-    /** The AspectRatio's classname. */
-    readonly className?: string;
+export interface AspectRatioProps extends PropsWithIdAndClassname {
     /** The AspectRatio's ratio. */
     readonly ratio: string | Ratio;
 }

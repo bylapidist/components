@@ -2,12 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { fontFamilyRegular, focus, defaultEasing } from '../design-tokens';
 import { defaultTheme } from '../theme-provider';
+import { PropsWithIdAndClassname } from '../../utilities';
 
-export interface LinkProps {
-    /** The Link's id. */
-    readonly id?: string;
-    /** The Link's classname. */
-    readonly className?: string;
+export interface LinkProps extends PropsWithIdAndClassname {
     /** The Link's title. */
     readonly title: string;
     /** The Link's href. */

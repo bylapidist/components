@@ -1,0 +1,1 @@
+export { PropsWithIdAndClassname } from './common';

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import {
     fontFamilyBold,
@@ -11,6 +11,7 @@ import {
     fontSizeGigantic
 } from '../design-tokens';
 import { defaultTheme } from '../theme-provider';
+import { PropsWithIdAndClassname } from '../../utilities';
 
 export type ParagraphWeight = 'regular' | 'bold';
 
@@ -22,13 +23,9 @@ export type ParagraphSize =
     | 'extra-large'
     | 'gigantic';
 
-export interface ParagraphProps {
-    /** The Paragraph's id. */
-    readonly id?: string;
-    /** The Paragraph's classname. */
-    readonly className?: string;
-    /** The Paragraph's children. */
-    readonly children?: React.ReactNode;
+export interface ParagraphProps
+    extends PropsWithIdAndClassname,
+        PropsWithChildren<{}> {
     /** The Paragraph's font weight. */
     readonly weight?: ParagraphWeight;
     /** The Paragraph's font size. */

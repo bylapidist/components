@@ -8,14 +8,11 @@ import {
     fontSizeSmall
 } from '../design-tokens';
 import { defaultTheme } from '../theme-provider';
+import { PropsWithIdAndClassname } from '../../utilities';
 
 export type TitleSize = 1 | 2 | 3 | 4 | 5 | 6;
 
-export interface TitleProps {
-    /** The Title's id. */
-    readonly id?: string;
-    /** The Title's classname. */
-    readonly className?: string;
+export interface TitleProps extends PropsWithIdAndClassname {
     /** The Title's size. */
     readonly size?: TitleSize;
 }

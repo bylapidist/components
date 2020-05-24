@@ -14,12 +14,9 @@ import {
     thinking
 } from '../design-tokens';
 import { defaultTheme } from '../theme-provider';
+import { PropsWithIdAndClassname } from '../../utilities';
 
-export interface LogoProps {
-    /** The Logo's id. */
-    readonly id?: string;
-    /** The Logo's classname. */
-    readonly className?: string;
+export interface LogoProps extends PropsWithIdAndClassname {
     /** The Logo's top left triangle color. */
     readonly bUpColor?: string;
     /** The Logo's bottom left triangle color. */
