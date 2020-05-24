@@ -2,7 +2,7 @@
     <img width="120" src="https://lapidist.net/logo.svg" alt="Lapidist Logo"/>
 </p>
 
-<h1 align="center">@lapidist/components</h1>
+<h2 align="center">@lapidist/components</h2>
 
 <div align="center">
 
