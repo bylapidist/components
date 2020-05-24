@@ -1,12 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { defaultTheme } from '../theme-provider';
+import { PropsWithIdAndClassname } from '../../utilities';
 
-export interface ImageProps {
-    /** The Image's id. */
-    readonly id?: string;
-    /** The Image's classname. */
-    readonly className?: string;
+export interface ImageProps extends PropsWithIdAndClassname {
     /** The Image's alt tag. */
     readonly alt?: string;
     /** The Image's src. */

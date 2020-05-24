@@ -10,12 +10,9 @@ import {
 } from '../design-tokens';
 import { defaultTheme, ColorGroup } from '../theme-provider';
 import { Panel, PanelProps } from '../panel';
+import { PropsWithIdAndClassname } from '../../utilities';
 
-export interface ButtonProps {
-    /** The Button's id. */
-    readonly id?: string;
-    /** The Button's classname. */
-    readonly className?: string;
+export interface ButtonProps extends PropsWithIdAndClassname {
     /** The Button's onClick callback function. */
     readonly handleClick?: (event: React.MouseEvent) => void;
     /** The Button's text. */

@@ -1,15 +1,12 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { breakpoint, centeredHorizontal, relative } from '../design-tokens';
 import { defaultTheme } from '../theme-provider';
+import { PropsWithIdAndClassname } from '../../utilities';
 
-export interface ContainerProps {
-    /** The Container's id. */
-    readonly id?: string;
-    /** The Container's classname. */
-    readonly className?: string;
-    /** The Container's children. */
-    readonly children?: React.ReactNode;
+export interface ContainerProps
+    extends PropsWithIdAndClassname,
+        PropsWithChildren<{}> {
     /** The Container's max width. */
     readonly maxWidth?: string;
     /** The Container's padding. */
