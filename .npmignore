@@ -12,5 +12,6 @@ jest.config.js
 .npmignore
 .eslintignore
 .lintstagedrc
+.stylelintrc
 coverage
 *.tgz

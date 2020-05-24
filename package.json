@@ -17,7 +17,9 @@
         "lapidist"
     ],
     "scripts": {
-        "lint": "eslint . --ext js,ts,tsx",
+        "lint": "npm run lint:css && npm run lint:js",
+        "lint:css": "stylelint './src/**/*.tsx'",
+        "lint:js": "eslint . --ext js,ts,tsx",
         "fix": "eslint --fix . --ext js,ts,tsx",
         "watch": "cross-env NODE_ENV=development tsc -w",
         "watch:tests": "cross-env NODE_ENV=test jest --watch",
@@ -52,6 +54,10 @@
         "rimraf": "^3.0.2",
         "source-map-loader": "^0.2.4",
         "styled-components": "^5.1.0",
+        "stylelint": "^13.5.0",
+        "stylelint-config-recommended": "^3.0.0",
+        "stylelint-config-styled-components": "^0.1.1",
+        "stylelint-processor-styled-components": "^1.10.0",
         "ts-jest": "^26.0.0",
         "typescript": "^3.9.2",
         "webpack": "^4.43.0",
