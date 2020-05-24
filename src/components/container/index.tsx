@@ -6,7 +6,6 @@ import {
     relative,
     PropsWithIdAndClassname
 } from '../../utilities';
-import { defaultTheme } from '../theme-provider';
 
 export interface ContainerProps
     extends PropsWithIdAndClassname,
@@ -21,12 +20,11 @@ export const Container: React.FC<ContainerProps> = styled.div<ContainerProps>`
     ${relative()};
     ${centeredHorizontal()};
 
-    max-width: ${(props): string =>
-        props.maxWidth || defaultTheme.breakpoints.laptop.l};
-    padding: ${(props): string => props.padding || defaultTheme.sizing.m};
+    max-width: ${(props): string => props.maxWidth || '100%'};
+    padding: ${(props): string => props.padding || '0'};
 
     @media ${breakpoint('tablet-large')} {
-        padding: ${(props): string => props.padding || defaultTheme.sizing.s};
+        padding: ${(props): string => props.padding || '0'};
     }
 `;
 
