@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 import { Logo, logoAnimation } from './index';
-import { slideUpLeft, thinking } from '../design-tokens';
+import { slideUpLeft, thinking } from '../../utilities';
 import { defaultTheme } from '../theme-provider';
 
 test('it works', () => {

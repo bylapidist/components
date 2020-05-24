@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { absolute, fillParent } from '../design-tokens';
+import { absolute, fillParent, PropsWithIdAndClassname } from '../../utilities';
 import { defaultTheme } from '../theme-provider';
 import { Logo, LogoProps } from '../logo';
-import { PropsWithIdAndClassname } from '../../utilities';
 
 export interface LoadingProps extends PropsWithIdAndClassname {
     /** The Loading's size. */

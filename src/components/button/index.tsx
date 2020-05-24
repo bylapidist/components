@@ -6,11 +6,11 @@ import {
     fontFamilyRegular,
     fontSizeMedium,
     relative,
-    absolute
-} from '../design-tokens';
+    absolute,
+    PropsWithIdAndClassname
+} from '../../utilities';
 import { defaultTheme, ColorGroup } from '../theme-provider';
 import { Panel, PanelProps } from '../panel';
-import { PropsWithIdAndClassname } from '../../utilities';
 
 export interface ButtonProps extends PropsWithIdAndClassname {
     /** The Button's onClick callback function. */

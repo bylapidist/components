@@ -1,8 +1,11 @@
 import React, { PropsWithChildren } from 'react';
 import styled, { FlattenSimpleInterpolation } from 'styled-components';
-import { defaultBorderRadius, defaultBoxShadow } from '../design-tokens';
 import { defaultTheme } from '../theme-provider';
-import { PropsWithIdAndClassname } from '../../utilities';
+import {
+    defaultBorderRadius,
+    defaultBoxShadow,
+    PropsWithIdAndClassname
+} from '../../utilities';
 
 export interface PanelProps
     extends PropsWithIdAndClassname,

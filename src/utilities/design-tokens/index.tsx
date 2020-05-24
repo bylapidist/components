@@ -1,4 +1,4 @@
-import { defaultTheme } from '../theme-provider';
+import { defaultTheme } from '../../components/theme-provider';
 import {
     css,
     DefaultTheme,
