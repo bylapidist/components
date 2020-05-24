@@ -6,7 +6,7 @@
 
 <div align="center">
 
-Opinionated [React](https://reactjs.org/) UI library, built with [styled components](https://styled-components.com/) and [TypeScript](https://www.typescriptlang.org/).
+Opinionated [React](https://reactjs.org/) UI library, built with [styled-components](https://styled-components.com/) and [TypeScript](https://www.typescriptlang.org/).
 
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@lapidist/components)
 [![npm](https://img.shields.io/npm/v/@lapidist/components)](https://www.npmjs.com/package/@lapidist/components)
@@ -27,6 +27,8 @@ Opinionated [React](https://reactjs.org/) UI library, built with [styled compone
 ## Getting Started
 
 `@lapidist/components` is available as an [npm package](https://www.npmjs.com/package/@lapidist/components).
+
+See [https://components.lapidist.net](https://components.lapidist.net) for the full documentation.
 
 ### Installation
 

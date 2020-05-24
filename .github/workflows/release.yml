@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v1
+              uses: actions/checkout@v2
             - name: Setup Node.js
               uses: actions/setup-node@v1
               with:
@@ -30,7 +30,9 @@ jobs:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
               run: npx semantic-release
             - name: Build styleguide
+              uses: actions/checkout@v2
               run: |
+                  git fetch --depth=1 origin +refs/tags/*:refs/tags/*
                   npm run build:styleguide
                   touch styleguide/.nojekyll
                   echo "components.lapidist.net" >> styleguide/CNAME
