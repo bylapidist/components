@@ -4,13 +4,13 @@ exports[`it works 1`] = `
 .c0 {
   position: relative;
   margin: 0 auto;
-  max-width: 1440px;
-  padding: 16px;
+  max-width: 100%;
+  padding: 0;
 }
 
 @media (min-width:768px) {
   .c0 {
-    padding: 14px;
+    padding: 0;
   }
 }
 
@@ -28,12 +28,12 @@ exports[`it works with maxWidth 1`] = `
   position: relative;
   margin: 0 auto;
   max-width: 600px;
-  padding: 16px;
+  padding: 0;
 }
 
 @media (min-width:768px) {
   .c0 {
-    padding: 14px;
+    padding: 0;
   }
 }
 
@@ -50,7 +50,7 @@ exports[`it works with padding 1`] = `
 .c0 {
   position: relative;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 100%;
   padding: 60px;
 }
 

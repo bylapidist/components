@@ -11,6 +11,10 @@ const getVersion = () => {
     }
 };
 
+const resolveDoc = (section, title) => {
+    return path.resolve(__dirname, `docs/${section}/${title}.md`);
+};
+
 module.exports = {
     version: getVersion(),
     title: '@lapidist/components',
@@ -18,12 +22,42 @@ module.exports = {
     pagePerSection: true,
     usageMode: 'expand',
     components: 'src/components/**/*.tsx',
-    webpackConfig: Object.assign({}, require('./webpack.config.js')),
+    webpackConfig: require('./webpack.config.js'),
     propsParser: require('react-docgen-typescript').withCustomConfig(
         './tsconfig.json',
         {}
     ).parse,
+    moduleAliases: {
+        '@lapidist/components': path.resolve(__dirname, 'src')
+    },
+    getExampleFilename(componentPath) {
+        const dir = path.dirname(componentPath);
+        return path.join(dir, 'README.md');
+    },
+    getComponentPathLine(componentPath) {
+        const dir = path.dirname(componentPath);
+        const getName = (baseName) =>
+            baseName.replace(/(^\w|-\w)/g, (text) =>
+                text.replace(/-/, '').toUpperCase()
+            );
+        return `import { ${getName(
+            path.basename(dir)
+        )} } from '@lapidist/components';`;
+    },
     skipComponentsWithoutExample: true,
+    require: [path.join(__dirname, 'docs/css/main.css')],
+    sections: [
+        {
+            name: 'Getting Started',
+            sectionDepth: 0,
+            content: resolveDoc('getting-started', 'index')
+        },
+        {
+            name: 'Components',
+            sectionDepth: 0,
+            components: path.resolve(__dirname, 'src/components/**/*.tsx')
+        }
+    ],
     template: {
         favicon: 'https://lapidist.net/favicon-32x32.png',
         head: {
@@ -31,11 +65,7 @@ module.exports = {
                 {
                     rel: 'stylesheet',
                     href:
-                        'https://fonts.googleapis.com/css?family=Montserrat:400,600,700'
-                },
-                {
-                    rel: 'stylesheet',
-                    href: '/style.css'
+                        'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700'
                 }
             ],
             meta: [
@@ -53,27 +83,12 @@ module.exports = {
         }
     },
     styles: {
-        Logo: {
-            logo: {
-                backgroundImage: 'url(logo.svg)',
-                backgroundRepeat: 'no-repeat',
-                paddingTop: '80px',
-                backgroundPosition: 'center 0',
-                textAlign: 'center',
-                backgroundSize: '60px 60px'
-            }
-        },
-        Version: {
-            version: {
-                textAlign: 'center'
-            }
-        },
         StyleGuide: {
             sidebar: {
-                width: '240px'
+                width: '280px'
             },
             hasSidebar: {
-                paddingLeft: '240px'
+                paddingLeft: '280px'
             }
         }
     }

@@ -1,5 +1,7 @@
 <p align="center">
-    <img width="120" src="https://lapidist.net/logo.svg" alt="Lapidist Logo"/>
+    <a href="https://components.lapidist.net/" target="_blank" rel="noopener">
+        <img width="120" src="https://lapidist.net/logo.svg" alt="Lapidist Logo"/>
+    </a>
 </p>
 
 <h2 align="center">@lapidist/components</h2>
@@ -32,8 +34,12 @@ See [https://components.lapidist.net](https://components.lapidist.net) for the f
 
 ### Installation
 
-```sh
+```shell
+// via npm
 npm install @lapidist/components styled-components
+
+// or via yarn
+yarn add @lapidist/components styled-components
 ```
 
 ### Usage
@@ -41,7 +47,7 @@ npm install @lapidist/components styled-components
 Ensure you wrap your application with the `<ThemeProvider>` component. 
 Here is a quick example to get you started:
 
-```jsx harmony
+```jsx static
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider, Button } from '@lapidist/components';
