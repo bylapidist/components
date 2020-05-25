@@ -10,7 +10,7 @@ export interface ResponsiveProps
     extends PropsWithIdAndClassname,
         PropsWithChildren<{}> {
     device?: Device;
-    renderComponent?(devices?: Device): React.ReactNode;
+    renderComponent?(device?: Device): React.ReactNode;
 }
 
 export interface ResponsiveState {
