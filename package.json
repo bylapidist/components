@@ -4,6 +4,14 @@
     "description": "Lapidist components",
     "author": "Brett Dorrans <hello@lapidist.net>",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bylapidist/components.git"
+    },
+    "bugs": {
+        "url": "https://github.com/bylapidist/components/issues"
+    },
+    "homepage": "https://github.com/bylapidist/components#readme",
     "publishConfig": {
         "access": "public"
     },
