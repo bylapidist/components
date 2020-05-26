@@ -1,6 +1,5 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import { defaultTheme } from '../theme-provider';
 import { PropsWithIdAndClassname } from '../../utilities/common';
 
 export interface LayoutProps
@@ -14,6 +13,8 @@ export interface LayoutProps
     readonly main?: JSX.Element;
     /** The Layout's footer. */
     readonly footer?: JSX.Element;
+    /** The Layout's sidebar width. */
+    readonly sidebarWidth?: string;
 }
 
 const generateWrapper: React.FC<LayoutProps & { type: string }> = ({
@@ -35,7 +36,12 @@ const HeaderWrapper: React.FC<LayoutProps> = ({ id, className, header }) =>
     generateWrapper({ type: 'header', id, className, children: header });
 
 const SidebarWrapper: React.FC<LayoutProps> = ({ id, className, sidebar }) =>
-    generateWrapper({ type: 'aside', id, className, children: sidebar });
+    generateWrapper({
+        type: 'aside',
+        id,
+        className,
+        children: sidebar
+    });
 
 const MainWrapper: React.FC<LayoutProps> = ({ id, className, children }) => {
     return generateWrapper({
@@ -54,15 +60,13 @@ const SectionWrapper: React.FC<LayoutProps> = ({ id, className, children }) =>
 
 const Header: React.FC<LayoutProps> = styled(HeaderWrapper)`
     flex: 0 0 auto;
-    height: ${defaultTheme.sizing.xxl};
-    padding: ${defaultTheme.sizing.xxxs};
-    line-height: ${defaultTheme.sizing.xxl};
 `;
 
 const Sidebar: React.FC<LayoutProps> = styled(SidebarWrapper)`
     flex: 0 0 auto;
     position: relative;
     min-width: 0;
+    width: ${({ sidebarWidth }): string => sidebarWidth || '25%'};
 `;
 
 const Main: React.FC<LayoutProps> = styled(MainWrapper)`
@@ -70,9 +74,7 @@ const Main: React.FC<LayoutProps> = styled(MainWrapper)`
     min-height: 0;
 `;
 
-const Footer: React.FC<LayoutProps> = styled(FooterWrapper)`
-    padding: ${defaultTheme.sizing.m};
-`;
+const Footer: React.FC<LayoutProps> = styled(FooterWrapper)``;
 
 const Section: React.FC<LayoutProps> = styled(SectionWrapper)`
     display: flex;
@@ -88,13 +90,14 @@ export const Layout: React.FC<LayoutProps> = ({
     header,
     sidebar,
     main,
-    footer
+    footer,
+    sidebarWidth
 }) => (
     <div id={id} className={className}>
         {header && <Header header={header} />}
         {sidebar ? (
             <Section sidebar={sidebar}>
-                <Sidebar sidebar={sidebar} />
+                <Sidebar sidebar={sidebar} sidebarWidth={sidebarWidth} />
                 <Main>
                     {main}
                     {children}

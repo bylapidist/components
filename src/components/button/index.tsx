@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
+    absolute,
+    relative,
     defaultTransition,
     focus,
     fontFamilyRegular,
     fontSizeMedium,
-    relative,
-    absolute,
     PropsWithIdAndClassname
 } from '../../utilities';
 import { defaultTheme, ColorGroup } from '../theme-provider';
@@ -43,7 +43,7 @@ const ButtonInner: React.FC<PanelProps> = styled(Panel)<PanelProps>`
     text-decoration: none;
 `;
 
-const ButtonText: React.FC = styled.span`
+const ButtonText: React.FC = styled.div`
     ${absolute()};
     top: 50%;
     left: 0;
@@ -52,7 +52,7 @@ const ButtonText: React.FC = styled.span`
     transform: translateY(-50%);
 `;
 
-export const Button: React.FC<ButtonProps> = React.forwardRef<
+const BaseButton: React.FC<ButtonProps> = React.forwardRef<
     HTMLButtonElement,
     ButtonProps
 >(function Button(
@@ -93,7 +93,7 @@ export const Button: React.FC<ButtonProps> = React.forwardRef<
     );
 });
 
-export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
+export const Button: React.FC<ButtonProps> = styled(BaseButton)`
     ${relative()};
     ${defaultTransition()};
     ${fontFamilyRegular()};
@@ -104,9 +104,10 @@ export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
     height: ${({ small }): string =>
         small ? defaultTheme.sizing.xxl : defaultTheme.sizing.xxxl};
     display: ${({ block }): string => (block ? 'flex' : 'inline-flex')};
-    width: ${({ block }): string => (block ? '100%' : 'auto')};
     margin-right: ${defaultTheme.sizing.s};
     margin-bottom: ${defaultTheme.sizing.s};
+    width: ${({ block }): string => (block ? '100%' : 'auto')};
+    min-width: 150px;
     padding: 0;
     justify-content: center;
     opacity: ${({ disabled, loading }): string =>
@@ -121,7 +122,6 @@ export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
             : loading
             ? 'transparent'
             : defaultTheme.colors.greys.lightest};
-
     :disabled {
         cursor: not-allowed;
         opacity: ${({ disabled, loading }): string =>
@@ -131,14 +131,13 @@ export const DefaultButton: React.FC<ButtonProps> = styled(Button)`
             colorGroup = defaultTheme.colors.greys
         }): string => (loading ? 'transparent' : colorGroup.base)};
     }
-
     :hover:not(:disabled) {
         cursor: pointer;
     }
 `;
 
 const generateButton: React.FC<ButtonProps> = ({ colorGroup, ...props }) => {
-    return <DefaultButton colorGroup={colorGroup} {...props} />;
+    return <Button colorGroup={colorGroup} {...props} />;
 };
 
 export const PrimaryButton: React.FC<ButtonProps> = (props) =>
@@ -153,7 +152,7 @@ export const TertiaryButton: React.FC<ButtonProps> = (props) =>
 export const DangerButton: React.FC<ButtonProps> = (props) =>
     generateButton({ colorGroup: defaultTheme.colors.reds, ...props });
 
-DefaultButton.displayName = 'Button';
+Button.displayName = 'Button';
 PrimaryButton.displayName = 'PrimaryButton';
 SecondaryButton.displayName = 'SecondaryButton';
 TertiaryButton.displayName = 'TertiaryButton';
