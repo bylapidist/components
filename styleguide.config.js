@@ -20,7 +20,6 @@ module.exports = {
     title: '@lapidist/components',
     assetsDir: path.resolve(__dirname, 'docs', 'assets'),
     pagePerSection: true,
-    usageMode: 'expand',
     components: 'src/components/**/*.tsx',
     webpackConfig: require('./webpack.config.js'),
     propsParser: require('react-docgen-typescript').withCustomConfig(

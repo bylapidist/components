@@ -5,9 +5,6 @@ exports[`it works 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  height: 45px;
-  padding: 2px;
-  line-height: 45px;
 }
 
 .c2 {
@@ -16,6 +13,7 @@ exports[`it works 1`] = `
   flex: 0 0 auto;
   position: relative;
   min-width: 0;
+  width: 25%;
 }
 
 .c3 {
@@ -23,10 +21,6 @@ exports[`it works 1`] = `
   -ms-flex: auto;
   flex: auto;
   min-height: 0;
-}
-
-.c4 {
-  padding: 16px;
 }
 
 .c1 {
@@ -70,7 +64,7 @@ exports[`it works 1`] = `
     </main>
   </section>
   <footer
-    className="c4"
+    className=""
   >
     <p>
       Footer
@@ -84,9 +78,6 @@ exports[`it works nested 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  height: 45px;
-  padding: 2px;
-  line-height: 45px;
 }
 
 .c2 {
@@ -95,6 +86,7 @@ exports[`it works nested 1`] = `
   flex: 0 0 auto;
   position: relative;
   min-width: 0;
+  width: 25%;
 }
 
 .c3 {
@@ -102,10 +94,6 @@ exports[`it works nested 1`] = `
   -ms-flex: auto;
   flex: auto;
   min-height: 0;
-}
-
-.c4 {
-  padding: 16px;
 }
 
 .c1 {
@@ -169,7 +157,7 @@ exports[`it works nested 1`] = `
     </main>
   </section>
   <footer
-    className="c4"
+    className=""
   >
     <p>
       Footer
@@ -183,9 +171,6 @@ exports[`it works without footer 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  height: 45px;
-  padding: 2px;
-  line-height: 45px;
 }
 
 .c2 {
@@ -194,6 +179,7 @@ exports[`it works without footer 1`] = `
   flex: 0 0 auto;
   position: relative;
   min-width: 0;
+  width: 25%;
 }
 
 .c3 {
@@ -253,6 +239,7 @@ exports[`it works without header 1`] = `
   flex: 0 0 auto;
   position: relative;
   min-width: 0;
+  width: 25%;
 }
 
 .c2 {
@@ -260,10 +247,6 @@ exports[`it works without header 1`] = `
   -ms-flex: auto;
   flex: auto;
   min-height: 0;
-}
-
-.c3 {
-  padding: 16px;
 }
 
 .c0 {
@@ -300,7 +283,7 @@ exports[`it works without header 1`] = `
     </main>
   </section>
   <footer
-    className="c3"
+    className=""
   >
     <p>
       Footer
@@ -314,9 +297,6 @@ exports[`it works without sidebar 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  height: 45px;
-  padding: 2px;
-  line-height: 45px;
 }
 
 .c1 {
@@ -324,10 +304,6 @@ exports[`it works without sidebar 1`] = `
   -ms-flex: auto;
   flex: auto;
   min-height: 0;
-}
-
-.c2 {
-  padding: 16px;
 }
 
 <div>
@@ -346,7 +322,7 @@ exports[`it works without sidebar 1`] = `
     </p>
   </main>
   <footer
-    className="c2"
+    className=""
   >
     <p>
       Footer

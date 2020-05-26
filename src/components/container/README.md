@@ -1,7 +1,7 @@
 The default Container is horizontally centered, with a configurable max-width and padding.
 
 ```jsx harmony
-import { Paragraph } from '../index';
+import { Paragraph } from '@lapidist/components';
 
 <div style={{ background: 'black', padding: '20px' }}>
     <Container maxWidth="500px" padding="20px" style={{ background: 'white' }}>
@@ -15,7 +15,7 @@ import { Paragraph } from '../index';
 Without specifying these the Container is fluid full-width with zero padding. 
 
 ```jsx harmony
-import { Paragraph } from '../index';
+import { Paragraph } from '@lapidist/components';
 
 <Container>
     <Paragraph>

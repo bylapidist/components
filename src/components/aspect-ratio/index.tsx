@@ -31,6 +31,7 @@ export const AspectRatio: React.FC<AspectRatioProps> = styled.div<
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 
     :before {
         ${({ ratio }): string => `${padding(ratio)};`};
@@ -40,10 +41,11 @@ export const AspectRatio: React.FC<AspectRatioProps> = styled.div<
 
     > :first-child {
         position: absolute;
+        object-fit: scale-down;
+        object-position: 50% 50%;
         top: 0;
         bottom: 0;
         left: 0;
-        height: 100%;
         width: 100%;
     }
 
