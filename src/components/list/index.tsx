@@ -1,32 +1,37 @@
 import React, { HTMLAttributes } from 'react';
 import styled, { StyledComponent } from 'styled-components';
+import { Text, TextProps } from '../text';
 import { PropsWithIdAndClassname } from '../../utilities';
 
 export type ListType = 'ol' | 'ul';
 
-export interface ListItemProps {
-    item: JSX.Element | string;
-    key: string | number;
+interface ListItemProps {
+    readonly item: JSX.Element | string;
+    readonly key: string | number;
 }
 
-export interface ListProps extends PropsWithIdAndClassname {
-    /** The List's items. */
+export interface ListProps extends TextProps, PropsWithIdAndClassname {
     readonly items: ListItemProps[];
-    /** The List's type. */
     readonly type?: ListType;
 }
 
 const Ordered: StyledComponent<
     'ol',
     HTMLAttributes<HTMLOListElement>
-> = styled.ol``;
+> = styled.ol<ListProps>`
+    list-style-type: decimal;
+    list-style-position: inside;
+`;
 
 const Unordered: StyledComponent<
     'ul',
     HTMLAttributes<HTMLUListElement>
-> = styled.ul``;
+> = styled.ul<ListProps>`
+    list-style-type: disc;
+    list-style-position: inside;
+`;
 
-export const ListItem: StyledComponent<
+const ListItem: StyledComponent<
     'li',
     HTMLAttributes<HTMLLIElement>
 > = styled.li``;
@@ -48,7 +53,14 @@ const OrderedOrUnordered = (
     </Component>
 );
 
-export const List: React.FC<ListProps> = ({ type = 'ul', items }) =>
-    OrderedOrUnordered(type == 'ol' ? Ordered : Unordered, items);
+export const List: React.FC<ListProps> = ({
+    type = 'ul',
+    items,
+    ...restProps
+}) => (
+    <Text {...restProps}>
+        {OrderedOrUnordered(type == 'ol' ? Ordered : Unordered, items)}
+    </Text>
+);
 
 List.displayName = 'List';

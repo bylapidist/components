@@ -1,73 +1,161 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it works with elements 1`] = `
-<ul
-  className=""
+.c0 {
+  font-family: Montserrat,sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+  text-align: left;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.c1 {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+<div
+  className="c0"
 >
-  <li
-    className=""
+  <ul
+    className="c1"
   >
-    <p>
-      hello
-    </p>
-  </li>
-  <li
-    className=""
-  >
-    <p>
-      world
-    </p>
-  </li>
-</ul>
+    <li
+      className=""
+    >
+      <p>
+        hello
+      </p>
+    </li>
+    <li
+      className=""
+    >
+      <p>
+        world
+      </p>
+    </li>
+  </ul>
+</div>
 `;
 
 exports[`it works with ordered 1`] = `
-<ol
-  className=""
+.c0 {
+  font-family: Montserrat,sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+  text-align: left;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.c1 {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+<div
+  className="c0"
 >
-  <li
-    className=""
+  <ol
+    className="c1"
   >
-    hello
-  </li>
-  <li
-    className=""
-  >
-    world
-  </li>
-</ol>
+    <li
+      className=""
+    >
+      hello
+    </li>
+    <li
+      className=""
+    >
+      world
+    </li>
+  </ol>
+</div>
 `;
 
 exports[`it works with strings 1`] = `
-<ul
-  className=""
+.c0 {
+  font-family: Montserrat,sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+  text-align: left;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.c1 {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+<div
+  className="c0"
 >
-  <li
-    className=""
+  <ul
+    className="c1"
   >
-    hello
-  </li>
-  <li
-    className=""
-  >
-    world
-  </li>
-</ul>
+    <li
+      className=""
+    >
+      hello
+    </li>
+    <li
+      className=""
+    >
+      world
+    </li>
+  </ul>
+</div>
 `;
 
 exports[`it works with unordered 1`] = `
-<ul
-  className=""
+.c0 {
+  font-family: Montserrat,sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+  text-align: left;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.c1 {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+<div
+  className="c0"
 >
-  <li
-    className=""
+  <ul
+    className="c1"
   >
-    hello
-  </li>
-  <li
-    className=""
-  >
-    world
-  </li>
-</ul>
+    <li
+      className=""
+    >
+      hello
+    </li>
+    <li
+      className=""
+    >
+      world
+    </li>
+  </ul>
+</div>
 `;

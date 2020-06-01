@@ -1,38 +1,39 @@
 import React, { PropsWithChildren } from 'react';
+import { withTheme } from 'styled-components';
+import { PropsWithIdAndClassname } from '../../utilities';
 import {
-    allDevices,
-    allMediaQueries,
-    Device,
-    PropsWithIdAndClassname
-} from '../../utilities';
+    getAllBreakpoints,
+    getAllMediaQueries,
+    Theme
+} from '../theme-provider/theme';
 
 export interface ResponsiveProps
     extends PropsWithIdAndClassname,
         PropsWithChildren<{}> {
-    device?: Device;
-    renderComponent?(device?: Device): React.ReactNode;
+    theme: Theme;
+    breakpoint?: string;
+    renderComponent?(breakpoint?: string): React.ReactNode;
 }
 
 export interface ResponsiveState {
-    matches?: Device;
+    matches?: string;
 }
 
-export class Responsive extends React.Component<
-    ResponsiveProps,
-    ResponsiveState
-> {
-    private triggerAtMediaQueries: { [device: string]: MediaQueryList } = {};
+class BaseResponsive extends React.Component<ResponsiveProps, ResponsiveState> {
+    private triggerAtMediaQueries: {
+        [breakpoint: string]: MediaQueryList;
+    } = {};
     private readonly allMediaQueries: {
-        [device: string]: string;
-    } = allMediaQueries();
+        [breakpoint: string]: string;
+    } = {};
 
-    private matchesQuery(): Device | undefined {
+    private matchesQuery(): string | undefined {
         const queries = this.triggerAtMediaQueries;
-        const matchingDevices: Device[] = [];
+        const matchingDevices: string[] = [];
 
-        for (const device of Object.keys(queries)) {
-            if (queries[device].matches) {
-                matchingDevices.push(device as Device);
+        for (const breakpoint of Object.keys(queries)) {
+            if (queries[breakpoint].matches) {
+                matchingDevices.push(breakpoint);
             }
         }
 
@@ -51,30 +52,36 @@ export class Responsive extends React.Component<
 
     constructor(props: Readonly<ResponsiveProps>) {
         super(props);
-        const { device } = this.props;
+        const { breakpoint, theme } = this.props;
 
         this.state = {
             matches: undefined
         };
 
-        const devicesToRenderAt: Device[] = device ? [device] : [...allDevices];
+        const breakpointsToRenderAt: string[] = breakpoint
+            ? [breakpoint]
+            : [...getAllBreakpoints(theme)];
 
-        for (const deviceToRenderAt of devicesToRenderAt) {
-            this.triggerAtMediaQueries[deviceToRenderAt] = window.matchMedia(
-                this.allMediaQueries[deviceToRenderAt]
-            );
+        for (const breakpointToRenderAt of breakpointsToRenderAt) {
+            this.triggerAtMediaQueries[
+                breakpointToRenderAt
+            ] = window.matchMedia(this.allMediaQueries[breakpointToRenderAt]);
         }
+
+        this.allMediaQueries = getAllMediaQueries(theme);
     }
 
     componentDidMount(): void {
-        const { device } = this.props;
-        const devicesToRenderAt: Device[] = device ? [device] : [...allDevices];
+        const { breakpoint, theme } = this.props;
+        const breakpointsToRenderAt: string[] = breakpoint
+            ? [breakpoint]
+            : [...getAllBreakpoints(theme)];
 
-        for (const deviceToRenderAt of devicesToRenderAt) {
-            this.triggerAtMediaQueries[deviceToRenderAt] = window.matchMedia(
-                this.allMediaQueries[deviceToRenderAt]
-            );
-            this.triggerAtMediaQueries[deviceToRenderAt].addListener(
+        for (const breakpointToRenderAt of breakpointsToRenderAt) {
+            this.triggerAtMediaQueries[
+                breakpointToRenderAt
+            ] = window.matchMedia(this.allMediaQueries[breakpointToRenderAt]);
+            this.triggerAtMediaQueries[breakpointToRenderAt].addListener(
                 this.updateMatches.bind(this)
             );
             this.updateMatches();
@@ -82,8 +89,8 @@ export class Responsive extends React.Component<
     }
 
     componentWillUnmount(): void {
-        for (const device of Object.keys(this.triggerAtMediaQueries)) {
-            this.triggerAtMediaQueries[device].removeListener(
+        for (const breakpoint of Object.keys(this.triggerAtMediaQueries)) {
+            this.triggerAtMediaQueries[breakpoint].removeListener(
                 this.updateMatches.bind(this)
             );
         }
@@ -100,3 +107,7 @@ export class Responsive extends React.Component<
         return children && matches ? <>{children}</> : false;
     }
 }
+
+export const Responsive = withTheme(BaseResponsive);
+
+Responsive.displayName = 'Responsive';

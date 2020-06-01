@@ -1,14 +1,9 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import {
     ThemeProvider as StyledThemeProvider,
     createGlobalStyle
 } from 'styled-components';
-import defaultTheme, {
-    ColorGroup,
-    SizingGroup,
-    BreakpointGroup,
-    DefaultTheme
-} from './defaultTheme';
+import { mergeThemes, Theme } from './theme';
 
 const GlobalStyle = createGlobalStyle`
     html, body, div, span, applet, object, iframe,
@@ -36,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
     article, aside, details, figcaption, figure,
     footer, header, hgroup, main, menu, nav, section { display: block; }
     *[hidden] { display: none; }
-    body { line-height: 1; }
+    body { line-height: 1; font-size: 62.5% }
     menu, ol, ul { list-style: none; }
     blockquote, q { quotes: none; }
     blockquote:before, blockquote:after,
@@ -44,15 +39,20 @@ const GlobalStyle = createGlobalStyle`
     table { border-collapse: collapse; border-spacing: 0; }
 `;
 
-export const ThemeProvider: React.FC = ({ children }) => (
+export interface ThemeProviderProps extends PropsWithChildren<{}> {
+    readonly theme?: Theme;
+}
+
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({
+    children,
+    theme
+}) => (
     <>
         <GlobalStyle />
-        <StyledThemeProvider theme={defaultTheme}>
+        <StyledThemeProvider theme={mergeThemes(theme)}>
             {children}
         </StyledThemeProvider>
     </>
 );
 
 ThemeProvider.displayName = 'ThemeProvider';
-
-export { defaultTheme, ColorGroup, SizingGroup, BreakpointGroup, DefaultTheme };

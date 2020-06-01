@@ -5,7 +5,6 @@ import { PropsWithIdAndClassname } from '../../utilities';
 export type Ratio = { x: number | string; y: number | string };
 
 export interface AspectRatioProps extends PropsWithIdAndClassname {
-    /** The AspectRatio's ratio. */
     readonly ratio: string | Ratio;
 }
 

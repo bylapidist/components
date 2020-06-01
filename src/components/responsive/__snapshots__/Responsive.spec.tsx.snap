@@ -7,3 +7,9 @@ exports[`it works with children 1`] = `
 `;
 
 exports[`it works with children and renders null with no matches 1`] = `null`;
+
+exports[`it works with renderComponent prop 1`] = `
+<p>
+  hello world
+</p>
+`;

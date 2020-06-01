@@ -1,31 +1,23 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import {
-    breakpoint,
-    centeredHorizontal,
-    relative,
-    PropsWithIdAndClassname
-} from '../../utilities';
+import { centeredHorizontal, PropsWithIdAndClassname } from '../../utilities';
+import { Box, BoxProps } from '../box';
+import { getWidth, NumberOrString } from '../theme-provider/theme';
 
 export interface ContainerProps
-    extends PropsWithIdAndClassname,
+    extends BoxProps,
+        PropsWithIdAndClassname,
         PropsWithChildren<{}> {
-    /** The Container's max width. */
-    readonly maxWidth?: string;
-    /** The Container's padding. */
-    readonly padding?: string;
+    readonly maxWidth?: NumberOrString;
 }
 
-export const Container: React.FC<ContainerProps> = styled.div<ContainerProps>`
-    ${relative()};
+export const Container: React.FC<ContainerProps> = styled(Box)<ContainerProps>`
     ${centeredHorizontal()};
 
-    max-width: ${(props): string => props.maxWidth || '100%'};
-    padding: ${(props): string => props.padding || '0'};
-
-    @media ${breakpoint('tablet-large')} {
-        padding: ${(props): string => props.padding || '0'};
-    }
+    ${(props): string =>
+        props.maxWidth
+            ? `max-width: ${getWidth(props.theme, props.maxWidth)}`
+            : `max-width: 100%`};
 `;
 
 Container.displayName = 'Container';
