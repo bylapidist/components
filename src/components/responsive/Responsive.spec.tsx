@@ -4,6 +4,7 @@ import 'jest-styled-components';
 import { StateMock } from '@react-mock/state';
 
 import { Responsive } from './index';
+import { ThemeProvider } from '../theme-provider';
 
 // https://jestjs.io/docs/en/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom
 Object.defineProperty(window, 'matchMedia', {
@@ -21,21 +22,27 @@ Object.defineProperty(window, 'matchMedia', {
 });
 
 test('it works with renderComponent prop', () => {
-    const renderFunction = jest.fn((device) => <p>{device}</p>);
-    renderer.create(
-        <Responsive device="mobile-large" renderComponent={renderFunction} />
+    const renderFunction = jest.fn(() => <p>hello world</p>);
+    const component = renderer.create(
+        <ThemeProvider>
+            <Responsive breakpoint="md" renderComponent={renderFunction} />
+        </ThemeProvider>
     );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
     expect(renderFunction).toBeCalled();
 });
 
 test('it works with children', () => {
     const tree = renderer
         .create(
-            <StateMock state={{ matches: 'mobile-large' }}>
-                <Responsive device="mobile-large">
-                    <p>hello world</p>
-                </Responsive>
-            </StateMock>
+            <ThemeProvider>
+                <StateMock state={{ matches: 'md' }}>
+                    <Responsive breakpoint="md">
+                        <p>hello world</p>
+                    </Responsive>
+                </StateMock>
+            </ThemeProvider>
         )
         .toJSON();
     expect(tree).toMatchSnapshot();
@@ -44,11 +51,13 @@ test('it works with children', () => {
 test('it works with children and renders null with no matches', () => {
     const tree = renderer
         .create(
-            <StateMock state={{ matches: null }}>
-                <Responsive device="mobile-large">
-                    <p>hello world</p>
-                </Responsive>
-            </StateMock>
+            <ThemeProvider>
+                <StateMock state={{ matches: null }}>
+                    <Responsive breakpoint="md">
+                        <p>hello world</p>
+                    </Responsive>
+                </StateMock>
+            </ThemeProvider>
         )
         .toJSON();
     expect(tree).toMatchSnapshot();

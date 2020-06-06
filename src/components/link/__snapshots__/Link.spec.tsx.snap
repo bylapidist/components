@@ -1,39 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it works 1`] = `
-.c0 {
-  font-family: 'Montserrat',sans-serif;
-  outline: 2px transparent;
-  outline-offset: 2px;
-  display: inline;
-  font-size: inherit;
-  line-height: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
+.c1 {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #17a3a5;
-  margin: 0 0 16px;
   -webkit-transition: color cubic-bezier(0.6,0.04,0.98,0.7),border cubic-bezier(0.6,0.04,0.98,0.7);
   transition: color cubic-bezier(0.6,0.04,0.98,0.7),border cubic-bezier(0.6,0.04,0.98,0.7);
   border-bottom: 2px solid #4AD6D8;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  color: #17a3a5;
 }
 
-.c0:focus {
+.c1:hover {
+  border-bottom: 2px solid #007072;
+  color: #007072;
+}
+
+.c1:focus {
   outline: 2px solid #ebc764;
 }
 
-.c0:hover {
-  color: #007072;
-  border-bottom: 2px solid #17a3a5;
+.c0 {
+  font-family: Montserrat,sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+  text-align: left;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline;
 }
 
-<a
-  className="c0"
-  href="#"
+<div
+  className="sc-AxjAm c0"
 >
-  venenatis
-</a>
+  <a
+    className="c1"
+    href="#"
+  >
+    Hello world
+  </a>
+</div>
 `;

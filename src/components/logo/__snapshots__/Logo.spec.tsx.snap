@@ -2,26 +2,27 @@
 
 exports[`it works 1`] = `
 .c1 {
-  fill: #72af5d;
   -webkit-animation-delay: 0;
   animation-delay: 0;
+  fill: #72af5d;
 }
 
 .c2 {
-  fill: #17a3a5;
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
+  fill: #17a3a5;
 }
 
 .c3 {
-  fill: #ebc764;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
+  fill: #ebc764;
 }
 
 .c0 {
   position: relative;
   display: block;
+  overflow: hidden;
   width: 32px;
   height: 32px;
 }
@@ -31,17 +32,14 @@ exports[`it works 1`] = `
 >
   <polygon
     className="sc-AxjAm c1"
-    color="#72af5d"
     points="0,0 0,16 16,16"
   />
   <polygon
     className="sc-AxjAm c2"
-    color="#17a3a5"
     points="0,16 0,32 16,32"
   />
   <polygon
     className="sc-AxjAm c3"
-    color="#ebc764"
     points="16,0 16,32 32,16"
   />
 </svg>
@@ -49,7 +47,6 @@ exports[`it works 1`] = `
 
 exports[`it works animated 1`] = `
 .c1 {
-  fill: #72af5d;
   -webkit-animation: dTTrEC;
   animation: dTTrEC;
   -webkit-animation-duration: 0.8s;
@@ -60,10 +57,10 @@ exports[`it works animated 1`] = `
   animation-timing-function: linear;
   -webkit-animation-delay: 0;
   animation-delay: 0;
+  fill: #72af5d;
 }
 
 .c2 {
-  fill: #17a3a5;
   -webkit-animation: fOlPOW;
   animation: fOlPOW;
   -webkit-animation-duration: 0.8s;
@@ -74,10 +71,10 @@ exports[`it works animated 1`] = `
   animation-timing-function: linear;
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
+  fill: #17a3a5;
 }
 
 .c3 {
-  fill: #ebc764;
   -webkit-animation: kJzVPa;
   animation: kJzVPa;
   -webkit-animation-iteration-count: 1;
@@ -88,11 +85,13 @@ exports[`it works animated 1`] = `
   animation-duration: 0.4s;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
+  fill: #ebc764;
 }
 
 .c0 {
   position: relative;
   display: block;
+  overflow: hidden;
   width: 32px;
   height: 32px;
 }
@@ -102,17 +101,14 @@ exports[`it works animated 1`] = `
 >
   <polygon
     className="sc-AxjAm c1"
-    color="#72af5d"
     points="0,0 0,16 16,16"
   />
   <polygon
     className="sc-AxjAm c2"
-    color="#17a3a5"
     points="0,16 0,32 16,32"
   />
   <polygon
     className="sc-AxjAm c3"
-    color="#ebc764"
     points="16,0 16,32 32,16"
   />
 </svg>
@@ -120,7 +116,6 @@ exports[`it works animated 1`] = `
 
 exports[`it works thinking 1`] = `
 .c1 {
-  fill: #72af5d;
   -webkit-animation: hzFDkX;
   animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
@@ -131,10 +126,10 @@ exports[`it works thinking 1`] = `
   animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0;
   animation-delay: 0;
+  fill: #72af5d;
 }
 
 .c2 {
-  fill: #17a3a5;
   -webkit-animation: hzFDkX;
   animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
@@ -145,10 +140,10 @@ exports[`it works thinking 1`] = `
   animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
+  fill: #17a3a5;
 }
 
 .c3 {
-  fill: #ebc764;
   -webkit-animation: hzFDkX;
   animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
@@ -159,11 +154,13 @@ exports[`it works thinking 1`] = `
   animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
+  fill: #ebc764;
 }
 
 .c0 {
   position: relative;
   display: block;
+  overflow: hidden;
   width: 32px;
   height: 32px;
 }
@@ -173,17 +170,14 @@ exports[`it works thinking 1`] = `
 >
   <polygon
     className="sc-AxjAm c1"
-    color="#72af5d"
     points="0,0 0,16 16,16"
   />
   <polygon
     className="sc-AxjAm c2"
-    color="#17a3a5"
     points="0,16 0,32 16,32"
   />
   <polygon
     className="sc-AxjAm c3"
-    color="#ebc764"
     points="16,0 16,32 32,16"
   />
 </svg>
@@ -191,26 +185,30 @@ exports[`it works thinking 1`] = `
 
 exports[`it works with different colours 1`] = `
 .c1 {
-  fill: #fff;
+  fill: #111;
   -webkit-animation-delay: 0;
   animation-delay: 0;
+  fill: #72af5d;
 }
 
 .c2 {
-  fill: #fff;
+  fill: #222;
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
+  fill: #17a3a5;
 }
 
 .c3 {
-  fill: #fff;
+  fill: #333;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
+  fill: #ebc764;
 }
 
 .c0 {
   position: relative;
   display: block;
+  overflow: hidden;
   width: 32px;
   height: 32px;
 }
@@ -220,17 +218,17 @@ exports[`it works with different colours 1`] = `
 >
   <polygon
     className="sc-AxjAm c1"
-    color="#fff"
+    color="#111"
     points="0,0 0,16 16,16"
   />
   <polygon
     className="sc-AxjAm c2"
-    color="#fff"
+    color="#222"
     points="0,16 0,32 16,32"
   />
   <polygon
     className="sc-AxjAm c3"
-    color="#fff"
+    color="#333"
     points="16,0 16,32 32,16"
   />
 </svg>

@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works plain 1`] = `
+.c0 {
+  border-radius: 0;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with backgroundColor 1`] = `
+.c0 {
+  background-color: #66687d;
+  border-radius: 0;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with borderColor 1`] = `
+.c0 {
+  border-color: #66687d;
+  border-radius: 0;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with borderRadius 1`] = `
+.c0 {
+  border-radius: 0.25rem;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with borderWidth 1`] = `
+.c0 {
+  border-radius: 0;
+  border-width: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with margin 1`] = `
+.c0 {
+  border-radius: 0;
+  border-width: 0;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with padding 1`] = `
+.c0 {
+  border-radius: 0;
+  border-width: 0;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;
+
+exports[`it works with variable borderColors 1`] = `
+.c0 {
+  border-top-color: #66687d;
+  border-right-color: #17a3a5;
+  border-bottom-color: #72af5d;
+  border-left-color: #ebc764;
+  border-radius: 0;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;

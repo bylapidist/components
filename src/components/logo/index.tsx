@@ -14,20 +14,13 @@ import {
     thinking,
     PropsWithIdAndClassname
 } from '../../utilities';
-import { defaultTheme } from '../theme-provider';
 
 export interface LogoProps extends PropsWithIdAndClassname {
-    /** The Logo's top left triangle color. */
     readonly bUpColor?: string;
-    /** The Logo's bottom left triangle color. */
     readonly bDownColor?: string;
-    /** The Logo's right triangle color. */
     readonly dColor?: string;
-    /** The Logo's size. */
     readonly size: string;
-    /** The Logo's animated state. */
     readonly animated?: boolean;
-    /** The Logo's thinking state. */
     readonly thinking?: boolean;
 }
 
@@ -40,14 +33,14 @@ const bDown = (offset: number): string =>
 const d = (offset: number): string =>
     `${offset * 0.5},0 ${offset * 0.5},${offset} ${offset},${offset * 0.5}`;
 
-export interface TriangleProps {
+interface TriangleProps {
     readonly points: string;
-    readonly color: string;
+    readonly color: string | undefined;
     readonly animated: boolean;
     readonly thinking: boolean;
 }
 
-export const logoAnimation = (
+const logoAnimation = (
     props: TriangleProps,
     slideAnimation: FlattenInterpolation<
         ThemeProps<DefaultTheme>
@@ -63,31 +56,37 @@ export const logoAnimation = (
 `;
 
 const Triangle: React.FC<TriangleProps> = styled.polygon<TriangleProps>`
-    fill: ${(props): string => props.color};
+    fill: ${(props): string => props.color || ''};
 `;
 
 const BUp: React.FC<TriangleProps> = styled(Triangle)`
     ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> =>
-        logoAnimation(props, slideRight(), thinking())}
+        logoAnimation(props, slideRight(), thinking())};
+
+    fill: ${(props): string => props.theme.colors.tertiary.base || ''};
 `;
 
 const BDown: React.FC<TriangleProps> = styled(Triangle)`
     ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> =>
-        logoAnimation(props, slideUpLeft(), thinking(), '0.1s')}
+        logoAnimation(props, slideUpLeft(), thinking(), '0.1s')};
+
+    fill: ${(props): string => props.theme.colors.primary.base || ''};
 `;
 
 const D: React.FC<TriangleProps> = styled(Triangle)`
     ${(props): FlattenInterpolation<ThemeProps<DefaultTheme>> =>
-        logoAnimation(props, slideDown(), thinking(), '0.2s')}
+        logoAnimation(props, slideDown(), thinking(), '0.2s')};
+
+    fill: ${(props): string => props.theme.colors.secondary.base || ''};
 `;
 
 const SVGLogo: React.FC<LogoProps> = ({
     id,
     className,
-    bUpColor = defaultTheme.colors.greens.base,
-    bDownColor = defaultTheme.colors.blues.base,
-    dColor = defaultTheme.colors.yellows.base,
-    size = defaultTheme.sizing.l,
+    bUpColor,
+    bDownColor,
+    dColor,
+    size = '60px',
     animated = false,
     thinking = false
 }) => (
@@ -117,8 +116,9 @@ export const Logo: React.FC<LogoProps> = styled(SVGLogo)<LogoProps>`
     ${relative()};
 
     display: block;
-    width: ${(props): string => props.size};
-    height: ${(props): string => props.size};
+    overflow: hidden;
+    width: ${(props): string => props.size || '60px'};
+    height: ${(props): string => props.size || '60px'};
 `;
 
 Logo.displayName = 'Logo';

@@ -1,20 +1,16 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { PropsWithIdAndClassname } from '../../utilities/common';
+import { getWidth, NumberOrString } from '../theme-provider/theme';
 
 export interface LayoutProps
     extends PropsWithIdAndClassname,
         PropsWithChildren<{}> {
-    /** The Layout's header. */
     readonly header?: JSX.Element;
-    /** The Layout's sidebar. */
     readonly sidebar?: JSX.Element;
-    /** The Layout's main content. */
     readonly main?: JSX.Element;
-    /** The Layout's footer. */
     readonly footer?: JSX.Element;
-    /** The Layout's sidebar width. */
-    readonly sidebarWidth?: string;
+    readonly sidebarWidth?: NumberOrString;
 }
 
 const generateWrapper: React.FC<LayoutProps & { type: string }> = ({
@@ -66,7 +62,11 @@ const Sidebar: React.FC<LayoutProps> = styled(SidebarWrapper)`
     flex: 0 0 auto;
     position: relative;
     min-width: 0;
-    width: ${({ sidebarWidth }): string => sidebarWidth || '25%'};
+
+    ${(props): string =>
+        props.sidebarWidth
+            ? `width: ${getWidth(props.theme, props.sidebarWidth)}`
+            : `width: ${getWidth(props.theme, '1/4')}`};
 `;
 
 const Main: React.FC<LayoutProps> = styled(MainWrapper)`
