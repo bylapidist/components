@@ -1,9 +1,20 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import styled from 'styled-components';
 import 'jest-styled-components';
 
-import { Heading } from './index';
+import { createHeading, Heading } from './index';
 import { ThemeProvider } from '../theme-provider';
+
+test('it works mapping to correct heading level', () => {
+    const Component = createHeading(styled.h1, 1);
+    const tree = renderer.create(
+        <ThemeProvider>
+            <Component />
+        </ThemeProvider>
+    );
+    expect(tree.root.findByType('h1')).toBeTruthy();
+});
 
 test('it works as h1', () => {
     const tree = renderer
