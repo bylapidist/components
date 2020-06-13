@@ -22,7 +22,11 @@ test('it works with padding', () => {
     const tree = renderer
         .create(
             <ThemeProvider>
-                <Box padding={2}>
+                <Box
+                    styles={{
+                        padding: 2
+                    }}
+                >
                     <p>Hello world!</p>
                 </Box>
             </ThemeProvider>
@@ -35,7 +39,11 @@ test('it works with margin', () => {
     const tree = renderer
         .create(
             <ThemeProvider>
-                <Box margin={2}>
+                <Box
+                    styles={{
+                        margin: 2
+                    }}
+                >
                     <p>Hello world!</p>
                 </Box>
             </ThemeProvider>
@@ -49,7 +57,12 @@ test('it works with backgroundColor', () => {
         .create(
             <ThemeProvider>
                 <Box
-                    backgroundColor={{ colorGroup: 'grey', colorShade: 'base' }}
+                    styles={{
+                        backgroundColor: {
+                            colorGroup: 'grey',
+                            colorShade: 'base'
+                        }
+                    }}
                 >
                     <p>Hello world!</p>
                 </Box>
@@ -63,7 +76,11 @@ test('it works with borderRadius', () => {
     const tree = renderer
         .create(
             <ThemeProvider>
-                <Box borderRadius={2}>
+                <Box
+                    styles={{
+                        borderRadius: 2
+                    }}
+                >
                     <p>Hello world!</p>
                 </Box>
             </ThemeProvider>
@@ -76,7 +93,11 @@ test('it works with borderWidth', () => {
     const tree = renderer
         .create(
             <ThemeProvider>
-                <Box borderWidth={2}>
+                <Box
+                    styles={{
+                        borderWidth: 2
+                    }}
+                >
                     <p>Hello world!</p>
                 </Box>
             </ThemeProvider>
@@ -89,7 +110,14 @@ test('it works with borderColor', () => {
     const tree = renderer
         .create(
             <ThemeProvider>
-                <Box borderColor={{ colorGroup: 'grey', colorShade: 'base' }}>
+                <Box
+                    styles={{
+                        borderColor: {
+                            colorGroup: 'grey',
+                            colorShade: 'base'
+                        }
+                    }}
+                >
                     <p>Hello world!</p>
                 </Box>
             </ThemeProvider>
@@ -103,18 +131,45 @@ test('it works with variable borderColors', () => {
         .create(
             <ThemeProvider>
                 <Box
-                    borderTopColor={{ colorGroup: 'grey', colorShade: 'base' }}
-                    borderRightColor={{
-                        colorGroup: 'primary',
-                        colorShade: 'base'
+                    styles={{
+                        borderTopColor: {
+                            colorGroup: 'grey',
+                            colorShade: 'base'
+                        },
+                        borderRightColor: {
+                            colorGroup: 'primary',
+                            colorShade: 'base'
+                        },
+                        borderLeftColor: {
+                            colorGroup: 'secondary',
+                            colorShade: 'base'
+                        },
+                        borderBottomColor: {
+                            colorGroup: 'tertiary',
+                            colorShade: 'base'
+                        }
                     }}
-                    borderLeftColor={{
-                        colorGroup: 'secondary',
-                        colorShade: 'base'
-                    }}
-                    borderBottomColor={{
-                        colorGroup: 'tertiary',
-                        colorShade: 'base'
+                >
+                    <p>Hello world!</p>
+                </Box>
+            </ThemeProvider>
+        )
+        .toJSON();
+    expect(tree).toMatchSnapshot();
+});
+
+test('it works with breakpoints', () => {
+    const tree = renderer
+        .create(
+            <ThemeProvider>
+                <Box
+                    styles={{
+                        breakpoints: {
+                            xl: {
+                                fontSize: 2,
+                                marginBottom: 2
+                            }
+                        }
                     }}
                 >
                     <p>Hello world!</p>

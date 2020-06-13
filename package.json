@@ -44,10 +44,14 @@
         "update:snapshots": "cross-env NODE_ENV=test jest -u",
         "prepublishOnly": "npm run build"
     },
+    "dependencies": {
+        "lodash.merge": "^4.6.2"
+    },
     "devDependencies": {
         "@lapidist/linting": "^1.35.5",
         "@react-mock/state": "^0.1.8",
         "@types/jest": "^26.0.0",
+        "@types/lodash.merge": "^4.6.6",
         "@types/react": "^16.9.35",
         "@types/react-dom": "^16.9.8",
         "@types/react-test-renderer": "^16.9.2",
@@ -101,6 +105,5 @@
         "hooks": {
             "pre-commit": "tsc --noEmit && lint-staged"
         }
-    },
-    "dependencies": {}
+    }
 }

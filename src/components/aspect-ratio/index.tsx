@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { PropsWithIdAndClassname } from '../../utilities';
+import { PropsWithIdAndClassname, PropsWithStyle } from '../../utilities';
+import { withStyles } from '../theme-provider/styles';
 
 export type Ratio = { x: number | string; y: number | string };
 
-export interface AspectRatioProps extends PropsWithIdAndClassname {
+export interface AspectRatioProps
+    extends PropsWithIdAndClassname,
+        PropsWithStyle {
     readonly ratio: string | Ratio;
 }
 
@@ -51,6 +54,8 @@ export const AspectRatio: React.FC<AspectRatioProps> = styled.div<
     > img {
         height: auto;
     }
+
+    ${({ theme, styles }): string => withStyles(theme, styles)}
 `;
 
 AspectRatio.displayName = 'AspectRatio';

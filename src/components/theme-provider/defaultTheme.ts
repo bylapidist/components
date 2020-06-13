@@ -53,7 +53,6 @@ export const defaultTheme: Theme = {
         widest: '0.1em'
     },
     sizes: {
-        px: '1px',
         '0': '0',
         '1': '0.25rem',
         '2': '0.5rem',
@@ -71,23 +70,25 @@ export const defaultTheme: Theme = {
         '40': '10rem',
         '48': '12rem',
         '56': '14rem',
-        '64': '16rem'
+        '64': '16rem',
+        auto: 'auto',
+        px: '1px'
     },
     borderRadii: {
-        px: '1px',
         '0': '0',
         '1': '0.125rem',
         '2': '0.25rem',
         '3': '0.375rem',
         '4': '0.5rem',
+        px: '1px',
         rounded: '9999px'
     },
     borderWidths: {
-        px: '1px',
         '0': '0',
         '1': '2px',
         '2': '4px',
-        '3': '8px'
+        '3': '8px',
+        px: '1px'
     },
     boxShadows: {
         '0': 'none',

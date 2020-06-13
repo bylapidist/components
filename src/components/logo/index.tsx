@@ -10,7 +10,6 @@ import {
     slideDown,
     slideUpLeft,
     stripUnit,
-    relative,
     thinking,
     PropsWithIdAndClassname
 } from '../../utilities';
@@ -113,8 +112,7 @@ const SVGLogo: React.FC<LogoProps> = ({
 );
 
 export const Logo: React.FC<LogoProps> = styled(SVGLogo)<LogoProps>`
-    ${relative()};
-
+    position: relative;
     display: block;
     overflow: hidden;
     width: ${(props): string => props.size || '60px'};
