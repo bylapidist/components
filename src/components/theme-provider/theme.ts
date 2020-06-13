@@ -1,34 +1,38 @@
 import * as CSS from 'csstype';
+import deepMerge from 'lodash.merge';
 import { defaultTheme } from './defaultTheme';
 
-type ThemeObject<T> = { [K: string]: T };
+export type ThemeObject<T> = { [K: string]: T };
 
-type ThemeArray<T> = { [K: string]: T[] };
+export type ThemeArray<T> = { [K: string]: T[] };
 
 export type NumberOrString = string | number | 0;
 
 export type Color = { colorGroup: NumberOrString; colorShade: NumberOrString };
 
 export interface Theme {
-    breakpoints?: ThemeObject<string>;
-    fontSizes?: ThemeObject<CSS.FontSizeProperty<NumberOrString>>;
-    fontFamilies?: ThemeArray<CSS.FontFamilyProperty>;
-    fontWeights?: ThemeObject<CSS.FontWeightProperty>;
-    lineHeights?: ThemeObject<CSS.LineHeightProperty<NumberOrString>>;
-    letterSpacings?: ThemeObject<CSS.LetterSpacingProperty<NumberOrString>>;
-    sizes?: ThemeObject<string>;
-    borderRadii?: ThemeObject<CSS.BorderRadiusProperty<NumberOrString>>;
-    borderWidths?: ThemeObject<CSS.BorderWidthProperty<NumberOrString>>;
-    boxShadows?: ThemeObject<CSS.BoxShadowProperty>;
-    widths?: ThemeObject<string>;
-    colors?: ThemeObject<ThemeObject<CSS.ColorProperty>>;
+    readonly breakpoints?: ThemeObject<string>;
+    readonly fontSizes?: ThemeObject<CSS.FontSizeProperty<NumberOrString>>;
+    readonly fontFamilies?: ThemeArray<CSS.FontFamilyProperty>;
+    readonly fontWeights?: ThemeObject<CSS.FontWeightProperty>;
+    readonly lineHeights?: ThemeObject<CSS.LineHeightProperty<NumberOrString>>;
+    readonly letterSpacings?: ThemeObject<
+        CSS.LetterSpacingProperty<NumberOrString>
+    >;
+    readonly sizes?: ThemeObject<string>;
+    readonly borderRadii?: ThemeObject<
+        CSS.BorderRadiusProperty<NumberOrString>
+    >;
+    readonly borderWidths?: ThemeObject<
+        CSS.BorderWidthProperty<NumberOrString>
+    >;
+    readonly boxShadows?: ThemeObject<CSS.BoxShadowProperty>;
+    readonly widths?: ThemeObject<string>;
+    readonly colors?: ThemeObject<ThemeObject<CSS.ColorProperty>>;
 }
 
-export const mergeThemes = (theme?: Theme): Theme => {
-    if (!theme) return defaultTheme;
-
-    return { ...theme, ...defaultTheme };
-};
+export const mergeThemes = (theme?: Theme): Theme =>
+    deepMerge(defaultTheme, theme);
 
 export const getBreakpoint = (
     theme: Theme,
