@@ -31,3 +31,20 @@ exports[`it works with maxWidth 1`] = `
   </p>
 </div>
 `;
+
+exports[`it works with styles 1`] = `
+.c0 {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.5rem;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    Hello world!
+  </p>
+</div>
+`;

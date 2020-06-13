@@ -30,3 +30,16 @@ test('it works with maxWidth', () => {
         .toJSON();
     expect(tree).toMatchSnapshot();
 });
+
+test('it works with styles', () => {
+    const tree = renderer
+        .create(
+            <ThemeProvider>
+                <Container styles={{ padding: 2 }}>
+                    <p>Hello world!</p>
+                </Container>
+            </ThemeProvider>
+        )
+        .toJSON();
+    expect(tree).toMatchSnapshot();
+});
