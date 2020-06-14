@@ -37,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
     blockquote:before, blockquote:after,
     q:before, q:after { content: ''; content: none; }
     table { border-collapse: collapse; border-spacing: 0; }
+    img { display: block; max-width: 100%; }
 `;
 
 export interface ThemeProviderProps extends PropsWithChildren<{}> {
