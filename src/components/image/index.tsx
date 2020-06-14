@@ -1,19 +1,23 @@
 import React from 'react';
-import styled from 'styled-components';
-import { PropsWithIdAndClassname } from '../../utilities';
+import deepMerge from 'lodash.merge';
+import { Box, BoxProps } from '../box';
 
-export interface ImageProps extends PropsWithIdAndClassname {
+export interface ImageProps extends BoxProps {
     readonly alt?: string;
     readonly src: string;
 }
 
-const ImageContainer: React.FC<ImageProps> = ({ id, className, src, alt }) => (
-    <img id={id} className={className} src={src} alt={alt} />
+export const Image: React.FC<ImageProps> = ({
+    id,
+    className,
+    src,
+    alt,
+    styles,
+    ...restProps
+}) => (
+    <Box styles={deepMerge(styles, {})} {...restProps}>
+        <img id={id} className={className} src={src} alt={alt} />
+    </Box>
 );
-
-export const Image: React.FC<ImageProps> = styled(ImageContainer)<ImageProps>`
-    display: block;
-    width: 100%;
-`;
 
 Image.displayName = 'Image';
