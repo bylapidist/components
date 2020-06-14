@@ -1,7 +1,7 @@
 import React from 'react';
 import deepMerge from 'lodash.merge';
 import { Box, BoxProps } from '../box';
-import { NumberOrString } from '../theme-provider/theme';
+import { NumberOrString } from '../../theme';
 
 export interface ContainerProps extends BoxProps {
     readonly maxWidth?: NumberOrString;

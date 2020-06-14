@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { PropsWithIdAndClassname, PropsWithStyle } from '../../utilities';
-import { withStyles } from '../theme-provider/styles';
+import { withStyles } from '../../theme';
 
 export type Ratio = { x: number | string; y: number | string };
 

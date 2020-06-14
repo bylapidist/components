@@ -3,7 +3,7 @@ import {
     ThemeProvider as StyledThemeProvider,
     createGlobalStyle
 } from 'styled-components';
-import { mergeThemes, Theme } from './theme';
+import { mergeThemes, Theme } from '../../theme';
 
 const GlobalStyle = createGlobalStyle`
     html, body, div, span, applet, object, iframe,

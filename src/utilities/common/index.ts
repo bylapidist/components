@@ -1,5 +1,5 @@
 import React from 'react';
-import { Styles } from '../../components/theme-provider/styles';
+import { Styles } from '../../theme';
 
 export interface PropsWithIdAndClassname {
     readonly id?: string;

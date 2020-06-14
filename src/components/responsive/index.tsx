@@ -1,11 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import { withTheme } from 'styled-components';
 import { PropsWithIdAndClassname } from '../../utilities';
-import {
-    getAllBreakpoints,
-    getAllMediaQueries,
-    Theme
-} from '../theme-provider/theme';
+import { getAllBreakpoints, getAllMediaQueries, Theme } from '../../theme';
 
 export interface ResponsiveProps
     extends PropsWithIdAndClassname,

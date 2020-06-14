@@ -10,7 +10,7 @@ import {
     getLetterSpacing,
     getLineHeight,
     NumberOrString
-} from '../theme-provider/theme';
+} from '../../theme';
 
 export interface TextProps
     extends PropsWithIdAndClassname,
