@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { PropsWithIdAndClassname, PropsWithStyle } from '../../utilities';
-import { withStyles } from '../theme-provider/styles';
+import { withStyles } from '../../theme';
 
 export interface BoxProps
     extends PropsWithIdAndClassname,

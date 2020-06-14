@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { PropsWithIdAndClassname } from '../../utilities/common';
-import { getWidth, NumberOrString } from '../theme-provider/theme';
+import { getWidth, NumberOrString } from '../../theme';
 
 export interface LayoutProps
     extends PropsWithIdAndClassname,

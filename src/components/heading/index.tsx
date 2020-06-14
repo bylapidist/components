@@ -5,11 +5,7 @@ import styled, {
     ThemedStyledFunction
 } from 'styled-components';
 import { PropsWithIdAndClassname } from '../../utilities';
-import {
-    getFontSize,
-    getFontWeight,
-    NumberOrString
-} from '../theme-provider/theme';
+import { getFontSize, getFontWeight, NumberOrString } from '../../theme';
 import { Text, TextProps } from '../text';
 
 export type HeadingSize = 1 | 2 | 3 | 4 | 5 | 6;

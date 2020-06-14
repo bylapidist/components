@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { defaultEasing, PropsWithIdAndClassname } from '../../utilities';
 import { Text, TextProps } from '../text';
-import { getBorderWidth, getColor } from '../theme-provider/theme';
+import { getBorderWidth, getColor } from '../../theme';
 
 export interface LinkProps extends TextProps, PropsWithIdAndClassname {
     readonly href: string;
