@@ -1,13 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { PropsWithIdAndClassname, PropsWithStyle } from '../../utilities';
-import { withStyles } from '../../theme';
+import { PropsWithStyles, withStyles } from '../../theme';
 
 export type Ratio = { x: number | string; y: number | string };
 
-export interface AspectRatioProps
-    extends PropsWithIdAndClassname,
-        PropsWithStyle {
+export interface AspectRatioProps extends PropsWithStyles {
     readonly ratio: string | Ratio;
 }
 

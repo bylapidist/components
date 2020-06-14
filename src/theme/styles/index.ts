@@ -46,6 +46,11 @@ export interface Styles {
     readonly breakpoints?: ThemeObject<Styles>;
 }
 
+export interface PropsWithStyles {
+    readonly styles?: Styles;
+    readonly as?: keyof JSX.IntrinsicElements;
+}
+
 export const withStyles = (theme: Theme, styles?: Styles): string =>
     styles
         ? `

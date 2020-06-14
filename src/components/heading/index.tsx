@@ -4,13 +4,14 @@ import styled, {
     StyledComponent,
     ThemedStyledFunction
 } from 'styled-components';
-import { PropsWithIdAndClassname } from '../../utilities';
 import { getFontSize, getFontWeight, NumberOrString } from '../../theme';
 import { Text, TextProps } from '../text';
 
 export type HeadingSize = 1 | 2 | 3 | 4 | 5 | 6;
 
-export interface HeadingProps extends TextProps, PropsWithIdAndClassname {
+export interface HeadingProps extends TextProps {
+    readonly id?: string;
+    readonly className?: string;
     readonly size?: HeadingSize;
 }
 
