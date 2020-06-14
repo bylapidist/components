@@ -1,14 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it works 1`] = `
-<div
+<img
+  alt="image"
   className=""
->
-  <img
-    alt="image"
-    src="https://placehold.it/500x500"
-  />
-</div>
+  src="https://placehold.it/500x500"
+/>
 `;
 
 exports[`it works with styles 1`] = `
@@ -16,12 +13,9 @@ exports[`it works with styles 1`] = `
   width: 50%;
 }
 
-<div
+<img
+  alt="image"
   className="c0"
->
-  <img
-    alt="image"
-    src="https://placehold.it/500x500"
-  />
-</div>
+  src="https://placehold.it/500x500"
+/>
 `;

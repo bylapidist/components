@@ -10,11 +10,12 @@ import {
     slideDown,
     slideUpLeft,
     stripUnit,
-    thinking,
-    PropsWithIdAndClassname
+    thinking
 } from '../../utilities';
 
-export interface LogoProps extends PropsWithIdAndClassname {
+export interface LogoProps {
+    readonly id?: string;
+    readonly className?: string;
     readonly bUpColor?: string;
     readonly bDownColor?: string;
     readonly dColor?: string;

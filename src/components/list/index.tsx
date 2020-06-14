@@ -1,7 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 import styled, { StyledComponent } from 'styled-components';
 import { Text, TextProps } from '../text';
-import { PropsWithIdAndClassname } from '../../utilities';
 
 export type ListType = 'ol' | 'ul';
 
@@ -10,7 +9,7 @@ interface ListItemProps {
     readonly key: string | number;
 }
 
-export interface ListProps extends TextProps, PropsWithIdAndClassname {
+export interface ListProps extends TextProps {
     readonly items: ListItemProps[];
     readonly type?: ListType;
 }

@@ -1,6 +1,5 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import { PropsWithIdAndClassname } from '../../utilities';
 import {
     Color,
     getColor,
@@ -12,9 +11,7 @@ import {
     NumberOrString
 } from '../../theme';
 
-export interface TextProps
-    extends PropsWithIdAndClassname,
-        PropsWithChildren<{}> {
+export interface TextProps extends PropsWithChildren<{}> {
     readonly fontFamily?: NumberOrString;
     readonly fontWeight?: NumberOrString;
     readonly fontSize?: NumberOrString;

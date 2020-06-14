@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { defaultEasing, PropsWithIdAndClassname } from '../../utilities';
+import { defaultEasing } from '../../utilities';
 import { Text, TextProps } from '../text';
 import { getBorderWidth, getColor } from '../../theme';
 
-export interface LinkProps extends TextProps, PropsWithIdAndClassname {
+export interface LinkProps extends TextProps {
     readonly href: string;
     readonly children: string;
     readonly target?: string;

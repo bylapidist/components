@@ -1,11 +1,10 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import { PropsWithIdAndClassname } from '../../utilities/common';
 import { getWidth, NumberOrString } from '../../theme';
 
-export interface LayoutProps
-    extends PropsWithIdAndClassname,
-        PropsWithChildren<{}> {
+export interface LayoutProps extends PropsWithChildren<{}> {
+    readonly id?: string;
+    readonly className?: string;
     readonly header?: JSX.Element;
     readonly sidebar?: JSX.Element;
     readonly main?: JSX.Element;
