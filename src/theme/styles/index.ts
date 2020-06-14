@@ -27,6 +27,7 @@ export interface Styles {
     readonly width?: CSS.WidthProperty<NumberOrString>;
     readonly minWidth?: CSS.WidthProperty<NumberOrString>;
     readonly maxWidth?: CSS.WidthProperty<NumberOrString>;
+    readonly containerWidth?: CSS.WidthProperty<NumberOrString>;
     readonly textAlign?: CSS.TextAlignProperty;
     readonly margin?: CSS.MarginProperty<NumberOrString>;
     readonly marginX?: CSS.MarginProperty<NumberOrString>;

@@ -22,7 +22,7 @@ test('it works with maxWidth', () => {
     const tree = renderer
         .create(
             <ThemeProvider>
-                <Container maxWidth="1/2">
+                <Container width="sm">
                     <p>Hello world!</p>
                 </Container>
             </ThemeProvider>

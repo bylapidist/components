@@ -4,11 +4,11 @@ import { Box, BoxProps } from '../box';
 import { NumberOrString } from '../../theme';
 
 export interface ContainerProps extends BoxProps {
-    readonly maxWidth?: NumberOrString;
+    readonly width?: NumberOrString;
 }
 
 export const Container: React.FC<ContainerProps> = ({
-    maxWidth = 'full',
+    width,
     children,
     styles,
     ...restProps
@@ -17,7 +17,7 @@ export const Container: React.FC<ContainerProps> = ({
         styles={deepMerge(styles, {
             marginLeft: 'auto',
             marginRight: 'auto',
-            maxWidth: maxWidth
+            containerWidth: width
         })}
         {...restProps}
     >
