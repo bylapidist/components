@@ -1,5 +1,5 @@
 import { Styles } from './index';
-import { getSize, getWidth, Theme } from '../theme';
+import { getBreakpoint, getSize, getWidth, Theme } from '../theme';
 
 export default (theme: Theme, styles?: Styles): string =>
     styles
@@ -15,6 +15,12 @@ export default (theme: Theme, styles?: Styles): string =>
         ${
             styles.maxWidth
                 ? `max-width: ${getWidth(theme, styles.maxWidth)};`
+                : ''
+        }
+
+        ${
+            styles.containerWidth
+                ? `max-width: ${getBreakpoint(theme, styles.containerWidth)};`
                 : ''
         }
 
