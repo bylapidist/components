@@ -1,11 +1,12 @@
 import React from 'react';
+import deepMerge from 'lodash.merge';
 import styled from 'styled-components';
-import { PropsWithStyles, withStyles } from '../../theme';
+import { Box, BoxProps } from '../box';
 
 export type Ratio = { x: number | string; y: number | string };
 
-export interface AspectRatioProps extends PropsWithStyles {
-    readonly ratio: string | Ratio;
+export interface AspectRatioProps {
+    readonly ratio?: string | Ratio;
 }
 
 const splitRatio = (ratioProp: string): Ratio => ({
@@ -24,16 +25,15 @@ const padding = (ratioProp: string | Ratio): string =>
         ratio(ratioProp).y
     }))`;
 
-export const AspectRatio: React.FC<AspectRatioProps> = styled.div<
-    AspectRatioProps
->`
+const AspectRatioBox: React.FC<
+    BoxProps & AspectRatioProps & React.HTMLProps<HTMLDivElement>
+> = styled(Box)<BoxProps & AspectRatioProps>`
     position: relative;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
+    height: 100%;
 
     :before {
-        ${({ ratio }): string => `${padding(ratio)};`};
+        ${({ ratio }): string => padding(ratio || '16/9')};
         display: block;
         content: '';
     }
@@ -51,8 +51,14 @@ export const AspectRatio: React.FC<AspectRatioProps> = styled.div<
     > img {
         height: auto;
     }
-
-    ${({ theme, styles }): string => withStyles(theme, styles)}
 `;
+
+export const AspectRatio: React.FC<
+    BoxProps & AspectRatioProps & React.HTMLProps<HTMLDivElement>
+> = ({ as = 'div', styles, ...restProps }) => (
+    <>
+        <AspectRatioBox as={as} styles={deepMerge({}, styles)} {...restProps} />
+    </>
+);
 
 AspectRatio.displayName = 'AspectRatio';

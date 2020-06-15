@@ -24,8 +24,6 @@ export default (theme: Theme, styles?: Styles): string =>
                 : ''
         }
 
-        ${styles.textAlign ? `text-align: ${styles.textAlign};` : ''}
-
         ${styles.margin ? `margin: ${getSize(theme, styles.margin)};` : ''}
 
         ${

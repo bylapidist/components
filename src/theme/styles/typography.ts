@@ -12,11 +12,11 @@ import {
 export default (theme: Theme, styles?: Styles): string =>
     styles
         ? `
-    ${
-        styles.fontSize
-            ? `font-size: ${getFontSize(theme, styles.fontSize)};`
-            : ''
-    }
+        ${
+            styles.fontSize
+                ? `font-size: ${getFontSize(theme, styles.fontSize)};`
+                : ''
+        }
 
         ${
             styles.fontWeight
@@ -47,10 +47,10 @@ export default (theme: Theme, styles?: Styles): string =>
 
         ${
             styles.textColor
-                ? `text-color: ${getColor(
+                ? `color: ${getColor(
                       theme,
-                      styles.textColor.colorGroup,
-                      styles.textColor.colorShade
+                      styles.textColor.group,
+                      styles.textColor.shade
                   )};`
                 : ''
         }

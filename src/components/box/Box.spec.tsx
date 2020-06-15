@@ -59,8 +59,8 @@ test('it works with backgroundColor', () => {
                 <Box
                     styles={{
                         backgroundColor: {
-                            colorGroup: 'grey',
-                            colorShade: 'base'
+                            group: 'grey',
+                            shade: 'base'
                         }
                     }}
                 >
@@ -113,8 +113,8 @@ test('it works with borderColor', () => {
                 <Box
                     styles={{
                         borderColor: {
-                            colorGroup: 'grey',
-                            colorShade: 'base'
+                            group: 'grey',
+                            shade: 'base'
                         }
                     }}
                 >
@@ -133,20 +133,20 @@ test('it works with variable borderColors', () => {
                 <Box
                     styles={{
                         borderTopColor: {
-                            colorGroup: 'grey',
-                            colorShade: 'base'
+                            group: 'grey',
+                            shade: 'base'
                         },
                         borderRightColor: {
-                            colorGroup: 'primary',
-                            colorShade: 'base'
+                            group: 'primary',
+                            shade: 'base'
                         },
                         borderLeftColor: {
-                            colorGroup: 'secondary',
-                            colorShade: 'base'
+                            group: 'secondary',
+                            shade: 'base'
                         },
                         borderBottomColor: {
-                            colorGroup: 'tertiary',
-                            colorShade: 'base'
+                            group: 'tertiary',
+                            shade: 'base'
                         }
                     }}
                 >

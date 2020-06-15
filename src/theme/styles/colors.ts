@@ -8,8 +8,8 @@ export default (theme: Theme, styles?: Styles): string =>
             styles.backgroundColor
                 ? `background-color: ${getColor(
                       theme,
-                      styles.backgroundColor.colorGroup,
-                      styles.backgroundColor.colorShade
+                      styles.backgroundColor.group,
+                      styles.backgroundColor.shade
                   )};`
                 : ''
         }
@@ -18,8 +18,8 @@ export default (theme: Theme, styles?: Styles): string =>
             styles.borderTopColor
                 ? `border-top-color: ${getColor(
                       theme,
-                      styles.borderTopColor.colorGroup,
-                      styles.borderTopColor.colorShade
+                      styles.borderTopColor.group,
+                      styles.borderTopColor.shade
                   )};`
                 : ''
         }
@@ -28,8 +28,8 @@ export default (theme: Theme, styles?: Styles): string =>
             styles.borderRightColor
                 ? `border-right-color: ${getColor(
                       theme,
-                      styles.borderRightColor.colorGroup,
-                      styles.borderRightColor.colorShade
+                      styles.borderRightColor.group,
+                      styles.borderRightColor.shade
                   )};`
                 : ''
         }
@@ -38,8 +38,8 @@ export default (theme: Theme, styles?: Styles): string =>
             styles.borderBottomColor
                 ? `border-bottom-color: ${getColor(
                       theme,
-                      styles.borderBottomColor.colorGroup,
-                      styles.borderBottomColor.colorShade
+                      styles.borderBottomColor.group,
+                      styles.borderBottomColor.shade
                   )};`
                 : ''
         }
@@ -48,8 +48,8 @@ export default (theme: Theme, styles?: Styles): string =>
             styles.borderLeftColor
                 ? `border-left-color: ${getColor(
                       theme,
-                      styles.borderLeftColor.colorGroup,
-                      styles.borderLeftColor.colorShade
+                      styles.borderLeftColor.group,
+                      styles.borderLeftColor.shade
                   )};`
                 : ''
         }
@@ -58,8 +58,8 @@ export default (theme: Theme, styles?: Styles): string =>
             styles.borderColor
                 ? `border-color: ${getColor(
                       theme,
-                      styles.borderColor.colorGroup,
-                      styles.borderColor.colorShade
+                      styles.borderColor.group,
+                      styles.borderColor.shade
                   )};`
                 : ''
         }

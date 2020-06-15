@@ -4,12 +4,12 @@ import styled, {
     StyledComponent,
     ThemedStyledFunction
 } from 'styled-components';
-import { getFontSize, getFontWeight, NumberOrString } from '../../theme';
-import { Text, TextProps } from '../text';
+import { getFontSize, NumberOrString } from '../../theme';
+import { Text } from '../text';
 
 export type HeadingSize = 1 | 2 | 3 | 4 | 5 | 6;
 
-export interface HeadingProps extends TextProps {
+export interface HeadingProps {
     readonly id?: string;
     readonly className?: string;
     readonly size?: HeadingSize;
@@ -51,34 +51,13 @@ const HeadingBySize: React.FC<HeadingProps> = ({
     );
 };
 
-const BaseHeading: React.FC<HeadingProps> = styled(HeadingBySize)<HeadingProps>`
-    ${(props): string =>
-        props.fontWeight
-            ? `font-weight: ${getFontWeight(props.theme, props.fontWeight)}`
-            : `font-weight: ${getFontWeight(props.theme, 'medium')}`};
-
-    ${(props): string =>
-        props.fontSize
-            ? `font-size: ${getFontSize(props.theme, props.fontSize)}`
-            : ``};
-
-    display: block;
-    width: 100%;
-`;
-
 export const Heading: React.FC<HeadingProps> = ({
     children,
     size,
     ...restProps
 }) => (
     <Text {...restProps}>
-        <BaseHeading
-            size={size}
-            fontSize={restProps.fontSize}
-            fontWeight={restProps.fontWeight}
-        >
-            {children}
-        </BaseHeading>
+        <HeadingBySize size={size}>{children}</HeadingBySize>
     </Text>
 );
 

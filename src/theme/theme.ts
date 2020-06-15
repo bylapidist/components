@@ -8,7 +8,7 @@ export type ThemeArray<T> = { [K: string]: T[] };
 
 export type NumberOrString = string | number | 0;
 
-export type Color = { colorGroup: NumberOrString; colorShade: NumberOrString };
+export type Color = { group: NumberOrString; shade: NumberOrString };
 
 export interface Theme {
     readonly breakpoints?: ThemeObject<string>;
@@ -180,18 +180,12 @@ export const getWidth = (
 
 export const getColor = (
     theme: Theme,
-    colorGroup: NumberOrString,
-    colorShade: NumberOrString
+    group: NumberOrString,
+    shade: NumberOrString
 ): CSS.ColorProperty => {
-    if (
-        theme.colors &&
-        theme.colors[colorGroup] &&
-        theme.colors[colorGroup][colorShade]
-    ) {
-        return theme.colors[colorGroup][colorShade];
+    if (theme.colors && theme.colors[group] && theme.colors[group][shade]) {
+        return theme.colors[group][shade];
     }
 
-    throw new Error(
-        `${colorGroup} or ${colorShade} does not exist on theme.colors`
-    );
+    throw new Error(`${group} or ${shade} does not exist on theme.colors`);
 };

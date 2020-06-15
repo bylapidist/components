@@ -1,68 +1,30 @@
-import React, { PropsWithChildren } from 'react';
-import styled from 'styled-components';
-import {
-    Color,
-    getColor,
-    getFontFamily,
-    getFontSize,
-    getFontWeight,
-    getLetterSpacing,
-    getLineHeight,
-    NumberOrString
-} from '../../theme';
+import React from 'react';
+import deepMerge from 'lodash.merge';
+import { Box, BoxProps } from '../box';
 
-export interface TextProps extends PropsWithChildren<{}> {
-    readonly fontFamily?: NumberOrString;
-    readonly fontWeight?: NumberOrString;
-    readonly fontSize?: NumberOrString;
-    readonly textColor?: Color;
-    readonly lineHeight?: NumberOrString;
-    readonly letterSpacing?: NumberOrString;
-    readonly textAlign?: 'left' | 'right' | 'center';
-}
-
-export const Text: React.FC<TextProps> = styled.div<TextProps>`
-    ${(props): string =>
-        props.fontFamily
-            ? `font-family: ${getFontFamily(props.theme, props.fontFamily)}`
-            : `font-family: ${getFontFamily(props.theme, 'sans')}`};
-
-    ${(props): string =>
-        props.fontWeight
-            ? `font-weight: ${getFontWeight(props.theme, props.fontWeight)}`
-            : `font-weight: ${getFontWeight(props.theme, 'normal')}`};
-
-    ${(props): string =>
-        props.fontSize
-            ? `font-size: ${getFontSize(props.theme, props.fontSize)}`
-            : `font-size: ${getFontSize(props.theme, 3)}`};
-
-    ${(props): string =>
-        props.textColor
-            ? `color: ${getColor(
-                  props.theme,
-                  props.textColor.colorGroup,
-                  props.textColor.colorShade
-              )}`
-            : `color: ${getColor(props.theme, 'base', 'black')}`};
-
-    ${(props): string =>
-        props.lineHeight
-            ? `line-height: ${getLineHeight(props.theme, props.lineHeight)}`
-            : `line-height: ${getLineHeight(props.theme, 'normal')}`};
-
-    ${(props): string =>
-        props.textAlign
-            ? `text-align: ${props.textAlign}`
-            : `text-align: left`};
-
-    ${(props): string =>
-        props.letterSpacing
-            ? `letter-spacing: ${getLetterSpacing(
-                  props.theme,
-                  props.letterSpacing
-              )}`
-            : `letter-spacing: ${getLetterSpacing(props.theme, 'normal')}`};
-`;
+export const Text: React.FC<BoxProps> = ({
+    as = 'div',
+    styles,
+    ...restProps
+}) => (
+    <Box
+        as={as}
+        styles={deepMerge(
+            {
+                fontFamily: 'sans',
+                fontWeight: 'normal',
+                fontSize: 3,
+                lineHeight: 'normal',
+                letterSpacing: 'normal',
+                textColor: {
+                    group: 'base',
+                    shade: 'black'
+                }
+            },
+            styles
+        )}
+        {...restProps}
+    />
+);
 
 Text.displayName = 'Text';
