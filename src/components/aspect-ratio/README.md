@@ -8,12 +8,17 @@ import { ThemeProvider, AspectRatio, Text } from '@lapidist/components';
             ratio={'1/1'}
             styles={{
                 borderWidth: 'px',
-                borderColor: { group: 'grey', shade: 'light' },
-                width: '1/2',
+                borderColor: { group: 'grey', shade: 'lightest' },
+                width: 'full',
                 marginX: 'auto',
+                breakpoints: {
+                    md: {
+                        width: '1/2'
+                    }
+                },
                 pseudo: {
                     ':hover': {
-                        borderColor: { group: 'grey', shade: 'base' },
+                        borderColor: { group: 'grey', shade: 'light' },
                         cursor: 'pointer'
                     }
                 }

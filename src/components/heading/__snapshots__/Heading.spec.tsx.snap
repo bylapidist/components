@@ -2,168 +2,120 @@
 
 exports[`it works as h1 1`] = `
 .c0 {
-  font-size: 1rem;
+  font-size: 3rem;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
-  line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   color: black;
 }
 
-.c1 {
-  font-size: 3rem;
-}
-
-<div
+<h1
   className="c0"
 >
-  <h1
-    className="c1"
-  >
-    H1
-  </h1>
-</div>
+  H1
+</h1>
 `;
 
 exports[`it works as h2 1`] = `
 .c0 {
-  font-size: 1rem;
+  font-size: 2.25rem;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
-  line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   color: black;
 }
 
-.c1 {
-  font-size: 2.25rem;
-}
-
-<div
+<h2
   className="c0"
 >
-  <h2
-    className="c1"
-  >
-    H2
-  </h2>
-</div>
+  H2
+</h2>
 `;
 
 exports[`it works as h3 1`] = `
 .c0 {
-  font-size: 1rem;
+  font-size: 1.875rem;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
-  line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   color: black;
 }
 
-.c1 {
-  font-size: 1.875rem;
-}
-
-<div
+<h3
   className="c0"
 >
-  <h3
-    className="c1"
-  >
-    H3
-  </h3>
-</div>
+  H3
+</h3>
 `;
 
 exports[`it works as h4 1`] = `
 .c0 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
-  line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   color: black;
 }
 
-.c1 {
-  font-size: 1.5rem;
-}
-
-<div
+<h4
   className="c0"
 >
-  <h4
-    className="c1"
-  >
-    H4
-  </h4>
-</div>
+  H4
+</h4>
 `;
 
 exports[`it works as h5 1`] = `
 .c0 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
-  line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   color: black;
 }
 
-.c1 {
-  font-size: 1.25rem;
-}
-
-<div
+<h5
   className="c0"
 >
-  <h5
-    className="c1"
-  >
-    H5
-  </h5>
-</div>
+  H5
+</h5>
 `;
 
 exports[`it works as h6 1`] = `
 .c0 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
-  line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   color: black;
 }
 
-.c1 {
-  font-size: 1.125rem;
-}
-
-<div
+<h6
   className="c0"
 >
-  <h6
-    className="c1"
-  >
-    H6
-  </h6>
-</div>
+  H6
+</h6>
 `;
