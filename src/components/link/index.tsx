@@ -15,17 +15,17 @@ export const Link: React.FC<BoxProps & React.HTMLProps<HTMLAnchorElement>> = ({
                 borderBottomWidth: 1,
                 borderBottomColor: {
                     group: 'primary',
-                    shade: 'base'
+                    shade: 'light'
                 },
                 textColor: {
                     group: 'primary',
-                    shade: 'dark'
+                    shade: 'base'
                 },
                 pseudo: {
                     ':hover': {
                         textColor: {
                             group: 'primary',
-                            shade: 'base'
+                            shade: 'dark'
                         },
                         borderBottomColor: {
                             group: 'primary',
