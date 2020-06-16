@@ -10,7 +10,7 @@ exports[`it works with elements 1`] = `
   -moz-letter-spacing: 0.025em;
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
-  color: black;
+  color: #292B3E;
 }
 
 .c1 {
@@ -52,7 +52,7 @@ exports[`it works with ordered 1`] = `
   -moz-letter-spacing: 0.025em;
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
-  color: black;
+  color: #292B3E;
 }
 
 .c1 {
@@ -90,7 +90,7 @@ exports[`it works with strings 1`] = `
   -moz-letter-spacing: 0.025em;
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
-  color: black;
+  color: #292B3E;
 }
 
 .c1 {
@@ -128,7 +128,7 @@ exports[`it works with unordered 1`] = `
   -moz-letter-spacing: 0.025em;
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
-  color: black;
+  color: #292B3E;
 }
 
 .c1 {

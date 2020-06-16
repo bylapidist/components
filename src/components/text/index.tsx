@@ -17,8 +17,8 @@ export const Text: React.FC<BoxProps> = ({
                 lineHeight: 'normal',
                 letterSpacing: 'wide',
                 textColor: {
-                    group: 'base',
-                    shade: 'black'
+                    group: 'grey',
+                    shade: 'dark'
                 }
             },
             styles

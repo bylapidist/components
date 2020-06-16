@@ -10,7 +10,7 @@ exports[`it works with defaults 1`] = `
   -moz-letter-spacing: 0.025em;
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
-  color: black;
+  color: #292B3E;
 }
 
 <div
@@ -30,7 +30,7 @@ exports[`it works with styles 1`] = `
   -moz-letter-spacing: 0.025em;
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
-  color: black;
+  color: #292B3E;
   width: 50%;
 }
 
