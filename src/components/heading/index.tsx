@@ -1,64 +1,44 @@
 import React from 'react';
-import styled, {
-    AnyStyledComponent,
-    StyledComponent,
-    ThemedStyledFunction
-} from 'styled-components';
-import { getFontSize, NumberOrString } from '../../theme';
+import deepMerge from 'lodash.merge';
 import { Text } from '../text';
+import { BoxProps } from '../box';
 
 export type HeadingSize = 1 | 2 | 3 | 4 | 5 | 6;
 
 export interface HeadingProps {
-    readonly id?: string;
-    readonly className?: string;
     readonly size?: HeadingSize;
 }
 
 interface HeadingMapper {
-    [level: number]: StyledComponent<AnyStyledComponent, {}, HeadingProps>;
+    readonly [level: string]: {
+        readonly as: keyof JSX.IntrinsicElements;
+        readonly fontSize: number;
+    };
 }
 
-export const createHeading = (
-    heading: ThemedStyledFunction<AnyStyledComponent, {}>,
-    size: NumberOrString
-): StyledComponent<AnyStyledComponent, {}, HeadingProps> => heading<
-    HeadingProps
->`
-    ${(props): string => `font-size: ${getFontSize(props.theme, size)}`};
-`;
-
 const headings: HeadingMapper = {
-    1: createHeading(styled.h1, 9),
-    2: createHeading(styled.h2, 8),
-    3: createHeading(styled.h3, 7),
-    4: createHeading(styled.h4, 6),
-    5: createHeading(styled.h5, 5),
-    6: createHeading(styled.h6, 4)
+    1: { as: 'h1', fontSize: 9 },
+    2: { as: 'h2', fontSize: 8 },
+    3: { as: 'h3', fontSize: 7 },
+    4: { as: 'h4', fontSize: 6 },
+    5: { as: 'h5', fontSize: 5 },
+    6: { as: 'h6', fontSize: 4 }
 };
 
-const HeadingBySize: React.FC<HeadingProps> = ({
-    id,
-    className,
-    children,
-    size = 1
-}) => {
-    const HeadingToUse = headings[size];
-    return (
-        <HeadingToUse id={id} className={className}>
-            {children}
-        </HeadingToUse>
-    );
-};
-
-export const Heading: React.FC<HeadingProps> = ({
-    children,
-    size,
-    ...restProps
-}) => (
-    <Text {...restProps}>
-        <HeadingBySize size={size}>{children}</HeadingBySize>
-    </Text>
+export const Heading: React.FC<
+    BoxProps & HeadingProps & React.HTMLProps<HTMLHeadingElement>
+> = ({ as, styles, size, ...restProps }) => (
+    <Text
+        as={as || headings[size || 1].as}
+        styles={deepMerge(
+            {
+                fontSize: headings[size || 1].fontSize,
+                lineHeight: 'tight'
+            },
+            styles
+        )}
+        {...restProps}
+    />
 );
 
 Heading.displayName = 'Heading';

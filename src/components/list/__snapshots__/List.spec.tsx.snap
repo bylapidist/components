@@ -6,10 +6,10 @@ exports[`it works with elements 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   color: black;
 }
 
@@ -48,10 +48,10 @@ exports[`it works with ordered 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   color: black;
 }
 
@@ -86,10 +86,10 @@ exports[`it works with strings 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   color: black;
 }
 
@@ -124,10 +124,10 @@ exports[`it works with unordered 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   color: black;
 }
 

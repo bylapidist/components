@@ -132,10 +132,10 @@ export const defaultTheme: Theme = {
             transparent: 'transparent'
         },
         grey: {
-            lightest: '#ffffff',
-            light: '#f3f5f9',
-            base: '#66687d',
-            dark: '#292b3e'
+            lightest: '#E8E8E8',
+            light: '#d4d4d4',
+            base: '#7c7e93',
+            dark: '#57596e'
         },
         primary: {
             lightest: '#9bfff8',

@@ -6,10 +6,10 @@ exports[`it works 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
   color: #007072;
   border-bottom: solid;
   border-bottom-width: 2px;
