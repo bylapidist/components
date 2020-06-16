@@ -1,89 +1,43 @@
 import React from 'react';
-import styled from 'styled-components';
-import { defaultEasing } from '../../utilities';
-import { Text, TextProps } from '../text';
-import { getBorderWidth, getColor } from '../../theme';
+import deepMerge from 'lodash.merge';
+import { Text } from '../text';
+import { BoxProps } from '../box';
 
-export interface LinkProps extends TextProps {
-    readonly href: string;
-    readonly children: string;
-    readonly target?: string;
-    readonly rel?: string;
-}
-
-const BaseLink: React.FC<LinkProps> = styled.a<LinkProps>`
-    text-decoration: none;
-    transition: color ${defaultEasing()}, border ${defaultEasing()};
-
-    ${(props): string =>
-        `border-bottom: ${getBorderWidth(props.theme, 1)} solid ${getColor(
-            props.theme,
-            'primary',
-            'light'
-        )}`};
-
-    ${(props): string =>
-        `outline: ${getBorderWidth(props.theme, 1)} solid ${getColor(
-            props.theme,
-            'base',
-            'transparent'
-        )}`};
-
-    ${(props): string => `outline-offset: ${getBorderWidth(props.theme, 1)}`};
-
-    ${(props): string =>
-        props.textColor
-            ? `color: ${getColor(
-                  props.theme,
-                  props.textColor.colorGroup,
-                  props.textColor.colorShade
-              )}`
-            : `color: ${getColor(props.theme, 'primary', 'base')}`};
-
-    :hover {
-        ${(props): string =>
-            `border-bottom: ${getBorderWidth(props.theme, 1)} solid ${getColor(
-                props.theme,
-                'primary',
-                'dark'
-            )}`};
-
-        ${(props): string =>
-            `color: ${getColor(props.theme, 'primary', 'dark')}`};
-    }
-
-    :focus {
-        ${(props): string =>
-            `outline: ${getBorderWidth(props.theme, 1)} solid ${getColor(
-                props.theme,
-                'secondary',
-                'base'
-            )}`};
-    }
-`;
-
-const TextWrapper: React.FC<TextProps> = styled(Text)<TextProps>`
-    display: inline;
-`;
-
-export const Link: React.FC<LinkProps> = ({
-    children,
-    href,
-    target,
-    rel,
+export const Link: React.FC<BoxProps & React.HTMLProps<HTMLAnchorElement>> = ({
+    as = 'a',
+    styles,
     ...restProps
 }) => (
-    <TextWrapper {...restProps}>
-        <BaseLink
-            href={href}
-            target={target}
-            rel={rel}
-            fontSize={restProps.fontSize}
-            fontWeight={restProps.fontWeight}
-        >
-            {children}
-        </BaseLink>
-    </TextWrapper>
+    <Text
+        as={as}
+        styles={deepMerge(
+            {
+                borderBottomWidth: 1,
+                borderBottomColor: {
+                    group: 'primary',
+                    shade: 'base'
+                },
+                textColor: {
+                    group: 'primary',
+                    shade: 'dark'
+                },
+                pseudo: {
+                    ':hover': {
+                        textColor: {
+                            group: 'primary',
+                            shade: 'base'
+                        },
+                        borderBottomColor: {
+                            group: 'primary',
+                            shade: 'dark'
+                        }
+                    }
+                }
+            },
+            styles
+        )}
+        {...restProps}
+    />
 );
 
 Link.displayName = 'Link';

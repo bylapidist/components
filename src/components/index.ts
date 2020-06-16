@@ -2,7 +2,6 @@ export * from './aspect-ratio';
 export * from './box';
 export * from './heading';
 export * from './image';
-export * from './layout';
 export * from './link';
 export * from './list';
 export * from './logo';

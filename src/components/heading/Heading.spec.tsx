@@ -81,29 +81,3 @@ test('it works as h6', () => {
         .toJSON();
     expect(tree).toMatchSnapshot();
 });
-
-test('it works overriding fontSize', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Heading size={6} fontSize={10}>
-                    H6
-                </Heading>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
-});
-
-test('it works overriding fontWeight', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Heading size={6} fontWeight="black">
-                    H6
-                </Heading>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
-});

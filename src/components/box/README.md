@@ -7,10 +7,14 @@ import { ThemeProvider, Box, Text } from '@lapidist/components';
     <Box
         styles={{
             padding: 4,
-            backgroundColor: { colorGroup: 'primary', colorShade: 'base' }
+            backgroundColor: { group: 'primary', shade: 'base' }
         }}
     >
-        <Text textColor={{ colorGroup: 'base', colorShade: 'white' }}>Hello world!</Text>
+        <Text styles={{
+            textColor: { group: 'base', shade: 'white' }
+        }}>
+            Hello world!
+        </Text>
     </Box>
 </ThemeProvider>
 ```

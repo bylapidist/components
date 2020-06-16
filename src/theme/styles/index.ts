@@ -3,6 +3,7 @@ import * as CSS from 'csstype';
 import { Color, NumberOrString, Theme, ThemeObject } from '../theme';
 import withBase from './base';
 import withBreakpoints from './breakpoints';
+import withNesting from './nesting';
 
 export interface Styles {
     readonly fontSize?: CSS.FontSizeProperty<NumberOrString>;
@@ -43,7 +44,9 @@ export interface Styles {
     readonly paddingRight?: CSS.PaddingRightProperty<NumberOrString>;
     readonly paddingBottom?: CSS.PaddingBottomProperty<NumberOrString>;
     readonly paddingLeft?: CSS.PaddingLeftProperty<NumberOrString>;
+    readonly cursor?: CSS.CursorProperty;
     readonly breakpoints?: ThemeObject<Styles>;
+    readonly pseudo?: ThemeObject<Styles>;
 }
 
 export interface PropsWithStyles {
@@ -56,5 +59,6 @@ export const withStyles = (theme: Theme, styles?: Styles): string =>
         ? `
         ${withBase(theme, styles)}
         ${withBreakpoints(theme, styles)}
+        ${withNesting(theme, styles)}
 `
         : '';

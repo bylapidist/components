@@ -2,33 +2,26 @@
 
 exports[`it works as h1 1`] = `
 .c0 {
-  font-family: Montserrat,sans-serif;
-  font-weight: 400;
   font-size: 1rem;
-  color: black;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  text-align: left;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  color: black;
 }
 
 .c1 {
   font-size: 3rem;
 }
 
-.c2 {
-  font-weight: 500;
-  display: block;
-  width: 100%;
-}
-
 <div
   className="c0"
 >
   <h1
-    className="c1 c2"
+    className="c1"
   >
     H1
   </h1>
@@ -37,33 +30,26 @@ exports[`it works as h1 1`] = `
 
 exports[`it works as h2 1`] = `
 .c0 {
-  font-family: Montserrat,sans-serif;
-  font-weight: 400;
   font-size: 1rem;
-  color: black;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  text-align: left;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  color: black;
 }
 
 .c1 {
   font-size: 2.25rem;
 }
 
-.c2 {
-  font-weight: 500;
-  display: block;
-  width: 100%;
-}
-
 <div
   className="c0"
 >
   <h2
-    className="c1 c2"
+    className="c1"
   >
     H2
   </h2>
@@ -72,33 +58,26 @@ exports[`it works as h2 1`] = `
 
 exports[`it works as h3 1`] = `
 .c0 {
-  font-family: Montserrat,sans-serif;
-  font-weight: 400;
   font-size: 1rem;
-  color: black;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  text-align: left;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  color: black;
 }
 
 .c1 {
   font-size: 1.875rem;
 }
 
-.c2 {
-  font-weight: 500;
-  display: block;
-  width: 100%;
-}
-
 <div
   className="c0"
 >
   <h3
-    className="c1 c2"
+    className="c1"
   >
     H3
   </h3>
@@ -107,33 +86,26 @@ exports[`it works as h3 1`] = `
 
 exports[`it works as h4 1`] = `
 .c0 {
-  font-family: Montserrat,sans-serif;
-  font-weight: 400;
   font-size: 1rem;
-  color: black;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  text-align: left;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  color: black;
 }
 
 .c1 {
   font-size: 1.5rem;
 }
 
-.c2 {
-  font-weight: 500;
-  display: block;
-  width: 100%;
-}
-
 <div
   className="c0"
 >
   <h4
-    className="c1 c2"
+    className="c1"
   >
     H4
   </h4>
@@ -142,33 +114,26 @@ exports[`it works as h4 1`] = `
 
 exports[`it works as h5 1`] = `
 .c0 {
-  font-family: Montserrat,sans-serif;
-  font-weight: 400;
   font-size: 1rem;
-  color: black;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  text-align: left;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  color: black;
 }
 
 .c1 {
   font-size: 1.25rem;
 }
 
-.c2 {
-  font-weight: 500;
-  display: block;
-  width: 100%;
-}
-
 <div
   className="c0"
 >
   <h5
-    className="c1 c2"
+    className="c1"
   >
     H5
   </h5>
@@ -177,106 +142,26 @@ exports[`it works as h5 1`] = `
 
 exports[`it works as h6 1`] = `
 .c0 {
-  font-family: Montserrat,sans-serif;
-  font-weight: 400;
   font-size: 1rem;
-  color: black;
-  line-height: 1.5;
-  text-align: left;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.c1 {
-  font-size: 1.125rem;
-}
-
-.c2 {
-  font-weight: 500;
-  display: block;
-  width: 100%;
-}
-
-<div
-  className="c0"
->
-  <h6
-    className="c1 c2"
-  >
-    H6
-  </h6>
-</div>
-`;
-
-exports[`it works overriding fontSize 1`] = `
-.c0 {
-  font-family: Montserrat,sans-serif;
   font-weight: 400;
-  font-size: 4rem;
-  color: black;
-  line-height: 1.5;
-  text-align: left;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.c1 {
-  font-size: 1.125rem;
-}
-
-.c2 {
-  font-weight: 500;
-  font-size: 4rem;
-  display: block;
-  width: 100%;
-}
-
-<div
-  className="c0"
-  fontSize={10}
->
-  <h6
-    className="c1 c2"
-  >
-    H6
-  </h6>
-</div>
-`;
-
-exports[`it works overriding fontWeight 1`] = `
-.c0 {
   font-family: Montserrat,sans-serif;
-  font-weight: 900;
-  font-size: 1rem;
-  color: black;
   line-height: 1.5;
-  text-align: left;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  color: black;
 }
 
 .c1 {
   font-size: 1.125rem;
 }
 
-.c2 {
-  font-weight: 900;
-  display: block;
-  width: 100%;
-}
-
 <div
   className="c0"
-  fontWeight="black"
 >
   <h6
-    className="c1 c2"
+    className="c1"
   >
     H6
   </h6>

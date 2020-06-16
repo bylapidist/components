@@ -15,43 +15,53 @@ export default (theme: Theme, styles?: Styles): string =>
 
         ${
             styles.borderWidth
-                ? `border-width: ${getBorderWidth(theme, styles.borderWidth)};`
+                ? `
+                border: solid;
+                border-width: ${getBorderWidth(theme, styles.borderWidth)};`
                 : ''
         }
 
         ${
             styles.borderTopWidth
-                ? `border-top-width: ${getBorderWidth(
-                      theme,
-                      styles.borderTopWidth
-                  )};`
+                ? `
+                border-top: solid;
+                border-top-width: ${getBorderWidth(
+                    theme,
+                    styles.borderTopWidth
+                )};`
                 : ''
         }
 
         ${
             styles.borderRightWidth
-                ? `border-right-width: ${getBorderWidth(
-                      theme,
-                      styles.borderRightWidth
-                  )};`
+                ? `
+                border-right: solid;
+                border-right-width: ${getBorderWidth(
+                    theme,
+                    styles.borderRightWidth
+                )};`
                 : ''
         }
 
         ${
             styles.borderBottomWidth
-                ? `border-bottom-width: ${getBorderWidth(
-                      theme,
-                      styles.borderBottomWidth
-                  )};`
+                ? `
+                border-bottom: solid;
+                border-bottom-width: ${getBorderWidth(
+                    theme,
+                    styles.borderBottomWidth
+                )};`
                 : ''
         }
 
         ${
             styles.borderLeftWidth
-                ? `border-left-width: ${getBorderWidth(
-                      theme,
-                      styles.borderLeftWidth
-                  )};`
+                ? `
+                border-left: solid;
+                border-left-width: ${getBorderWidth(
+                    theme,
+                    styles.borderLeftWidth
+                )};`
                 : ''
         }
 

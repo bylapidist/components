@@ -2,16 +2,15 @@
 
 exports[`it works with elements 1`] = `
 .c0 {
-  font-family: Montserrat,sans-serif;
-  font-weight: 400;
   font-size: 1rem;
-  color: black;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  text-align: left;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  color: black;
 }
 
 .c1 {
@@ -45,16 +44,15 @@ exports[`it works with elements 1`] = `
 
 exports[`it works with ordered 1`] = `
 .c0 {
-  font-family: Montserrat,sans-serif;
-  font-weight: 400;
   font-size: 1rem;
-  color: black;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  text-align: left;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  color: black;
 }
 
 .c1 {
@@ -84,16 +82,15 @@ exports[`it works with ordered 1`] = `
 
 exports[`it works with strings 1`] = `
 .c0 {
-  font-family: Montserrat,sans-serif;
-  font-weight: 400;
   font-size: 1rem;
-  color: black;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  text-align: left;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  color: black;
 }
 
 .c1 {
@@ -123,16 +120,15 @@ exports[`it works with strings 1`] = `
 
 exports[`it works with unordered 1`] = `
 .c0 {
-  font-family: Montserrat,sans-serif;
-  font-weight: 400;
   font-size: 1rem;
-  color: black;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
   line-height: 1.5;
-  text-align: left;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  color: black;
 }
 
 .c1 {
