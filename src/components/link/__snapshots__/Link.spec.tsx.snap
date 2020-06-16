@@ -10,14 +10,14 @@ exports[`it works 1`] = `
   -moz-letter-spacing: 0.025em;
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
-  color: #007072;
+  color: #17a3a5;
   border-bottom: solid;
   border-bottom-width: 2px;
-  border-bottom-color: #17a3a5;
+  border-bottom-color: #4AD6D8;
 }
 
 .c0:hover {
-  color: #17a3a5;
+  color: #007072;
   border-bottom-color: #007072;
 }
 
