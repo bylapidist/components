@@ -4,6 +4,6 @@ The Logo component is used for Lapidist branding.
 import { ThemeProvider, Logo } from '@lapidist/components';
 
 <ThemeProvider>
-    <Logo />
+    <Logo styles={{ sizeWidth: 16 }} />
 </ThemeProvider>
 ```
