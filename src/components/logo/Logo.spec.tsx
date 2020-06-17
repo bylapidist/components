@@ -9,7 +9,7 @@ test('it works', () => {
     const tree = renderer
         .create(
             <ThemeProvider>
-                <Logo size="32px" />
+                <Logo />
             </ThemeProvider>
         )
         .toJSON();
@@ -20,7 +20,7 @@ test('it works thinking', () => {
     const tree = renderer
         .create(
             <ThemeProvider>
-                <Logo size="32px" thinking />
+                <Logo thinking />
             </ThemeProvider>
         )
         .toJSON();
@@ -31,23 +31,7 @@ test('it works animated', () => {
     const tree = renderer
         .create(
             <ThemeProvider>
-                <Logo size="32px" animated />
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
-});
-
-test('it works with different colours', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Logo
-                    size="32px"
-                    bUpColor="#111"
-                    bDownColor="#222"
-                    dColor="#333"
-                />
+                <Logo animated />
             </ThemeProvider>
         )
         .toJSON();

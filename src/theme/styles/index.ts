@@ -29,6 +29,12 @@ export interface Styles {
     readonly minWidth?: CSS.WidthProperty<NumberOrString>;
     readonly maxWidth?: CSS.WidthProperty<NumberOrString>;
     readonly containerWidth?: CSS.WidthProperty<NumberOrString>;
+    readonly sizeWidth?: CSS.WidthProperty<NumberOrString>;
+    readonly height?: CSS.HeightProperty<NumberOrString>;
+    readonly minHeight?: CSS.HeightProperty<NumberOrString>;
+    readonly maxHeight?: CSS.HeightProperty<NumberOrString>;
+    readonly containerHeight?: CSS.HeightProperty<NumberOrString>;
+    readonly sizeHeight?: CSS.HeightProperty<NumberOrString>;
     readonly textAlign?: CSS.TextAlignProperty;
     readonly margin?: CSS.MarginProperty<NumberOrString>;
     readonly marginX?: CSS.MarginProperty<NumberOrString>;
@@ -45,6 +51,9 @@ export interface Styles {
     readonly paddingBottom?: CSS.PaddingBottomProperty<NumberOrString>;
     readonly paddingLeft?: CSS.PaddingLeftProperty<NumberOrString>;
     readonly cursor?: CSS.CursorProperty;
+    readonly overflow?: CSS.OverflowProperty;
+    readonly overflowX?: CSS.OverflowXProperty;
+    readonly overflowY?: CSS.OverflowYProperty;
     readonly breakpoints?: ThemeObject<Styles>;
     readonly pseudo?: ThemeObject<Styles>;
 }

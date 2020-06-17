@@ -1,41 +1,23 @@
 import React from 'react';
+import deepMerge from 'lodash.merge';
 import styled, {
     css,
     DefaultTheme,
     FlattenInterpolation,
     ThemeProps
 } from 'styled-components';
-import {
-    slideRight,
-    slideDown,
-    slideUpLeft,
-    stripUnit,
-    thinking
-} from '../../utilities';
+import { slideRight, slideDown, slideUpLeft, thinking } from '../../theme';
+import { Box, BoxProps } from '../box';
+import { AspectRatio } from '../aspect-ratio';
 
 export interface LogoProps {
-    readonly id?: string;
-    readonly className?: string;
-    readonly bUpColor?: string;
-    readonly bDownColor?: string;
-    readonly dColor?: string;
-    readonly size: string;
+    readonly width?: string;
     readonly animated?: boolean;
     readonly thinking?: boolean;
 }
 
-const bUp = (offset: number): string =>
-    `0,0 0,${offset * 0.5} ${offset * 0.5},${offset * 0.5}`;
-
-const bDown = (offset: number): string =>
-    `0,${offset * 0.5} 0,${offset} ${offset * 0.5},${offset}`;
-
-const d = (offset: number): string =>
-    `${offset * 0.5},0 ${offset * 0.5},${offset} ${offset},${offset * 0.5}`;
-
 interface TriangleProps {
     readonly points: string;
-    readonly color: string | undefined;
     readonly animated: boolean;
     readonly thinking: boolean;
 }
@@ -80,44 +62,44 @@ const D: React.FC<TriangleProps> = styled(Triangle)`
     fill: ${(props): string => props.theme.colors.secondary.base || ''};
 `;
 
-const SVGLogo: React.FC<LogoProps> = ({
-    id,
-    className,
-    bUpColor,
-    bDownColor,
-    dColor,
-    size = '60px',
-    animated = false,
-    thinking = false
-}) => (
-    <svg id={id} className={className}>
-        <BUp
-            points={bUp(stripUnit(size))}
-            color={bUpColor}
-            animated={animated}
-            thinking={thinking}
-        />
-        <BDown
-            points={bDown(stripUnit(size))}
-            color={bDownColor}
-            animated={animated}
-            thinking={thinking}
-        />
-        <D
-            points={d(stripUnit(size))}
-            color={dColor}
-            animated={animated}
-            thinking={thinking}
-        />
-    </svg>
-);
-
-export const Logo: React.FC<LogoProps> = styled(SVGLogo)<LogoProps>`
-    position: relative;
-    display: block;
+const LogoBox: React.FC<
+    BoxProps & LogoProps & React.HTMLProps<HTMLDivElement>
+> = styled(Box)<BoxProps & LogoProps>`
     overflow: hidden;
-    width: ${(props): string => props.size || '60px'};
-    height: ${(props): string => props.size || '60px'};
 `;
+
+export const Logo: React.FC<
+    BoxProps & LogoProps & React.HTMLProps<HTMLDivElement>
+> = ({
+    as = 'div',
+    styles,
+    animated = false,
+    thinking = false,
+    ...restProps
+}) => (
+    <>
+        <LogoBox as={as} styles={deepMerge({}, styles)} {...restProps}>
+            <AspectRatio ratio="1/1">
+                <svg preserveAspectRatio="none" viewBox="0 0 64 64">
+                    <BUp
+                        points="0,0 0,32 32,32"
+                        animated={animated}
+                        thinking={thinking}
+                    />
+                    <BDown
+                        points="0,32 0,64 32,64"
+                        animated={animated}
+                        thinking={thinking}
+                    />
+                    <D
+                        points="32,0 32,64 64,32"
+                        animated={animated}
+                        thinking={thinking}
+                    />
+                </svg>
+            </AspectRatio>
+        </LogoBox>
+    </>
+);
 
 Logo.displayName = 'Logo';

@@ -24,6 +24,34 @@ export default (theme: Theme, styles?: Styles): string =>
                 : ''
         }
 
+        ${styles.sizeWidth ? `width: ${getSize(theme, styles.sizeWidth)};` : ''}
+
+        ${styles.height ? `height: ${getWidth(theme, styles.height)};` : ''}
+
+        ${
+            styles.minHeight
+                ? `min-height: ${getWidth(theme, styles.minHeight)};`
+                : ''
+        }
+
+        ${
+            styles.maxHeight
+                ? `max-height: ${getWidth(theme, styles.maxHeight)};`
+                : ''
+        }
+
+        ${
+            styles.containerHeight
+                ? `max-height: ${getBreakpoint(theme, styles.containerHeight)};`
+                : ''
+        }
+
+        ${
+            styles.sizeHeight
+                ? `height: ${getSize(theme, styles.sizeHeight)};`
+                : ''
+        }
+
         ${styles.margin ? `margin: ${getSize(theme, styles.margin)};` : ''}
 
         ${

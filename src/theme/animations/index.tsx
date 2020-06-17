@@ -5,7 +5,9 @@ import {
     keyframes,
     ThemeProps
 } from 'styled-components';
-import { defaultAnimationDuration } from '../helpers';
+
+export const defaultAnimationDuration = (): string =>
+    'animation-duration: 0.8s';
 
 const thinkingKeyframes = keyframes`
     0% { opacity: 1 }

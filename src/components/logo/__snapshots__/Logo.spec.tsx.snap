@@ -2,51 +2,108 @@
 
 exports[`it works 1`] = `
 .c1 {
+  position: relative;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.c1:before {
+  padding-bottom: calc(100% / (1 / 1));
+  display: block;
+  content: '';
+}
+
+.c1 > :first-child {
+  position: absolute;
+  object-fit: scale-down;
+  object-position: 50% 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.c1 > img {
+  height: auto;
+}
+
+.c2 {
   -webkit-animation-delay: 0;
   animation-delay: 0;
   fill: #72af5d;
 }
 
-.c2 {
+.c3 {
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
   fill: #17a3a5;
 }
 
-.c3 {
+.c4 {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
   fill: #ebc764;
 }
 
 .c0 {
-  position: relative;
-  display: block;
   overflow: hidden;
-  width: 32px;
-  height: 32px;
 }
 
-<svg
-  className="c0"
+<div
+  className="sc-AxjAm c0"
 >
-  <polygon
+  <div
     className="sc-AxjAm c1"
-    points="0,0 0,16 16,16"
-  />
-  <polygon
-    className="sc-AxjAm c2"
-    points="0,16 0,32 16,32"
-  />
-  <polygon
-    className="sc-AxjAm c3"
-    points="16,0 16,32 32,16"
-  />
-</svg>
+  >
+    <svg
+      preserveAspectRatio="none"
+      viewBox="0 0 64 64"
+    >
+      <polygon
+        className="sc-AxiKw c2"
+        points="0,0 0,32 32,32"
+      />
+      <polygon
+        className="sc-AxiKw c3"
+        points="0,32 0,64 32,64"
+      />
+      <polygon
+        className="sc-AxiKw c4"
+        points="32,0 32,64 64,32"
+      />
+    </svg>
+  </div>
+</div>
 `;
 
 exports[`it works animated 1`] = `
 .c1 {
+  position: relative;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.c1:before {
+  padding-bottom: calc(100% / (1 / 1));
+  display: block;
+  content: '';
+}
+
+.c1 > :first-child {
+  position: absolute;
+  object-fit: scale-down;
+  object-position: 50% 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.c1 > img {
+  height: auto;
+}
+
+.c2 {
   -webkit-animation: dTTrEC;
   animation: dTTrEC;
   -webkit-animation-duration: 0.8s;
@@ -60,7 +117,7 @@ exports[`it works animated 1`] = `
   fill: #72af5d;
 }
 
-.c2 {
+.c3 {
   -webkit-animation: fOlPOW;
   animation: fOlPOW;
   -webkit-animation-duration: 0.8s;
@@ -74,7 +131,7 @@ exports[`it works animated 1`] = `
   fill: #17a3a5;
 }
 
-.c3 {
+.c4 {
   -webkit-animation: kJzVPa;
   animation: kJzVPa;
   -webkit-animation-iteration-count: 1;
@@ -89,33 +146,64 @@ exports[`it works animated 1`] = `
 }
 
 .c0 {
-  position: relative;
-  display: block;
   overflow: hidden;
-  width: 32px;
-  height: 32px;
 }
 
-<svg
-  className="c0"
+<div
+  className="sc-AxjAm c0"
 >
-  <polygon
+  <div
     className="sc-AxjAm c1"
-    points="0,0 0,16 16,16"
-  />
-  <polygon
-    className="sc-AxjAm c2"
-    points="0,16 0,32 16,32"
-  />
-  <polygon
-    className="sc-AxjAm c3"
-    points="16,0 16,32 32,16"
-  />
-</svg>
+  >
+    <svg
+      preserveAspectRatio="none"
+      viewBox="0 0 64 64"
+    >
+      <polygon
+        className="sc-AxiKw c2"
+        points="0,0 0,32 32,32"
+      />
+      <polygon
+        className="sc-AxiKw c3"
+        points="0,32 0,64 32,64"
+      />
+      <polygon
+        className="sc-AxiKw c4"
+        points="32,0 32,64 64,32"
+      />
+    </svg>
+  </div>
+</div>
 `;
 
 exports[`it works thinking 1`] = `
 .c1 {
+  position: relative;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.c1:before {
+  padding-bottom: calc(100% / (1 / 1));
+  display: block;
+  content: '';
+}
+
+.c1 > :first-child {
+  position: absolute;
+  object-fit: scale-down;
+  object-position: 50% 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.c1 > img {
+  height: auto;
+}
+
+.c2 {
   -webkit-animation: hzFDkX;
   animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
@@ -129,7 +217,7 @@ exports[`it works thinking 1`] = `
   fill: #72af5d;
 }
 
-.c2 {
+.c3 {
   -webkit-animation: hzFDkX;
   animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
@@ -143,7 +231,7 @@ exports[`it works thinking 1`] = `
   fill: #17a3a5;
 }
 
-.c3 {
+.c4 {
   -webkit-animation: hzFDkX;
   animation: hzFDkX;
   -webkit-animation-duration: 0.8s;
@@ -158,78 +246,32 @@ exports[`it works thinking 1`] = `
 }
 
 .c0 {
-  position: relative;
-  display: block;
   overflow: hidden;
-  width: 32px;
-  height: 32px;
 }
 
-<svg
-  className="c0"
+<div
+  className="sc-AxjAm c0"
 >
-  <polygon
+  <div
     className="sc-AxjAm c1"
-    points="0,0 0,16 16,16"
-  />
-  <polygon
-    className="sc-AxjAm c2"
-    points="0,16 0,32 16,32"
-  />
-  <polygon
-    className="sc-AxjAm c3"
-    points="16,0 16,32 32,16"
-  />
-</svg>
-`;
-
-exports[`it works with different colours 1`] = `
-.c1 {
-  fill: #111;
-  -webkit-animation-delay: 0;
-  animation-delay: 0;
-  fill: #72af5d;
-}
-
-.c2 {
-  fill: #222;
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-  fill: #17a3a5;
-}
-
-.c3 {
-  fill: #333;
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  fill: #ebc764;
-}
-
-.c0 {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  width: 32px;
-  height: 32px;
-}
-
-<svg
-  className="c0"
->
-  <polygon
-    className="sc-AxjAm c1"
-    color="#111"
-    points="0,0 0,16 16,16"
-  />
-  <polygon
-    className="sc-AxjAm c2"
-    color="#222"
-    points="0,16 0,32 16,32"
-  />
-  <polygon
-    className="sc-AxjAm c3"
-    color="#333"
-    points="16,0 16,32 32,16"
-  />
-</svg>
+  >
+    <svg
+      preserveAspectRatio="none"
+      viewBox="0 0 64 64"
+    >
+      <polygon
+        className="sc-AxiKw c2"
+        points="0,0 0,32 32,32"
+      />
+      <polygon
+        className="sc-AxiKw c3"
+        points="0,32 0,64 32,64"
+      />
+      <polygon
+        className="sc-AxiKw c4"
+        points="32,0 32,64 64,32"
+      />
+    </svg>
+  </div>
+</div>
 `;
