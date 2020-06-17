@@ -1,5 +1,5 @@
-import { Styles } from './index';
 import { getBreakpoint, getSize, getWidth, Theme } from '../theme';
+import { Styles } from '../styles';
 
 export default (theme: Theme, styles?: Styles): string =>
     styles

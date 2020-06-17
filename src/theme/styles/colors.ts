@@ -1,4 +1,4 @@
-import { Styles } from './index';
+import { Styles } from '../styles';
 import { getColor, Theme } from '../theme';
 
 export default (theme: Theme, styles?: Styles): string =>

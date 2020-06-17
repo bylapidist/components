@@ -1,4 +1,4 @@
-import { Styles } from './index';
+import { Styles } from '../styles';
 
 export default (styles?: Styles): string =>
     styles

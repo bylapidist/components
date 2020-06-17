@@ -1,4 +1,4 @@
-import { Styles } from './index';
+import { Styles } from '../styles';
 import { getBorderRadius, getBorderWidth, getBoxShadow, Theme } from '../theme';
 
 export default (theme: Theme, styles?: Styles): string =>
