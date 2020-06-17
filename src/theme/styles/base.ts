@@ -1,4 +1,4 @@
-import { Styles } from './index';
+import { Styles } from '../styles';
 import { Theme } from '../theme';
 import withUtilities from './utilities';
 import withTypography from './typography';

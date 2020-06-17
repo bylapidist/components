@@ -1,4 +1,4 @@
-import { Styles } from './index';
+import { Styles } from '../styles';
 import { Theme, ThemeObject } from '../theme';
 import withBase from './base';
 

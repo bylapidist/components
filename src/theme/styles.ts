@@ -1,9 +1,5 @@
 import * as CSS from 'csstype';
-
-import { Color, NumberOrString, Theme, ThemeObject } from '../theme';
-import withBase from './base';
-import withBreakpoints from './breakpoints';
-import withNesting from './nesting';
+import { Color, NumberOrString, ThemeObject } from './theme';
 
 export interface Styles {
     readonly fontSize?: CSS.FontSizeProperty<NumberOrString>;
@@ -62,12 +58,3 @@ export interface PropsWithStyles {
     readonly styles?: Styles;
     readonly as?: keyof JSX.IntrinsicElements;
 }
-
-export const withStyles = (theme: Theme, styles?: Styles): string =>
-    styles
-        ? `
-        ${withBase(theme, styles)}
-        ${withBreakpoints(theme, styles)}
-        ${withNesting(theme, styles)}
-`
-        : '';
