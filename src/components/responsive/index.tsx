@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { withTheme } from 'styled-components';
-import { getAllBreakpoints, getAllMediaQueries, Theme } from '../../theme';
+import { allBreakpoints, allMediaQueries, Theme } from '@lapidist/styles';
 
 export interface ResponsiveProps extends PropsWithChildren<{}> {
     theme: Theme;
@@ -53,7 +53,7 @@ class BaseResponsive extends React.Component<ResponsiveProps, ResponsiveState> {
 
         const breakpointsToRenderAt: string[] = breakpoint
             ? [breakpoint]
-            : [...getAllBreakpoints(theme)];
+            : [...allBreakpoints(theme)];
 
         for (const breakpointToRenderAt of breakpointsToRenderAt) {
             this.triggerAtMediaQueries[
@@ -61,14 +61,14 @@ class BaseResponsive extends React.Component<ResponsiveProps, ResponsiveState> {
             ] = window.matchMedia(this.allMediaQueries[breakpointToRenderAt]);
         }
 
-        this.allMediaQueries = getAllMediaQueries(theme);
+        this.allMediaQueries = allMediaQueries(theme);
     }
 
     componentDidMount(): void {
         const { breakpoint, theme } = this.props;
         const breakpointsToRenderAt: string[] = breakpoint
             ? [breakpoint]
-            : [...getAllBreakpoints(theme)];
+            : [...allBreakpoints(theme)];
 
         for (const breakpointToRenderAt of breakpointsToRenderAt) {
             this.triggerAtMediaQueries[

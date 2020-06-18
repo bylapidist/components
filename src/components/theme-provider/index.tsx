@@ -3,7 +3,8 @@ import {
     ThemeProvider as StyledThemeProvider,
     createGlobalStyle
 } from 'styled-components';
-import { mergeThemes, Theme } from '../../theme';
+import { mergeThemes, Theme } from '@lapidist/styles';
+import { defaultTheme } from './defaultTheme';
 
 const GlobalStyle = createGlobalStyle`
     html, body, div, span, applet, object, iframe,
@@ -55,7 +56,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
 }) => (
     <>
         <GlobalStyle />
-        <StyledThemeProvider theme={mergeThemes(theme)}>
+        <StyledThemeProvider theme={mergeThemes(defaultTheme, theme)}>
             {children}
         </StyledThemeProvider>
     </>

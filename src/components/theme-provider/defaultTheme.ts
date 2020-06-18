@@ -1,4 +1,4 @@
-import { Theme } from './theme';
+import { Theme } from '@lapidist/styles';
 
 export const defaultTheme: Theme = {
     breakpoints: {

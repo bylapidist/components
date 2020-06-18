@@ -1,6 +1,11 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import { PropsWithStyles, withStyles } from '../../theme';
+import { Styles, withStyles } from '@lapidist/styles';
+
+export interface PropsWithStyles {
+    readonly styles?: Styles;
+    readonly as?: keyof JSX.IntrinsicElements;
+}
 
 export interface BoxProps extends PropsWithStyles, PropsWithChildren<{}> {}
 
