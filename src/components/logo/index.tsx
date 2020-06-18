@@ -6,9 +6,9 @@ import styled, {
     FlattenInterpolation,
     ThemeProps
 } from 'styled-components';
-import { slideRight, slideDown, slideUpLeft, thinking } from '../../theme';
 import { Box, BoxProps } from '../box';
 import { AspectRatio } from '../aspect-ratio';
+import { slideDown, slideRight, slideUpLeft, thinking } from './animations';
 
 export interface LogoProps {
     readonly width?: string;
