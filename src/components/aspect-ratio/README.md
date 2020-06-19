@@ -7,6 +7,7 @@ import { ThemeProvider, AspectRatio, Text } from '@lapidist/components';
         <AspectRatio
             ratio={'1/1'}
             styles={{
+                borderStyle: 'solid',
                 borderWidth: 'px',
                 borderColor: { group: 'grey', shade: 'lightest' },
                 width: 'full',
