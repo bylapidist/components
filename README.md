@@ -52,7 +52,7 @@ import { ThemeProvider, Text } from '@lapidist/components';
 
 const App = () => (
     <ThemeProvider>
-        <Text>Hello world<Text/>
+        <Text>Hello world</Text>
     </ThemeProvider>
 );
 
