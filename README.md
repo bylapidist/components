@@ -48,11 +48,11 @@ Here is a quick example to get you started:
 ```jsx static
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider, Button } from '@lapidist/components';
+import { ThemeProvider, Text } from '@lapidist/components';
 
 const App = () => (
     <ThemeProvider>
-        <Button text="Click me" />
+        <Text>Hello world<Text/>
     </ThemeProvider>
 );
 
