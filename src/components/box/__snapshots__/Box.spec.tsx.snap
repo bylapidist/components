@@ -54,7 +54,6 @@ exports[`it works with borderRadius 1`] = `
 
 exports[`it works with borderWidth 1`] = `
 .c0 {
-  border: solid;
   border-width: 4px;
 }
 
