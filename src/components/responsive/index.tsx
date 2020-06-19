@@ -3,8 +3,8 @@ import { withTheme } from 'styled-components';
 import { allBreakpoints, allMediaQueries, Theme } from '@lapidist/styles';
 
 export interface ResponsiveProps extends PropsWithChildren<{}> {
-    theme: Theme;
-    breakpoint?: string;
+    readonly theme: Theme;
+    readonly breakpoint?: string;
     renderComponent?(breakpoint?: string): React.ReactNode;
 }
 

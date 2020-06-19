@@ -5,6 +5,8 @@ import { BoxProps } from '../box';
 
 export type HeadingSize = 1 | 2 | 3 | 4 | 5 | 6;
 
+export type HeadingPropType = BoxProps & React.HTMLProps<HTMLHeadingElement>;
+
 export interface HeadingProps {
     readonly size?: HeadingSize;
 }
@@ -25,9 +27,12 @@ const headings: HeadingMapper = {
     6: { as: 'h6', fontSize: 4 }
 };
 
-export const Heading: React.FC<
-    BoxProps & HeadingProps & React.HTMLProps<HTMLHeadingElement>
-> = ({ as, styles, size, ...restProps }) => (
+export const Heading: React.FC<HeadingProps & HeadingPropType> = ({
+    as,
+    styles,
+    size,
+    ...restProps
+}) => (
     <Text
         as={as || headings[size || 1].as}
         styles={deepMerge(

@@ -10,6 +10,8 @@ import { Box, BoxProps } from '../box';
 import { AspectRatio } from '../aspect-ratio';
 import { slideDown, slideRight, slideUpLeft, thinking } from './animations';
 
+export type LogoPropType = BoxProps & React.HTMLProps<HTMLDivElement>;
+
 export interface LogoProps {
     readonly width?: string;
     readonly animated?: boolean;
@@ -68,9 +70,7 @@ const LogoBox: React.FC<
     overflow: hidden;
 `;
 
-export const Logo: React.FC<
-    BoxProps & LogoProps & React.HTMLProps<HTMLDivElement>
-> = ({
+export const Logo: React.FC<LogoProps & LogoPropType> = ({
     as = 'div',
     styles,
     animated = false,

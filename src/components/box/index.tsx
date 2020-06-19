@@ -2,12 +2,10 @@ import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { Styles, withStyles } from '@lapidist/styles';
 
-export interface PropsWithStyles {
+export interface BoxProps extends PropsWithChildren<{}> {
     readonly styles?: Styles;
     readonly as?: keyof JSX.IntrinsicElements;
 }
-
-export interface BoxProps extends PropsWithStyles, PropsWithChildren<{}> {}
 
 export const Box: React.FC<BoxProps> = styled.div<BoxProps>`
     ${({ theme, styles }): string => withStyles(theme, styles)}
