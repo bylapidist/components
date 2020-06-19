@@ -23,7 +23,7 @@ module.exports = {
     output: {
         path: paths.dist,
         filename: develop ? '[name].dev.js' : '[name].min.js',
-        library: 'lapidist',
+        library: 'lapidist-components',
         libraryTarget: 'umd',
         publicPath: '/',
         umdNamedDefine: true

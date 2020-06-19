@@ -16,7 +16,8 @@
         "access": "public"
     },
     "main": "dist/es5",
-    "typings": "dist/es5",
+    "module": "dist/es6",
+    "typings": "dist/es6",
     "keywords": [
         "react",
         "components",
@@ -40,7 +41,8 @@
         "build:styleguide": "cross-env NODE_ENV=production styleguidist build",
         "build:prop-types": "cross-env NODE_ENV=production node ./prop-types.config.js",
         "bundle:analysis": "npm run build:bundle -- --config ./webpack.analyzer.config.js",
-        "test": "npm run lint && npm run test:unit",
+        "test": "npm run lint && npm run test:typecheck && npm run test:unit",
+        "test:typecheck": "cross-env NODE_ENV=test tsc --noEmit -p tsconfig.json",
         "test:unit": "cross-env NODE_ENV=test jest --coverage",
         "update:snapshots": "cross-env NODE_ENV=test jest -u",
         "prepublishOnly": "npm run build"
