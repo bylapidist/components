@@ -2,7 +2,9 @@ import React from 'react';
 import deepMerge from 'lodash.merge';
 import { Box, BoxProps } from '../box';
 
-export const Text: React.FC<BoxProps> = ({
+export type TextPropType = BoxProps;
+
+export const Text: React.FC<TextPropType> = ({
     as = 'div',
     styles,
     ...restProps

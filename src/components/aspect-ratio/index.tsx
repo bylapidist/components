@@ -5,6 +5,8 @@ import { Box, BoxProps } from '../box';
 
 export type Ratio = { x: number | string; y: number | string };
 
+export type AspectRatioPropType = BoxProps & React.HTMLProps<HTMLDivElement>;
+
 export interface AspectRatioProps {
     readonly ratio?: string | Ratio;
 }
@@ -53,9 +55,11 @@ const AspectRatioBox: React.FC<
     }
 `;
 
-export const AspectRatio: React.FC<
-    BoxProps & AspectRatioProps & React.HTMLProps<HTMLDivElement>
-> = ({ as = 'div', styles, ...restProps }) => (
+export const AspectRatio: React.FC<AspectRatioProps & AspectRatioPropType> = ({
+    as = 'div',
+    styles,
+    ...restProps
+}) => (
     <>
         <AspectRatioBox as={as} styles={deepMerge({}, styles)} {...restProps} />
     </>

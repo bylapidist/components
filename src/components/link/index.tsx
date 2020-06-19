@@ -3,7 +3,9 @@ import deepMerge from 'lodash.merge';
 import { Text } from '../text';
 import { BoxProps } from '../box';
 
-export const Link: React.FC<BoxProps & React.HTMLProps<HTMLAnchorElement>> = ({
+export type LinkPropType = BoxProps & React.HTMLProps<HTMLAnchorElement>;
+
+export const Link: React.FC<LinkPropType> = ({
     as = 'a',
     styles,
     ...restProps
