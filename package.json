@@ -48,7 +48,7 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "@lapidist/styles": "^1.1.1",
+        "@lapidist/styles": "^1.1.2",
         "lodash.merge": "^4.6.2"
     },
     "devDependencies": {

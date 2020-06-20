@@ -20,6 +20,7 @@ export const Link: React.FC<LinkPropType> = ({
                     group: 'primary',
                     shade: 'light'
                 },
+                fontSize: 'inherit',
                 textColor: {
                     group: 'primary',
                     shade: 'base'
