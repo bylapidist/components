@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { withTheme } from 'styled-components';
-import { allBreakpoints, allMediaQueries, Theme } from '@lapidist/styles';
+import { Theme, ThemeObject } from '@lapidist/styles';
 
 export interface ResponsiveProps extends PropsWithChildren<{}> {
     readonly theme: Theme;
@@ -19,6 +19,24 @@ class BaseResponsive extends React.Component<ResponsiveProps, ResponsiveState> {
     private readonly allMediaQueries: {
         [breakpoint: string]: string;
     } = {};
+
+    private getAllBreakpoints = (theme: Theme): string[] =>
+        theme.breakpoints ? Object.keys(theme.breakpoints) : [];
+
+    private getAllMediaQueries = (theme: Theme): ThemeObject<string> => {
+        if (!theme.breakpoints) return {};
+
+        return ((): ThemeObject<string> => {
+            const allBreakpoints = this.getAllBreakpoints(theme);
+            const allMediaQueries: ThemeObject<string> = {};
+
+            allBreakpoints.forEach((breakpoint) => {
+                allMediaQueries[breakpoint] = ``;
+            });
+
+            return allMediaQueries;
+        })();
+    };
 
     private matchesQuery(): string | undefined {
         const queries = this.triggerAtMediaQueries;
@@ -53,7 +71,7 @@ class BaseResponsive extends React.Component<ResponsiveProps, ResponsiveState> {
 
         const breakpointsToRenderAt: string[] = breakpoint
             ? [breakpoint]
-            : [...allBreakpoints(theme)];
+            : [...this.getAllBreakpoints(theme)];
 
         for (const breakpointToRenderAt of breakpointsToRenderAt) {
             this.triggerAtMediaQueries[
@@ -61,14 +79,14 @@ class BaseResponsive extends React.Component<ResponsiveProps, ResponsiveState> {
             ] = window.matchMedia(this.allMediaQueries[breakpointToRenderAt]);
         }
 
-        this.allMediaQueries = allMediaQueries(theme);
+        this.allMediaQueries = this.getAllMediaQueries(theme);
     }
 
     componentDidMount(): void {
         const { breakpoint, theme } = this.props;
         const breakpointsToRenderAt: string[] = breakpoint
             ? [breakpoint]
-            : [...allBreakpoints(theme)];
+            : [...this.getAllBreakpoints(theme)];
 
         for (const breakpointToRenderAt of breakpointsToRenderAt) {
             this.triggerAtMediaQueries[

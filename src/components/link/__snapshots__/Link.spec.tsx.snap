@@ -2,6 +2,7 @@
 
 exports[`it works 1`] = `
 .c0 {
+  border-bottom-style: solid;
   font-size: inherit;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
@@ -10,7 +11,6 @@ exports[`it works 1`] = `
   -moz-letter-spacing: 0.025em;
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
-  border-bottom-style: solid;
   border-bottom-width: 2px;
   color: #17a3a5;
   border-bottom-color: #4AD6D8;
