@@ -1,3 +1,4 @@
+const fs = require('fs-extra');
 const cp = require('child_process');
 const path = require('path');
 
@@ -15,9 +16,21 @@ const resolveDoc = (section, title) => {
     return path.resolve(__dirname, `docs/${section}/${title}.md`);
 };
 
+const componentRoot = path.join(__dirname, 'docs/components');
+
+const styleguideComponents = {};
+
+const componentFiles = fs.readdirSync(componentRoot);
+
+for (const componentFile of componentFiles) {
+    const refName = componentFile.replace('.tsx', '');
+    styleguideComponents[refName] = path.join(componentRoot, refName);
+}
+
 module.exports = {
     version: getVersion(),
-    title: '@lapidist/components',
+    title: 'Lapidist Components',
+    skipComponentsWithoutExample: true,
     assetsDir: path.resolve(__dirname, 'docs', 'assets'),
     pagePerSection: true,
     components: 'src/components/**/*.tsx',
@@ -29,6 +42,7 @@ module.exports = {
     moduleAliases: {
         '@lapidist/components': path.resolve(__dirname, 'src')
     },
+    styleguideComponents,
     getExampleFilename(componentPath) {
         const dir = path.dirname(componentPath);
         return path.join(dir, 'README.md');
@@ -43,8 +57,6 @@ module.exports = {
             path.basename(dir)
         )} } from '@lapidist/components';`;
     },
-    skipComponentsWithoutExample: true,
-    require: [path.join(__dirname, 'docs/css/main.css')],
     sections: [
         {
             name: 'Getting Started',
