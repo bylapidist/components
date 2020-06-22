@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { withTheme } from 'styled-components';
-import { Theme, ThemeObject } from '@lapidist/styles';
+import { getProperty, Breakpoint, Theme, ThemeObject } from '@lapidist/styles';
 
 export interface ResponsiveProps extends PropsWithChildren<{}> {
     readonly theme: Theme;
@@ -31,7 +31,9 @@ class BaseResponsive extends React.Component<ResponsiveProps, ResponsiveState> {
             const allMediaQueries: ThemeObject<string> = {};
 
             allBreakpoints.forEach((breakpoint) => {
-                allMediaQueries[breakpoint] = ``;
+                allMediaQueries[breakpoint] = `(min-width: ${getProperty<
+                    Breakpoint
+                >(theme, 'breakpoints', breakpoint)})`;
             });
 
             return allMediaQueries;
