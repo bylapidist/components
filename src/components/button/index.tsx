@@ -59,6 +59,7 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
                                 : color['dark']
                         },
                         ':disabled': {
+                            opacity: '0.7',
                             textColor: ghost
                                 ? { group: 'grey', shade: 'dark' }
                                 : { group: 'base', shade: 'white' },

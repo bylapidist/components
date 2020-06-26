@@ -35,6 +35,7 @@ exports[`it works 1`] = `
 }
 
 .c0:disabled {
+  opacity: 0.7;
   background-color: #007072;
   color: white;
 }
@@ -82,6 +83,7 @@ exports[`it works with ghost 1`] = `
 }
 
 .c0:disabled {
+  opacity: 0.7;
   background-color: #E8E8E8;
   color: #292B3E;
 }
@@ -129,6 +131,7 @@ exports[`it works with size 1`] = `
 }
 
 .c0:disabled {
+  opacity: 0.7;
   background-color: #c99944;
   color: white;
 }
