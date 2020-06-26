@@ -36,3 +36,7 @@ jobs:
                   token: ${{ secrets.CODECOV_TOKEN }}
                   file: ./coverage/coverage-final.json
                   flags: unittests
+
+            - name: Build styleguide
+              run: |
+                  npm run build:styleguide
