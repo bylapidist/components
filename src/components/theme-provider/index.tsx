@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
     small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
+    b, u, i, center, button,
     dl, dt, dd, menu, ol, ul, li,
     fieldset, form, label, legend,
     table, caption, tbody, tfoot, thead, tr, th, td,
@@ -42,8 +42,8 @@ const GlobalStyle = createGlobalStyle`
     q:before, q:after { content: ''; content: none; }
     table { border-collapse: collapse; border-spacing: 0; }
     img { display: block; max-width: 100%; }
-    a { text-decoration: none; outline-offset: 2px; outline: transparent solid 2px; }
-    a:focus { outline: rgb(235, 199, 100) solid 2px; }
+    a, button { text-decoration: none; outline-offset: 2px; outline: transparent solid 2px; }
+    a:focus, button:focus { outline: rgb(235, 199, 100) solid 2px; }
 `;
 
 export interface ThemeProviderProps extends PropsWithChildren<{}> {
