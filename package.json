@@ -48,15 +48,15 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "@lapidist/styles": "^2.0.1",
+        "@lapidist/styles": "^2.1.1",
         "lodash.merge": "^4.6.2"
     },
     "devDependencies": {
-        "@lapidist/linting": "^1.42.0",
+        "@lapidist/linting": "^1.45.0",
         "@react-mock/state": "^0.1.8",
-        "@types/jest": "^26.0.0",
+        "@types/jest": "^26.0.3",
         "@types/lodash.merge": "^4.6.6",
-        "@types/react": "^16.9.38",
+        "@types/react": "^16.9.41",
         "@types/react-dom": "^16.9.8",
         "@types/react-test-renderer": "^16.9.2",
         "@types/styled-components": "^5.1.0",
@@ -67,7 +67,7 @@
         "csstype": "^2.6.10",
         "fs-extra": "^9.0.1",
         "husky": "^4.2.5",
-        "jest": "^26.0.1",
+        "jest": "^26.1.0",
         "jest-styled-components": "^7.0.2",
         "lint-staged": "^10.2.11",
         "react": "^16.13.1",
@@ -84,7 +84,7 @@
         "stylelint-config-styled-components": "^0.1.1",
         "stylelint-no-unsupported-browser-features": "^4.0.0",
         "stylelint-processor-styled-components": "^1.10.0",
-        "ts-jest": "^26.1.0",
+        "ts-jest": "^26.1.1",
         "typescript": "^3.9.5",
         "typescript-proptypes-generator": "0.0.6",
         "webpack": "^4.43.0",
