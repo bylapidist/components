@@ -5,7 +5,5 @@ import { ThemeProvider, Link } from '@lapidist/components';
 
 <ThemeProvider>
     <Link href="#">Hello world</Link>
-    <Link href="#">Hello world</Link>
-    <Link href="#">Hello world</Link>
 </ThemeProvider>
 ```

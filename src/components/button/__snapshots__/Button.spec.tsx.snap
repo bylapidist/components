@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c0 {
+  border-style: solid;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #17a3a5;
+  color: white;
+  border-color: #007072;
+}
+
+.c0:hover {
+  cursor: pointer;
+  background-color: #007072;
+  color: white;
+}
+
+.c0:hover:disabled {
+  cursor: not-allowed;
+  background-color: #007072;
+}
+
+.c0:disabled {
+  background-color: #007072;
+  color: white;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Hello world
+</button>
+`;
+
+exports[`it works with ghost 1`] = `
+.c0 {
+  border-style: solid;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+  color: #292B3E;
+  border-color: #c99944;
+}
+
+.c0:hover {
+  cursor: pointer;
+  background-color: #c99944;
+  color: white;
+}
+
+.c0:hover:disabled {
+  cursor: not-allowed;
+  background-color: #E8E8E8;
+}
+
+.c0:disabled {
+  background-color: #E8E8E8;
+  color: #292B3E;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Hello world
+</button>
+`;
+
+exports[`it works with size 1`] = `
+.c0 {
+  border-style: solid;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #ebc764;
+  color: white;
+  border-color: #c99944;
+}
+
+.c0:hover {
+  cursor: pointer;
+  background-color: #c99944;
+  color: white;
+}
+
+.c0:hover:disabled {
+  cursor: not-allowed;
+  background-color: #c99944;
+}
+
+.c0:disabled {
+  background-color: #c99944;
+  color: white;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Hello world
+</button>
+`;
