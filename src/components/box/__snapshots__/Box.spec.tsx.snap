@@ -12,7 +12,7 @@ exports[`it works plain 1`] = `
 
 exports[`it works with backgroundColor 1`] = `
 .c0 {
-  background-color: #7c7e93;
+  background-color: #73748b;
 }
 
 <div
@@ -26,7 +26,7 @@ exports[`it works with backgroundColor 1`] = `
 
 exports[`it works with borderColor 1`] = `
 .c0 {
-  border-color: #7c7e93;
+  border-color: #73748b;
 }
 
 <div
@@ -113,7 +113,7 @@ exports[`it works with padding 1`] = `
 
 exports[`it works with variable borderColors 1`] = `
 .c0 {
-  border-top-color: #7c7e93;
+  border-top-color: #73748b;
   border-right-color: #17a3a5;
   border-bottom-color: #72af5d;
   border-left-color: #ebc764;

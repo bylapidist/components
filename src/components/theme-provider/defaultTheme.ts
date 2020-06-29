@@ -134,14 +134,14 @@ export const defaultTheme: Theme = {
         grey: {
             lightest: '#E8E8E8',
             light: '#d4d4d4',
-            base: '#7c7e93',
+            base: '#73748b',
             dark: '#292B3E'
         },
         primary: {
             lightest: '#9bfff8',
             light: '#4AD6D8',
             base: '#17a3a5',
-            dark: '#007072'
+            dark: '#1a8385'
         },
         secondary: {
             lightest: '#fdffb5',
