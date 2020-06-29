@@ -3,7 +3,7 @@
 exports[`it works with an inner image 1`] = `
 .c0 {
   position: relative;
-  overflow-y: scroll;
+  overflow: hidden;
   height: 100%;
 }
 
@@ -40,7 +40,7 @@ exports[`it works with an inner image 1`] = `
 exports[`it works with object ratio 1`] = `
 .c0 {
   position: relative;
-  overflow-y: scroll;
+  overflow: hidden;
   height: 100%;
 }
 
@@ -76,7 +76,7 @@ exports[`it works with object ratio 1`] = `
 exports[`it works with string ratio 1`] = `
 .c0 {
   position: relative;
-  overflow-y: scroll;
+  overflow: hidden;
   height: 100%;
 }
 

@@ -31,7 +31,7 @@ const AspectRatioBox: React.FC<
     BoxProps & AspectRatioProps & React.HTMLProps<HTMLDivElement>
 > = styled(Box)<BoxProps & AspectRatioProps>`
     position: relative;
-    overflow-y: scroll;
+    overflow: hidden;
     height: 100%;
 
     :before {

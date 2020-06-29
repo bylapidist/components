@@ -3,7 +3,7 @@
 exports[`it works 1`] = `
 .c1 {
   position: relative;
-  overflow-y: scroll;
+  overflow: hidden;
   height: 100%;
 }
 
@@ -79,7 +79,7 @@ exports[`it works 1`] = `
 exports[`it works animated 1`] = `
 .c1 {
   position: relative;
-  overflow-y: scroll;
+  overflow: hidden;
   height: 100%;
 }
 
@@ -179,7 +179,7 @@ exports[`it works animated 1`] = `
 exports[`it works thinking 1`] = `
 .c1 {
   position: relative;
-  overflow-y: scroll;
+  overflow: hidden;
   height: 100%;
 }
 
