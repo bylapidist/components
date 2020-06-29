@@ -12,13 +12,13 @@ exports[`it works 1`] = `
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
   border-bottom-width: 2px;
-  color: #17a3a5;
+  color: #1a8385;
   border-bottom-color: #4AD6D8;
 }
 
 .c0:hover {
-  color: #007072;
-  border-bottom-color: #007072;
+  color: #1a8385;
+  border-bottom-color: #1a8385;
 }
 
 <a

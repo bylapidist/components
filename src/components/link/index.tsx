@@ -23,7 +23,7 @@ export const Link: React.FC<LinkPropType> = ({
                 fontSize: 'inherit',
                 textColor: {
                     group: 'primary',
-                    shade: 'base'
+                    shade: 'dark'
                 },
                 pseudo: {
                     ':hover': {
