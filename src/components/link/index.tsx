@@ -14,7 +14,7 @@ export const Link: React.FC<LinkPropType> = ({
         as={as}
         styles={deepMerge(
             {
-                borderBottomStyle: 'solid',
+                borderStyle: 'solid',
                 borderBottomWidth: 1,
                 borderBottomColor: {
                     group: 'primary',

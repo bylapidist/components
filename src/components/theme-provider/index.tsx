@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from 'react';
+import React, { Context, PropsWithChildren } from 'react';
 import {
     ThemeProvider as StyledThemeProvider,
     createGlobalStyle
@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
     article, aside, details, figcaption, figure,
     footer, header, hgroup, main, menu, nav, section { display: block; }
     *[hidden] { display: none; }
-    body { line-height: 1; font-size: 62.5% }
+    body { line-height: 1; font-size: 62.5%; }
     menu, ol, ul { list-style: none; }
     blockquote, q { quotes: none; }
     blockquote:before, blockquote:after,
@@ -50,16 +50,27 @@ export interface ThemeProviderProps extends PropsWithChildren<{}> {
     readonly theme?: Theme;
 }
 
+export const ThemeContext: Context<Theme> = React.createContext<Theme>(
+    defaultTheme
+);
+
+export const useTheme = (): Theme => React.useContext(ThemeContext);
+
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     children,
     theme
-}) => (
-    <>
-        <GlobalStyle />
-        <StyledThemeProvider theme={mergeThemes(defaultTheme, theme)}>
-            {children}
-        </StyledThemeProvider>
-    </>
-);
+}) => {
+    const initialTheme: Theme = useTheme();
+    const themeContext: Theme | undefined = mergeThemes(initialTheme, theme);
+
+    return (
+        <>
+            <GlobalStyle />
+            <StyledThemeProvider theme={themeContext}>
+                {children}
+            </StyledThemeProvider>
+        </>
+    );
+};
 
 ThemeProvider.displayName = 'ThemeProvider';

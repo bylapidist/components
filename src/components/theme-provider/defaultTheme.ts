@@ -127,8 +127,8 @@ export const defaultTheme: Theme = {
     },
     colors: {
         base: {
-            white: 'white',
-            black: 'black',
+            light: 'white',
+            dark: 'black',
             transparent: 'transparent'
         },
         grey: {

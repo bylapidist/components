@@ -2,7 +2,7 @@
 
 exports[`it works 1`] = `
 .c0 {
-  border-bottom-style: solid;
+  border-style: solid;
   font-size: inherit;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
