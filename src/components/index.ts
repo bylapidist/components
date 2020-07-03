@@ -9,3 +9,5 @@ export * from './logo';
 export * from './responsive';
 export * from './text';
 export * from './theme-provider';
+export * from './theme-provider/defaultTheme';
+export * from './theme-provider/darkTheme';

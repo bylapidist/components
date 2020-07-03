@@ -41,7 +41,7 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
                     backgroundColor: ghost ? 'transparent' : color['base'],
                     textColor: ghost
                         ? { group: 'grey', shade: 'dark' }
-                        : { group: 'base', shade: 'white' },
+                        : { group: 'base', shade: 'light' },
                     textAlign: 'center',
                     paddingX: 2,
                     paddingY: small ? 1 : 2,
@@ -50,7 +50,7 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
                         ':hover': {
                             cursor: 'pointer',
                             backgroundColor: color['dark'],
-                            textColor: { group: 'base', shade: 'white' }
+                            textColor: { group: 'base', shade: 'light' }
                         },
                         ':hover:disabled': {
                             cursor: 'not-allowed',
@@ -62,7 +62,7 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
                             opacity: '0.7',
                             textColor: ghost
                                 ? { group: 'grey', shade: 'dark' }
-                                : { group: 'base', shade: 'white' },
+                                : { group: 'base', shade: 'light' },
                             backgroundColor: ghost
                                 ? { group: 'grey', shade: 'lightest' }
                                 : color['dark']
