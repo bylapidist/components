@@ -28,7 +28,7 @@ exports[`it works with an inner image 1`] = `
 }
 
 <div
-  className="sc-AxjAm c0"
+  className="c0"
 >
   <img
     alt="cats"
@@ -65,7 +65,7 @@ exports[`it works with object ratio 1`] = `
 }
 
 <div
-  className="sc-AxjAm c0"
+  className="c0"
 >
   <p>
     Hello world!
@@ -101,7 +101,7 @@ exports[`it works with string ratio 1`] = `
 }
 
 <div
-  className="sc-AxjAm c0"
+  className="c0"
 >
   <p>
     Hello world!
