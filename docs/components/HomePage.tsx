@@ -31,7 +31,7 @@ export const HomePage: React.FC<StyleGuideRendererProps> = ({ version }) => (
                 as="span"
                 styles={{
                     textColor: { group: 'grey', shade: 'base' },
-                    fontWeight: 'bold',
+                    fontWeight: 'bolder',
                     fontSize: '1',
                     paddingY: '1',
                     paddingX: '3'

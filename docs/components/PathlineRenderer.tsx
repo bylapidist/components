@@ -9,7 +9,7 @@ export interface PathlineRendererProps {
 
 const PathlineRenderer: React.FC<PathlineRendererProps> = ({ children }) => (
     <>
-        <Text as="span" styles={{ marginRight: 1 }}>
+        <Text as="span" styles={{ marginRight: '1' }}>
             📋
         </Text>
         <Link
