@@ -24,12 +24,12 @@ const SectionRenderer: React.FC<SectionRendererProps> = (props) => {
 
     return (
         <>
-            <Box styles={{ marginBottom: 16 }}>
+            <Box styles={{ marginBottom: '16' }}>
                 <Logo
                     styles={{
-                        marginBottom: 3,
-                        sizeWidth: 16,
-                        breakpoints: { md: { sizeWidth: 20 } }
+                        marginBottom: '3',
+                        sizeWidth: '16',
+                        breakpoints: { md: { sizeWidth: '20' } }
                     }}
                     animated
                 />
@@ -37,8 +37,8 @@ const SectionRenderer: React.FC<SectionRendererProps> = (props) => {
                     size={1}
                     styles={{
                         textColor: { group: 'grey', shade: 'dark' },
-                        fontWeight: 'black',
-                        fontSize: 6
+                        fontWeight: 'bolder',
+                        fontSize: '6'
                     }}
                 >
                     Lapidist Components

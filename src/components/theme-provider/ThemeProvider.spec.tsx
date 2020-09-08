@@ -9,8 +9,8 @@ test('it works', () => {
     const tree = renderer
         .create(
             <ThemeProvider>
-                <Box styles={{ margin: 2 }}>Hello world!</Box>
-                <Box styles={{ margin: 3 }}>Hello world!</Box>
+                <Box styles={{ margin: '2' }}>Hello world!</Box>
+                <Box styles={{ margin: '3' }}>Hello world!</Box>
             </ThemeProvider>
         )
         .toJSON();
@@ -21,7 +21,12 @@ test('it works with breakpoints', () => {
     const tree = renderer
         .create(
             <ThemeProvider>
-                <Box styles={{ margin: 2, breakpoints: { xl: { margin: 3 } } }}>
+                <Box
+                    styles={{
+                        margin: '2',
+                        breakpoints: { xl: { margin: '3' } }
+                    }}
+                >
                     Hello world!
                 </Box>
             </ThemeProvider>
@@ -34,8 +39,8 @@ test('it works with theme', () => {
     const tree = renderer
         .create(
             <ThemeProvider theme={{ sizes: { '2': '20px' } }}>
-                <Box styles={{ margin: 2 }}>Hello world!</Box>
-                <Box styles={{ margin: 3 }}>Hello world!</Box>
+                <Box styles={{ margin: '2' }}>Hello world!</Box>
+                <Box styles={{ margin: '3' }}>Hello world!</Box>
             </ThemeProvider>
         )
         .toJSON();

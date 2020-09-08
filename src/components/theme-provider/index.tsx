@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
     a:focus, button:focus { outline: rgb(235, 199, 100) solid 2px; }
 `;
 
-export interface ThemeProviderProps extends PropsWithChildren<{}> {
+export interface ThemeProviderProps extends PropsWithChildren<unknown> {
     readonly theme?: Theme;
 }
 

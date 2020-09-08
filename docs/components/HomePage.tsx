@@ -10,20 +10,20 @@ export const HomePage: React.FC<StyleGuideRendererProps> = ({ version }) => (
     <>
         <Logo
             styles={{
-                marginBottom: 3,
-                sizeWidth: 20,
-                breakpoints: { md: { sizeWidth: 32 } }
+                marginBottom: '3',
+                sizeWidth: '20',
+                breakpoints: { md: { sizeWidth: '32' } }
             }}
             animated
         />
         <Heading
             size={1}
             styles={{
-                marginBottom: 12,
+                marginBottom: '12',
                 textColor: { group: 'grey', shade: 'dark' },
-                fontWeight: 'black',
-                fontSize: 6,
-                breakpoints: { md: { fontSize: 8 } }
+                fontWeight: 'bolder',
+                fontSize: '6',
+                breakpoints: { md: { fontSize: '8' } }
             }}
         >
             Lapidist Components
@@ -31,10 +31,10 @@ export const HomePage: React.FC<StyleGuideRendererProps> = ({ version }) => (
                 as="span"
                 styles={{
                     textColor: { group: 'grey', shade: 'base' },
-                    fontWeight: 'bold',
-                    fontSize: 1,
-                    paddingY: 1,
-                    paddingX: 3
+                    fontWeight: 'bolder',
+                    fontSize: '1',
+                    paddingY: '1',
+                    paddingX: '3'
                 }}
             >
                 {version}
@@ -42,9 +42,9 @@ export const HomePage: React.FC<StyleGuideRendererProps> = ({ version }) => (
         </Heading>
         <Text
             styles={{
-                fontSize: 5,
+                fontSize: '5',
                 textColor: { group: 'grey', shade: 'base' },
-                marginBottom: 16
+                marginBottom: '16'
             }}
         >
             Opinionated{' '}
@@ -75,12 +75,12 @@ export const HomePage: React.FC<StyleGuideRendererProps> = ({ version }) => (
         </Text>
         <Box
             styles={{
-                marginBottom: 64
+                marginBottom: '64'
             }}
         >
             <Link
                 styles={{
-                    fontSize: 5
+                    fontSize: '5'
                 }}
                 href="/#/Getting%20Started"
             >
@@ -89,7 +89,7 @@ export const HomePage: React.FC<StyleGuideRendererProps> = ({ version }) => (
         </Box>
         <Text
             styles={{
-                marginBottom: 32
+                marginBottom: '32'
             }}
         >
             <Text styles={{ textColor: { group: 'grey', shade: 'base' } }}>
