@@ -34,8 +34,8 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
             as={as}
             styles={deepMerge(
                 {
-                    borderWidth: 1,
-                    borderRadius: 2,
+                    borderWidth: '1',
+                    borderRadius: '2',
                     borderStyle: 'solid',
                     borderColor: color['dark'],
                     backgroundColor: ghost ? 'transparent' : color['base'],
@@ -43,9 +43,9 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
                         ? { group: 'grey', shade: 'dark' }
                         : { group: 'base', shade: 'light' },
                     textAlign: 'center',
-                    paddingX: 2,
-                    paddingY: small ? 1 : 2,
-                    fontSize: small ? 2 : 3,
+                    paddingX: '2',
+                    paddingY: small ? '1' : '2',
+                    fontSize: small ? '2' : '3',
                     pseudo: {
                         ':hover': {
                             cursor: 'pointer',

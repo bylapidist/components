@@ -15,7 +15,7 @@ export const Text: React.FC<TextPropType> = ({
             {
                 fontFamily: 'sans',
                 fontWeight: 'normal',
-                fontSize: 3,
+                fontSize: '3',
                 lineHeight: 'loose',
                 letterSpacing: 'wide',
                 textColor: {

@@ -24,7 +24,7 @@ test('it works with padding', () => {
             <ThemeProvider>
                 <Box
                     styles={{
-                        padding: 2
+                        padding: '2'
                     }}
                 >
                     <p>Hello world!</p>
@@ -41,7 +41,7 @@ test('it works with margin', () => {
             <ThemeProvider>
                 <Box
                     styles={{
-                        margin: 2
+                        margin: '2'
                     }}
                 >
                     <p>Hello world!</p>
@@ -78,7 +78,7 @@ test('it works with borderRadius', () => {
             <ThemeProvider>
                 <Box
                     styles={{
-                        borderRadius: 2
+                        borderRadius: '2'
                     }}
                 >
                     <p>Hello world!</p>
@@ -95,7 +95,7 @@ test('it works with borderWidth', () => {
             <ThemeProvider>
                 <Box
                     styles={{
-                        borderWidth: 2
+                        borderWidth: '2'
                     }}
                 >
                     <p>Hello world!</p>
@@ -166,8 +166,8 @@ test('it works with breakpoints', () => {
                     styles={{
                         breakpoints: {
                             xl: {
-                                fontSize: 2,
-                                marginBottom: 2
+                                fontSize: '2',
+                                marginBottom: '2'
                             }
                         }
                     }}
