@@ -18,12 +18,12 @@ const StyleGuideRenderer: React.FC<StyleGuideRendererProps> = ({
     <ThemeProvider>
         <Box
             styles={{
-                padding: 6,
+                padding: '6',
                 marginX: 'auto',
                 containerMaxWidth: 'xxl',
                 breakpoints: {
                     md: {
-                        padding: 12
+                        padding: '12'
                     }
                 }
             }}

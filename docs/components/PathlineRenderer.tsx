@@ -17,7 +17,7 @@ const PathlineRenderer: React.FC<PathlineRendererProps> = ({ children }) => (
             onClick={(): unknown => children && copy(children.toString())}
             title="Copy to clipboard"
             styles={{
-                fontSize: 2,
+                fontSize: '2',
                 textColor: { group: 'grey', shade: 'base' },
                 borderBottomColor: { group: 'grey', shade: 'light' },
                 pseudo: {
