@@ -22,6 +22,7 @@ Opinionated [React](https://reactjs.org/) UI library, built with [styled-compone
 ![GitHub](https://img.shields.io/github/license/bylapidist/components)
 [![GitHub Release](https://img.shields.io/github/release/bylapidist/components.svg?style=flat)](https://github.com/bylapidist/components/releases)
 [![Build Status](https://github.com/bylapidist/components/workflows/Release/badge.svg)](https://github.com/bylapidist/components/actions?query=workflow%3ARelease)
+
 </div>
 
 ## Getting Started
