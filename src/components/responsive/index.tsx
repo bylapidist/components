@@ -31,9 +31,13 @@ class BaseResponsive extends React.Component<ResponsiveProps, ResponsiveState> {
             const allMediaQueries: ThemeObject<string> = {};
 
             allBreakpoints.forEach((breakpoint) => {
-                allMediaQueries[breakpoint] = `(min-width: ${getProperty<
-                    string
-                >(theme, 'breakpoints', breakpoint)})`;
+                allMediaQueries[
+                    breakpoint
+                ] = `(min-width: ${getProperty<string>(
+                    theme,
+                    'breakpoints',
+                    breakpoint
+                )})`;
             });
 
             return allMediaQueries;
