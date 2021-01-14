@@ -5,6 +5,8 @@ const generate = require('typescript-proptypes-generator').default;
 const propsToGenerate = [
     'aspect-ratio',
     'box',
+    'button',
+    'flex',
     'heading',
     'image',
     'link',
