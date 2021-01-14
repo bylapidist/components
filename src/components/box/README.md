@@ -10,9 +10,11 @@ import { ThemeProvider, Box, Text } from '@lapidist/components';
             backgroundColor: { group: 'primary', shade: 'base' }
         }}
     >
-        <Text styles={{
-            textColor: { group: 'base', shade: 'white' }
-        }}>
+        <Text
+            styles={{
+                textColor: { group: 'base', shade: 'light' }
+            }}
+        >
             Hello world!
         </Text>
     </Box>
