@@ -15,6 +15,7 @@ exports[`it works as h1 1`] = `
 
 <h1
   className="c0"
+  size={1}
 >
   H1
 </h1>
@@ -35,6 +36,7 @@ exports[`it works as h2 1`] = `
 
 <h2
   className="c0"
+  size={2}
 >
   H2
 </h2>
@@ -55,6 +57,7 @@ exports[`it works as h3 1`] = `
 
 <h3
   className="c0"
+  size={3}
 >
   H3
 </h3>
@@ -75,6 +78,7 @@ exports[`it works as h4 1`] = `
 
 <h4
   className="c0"
+  size={4}
 >
   H4
 </h4>
@@ -95,6 +99,7 @@ exports[`it works as h5 1`] = `
 
 <h5
   className="c0"
+  size={5}
 >
   H5
 </h5>
@@ -115,6 +120,7 @@ exports[`it works as h6 1`] = `
 
 <h6
   className="c0"
+  size={6}
 >
   H6
 </h6>

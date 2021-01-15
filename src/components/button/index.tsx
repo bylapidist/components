@@ -2,7 +2,7 @@ import React from 'react';
 import deepMerge from 'lodash.merge';
 import { Text } from '../text';
 import { BoxProps } from '../box';
-import { getProperty, Theme } from '@lapidist/styles';
+import { getProperty, Styles, Theme } from '@lapidist/styles';
 import { withTheme } from 'styled-components';
 
 export type ButtonPropType = BoxProps &
@@ -16,61 +16,60 @@ export interface ButtonProps {
     readonly theme: Theme;
 }
 
-const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
-    as = 'button',
-    styles,
-    theme,
-    small,
-    ghost,
-    kind,
-    ...restProps
-}) => {
-    const color: { [K: string]: string } = getProperty<{
+export const buttonStyles = (props: ButtonProps): Styles => {
+    const { kind, small, ghost, theme } = props;
+
+    const colorByKind: { [K: string]: string } = getProperty<{
         [K: string]: string;
     }>(theme, 'colors', kind);
 
+    return {
+        borderWidth: '1',
+        borderRadius: '2',
+        borderStyle: 'solid',
+        borderColor: colorByKind['dark'],
+        backgroundColor: ghost ? 'transparent' : colorByKind['base'],
+        textColor: ghost
+            ? { group: 'grey', shade: 'dark' }
+            : { group: 'base', shade: 'light' },
+        textAlign: 'center',
+        paddingX: '4',
+        paddingY: small ? '1' : '2',
+        fontSize: small ? '2' : '3',
+        pseudo: {
+            ':hover': {
+                cursor: 'pointer',
+                backgroundColor: colorByKind['dark'],
+                textColor: { group: 'base', shade: 'light' }
+            },
+            ':hover:disabled': {
+                cursor: 'not-allowed',
+                backgroundColor: ghost
+                    ? { group: 'grey', shade: 'lightest' }
+                    : colorByKind['dark']
+            },
+            ':disabled': {
+                opacity: '0.7',
+                textColor: ghost
+                    ? { group: 'grey', shade: 'dark' }
+                    : { group: 'base', shade: 'light' },
+                backgroundColor: ghost
+                    ? { group: 'grey', shade: 'lightest' }
+                    : colorByKind['dark']
+            }
+        }
+    };
+};
+
+const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
+    as = 'button',
+    styles,
+    ...restProps
+}) => {
     return (
         <Text
             as={as}
-            styles={deepMerge(
-                {
-                    borderWidth: '1',
-                    borderRadius: '2',
-                    borderStyle: 'solid',
-                    borderColor: color['dark'],
-                    backgroundColor: ghost ? 'transparent' : color['base'],
-                    textColor: ghost
-                        ? { group: 'grey', shade: 'dark' }
-                        : { group: 'base', shade: 'light' },
-                    textAlign: 'center',
-                    paddingX: '2',
-                    paddingY: small ? '1' : '2',
-                    fontSize: small ? '2' : '3',
-                    pseudo: {
-                        ':hover': {
-                            cursor: 'pointer',
-                            backgroundColor: color['dark'],
-                            textColor: { group: 'base', shade: 'light' }
-                        },
-                        ':hover:disabled': {
-                            cursor: 'not-allowed',
-                            backgroundColor: ghost
-                                ? { group: 'grey', shade: 'lightest' }
-                                : color['dark']
-                        },
-                        ':disabled': {
-                            opacity: '0.7',
-                            textColor: ghost
-                                ? { group: 'grey', shade: 'dark' }
-                                : { group: 'base', shade: 'light' },
-                            backgroundColor: ghost
-                                ? { group: 'grey', shade: 'lightest' }
-                                : color['dark']
-                        }
-                    }
-                },
-                styles
-            )}
+            styles={deepMerge(buttonStyles(restProps), styles)}
             {...restProps}
         />
     );
