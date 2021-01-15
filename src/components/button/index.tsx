@@ -34,7 +34,7 @@ const colorByKind = (kind: string, theme: Theme): { [K: string]: string } =>
         [K: string]: string;
     }>(theme, 'colors', kind);
 
-const sizing = (small?: boolean) => ({
+const buttonSizing = (small?: boolean) => ({
     paddingY: small ? '1' : '2',
     fontSize: small ? '2' : '3'
 });
@@ -45,24 +45,28 @@ const lightBase: ColorGroup = { group: 'base', shade: 'light' };
 
 const lightestGrey: ColorGroup = { group: 'grey', shade: 'lightest' };
 
-const buttonVariants = (props: ButtonProps): ButtonVariantStyles => {
-    const { kind, theme, small, ghost } = props;
+const buttonColors = (dark: string, base: string, ghost?: boolean) => ({
+    borderColor: dark,
+    hoverBackgroundColor: dark,
+    hoverTextColor: lightBase,
+    backgroundColor: ghost ? 'transparent' : base,
+    textColor: ghost ? darkGrey : lightBase,
+    disabledHoverBackgroundColor: ghost ? lightestGrey : dark,
+    disabledTextColor: ghost ? darkGrey : lightBase,
+    disabledBackgroundColor: ghost ? lightestGrey : dark
+});
+
+const buttonVariants = ({
+    kind,
+    theme,
+    small,
+    ghost
+}: ButtonProps): ButtonVariantStyles => {
     const { dark, base } = colorByKind(kind, theme);
 
-    const colors = (ghost?: boolean) => ({
-        borderColor: dark,
-        hoverBackgroundColor: dark,
-        hoverTextColor: lightBase,
-        backgroundColor: ghost ? 'transparent' : base,
-        textColor: ghost ? darkGrey : lightBase,
-        disabledHoverBackgroundColor: ghost ? lightestGrey : dark,
-        disabledTextColor: ghost ? darkGrey : lightBase,
-        disabledBackgroundColor: ghost ? lightestGrey : dark
-    });
-
     return {
-        ...sizing(small),
-        ...colors(ghost)
+        ...buttonSizing(small),
+        ...buttonColors(dark, base, ghost)
     };
 };
 
