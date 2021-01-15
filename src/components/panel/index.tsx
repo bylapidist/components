@@ -1,8 +1,11 @@
 import React from 'react';
 import deepMerge from 'lodash.merge';
 import { withTheme } from 'styled-components';
-import { getProperty, Styles, Theme } from '@lapidist/styles';
+import { Theme } from '@lapidist/styles';
 import { Box, BoxProps } from '../box';
+import { panelStyles } from './styles';
+
+export * from './styles';
 
 export type PanelPropType = BoxProps;
 
@@ -10,21 +13,6 @@ export interface PanelProps {
     readonly kind: string;
     readonly theme: Theme;
 }
-
-export const panelStyles = ({ theme, kind }: PanelProps): Styles => {
-    const { dark } = getProperty<{
-        [K: string]: string;
-    }>(theme, 'colors', kind);
-
-    return {
-        borderWidth: '1',
-        borderStyle: 'solid',
-        boxShadow: '1',
-        paddingX: '4',
-        paddingY: '2',
-        borderColor: dark
-    };
-};
 
 const BasePanel: React.FC<PanelPropType & PanelProps> = ({
     as = 'div',

@@ -1,11 +1,11 @@
 import React from 'react';
 import deepMerge from 'lodash.merge';
-import { Styles } from '@lapidist/styles';
 import { Box, BoxProps } from '../box';
+import { imageStyles } from './styles';
+
+export * from './styles';
 
 export type ImagePropType = BoxProps & React.HTMLProps<HTMLImageElement>;
-
-export const imageStyles = (): Styles => ({});
 
 export const Image: React.FC<ImagePropType> = ({
     as = 'img',

@@ -1,13 +1,11 @@
 import React from 'react';
 import deepMerge from 'lodash.merge';
-import { Styles } from '@lapidist/styles';
 import { Box, BoxProps } from '../box';
+import { flexStyles } from './styles';
+
+export * from './styles';
 
 export type FlexPropType = BoxProps & React.HTMLProps<HTMLDivElement>;
-
-export const flexStyles = (): Styles => ({
-    display: 'flex'
-});
 
 export const Flex: React.FC<FlexPropType> = ({
     as = 'div',
