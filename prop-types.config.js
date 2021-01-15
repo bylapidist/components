@@ -13,6 +13,7 @@ const propsToGenerate = [
     'list',
     'logo',
     'panel',
+    'panel-heading',
     'responsive',
     'text',
     'theme-provider'
