@@ -12,6 +12,7 @@ const propsToGenerate = [
     'link',
     'list',
     'logo',
+    'panel',
     'responsive',
     'text',
     'theme-provider'
