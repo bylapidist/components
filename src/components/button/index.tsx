@@ -1,9 +1,9 @@
 import React from 'react';
 import deepMerge from 'lodash.merge';
+import { withTheme } from 'styled-components';
 import { ColorGroup, getProperty, Styles, Theme } from '@lapidist/styles';
 import { Text } from '../text';
 import { BoxProps } from '../box';
-import { withTheme } from 'styled-components';
 
 export type ButtonPropType = BoxProps &
     React.ButtonHTMLAttributes<HTMLButtonElement> &
@@ -28,11 +28,6 @@ interface ButtonVariantStyles {
     disabledTextColor: ColorGroup | string;
     disabledBackgroundColor: ColorGroup | string;
 }
-
-const colorByKind = (kind: string, theme: Theme): { [K: string]: string } =>
-    getProperty<{
-        [K: string]: string;
-    }>(theme, 'colors', kind);
 
 const buttonSizing = (small?: boolean) => ({
     paddingY: small ? '1' : '2',
@@ -62,7 +57,9 @@ const buttonVariants = ({
     small,
     ghost
 }: ButtonProps): ButtonVariantStyles => {
-    const { dark, base } = colorByKind(kind, theme);
+    const { dark, base } = getProperty<{
+        [K: string]: string;
+    }>(theme, 'colors', kind);
 
     return {
         ...buttonSizing(small),
@@ -125,18 +122,13 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
     small,
     ghost,
     ...restProps
-}) => {
-    return (
-        <Text
-            as={as}
-            styles={deepMerge(
-                buttonStyles({ kind, theme, small, ghost }),
-                styles
-            )}
-            {...restProps}
-        />
-    );
-};
+}) => (
+    <Text
+        as={as}
+        styles={deepMerge(buttonStyles({ kind, theme, small, ghost }), styles)}
+        {...restProps}
+    />
+);
 
 export const Button = withTheme(BaseButton);
 
