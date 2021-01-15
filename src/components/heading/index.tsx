@@ -1,5 +1,6 @@
 import React from 'react';
 import deepMerge from 'lodash.merge';
+import { Styles } from '@lapidist/styles';
 import { Text } from '../text';
 import { BoxProps } from '../box';
 
@@ -27,21 +28,20 @@ const headings: HeadingMapper = {
     6: { as: 'h6', fontSize: '4' }
 };
 
+export const headingStyles = (props: HeadingProps): Styles => ({
+    fontSize: headings[props.size || '1'].fontSize,
+    lineHeight: 'tight'
+});
+
 export const Heading: React.FC<HeadingProps & HeadingPropType> = ({
     as,
     styles,
-    size,
+    size = 1,
     ...restProps
 }) => (
     <Text
-        as={as || headings[size || '1'].as}
-        styles={deepMerge(
-            {
-                fontSize: headings[size || '1'].fontSize,
-                lineHeight: 'tight'
-            },
-            styles
-        )}
+        as={as || headings[size].as}
+        styles={deepMerge(headingStyles({ size }), styles)}
         {...restProps}
     />
 );

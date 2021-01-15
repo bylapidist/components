@@ -1,8 +1,8 @@
 import React from 'react';
 import deepMerge from 'lodash.merge';
+import { ColorGroup, getProperty, Styles, Theme } from '@lapidist/styles';
 import { Text } from '../text';
 import { BoxProps } from '../box';
-import { getProperty, Theme } from '@lapidist/styles';
 import { withTheme } from 'styled-components';
 
 export type ButtonPropType = BoxProps &
@@ -11,64 +11,126 @@ export type ButtonPropType = BoxProps &
 
 export interface ButtonProps {
     readonly kind: string;
+    readonly theme: Theme;
     readonly small?: boolean;
     readonly ghost?: boolean;
-    readonly theme: Theme;
 }
+
+interface ButtonVariantStyles {
+    borderColor: ColorGroup | string;
+    backgroundColor: ColorGroup | string;
+    paddingY: string;
+    fontSize: string;
+    textColor: ColorGroup | string;
+    hoverBackgroundColor: ColorGroup | string;
+    hoverTextColor: ColorGroup | string;
+    disabledHoverBackgroundColor: ColorGroup | string;
+    disabledTextColor: ColorGroup | string;
+    disabledBackgroundColor: ColorGroup | string;
+}
+
+const colorByKind = (kind: string, theme: Theme): { [K: string]: string } =>
+    getProperty<{
+        [K: string]: string;
+    }>(theme, 'colors', kind);
+
+const buttonSizing = (small?: boolean) => ({
+    paddingY: small ? '1' : '2',
+    fontSize: small ? '2' : '3'
+});
+
+const darkGrey: ColorGroup = { group: 'grey', shade: 'dark' };
+
+const lightBase: ColorGroup = { group: 'base', shade: 'light' };
+
+const lightestGrey: ColorGroup = { group: 'grey', shade: 'lightest' };
+
+const buttonColors = (dark: string, base: string, ghost?: boolean) => ({
+    borderColor: dark,
+    hoverBackgroundColor: dark,
+    hoverTextColor: lightBase,
+    backgroundColor: ghost ? 'transparent' : base,
+    textColor: ghost ? darkGrey : lightBase,
+    disabledHoverBackgroundColor: ghost ? lightestGrey : dark,
+    disabledTextColor: ghost ? darkGrey : lightBase,
+    disabledBackgroundColor: ghost ? lightestGrey : dark
+});
+
+const buttonVariants = ({
+    kind,
+    theme,
+    small,
+    ghost
+}: ButtonProps): ButtonVariantStyles => {
+    const { dark, base } = colorByKind(kind, theme);
+
+    return {
+        ...buttonSizing(small),
+        ...buttonColors(dark, base, ghost)
+    };
+};
+
+const buttonBaseStyles: Styles = {
+    borderWidth: '1',
+    textAlign: 'center',
+    paddingX: '4',
+    borderRadius: '2',
+    borderStyle: 'solid'
+};
+
+const buttonVariantStyles = ({
+    borderColor,
+    backgroundColor,
+    textColor,
+    paddingY,
+    fontSize,
+    hoverBackgroundColor,
+    hoverTextColor,
+    disabledHoverBackgroundColor,
+    disabledTextColor,
+    disabledBackgroundColor
+}: ButtonVariantStyles): Styles => ({
+    ...buttonBaseStyles,
+    borderColor,
+    backgroundColor,
+    textColor,
+    paddingY,
+    fontSize,
+    pseudo: {
+        ':hover': {
+            cursor: 'pointer',
+            backgroundColor: hoverBackgroundColor,
+            textColor: hoverTextColor
+        },
+        ':hover:disabled': {
+            cursor: 'not-allowed',
+            backgroundColor: disabledHoverBackgroundColor
+        },
+        ':disabled': {
+            opacity: '0.7',
+            textColor: disabledTextColor,
+            backgroundColor: disabledBackgroundColor
+        }
+    }
+});
+
+export const buttonStyles = (props: ButtonProps): Styles =>
+    buttonVariantStyles(buttonVariants(props));
 
 const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
     as = 'button',
     styles,
+    kind,
     theme,
     small,
     ghost,
-    kind,
     ...restProps
 }) => {
-    const color: { [K: string]: string } = getProperty<{
-        [K: string]: string;
-    }>(theme, 'colors', kind);
-
     return (
         <Text
             as={as}
             styles={deepMerge(
-                {
-                    borderWidth: '1',
-                    borderRadius: '2',
-                    borderStyle: 'solid',
-                    borderColor: color['dark'],
-                    backgroundColor: ghost ? 'transparent' : color['base'],
-                    textColor: ghost
-                        ? { group: 'grey', shade: 'dark' }
-                        : { group: 'base', shade: 'light' },
-                    textAlign: 'center',
-                    paddingX: '2',
-                    paddingY: small ? '1' : '2',
-                    fontSize: small ? '2' : '3',
-                    pseudo: {
-                        ':hover': {
-                            cursor: 'pointer',
-                            backgroundColor: color['dark'],
-                            textColor: { group: 'base', shade: 'light' }
-                        },
-                        ':hover:disabled': {
-                            cursor: 'not-allowed',
-                            backgroundColor: ghost
-                                ? { group: 'grey', shade: 'lightest' }
-                                : color['dark']
-                        },
-                        ':disabled': {
-                            opacity: '0.7',
-                            textColor: ghost
-                                ? { group: 'grey', shade: 'dark' }
-                                : { group: 'base', shade: 'light' },
-                            backgroundColor: ghost
-                                ? { group: 'grey', shade: 'lightest' }
-                                : color['dark']
-                        }
-                    }
-                },
+                buttonStyles({ kind, theme, small, ghost }),
                 styles
             )}
             {...restProps}

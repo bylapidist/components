@@ -7,6 +7,8 @@ export interface BoxProps extends PropsWithChildren<unknown> {
     readonly as?: keyof JSX.IntrinsicElements;
 }
 
+export const boxStyles = (props: BoxProps): Styles => props.styles || {};
+
 export const Box: React.FC<BoxProps> = styled.div<BoxProps>`
     ${({ theme, styles }): string => withStyles(theme, styles)}
 `;
