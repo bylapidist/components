@@ -36,11 +36,12 @@ export const headingStyles = (props: HeadingProps): Styles => ({
 export const Heading: React.FC<HeadingProps & HeadingPropType> = ({
     as,
     styles,
+    size = 1,
     ...restProps
 }) => (
     <Text
-        as={as || headings[restProps.size || '1'].as}
-        styles={deepMerge(headingStyles(restProps), styles)}
+        as={as || headings[size].as}
+        styles={deepMerge(headingStyles({ size }), styles)}
         {...restProps}
     />
 );

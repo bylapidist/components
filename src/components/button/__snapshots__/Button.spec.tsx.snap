@@ -42,7 +42,6 @@ exports[`it works 1`] = `
 
 <button
   className="c0"
-  kind="primary"
   type="button"
 >
   Hello world
@@ -91,7 +90,6 @@ exports[`it works with ghost 1`] = `
 
 <button
   className="c0"
-  kind="secondary"
   type="button"
 >
   Hello world
@@ -140,7 +138,6 @@ exports[`it works with size 1`] = `
 
 <button
   className="c0"
-  kind="secondary"
   type="button"
 >
   Hello world

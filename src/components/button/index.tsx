@@ -11,51 +11,62 @@ export type ButtonPropType = BoxProps &
 
 export interface ButtonProps {
     readonly kind: string;
+    readonly theme: Theme;
     readonly small?: boolean;
     readonly ghost?: boolean;
-    readonly theme: Theme;
 }
 
-export const buttonStyles = (props: ButtonProps): Styles => {
-    const { kind, small, ghost, theme } = props;
-
-    const colorByKind: { [K: string]: string } = getProperty<{
+const colorByKind = (kind: string, theme: Theme): { [K: string]: string } =>
+    getProperty<{
         [K: string]: string;
     }>(theme, 'colors', kind);
 
+export const buttonStyles = (props: ButtonProps): Styles => {
+    const { kind, theme, small, ghost } = props;
+    const { dark, base } = colorByKind(kind, theme);
+
+    const backgroundColor = ghost ? 'transparent' : base;
+    const paddingY = small ? '1' : '2';
+    const fontSize = small ? '2' : '3';
+    const textColor = ghost
+        ? { group: 'grey', shade: 'dark' }
+        : { group: 'base', shade: 'light' };
+    const hoverTextColor = { group: 'base', shade: 'light' };
+    const disabledHoverBackgroundColor = ghost
+        ? { group: 'grey', shade: 'lightest' }
+        : dark;
+    const disabledTextColor = ghost
+        ? { group: 'grey', shade: 'dark' }
+        : { group: 'base', shade: 'light' };
+    const disabledBackgroundColor = ghost
+        ? { group: 'grey', shade: 'lightest' }
+        : dark;
+
     return {
         borderWidth: '1',
-        borderRadius: '2',
-        borderStyle: 'solid',
-        borderColor: colorByKind['dark'],
-        backgroundColor: ghost ? 'transparent' : colorByKind['base'],
-        textColor: ghost
-            ? { group: 'grey', shade: 'dark' }
-            : { group: 'base', shade: 'light' },
         textAlign: 'center',
         paddingX: '4',
-        paddingY: small ? '1' : '2',
-        fontSize: small ? '2' : '3',
+        borderRadius: '2',
+        borderStyle: 'solid',
+        borderColor: dark,
+        backgroundColor,
+        textColor,
+        paddingY,
+        fontSize,
         pseudo: {
             ':hover': {
                 cursor: 'pointer',
-                backgroundColor: colorByKind['dark'],
-                textColor: { group: 'base', shade: 'light' }
+                backgroundColor: dark,
+                textColor: hoverTextColor
             },
             ':hover:disabled': {
                 cursor: 'not-allowed',
-                backgroundColor: ghost
-                    ? { group: 'grey', shade: 'lightest' }
-                    : colorByKind['dark']
+                backgroundColor: disabledHoverBackgroundColor
             },
             ':disabled': {
                 opacity: '0.7',
-                textColor: ghost
-                    ? { group: 'grey', shade: 'dark' }
-                    : { group: 'base', shade: 'light' },
-                backgroundColor: ghost
-                    ? { group: 'grey', shade: 'lightest' }
-                    : colorByKind['dark']
+                textColor: disabledTextColor,
+                backgroundColor: disabledBackgroundColor
             }
         }
     };
@@ -64,12 +75,19 @@ export const buttonStyles = (props: ButtonProps): Styles => {
 const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
     as = 'button',
     styles,
+    kind,
+    theme,
+    small,
+    ghost,
     ...restProps
 }) => {
     return (
         <Text
             as={as}
-            styles={deepMerge(buttonStyles(restProps), styles)}
+            styles={deepMerge(
+                buttonStyles({ kind, theme, small, ghost }),
+                styles
+            )}
             {...restProps}
         />
     );
