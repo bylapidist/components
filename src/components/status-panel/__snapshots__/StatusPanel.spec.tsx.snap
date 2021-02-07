@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c0 {
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-color: #1a8385;
+}
+
+.c1 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  color: #1a8385;
+}
+
+.c2 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.625;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  color: #292B3E;
+}
+
+@media only screen and (min-width:1024px) {
+  .c2 {
+    font-size: 2.25rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className="c1"
+  >
+    
+  </h1>
+  <div
+    className=""
+  >
+    <div
+      className="c2"
+    >
+      £
+      0.00
+    </div>
+  </div>
+</div>
+`;
+
+exports[`it works with different kind 1`] = `
+.c0 {
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-color: #c99944;
+}
+
+.c1 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  color: #c99944;
+}
+
+.c2 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.625;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  color: #292B3E;
+}
+
+@media only screen and (min-width:1024px) {
+  .c2 {
+    font-size: 2.25rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className="c1"
+  >
+    
+  </h1>
+  <div
+    className=""
+  >
+    <div
+      className="c2"
+    >
+      £
+      0.00
+    </div>
+  </div>
+</div>
+`;
+
+exports[`it works with different symbol 1`] = `
+.c0 {
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-color: #c99944;
+}
+
+.c1 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  color: #c99944;
+}
+
+.c2 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.625;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  color: #292B3E;
+}
+
+@media only screen and (min-width:1024px) {
+  .c2 {
+    font-size: 2.25rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className="c1"
+  >
+    test heading
+  </h1>
+  <div
+    className=""
+  >
+    <div
+      className="c2"
+    >
+      33.30
+      %
+    </div>
+  </div>
+</div>
+`;
+
+exports[`it works with heading and value 1`] = `
+.c0 {
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-color: #c99944;
+}
+
+.c1 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  color: #c99944;
+}
+
+.c2 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.625;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  color: #292B3E;
+}
+
+@media only screen and (min-width:1024px) {
+  .c2 {
+    font-size: 2.25rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className="c1"
+  >
+    test heading
+  </h1>
+  <div
+    className=""
+  >
+    <div
+      className="c2"
+    >
+      £
+      34,823.30
+    </div>
+  </div>
+</div>
+`;
