@@ -15,6 +15,7 @@ const propsToGenerate = [
     'panel',
     'panel-heading',
     'responsive',
+    'status-panel',
     'text',
     'theme-provider'
 ];
