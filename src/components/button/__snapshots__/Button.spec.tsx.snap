@@ -68,12 +68,12 @@ exports[`it works with ghost 1`] = `
   padding-bottom: 0.5rem;
   background-color: transparent;
   color: #292B3E;
-  border-color: #c99944;
+  border-color: #937032;
 }
 
 .c0:hover {
   cursor: pointer;
-  background-color: #c99944;
+  background-color: #937032;
   color: white;
 }
 
@@ -116,23 +116,23 @@ exports[`it works with size 1`] = `
   padding-bottom: 0.25rem;
   background-color: #ebc764;
   color: white;
-  border-color: #c99944;
+  border-color: #937032;
 }
 
 .c0:hover {
   cursor: pointer;
-  background-color: #c99944;
+  background-color: #937032;
   color: white;
 }
 
 .c0:hover:disabled {
   cursor: not-allowed;
-  background-color: #c99944;
+  background-color: #937032;
 }
 
 .c0:disabled {
   opacity: 0.7;
-  background-color: #c99944;
+  background-color: #937032;
   color: white;
 }
 
