@@ -74,7 +74,7 @@ exports[`it works with different kind 1`] = `
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-color: #c99944;
+  border-color: #937032;
 }
 
 .c1 {
@@ -88,7 +88,7 @@ exports[`it works with different kind 1`] = `
   letter-spacing: 0.025em;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
-  color: #c99944;
+  color: #937032;
 }
 
 .c2 {
@@ -139,7 +139,7 @@ exports[`it works with different symbol 1`] = `
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-color: #c99944;
+  border-color: #937032;
 }
 
 .c1 {
@@ -153,7 +153,7 @@ exports[`it works with different symbol 1`] = `
   letter-spacing: 0.025em;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
-  color: #c99944;
+  color: #937032;
 }
 
 .c2 {
@@ -204,7 +204,7 @@ exports[`it works with heading and value 1`] = `
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-color: #c99944;
+  border-color: #937032;
 }
 
 .c1 {
@@ -218,7 +218,7 @@ exports[`it works with heading and value 1`] = `
   letter-spacing: 0.025em;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
-  color: #c99944;
+  color: #937032;
 }
 
 .c2 {

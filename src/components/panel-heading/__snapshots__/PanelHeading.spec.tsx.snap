@@ -34,7 +34,7 @@ exports[`it works with different kind and size 1`] = `
   letter-spacing: 0.025em;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
-  color: #c99944;
+  color: #937032;
 }
 
 <h3

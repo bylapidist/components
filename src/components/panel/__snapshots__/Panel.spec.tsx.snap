@@ -28,7 +28,7 @@ exports[`it works with different kind 1`] = `
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-color: #c99944;
+  border-color: #937032;
 }
 
 <div
