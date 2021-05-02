@@ -18,7 +18,6 @@ Opinionated [React](https://reactjs.org/) UI library, built with [styled-compone
 [![Maintainability](https://api.codeclimate.com/v1/badges/e149e6bee07174eae6ad/maintainability)](https://codeclimate.com/github/bylapidist/components/maintainability)
 [![Node](https://img.shields.io/node/v/@lapidist/components)](https://www.npmjs.com/package/@lapidist/components)
 [![GitHub Issues](https://img.shields.io/github/issues/bylapidist/components.svg?style=flat)](https://github.com/bylapidist/components/issues)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=bylapidist/components)](https://dependabot.com)
 ![GitHub](https://img.shields.io/github/license/bylapidist/components)
 [![GitHub Release](https://img.shields.io/github/release/bylapidist/components.svg?style=flat)](https://github.com/bylapidist/components/releases)
 [![Build Status](https://github.com/bylapidist/components/workflows/Release/badge.svg)](https://github.com/bylapidist/components/actions?query=workflow%3ARelease)
