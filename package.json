@@ -52,7 +52,7 @@
         "lodash.merge": "^4.6.2"
     },
     "devDependencies": {
-        "@lapidist/linting": "2.106.0",
+        "@lapidist/linting": "2.109.0",
         "@react-mock/state": "0.1.8",
         "@types/jest": "26.0.23",
         "@types/lodash.merge": "4.6.6",
