@@ -2,8 +2,7 @@ import { Theme } from '@lapidist/styles';
 
 export const darkTheme: Theme = {
     boxShadows: {
-        '1':
-            '0 1px 3px 0 rgba(255, 255, 255, 0.1), 0 1px 2px 0 rgba(255, 255, 255, 0.06)'
+        '1': '0 1px 3px 0 rgba(255, 255, 255, 0.1), 0 1px 2px 0 rgba(255, 255, 255, 0.06)'
     },
     colors: {
         base: {

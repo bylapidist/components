@@ -1,6 +1,6 @@
 const baseConfig = require('./webpack.config');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-    .BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin =
+    require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
     ...baseConfig,

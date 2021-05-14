@@ -75,8 +75,7 @@ module.exports = {
             links: [
                 {
                     rel: 'stylesheet',
-                    href:
-                        'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700'
+                    href: 'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700'
                 }
             ],
             meta: [
