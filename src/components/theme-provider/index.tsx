@@ -50,9 +50,8 @@ export interface ThemeProviderProps extends PropsWithChildren<unknown> {
     readonly theme?: Theme;
 }
 
-export const ThemeContext: Context<Theme> = React.createContext<Theme>(
-    defaultTheme
-);
+export const ThemeContext: Context<Theme> =
+    React.createContext<Theme>(defaultTheme);
 
 export const useTheme = (): Theme => React.useContext(ThemeContext);
 

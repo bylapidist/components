@@ -80,9 +80,8 @@ class BaseResponsive extends React.Component<ResponsiveProps, ResponsiveState> {
             : [...this.getAllBreakpoints(theme)];
 
         for (const breakpointToRenderAt of breakpointsToRenderAt) {
-            this.triggerAtMediaQueries[
-                breakpointToRenderAt
-            ] = window.matchMedia(this.allMediaQueries[breakpointToRenderAt]);
+            this.triggerAtMediaQueries[breakpointToRenderAt] =
+                window.matchMedia(this.allMediaQueries[breakpointToRenderAt]);
         }
 
         this.allMediaQueries = this.getAllMediaQueries(theme);
@@ -95,9 +94,8 @@ class BaseResponsive extends React.Component<ResponsiveProps, ResponsiveState> {
             : [...this.getAllBreakpoints(theme)];
 
         for (const breakpointToRenderAt of breakpointsToRenderAt) {
-            this.triggerAtMediaQueries[
-                breakpointToRenderAt
-            ] = window.matchMedia(this.allMediaQueries[breakpointToRenderAt]);
+            this.triggerAtMediaQueries[breakpointToRenderAt] =
+                window.matchMedia(this.allMediaQueries[breakpointToRenderAt]);
             this.triggerAtMediaQueries[breakpointToRenderAt].addListener(
                 this.updateMatches.bind(this)
             );
