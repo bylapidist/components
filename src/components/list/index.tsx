@@ -1,6 +1,13 @@
-import React, { HTMLAttributes } from 'react';
-import styled, { StyledComponent } from 'styled-components';
+import React from 'react';
 import { Text } from '../text';
+import { Box, BoxProps } from '../box';
+import {
+    listItemStyles,
+    orderedListStyles,
+    unorderedListStyles
+} from './styles';
+
+export * from './styles';
 
 export type ListType = 'ol' | 'ul';
 
@@ -14,26 +21,23 @@ export interface ListProps {
     readonly type?: ListType;
 }
 
-const Ordered: StyledComponent<
-    'ol',
-    HTMLAttributes<HTMLOListElement>
-> = styled.ol<ListProps>`
-    list-style-type: decimal;
-    list-style-position: inside;
-`;
+const Ordered: React.FC<BoxProps> = ({ children }) => (
+    <Box as={'ol'} styles={orderedListStyles()}>
+        {children}
+    </Box>
+);
 
-const Unordered: StyledComponent<
-    'ul',
-    HTMLAttributes<HTMLUListElement>
-> = styled.ul<ListProps>`
-    list-style-type: disc;
-    list-style-position: inside;
-`;
+const Unordered: React.FC<BoxProps> = ({ children }) => (
+    <Box as={'ul'} styles={unorderedListStyles()}>
+        {children}
+    </Box>
+);
 
-const ListItem: StyledComponent<
-    'li',
-    HTMLAttributes<HTMLLIElement>
-> = styled.li``;
+const ListItem: React.FC<BoxProps> = ({ children }) => (
+    <Box as={'li'} styles={listItemStyles()}>
+        {children}
+    </Box>
+);
 
 const Items: React.FC<{ items: ListItemProps[] }> = ({ items }) => (
     <>
