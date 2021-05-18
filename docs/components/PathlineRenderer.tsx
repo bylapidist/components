@@ -1,7 +1,6 @@
 import React from 'react';
 import copy from 'clipboard-copy';
-import { Link } from '../../src/components/link';
-import { Text } from '../../src/components/text';
+import { Link, Text } from '../../src';
 
 export interface PathlineRendererProps {
     readonly children?: React.ReactNode;
@@ -13,7 +12,7 @@ const PathlineRenderer: React.FC<PathlineRendererProps> = ({ children }) => (
             📋
         </Text>
         <Link
-            href="javascript:;"
+            href="/"
             onClick={(): unknown => children && copy(children.toString())}
             title="Copy to clipboard"
             styles={{
