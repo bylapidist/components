@@ -9,7 +9,6 @@ export * from './list';
 export * from './logo';
 export * from './panel';
 export * from './panel-heading';
-export * from './responsive';
 export * from './status-panel';
 export * from './text';
 export * from './theme-provider';
