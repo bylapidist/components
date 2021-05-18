@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, HeadingSize } from '../../src/components/heading';
+import { Heading, HeadingSize } from '../../src';
 
 export interface SectionHeadingRendererProps {
     readonly children?: React.ReactNode;
