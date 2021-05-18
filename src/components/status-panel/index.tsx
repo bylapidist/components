@@ -1,7 +1,6 @@
 import React from 'react';
-import deepMerge from 'lodash.merge';
 import { withTheme } from 'styled-components';
-import { Theme } from '@lapidist/styles';
+import { mergeStyles, Theme } from '@lapidist/styles';
 import { Text } from '../text';
 import { Box, BoxProps } from '../box';
 import { PanelHeading } from '../panel-heading';
@@ -35,7 +34,7 @@ const BaseStatusPanel: React.FC<StatusPanelPropType & StatusPanelProps> = ({
 }) => (
     <Box
         as={as}
-        styles={deepMerge(statusPanelStyles({ kind, theme }), styles)}
+        styles={mergeStyles(statusPanelStyles({ kind, theme }), styles)}
         {...restProps}
     >
         <PanelHeading kind={kind}>{heading}</PanelHeading>

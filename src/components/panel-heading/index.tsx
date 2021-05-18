@@ -1,7 +1,6 @@
 import React from 'react';
-import deepMerge from 'lodash.merge';
 import { withTheme } from 'styled-components';
-import { Theme } from '@lapidist/styles';
+import { mergeStyles, Theme } from '@lapidist/styles';
 import { BoxProps } from '../box';
 import { panelHeadingStyles } from './styles';
 import { Heading, HeadingSize } from '../heading';
@@ -28,7 +27,7 @@ const BasePanelHeading: React.FC<PanelHeadingPropType & PanelHeadingProps> = ({
     <Heading
         as={as}
         size={size}
-        styles={deepMerge(panelHeadingStyles({ kind, theme }), styles)}
+        styles={mergeStyles(panelHeadingStyles({ kind, theme }), styles)}
         {...restProps}
     >
         {children}

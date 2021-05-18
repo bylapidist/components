@@ -1,6 +1,6 @@
 import React from 'react';
-import deepMerge from 'lodash.merge';
 import styled from 'styled-components';
+import { mergeStyles } from '@lapidist/styles';
 import { Box, BoxProps } from '../box';
 
 export type Ratio = { x: number | string; y: number | string };
@@ -61,7 +61,11 @@ export const AspectRatio: React.FC<AspectRatioProps & AspectRatioPropType> = ({
     ...restProps
 }) => (
     <>
-        <AspectRatioBox as={as} styles={deepMerge({}, styles)} {...restProps} />
+        <AspectRatioBox
+            as={as}
+            styles={mergeStyles({}, styles)}
+            {...restProps}
+        />
     </>
 );
 

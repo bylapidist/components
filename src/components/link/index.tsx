@@ -1,5 +1,5 @@
 import React from 'react';
-import deepMerge from 'lodash.merge';
+import { mergeStyles } from '@lapidist/styles';
 import { Text } from '../text';
 import { BoxProps } from '../box';
 import { linkStyles } from './styles';
@@ -12,6 +12,8 @@ export const Link: React.FC<LinkPropType> = ({
     as = 'a',
     styles,
     ...restProps
-}) => <Text as={as} styles={deepMerge(linkStyles(), styles)} {...restProps} />;
+}) => (
+    <Text as={as} styles={mergeStyles(linkStyles(), styles)} {...restProps} />
+);
 
 Link.displayName = 'Link';
