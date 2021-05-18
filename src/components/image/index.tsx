@@ -1,5 +1,5 @@
 import React from 'react';
-import deepMerge from 'lodash.merge';
+import { mergeStyles } from '@lapidist/styles';
 import { Box, BoxProps } from '../box';
 import { imageStyles } from './styles';
 
@@ -11,6 +11,8 @@ export const Image: React.FC<ImagePropType> = ({
     as = 'img',
     styles,
     ...restProps
-}) => <Box as={as} styles={deepMerge(imageStyles(), styles)} {...restProps} />;
+}) => (
+    <Box as={as} styles={mergeStyles(imageStyles(), styles)} {...restProps} />
+);
 
 Image.displayName = 'Image';

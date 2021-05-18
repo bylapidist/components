@@ -1,5 +1,5 @@
 import React from 'react';
-import deepMerge from 'lodash.merge';
+import { mergeStyles } from '@lapidist/styles';
 import { Box, BoxProps } from '../box';
 import { textStyles } from './styles';
 
@@ -11,6 +11,6 @@ export const Text: React.FC<TextPropType> = ({
     as = 'div',
     styles,
     ...restProps
-}) => <Box as={as} styles={deepMerge(textStyles(), styles)} {...restProps} />;
+}) => <Box as={as} styles={mergeStyles(textStyles(), styles)} {...restProps} />;
 
 Text.displayName = 'Text';
