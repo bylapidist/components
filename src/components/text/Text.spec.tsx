@@ -1,34 +1,31 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
-import { Text } from './index';
+import { Text, TextPropType } from './index';
 import { ThemeProvider } from '../theme-provider';
 
+const setup = (
+    props?: TextPropType,
+    children: React.ReactElement = <p>Hello world!</p>
+) =>
+    render(
+        <ThemeProvider>
+            <Text {...props}>{children}</Text>
+        </ThemeProvider>
+    );
+
 test('it works with defaults', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Text>Hello world!</Text>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup();
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works with styles', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Text
-                    styles={{
-                        width: '1/2'
-                    }}
-                >
-                    Hello world!
-                </Text>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup({
+        styles: {
+            width: '1/2'
+        }
+    });
+    expect(container.firstChild).toMatchSnapshot();
 });

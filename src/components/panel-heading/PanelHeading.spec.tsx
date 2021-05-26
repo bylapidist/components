@@ -1,30 +1,26 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
 import { ThemeProvider } from '../theme-provider';
 import { PanelHeading } from './index';
 
+const setup = (panelHeading: React.ReactElement) =>
+    render(<ThemeProvider>{panelHeading}</ThemeProvider>);
+
 test('it works', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <PanelHeading kind="primary">Hello world</PanelHeading>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup(
+        <PanelHeading kind="primary">Hello world</PanelHeading>
+    );
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works with different kind and size', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <PanelHeading size={3} kind="secondary">
-                    Hello world
-                </PanelHeading>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup(
+        <PanelHeading size={3} kind="secondary">
+            Hello world
+        </PanelHeading>
+    );
+    expect(container.firstChild).toMatchSnapshot();
 });

@@ -22,9 +22,11 @@ exports[`it works 1`] = `
 }
 
 <a
-  className="c0"
+  class="c0"
   href="#"
 >
-  Hello world
+  <p>
+    Hello world!
+  </p>
 </a>
 `;

@@ -1,34 +1,33 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
-import { Image } from './index';
+import { Image, ImagePropType } from './index';
 import { ThemeProvider } from '../theme-provider';
 
+const setup = (props?: ImagePropType) =>
+    render(
+        <ThemeProvider>
+            <Image {...props} />
+        </ThemeProvider>
+    );
+
 test('it works', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Image src="https://placehold.it/500x500" alt="image" />
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup({
+        src: 'https://placehold.it/500x500',
+        alt: 'image'
+    });
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works with styles', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Image
-                    styles={{
-                        width: '1/2'
-                    }}
-                    src="https://placehold.it/500x500"
-                    alt="image"
-                />
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup({
+        src: 'https://placehold.it/500x500',
+        alt: 'image',
+        styles: {
+            width: '1/2'
+        }
+    });
+    expect(container.firstChild).toMatchSnapshot();
 });

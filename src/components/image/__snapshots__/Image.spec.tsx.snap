@@ -3,7 +3,7 @@
 exports[`it works 1`] = `
 <img
   alt="image"
-  className=""
+  class=""
   src="https://placehold.it/500x500"
 />
 `;
@@ -15,7 +15,7 @@ exports[`it works with styles 1`] = `
 
 <img
   alt="image"
-  className="c0"
+  class="c0"
   src="https://placehold.it/500x500"
 />
 `;

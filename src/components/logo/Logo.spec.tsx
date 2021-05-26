@@ -1,39 +1,29 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
-import { Logo } from './index';
+import { Logo, LogoProps } from './index';
 import { ThemeProvider } from '../theme-provider';
 
+const setup = (props?: LogoProps) =>
+    render(
+        <ThemeProvider>
+            <Logo {...props} />
+        </ThemeProvider>
+    );
+
 test('it works', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Logo />
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup();
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works thinking', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Logo thinking />
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup({ thinking: true });
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works animated', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Logo animated />
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup({ animated: true });
+    expect(container.firstChild).toMatchSnapshot();
 });

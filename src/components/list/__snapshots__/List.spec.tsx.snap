@@ -19,20 +19,20 @@ exports[`it works with elements 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <ul
-    className="c1"
+    class="c1"
   >
     <li
-      className=""
+      class=""
     >
       <p>
         hello
       </p>
     </li>
     <li
-      className=""
+      class=""
     >
       <p>
         world
@@ -61,18 +61,18 @@ exports[`it works with ordered 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <ol
-    className="c1"
+    class="c1"
   >
     <li
-      className=""
+      class=""
     >
       hello
     </li>
     <li
-      className=""
+      class=""
     >
       world
     </li>
@@ -99,18 +99,18 @@ exports[`it works with strings 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <ul
-    className="c1"
+    class="c1"
   >
     <li
-      className=""
+      class=""
     >
       hello
     </li>
     <li
-      className=""
+      class=""
     >
       world
     </li>
@@ -137,18 +137,18 @@ exports[`it works with unordered 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <ul
-    className="c1"
+    class="c1"
   >
     <li
-      className=""
+      class=""
     >
       hello
     </li>
     <li
-      className=""
+      class=""
     >
       world
     </li>

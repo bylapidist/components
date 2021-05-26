@@ -1,28 +1,20 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
 import { ThemeProvider } from '../theme-provider';
 import { Panel } from './index';
 
+const setup = (panel: React.ReactElement) =>
+    render(<ThemeProvider>{panel}</ThemeProvider>);
+
 test('it works', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Panel kind="primary">Hello world</Panel>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup(<Panel kind="primary">Hello world</Panel>);
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works with different kind', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Panel kind="secondary">Hello world</Panel>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup(<Panel kind="secondary">Hello world</Panel>);
+    expect(container.firstChild).toMatchSnapshot();
 });

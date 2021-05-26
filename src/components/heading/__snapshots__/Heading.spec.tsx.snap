@@ -14,9 +14,11 @@ exports[`it works as h1 1`] = `
 }
 
 <h1
-  className="c0"
+  class="c0"
 >
-  H1
+  <p>
+    Hello world!
+  </p>
 </h1>
 `;
 
@@ -34,9 +36,11 @@ exports[`it works as h2 1`] = `
 }
 
 <h2
-  className="c0"
+  class="c0"
 >
-  H2
+  <p>
+    Hello world!
+  </p>
 </h2>
 `;
 
@@ -54,9 +58,11 @@ exports[`it works as h3 1`] = `
 }
 
 <h3
-  className="c0"
+  class="c0"
 >
-  H3
+  <p>
+    Hello world!
+  </p>
 </h3>
 `;
 
@@ -74,9 +80,11 @@ exports[`it works as h4 1`] = `
 }
 
 <h4
-  className="c0"
+  class="c0"
 >
-  H4
+  <p>
+    Hello world!
+  </p>
 </h4>
 `;
 
@@ -94,9 +102,11 @@ exports[`it works as h5 1`] = `
 }
 
 <h5
-  className="c0"
+  class="c0"
 >
-  H5
+  <p>
+    Hello world!
+  </p>
 </h5>
 `;
 
@@ -114,8 +124,10 @@ exports[`it works as h6 1`] = `
 }
 
 <h6
-  className="c0"
+  class="c0"
 >
-  H6
+  <p>
+    Hello world!
+  </p>
 </h6>
 `;

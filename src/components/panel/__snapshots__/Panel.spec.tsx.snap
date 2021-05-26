@@ -13,7 +13,7 @@ exports[`it works 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   Hello world
 </div>
@@ -32,7 +32,7 @@ exports[`it works with different kind 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   Hello world
 </div>
