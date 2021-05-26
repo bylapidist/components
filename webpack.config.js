@@ -43,6 +43,9 @@ module.exports = {
         }
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            process: 'process/browser'
+        }),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(env)
         }),
@@ -58,10 +61,7 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
-                loader: 'awesome-typescript-loader',
-                options: {
-                    declaration: false
-                }
+                loader: 'ts-loader'
             },
             {
                 test: /\.js$/,
