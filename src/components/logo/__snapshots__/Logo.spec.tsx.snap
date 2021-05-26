@@ -50,25 +50,25 @@ exports[`it works 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <svg
       preserveAspectRatio="none"
       viewBox="0 0 64 64"
     >
       <polygon
-        className="c2"
+        class="c2"
         points="0,0 0,32 32,32"
       />
       <polygon
-        className="c3"
+        class="c3"
         points="0,32 0,64 32,64"
       />
       <polygon
-        className="c4"
+        class="c4"
         points="32,0 32,64 64,32"
       />
     </svg>
@@ -150,25 +150,25 @@ exports[`it works animated 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <svg
       preserveAspectRatio="none"
       viewBox="0 0 64 64"
     >
       <polygon
-        className="c2"
+        class="c2"
         points="0,0 0,32 32,32"
       />
       <polygon
-        className="c3"
+        class="c3"
         points="0,32 0,64 32,64"
       />
       <polygon
-        className="c4"
+        class="c4"
         points="32,0 32,64 64,32"
       />
     </svg>
@@ -250,25 +250,25 @@ exports[`it works thinking 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <svg
       preserveAspectRatio="none"
       viewBox="0 0 64 64"
     >
       <polygon
-        className="c2"
+        class="c2"
         points="0,0 0,32 32,32"
       />
       <polygon
-        className="c3"
+        class="c3"
         points="0,32 0,64 32,64"
       />
       <polygon
-        className="c4"
+        class="c4"
         points="32,0 32,64 64,32"
       />
     </svg>

@@ -14,9 +14,11 @@ exports[`it works with defaults 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
-  Hello world!
+  <p>
+    Hello world!
+  </p>
 </div>
 `;
 
@@ -35,8 +37,10 @@ exports[`it works with styles 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
-  Hello world!
+  <p>
+    Hello world!
+  </p>
 </div>
 `;

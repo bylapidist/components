@@ -2,7 +2,7 @@
 
 exports[`it works plain 1`] = `
 <div
-  className=""
+  class=""
 >
   <p>
     Hello world!
@@ -16,7 +16,7 @@ exports[`it works with backgroundColor 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <p>
     Hello world!
@@ -30,7 +30,7 @@ exports[`it works with borderColor 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <p>
     Hello world!
@@ -44,7 +44,7 @@ exports[`it works with borderRadius 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <p>
     Hello world!
@@ -58,7 +58,7 @@ exports[`it works with borderWidth 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <p>
     Hello world!
@@ -75,7 +75,7 @@ exports[`it works with breakpoints 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <p>
     Hello world!
@@ -89,7 +89,7 @@ exports[`it works with margin 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <p>
     Hello world!
@@ -103,7 +103,7 @@ exports[`it works with padding 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <p>
     Hello world!
@@ -120,7 +120,7 @@ exports[`it works with variable borderColors 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <p>
     Hello world!

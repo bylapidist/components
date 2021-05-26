@@ -9,7 +9,7 @@ exports[`it works 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <p>
     Hello world!
@@ -30,7 +30,7 @@ exports[`it works with styles 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <p>
     Hello world!

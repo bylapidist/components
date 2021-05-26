@@ -9,7 +9,6 @@
         "typeRoots": ["node_modules/@types", "./types"],
         "jsx": "react",
         "declaration": true,
-        "inlineSourceMap": true,
         "inlineSources": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
@@ -32,7 +31,7 @@
         "emitDecoratorMetadata": true,
         "skipLibCheck": true,
         "preserveSymlinks": true,
-	    "sourceMap": false,
+	    "sourceMap": true,
         "forceConsistentCasingInFileNames": true,
         "downlevelIteration": true
     },

@@ -16,7 +16,7 @@ exports[`it works 1`] = `
 }
 
 <h1
-  className="c0"
+  class="c0"
 >
   Hello world
 </h1>
@@ -38,7 +38,7 @@ exports[`it works with different kind and size 1`] = `
 }
 
 <h3
-  className="c0"
+  class="c0"
 >
   Hello world
 </h3>

@@ -1,17 +1,22 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
 import { ThemeProvider } from '../theme-provider';
-import { Link } from './index';
+import { Link, LinkPropType } from './index';
+
+const setup = (
+    props?: LinkPropType,
+    children: React.ReactElement = <p>Hello world!</p>
+) =>
+    render(
+        <ThemeProvider>
+            <Link {...props}>{children}</Link>
+        </ThemeProvider>
+    );
 
 test('it works', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Link href="#">Hello world</Link>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = setup({ href: '#' });
+    expect(container.firstChild).toMatchSnapshot();
 });

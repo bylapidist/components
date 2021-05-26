@@ -1,81 +1,58 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
-import { Heading } from './index';
+import { Heading, HeadingProps } from './index';
 import { ThemeProvider } from '../theme-provider';
 
-test('it works mapping to correct heading level', () => {
-    const tree = renderer.create(
+const setup = (
+    props?: HeadingProps,
+    children: React.ReactElement = <p>Hello world!</p>
+) =>
+    render(
         <ThemeProvider>
-            <Heading />
+            <Heading {...props}>{children}</Heading>
         </ThemeProvider>
     );
-    expect(tree.root.findByType('h1')).toBeTruthy();
+
+test('it works mapping to correct heading level', () => {
+    const { getByRole } = setup();
+    expect(getByRole('heading').nodeName).toBe('H1');
 });
 
 test('it works as h1', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Heading size={1}>H1</Heading>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container, getByRole } = setup({ size: 1 });
+    expect(getByRole('heading').nodeName).toBe('H1');
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works as h2', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Heading size={2}>H2</Heading>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container, getByRole } = setup({ size: 2 });
+    expect(getByRole('heading').nodeName).toBe('H2');
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works as h3', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Heading size={3}>H3</Heading>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container, getByRole } = setup({ size: 3 });
+    expect(getByRole('heading').nodeName).toBe('H3');
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works as h4', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Heading size={4}>H4</Heading>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container, getByRole } = setup({ size: 4 });
+    expect(getByRole('heading').nodeName).toBe('H4');
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works as h5', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Heading size={5}>H5</Heading>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container, getByRole } = setup({ size: 5 });
+    expect(getByRole('heading').nodeName).toBe('H5');
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works as h6', () => {
-    const tree = renderer
-        .create(
-            <ThemeProvider>
-                <Heading size={6}>H6</Heading>
-            </ThemeProvider>
-        )
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container, getByRole } = setup({ size: 6 });
+    expect(getByRole('heading').nodeName).toBe('H6');
+    expect(container.firstChild).toMatchSnapshot();
 });
