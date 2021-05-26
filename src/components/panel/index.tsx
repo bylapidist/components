@@ -1,7 +1,6 @@
 import React from 'react';
-import deepMerge from 'lodash.merge';
 import { withTheme } from 'styled-components';
-import { Theme } from '@lapidist/styles';
+import { mergeStyles, Theme } from '@lapidist/styles';
 import { Box, BoxProps } from '../box';
 import { panelStyles } from './styles';
 
@@ -23,7 +22,7 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
 }) => (
     <Box
         as={as}
-        styles={deepMerge(panelStyles({ kind, theme }), styles)}
+        styles={mergeStyles(panelStyles({ kind, theme }), styles)}
         {...restProps}
     />
 );

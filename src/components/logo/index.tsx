@@ -1,11 +1,11 @@
 import React from 'react';
-import deepMerge from 'lodash.merge';
 import styled, {
     css,
     DefaultTheme,
     FlattenInterpolation,
     ThemeProps
 } from 'styled-components';
+import { mergeStyles } from '@lapidist/styles';
 import { Box, BoxProps } from '../box';
 import { AspectRatio } from '../aspect-ratio';
 import { slideDown, slideRight, slideUpLeft, thinking } from './animations';
@@ -78,7 +78,7 @@ export const Logo: React.FC<LogoProps & LogoPropType> = ({
     ...restProps
 }) => (
     <>
-        <LogoBox as={as} styles={deepMerge({}, styles)} {...restProps}>
+        <LogoBox as={as} styles={mergeStyles({}, styles)} {...restProps}>
             <AspectRatio ratio="1/1">
                 <svg preserveAspectRatio="none" viewBox="0 0 64 64">
                     <BUp

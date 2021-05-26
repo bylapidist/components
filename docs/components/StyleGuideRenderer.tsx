@@ -1,7 +1,5 @@
 import React from 'react';
-import { ThemeProvider } from '../../src/components/theme-provider';
-import { Text } from '../../src/components/text';
-import { Box } from '../../src/components/box';
+import { ThemeProvider, Text, Box } from '../../src';
 import { HomePage } from './HomePage';
 
 export interface StyleGuideRendererProps {

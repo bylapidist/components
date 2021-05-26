@@ -1,10 +1,6 @@
 import React from 'react';
 import { StyleGuideRendererProps } from './StyleGuideRenderer';
-import { Logo } from '../../src/components/logo';
-import { Heading } from '../../src/components/heading';
-import { Text } from '../../src/components/text';
-import { Link } from '../../src/components/link';
-import { Box } from '../../src/components/box';
+import { Logo, Heading, Text, Link, Box } from '../../src';
 
 export const HomePage: React.FC<StyleGuideRendererProps> = ({ version }) => (
     <>

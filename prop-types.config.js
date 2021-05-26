@@ -14,7 +14,6 @@ const propsToGenerate = [
     'logo',
     'panel',
     'panel-heading',
-    'responsive',
     'status-panel',
     'text',
     'theme-provider'

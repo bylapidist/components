@@ -48,14 +48,12 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "@lapidist/styles": "^3.4.0",
-        "lodash.merge": "^4.6.2"
+        "@lapidist/styles": "^3.5.0"
     },
     "devDependencies": {
         "@lapidist/linting": "2.111.0",
         "@react-mock/state": "0.1.8",
         "@types/jest": "26.0.23",
-        "@types/lodash.merge": "4.6.6",
         "@types/react": "17.0.8",
         "@types/react-dom": "17.0.5",
         "@types/react-test-renderer": "17.0.1",

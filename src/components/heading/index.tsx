@@ -1,5 +1,5 @@
 import React from 'react';
-import deepMerge from 'lodash.merge';
+import { mergeStyles } from '@lapidist/styles';
 import { Text } from '../text';
 import { BoxProps } from '../box';
 import { headings, headingStyles } from './styles';
@@ -22,7 +22,7 @@ export const Heading: React.FC<HeadingProps & HeadingPropType> = ({
 }) => (
     <Text
         as={as || headings[size].as}
-        styles={deepMerge(headingStyles({ size }), styles)}
+        styles={mergeStyles(headingStyles({ size }), styles)}
         {...restProps}
     />
 );

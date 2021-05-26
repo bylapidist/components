@@ -1,7 +1,6 @@
 import React from 'react';
-import deepMerge from 'lodash.merge';
 import { withTheme } from 'styled-components';
-import { Theme } from '@lapidist/styles';
+import { mergeStyles, Theme } from '@lapidist/styles';
 import { Text } from '../text';
 import { BoxProps } from '../box';
 import { buttonStyles } from './styles';
@@ -30,7 +29,10 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
 }) => (
     <Text
         as={as}
-        styles={deepMerge(buttonStyles({ kind, theme, small, ghost }), styles)}
+        styles={mergeStyles(
+            buttonStyles({ kind, theme, small, ghost }),
+            styles
+        )}
         {...restProps}
     />
 );

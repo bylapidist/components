@@ -2,11 +2,7 @@ import React from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import Markdown from 'react-styleguidist/lib/client/rsg-components/Markdown/Markdown';
-import { Text } from '../../src/components/text';
-import { Heading, HeadingSize } from '../../src/components/heading';
-import { Logo } from '../../src/components/logo';
-import { Link } from '../../src/components/link';
-import { Box } from '../../src/components/box';
+import { Text, Heading, HeadingSize, Logo, Link, Box } from '../../src';
 
 export interface SectionRendererProps {
     readonly name: string;
