@@ -47,7 +47,7 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "@lapidist/styles": "^3.5.1"
+        "@lapidist/styles": "^3.6.0"
     },
     "devDependencies": {
         "@lapidist/linting": "2.111.3",

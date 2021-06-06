@@ -2,15 +2,15 @@
 
 exports[`it works with an inner image 1`] = `
 .c0 {
-  position: relative;
   overflow: hidden;
+  position: relative;
   height: 100%;
 }
 
 .c0:before {
-  padding-bottom: calc(100% / (1 / 3));
-  display: block;
   content: '';
+  display: block;
+  padding-bottom: calc(100% / (1 / 3));
 }
 
 .c0 > :first-child {
@@ -39,15 +39,15 @@ exports[`it works with an inner image 1`] = `
 
 exports[`it works with object ratio 1`] = `
 .c0 {
-  position: relative;
   overflow: hidden;
+  position: relative;
   height: 100%;
 }
 
 .c0:before {
-  padding-bottom: calc(100% / (1 / 3));
-  display: block;
   content: '';
+  display: block;
+  padding-bottom: calc(100% / (1 / 3));
 }
 
 .c0 > :first-child {
@@ -75,15 +75,15 @@ exports[`it works with object ratio 1`] = `
 
 exports[`it works with string ratio 1`] = `
 .c0 {
-  position: relative;
   overflow: hidden;
+  position: relative;
   height: 100%;
 }
 
 .c0:before {
-  padding-bottom: calc(100% / (1 / 3));
-  display: block;
   content: '';
+  display: block;
+  padding-bottom: calc(100% / (1 / 3));
 }
 
 .c0 > :first-child {
