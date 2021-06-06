@@ -2,15 +2,15 @@
 
 exports[`it works 1`] = `
 .c1 {
-  position: relative;
   overflow: hidden;
+  position: relative;
   height: 100%;
 }
 
 .c1:before {
-  padding-bottom: calc(100% / (1 / 1));
-  display: block;
   content: '';
+  display: block;
+  padding-bottom: calc(100% / (1 / 1));
 }
 
 .c1 > :first-child {
@@ -78,15 +78,15 @@ exports[`it works 1`] = `
 
 exports[`it works animated 1`] = `
 .c1 {
-  position: relative;
   overflow: hidden;
+  position: relative;
   height: 100%;
 }
 
 .c1:before {
-  padding-bottom: calc(100% / (1 / 1));
-  display: block;
   content: '';
+  display: block;
+  padding-bottom: calc(100% / (1 / 1));
 }
 
 .c1 > :first-child {
@@ -178,15 +178,15 @@ exports[`it works animated 1`] = `
 
 exports[`it works thinking 1`] = `
 .c1 {
-  position: relative;
   overflow: hidden;
+  position: relative;
   height: 100%;
 }
 
 .c1:before {
-  padding-bottom: calc(100% / (1 / 1));
-  display: block;
   content: '';
+  display: block;
+  padding-bottom: calc(100% / (1 / 1));
 }
 
 .c1 > :first-child {
