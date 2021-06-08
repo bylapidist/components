@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Key } from 'react';
 import { Text } from '../text';
 import { Box, BoxProps } from '../box';
 import {
@@ -13,7 +13,7 @@ export type ListType = 'ol' | 'ul';
 
 interface ListItemProps {
     readonly item: JSX.Element | string;
-    readonly key: string | number;
+    readonly key: Key;
 }
 
 export interface ListProps {
