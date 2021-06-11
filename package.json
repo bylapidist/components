@@ -52,7 +52,7 @@
     "devDependencies": {
         "@lapidist/linting": "2.111.4",
         "@react-mock/state": "0.1.8",
-        "@testing-library/jest-dom": "5.14.0",
+        "@testing-library/jest-dom": "5.14.1",
         "@testing-library/react": "11.2.7",
         "@types/jest": "26.0.23",
         "@types/react": "17.0.11",
