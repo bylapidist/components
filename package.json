@@ -50,7 +50,7 @@
         "@lapidist/styles": "^3.6.0"
     },
     "devDependencies": {
-        "@lapidist/linting": "2.112.0",
+        "@lapidist/linting": "2.113.0",
         "@react-mock/state": "0.1.8",
         "@testing-library/jest-dom": "5.14.1",
         "@testing-library/react": "11.2.7",
