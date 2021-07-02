@@ -57,7 +57,7 @@
         "@types/jest": "26.0.23",
         "@types/react": "17.0.13",
         "@types/react-dom": "17.0.8",
-        "@types/styled-components": "5.1.10",
+        "@types/styled-components": "5.1.11",
         "circular-dependency-plugin": "5.2.2",
         "cross-env": "7.0.3",
         "css-loader": "5.2.6",
