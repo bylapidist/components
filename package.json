@@ -60,7 +60,7 @@
         "@types/styled-components": "5.1.11",
         "circular-dependency-plugin": "5.2.2",
         "cross-env": "7.0.3",
-        "css-loader": "5.2.6",
+        "css-loader": "5.2.7",
         "csstype": "3.0.8",
         "fs-extra": "10.0.0",
         "husky": "7.0.1",
