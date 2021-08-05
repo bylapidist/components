@@ -62,7 +62,7 @@
         "cross-env": "7.0.3",
         "css-loader": "6.2.0",
         "csstype": "3.0.8",
-        "esbuild-loader": "2.13.1",
+        "esbuild-loader": "2.14.0",
         "fs-extra": "10.0.0",
         "husky": "7.0.1",
         "jest": "27.0.6",
