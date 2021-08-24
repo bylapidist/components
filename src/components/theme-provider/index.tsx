@@ -5,6 +5,7 @@ import {
 } from 'styled-components';
 import { mergeThemes, Theme } from '@lapidist/styles';
 import { defaultTheme } from './defaultTheme';
+import { darkTheme } from './darkTheme';
 
 const GlobalStyle = createGlobalStyle`
     html, body, div, span, applet, object, iframe,
@@ -53,14 +54,30 @@ export interface ThemeProviderProps extends PropsWithChildren<unknown> {
 export const ThemeContext: Context<Theme> =
     React.createContext<Theme>(defaultTheme);
 
-export const useTheme = (): Theme => React.useContext(ThemeContext);
+export const useTheme = () => React.useContext(ThemeContext);
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     children,
     theme
 }) => {
     const initialTheme: Theme = useTheme();
-    const themeContext: Theme | undefined = mergeThemes(initialTheme, theme);
+    const baseTheme: Theme | undefined = mergeThemes(initialTheme, theme);
+
+    const [isDarkMode, setIsDarkMode] = React.useState<boolean>();
+    const [themeContext, setThemeContext] =
+        React.useState<Theme | undefined>(baseTheme);
+
+    React.useEffect(() => {
+        const isDarkModePersisted =
+            localStorage.getItem('isDarkMode') === 'true';
+        setIsDarkMode(isDarkModePersisted);
+    }, [setIsDarkMode]);
+
+    React.useEffect(() => {
+        setThemeContext(
+            isDarkMode ? mergeThemes(baseTheme, darkTheme) : baseTheme
+        );
+    }, [isDarkMode, baseTheme]);
 
     return (
         <>
