@@ -17,7 +17,7 @@ export const HomePage: React.FC<StyleGuideRendererProps> = ({ version }) => (
             styles={{
                 marginBottom: '12',
                 textColor: { group: 'grey', shade: 'dark' },
-                fontWeight: 'bolder',
+                fontWeight: 600,
                 fontSize: '6',
                 breakpoints: { md: { fontSize: '8' } }
             }}
@@ -27,7 +27,7 @@ export const HomePage: React.FC<StyleGuideRendererProps> = ({ version }) => (
                 as="span"
                 styles={{
                     textColor: { group: 'grey', shade: 'base' },
-                    fontWeight: 'bolder',
+                    fontWeight: 600,
                     fontSize: '1',
                     paddingY: '1',
                     paddingX: '3'

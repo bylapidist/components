@@ -27,15 +27,15 @@ export const defaultTheme: Theme = {
         mono: ['Consolas', 'Courier New', 'monospace']
     },
     fontWeights: {
-        hairline: 100,
-        thin: 200,
-        light: 300,
-        normal: 400,
-        medium: 500,
-        semibold: 600,
-        bold: 700,
-        extrabold: 800,
-        black: 900
+        '100': 100,
+        '200': 200,
+        '300': 300,
+        '400': 400,
+        '500': 500,
+        '600': 600,
+        '700': 700,
+        '800': 800,
+        '900': 900
     },
     lineHeights: {
         none: '1',
@@ -93,7 +93,8 @@ export const defaultTheme: Theme = {
     },
     boxShadows: {
         '0': 'none',
-        '1': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'
+        '1': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+        '2': '0 4px 32px 0 rgb(10 14 29 / 2%), 0 8px 64px 0 rgb(10 14 29 / 8%)'
     },
     widths: {
         '1/2': '50%',

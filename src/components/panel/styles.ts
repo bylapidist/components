@@ -7,9 +7,10 @@ export const panelStyles = ({ theme, kind }: PanelProps): Styles => {
     }>(theme, 'colors', kind);
 
     return {
-        borderWidth: '1',
+        borderWidth: 'px',
         borderStyle: 'solid',
-        boxShadow: '1',
+        borderRadius: '2',
+        boxShadow: '2',
         paddingX: '4',
         paddingY: '2',
         borderColor: dark

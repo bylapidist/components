@@ -6,10 +6,6 @@ exports[`it works with defaults 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
   color: #292B3E;
 }
 
@@ -28,10 +24,6 @@ exports[`it works with styles 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
   width: 50%;
   color: #292B3E;
 }

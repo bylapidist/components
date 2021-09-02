@@ -53,7 +53,8 @@ const buttonVariants = ({
 };
 
 const buttonBaseStyles: Styles = {
-    borderWidth: '1',
+    borderWidth: 'px',
+    boxShadow: '1',
     textAlign: 'center',
     margin: '2',
     paddingX: '4',
