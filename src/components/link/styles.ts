@@ -2,7 +2,7 @@ import { Styles } from '@lapidist/styles';
 
 export const linkStyles = (): Styles => ({
     borderStyle: 'solid',
-    borderBottomWidth: '1',
+    borderBottomWidth: 'px',
     borderBottomColor: {
         group: 'primary',
         shade: 'light'

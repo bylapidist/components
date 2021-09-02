@@ -35,7 +35,7 @@ const SectionRenderer: React.FC<SectionRendererProps> = (props) => {
                     size={1}
                     styles={{
                         textColor: { group: 'grey', shade: 'dark' },
-                        fontWeight: 'bolder',
+                        fontWeight: 600,
                         fontSize: '6'
                     }}
                 >

@@ -3,8 +3,9 @@
 exports[`it works 1`] = `
 .c0 {
   border-style: solid;
-  border-width: 2px;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  border-radius: 0.25rem;
+  border-width: 1px;
+  box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
@@ -22,8 +23,9 @@ exports[`it works 1`] = `
 exports[`it works with different kind 1`] = `
 .c0 {
   border-style: solid;
-  border-width: 2px;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  border-radius: 0.25rem;
+  border-width: 1px;
+  box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;

@@ -7,11 +7,7 @@ exports[`it works 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   color: #1a8385;
   border-bottom-color: #4AD6D8;
 }

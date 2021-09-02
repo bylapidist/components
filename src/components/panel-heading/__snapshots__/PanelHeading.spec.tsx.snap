@@ -3,13 +3,9 @@
 exports[`it works 1`] = `
 .c0 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
   color: #1a8385;
@@ -25,13 +21,9 @@ exports[`it works 1`] = `
 exports[`it works with different kind and size 1`] = `
 .c0 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
   color: #937032;
