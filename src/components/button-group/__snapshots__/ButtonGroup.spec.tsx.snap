@@ -19,7 +19,7 @@ exports[`it works with different buttons 1`] = `
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
-  font-family: Montserrat,sans-serif;
+  font-family: Roboto,sans-serif;
   line-height: 2;
   border-radius: 0.25rem;
   border-width: 1px;
@@ -56,7 +56,7 @@ exports[`it works with different buttons 1`] = `
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
-  font-family: Montserrat,sans-serif;
+  font-family: Roboto,sans-serif;
   line-height: 2;
   border-radius: 0.25rem;
   border-width: 1px;
@@ -93,7 +93,7 @@ exports[`it works with different buttons 1`] = `
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
-  font-family: Montserrat,sans-serif;
+  font-family: Roboto,sans-serif;
   line-height: 2;
   border-radius: 0.25rem;
   border-width: 1px;
@@ -169,7 +169,7 @@ exports[`it works with same buttons 1`] = `
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
-  font-family: Montserrat,sans-serif;
+  font-family: Roboto,sans-serif;
   line-height: 2;
   border-radius: 0.25rem;
   border-width: 1px;
@@ -245,7 +245,7 @@ exports[`it works with two buttons 1`] = `
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
-  font-family: Montserrat,sans-serif;
+  font-family: Roboto,sans-serif;
   line-height: 2;
   border-radius: 0.25rem;
   border-width: 1px;

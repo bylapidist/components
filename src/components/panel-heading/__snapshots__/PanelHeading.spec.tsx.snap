@@ -4,7 +4,7 @@ exports[`it works 1`] = `
 .c0 {
   font-size: 1rem;
   font-weight: 500;
-  font-family: Montserrat,sans-serif;
+  font-family: Roboto,sans-serif;
   line-height: 1.25;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
@@ -22,7 +22,7 @@ exports[`it works with different kind and size 1`] = `
 .c0 {
   font-size: 1rem;
   font-weight: 500;
-  font-family: Montserrat,sans-serif;
+  font-family: Roboto,sans-serif;
   line-height: 1.25;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
