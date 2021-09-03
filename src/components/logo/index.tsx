@@ -8,7 +8,13 @@ import styled, {
 import { mergeStyles } from '@lapidist/styles';
 import { Box, BoxProps } from '../box';
 import { AspectRatio } from '../aspect-ratio';
-import { fadeIn, slideDown, slideRight, slideUpLeft, thinking } from './animations';
+import {
+    fadeIn,
+    slideDown,
+    slideRight,
+    slideUpLeft,
+    thinking
+} from './animations';
 
 export type LogoPropType = BoxProps & React.HTMLProps<HTMLDivElement>;
 

@@ -22,9 +22,7 @@ const fadeInAnimation = css`
     animation-timing-function: ease-in;
 `;
 
-export const fadeIn = (): FlattenInterpolation<
-    ThemeProps<DefaultTheme>
-> => css`
+export const fadeIn = (): FlattenInterpolation<ThemeProps<DefaultTheme>> => css`
     animation: ${fadeInAnimation};
 `;
 
