@@ -22,7 +22,7 @@ export const defaultTheme: Theme = {
         '10': '4rem'
     },
     fontFamilies: {
-        sans: ['Montserrat', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
         serif: ['Georgia', 'Cambria', 'serif'],
         mono: ['Consolas', 'Courier New', 'monospace']
     },
