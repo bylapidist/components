@@ -9,6 +9,25 @@ import {
 export const defaultAnimationDuration = (): string =>
     'animation-duration: 0.8s';
 
+const fadeInKeyframes = keyframes`
+    0% { opacity: 0 }
+    50% { opacity: 0 }
+    100% { opacity: 1 }
+`;
+
+const fadeInAnimation = css`
+    ${fadeInKeyframes};
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+`;
+
+export const fadeIn = (): FlattenInterpolation<
+    ThemeProps<DefaultTheme>
+> => css`
+    animation: ${fadeInAnimation};
+`;
+
 const thinkingKeyframes = keyframes`
     0% { opacity: 1 }
     50% { opacity: 0.6 }
