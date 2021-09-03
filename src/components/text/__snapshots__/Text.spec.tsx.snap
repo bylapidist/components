@@ -4,7 +4,7 @@ exports[`it works with defaults 1`] = `
 .c0 {
   font-size: 1rem;
   font-weight: 400;
-  font-family: Roboto,sans-serif;
+  font-family: Montserrat,sans-serif;
   line-height: 2;
   color: #292B3E;
 }
@@ -22,7 +22,7 @@ exports[`it works with styles 1`] = `
 .c0 {
   font-size: 1rem;
   font-weight: 400;
-  font-family: Roboto,sans-serif;
+  font-family: Montserrat,sans-serif;
   line-height: 2;
   width: 50%;
   color: #292B3E;

@@ -4,7 +4,7 @@ exports[`it works with elements 1`] = `
 .c0 {
   font-size: 1rem;
   font-weight: 400;
-  font-family: Roboto,sans-serif;
+  font-family: Montserrat,sans-serif;
   line-height: 2;
   color: #292B3E;
 }
@@ -42,7 +42,7 @@ exports[`it works with ordered 1`] = `
 .c0 {
   font-size: 1rem;
   font-weight: 400;
-  font-family: Roboto,sans-serif;
+  font-family: Montserrat,sans-serif;
   line-height: 2;
   color: #292B3E;
 }
@@ -76,7 +76,7 @@ exports[`it works with strings 1`] = `
 .c0 {
   font-size: 1rem;
   font-weight: 400;
-  font-family: Roboto,sans-serif;
+  font-family: Montserrat,sans-serif;
   line-height: 2;
   color: #292B3E;
 }
@@ -110,7 +110,7 @@ exports[`it works with unordered 1`] = `
 .c0 {
   font-size: 1rem;
   font-weight: 400;
-  font-family: Roboto,sans-serif;
+  font-family: Montserrat,sans-serif;
   line-height: 2;
   color: #292B3E;
 }
