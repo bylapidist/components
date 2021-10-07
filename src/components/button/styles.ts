@@ -56,7 +56,6 @@ const buttonBaseStyles: Styles = {
     borderWidth: 'px',
     boxShadow: '1',
     textAlign: 'center',
-    margin: '2',
     paddingX: '4',
     borderRadius: '2',
     borderStyle: 'solid'
