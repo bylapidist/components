@@ -64,8 +64,9 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     const baseTheme: Theme | undefined = mergeThemes(initialTheme, theme);
 
     const [isDarkMode, setIsDarkMode] = React.useState<boolean>();
-    const [themeContext, setThemeContext] =
-        React.useState<Theme | undefined>(baseTheme);
+    const [themeContext, setThemeContext] = React.useState<Theme | undefined>(
+        baseTheme
+    );
 
     React.useEffect(() => {
         const isDarkModePersisted =

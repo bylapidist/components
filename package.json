@@ -47,15 +47,15 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "@lapidist/styles": "^3.6.0"
+        "@lapidist/styles": "^3.7.1"
     },
     "devDependencies": {
-        "@lapidist/linting": "2.118.5",
+        "@lapidist/linting": "2.119.0",
         "@react-mock/state": "0.1.8",
         "@testing-library/jest-dom": "5.14.1",
         "@testing-library/react": "12.1.2",
         "@types/jest": "27.0.2",
-        "@types/react": "17.0.31",
+        "@types/react": "17.0.32",
         "@types/react-dom": "17.0.10",
         "@types/styled-components": "5.1.15",
         "circular-dependency-plugin": "5.2.2",
@@ -67,7 +67,7 @@
         "husky": "7.0.4",
         "jest": "27.3.1",
         "jest-styled-components": "7.0.5",
-        "lint-staged": "11.2.3",
+        "lint-staged": "11.2.4",
         "process": "0.11.10",
         "react": "17.0.2",
         "react-docgen-typescript": "2.1.1",
