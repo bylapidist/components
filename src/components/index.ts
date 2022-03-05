@@ -11,6 +11,7 @@ export * from './logo';
 export * from './panel';
 export * from './panel-heading';
 export * from './status-panel';
+export * from './tag';
 export * from './text';
 export * from './theme-provider';
 export * from './theme-provider/defaultTheme';
