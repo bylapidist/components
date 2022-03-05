@@ -22,7 +22,7 @@ const TagVariants = ({ kind, theme }: TagProps): TagVariantStyles => {
 
     return {
         fontSize: '1',
-        paddingY: '2',
+        paddingY: '1',
         ...TagColors(dark, base)
     };
 };
