@@ -60,7 +60,7 @@
         "@types/styled-components": "5.1.24",
         "circular-dependency-plugin": "5.2.2",
         "cross-env": "7.0.3",
-        "css-loader": "6.7.0",
+        "css-loader": "6.7.1",
         "csstype": "3.0.11",
         "esbuild-loader": "2.18.0",
         "fs-extra": "10.0.1",
