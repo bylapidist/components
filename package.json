@@ -69,9 +69,9 @@
         "jest-styled-components": "7.0.8",
         "lint-staged": "12.3.7",
         "process": "0.11.10",
-        "react": "17.0.2",
+        "react": "18.0.0",
         "react-docgen-typescript": "2.2.2",
-        "react-dom": "17.0.2",
+        "react-dom": "18.0.0",
         "react-styleguidist": "11.2.0",
         "rimraf": "3.0.2",
         "source-map-loader": "3.0.1",
@@ -85,8 +85,8 @@
         "webpack-dev-server": "4.7.4"
     },
     "peerDependencies": {
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
         "styled-components": "^5.x"
     },
     "engines": {
