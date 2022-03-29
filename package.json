@@ -85,8 +85,8 @@
         "webpack-dev-server": "4.7.4"
     },
     "peerDependencies": {
-        "react": "^17.0.2 || ^18.0.0",
-        "react-dom": "^17.0.2 || ^18.0.0",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
         "styled-components": "^5.x"
     },
     "engines": {
