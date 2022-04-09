@@ -11,8 +11,6 @@ exports[`it works 1`] = `
   border-radius: 0.25rem;
   border-width: 1px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   background-color: #17a3a5;
@@ -20,9 +18,170 @@ exports[`it works 1`] = `
   border-color: #1a8385;
 }
 
+.c1 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 <span
   class="c0"
 >
-  Hello world
+  <span
+    class="c1"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`it works with href 1`] = `
+.c0 {
+  border-style: solid;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #17a3a5;
+  color: white;
+  border-color: #1a8385;
+}
+
+.c1 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+<span
+  class="c0"
+>
+  <a
+    href="https://href.test"
+    rel="nofollow noopener"
+    target="__blank"
+  >
+    <span
+      class="c1"
+    >
+      Hello world
+    </span>
+  </a>
+</span>
+`;
+
+exports[`it works with namespace 1`] = `
+.c0 {
+  border-style: solid;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #17a3a5;
+  color: white;
+  border-color: #1a8385;
+}
+
+.c1 {
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #292B3E;
+  color: white;
+}
+
+.c2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    namespace
+  </span>
+  <span
+    class="c2"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`it works with namespace and href 1`] = `
+.c0 {
+  border-style: solid;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #17a3a5;
+  color: white;
+  border-color: #1a8385;
+}
+
+.c1 {
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #292B3E;
+  color: white;
+}
+
+.c2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+<span
+  class="c0"
+>
+  <a
+    href="https://href.test"
+    rel="nofollow noopener"
+    target="__blank"
+  >
+    <span
+      class="c1"
+    >
+      namespace
+    </span>
+    <span
+      class="c2"
+    >
+      Hello world
+    </span>
+  </a>
 </span>
 `;

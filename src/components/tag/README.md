@@ -4,8 +4,8 @@ The Tag component displays small, inline snippets of information.
 import { ThemeProvider, Tag } from '@lapidist/components';
 
 <ThemeProvider>
-    <Tag kind="primary">v1.0.0</Tag>
-    <Tag kind="secondary">v1.0.0</Tag>
+    <Tag namespace="npm" kind="primary">v1.0.0</Tag>
+    <Tag href="https://github.com" namespace="GitHub" kind="secondary">v1.0.0</Tag>
     <Tag kind="tertiary">v1.0.0</Tag>
     <Tag kind="danger">v1.0.0</Tag>
     <Tag kind="grey">v1.0.0</Tag>

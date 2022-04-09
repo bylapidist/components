@@ -11,7 +11,7 @@ export type ButtonGroupPropType = BoxProps;
 export type ButtonGroupChildrenType = React.ReactElement<ButtonProps>[];
 
 export interface ButtonGroupProps {
-    children: ButtonGroupChildrenType;
+    readonly children: ButtonGroupChildrenType;
 }
 
 export const ButtonGroup: React.FC<ButtonGroupPropType & ButtonGroupProps> = ({
