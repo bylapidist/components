@@ -21,22 +21,16 @@ export interface ListProps {
     readonly type?: ListType;
 }
 
-const Ordered: React.FC<BoxProps> = ({ children }) => (
-    <Box as={'ol'} styles={orderedListStyles()}>
-        {children}
-    </Box>
+const Ordered: React.FC<BoxProps> = ({ ...props }) => (
+    <Box as={'ol'} styles={orderedListStyles()} {...props} />
 );
 
-const Unordered: React.FC<BoxProps> = ({ children }) => (
-    <Box as={'ul'} styles={unorderedListStyles()}>
-        {children}
-    </Box>
+const Unordered: React.FC<BoxProps> = ({ ...props }) => (
+    <Box as={'ul'} styles={unorderedListStyles()} {...props} />
 );
 
-const ListItem: React.FC<BoxProps> = ({ children }) => (
-    <Box as={'li'} styles={listItemStyles()}>
-        {children}
-    </Box>
+const ListItem: React.FC<BoxProps> = ({ ...props }) => (
+    <Box as={'li'} styles={listItemStyles()} {...props} />
 );
 
 const Items: React.FC<{ items: ListItemProps[] }> = ({ items }) => (
