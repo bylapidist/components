@@ -42,7 +42,7 @@ const Items: React.FC<{ items: ListItemProps[] }> = ({ items }) => (
 );
 
 const OrderedOrUnordered = (
-    Component: React.FC,
+    Component: React.FC<{ children: Element; }>,
     items: ListItemProps[]
 ): JSX.Element => (
     <Component>
