@@ -3,7 +3,7 @@
 exports[`it works 1`] = `
 .c0 {
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 1.7rem;
   border-width: 1px;
   box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
   padding-left: 1rem;
@@ -59,7 +59,7 @@ exports[`it works 1`] = `
 exports[`it works with different kind 1`] = `
 .c0 {
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 1.7rem;
   border-width: 1px;
   box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
   padding-left: 1rem;
@@ -115,7 +115,7 @@ exports[`it works with different kind 1`] = `
 exports[`it works with different symbol 1`] = `
 .c0 {
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 1.7rem;
   border-width: 1px;
   box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
   padding-left: 1rem;
@@ -173,7 +173,7 @@ exports[`it works with different symbol 1`] = `
 exports[`it works with heading and value 1`] = `
 .c0 {
   border-style: solid;
-  border-radius: 0.25rem;
+  border-radius: 1.7rem;
   border-width: 1px;
   box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
   padding-left: 1rem;

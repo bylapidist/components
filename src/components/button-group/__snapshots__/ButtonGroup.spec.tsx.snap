@@ -21,7 +21,7 @@ exports[`it works with different buttons 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  border-radius: 0.25rem;
+  border-radius: 0.3rem;
   border-width: 1px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
@@ -57,7 +57,7 @@ exports[`it works with different buttons 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  border-radius: 0.25rem;
+  border-radius: 0.3rem;
   border-width: 1px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
@@ -93,7 +93,7 @@ exports[`it works with different buttons 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  border-radius: 0.25rem;
+  border-radius: 0.3rem;
   border-width: 1px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
@@ -168,7 +168,7 @@ exports[`it works with same buttons 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  border-radius: 0.25rem;
+  border-radius: 0.3rem;
   border-width: 1px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
@@ -243,7 +243,7 @@ exports[`it works with two buttons 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  border-radius: 0.25rem;
+  border-radius: 0.3rem;
   border-width: 1px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
