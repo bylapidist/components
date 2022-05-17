@@ -4,52 +4,61 @@ import { TagProps } from './index';
 interface TagVariantStyles {
     borderColor: ColorGroup | string;
     backgroundColor: ColorGroup | string;
-    paddingY: string;
     fontSize: string;
     textColor: ColorGroup | string;
 }
 
-const TagColors = (dark: string, base: string) => ({
+const tagColors = (dark: string, base: string) => ({
     borderColor: dark,
     backgroundColor: base,
     textColor: { group: 'base', shade: 'light' }
 });
 
-const TagVariants = ({ kind, theme }: TagProps): TagVariantStyles => {
+const tagVariants = ({ kind, theme }: TagProps): TagVariantStyles => {
     const { dark, base } = getProperty<{
         [K: string]: string;
     }>(theme, 'colors', kind);
 
     return {
         fontSize: '1',
-        paddingY: '1',
-        ...TagColors(dark, base)
+        ...tagColors(dark, base)
     };
 };
 
-const TagBaseStyles: Styles = {
+const tagBaseStyles: Styles = {
     borderWidth: 'px',
     boxShadow: '1',
     textAlign: 'center',
-    paddingX: '2',
     borderRadius: '2',
-    borderStyle: 'solid'
+    borderStyle: 'solid',
+    paddingY: '1'
 };
 
-const TagVariantStyles = ({
+const tagVariantStyles = ({
     borderColor,
     backgroundColor,
     textColor,
-    paddingY,
     fontSize
 }: TagVariantStyles): Styles => ({
-    ...TagBaseStyles,
+    ...tagBaseStyles,
     borderColor,
     backgroundColor,
     textColor,
-    paddingY,
     fontSize
 });
 
-export const TagStyles = (props: TagProps): Styles =>
-    TagVariantStyles(TagVariants(props));
+export const tagStyles = (props: TagProps): Styles =>
+    tagVariantStyles(tagVariants(props));
+
+export const tagChildrenStyles = (): Styles => ({
+    paddingX: '2',
+    paddingY: '1'
+});
+
+export const tagNamespaceStyles = (): Styles => ({
+    fontSize: '1',
+    paddingX: '2',
+    paddingY: '1',
+    textColor: { group: 'base', shade: 'light' },
+    backgroundColor: { group: 'grey', shade: 'dark' }
+});
