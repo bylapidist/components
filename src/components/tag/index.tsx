@@ -20,7 +20,7 @@ export interface TagProps {
 
 interface InnerTagProps {
     readonly namespace?: string;
-    readonly children?: React.Node;
+    readonly children?: React.ReactNode;
 }
 
 const InnerTag: React.FC<InnerTagProps> = ({ namespace, children }) => (
