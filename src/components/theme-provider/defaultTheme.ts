@@ -79,8 +79,8 @@ export const defaultTheme: Theme = {
         '0': '0',
         '1': '0.125rem',
         '2': '0.3rem',
-        '3': '0.65rem',
-        '4': '1.7rem',
+        '3': '0.6rem',
+        '4': '1.2rem',
         px: '1px',
         rounded: '9999px'
     },
