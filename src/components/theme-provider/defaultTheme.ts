@@ -78,9 +78,9 @@ export const defaultTheme: Theme = {
     borderRadii: {
         '0': '0',
         '1': '0.125rem',
-        '2': '0.25rem',
-        '3': '0.375rem',
-        '4': '0.5rem',
+        '2': '0.3rem',
+        '3': '0.6rem',
+        '4': '1.2rem',
         px: '1px',
         rounded: '9999px'
     },
