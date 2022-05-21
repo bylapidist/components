@@ -9,10 +9,10 @@ export const panelStyles = ({ theme, kind }: PanelProps): Styles => {
     return {
         borderWidth: 'px',
         borderStyle: 'solid',
-        borderRadius: '4',
+        borderRadius: '3',
         boxShadow: '2',
         paddingX: '4',
-        paddingY: '2',
+        paddingY: '3',
         borderColor: dark
     };
 };

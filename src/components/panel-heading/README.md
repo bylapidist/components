@@ -9,5 +9,6 @@ import { ThemeProvider, PanelHeading } from '@lapidist/components';
     <PanelHeading kind="tertiary">Tertiary</PanelHeading>
     <PanelHeading kind="danger">Danger</PanelHeading>
     <PanelHeading kind="grey">Grey</PanelHeading>
+    <PanelHeading kind="grey" href="https://google.com" target="_blank" rel="nofollow noopener">Grey</PanelHeading>
 </ThemeProvider>
 ```
