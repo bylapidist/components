@@ -3,13 +3,13 @@
 exports[`it works 1`] = `
 .c0 {
   border-style: solid;
-  border-radius: 1.2rem;
+  border-radius: 0.6rem;
   border-width: 1px;
   box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   border-color: #1a8385;
 }
 
@@ -23,13 +23,13 @@ exports[`it works 1`] = `
 exports[`it works with different kind 1`] = `
 .c0 {
   border-style: solid;
-  border-radius: 1.2rem;
+  border-radius: 0.6rem;
   border-width: 1px;
   box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   border-color: #937032;
 }
 
