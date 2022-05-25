@@ -44,7 +44,6 @@ const BaseTag: React.FC<TagPropType & TagProps> = ({
     theme,
     children,
     namespace,
-    href,
     ...restProps
 }) => (
     <Text
@@ -52,13 +51,7 @@ const BaseTag: React.FC<TagPropType & TagProps> = ({
         styles={mergeStyles(tagStyles({ kind, theme }), styles)}
         {...restProps}
     >
-        {href ? (
-            <a href={href} target="__blank" rel="nofollow noopener">
-                <InnerTag namespace={namespace}>{children}</InnerTag>
-            </a>
-        ) : (
-            <InnerTag namespace={namespace}>{children}</InnerTag>
-        )}
+        <InnerTag namespace={namespace}>{children}</InnerTag>
     </Text>
 );
 

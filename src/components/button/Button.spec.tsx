@@ -18,9 +18,27 @@ test('it works', () => {
     expect(container.firstChild).toMatchSnapshot();
 });
 
-test('it works with size', () => {
+test('it works with size small', () => {
     const { container } = setup(
-        <Button type="button" kind="secondary" small>
+        <Button type="button" kind="secondary" sizes="small">
+            Hello world
+        </Button>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+});
+
+test('it works with size medium', () => {
+    const { container } = setup(
+        <Button type="button" kind="secondary" sizes="small">
+            Hello world
+        </Button>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+});
+
+test('it works with size large', () => {
+    const { container } = setup(
+        <Button type="button" kind="secondary" sizes="small">
             Hello world
         </Button>
     );

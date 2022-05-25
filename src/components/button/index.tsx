@@ -11,10 +11,12 @@ export type ButtonPropType = BoxProps &
     React.ButtonHTMLAttributes<HTMLButtonElement> &
     React.HTMLProps<HTMLButtonElement>;
 
+export type ButtonSize = 'small' | 'medium' | 'large';
+
 export interface ButtonProps {
     readonly kind: string;
     readonly theme: Theme;
-    readonly small?: boolean;
+    readonly variant?: ButtonSize;
     readonly ghost?: boolean;
 }
 
@@ -23,14 +25,14 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
     styles,
     kind,
     theme,
-    small,
+    variant,
     ghost,
     ...restProps
 }) => (
     <Text
         as={as}
         styles={mergeStyles(
-            buttonStyles({ kind, theme, small, ghost }),
+            buttonStyles({ kind, theme, variant, ghost }),
             styles
         )}
         {...restProps}

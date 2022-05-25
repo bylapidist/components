@@ -14,9 +14,21 @@ interface ButtonVariantStyles {
     disabledBackgroundColor: ColorGroup | string;
 }
 
-const buttonSizing = (small?: boolean) => ({
-    paddingY: small ? '1' : '2',
-    fontSize: small ? '2' : '3'
+const scale = (variant: string, start: number): string => {
+    switch (variant) {
+        case 'small':
+            return (start - 1).toString(10);
+        case 'medium':
+            return start.toString(10);
+        case 'large':
+        default:
+            return (start + 1).toString(10);
+    }
+};
+
+const buttonSizing = (variant: string) => ({
+    paddingY: scale(variant, 1),
+    fontSize: scale(variant, 2)
 });
 
 const darkGrey: ColorGroup = { group: 'grey', shade: 'dark' };
@@ -39,7 +51,7 @@ const buttonColors = (dark: string, base: string, ghost?: boolean) => ({
 const buttonVariants = ({
     kind,
     theme,
-    small,
+    variant,
     ghost
 }: ButtonProps): ButtonVariantStyles => {
     const { dark, base } = getProperty<{
@@ -47,7 +59,7 @@ const buttonVariants = ({
     }>(theme, 'colors', kind);
 
     return {
-        ...buttonSizing(small),
+        ...buttonSizing(variant || 'large'),
         ...buttonColors(dark, base, ghost)
     };
 };
