@@ -63,20 +63,14 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     const initialTheme: Theme = useTheme();
     const baseTheme: Theme | undefined = mergeThemes(initialTheme, theme);
 
-    const [isDarkMode, setIsDarkMode] = React.useState<boolean>();
     const [themeContext, setThemeContext] = React.useState<Theme | undefined>(
         baseTheme
     );
 
     React.useEffect(() => {
-        const isDarkModePersisted =
-            localStorage.getItem('isDarkMode') === 'true';
-        setIsDarkMode(isDarkModePersisted);
-    }, [setIsDarkMode]);
-
-    React.useEffect(() => {
+        const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches || localStorage.getItem('isDarkMode') === 'true';
         setThemeContext(
-            isDarkMode ? mergeThemes(baseTheme, darkTheme) : baseTheme
+            prefersDarkTheme ? mergeThemes(baseTheme, darkTheme) : baseTheme
         );
     }, [isDarkMode, baseTheme]);
 
