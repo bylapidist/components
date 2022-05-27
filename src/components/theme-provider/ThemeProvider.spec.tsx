@@ -32,12 +32,3 @@ test('it works with breakpoints', () => {
     expect(container.firstChild).toMatchSnapshot();
 });
 
-test('it works with theme', () => {
-    const { container } = render(
-        <ThemeProvider theme={{ sizes: { '2': '20px' } }}>
-            <Box styles={{ margin: '2' }}>Hello world!</Box>
-            <Box styles={{ margin: '3' }}>Hello world!</Box>
-        </ThemeProvider>
-    );
-    expect(container.firstChild).toMatchSnapshot();
-});
