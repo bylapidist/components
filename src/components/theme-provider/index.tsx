@@ -74,7 +74,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
         setThemeContext(
             prefersDarkTheme ? mergeThemes(baseTheme, darkTheme) : baseTheme
         );
-    }, [isDarkMode, baseTheme]);
+    }, [baseTheme, darkTheme]);
 
     return (
         <>
