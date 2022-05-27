@@ -70,7 +70,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     React.useEffect(() => {
         const prefersDarkTheme =
             window.matchMedia('(prefers-color-scheme: dark)').matches ||
-           localStorage.getItem('isDarkMode') === 'true';
+            localStorage.getItem('isDarkMode') === 'true';
         setThemeContext(
             prefersDarkTheme ? mergeThemes(baseTheme, darkTheme) : baseTheme
         );
