@@ -47,7 +47,9 @@ const GlobalStyle = createGlobalStyle`
     a:focus, button:focus { outline: rgb(235, 199, 100) solid 2px; }
 `;
 
-export const ThemeProvider: React.FC<PropsWithChildren<unknown>> = ({ children }) => {
+export const ThemeProvider: React.FC<PropsWithChildren<unknown>> = ({
+    children
+}) => {
     const prefersDarkTheme =
         (window.matchMedia &&
             window.matchMedia('(prefers-color-scheme: dark)').matches) ||
