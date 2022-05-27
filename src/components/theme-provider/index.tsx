@@ -47,13 +47,8 @@ const GlobalStyle = createGlobalStyle`
     a:focus, button:focus { outline: rgb(235, 199, 100) solid 2px; }
 `;
 
-export interface ThemeProviderProps extends PropsWithChildren<unknown> {
-    readonly theme?: Theme;
-}
-
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({
-    children,
-    theme
+export const ThemeProvider: React.FC<PropsWithChildren> = ({
+    children
 }) => {
     const prefersDarkTheme =
         (window.matchMedia &&
@@ -63,7 +58,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     return (
         <>
             <GlobalStyle />
-            <StyledThemeProvider theme={prefersDarkTheme ? mergeThemes(theme, darkTheme) : theme}>
+            <StyledThemeProvider theme={prefersDarkTheme ? mergeThemes(defaultTheme, darkTheme) : defaultTheme}>
                 {children}
             </StyledThemeProvider>
         </>
