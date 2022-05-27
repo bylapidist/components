@@ -31,4 +31,3 @@ test('it works with breakpoints', () => {
     );
     expect(container.firstChild).toMatchSnapshot();
 });
-
