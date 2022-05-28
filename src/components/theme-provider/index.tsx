@@ -1,11 +1,10 @@
-import React, { Context, PropsWithChildren } from 'react';
+import React, { PropsWithChildren } from 'react';
 import {
     ThemeProvider as StyledThemeProvider,
     createGlobalStyle
 } from 'styled-components';
 import { mergeThemes, Theme } from '@lapidist/styles';
 import { defaultTheme } from './defaultTheme';
-import { darkTheme } from './darkTheme';
 
 const GlobalStyle = createGlobalStyle`
     html, body, div, span, applet, object, iframe,
@@ -51,36 +50,14 @@ export interface ThemeProviderProps extends PropsWithChildren<unknown> {
     readonly theme?: Theme;
 }
 
-export const ThemeContext: Context<Theme> =
-    React.createContext<Theme>(defaultTheme);
-
-export const useTheme = (): Theme => React.useContext(ThemeContext);
-
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     children,
     theme
 }) => {
-    const initialTheme: Theme = useTheme();
-    const baseTheme: Theme | undefined = mergeThemes(initialTheme, theme);
-
-    const [themeContext, setThemeContext] = React.useState<Theme | undefined>(
-        baseTheme
-    );
-
-    React.useEffect(() => {
-        const prefersDarkTheme =
-            (window.matchMedia &&
-                window.matchMedia('(prefers-color-scheme: dark)').matches) ||
-            localStorage.getItem('isDarkMode') === 'true';
-        setThemeContext(
-            prefersDarkTheme ? mergeThemes(baseTheme, darkTheme) : baseTheme
-        );
-    }, [baseTheme, darkTheme]);
-
     return (
         <>
             <GlobalStyle />
-            <StyledThemeProvider theme={themeContext}>
+            <StyledThemeProvider theme={mergeThemes(defaultTheme, theme)}>
                 {children}
             </StyledThemeProvider>
         </>
