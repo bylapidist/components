@@ -7,13 +7,15 @@ export const panelStyles = ({ theme, kind }: PanelProps): Styles => {
     }>(theme, 'colors', kind);
 
     return {
+        display: 'flex',
         borderWidth: 'px',
         borderStyle: 'solid',
         borderRadius: '3',
         boxShadow: '2',
         paddingX: '4',
         paddingY: '3',
-        borderColor: dark,
-        backgroundColor: { shade: 'light', group: 'base' }
+        sizeMinHeight: '32',
+        backgroundColor: { shade: 'light', group: 'base' },
+        borderColor: dark
     };
 };
