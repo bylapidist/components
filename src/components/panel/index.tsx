@@ -2,7 +2,7 @@ import React from 'react';
 import { withTheme } from 'styled-components';
 import { mergeStyles, Theme } from '@lapidist/styles';
 import { Box, BoxProps } from '../box';
-import { Logo } from '../logo';
+import { Spinner } from '../spinner';
 import { panelStyles } from './styles';
 
 export * from './styles';
@@ -33,7 +33,7 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
             })}
             {...restProps}
         >
-            <Logo styles={{ sizeWidth: 8 }} thinking />
+            <Spinner styles={{ sizeWidth: 16 }} />
         </Box>
     ) : (
         <Box

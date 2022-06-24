@@ -24,18 +24,3 @@ test('it works with different kind and size', () => {
     );
     expect(container.firstChild).toMatchSnapshot();
 });
-
-test('it works with href target and rel', () => {
-    const { container } = setup(
-        <PanelHeading
-            size={3}
-            kind="secondary"
-            href="http://google.com"
-            target="_blank"
-            rel="nofollow noopener"
-        >
-            Hello world
-        </PanelHeading>
-    );
-    expect(container.firstChild).toMatchSnapshot();
-});

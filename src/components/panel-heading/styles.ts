@@ -20,20 +20,3 @@ export const panelHeadingStyles = ({
         ...baseStyles
     };
 };
-
-export const innerLinkStyles = ({ theme, kind }: PanelHeadingProps) => {
-    const { dark } = getProperty<{
-        [K: string]: string;
-    }>(theme, 'colors', kind);
-
-    return {
-        textColor: dark,
-        lineHeight: 'initial',
-        pseudo: {
-            ':hover': {
-                textColor: dark
-            }
-        },
-        ...baseStyles
-    };
-};
