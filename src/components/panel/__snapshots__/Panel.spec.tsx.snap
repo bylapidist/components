@@ -3,7 +3,6 @@
 exports[`it works 1`] = `
 .c0 {
   border-style: solid;
-  display: block;
   border-radius: 0.6rem;
   border-width: 1px;
   box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
@@ -161,7 +160,6 @@ exports[`it works loading 1`] = `
 exports[`it works with different kind 1`] = `
 .c0 {
   border-style: solid;
-  display: block;
   border-radius: 0.6rem;
   border-width: 1px;
   box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);

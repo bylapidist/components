@@ -7,7 +7,6 @@ export const panelStyles = ({ theme, kind }: PanelProps): Styles => {
     }>(theme, 'colors', kind);
 
     return {
-        display: 'block',
         borderWidth: 'px',
         borderStyle: 'solid',
         borderRadius: '3',
