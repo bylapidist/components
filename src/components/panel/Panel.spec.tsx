@@ -18,3 +18,12 @@ test('it works with different kind', () => {
     const { container } = setup(<Panel kind="secondary">Hello world</Panel>);
     expect(container.firstChild).toMatchSnapshot();
 });
+
+test('it works loading', () => {
+    const { container } = setup(
+        <Panel kind="secondary" loading>
+            Hello world
+        </Panel>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+});

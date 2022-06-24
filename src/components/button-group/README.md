@@ -34,7 +34,7 @@ import { ThemeProvider, Button, ButtonGroup } from '@lapidist/components';
 <ThemeProvider>
     <ButtonGroup>
         <Button type="button" kind="tertiary">Button 1</Button>
-        <Button type="button" kind="danger" small ghost>Button 2</Button>
+        <Button type="button" kind="danger" variant="small" ghost>Button 2</Button>
     </ButtonGroup>
 </ThemeProvider>
 ```

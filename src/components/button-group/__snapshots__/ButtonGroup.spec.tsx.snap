@@ -6,12 +6,7 @@ exports[`it works with different buttons 1`] = `
 }
 
 .c0 > :not(:last-child):nth-child(n) {
-  margin-right: 0;
-}
-
-.c0 > :not(:first-child):nth-child(n) {
-  border-left-width: 0;
-  margin-left: 0;
+  margin-right: 0.5rem;
 }
 
 .c1 {
@@ -153,12 +148,7 @@ exports[`it works with same buttons 1`] = `
 }
 
 .c0 > :not(:last-child):nth-child(n) {
-  margin-right: 0;
-}
-
-.c0 > :not(:first-child):nth-child(n) {
-  border-left-width: 0;
-  margin-left: 0;
+  margin-right: 0.5rem;
 }
 
 .c1 {
@@ -228,12 +218,7 @@ exports[`it works with two buttons 1`] = `
 }
 
 .c0 > :not(:last-child):nth-child(n) {
-  margin-right: 0;
-}
-
-.c0 > :not(:first-child):nth-child(n) {
-  border-left-width: 0;
-  margin-left: 0;
+  margin-right: 0.5rem;
 }
 
 .c1 {

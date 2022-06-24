@@ -6,11 +6,7 @@ export const buttonGroupStyles = (): Styles => ({
             borderRadius: '0'
         },
         '> :not(:last-child):nth-child(n)': {
-            marginRight: '0'
-        },
-        '> :not(:first-child):nth-child(n)': {
-            borderLeftWidth: '0',
-            marginLeft: '0'
+            marginRight: '2'
         }
     }
 });

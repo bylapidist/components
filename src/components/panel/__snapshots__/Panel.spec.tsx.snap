@@ -3,13 +3,19 @@
 exports[`it works 1`] = `
 .c0 {
   border-style: solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 0.6rem;
   border-width: 1px;
   box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
+  min-height: 8rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  background-color: white;
   border-color: #1a8385;
 }
 
@@ -20,16 +26,157 @@ exports[`it works 1`] = `
 </div>
 `;
 
-exports[`it works with different kind 1`] = `
+exports[`it works loading 1`] = `
 .c0 {
   border-style: solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 0.6rem;
   border-width: 1px;
   box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
+  min-height: 8rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  background-color: white;
+  border-color: #937032;
+}
+
+.c1 {
+  width: 4rem;
+}
+
+.c2 {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.c2:before {
+  content: '';
+  display: block;
+  padding-bottom: calc(100% / (1 / 1));
+}
+
+.c2 > :first-child {
+  position: absolute;
+  object-fit: scale-down;
+  object-position: 50% 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.c2 > img {
+  height: auto;
+}
+
+.c3 {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 1px;
+  box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
+  width: 100%;
+  height: 0.75rem;
+  background-color: white;
+  border-color: #d4d4d4;
+}
+
+.c5 {
+  position: relative;
+  top: -1px;
+  left: 0;
+  border-radius: 0.6rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #d4d4d4;
+}
+
+.c6 {
+  -webkit-animation: igSzjp;
+  animation: igSzjp;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+  left: -50%;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5 c6"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`it works with different kind 1`] = `
+.c0 {
+  border-style: solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0.6rem;
+  border-width: 1px;
+  box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%),0 8px 64px 0 rgb(10 14 29 / 8%);
+  min-height: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: white;
   border-color: #937032;
 }
 
