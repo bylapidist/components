@@ -28,6 +28,7 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
             as={as}
             styles={mergeStyles(panelStyles({ kind, theme, loading }), {
                 ...styles,
+                display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center'
             })}
