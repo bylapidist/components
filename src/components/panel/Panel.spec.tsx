@@ -20,6 +20,10 @@ test('it works with different kind', () => {
 });
 
 test('it works loading', () => {
-    const { container } = setup(<Panel kind="secondary" loading>Hello world</Panel>);
+    const { container } = setup(
+        <Panel kind="secondary" loading>
+            Hello world
+        </Panel>
+    );
     expect(container.firstChild).toMatchSnapshot();
 });
