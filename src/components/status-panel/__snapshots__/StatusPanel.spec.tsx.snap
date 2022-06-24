@@ -10,6 +10,7 @@ exports[`it works 1`] = `
   padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  background-color: white;
   border-color: #1a8385;
 }
 
@@ -65,6 +66,7 @@ exports[`it works with different kind 1`] = `
   padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  background-color: white;
   border-color: #937032;
 }
 
@@ -120,6 +122,7 @@ exports[`it works with different symbol 1`] = `
   padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  background-color: white;
   border-color: #937032;
 }
 
@@ -177,6 +180,7 @@ exports[`it works with heading and value 1`] = `
   padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  background-color: white;
   border-color: #937032;
 }
 

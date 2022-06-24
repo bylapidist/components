@@ -13,6 +13,7 @@ export const panelStyles = ({ theme, kind }: PanelProps): Styles => {
         boxShadow: '2',
         paddingX: '4',
         paddingY: '3',
-        borderColor: dark
+        borderColor: dark,
+        backgroundColor: { shade: 'light', group: 'base' }
     };
 };
