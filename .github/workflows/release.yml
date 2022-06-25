@@ -40,23 +40,25 @@ jobs:
                   file: ./coverage/coverage-final.json
                   flags: unittests
 
+            - name: Run build
+              run: npm run build
+
+            - name: Build storybook
+              run: |
+                  git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+                  npm run build:storybook
+                  touch storybook-static/.nojekyll
+                  echo "components.lapidist.net" >> storybook-static/CNAME
+
             - name: Release
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
               run: npx semantic-release
 
-            - name: Build styleguide
-              run: |
-                  git fetch --depth=1 origin +refs/tags/*:refs/tags/*
-                  npm run build:styleguide
-                  touch styleguide/.nojekyll
-                  echo "components.lapidist.net" >> styleguide/CNAME
-
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@releases/v3
               with:
                   ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}
                   BRANCH: gh-pages
-                  FOLDER: styleguide
-
+                  FOLDER: storybook-static

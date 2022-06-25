@@ -73,7 +73,7 @@ dist/
 coverage/
 
 # styleguide
-styleguide/
+storybook-static/
 
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm

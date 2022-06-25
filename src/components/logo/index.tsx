@@ -19,7 +19,6 @@ import {
 export type LogoPropType = BoxProps & React.HTMLProps<HTMLDivElement>;
 
 export interface LogoProps {
-    readonly width?: string;
     readonly animated?: boolean;
     readonly thinking?: boolean;
 }
