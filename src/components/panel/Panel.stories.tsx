@@ -99,3 +99,38 @@ GreyWithHeading.args = {
     kind: 'grey',
     styles: templateStyles
 };
+
+export const PrimaryLoading = HeadingTemplate.bind({});
+PrimaryLoading.args = {
+    kind: 'primary',
+    loading: true,
+    styles: templateStyles
+};
+
+export const SecondaryLoading = HeadingTemplate.bind({});
+SecondaryLoading.args = {
+    kind: 'secondary',
+    loading: true,
+    styles: templateStyles
+};
+
+export const TertiaryLoading = HeadingTemplate.bind({});
+TertiaryLoading.args = {
+    kind: 'tertiary',
+    loading: true,
+    styles: templateStyles
+};
+
+export const DangerLoading = HeadingTemplate.bind({});
+DangerLoading.args = {
+    kind: 'danger',
+    loading: true,
+    styles: templateStyles
+};
+
+export const GreyLoading = HeadingTemplate.bind({});
+GreyLoading.args = {
+    kind: 'grey',
+    loading: true,
+    styles: templateStyles
+};
