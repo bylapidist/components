@@ -46,7 +46,7 @@ Ensure you wrap your application with the `<ThemeProvider>` component.
 Here is a quick example to get you started:
 
 ```jsx static
-import React from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider, Text } from '@lapidist/components';
 
