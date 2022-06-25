@@ -7,7 +7,7 @@ export const linkStyles = (): Styles => ({
         group: 'primary',
         shade: 'light'
     },
-    fontSize: 'inherit',
+    fontSize: '3',
     textColor: {
         group: 'primary',
         shade: 'dark'

@@ -1,5 +1,6 @@
 .dependabot
 .github
+.storybook
 src
 tsconfig.json
 webpack.config.js
@@ -15,4 +16,4 @@ jest.config.js
 .stylelintrc.js
 coverage
 *.tgz
-docs
+storybook-static
