@@ -27,8 +27,7 @@
     ],
     "scripts": {
         "storybook": "cross-env NODE_ENV=development start-storybook -p 6006",
-        "lint": "npm run lint:css && npm run lint:js",
-        "lint:css": "stylelint './src/**/*.tsx'",
+        "lint": "npm run lint:js",
         "lint:js": "eslint . --ext js,ts,tsx",
         "fix": "eslint --fix . --ext js,ts,tsx",
         "watch": "cross-env NODE_ENV=development tsc -w",
