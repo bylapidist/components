@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { mergeStyles } from '@lapidist/styles';
 import { Text } from '../text';
 import { BoxProps } from '../box';
