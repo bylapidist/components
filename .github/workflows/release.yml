@@ -40,9 +40,6 @@ jobs:
                   file: ./coverage/coverage-final.json
                   flags: unittests
 
-            - name: Run build
-              run: npm run build
-
             - name: Build storybook
               run: |
                   git fetch --depth=1 origin +refs/tags/*:refs/tags/*
