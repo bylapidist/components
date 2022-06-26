@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { ThemeProvider } from '../theme-provider';
 import { Button } from './index';
 
@@ -39,5 +40,12 @@ Danger.args = {
 export const Grey = DefaultTemplate.bind({});
 Grey.args = {
     kind: 'grey',
+    styles: templateStyles
+};
+
+export const WithIcon = DefaultTemplate.bind({});
+WithIcon.args = {
+    kind: 'primary',
+    icon: faCircleCheck,
     styles: templateStyles
 };

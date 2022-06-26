@@ -2,7 +2,6 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { mergeStyles } from '@lapidist/styles';
 import { Box, BoxProps } from '../box';
-import { AspectRatio } from '../aspect-ratio';
 import { pingPong } from './animations';
 import {
     spinnerBoxStyles,
@@ -25,13 +24,11 @@ export const Spinner: React.FC<SpinnerPropType> = ({
 }) => (
     <>
         <Box as={as} styles={mergeStyles({}, styles)} {...restProps}>
-            <AspectRatio ratio="1/1">
-                <Box styles={spinnerBoxStyles(styles)}>
-                    <Box styles={spinnerInnerStyles()}>
-                        <PingPong styles={spinnerPingPongStyles()} />
-                    </Box>
+            <Box styles={spinnerBoxStyles()}>
+                <Box styles={spinnerInnerStyles()}>
+                    <PingPong styles={spinnerPingPongStyles()} />
                 </Box>
-            </AspectRatio>
+            </Box>
         </Box>
     </>
 );

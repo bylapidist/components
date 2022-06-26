@@ -14,7 +14,7 @@ interface ButtonVariantStyles {
     disabledBackgroundColor: ColorGroup | string;
 }
 
-const scale = (variant: string, start: number): string => {
+const scale = (variant = 'medium', start = 1): string => {
     switch (variant) {
         case 'small':
             return (start - 1).toString(10);
@@ -65,6 +65,7 @@ const buttonVariants = ({
 };
 
 const buttonBaseStyles: Styles = {
+    position: 'relative',
     borderWidth: 'px',
     boxShadow: '1',
     textAlign: 'center',
@@ -111,3 +112,12 @@ const buttonVariantStyles = ({
 
 export const buttonStyles = (props: ButtonProps): Styles =>
     buttonVariantStyles(buttonVariants(props));
+
+export const buttonSpinnerStyles = ({ variant }: ButtonProps): Styles => ({
+    width: 'full',
+    position: 'absolute',
+    top: 'calc(50% - 0.375rem)',
+    left: '0',
+    right: '0',
+    paddingX: scale(variant, 2)
+});

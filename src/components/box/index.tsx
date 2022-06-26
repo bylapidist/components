@@ -4,7 +4,7 @@ import { Styles, withStyles } from '@lapidist/styles';
 
 export * from './styles';
 
-export interface BoxProps extends PropsWithChildren<unknown> {
+export interface BoxProps extends PropsWithChildren {
     readonly key?: Key;
     readonly styles?: Styles;
     readonly as?: keyof JSX.IntrinsicElements;

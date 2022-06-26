@@ -12,6 +12,7 @@ exports[`it works with different buttons 1`] = `
 .c1 {
   border-style: solid;
   text-align: center;
+  position: relative;
   font-size: 1rem;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
@@ -46,8 +47,21 @@ exports[`it works with different buttons 1`] = `
 }
 
 .c2 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
   border-style: solid;
   text-align: center;
+  position: relative;
   font-size: 1rem;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
@@ -64,26 +78,27 @@ exports[`it works with different buttons 1`] = `
   border-color: #937032;
 }
 
-.c2:hover {
+.c3:hover {
   cursor: pointer;
   background-color: #937032;
   color: white;
 }
 
-.c2:hover:disabled {
+.c3:hover:disabled {
   cursor: not-allowed;
   background-color: #937032;
 }
 
-.c2:disabled {
+.c3:disabled {
   opacity: 0.7;
   background-color: #937032;
   color: white;
 }
 
-.c3 {
+.c4 {
   border-style: solid;
   text-align: center;
+  position: relative;
   font-size: 1rem;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
@@ -100,18 +115,18 @@ exports[`it works with different buttons 1`] = `
   border-color: #548230;
 }
 
-.c3:hover {
+.c4:hover {
   cursor: pointer;
   background-color: #548230;
   color: white;
 }
 
-.c3:hover:disabled {
+.c4:hover:disabled {
   cursor: not-allowed;
   background-color: #548230;
 }
 
-.c3:disabled {
+.c4:disabled {
   opacity: 0.7;
   background-color: #548230;
   color: white;
@@ -125,19 +140,31 @@ exports[`it works with different buttons 1`] = `
     class="c1"
     type="button"
   >
-    Button
-  </button>
-  <button
-    class="c2"
-    type="button"
-  >
-    Button
+    <div
+      class="c2"
+    >
+      Button
+    </div>
   </button>
   <button
     class="c3"
     type="button"
   >
-    Button
+    <div
+      class="c2"
+    >
+      Button
+    </div>
+  </button>
+  <button
+    class="c4"
+    type="button"
+  >
+    <div
+      class="c2"
+    >
+      Button
+    </div>
   </button>
 </div>
 `;
@@ -154,6 +181,7 @@ exports[`it works with same buttons 1`] = `
 .c1 {
   border-style: solid;
   text-align: center;
+  position: relative;
   font-size: 1rem;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
@@ -187,6 +215,18 @@ exports[`it works with same buttons 1`] = `
   color: white;
 }
 
+.c2 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <div
   class="c0"
   role="group"
@@ -195,19 +235,31 @@ exports[`it works with same buttons 1`] = `
     class="c1"
     type="button"
   >
-    Button
+    <div
+      class="c2"
+    >
+      Button
+    </div>
   </button>
   <button
     class="c1"
     type="button"
   >
-    Button
+    <div
+      class="c2"
+    >
+      Button
+    </div>
   </button>
   <button
     class="c1"
     type="button"
   >
-    Button
+    <div
+      class="c2"
+    >
+      Button
+    </div>
   </button>
 </div>
 `;
@@ -224,6 +276,7 @@ exports[`it works with two buttons 1`] = `
 .c1 {
   border-style: solid;
   text-align: center;
+  position: relative;
   font-size: 1rem;
   font-weight: 400;
   font-family: Montserrat,sans-serif;
@@ -257,6 +310,18 @@ exports[`it works with two buttons 1`] = `
   color: white;
 }
 
+.c2 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <div
   class="c0"
   role="group"
@@ -265,13 +330,21 @@ exports[`it works with two buttons 1`] = `
     class="c1"
     type="button"
   >
-    Button
+    <div
+      class="c2"
+    >
+      Button
+    </div>
   </button>
   <button
     class="c1"
     type="button"
   >
-    Button
+    <div
+      class="c2"
+    >
+      Button
+    </div>
   </button>
 </div>
 `;
