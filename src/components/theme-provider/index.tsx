@@ -26,9 +26,9 @@ const GlobalStyle = createGlobalStyle`
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
-        transition: color 0.12s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s,
-            border 0.12s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s,
-            background-color 0.12s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s;
+        transition: color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s,
+            border 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s,
+            background-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s;
     }
     html { box-sizing: border-box; }
     *, *:before, *:after { box-sizing: inherit; }

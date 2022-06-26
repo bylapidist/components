@@ -54,9 +54,10 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
                 }}
             >
                 {icon && (
-                    <Box styles={{ marginRight: '2' }}>
-                        <FontAwesomeIcon icon={icon} />
-                    </Box>
+                    <FontAwesomeIcon
+                        style={{ marginRight: '0.5rem' }}
+                        icon={icon}
+                    />
                 )}
                 {children}
             </Box>
