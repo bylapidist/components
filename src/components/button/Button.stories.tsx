@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { ThemeProvider } from '../theme-provider';
 import { Button } from './index';
 
@@ -46,6 +46,6 @@ Grey.args = {
 export const WithIcon = DefaultTemplate.bind({});
 WithIcon.args = {
     kind: 'primary',
-    icon: faCircleCheck,
+    icon: faXmark,
     styles: templateStyles
 };
