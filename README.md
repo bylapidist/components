@@ -8,7 +8,7 @@
 
 <div align="center">
 
-Opinionated [React](https://reactjs.org/) UI library, built with [styled-components](https://styled-components.com/) and [TypeScript](https://www.typescriptlang.org/).
+Opinionated [React](https://reactjs.org/) UI library, built with [@lapidist/styles]([https://styled-components.com/](https://github.com/bylapidist/styles)) and [TypeScript](https://www.typescriptlang.org/).
 
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@lapidist/components)
 [![npm](https://img.shields.io/npm/v/@lapidist/components)](https://www.npmjs.com/package/@lapidist/components)
