@@ -1,12 +1,11 @@
 import { Styles } from '@lapidist/styles';
 
-export const spinnerBoxStyles = (styles?: Styles): Styles => ({
+export const spinnerBoxStyles = (): Styles => ({
     display: 'flex',
     position: 'relative',
     width: 'full',
     overflow: 'hidden',
-    alignItems: 'center',
-    sizeHeight: styles?.sizeWidth || '16'
+    alignItems: 'center'
 });
 
 export const spinnerInnerStyles = (): Styles => ({
