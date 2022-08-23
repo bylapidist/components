@@ -8,7 +8,6 @@ export * from './link';
 export * from './list';
 export * from './logo';
 export * from './panel';
-export * from './panel-heading';
 export * from './spinner';
 export * from './status-message';
 export * from './tag';
