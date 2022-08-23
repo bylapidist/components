@@ -16,9 +16,7 @@ test('it works', () => {
 
 test('it works with heading', () => {
     const { container, getByText } = setup(
-        <Panel heading="heading">
-            body
-        </Panel>
+        <Panel heading="heading">body</Panel>
     );
     expect(container.firstChild).toMatchSnapshot();
     expect(getByText('heading')).toBeTruthy();
