@@ -8,13 +8,13 @@ exports[`it works 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-bottom-width: 1px;
-  color: #1a8385;
+  color: #135f61;
   border-bottom-color: #4AD6D8;
 }
 
 .c0:hover {
-  color: #1a8385;
-  border-bottom-color: #1a8385;
+  color: #135f61;
+  border-bottom-color: #135f61;
 }
 
 <a

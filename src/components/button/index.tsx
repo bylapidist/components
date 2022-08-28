@@ -12,12 +12,16 @@ export * from './styles';
 
 export type ButtonPropType = BoxProps &
     React.ButtonHTMLAttributes<HTMLButtonElement> &
-    React.HTMLProps<HTMLButtonElement>;
+    React.HTMLProps<HTMLButtonElement> &
+    React.AnchorHTMLAttributes<HTMLAnchorElement> &
+    React.HTMLProps<HTMLAnchorElement>;
 
 export type ButtonSize = 'small' | 'medium' | 'large';
 
+export type ButtonKind = 'primary' | 'secondary' | 'tertiary' | 'danger';
+
 export interface ButtonProps {
-    readonly kind: string;
+    readonly kind: ButtonKind;
     readonly theme: Theme;
     readonly variant?: ButtonSize;
     readonly ghost?: boolean;
@@ -31,7 +35,6 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
     kind,
     theme,
     variant,
-    ghost,
     loading,
     icon,
     children,
@@ -40,10 +43,7 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
     return (
         <Text
             as={as}
-            styles={mergeStyles(
-                buttonStyles({ kind, theme, variant, ghost }),
-                styles
-            )}
+            styles={mergeStyles(buttonStyles({ kind, theme, variant }), styles)}
             {...restProps}
         >
             <Box

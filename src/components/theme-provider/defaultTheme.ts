@@ -143,7 +143,7 @@ export const defaultTheme: Theme = {
             lightest: '#9bfff8',
             light: '#4AD6D8',
             base: '#17a3a5',
-            dark: '#1a8385'
+            dark: '#135f61'
         },
         secondary: {
             lightest: '#fdffb5',
