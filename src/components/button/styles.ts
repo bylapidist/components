@@ -31,28 +31,55 @@ const buttonSizing = (variant: string) => ({
     fontSize: scale(variant, 2)
 });
 
+const primaryBase: ColorGroup = { group: 'primary', shade: 'base' };
+
+const darkBase: ColorGroup = { group: 'primary', shade: 'dark' };
+
 const darkGrey: ColorGroup = { group: 'grey', shade: 'dark' };
+
+const baseGrey: ColorGroup = { group: 'grey', shade: 'base' };
 
 const lightBase: ColorGroup = { group: 'base', shade: 'light' };
 
+const lightGrey: ColorGroup = { group: 'grey', shade: 'light' };
+
 const lightestGrey: ColorGroup = { group: 'grey', shade: 'lightest' };
 
-const buttonColors = (dark: string, base: string, ghost?: boolean) => ({
-    borderColor: dark,
-    hoverBackgroundColor: dark,
-    hoverTextColor: lightBase,
-    backgroundColor: ghost ? 'transparent' : base,
-    textColor: ghost ? darkGrey : lightBase,
-    disabledHoverBackgroundColor: ghost ? lightestGrey : dark,
-    disabledTextColor: ghost ? darkGrey : lightBase,
-    disabledBackgroundColor: ghost ? lightestGrey : dark
-});
+const buttonColors = (dark: string, base: string, kind: string) => {
+    const isPrimary = kind === 'primary';
+    const isSecondary = kind === 'secondary';
+    const isTertiary = kind === 'tertiary';
+
+    const textColor = (): ColorGroup | string => {
+        if (isPrimary) return lightBase;
+        if (isSecondary) return primaryBase;
+        if (isTertiary) return baseGrey;
+        return base;
+    }
+
+    const hoverTextColor = (): ColorGroup | string => {
+        if (isPrimary) return lightBase;
+        if (isSecondary) return darkBase;
+        if (isTertiary) return darkGrey;
+        return dark;
+    }
+
+    return {
+        borderColor: isPrimary ? base : lightGrey,
+        backgroundColor: isPrimary ? base : 'transparent',
+        textColor: textColor(),
+        hoverBackgroundColor: isPrimary ? dark : lightestGrey,
+        hoverTextColor: hoverTextColor(),
+        disabledHoverBackgroundColor: isPrimary ? dark : lightestGrey,
+        disabledTextColor: isPrimary ? lightBase : darkGrey,
+        disabledBackgroundColor: isPrimary ? dark : lightestGrey
+    };
+};
 
 const buttonVariants = ({
     kind,
     theme,
-    variant,
-    ghost
+    variant
 }: ButtonProps): ButtonVariantStyles => {
     const { dark, base } = getProperty<{
         [K: string]: string;
@@ -60,18 +87,20 @@ const buttonVariants = ({
 
     return {
         ...buttonSizing(variant || 'large'),
-        ...buttonColors(dark, base, ghost)
+        ...buttonColors(dark, base, kind)
     };
 };
 
 const buttonBaseStyles: Styles = {
+    display: 'inline-flex',
     position: 'relative',
-    borderWidth: 'px',
+    borderWidth: '1',
     boxShadow: '1',
     textAlign: 'center',
     paddingX: '4',
     borderRadius: '2',
-    borderStyle: 'solid'
+    borderStyle: 'solid',
+    fontWeight: '500'
 };
 
 const buttonVariantStyles = ({

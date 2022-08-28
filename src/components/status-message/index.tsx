@@ -44,7 +44,7 @@ const BaseStatusMessage: React.FC<StatusMessagePropType & StatusMessageProps> =
 
         const handleDismiss = () => setDismissed(!dismissed);
 
-        const getIcon = (variant: StatusMessageVariantType) => {
+        const getIcon = (variant?: StatusMessageVariantType) => {
             switch (variant) {
                 case 'warning':
                 case 'error':
@@ -82,9 +82,8 @@ const BaseStatusMessage: React.FC<StatusMessagePropType & StatusMessageProps> =
                 </Text>
                 {dismissable && (
                     <Button
-                        kind="grey"
+                        kind="tertiary"
                         variant="small"
-                        ghost
                         onClick={handleDismiss}
                         styles={{ minHeight: '2rem' }}
                     >

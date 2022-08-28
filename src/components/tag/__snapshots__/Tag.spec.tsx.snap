@@ -5,7 +5,7 @@ exports[`it works 1`] = `
   border-style: solid;
   text-align: center;
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-radius: 0.6rem;
@@ -41,7 +41,7 @@ exports[`it works with href 1`] = `
   border-style: solid;
   text-align: center;
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-radius: 0.6rem;
@@ -78,7 +78,7 @@ exports[`it works with namespace 1`] = `
   border-style: solid;
   text-align: center;
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-radius: 0.6rem;
@@ -129,7 +129,7 @@ exports[`it works with namespace and href 1`] = `
   border-style: solid;
   text-align: center;
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-radius: 0.6rem;

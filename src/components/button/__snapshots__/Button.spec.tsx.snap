@@ -4,13 +4,17 @@ exports[`it works 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   position: relative;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-radius: 0.3rem;
-  border-width: 1px;
+  border-width: 2px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
   padding-right: 1rem;
@@ -18,7 +22,7 @@ exports[`it works 1`] = `
   padding-bottom: 0.5rem;
   background-color: #17a3a5;
   color: white;
-  border-color: #135f61;
+  border-color: #17a3a5;
 }
 
 .c0:hover {
@@ -62,31 +66,35 @@ exports[`it works 1`] = `
 </button>
 `;
 
-exports[`it works with ghost 1`] = `
+exports[`it works with anchor 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   position: relative;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-radius: 0.3rem;
-  border-width: 1px;
+  border-width: 2px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background-color: transparent;
-  color: #292B3E;
-  border-color: #937032;
+  color: #17a3a5;
+  border-color: #d4d4d4;
 }
 
 .c0:hover {
   cursor: pointer;
-  background-color: #937032;
-  color: white;
+  background-color: #fafafa;
+  color: #135f61;
 }
 
 .c0:hover:disabled {
@@ -112,54 +120,59 @@ exports[`it works with ghost 1`] = `
   align-items: center;
 }
 
-<button
+<a
   class="c0"
-  type="button"
+  href="https://google.com"
+  target="_blank"
 >
   <div
     class="c1"
   >
     Hello world
   </div>
-</button>
+</a>
 `;
 
 exports[`it works with icon 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   position: relative;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-radius: 0.3rem;
-  border-width: 1px;
+  border-width: 2px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: #ebc764;
-  color: white;
-  border-color: #937032;
+  background-color: transparent;
+  color: #17a3a5;
+  border-color: #d4d4d4;
 }
 
 .c0:hover {
   cursor: pointer;
-  background-color: #937032;
-  color: white;
+  background-color: #fafafa;
+  color: #135f61;
 }
 
 .c0:hover:disabled {
   cursor: not-allowed;
-  background-color: #937032;
+  background-color: #fafafa;
 }
 
 .c0:disabled {
   opacity: 0.7;
-  background-color: #937032;
-  color: white;
+  background-color: #fafafa;
+  color: #292B3E;
 }
 
 .c1 {
@@ -206,38 +219,42 @@ exports[`it works with loading 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   position: relative;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-radius: 0.3rem;
-  border-width: 1px;
+  border-width: 2px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: #ebc764;
-  color: white;
-  border-color: #937032;
+  background-color: transparent;
+  color: #17a3a5;
+  border-color: #d4d4d4;
 }
 
 .c0:hover {
   cursor: pointer;
-  background-color: #937032;
-  color: white;
+  background-color: #fafafa;
+  color: #135f61;
 }
 
 .c0:hover:disabled {
   cursor: not-allowed;
-  background-color: #937032;
+  background-color: #fafafa;
 }
 
 .c0:disabled {
   opacity: 0.7;
-  background-color: #937032;
-  color: white;
+  background-color: #fafafa;
+  color: #292B3E;
 }
 
 .c1 {
@@ -345,38 +362,42 @@ exports[`it works with size large 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   position: relative;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-radius: 0.3rem;
-  border-width: 1px;
+  border-width: 2px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: #ebc764;
-  color: white;
-  border-color: #937032;
+  background-color: transparent;
+  color: #17a3a5;
+  border-color: #d4d4d4;
 }
 
 .c0:hover {
   cursor: pointer;
-  background-color: #937032;
-  color: white;
+  background-color: #fafafa;
+  color: #135f61;
 }
 
 .c0:hover:disabled {
   cursor: not-allowed;
-  background-color: #937032;
+  background-color: #fafafa;
 }
 
 .c0:disabled {
   opacity: 0.7;
-  background-color: #937032;
-  color: white;
+  background-color: #fafafa;
+  color: #292B3E;
 }
 
 .c1 {
@@ -408,38 +429,42 @@ exports[`it works with size medium 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   position: relative;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-radius: 0.3rem;
-  border-width: 1px;
+  border-width: 2px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: #ebc764;
-  color: white;
-  border-color: #937032;
+  background-color: transparent;
+  color: #17a3a5;
+  border-color: #d4d4d4;
 }
 
 .c0:hover {
   cursor: pointer;
-  background-color: #937032;
-  color: white;
+  background-color: #fafafa;
+  color: #135f61;
 }
 
 .c0:hover:disabled {
   cursor: not-allowed;
-  background-color: #937032;
+  background-color: #fafafa;
 }
 
 .c0:disabled {
   opacity: 0.7;
-  background-color: #937032;
-  color: white;
+  background-color: #fafafa;
+  color: #292B3E;
 }
 
 .c1 {
@@ -471,38 +496,42 @@ exports[`it works with size small 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   position: relative;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   border-radius: 0.3rem;
-  border-width: 1px;
+  border-width: 2px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: #ebc764;
-  color: white;
-  border-color: #937032;
+  background-color: transparent;
+  color: #17a3a5;
+  border-color: #d4d4d4;
 }
 
 .c0:hover {
   cursor: pointer;
-  background-color: #937032;
-  color: white;
+  background-color: #fafafa;
+  color: #135f61;
 }
 
 .c0:hover:disabled {
   cursor: not-allowed;
-  background-color: #937032;
+  background-color: #fafafa;
 }
 
 .c0:disabled {
   opacity: 0.7;
-  background-color: #937032;
-  color: white;
+  background-color: #fafafa;
+  color: #292B3E;
 }
 
 .c1 {
