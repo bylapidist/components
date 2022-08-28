@@ -5,6 +5,7 @@ interface TagVariantStyles {
     borderColor: ColorGroup | string;
     backgroundColor: ColorGroup | string;
     fontSize: string;
+    fontWeight: string;
     textColor: ColorGroup | string;
 }
 
@@ -21,6 +22,7 @@ const tagVariants = ({ kind, theme }: TagProps): TagVariantStyles => {
 
     return {
         fontSize: '1',
+        fontWeight: '600',
         ...tagColors(base)
     };
 };
