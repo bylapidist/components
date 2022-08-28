@@ -29,7 +29,6 @@ Default.args = {
     styles: templateStyles
 };
 
-
 export const WithHeading = DefaultTemplate.bind({});
 WithHeading.args = {
     heading: {
