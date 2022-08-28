@@ -10,7 +10,7 @@ exports[`it works 1`] = `
   border-radius: 0.3rem;
   border-width: 1px;
   border-left-width: 4px;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -93,7 +93,7 @@ exports[`it works with different variants 1`] = `
   border-radius: 0.3rem;
   border-width: 1px;
   border-left-width: 4px;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -192,7 +192,7 @@ exports[`it works with different variants 2`] = `
   border-radius: 0.3rem;
   border-width: 1px;
   border-left-width: 4px;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -275,7 +275,7 @@ exports[`it works with different variants 3`] = `
   border-radius: 0.3rem;
   border-width: 1px;
   border-left-width: 4px;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -358,7 +358,7 @@ exports[`it works with different variants 4`] = `
   border-radius: 0.3rem;
   border-width: 1px;
   border-left-width: 4px;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;

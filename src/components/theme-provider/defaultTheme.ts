@@ -94,7 +94,8 @@ export const defaultTheme: Theme = {
     boxShadows: {
         '0': 'none',
         '1': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-        '2': '0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 8px 16px 0 rgba(0, 0, 0, 0.01)'
+        '2': '0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 8px 16px 0 rgba(0, 0, 0, 0.01)',
+        '3': '0 2px 3px rgba(0, 0, 0, 0.1)'
     },
     widths: {
         '1/2': '50%',

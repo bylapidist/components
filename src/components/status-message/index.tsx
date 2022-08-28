@@ -86,6 +86,7 @@ const BaseStatusMessage: React.FC<StatusMessagePropType & StatusMessageProps> =
                         variant="small"
                         ghost
                         onClick={handleDismiss}
+                        styles={{ minHeight: '2rem' }}
                     >
                         <FontAwesomeIcon icon={faClose} />
                     </Button>
