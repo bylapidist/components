@@ -8,20 +8,20 @@ interface TagVariantStyles {
     textColor: ColorGroup | string;
 }
 
-const tagColors = (base: string) => ({
+const tagColors = (backgroundColor: string) => ({
+    backgroundColor,
     borderColor: { group: 'grey', shade: 'dark' },
-    backgroundColor: base,
     textColor: { group: 'base', shade: 'light' }
 });
 
 const tagVariants = ({ kind, theme }: TagProps): TagVariantStyles => {
-    const { base } = getProperty<{
+    const { dark } = getProperty<{
         [K: string]: string;
     }>(theme, 'colors', kind);
 
     return {
         fontSize: '1',
-        ...tagColors(base)
+        ...tagColors(dark)
     };
 };
 

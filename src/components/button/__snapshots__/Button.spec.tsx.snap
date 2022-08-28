@@ -18,23 +18,23 @@ exports[`it works 1`] = `
   padding-bottom: 0.5rem;
   background-color: #17a3a5;
   color: white;
-  border-color: #1a8385;
+  border-color: #135f61;
 }
 
 .c0:hover {
   cursor: pointer;
-  background-color: #1a8385;
+  background-color: #135f61;
   color: white;
 }
 
 .c0:hover:disabled {
   cursor: not-allowed;
-  background-color: #1a8385;
+  background-color: #135f61;
 }
 
 .c0:disabled {
   opacity: 0.7;
-  background-color: #1a8385;
+  background-color: #135f61;
   color: white;
 }
 

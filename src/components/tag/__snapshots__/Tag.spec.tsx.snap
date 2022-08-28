@@ -13,7 +13,7 @@ exports[`it works 1`] = `
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  background-color: #17a3a5;
+  background-color: #135f61;
   color: white;
   border-color: #292B3E;
 }
@@ -49,7 +49,7 @@ exports[`it works with href 1`] = `
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  background-color: #17a3a5;
+  background-color: #135f61;
   color: white;
   border-color: #292B3E;
 }
@@ -86,7 +86,7 @@ exports[`it works with namespace 1`] = `
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  background-color: #17a3a5;
+  background-color: #135f61;
   color: white;
   border-color: #292B3E;
 }
@@ -137,7 +137,7 @@ exports[`it works with namespace and href 1`] = `
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  background-color: #17a3a5;
+  background-color: #135f61;
   color: white;
   border-color: #292B3E;
 }
