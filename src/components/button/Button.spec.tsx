@@ -57,13 +57,21 @@ test('it works with loading', () => {
 
 test('it works with anchor', () => {
     const { container } = setup(
-        <Button as="a" kind="secondary" href="https://google.com" target="_blank">
+        <Button
+            as="a"
+            kind="secondary"
+            href="https://google.com"
+            target="_blank"
+        >
             Hello world
         </Button>
     );
     expect(container.firstChild).toMatchSnapshot();
     expect(container.querySelectorAll('a').length).toBe(1);
-    expect(container.querySelector('a')).toHaveAttribute('href', 'https://google.com');
+    expect(container.querySelector('a')).toHaveAttribute(
+        'href',
+        'https://google.com'
+    );
     expect(container.querySelector('a')).toHaveAttribute('target', '_blank');
 });
 

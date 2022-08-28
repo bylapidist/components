@@ -55,14 +55,14 @@ const buttonColors = (dark: string, base: string, kind: string) => {
         if (isSecondary) return primaryBase;
         if (isTertiary) return baseGrey;
         return base;
-    }
+    };
 
     const hoverTextColor = (): ColorGroup | string => {
         if (isPrimary) return lightBase;
         if (isSecondary) return darkBase;
         if (isTertiary) return darkGrey;
         return dark;
-    }
+    };
 
     return {
         borderColor: isPrimary ? base : lightGrey,

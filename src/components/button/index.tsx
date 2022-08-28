@@ -43,10 +43,7 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
     return (
         <Text
             as={as}
-            styles={mergeStyles(
-                buttonStyles({ kind, theme, variant }),
-                styles
-            )}
+            styles={mergeStyles(buttonStyles({ kind, theme, variant }), styles)}
             {...restProps}
         >
             <Box
