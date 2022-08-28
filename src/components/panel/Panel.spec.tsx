@@ -16,11 +16,12 @@ test('it works', () => {
 
 test('it works with heading', () => {
     const { container, getByText } = setup(
-        <Panel heading="heading">body</Panel>
+        <Panel heading={{ title: 'heading', props: { as: 'h2' } }}>body</Panel>
     );
     expect(container.firstChild).toMatchSnapshot();
     expect(getByText('heading')).toBeTruthy();
     expect(getByText('body')).toBeTruthy();
+    expect(container.querySelectorAll('h2').length).toBe(1);
 });
 
 test('it works loading', () => {

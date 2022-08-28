@@ -31,14 +31,13 @@ Default.args = {
 
 export const WithHeading = DefaultTemplate.bind({});
 WithHeading.args = {
-    heading: 'Hello world!',
-    styles: templateStyles
-};
-
-export const WithHeadingSizes = DefaultTemplate.bind({});
-WithHeadingSizes.args = {
-    heading: 'Hello world!',
-    headingSize: 2,
+    heading: {
+        title: 'Hello world!',
+        props: {
+            as: 'h2',
+            size: '4'
+        }
+    },
     styles: templateStyles
 };
 
