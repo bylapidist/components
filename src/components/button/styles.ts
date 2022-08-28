@@ -92,7 +92,7 @@ const buttonVariants = ({
 };
 
 const buttonBaseStyles: Styles = {
-    display: 'inline-flex',
+    display: 'inline-block',
     position: 'relative',
     borderWidth: '1',
     boxShadow: '1',

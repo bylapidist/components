@@ -4,10 +4,7 @@ exports[`it works 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   position: relative;
   font-size: 1rem;
   font-weight: 500;
@@ -70,10 +67,7 @@ exports[`it works with anchor 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   position: relative;
   font-size: 1rem;
   font-weight: 500;
@@ -137,10 +131,7 @@ exports[`it works with icon 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   position: relative;
   font-size: 1rem;
   font-weight: 500;
@@ -219,10 +210,7 @@ exports[`it works with loading 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   position: relative;
   font-size: 1rem;
   font-weight: 500;
@@ -362,10 +350,7 @@ exports[`it works with size large 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   position: relative;
   font-size: 1rem;
   font-weight: 500;
@@ -429,10 +414,7 @@ exports[`it works with size medium 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   position: relative;
   font-size: 1rem;
   font-weight: 500;
@@ -496,10 +478,7 @@ exports[`it works with size small 1`] = `
 .c0 {
   border-style: solid;
   text-align: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   position: relative;
   font-size: 1rem;
   font-weight: 500;
