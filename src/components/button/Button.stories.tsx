@@ -37,15 +37,18 @@ Danger.args = {
     styles: templateStyles
 };
 
-export const Grey = DefaultTemplate.bind({});
-Grey.args = {
-    kind: 'grey',
-    styles: templateStyles
-};
-
 export const WithIcon = DefaultTemplate.bind({});
 WithIcon.args = {
     kind: 'primary',
     icon: faXmark,
+    styles: templateStyles
+};
+
+export const AsAnchor = DefaultTemplate.bind({});
+AsAnchor.args = {
+    as: 'a',
+    kind: 'primary',
+    href: 'https://google.com',
+    target: '_blank',
     styles: templateStyles
 };

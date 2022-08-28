@@ -29,7 +29,7 @@ const tagBaseStyles: Styles = {
     borderWidth: '0',
     boxShadow: '1',
     textAlign: 'center',
-    fontWeight: '700',
+    fontWeight: '500',
     borderRadius: '3',
     borderStyle: 'solid',
     paddingY: '1'
