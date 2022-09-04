@@ -49,7 +49,7 @@
         "@fortawesome/fontawesome-svg-core": "^6.1.1",
         "@fortawesome/free-solid-svg-icons": "^6.1.1",
         "@fortawesome/react-fontawesome": "^0.2.0",
-        "@lapidist/styles": "^3.8.0"
+        "@lapidist/styles": "^3.9.0"
     },
     "devDependencies": {
         "@lapidist/linting": "2.135.5",
