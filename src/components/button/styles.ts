@@ -95,7 +95,6 @@ const buttonBaseStyles: Styles = {
     display: 'inline-block',
     position: 'relative',
     borderWidth: '1',
-    boxShadow: '1',
     textAlign: 'center',
     paddingX: '4',
     borderRadius: '2',

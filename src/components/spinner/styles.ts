@@ -21,7 +21,6 @@ export const spinnerInnerStyles = (): Styles => ({
         group: 'grey',
         shade: 'light'
     },
-    boxShadow: '2',
     borderRadius: '2'
 });
 

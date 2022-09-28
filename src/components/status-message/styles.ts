@@ -9,7 +9,6 @@ export const statusMessageStyles = ({
         alignItems: 'center',
         justifyContent: 'space-between',
         borderRadius: '2',
-        boxShadow: '3',
         borderLeftWidth: '2',
         borderWidth: 'px',
         borderStyle: 'solid',

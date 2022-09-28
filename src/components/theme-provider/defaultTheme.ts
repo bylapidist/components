@@ -93,9 +93,10 @@ export const defaultTheme: Theme = {
     },
     boxShadows: {
         '0': 'none',
-        '1': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-        '2': '0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 8px 16px 0 rgba(0, 0, 0, 0.01)',
-        '3': '0 2px 3px rgba(0, 0, 0, 0.1)'
+        '1': '0 2px 3px rgba(0, 0, 0, 0.1)',
+        '2': '0 2px 4px rgba(0, 0, 0, 0.12), 0 10px 13px rgba(0, 0, 0, 0.02), 0 -10px 13px rgba(0, 0, 0, 0.02)',
+        '3': '0 2px 5px rgba(0, 0, 0, 0.16), -10px 15px 15px rgba(0, 0, 0, 0.03), 10px 0px 15px rgba(0, 0, 0, 0.03)',
+        '4': '0 2px 6px rgba(0, 0, 0, 0.18), -15px 20px 20px rgba(0, 0, 0, 0.04), 15px -5px 20px rgba(0, 0, 0, 0.04)'
     },
     widths: {
         '1/2': '50%',

@@ -4,6 +4,7 @@ import { mergeStyles, Theme } from '@lapidist/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { Text } from '../text';
+import { Elevated } from '../elevated';
 import { Box, BoxProps } from '../box';
 import { buttonSpinnerStyles, buttonStyles } from './styles';
 import { Spinner } from '../spinner';
@@ -41,9 +42,10 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
     ...restProps
 }) => {
     return (
-        <Text
-            as={as}
+        <Elevated
+            as={(props) => <Text {...props} as={as} />}
             styles={mergeStyles(buttonStyles({ kind, theme, variant }), styles)}
+            elevation="1"
             {...restProps}
         >
             <Box
@@ -66,7 +68,7 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
                     styles={buttonSpinnerStyles({ kind, theme, variant })}
                 />
             )}
-        </Text>
+        </Elevated>
     );
 };
 
