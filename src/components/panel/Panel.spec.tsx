@@ -5,6 +5,7 @@ import 'jest-styled-components';
 
 import { ThemeProvider } from '../theme-provider';
 import { Panel } from './index';
+import { ElevationHeight } from '../elevated';
 
 const setup = (panel: React.ReactElement) =>
     render(<ThemeProvider>{panel}</ThemeProvider>);
@@ -27,4 +28,15 @@ test('it works with heading', () => {
 test('it works loading', () => {
     const { container } = setup(<Panel loading>Hello world</Panel>);
     expect(container.firstChild).toMatchSnapshot();
+});
+
+test('it works with elevation', () => {
+    const elevations: ElevationHeight[] = ['1', '2', '3', '4'];
+
+    elevations.forEach((elevation) => {
+        const { container } = setup(
+            <Panel elevation={elevation}>Hello world</Panel>
+        );
+        expect(container.firstChild).toMatchSnapshot();
+    });
 });
