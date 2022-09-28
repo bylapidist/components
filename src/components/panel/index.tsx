@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { withTheme } from 'styled-components';
 import { mergeStyles, Theme } from '@lapidist/styles';
-import { Box, BoxProps } from '../box';
+import { Elevated, ElevationHeight } from '../elevated';
+import { BoxProps } from '../box';
 import { Spinner } from '../spinner';
 import { Heading, HeadingProps, HeadingPropType } from '../heading';
 import { panelStyles } from './styles';
@@ -16,6 +17,7 @@ export interface PanelProps {
         title: string;
         props?: HeadingProps & HeadingPropType;
     };
+    readonly elevation?: ElevationHeight;
     readonly theme: Theme;
 }
 
@@ -24,12 +26,14 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
     styles,
     loading,
     heading,
+    elevation = '1',
     children,
     ...restProps
 }) =>
     loading ? (
-        <Box
+        <Elevated
             as={as}
+            elevation={elevation}
             styles={mergeStyles(panelStyles(), {
                 ...styles,
                 display: 'flex',
@@ -39,9 +43,14 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
             {...restProps}
         >
             <Spinner styles={{ sizeWidth: 16 }} />
-        </Box>
+        </Elevated>
     ) : (
-        <Box as={as} styles={mergeStyles(panelStyles(), styles)} {...restProps}>
+        <Elevated
+            as={as}
+            elevation={elevation}
+            styles={mergeStyles(panelStyles(), styles)}
+            {...restProps}
+        >
             {heading?.title && (
                 <Heading
                     styles={{ marginBottom: '4', fontWeight: 700 }}
@@ -51,7 +60,7 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
                 </Heading>
             )}
             {children}
-        </Box>
+        </Elevated>
     );
 
 export const Panel = withTheme(BasePanel);

@@ -27,7 +27,6 @@ const tagVariants = ({ kind, theme }: TagProps): TagVariantStyles => {
 
 const tagBaseStyles: Styles = {
     borderWidth: '0',
-    boxShadow: '1',
     textAlign: 'center',
     fontWeight: '500',
     borderRadius: '3',

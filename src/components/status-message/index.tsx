@@ -9,7 +9,8 @@ import {
     faCircleCheck
 } from '@fortawesome/free-solid-svg-icons';
 import { Text } from '../text';
-import { Box, BoxProps } from '../box';
+import { BoxProps } from '../box';
+import { Elevated } from '../elevated';
 import { Button } from '../button';
 import {
     statusMessageIconStyles,
@@ -60,8 +61,9 @@ const BaseStatusMessage: React.FC<StatusMessagePropType & StatusMessageProps> =
         if (dismissed) return null;
 
         return (
-            <Box
+            <Elevated
                 as={as}
+                elevation="1"
                 styles={mergeStyles(
                     statusMessageStyles({ theme, message, variant }),
                     styles
@@ -90,7 +92,7 @@ const BaseStatusMessage: React.FC<StatusMessagePropType & StatusMessageProps> =
                         <FontAwesomeIcon icon={faClose} />
                     </Button>
                 )}
-            </Box>
+            </Elevated>
         );
     };
 

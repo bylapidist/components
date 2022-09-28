@@ -7,7 +7,7 @@ export * from './styles';
 export interface BoxProps extends PropsWithChildren {
     readonly key?: Key;
     readonly styles?: Styles;
-    readonly as?: keyof JSX.IntrinsicElements;
+    readonly as?: keyof JSX.IntrinsicElements | React.FC;
     readonly role?: AriaRole;
 }
 

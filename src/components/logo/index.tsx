@@ -69,9 +69,9 @@ const D: React.FC<TriangleProps> = styled(Triangle)`
     fill: ${(props): string => props.theme.colors.secondary.base || ''};
 `;
 
-const LogoBox: React.FC<
-    BoxProps & LogoProps & React.HTMLProps<HTMLDivElement>
-> = styled(Box)<BoxProps & LogoProps>`
+const LogoBox: React.FC<BoxProps & LogoProps> = styled(Box)<
+    BoxProps & LogoProps
+>`
     overflow: hidden;
     ${fadeIn()}
 `;
