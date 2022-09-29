@@ -25,7 +25,6 @@ export interface ButtonProps {
     readonly kind: ButtonKind;
     readonly theme: Theme;
     readonly variant?: ButtonSize;
-    readonly ghost?: boolean;
     readonly loading?: boolean;
     readonly icon?: IconProp;
 }

@@ -22,9 +22,9 @@ const pingPongAnimation = css`
     transform: translateX(50%);
     left: -50%;
     animation-iteration-count: infinite;
-    animation-duration: 0.4s;
+    animation-duration: 0.6s;
     animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: cubic-bezier(0.68, -0.9, 0.32, 1.9);
 `;
 
 export const pingPong = (): FlattenInterpolation<

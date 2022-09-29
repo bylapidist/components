@@ -56,10 +56,10 @@ exports[`it works 1`] = `
 <div
   class="c0"
 >
-  <div
+  <p
     class="c1"
   >
-    <div
+    <p
       class="c2"
     >
       <svg
@@ -77,9 +77,9 @@ exports[`it works 1`] = `
           fill="currentColor"
         />
       </svg>
-    </div>
+    </p>
     I am a status message
-  </div>
+  </p>
 </div>
 `;
 
@@ -139,10 +139,10 @@ exports[`it works with different variants 1`] = `
 <div
   class="c0"
 >
-  <div
+  <p
     class="c1"
   >
-    <div
+    <p
       class="c2"
     >
       <svg
@@ -160,9 +160,9 @@ exports[`it works with different variants 1`] = `
           fill="currentColor"
         />
       </svg>
-    </div>
+    </p>
     I am a status message
-  </div>
+  </p>
 </div>
 `;
 
@@ -222,10 +222,10 @@ exports[`it works with different variants 2`] = `
 <div
   class="c0"
 >
-  <div
+  <p
     class="c1"
   >
-    <div
+    <p
       class="c2"
     >
       <svg
@@ -243,9 +243,9 @@ exports[`it works with different variants 2`] = `
           fill="currentColor"
         />
       </svg>
-    </div>
+    </p>
     I am a status message
-  </div>
+  </p>
 </div>
 `;
 
@@ -305,10 +305,10 @@ exports[`it works with different variants 3`] = `
 <div
   class="c0"
 >
-  <div
+  <p
     class="c1"
   >
-    <div
+    <p
       class="c2"
     >
       <svg
@@ -326,9 +326,9 @@ exports[`it works with different variants 3`] = `
           fill="currentColor"
         />
       </svg>
-    </div>
+    </p>
     I am a status message
-  </div>
+  </p>
 </div>
 `;
 
@@ -388,10 +388,10 @@ exports[`it works with different variants 4`] = `
 <div
   class="c0"
 >
-  <div
+  <p
     class="c1"
   >
-    <div
+    <p
       class="c2"
     >
       <svg
@@ -409,8 +409,8 @@ exports[`it works with different variants 4`] = `
           fill="currentColor"
         />
       </svg>
-    </div>
+    </p>
     I am a status message
-  </div>
+  </p>
 </div>
 `;
