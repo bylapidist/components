@@ -57,6 +57,13 @@ const buttonColors = (dark: string, base: string, kind: string) => {
         return base;
     };
 
+    const borderColor = (): ColorGroup | string => {
+        if (isPrimary) return base;
+        if (isSecondary) return lightGrey;
+        if (isTertiary) return lightestGrey;
+        return dark;
+    };
+
     const hoverTextColor = (): ColorGroup | string => {
         if (isPrimary) return lightBase;
         if (isSecondary) return darkBase;
@@ -65,7 +72,7 @@ const buttonColors = (dark: string, base: string, kind: string) => {
     };
 
     return {
-        borderColor: isPrimary ? base : lightGrey,
+        borderColor: borderColor(),
         backgroundColor: isPrimary ? base : 'transparent',
         textColor: textColor(),
         hoverBackgroundColor: isPrimary ? dark : lightestGrey,
