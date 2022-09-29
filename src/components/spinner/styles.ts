@@ -5,15 +5,17 @@ export const spinnerBoxStyles = (): Styles => ({
     position: 'relative',
     width: 'full',
     overflow: 'hidden',
-    alignItems: 'center'
+    alignItems: 'center',
+    borderRadius: '3',
+    boxShadow: '1'
 });
 
 export const spinnerInnerStyles = (): Styles => ({
     width: 'full',
     sizeHeight: '3',
     backgroundColor: {
-        group: 'base',
-        shade: 'light'
+        group: 'grey',
+        shade: 'lightest'
     },
     borderWidth: 'px',
     borderStyle: 'solid',
@@ -21,12 +23,11 @@ export const spinnerInnerStyles = (): Styles => ({
         group: 'grey',
         shade: 'light'
     },
-    borderRadius: '2'
+    borderRadius: '3'
 });
 
 export const spinnerPingPongStyles = (): Styles => ({
-    content: '',
-    sizeWidth: '3',
+    sizeWidth: '6',
     sizeHeight: '3',
     backgroundColor: {
         group: 'grey',
