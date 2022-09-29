@@ -6,8 +6,8 @@ import 'jest-styled-components';
 import { ThemeProvider } from '../theme-provider';
 import { Elevated, ElevationHeight } from './index';
 
-const setup = (Tag: React.ReactElement) =>
-    render(<ThemeProvider>{Tag}</ThemeProvider>);
+const setup = (Elevated: React.ReactElement) =>
+    render(<ThemeProvider>{Elevated}</ThemeProvider>);
 
 test('it works', () => {
     const { container } = setup(<Elevated>Hello world</Elevated>);
