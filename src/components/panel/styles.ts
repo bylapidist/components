@@ -13,11 +13,9 @@ export const panelHeadingStyles = (): Styles => ({
     fontWeight: 700
 });
 
-export const panelTagStyles = (): Styles => ({});
-
 export const panelActionBarStyles = (): Styles => ({
-    flex: '1 1 auto',
-    alignItems: 'center',
+    display: 'flex',
+    alignItems: 'flex-end',
     borderTopColor: { group: 'grey', shade: 'lightest' },
     borderTopStyle: 'solid',
     borderTopWidth: '2',
@@ -25,9 +23,14 @@ export const panelActionBarStyles = (): Styles => ({
     marginTop: '3'
 });
 
-export const panelBodyStyles = (): Styles => ({});
-
 export const panelSpinnerStyles = (): Styles => ({ sizeWidth: 16 });
+
+export const panelButtonStyles = (): Styles => ({
+    display: 'flex',
+    sizeGap: '2',
+    width: 'full',
+    justifyContent: 'end'
+});
 
 export const panelLoadingStyles = ({
     loading

@@ -21,7 +21,7 @@ test('it works', () => {
 
 test('it works with size small', () => {
     const { container } = setup(
-        <Button type="button" kind="secondary" sizes="small">
+        <Button type="button" kind="secondary" variant="small">
             Hello world
         </Button>
     );
@@ -30,7 +30,7 @@ test('it works with size small', () => {
 
 test('it works with size medium', () => {
     const { container } = setup(
-        <Button type="button" kind="secondary" sizes="small">
+        <Button type="button" kind="secondary" variant="medium">
             Hello world
         </Button>
     );
@@ -39,7 +39,7 @@ test('it works with size medium', () => {
 
 test('it works with size large', () => {
     const { container } = setup(
-        <Button type="button" kind="secondary" sizes="small">
+        <Button type="button" kind="secondary" variant="large">
             Hello world
         </Button>
     );

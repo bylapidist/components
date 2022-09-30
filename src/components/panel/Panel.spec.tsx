@@ -36,6 +36,18 @@ test('it works with tag', () => {
     expect(getByText('body')).toBeTruthy();
 });
 
+test('it works with button', () => {
+    const { container, getByText, getAllByRole } = setup(
+        <Panel buttons={[{ title: 'Edit', props: { kind: 'primary' } }]}>
+            body
+        </Panel>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+    expect(getByText('Edit')).toBeTruthy();
+    expect(getByText('body')).toBeTruthy();
+    expect(getAllByRole('button').length).toBe(1);
+});
+
 test('it works loading', () => {
     const { container } = setup(<Panel loading>Hello world</Panel>);
     expect(container.firstChild).toMatchSnapshot();

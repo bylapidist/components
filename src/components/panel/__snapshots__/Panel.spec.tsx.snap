@@ -133,6 +133,169 @@ exports[`it works loading 1`] = `
 </div>
 `;
 
+exports[`it works with button 1`] = `
+.c0 {
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: white;
+}
+
+.c1 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  color: #292B3E;
+}
+
+.c2 {
+  border-top-style: solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-width: 4px;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top-color: #fafafa;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.c5 {
+  border-style: solid;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #17a3a5;
+  color: white;
+  border-color: #17a3a5;
+}
+
+.c5:hover {
+  cursor: pointer;
+  background-color: #135f61;
+  color: white;
+}
+
+.c5:hover:disabled {
+  cursor: not-allowed;
+  background-color: #135f61;
+}
+
+.c5:disabled {
+  opacity: 0.7;
+  background-color: #135f61;
+  color: white;
+}
+
+.c4 {
+  border-style: solid;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #17a3a5;
+  color: white;
+  border-color: #17a3a5;
+}
+
+.c4:hover {
+  cursor: pointer;
+  background-color: #135f61;
+  color: white;
+}
+
+.c4:hover:disabled {
+  cursor: not-allowed;
+  background-color: #135f61;
+}
+
+.c4:disabled {
+  opacity: 0.7;
+  background-color: #135f61;
+  color: white;
+}
+
+.c6 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  class="c0"
+>
+  <p
+    class="c1"
+  >
+    body
+  </p>
+  <div
+    class="c2"
+  >
+    <div
+      class="c3"
+    >
+      <button
+        class="c4 sc-bcXHqe c5"
+      >
+        <div
+          class="c6"
+        >
+          Edit
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`it works with elevation 1`] = `
 .c0 {
   border-radius: 0.3rem;
@@ -324,20 +487,27 @@ exports[`it works with tag 1`] = `
 
 .c2 {
   border-top-style: solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border-top-width: 4px;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
   margin-top: 0.75rem;
   padding-top: 0.75rem;
   border-top-color: #fafafa;
 }
 
 .c3 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c4 {
   border-style: solid;
   text-align: center;
   font-size: 0.75rem;
@@ -353,7 +523,7 @@ exports[`it works with tag 1`] = `
   border-color: #292B3E;
 }
 
-.c4 {
+.c5 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.25rem;
@@ -371,15 +541,19 @@ exports[`it works with tag 1`] = `
   <div
     class="c2"
   >
-    <span
+    <div
       class="c3"
     >
       <span
         class="c4"
       >
-        v1.0.0
+        <span
+          class="c5"
+        >
+          v1.0.0
+        </span>
       </span>
-    </span>
+    </div>
   </div>
 </div>
 `;

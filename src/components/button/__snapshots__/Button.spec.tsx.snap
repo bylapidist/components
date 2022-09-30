@@ -580,7 +580,6 @@ exports[`it works with size large 1`] = `
 
 <button
   class="c0 sc-bcXHqe c1"
-  sizes="small"
   type="button"
 >
   <div
@@ -597,15 +596,15 @@ exports[`it works with size medium 1`] = `
   text-align: center;
   display: inline-block;
   position: relative;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   background-color: transparent;
   color: #17a3a5;
   border-color: #d4d4d4;
@@ -633,7 +632,7 @@ exports[`it works with size medium 1`] = `
   text-align: center;
   display: inline-block;
   position: relative;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
@@ -642,8 +641,8 @@ exports[`it works with size medium 1`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   background-color: transparent;
   color: #17a3a5;
   border-color: #d4d4d4;
@@ -680,7 +679,6 @@ exports[`it works with size medium 1`] = `
 
 <button
   class="c0 sc-bcXHqe c1"
-  sizes="small"
   type="button"
 >
   <div
@@ -697,15 +695,15 @@ exports[`it works with size small 1`] = `
   text-align: center;
   display: inline-block;
   position: relative;
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 500;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: transparent;
   color: #17a3a5;
   border-color: #d4d4d4;
@@ -733,7 +731,7 @@ exports[`it works with size small 1`] = `
   text-align: center;
   display: inline-block;
   position: relative;
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 500;
   font-family: Montserrat,sans-serif;
   line-height: 2;
@@ -742,8 +740,8 @@ exports[`it works with size small 1`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: transparent;
   color: #17a3a5;
   border-color: #d4d4d4;
@@ -780,7 +778,6 @@ exports[`it works with size small 1`] = `
 
 <button
   class="c0 sc-bcXHqe c1"
-  sizes="small"
   type="button"
 >
   <div

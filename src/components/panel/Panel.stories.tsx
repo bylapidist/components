@@ -55,6 +55,41 @@ WithTag.args = {
     styles: templateStyles
 };
 
+export const WithButtons = DefaultTemplate.bind({});
+WithButtons.args = {
+    buttons: [
+        {
+            title: 'Primary',
+            props: {
+                kind: 'primary',
+                variant: 'medium'
+            }
+        },
+        {
+            title: 'Secondary',
+            props: {
+                kind: 'secondary',
+                variant: 'medium'
+            }
+        },
+        {
+            title: 'Tertiary',
+            props: {
+                kind: 'tertiary',
+                variant: 'medium'
+            }
+        },
+        {
+            title: 'Dangerous',
+            props: {
+                kind: 'danger',
+                variant: 'medium'
+            }
+        }
+    ],
+    styles: templateStyles
+};
+
 export const CompleteImplementation = DefaultTemplate.bind({});
 CompleteImplementation.args = {
     heading: {
@@ -70,5 +105,40 @@ CompleteImplementation.args = {
             kind: 'tertiary'
         }
     },
+    buttons: [
+        {
+            title: 'GitHub',
+            props: {
+                as: 'a',
+                kind: 'primary',
+                variant: 'small',
+                href: 'https://google.com',
+                target: '_blank',
+                rel: 'noopener'
+            }
+        },
+        {
+            title: 'npm',
+            props: {
+                as: 'a',
+                kind: 'tertiary',
+                variant: 'small',
+                href: 'https://google.com',
+                target: '_blank',
+                rel: 'noopener'
+            }
+        },
+        {
+            title: 'Docs',
+            props: {
+                as: 'a',
+                kind: 'tertiary',
+                variant: 'small',
+                href: 'https://google.com',
+                target: '_blank',
+                rel: 'noopener'
+            }
+        }
+    ],
     styles: templateStyles
 };
