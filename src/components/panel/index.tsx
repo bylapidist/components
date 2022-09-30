@@ -2,10 +2,20 @@ import * as React from 'react';
 import { withTheme } from 'styled-components';
 import { mergeStyles, Theme } from '@lapidist/styles';
 import { Elevated, ElevationHeight } from '../elevated';
-import { BoxProps } from '../box';
+import { Box, BoxProps } from '../box';
 import { Spinner } from '../spinner';
+import { Text } from '../text';
 import { Heading, HeadingProps, HeadingPropType } from '../heading';
-import { panelStyles } from './styles';
+import { Tag, TagProps, TagPropType } from '../tag';
+import {
+    panelStyles,
+    panelHeadingStyles,
+    panelTagStyles,
+    panelSpinnerStyles,
+    panelActionBarStyles,
+    panelLoadingStyles,
+    panelBodyStyles
+} from './styles';
 
 export * from './styles';
 
@@ -14,10 +24,14 @@ export type PanelPropType = BoxProps;
 export interface PanelProps {
     readonly loading?: boolean;
     readonly heading?: {
-        title: string;
-        props?: HeadingProps & HeadingPropType;
+        readonly title: string;
+        readonly props?: HeadingProps & HeadingPropType;
     };
     readonly elevation?: ElevationHeight;
+    readonly tag?: {
+        readonly title: string;
+        readonly props?: Omit<Omit<TagProps & TagPropType, 'ref'>, 'theme'>;
+    };
     readonly theme: Theme;
 }
 
@@ -27,41 +41,52 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
     loading,
     heading,
     elevation = '1',
+    tag,
     children,
     ...restProps
-}) =>
-    loading ? (
+}) => {
+    return (
         <Elevated
             as={as}
             elevation={elevation}
             styles={mergeStyles(panelStyles(), {
-                ...styles,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
+                ...panelLoadingStyles({ loading }),
+                ...styles
             })}
             {...restProps}
         >
-            <Spinner styles={{ sizeWidth: 16 }} />
-        </Elevated>
-    ) : (
-        <Elevated
-            as={as}
-            elevation={elevation}
-            styles={mergeStyles(panelStyles(), styles)}
-            {...restProps}
-        >
-            {heading?.title && (
-                <Heading
-                    styles={{ marginBottom: '4', fontWeight: 700 }}
-                    {...heading?.props}
-                >
-                    {heading.title}
-                </Heading>
+            {loading && <Spinner styles={panelSpinnerStyles()} />}
+            {!loading && (
+                <>
+                    {heading?.title && (
+                        <Heading
+                            styles={panelHeadingStyles()}
+                            {...heading?.props}
+                        >
+                            {heading.title}
+                        </Heading>
+                    )}
+                    {children && (
+                        <Text styles={panelBodyStyles()}>{children}</Text>
+                    )}
+                    {tag && (
+                        <Box styles={panelActionBarStyles()}>
+                            {tag?.title && (
+                                <Tag
+                                    styles={panelTagStyles()}
+                                    kind="primary"
+                                    {...tag?.props}
+                                >
+                                    {tag.title}
+                                </Tag>
+                            )}
+                        </Box>
+                    )}
+                </>
             )}
-            {children}
         </Elevated>
     );
+};
 
 export const Panel = withTheme(BasePanel);
 

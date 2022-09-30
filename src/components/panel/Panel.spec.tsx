@@ -25,6 +25,17 @@ test('it works with heading', () => {
     expect(container.querySelectorAll('h2').length).toBe(1);
 });
 
+test('it works with tag', () => {
+    const { container, getByText } = setup(
+        <Panel tag={{ title: 'v1.0.0', props: { kind: 'primary' } }}>
+            body
+        </Panel>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+    expect(getByText('v1.0.0')).toBeTruthy();
+    expect(getByText('body')).toBeTruthy();
+});
+
 test('it works loading', () => {
     const { container } = setup(<Panel loading>Hello world</Panel>);
     expect(container.firstChild).toMatchSnapshot();
