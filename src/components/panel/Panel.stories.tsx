@@ -90,8 +90,15 @@ WithButtons.args = {
     styles: templateStyles
 };
 
+export const WithDismissable = DefaultTemplate.bind({});
+WithDismissable.args = {
+    dismissable: true,
+    styles: templateStyles
+};
+
 export const CompleteImplementation = DefaultTemplate.bind({});
 CompleteImplementation.args = {
+    dismissable: true,
     heading: {
         title: '@lapidist/components',
         props: {
@@ -121,7 +128,7 @@ CompleteImplementation.args = {
             title: 'npm',
             props: {
                 as: 'a',
-                kind: 'tertiary',
+                kind: 'secondary',
                 variant: 'small',
                 href: 'https://google.com',
                 target: '_blank',
@@ -132,7 +139,7 @@ CompleteImplementation.args = {
             title: 'Docs',
             props: {
                 as: 'a',
-                kind: 'tertiary',
+                kind: 'secondary',
                 variant: 'small',
                 href: 'https://google.com',
                 target: '_blank',

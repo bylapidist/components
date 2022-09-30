@@ -9,7 +9,7 @@ export const panelStyles = (): Styles => ({
 });
 
 export const panelHeadingStyles = (): Styles => ({
-    marginBottom: '4',
+    marginBottom: '3',
     fontWeight: 700
 });
 
@@ -20,10 +20,22 @@ export const panelActionBarStyles = (): Styles => ({
     borderTopStyle: 'solid',
     borderTopWidth: '2',
     paddingTop: '3',
-    marginTop: '3'
+    marginTop: '2'
 });
 
 export const panelSpinnerStyles = (): Styles => ({ sizeWidth: 16 });
+
+export const panelBodyStyles = (): Styles => ({
+    maxWidth: '11/12'
+});
+
+export const panelCloseButtonStyles = (): Styles => ({
+    position: 'absolute',
+    top: '0',
+    right: '0',
+    marginTop: '6',
+    marginRight: '8'
+});
 
 export const panelButtonStyles = (): Styles => ({
     display: 'flex',

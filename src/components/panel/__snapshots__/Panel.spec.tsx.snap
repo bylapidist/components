@@ -17,6 +17,7 @@ exports[`it works 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  max-width: 91.666667%;
   color: #292B3E;
 }
 
@@ -150,6 +151,7 @@ exports[`it works with button 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  max-width: 91.666667%;
   color: #292B3E;
 }
 
@@ -164,7 +166,7 @@ exports[`it works with button 1`] = `
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   padding-top: 0.75rem;
   border-top-color: #fafafa;
 }
@@ -192,8 +194,8 @@ exports[`it works with button 1`] = `
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background-color: #17a3a5;
@@ -230,8 +232,8 @@ exports[`it works with button 1`] = `
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background-color: #17a3a5;
@@ -296,6 +298,155 @@ exports[`it works with button 1`] = `
 </div>
 `;
 
+exports[`it works with dismissable 1`] = `
+.c0 {
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: white;
+}
+
+.c1 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  color: #292B3E;
+}
+
+.c3 {
+  border-style: solid;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+  color: #73748b;
+  border-color: #fafafa;
+}
+
+.c3:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #292B3E;
+}
+
+.c3:hover:disabled {
+  cursor: not-allowed;
+  background-color: #fafafa;
+}
+
+.c3:disabled {
+  opacity: 0.7;
+  background-color: #fafafa;
+  color: #292B3E;
+}
+
+.c2 {
+  border-style: solid;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+  color: #73748b;
+  border-color: #fafafa;
+}
+
+.c2:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #292B3E;
+}
+
+.c2:hover:disabled {
+  cursor: not-allowed;
+  background-color: #fafafa;
+}
+
+.c2:disabled {
+  opacity: 0.7;
+  background-color: #fafafa;
+  color: #292B3E;
+}
+
+.c4 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  class="c0"
+>
+  <p
+    class="c1"
+  >
+    body
+  </p>
+  <button
+    class="c2 sc-bcXHqe c3"
+  >
+    <div
+      class="c4"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-xmark "
+        data-icon="xmark"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
 exports[`it works with elevation 1`] = `
 .c0 {
   border-radius: 0.3rem;
@@ -313,6 +464,7 @@ exports[`it works with elevation 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  max-width: 91.666667%;
   color: #292B3E;
 }
 
@@ -333,6 +485,7 @@ exports[`it works with elevation 2`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  max-width: 91.666667%;
   color: #292B3E;
 }
 
@@ -364,6 +517,7 @@ exports[`it works with elevation 3`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  max-width: 91.666667%;
   color: #292B3E;
 }
 
@@ -395,6 +549,7 @@ exports[`it works with elevation 4`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  max-width: 91.666667%;
   color: #292B3E;
 }
 
@@ -437,7 +592,7 @@ exports[`it works with heading 1`] = `
   font-weight: 700;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   color: #292B3E;
 }
 
@@ -446,6 +601,7 @@ exports[`it works with heading 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  max-width: 91.666667%;
   color: #292B3E;
 }
 
@@ -482,6 +638,7 @@ exports[`it works with tag 1`] = `
   font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  max-width: 91.666667%;
   color: #292B3E;
 }
 
@@ -496,7 +653,7 @@ exports[`it works with tag 1`] = `
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   padding-top: 0.75rem;
   border-top-color: #fafafa;
 }

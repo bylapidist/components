@@ -103,7 +103,7 @@ const buttonBaseStyles: Styles = {
     position: 'relative',
     borderWidth: '1',
     textAlign: 'center',
-    paddingX: '4',
+    paddingX: '3',
     borderRadius: '2',
     borderStyle: 'solid',
     fontWeight: '500'

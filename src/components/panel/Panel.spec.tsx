@@ -48,6 +48,15 @@ test('it works with button', () => {
     expect(getAllByRole('button').length).toBe(1);
 });
 
+test('it works with dismissable', () => {
+    const { container, getByText, getAllByRole } = setup(
+        <Panel dismissable>body</Panel>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+    expect(getByText('body')).toBeTruthy();
+    expect(getAllByRole('button').length).toBe(1);
+});
+
 test('it works loading', () => {
     const { container } = setup(<Panel loading>Hello world</Panel>);
     expect(container.firstChild).toMatchSnapshot();

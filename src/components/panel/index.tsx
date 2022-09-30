@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { withTheme } from 'styled-components';
 import { mergeStyles, Theme } from '@lapidist/styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClose } from '@fortawesome/free-solid-svg-icons';
 import { Elevated, ElevationHeight } from '../elevated';
 import { Box, BoxProps } from '../box';
 import { Spinner } from '../spinner';
@@ -14,6 +16,8 @@ import {
     panelSpinnerStyles,
     panelActionBarStyles,
     panelLoadingStyles,
+    panelCloseButtonStyles,
+    panelBodyStyles,
     panelButtonStyles
 } from './styles';
 
@@ -23,6 +27,7 @@ export type PanelPropType = BoxProps;
 
 export interface PanelProps {
     readonly loading?: boolean;
+    readonly dismissable?: boolean;
     readonly heading?: {
         readonly title: string;
         readonly props?: HeadingProps & HeadingPropType;
@@ -46,6 +51,7 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
     as = 'div',
     styles,
     loading,
+    dismissable,
     heading,
     elevation = '1',
     tag,
@@ -53,6 +59,12 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
     children,
     ...restProps
 }) => {
+    const [dismissed, setDismissed] = React.useState(false);
+
+    const handleDismiss = () => setDismissed(!dismissed);
+
+    if (dismissed) return null;
+
     return (
         <Elevated
             as={as}
@@ -74,7 +86,9 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
                             {heading.title}
                         </Heading>
                     )}
-                    {children && <Text>{children}</Text>}
+                    {children && (
+                        <Text styles={panelBodyStyles()}>{children}</Text>
+                    )}
                     {(tag || buttons) && (
                         <Box styles={panelActionBarStyles()}>
                             {tag?.title && (
@@ -100,6 +114,15 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
                         </Box>
                     )}
                 </>
+            )}
+            {dismissable && (
+                <Button
+                    styles={panelCloseButtonStyles()}
+                    kind="tertiary"
+                    onClick={handleDismiss}
+                >
+                    <FontAwesomeIcon icon={faClose} />
+                </Button>
             )}
         </Elevated>
     );
