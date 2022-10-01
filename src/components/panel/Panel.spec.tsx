@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
 import { ThemeProvider } from '../theme-provider';
-import { Panel } from './index';
+import { Panel, PanelStatusType } from './index';
 import { ElevationHeight } from '../elevated';
 
 const setup = (panel: React.ReactElement) =>
@@ -25,9 +25,63 @@ test('it works with heading', () => {
     expect(container.querySelectorAll('h2').length).toBe(1);
 });
 
+test('it works with tag', () => {
+    const { container, getByText } = setup(
+        <Panel tag={{ title: 'v1.0.0', props: { kind: 'primary' } }}>
+            body
+        </Panel>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+    expect(getByText('v1.0.0')).toBeTruthy();
+    expect(getByText('body')).toBeTruthy();
+});
+
+test('it works with button', () => {
+    const { container, getByText, getAllByRole } = setup(
+        <Panel buttons={[{ title: 'Edit', props: { kind: 'primary' } }]}>
+            body
+        </Panel>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+    expect(getByText('Edit')).toBeTruthy();
+    expect(getByText('body')).toBeTruthy();
+    expect(getAllByRole('button').length).toBe(1);
+});
+
+test('it works with dismissable', () => {
+    const onDismissMock = jest.fn();
+    const { container, getByText, getAllByRole } = setup(
+        <Panel dismissable onDismiss={onDismissMock}>
+            body
+        </Panel>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+    expect(getByText('body')).toBeTruthy();
+    expect(getAllByRole('button').length).toBe(1);
+    fireEvent.click(getAllByRole('button')[0]);
+    expect(onDismissMock).toHaveBeenCalledTimes(1);
+});
+
 test('it works loading', () => {
     const { container } = setup(<Panel loading>Hello world</Panel>);
     expect(container.firstChild).toMatchSnapshot();
+});
+
+test('it works with image', () => {
+    const { container, getByAltText } = setup(
+        <Panel image={{ src: '', alt: 'test' }}>Hello world</Panel>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+    expect(getByAltText('test')).toBeTruthy();
+});
+
+test('it works with status', () => {
+    const statuses: PanelStatusType[] = ['none', 'info', 'warning', 'error'];
+
+    statuses.forEach((status) => {
+        const { container } = setup(<Panel status={status}>Hello world</Panel>);
+        expect(container.firstChild).toMatchSnapshot();
+    });
 });
 
 test('it works with elevation', () => {

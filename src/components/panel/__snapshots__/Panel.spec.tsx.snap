@@ -2,30 +2,57 @@
 
 exports[`it works 1`] = `
 .c0 {
+  border-style: solid;
   border-radius: 0.3rem;
+  border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   min-height: 8rem;
+  background-color: white;
+  border-color: transparent;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  background-color: white;
+  padding-left: 1rem;
+  color: #292B3E;
 }
 
 <div
   class="c0"
 >
-  Hello world
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      Hello world
+    </p>
+  </div>
 </div>
 `;
 
 exports[`it works loading 1`] = `
 .c0 {
+  border-style: solid;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   border-radius: 0.3rem;
+  border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   min-height: 8rem;
   -webkit-box-pack: center;
@@ -36,11 +63,9 @@ exports[`it works loading 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-left: 0;
   background-color: white;
+  border-color: transparent;
 }
 
 .c1 {
@@ -121,111 +146,1139 @@ exports[`it works loading 1`] = `
 </div>
 `;
 
-exports[`it works with elevation 1`] = `
+exports[`it works with button 1`] = `
 .c0 {
+  border-style: solid;
   border-radius: 0.3rem;
+  border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   min-height: 8rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   background-color: white;
-}
-
-<div
-  class="c0"
->
-  Hello world
-</div>
-`;
-
-exports[`it works with elevation 2`] = `
-.c0 {
-  border-radius: 0.3rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
-  min-height: 8rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  background-color: white;
-}
-
-<div
-  class="c0"
->
-  Hello world
-</div>
-`;
-
-exports[`it works with elevation 3`] = `
-.c0 {
-  border-radius: 0.3rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.16),-10px 15px 15px rgba(0,0,0,0.03),10px 0px 15px rgba(0,0,0,0.03);
-  min-height: 8rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  background-color: white;
-}
-
-<div
-  class="c0"
->
-  Hello world
-</div>
-`;
-
-exports[`it works with elevation 4`] = `
-.c0 {
-  border-radius: 0.3rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.18),-15px 20px 20px rgba(0,0,0,0.04),15px -5px 20px rgba(0,0,0,0.04);
-  min-height: 8rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  background-color: white;
-}
-
-<div
-  class="c0"
->
-  Hello world
-</div>
-`;
-
-exports[`it works with heading 1`] = `
-.c0 {
-  border-radius: 0.3rem;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  min-height: 8rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  background-color: white;
+  border-color: transparent;
 }
 
 .c1 {
-  font-size: 1.875rem;
-  font-weight: 700;
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
   font-family: Montserrat,sans-serif;
-  line-height: 1.25;
-  margin-bottom: 1rem;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+.c3 {
+  border-top-style: solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-width: 4px;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-top-color: #fafafa;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.c7 {
+  border-style: solid;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #17a3a5;
+  color: white;
+  border-color: #17a3a5;
+}
+
+.c7:hover {
+  cursor: pointer;
+  background-color: #135f61;
+  color: white;
+}
+
+.c7:hover:disabled {
+  cursor: not-allowed;
+  background-color: #135f61;
+}
+
+.c7:disabled {
+  opacity: 0.7;
+  background-color: #135f61;
+  color: white;
+}
+
+.c6 {
+  border-style: solid;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #17a3a5;
+  color: white;
+  border-color: #17a3a5;
+}
+
+.c6:hover {
+  cursor: pointer;
+  background-color: #135f61;
+  color: white;
+}
+
+.c6:hover:disabled {
+  cursor: not-allowed;
+  background-color: #135f61;
+}
+
+.c6:disabled {
+  opacity: 0.7;
+  background-color: #135f61;
+  color: white;
+}
+
+.c8 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      body
+    </p>
+  </div>
+  <div
+    class="c3"
+  >
+    <div
+      class="c4"
+    />
+    <div
+      class="c5"
+    >
+      <button
+        class="c6 sc-bcXHqe c7"
+      >
+        <div
+          class="c8"
+        >
+          Edit
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`it works with dismissable 1`] = `
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  background-color: white;
+  border-color: transparent;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+.c4 {
+  border-style: solid;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+  color: #73748b;
+  border-color: #fafafa;
+}
+
+.c4:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #292B3E;
+}
+
+.c4:hover:disabled {
+  cursor: not-allowed;
+  background-color: #fafafa;
+}
+
+.c4:disabled {
+  opacity: 0.7;
+  background-color: #fafafa;
+  color: #292B3E;
+}
+
+.c3 {
+  border-style: solid;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+  color: #73748b;
+  border-color: #fafafa;
+}
+
+.c3:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #292B3E;
+}
+
+.c3:hover:disabled {
+  cursor: not-allowed;
+  background-color: #fafafa;
+}
+
+.c3:disabled {
+  opacity: 0.7;
+  background-color: #fafafa;
+  color: #292B3E;
+}
+
+.c5 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      body
+    </p>
+  </div>
+  <button
+    class="c3 sc-bcXHqe c4"
+  >
+    <div
+      class="c5"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-xmark "
+        data-icon="xmark"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`it works with elevation 1`] = `
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  background-color: white;
+  border-color: transparent;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   color: #292B3E;
 }
 
 <div
   class="c0"
 >
-  <h2
+  <div
     class="c1"
   >
-    heading
-  </h2>
-  body
+    <p
+      class="c2"
+    >
+      Hello world
+    </p>
+  </div>
+</div>
+`;
+
+exports[`it works with elevation 2`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
+  min-height: 8rem;
+  background-color: white;
+  border-color: transparent;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      Hello world
+    </p>
+  </div>
+</div>
+`;
+
+exports[`it works with elevation 3`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.16),-10px 15px 15px rgba(0,0,0,0.03),10px 0px 15px rgba(0,0,0,0.03);
+  min-height: 8rem;
+  background-color: white;
+  border-color: transparent;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      Hello world
+    </p>
+  </div>
+</div>
+`;
+
+exports[`it works with elevation 4`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.18),-15px 20px 20px rgba(0,0,0,0.04),15px -5px 20px rgba(0,0,0,0.04);
+  min-height: 8rem;
+  background-color: white;
+  border-color: transparent;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      Hello world
+    </p>
+  </div>
+</div>
+`;
+
+exports[`it works with heading 1`] = `
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  background-color: white;
+  border-color: transparent;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.25;
+  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <h2
+      class="c2"
+    >
+      heading
+    </h2>
+    <p
+      class="c3"
+    >
+      body
+    </p>
+  </div>
+</div>
+`;
+
+exports[`it works with image 1`] = `
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  background-color: white;
+  border-color: transparent;
+}
+
+.c1 {
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-bottom-color: #fafafa;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+<div
+  class="c0"
+>
+  <img
+    alt="test"
+    class="c1"
+    src=""
+  />
+  <div
+    class="c2"
+  >
+    <p
+      class="c3"
+    >
+      Hello world
+    </p>
+  </div>
+</div>
+`;
+
+exports[`it works with status 1`] = `
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  background-color: white;
+  border-color: transparent;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      Hello world
+    </p>
+  </div>
+</div>
+`;
+
+exports[`it works with status 2`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  background-color: white;
+  border-color: #73748b;
+}
+
+.c3 {
+  border-top-style: solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-width: 4px;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-top-color: #fafafa;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 0;
+  border-radius: 9999px;
+  margin-right: 1rem;
+  background-color: white;
+  color: #73748b;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      Hello world
+    </p>
+  </div>
+  <div
+    class="c3"
+  >
+    <div
+      class="c4"
+    >
+      <p
+        class="c5"
+      >
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-circle-info "
+          data-icon="circle-info"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
+            fill="currentColor"
+          />
+        </svg>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`it works with status 3`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+.c3 {
+  border-top-style: solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-width: 4px;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-top-color: #fafafa;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  background-color: white;
+  border-color: #ebc764;
+}
+
+.c5 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 0;
+  border-radius: 9999px;
+  margin-right: 1rem;
+  background-color: white;
+  color: #ebc764;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      Hello world
+    </p>
+  </div>
+  <div
+    class="c3"
+  >
+    <div
+      class="c4"
+    >
+      <p
+        class="c5"
+      >
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-circle-exclamation "
+          data-icon="circle-exclamation"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM232 152C232 138.8 242.8 128 256 128s24 10.75 24 24v128c0 13.25-10.75 24-24 24S232 293.3 232 280V152zM256 400c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 385.9 273.4 400 256 400z"
+            fill="currentColor"
+          />
+        </svg>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`it works with status 4`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+.c3 {
+  border-top-style: solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-width: 4px;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-top-color: #fafafa;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  background-color: white;
+  border-color: #b41e25;
+}
+
+.c5 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 0;
+  border-radius: 9999px;
+  margin-right: 1rem;
+  background-color: white;
+  color: #b41e25;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      Hello world
+    </p>
+  </div>
+  <div
+    class="c3"
+  >
+    <div
+      class="c4"
+    >
+      <p
+        class="c5"
+      >
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-circle-exclamation "
+          data-icon="circle-exclamation"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM232 152C232 138.8 242.8 128 256 128s24 10.75 24 24v128c0 13.25-10.75 24-24 24S232 293.3 232 280V152zM256 400c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 385.9 273.4 400 256 400z"
+            fill="currentColor"
+          />
+        </svg>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`it works with tag 1`] = `
+.c0 {
+  border-style: solid;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  background-color: white;
+  border-color: transparent;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+.c3 {
+  border-top-style: solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-width: 4px;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-top-color: #fafafa;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c6 {
+  border-style: solid;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  border-radius: 0.6rem;
+  border-width: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #135f61;
+  color: white;
+  border-color: #292B3E;
+}
+
+.c7 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      body
+    </p>
+  </div>
+  <div
+    class="c3"
+  >
+    <div
+      class="c4"
+    >
+      <div
+        class="c5"
+      >
+        <span
+          class="c6"
+        >
+          <span
+            class="c7"
+          >
+            v1.0.0
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
 `;

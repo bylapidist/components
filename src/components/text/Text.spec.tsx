@@ -8,7 +8,7 @@ import { ThemeProvider } from '../theme-provider';
 
 const setup = (
     props?: TextPropType,
-    children: React.ReactElement = <p>Hello world!</p>
+    children: React.ReactElement = <>Hello world!</>
 ) =>
     render(
         <ThemeProvider>
