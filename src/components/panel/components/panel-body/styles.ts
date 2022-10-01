@@ -12,7 +12,8 @@ export const panelImageStyles = (): Styles => ({
     borderBottomColor: { group: 'grey', shade: 'lightest' },
     borderBottomStyle: 'solid',
     borderBottomWidth: '2',
-    marginBottom: '2'
+    marginBottom: '2',
+    width: 'full'
 });
 
 export const panelHeadingStyles = ({

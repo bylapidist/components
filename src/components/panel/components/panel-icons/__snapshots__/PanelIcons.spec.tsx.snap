@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`it works with status 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`it works with status 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 0;
+  border-radius: 9999px;
+  margin-right: 1rem;
+  background-color: white;
+  color: #73748b;
+}
+
+<div
+  class="c0"
+>
+  <p
+    class="c1"
+  >
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-info "
+      data-icon="circle-info"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
+        fill="currentColor"
+      />
+    </svg>
+  </p>
+</div>
+`;
+
+exports[`it works with status 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 0;
+  border-radius: 9999px;
+  margin-right: 1rem;
+  background-color: white;
+  color: #ebc764;
+}
+
+<div
+  class="c0"
+>
+  <p
+    class="c1"
+  >
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-exclamation "
+      data-icon="circle-exclamation"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM232 152C232 138.8 242.8 128 256 128s24 10.75 24 24v128c0 13.25-10.75 24-24 24S232 293.3 232 280V152zM256 400c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 385.9 273.4 400 256 400z"
+        fill="currentColor"
+      />
+    </svg>
+  </p>
+</div>
+`;
+
+exports[`it works with status 4`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 0;
+  border-radius: 9999px;
+  margin-right: 1rem;
+  background-color: white;
+  color: #b41e25;
+}
+
+<div
+  class="c0"
+>
+  <p
+    class="c1"
+  >
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-exclamation "
+      data-icon="circle-exclamation"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM232 152C232 138.8 242.8 128 256 128s24 10.75 24 24v128c0 13.25-10.75 24-24 24S232 293.3 232 280V152zM256 400c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 385.9 273.4 400 256 400z"
+        fill="currentColor"
+      />
+    </svg>
+  </p>
+</div>
+`;
+
+exports[`it works with tag 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c2 {
+  border-style: solid;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  border-radius: 0.6rem;
+  border-width: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #135f61;
+  color: white;
+  border-color: #292B3E;
+}
+
+.c3 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <span
+      class="c2"
+    >
+      <span
+        class="c3"
+      >
+        v1.0.0
+      </span>
+    </span>
+  </div>
+</div>
+`;

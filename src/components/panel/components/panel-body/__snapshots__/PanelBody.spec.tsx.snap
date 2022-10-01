@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+<div
+  class="c0"
+>
+  <p
+    class="c1"
+  >
+    body
+  </p>
+</div>
+`;
+
+exports[`it works with heading 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.25;
+  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  max-width: 91.666667%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #292B3E;
+}
+
+<div
+  class="c0"
+>
+  <h2
+    class="c1"
+  >
+    heading
+  </h2>
+  <p
+    class="c2"
+  >
+    body
+  </p>
+</div>
+`;
+
+exports[`it works with image 1`] = `
+.c0 {
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-bottom-color: #fafafa;
+}
+
+<img
+  alt="test"
+  class="c0"
+  src=""
+/>
+`;

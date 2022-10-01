@@ -748,6 +748,7 @@ exports[`it works with image 1`] = `
 .c1 {
   border-bottom-style: solid;
   border-bottom-width: 4px;
+  width: 100%;
   margin-bottom: 0.5rem;
   border-bottom-color: #fafafa;
 }

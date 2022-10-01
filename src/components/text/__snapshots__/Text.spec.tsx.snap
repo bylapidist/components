@@ -12,9 +12,7 @@ exports[`it works with defaults 1`] = `
 <p
   class="c0"
 >
-  <p>
-    Hello world!
-  </p>
+  Hello world!
 </p>
 `;
 
@@ -31,8 +29,6 @@ exports[`it works with styles 1`] = `
 <p
   class="c0"
 >
-  <p>
-    Hello world!
-  </p>
+  Hello world!
 </p>
 `;
