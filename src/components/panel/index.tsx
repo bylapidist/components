@@ -40,6 +40,7 @@ export type PanelStatusType = 'none' | 'info' | 'warning' | 'error' | 'success';
 export interface PanelProps {
     readonly loading?: boolean;
     readonly dismissable?: boolean;
+    readonly onDismiss?: () => void;
     readonly status?: PanelStatusType;
     readonly heading?: {
         readonly title: string;
@@ -66,6 +67,7 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
     styles,
     loading,
     dismissable,
+    onDismiss,
     status,
     heading,
     elevation = '1',
@@ -77,7 +79,10 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
 }) => {
     const [dismissed, setDismissed] = React.useState(false);
 
-    const handleDismiss = () => setDismissed(!dismissed);
+    const handleDismiss = () => {
+        setDismissed(!dismissed);
+        onDismiss && onDismiss();
+    };
 
     const getIcon = (variant?: PanelStatusType): IconProp => {
         switch (variant) {

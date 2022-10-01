@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
@@ -49,12 +49,17 @@ test('it works with button', () => {
 });
 
 test('it works with dismissable', () => {
+    const onDismissMock = jest.fn();
     const { container, getByText, getAllByRole } = setup(
-        <Panel dismissable>body</Panel>
+        <Panel dismissable onDismiss={onDismissMock}>
+            body
+        </Panel>
     );
     expect(container.firstChild).toMatchSnapshot();
     expect(getByText('body')).toBeTruthy();
     expect(getAllByRole('button').length).toBe(1);
+    fireEvent.click(getAllByRole('button')[0]);
+    expect(onDismissMock).toHaveBeenCalledTimes(1);
 });
 
 test('it works loading', () => {
