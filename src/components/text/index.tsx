@@ -8,7 +8,7 @@ export * from './styles';
 export type TextPropType = BoxProps;
 
 export const Text: React.FC<TextPropType> = ({
-    as = 'p',
+    as = 'div',
     styles,
     ...restProps
 }) => <Box as={as} styles={mergeStyles(textStyles(), styles)} {...restProps} />;

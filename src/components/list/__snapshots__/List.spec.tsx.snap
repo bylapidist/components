@@ -14,7 +14,7 @@ exports[`it works with elements 1`] = `
   list-style-position: inside;
 }
 
-<p
+<div
   class="c0"
 >
   <ul
@@ -35,7 +35,7 @@ exports[`it works with elements 1`] = `
       </p>
     </li>
   </ul>
-</p>
+</div>
 `;
 
 exports[`it works with ordered 1`] = `
@@ -52,7 +52,7 @@ exports[`it works with ordered 1`] = `
   list-style-position: inside;
 }
 
-<p
+<div
   class="c0"
 >
   <ol
@@ -69,7 +69,7 @@ exports[`it works with ordered 1`] = `
       world
     </li>
   </ol>
-</p>
+</div>
 `;
 
 exports[`it works with strings 1`] = `
@@ -86,7 +86,7 @@ exports[`it works with strings 1`] = `
   list-style-position: inside;
 }
 
-<p
+<div
   class="c0"
 >
   <ul
@@ -103,7 +103,7 @@ exports[`it works with strings 1`] = `
       world
     </li>
   </ul>
-</p>
+</div>
 `;
 
 exports[`it works with unordered 1`] = `
@@ -120,7 +120,7 @@ exports[`it works with unordered 1`] = `
   list-style-position: inside;
 }
 
-<p
+<div
   class="c0"
 >
   <ul
@@ -137,5 +137,5 @@ exports[`it works with unordered 1`] = `
       world
     </li>
   </ul>
-</p>
+</div>
 `;

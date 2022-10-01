@@ -21,6 +21,7 @@ export const panelStyles = ({ status }: PanelProps): Styles => {
     };
 
     return {
+        position: 'relative',
         borderStyle: 'solid',
         borderWidth: '1',
         borderRadius: '2',
@@ -36,8 +37,8 @@ export const panelCloseButtonStyles = (): Styles => ({
     position: 'absolute',
     top: '0',
     right: '0',
-    marginTop: '6',
-    marginRight: '6'
+    marginTop: '2',
+    marginRight: '2'
 });
 
 export const panelLoadingStyles = ({ loading }: PanelProps): Styles =>

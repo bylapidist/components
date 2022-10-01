@@ -22,11 +22,11 @@ exports[`it works 1`] = `
 <div
   class="c0"
 >
-  <p
+  <div
     class="c1"
   >
     body
-  </p>
+  </div>
 </div>
 `;
 
@@ -69,11 +69,11 @@ exports[`it works with heading 1`] = `
   >
     heading
   </h2>
-  <p
+  <div
     class="c2"
   >
     body
-  </p>
+  </div>
 </div>
 `;
 

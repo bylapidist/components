@@ -3,6 +3,7 @@
 exports[`it works 1`] = `
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -35,11 +36,11 @@ exports[`it works 1`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       Hello world
-    </p>
+    </div>
   </div>
 </div>
 `;
@@ -51,6 +52,7 @@ exports[`it works loading 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -149,6 +151,7 @@ exports[`it works loading 1`] = `
 exports[`it works with button 1`] = `
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -307,11 +310,11 @@ exports[`it works with button 1`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       body
-    </p>
+    </div>
   </div>
   <div
     class="c3"
@@ -339,6 +342,7 @@ exports[`it works with button 1`] = `
 exports[`it works with dismissable 1`] = `
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -377,8 +381,8 @@ exports[`it works with dismissable 1`] = `
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  margin-top: 1.5rem;
-  margin-right: 1.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.5rem;
@@ -419,8 +423,8 @@ exports[`it works with dismissable 1`] = `
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  margin-top: 1.5rem;
-  margin-right: 1.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.5rem;
@@ -465,11 +469,11 @@ exports[`it works with dismissable 1`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       body
-    </p>
+    </div>
   </div>
   <button
     class="c3 sc-bcXHqe c4"
@@ -500,6 +504,7 @@ exports[`it works with dismissable 1`] = `
 exports[`it works with elevation 1`] = `
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -532,11 +537,11 @@ exports[`it works with elevation 1`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       Hello world
-    </p>
+    </div>
   </div>
 </div>
 `;
@@ -562,6 +567,7 @@ exports[`it works with elevation 2`] = `
 
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
@@ -576,11 +582,11 @@ exports[`it works with elevation 2`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       Hello world
-    </p>
+    </div>
   </div>
 </div>
 `;
@@ -606,6 +612,7 @@ exports[`it works with elevation 3`] = `
 
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.16),-10px 15px 15px rgba(0,0,0,0.03),10px 0px 15px rgba(0,0,0,0.03);
@@ -620,11 +627,11 @@ exports[`it works with elevation 3`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       Hello world
-    </p>
+    </div>
   </div>
 </div>
 `;
@@ -650,6 +657,7 @@ exports[`it works with elevation 4`] = `
 
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.18),-15px 20px 20px rgba(0,0,0,0.04),15px -5px 20px rgba(0,0,0,0.04);
@@ -664,11 +672,11 @@ exports[`it works with elevation 4`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       Hello world
-    </p>
+    </div>
   </div>
 </div>
 `;
@@ -676,6 +684,7 @@ exports[`it works with elevation 4`] = `
 exports[`it works with heading 1`] = `
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -725,11 +734,11 @@ exports[`it works with heading 1`] = `
     >
       heading
     </h2>
-    <p
+    <div
       class="c3"
     >
       body
-    </p>
+    </div>
   </div>
 </div>
 `;
@@ -737,6 +746,7 @@ exports[`it works with heading 1`] = `
 exports[`it works with image 1`] = `
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -782,11 +792,11 @@ exports[`it works with image 1`] = `
   <div
     class="c2"
   >
-    <p
+    <div
       class="c3"
     >
       Hello world
-    </p>
+    </div>
   </div>
 </div>
 `;
@@ -794,6 +804,7 @@ exports[`it works with image 1`] = `
 exports[`it works with status 1`] = `
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -826,11 +837,11 @@ exports[`it works with status 1`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       Hello world
-    </p>
+    </div>
   </div>
 </div>
 `;
@@ -856,6 +867,7 @@ exports[`it works with status 2`] = `
 
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -908,11 +920,11 @@ exports[`it works with status 2`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       Hello world
-    </p>
+    </div>
   </div>
   <div
     class="c3"
@@ -920,7 +932,7 @@ exports[`it works with status 2`] = `
     <div
       class="c4"
     >
-      <p
+      <div
         class="c5"
       >
         <svg
@@ -938,7 +950,7 @@ exports[`it works with status 2`] = `
             fill="currentColor"
           />
         </svg>
-      </p>
+      </div>
     </div>
   </div>
 </div>
@@ -992,6 +1004,7 @@ exports[`it works with status 3`] = `
 
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -1017,11 +1030,11 @@ exports[`it works with status 3`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       Hello world
-    </p>
+    </div>
   </div>
   <div
     class="c3"
@@ -1029,7 +1042,7 @@ exports[`it works with status 3`] = `
     <div
       class="c4"
     >
-      <p
+      <div
         class="c5"
       >
         <svg
@@ -1047,7 +1060,7 @@ exports[`it works with status 3`] = `
             fill="currentColor"
           />
         </svg>
-      </p>
+      </div>
     </div>
   </div>
 </div>
@@ -1101,6 +1114,7 @@ exports[`it works with status 4`] = `
 
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -1126,11 +1140,11 @@ exports[`it works with status 4`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       Hello world
-    </p>
+    </div>
   </div>
   <div
     class="c3"
@@ -1138,7 +1152,7 @@ exports[`it works with status 4`] = `
     <div
       class="c4"
     >
-      <p
+      <div
         class="c5"
       >
         <svg
@@ -1156,7 +1170,7 @@ exports[`it works with status 4`] = `
             fill="currentColor"
           />
         </svg>
-      </p>
+      </div>
     </div>
   </div>
 </div>
@@ -1165,6 +1179,7 @@ exports[`it works with status 4`] = `
 exports[`it works with tag 1`] = `
 .c0 {
   border-style: solid;
+  position: relative;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -1253,11 +1268,11 @@ exports[`it works with tag 1`] = `
   <div
     class="c1"
   >
-    <p
+    <div
       class="c2"
     >
       body
-    </p>
+    </div>
   </div>
   <div
     class="c3"

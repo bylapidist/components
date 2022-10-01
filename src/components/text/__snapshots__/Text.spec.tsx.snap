@@ -9,11 +9,11 @@ exports[`it works with defaults 1`] = `
   color: #292B3E;
 }
 
-<p
+<div
   class="c0"
 >
   Hello world!
-</p>
+</div>
 `;
 
 exports[`it works with styles 1`] = `
@@ -26,9 +26,9 @@ exports[`it works with styles 1`] = `
   color: #292B3E;
 }
 
-<p
+<div
   class="c0"
 >
   Hello world!
-</p>
+</div>
 `;
