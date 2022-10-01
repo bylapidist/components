@@ -114,7 +114,7 @@ exports[`it works with anchor 1`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }
@@ -152,7 +152,7 @@ exports[`it works with anchor 1`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }
@@ -214,7 +214,7 @@ exports[`it works with icon 1`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }
@@ -252,7 +252,7 @@ exports[`it works with icon 1`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }
@@ -329,7 +329,7 @@ exports[`it works with loading 1`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }
@@ -367,7 +367,7 @@ exports[`it works with loading 1`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }
@@ -506,7 +506,7 @@ exports[`it works with size large 1`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }
@@ -544,7 +544,7 @@ exports[`it works with size large 1`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }
@@ -605,7 +605,7 @@ exports[`it works with size medium 1`] = `
   padding-right: 0.75rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }
@@ -643,7 +643,7 @@ exports[`it works with size medium 1`] = `
   padding-right: 0.75rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }
@@ -704,7 +704,7 @@ exports[`it works with size small 1`] = `
   padding-right: 0.75rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }
@@ -742,7 +742,7 @@ exports[`it works with size small 1`] = `
   padding-right: 0.75rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
 }

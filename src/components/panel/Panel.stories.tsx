@@ -96,9 +96,66 @@ WithDismissable.args = {
     styles: templateStyles
 };
 
+export const WithStatus = DefaultTemplate.bind({});
+WithStatus.args = {
+    dismissable: true,
+    status: 'error',
+    styles: templateStyles
+};
+
+export const Website = DefaultTemplate.bind({});
+Website.args = {
+    heading: {
+        title: '@lapidist/components',
+        props: {
+            as: 'h2',
+            size: '4'
+        }
+    },
+    tag: {
+        title: 'v1.0.0'
+    },
+    buttons: [
+        {
+            title: 'GitHub',
+            props: {
+                as: 'a',
+                kind: 'primary',
+                variant: 'small',
+                href: 'https://google.com',
+                target: '_blank',
+                rel: 'noopener'
+            }
+        },
+        {
+            title: 'npm',
+            props: {
+                as: 'a',
+                kind: 'secondary',
+                variant: 'small',
+                href: 'https://google.com',
+                target: '_blank',
+                rel: 'noopener'
+            }
+        },
+        {
+            title: 'Docs',
+            props: {
+                as: 'a',
+                kind: 'secondary',
+                variant: 'small',
+                href: 'https://google.com',
+                target: '_blank',
+                rel: 'noopener'
+            }
+        }
+    ]
+};
+
 export const CompleteImplementation = DefaultTemplate.bind({});
 CompleteImplementation.args = {
     dismissable: true,
+    status: 'success',
     heading: {
         title: '@lapidist/components',
         props: {
@@ -147,5 +204,9 @@ CompleteImplementation.args = {
             }
         }
     ],
+    image: {
+        src: 'https://placekitten.com/800/450',
+        alt: 'A pretty cat'
+    },
     styles: templateStyles
 };

@@ -73,7 +73,7 @@ const buttonColors = (dark: string, base: string, kind: string) => {
 
     return {
         borderColor: borderColor(),
-        backgroundColor: isPrimary ? base : 'transparent',
+        backgroundColor: isPrimary ? base : lightBase,
         textColor: textColor(),
         hoverBackgroundColor: isPrimary ? dark : lightestGrey,
         hoverTextColor: hoverTextColor(),

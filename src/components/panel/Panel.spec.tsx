@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
 import { ThemeProvider } from '../theme-provider';
-import { Panel } from './index';
+import { Panel, PanelStatusType } from './index';
 import { ElevationHeight } from '../elevated';
 
 const setup = (panel: React.ReactElement) =>
@@ -60,6 +60,23 @@ test('it works with dismissable', () => {
 test('it works loading', () => {
     const { container } = setup(<Panel loading>Hello world</Panel>);
     expect(container.firstChild).toMatchSnapshot();
+});
+
+test('it works with image', () => {
+    const { container, getByAltText } = setup(
+        <Panel image={{ src: '', alt: 'test' }}>Hello world</Panel>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+    expect(getByAltText('test')).toBeTruthy();
+});
+
+test('it works with status', () => {
+    const statuses: PanelStatusType[] = ['none', 'info', 'warning', 'error'];
+
+    statuses.forEach((status) => {
+        const { container } = setup(<Panel status={status}>Hello world</Panel>);
+        expect(container.firstChild).toMatchSnapshot();
+    });
 });
 
 test('it works with elevation', () => {

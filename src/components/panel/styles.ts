@@ -1,15 +1,47 @@
 import { Styles } from '@lapidist/styles';
+import { PanelProps } from './index';
 
-export const panelStyles = (): Styles => ({
-    borderRadius: '2',
-    paddingX: '4',
-    paddingY: '3',
-    sizeMinHeight: '32',
-    backgroundColor: { shade: 'light', group: 'base' }
+export const panelStyles = ({ status }: PanelProps): Styles => {
+    const variantStyles = {
+        none: {
+            borderColor: { shade: 'transparent', group: 'base' }
+        },
+        info: {
+            borderColor: { shade: 'base', group: 'grey' }
+        },
+        warning: {
+            borderColor: { shade: 'base', group: 'secondary' }
+        },
+        error: {
+            borderColor: { shade: 'base', group: 'danger' }
+        },
+        success: {
+            borderColor: { shade: 'base', group: 'tertiary' }
+        }
+    };
+
+    return {
+        borderStyle: 'solid',
+        borderWidth: '1',
+        borderRadius: '2',
+        sizeMinHeight: '32',
+        backgroundColor: { shade: 'light', group: 'base' },
+        ...variantStyles[status || 'none']
+    };
+};
+
+export const panelImageStyles = (): Styles => ({
+    borderBottomColor: { group: 'grey', shade: 'lightest' },
+    borderBottomStyle: 'solid',
+    borderBottomWidth: '2',
+    marginBottom: '2'
 });
 
-export const panelHeadingStyles = (): Styles => ({
-    marginBottom: '3',
+export const panelHeadingStyles = ({ image }: PanelProps): Styles => ({
+    padding: '4',
+    paddingTop: image ? '2' : '4',
+    paddingLeft: '4',
+    paddingBottom: '0',
     fontWeight: 700
 });
 
@@ -19,14 +51,17 @@ export const panelActionBarStyles = (): Styles => ({
     borderTopColor: { group: 'grey', shade: 'lightest' },
     borderTopStyle: 'solid',
     borderTopWidth: '2',
-    paddingTop: '3',
+    padding: '4',
     marginTop: '2'
 });
 
 export const panelSpinnerStyles = (): Styles => ({ sizeWidth: 16 });
 
 export const panelBodyStyles = (): Styles => ({
-    maxWidth: '11/12'
+    paddingX: '4',
+    paddingLeft: '4',
+    maxWidth: '11/12',
+    marginY: '2'
 });
 
 export const panelCloseButtonStyles = (): Styles => ({
@@ -34,7 +69,7 @@ export const panelCloseButtonStyles = (): Styles => ({
     top: '0',
     right: '0',
     marginTop: '6',
-    marginRight: '8'
+    marginRight: '6'
 });
 
 export const panelButtonStyles = (): Styles => ({
@@ -44,15 +79,47 @@ export const panelButtonStyles = (): Styles => ({
     justifyContent: 'end'
 });
 
-export const panelLoadingStyles = ({
-    loading
-}: {
-    loading?: boolean;
-}): Styles =>
+export const panelLoadingStyles = ({ loading }: PanelProps): Styles =>
     loading
         ? {
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
+              justifyContent: 'center',
+              paddingLeft: '0'
           }
         : {};
+
+export const panelMessageStyles = () => ({
+    display: 'flex',
+    alignItems: 'center',
+    fontSize: '2'
+});
+
+export const panelIconStyles = ({ status }: PanelProps) => {
+    const variantStyles = {
+        none: {
+            textColor: { shade: 'base', group: 'grey' }
+        },
+        info: {
+            textColor: { shade: 'base', group: 'grey' }
+        },
+        warning: {
+            textColor: { shade: 'base', group: 'secondary' }
+        },
+        error: {
+            textColor: { shade: 'base', group: 'danger' }
+        },
+        success: {
+            textColor: { shade: 'base', group: 'tertiary' }
+        }
+    };
+
+    return {
+        marginRight: '4',
+        fontSize: '7',
+        borderRadius: 'rounded',
+        lineHeight: '0',
+        backgroundColor: { group: 'base', shade: 'light' },
+        ...variantStyles[status || 'none']
+    };
+};

@@ -149,7 +149,7 @@ exports[`it works 2`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
   border-top-color: transparent;
@@ -191,7 +191,7 @@ exports[`it works 2`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
   border-top-color: transparent;
@@ -271,7 +271,7 @@ exports[`it works 3`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #73748b;
   border-color: #fafafa;
   border-top-color: transparent;
@@ -313,7 +313,7 @@ exports[`it works 3`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #73748b;
   border-color: #fafafa;
   border-top-color: transparent;
@@ -393,7 +393,7 @@ exports[`it works 4`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #b41e25;
   border-color: #810000;
   border-top-color: transparent;
@@ -435,7 +435,7 @@ exports[`it works 4`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #b41e25;
   border-color: #810000;
   border-top-color: transparent;
@@ -637,7 +637,7 @@ exports[`it works with checked 2`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
   border-top-color: #73748b;
@@ -679,7 +679,7 @@ exports[`it works with checked 2`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #17a3a5;
   border-color: #d4d4d4;
   border-top-color: #73748b;
@@ -759,7 +759,7 @@ exports[`it works with checked 3`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #73748b;
   border-color: #fafafa;
   border-top-color: #73748b;
@@ -801,7 +801,7 @@ exports[`it works with checked 3`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #73748b;
   border-color: #fafafa;
   border-top-color: #73748b;
@@ -881,7 +881,7 @@ exports[`it works with checked 4`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #b41e25;
   border-color: #810000;
   border-top-color: #73748b;
@@ -923,7 +923,7 @@ exports[`it works with checked 4`] = `
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: white;
   color: #b41e25;
   border-color: #810000;
   border-top-color: #73748b;
