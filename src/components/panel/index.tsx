@@ -2,34 +2,22 @@ import * as React from 'react';
 import { withTheme } from 'styled-components';
 import { mergeStyles, Theme } from '@lapidist/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faClose,
-    faCircleInfo,
-    faCircleExclamation,
-    faCircleCheck,
-    faComment
-} from '@fortawesome/free-solid-svg-icons';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { faClose } from '@fortawesome/free-solid-svg-icons';
 import { Elevated, ElevationHeight } from '../elevated';
-import { Box, BoxProps } from '../box';
+import { BoxProps } from '../box';
 import { Spinner } from '../spinner';
-import { Text } from '../text';
-import { Heading, HeadingProps, HeadingPropType } from '../heading';
-import { Tag, TagProps, TagPropType } from '../tag';
+import { HeadingProps, HeadingPropType } from '../heading';
+import { TagProps, TagPropType } from '../tag';
 import { Button, ButtonProps, ButtonPropType } from '../button';
 import {
     panelStyles,
-    panelHeadingStyles,
     panelSpinnerStyles,
-    panelActionBarStyles,
     panelLoadingStyles,
-    panelCloseButtonStyles,
-    panelImageStyles,
-    panelBodyStyles,
-    panelButtonStyles,
-    panelIconStyles
+    panelCloseButtonStyles
 } from './styles';
-import { Image, ImagePropType } from '../image';
+import { ImagePropType } from '../image';
+import { PanelActions } from './components/panel-actions';
+import { PanelBody } from './components/panel-body';
 
 export * from './styles';
 
@@ -37,27 +25,30 @@ export type PanelPropType = BoxProps;
 
 export type PanelStatusType = 'none' | 'info' | 'warning' | 'error' | 'success';
 
+export type PanelHeadingProp = {
+    readonly title: string;
+    readonly props?: Omit<HeadingProps & HeadingPropType, 'ref' | 'theme'>;
+};
+
+export type PanelTagProp = {
+    readonly title: string;
+    readonly props?: Omit<TagProps & TagPropType, 'ref' | 'theme'>;
+};
+
+export type PanelButtonProp = {
+    readonly title: string;
+    readonly props?: Omit<ButtonProps & ButtonPropType, 'ref' | 'theme'>;
+};
+
 export interface PanelProps {
     readonly loading?: boolean;
     readonly dismissable?: boolean;
     readonly onDismiss?: () => void;
     readonly status?: PanelStatusType;
-    readonly heading?: {
-        readonly title: string;
-        readonly props?: HeadingProps & HeadingPropType;
-    };
+    readonly heading?: PanelHeadingProp;
     readonly elevation?: ElevationHeight;
-    readonly tag?: {
-        readonly title: string;
-        readonly props?: Omit<Omit<TagProps & TagPropType, 'ref'>, 'theme'>;
-    };
-    readonly buttons?: {
-        readonly title?: string;
-        readonly props?: Omit<
-            Omit<ButtonProps & ButtonPropType, 'ref'>,
-            'theme'
-        >;
-    }[];
+    readonly tag?: PanelTagProp;
+    readonly buttons?: PanelButtonProp[];
     readonly image?: ImagePropType;
     readonly theme: Theme;
 }
@@ -84,21 +75,6 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
         onDismiss && onDismiss();
     };
 
-    const getIcon = (variant?: PanelStatusType): IconProp => {
-        switch (variant) {
-            case 'warning':
-            case 'error':
-                return faCircleExclamation;
-            case 'success':
-                return faCircleCheck;
-            case 'info':
-                return faCircleInfo;
-            case 'none':
-            default:
-                return faComment;
-        }
-    };
-
     if (dismissed) return null;
 
     return (
@@ -111,71 +87,14 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
             })}
             {...restProps}
         >
-            {loading && <Spinner styles={panelSpinnerStyles()} />}
-            {!loading && (
+            {loading ? (
+                <Spinner styles={panelSpinnerStyles()} />
+            ) : (
                 <>
-                    {image && <Image styles={panelImageStyles()} {...image} />}
-
-                    <Box styles={{ position: 'relative' }}>
-                        {heading?.title && (
-                            <Heading
-                                styles={panelHeadingStyles({
-                                    status,
-                                    image,
-                                    ...restProps
-                                })}
-                                {...heading?.props}
-                            >
-                                {heading.title}
-                            </Heading>
-                        )}
-                        {children && (
-                            <Text styles={panelBodyStyles()}>{children}</Text>
-                        )}
-                    </Box>
-                    {(tag || buttons || (status && status !== 'none')) && (
-                        <Box styles={panelActionBarStyles()}>
-                            <Box
-                                styles={{
-                                    display: 'flex',
-                                    alignItems: 'center'
-                                }}
-                            >
-                                {status && status !== 'none' && (
-                                    <Text
-                                        styles={panelIconStyles({
-                                            status,
-                                            ...restProps
-                                        })}
-                                    >
-                                        <FontAwesomeIcon
-                                            icon={getIcon(status)}
-                                        />
-                                    </Text>
-                                )}
-                                {tag?.title && (
-                                    <Box styles={{ flex: '1 1 auto' }}>
-                                        <Tag kind="primary" {...tag?.props}>
-                                            {tag.title}
-                                        </Tag>
-                                    </Box>
-                                )}
-                            </Box>
-                            {buttons?.length && (
-                                <Box styles={panelButtonStyles()}>
-                                    {buttons.map((button) => (
-                                        <Button
-                                            key={button.title}
-                                            kind="primary"
-                                            {...button?.props}
-                                        >
-                                            {button.title}
-                                        </Button>
-                                    ))}
-                                </Box>
-                            )}
-                        </Box>
-                    )}
+                    <PanelBody heading={heading} image={image}>
+                        {children}
+                    </PanelBody>
+                    <PanelActions tag={tag} buttons={buttons} status={status} />
                 </>
             )}
             {dismissable && (

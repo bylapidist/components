@@ -10,6 +10,89 @@ export default {
 
 const templateStyles = {};
 
+const headingProp = {
+    title: 'Hello world!',
+    props: {
+        as: 'h2',
+        size: '4'
+    }
+};
+const tagProp = {
+    title: 'v1.0.0',
+    props: {
+        kind: 'primary'
+    }
+};
+const imageProp = {
+    src: 'https://placekitten.com/800/450',
+    alt: 'A pretty cat'
+};
+const websiteButtonsProp = [
+    {
+        title: 'GitHub',
+        props: {
+            as: 'a',
+            kind: 'primary',
+            variant: 'small',
+            href: 'https://google.com',
+            target: '_blank',
+            rel: 'noopener'
+        }
+    },
+    {
+        title: 'npm',
+        props: {
+            as: 'a',
+            kind: 'secondary',
+            variant: 'small',
+            href: 'https://google.com',
+            target: '_blank',
+            rel: 'noopener'
+        }
+    },
+    {
+        title: 'Docs',
+        props: {
+            as: 'a',
+            kind: 'secondary',
+            variant: 'small',
+            href: 'https://google.com',
+            target: '_blank',
+            rel: 'noopener'
+        }
+    }
+];
+const buttonsProp = [
+    {
+        title: 'Primary',
+        props: {
+            kind: 'primary',
+            variant: 'medium'
+        }
+    },
+    {
+        title: 'Secondary',
+        props: {
+            kind: 'secondary',
+            variant: 'medium'
+        }
+    },
+    {
+        title: 'Tertiary',
+        props: {
+            kind: 'tertiary',
+            variant: 'medium'
+        }
+    },
+    {
+        title: 'Dangerous',
+        props: {
+            kind: 'danger',
+            variant: 'medium'
+        }
+    }
+];
+
 const DefaultTemplate = (args) => (
     <Panel {...args}>
         Nunc porttitor lectus ex, eu pharetra elit placerat non. Suspendisse nec
@@ -28,13 +111,7 @@ Default.args = {
 
 export const WithHeading = DefaultTemplate.bind({});
 WithHeading.args = {
-    heading: {
-        title: 'Hello world!',
-        props: {
-            as: 'h2',
-            size: '4'
-        }
-    },
+    heading: headingProp,
     styles: templateStyles
 };
 
@@ -46,47 +123,13 @@ WithLoading.args = {
 
 export const WithTag = DefaultTemplate.bind({});
 WithTag.args = {
-    tag: {
-        title: 'v1.0.0',
-        props: {
-            kind: 'primary'
-        }
-    },
+    tag: tagProp,
     styles: templateStyles
 };
 
 export const WithButtons = DefaultTemplate.bind({});
 WithButtons.args = {
-    buttons: [
-        {
-            title: 'Primary',
-            props: {
-                kind: 'primary',
-                variant: 'medium'
-            }
-        },
-        {
-            title: 'Secondary',
-            props: {
-                kind: 'secondary',
-                variant: 'medium'
-            }
-        },
-        {
-            title: 'Tertiary',
-            props: {
-                kind: 'tertiary',
-                variant: 'medium'
-            }
-        },
-        {
-            title: 'Dangerous',
-            props: {
-                kind: 'danger',
-                variant: 'medium'
-            }
-        }
-    ],
+    buttons: buttonsProp,
     styles: templateStyles
 };
 
@@ -105,108 +148,18 @@ WithStatus.args = {
 
 export const Website = DefaultTemplate.bind({});
 Website.args = {
-    heading: {
-        title: '@lapidist/components',
-        props: {
-            as: 'h2',
-            size: '4'
-        }
-    },
-    tag: {
-        title: 'v1.0.0'
-    },
-    buttons: [
-        {
-            title: 'GitHub',
-            props: {
-                as: 'a',
-                kind: 'primary',
-                variant: 'small',
-                href: 'https://google.com',
-                target: '_blank',
-                rel: 'noopener'
-            }
-        },
-        {
-            title: 'npm',
-            props: {
-                as: 'a',
-                kind: 'secondary',
-                variant: 'small',
-                href: 'https://google.com',
-                target: '_blank',
-                rel: 'noopener'
-            }
-        },
-        {
-            title: 'Docs',
-            props: {
-                as: 'a',
-                kind: 'secondary',
-                variant: 'small',
-                href: 'https://google.com',
-                target: '_blank',
-                rel: 'noopener'
-            }
-        }
-    ]
+    heading: headingProp,
+    tag: tagProp,
+    buttons: websiteButtonsProp
 };
 
 export const CompleteImplementation = DefaultTemplate.bind({});
 CompleteImplementation.args = {
     dismissable: true,
     status: 'success',
-    heading: {
-        title: '@lapidist/components',
-        props: {
-            as: 'h2',
-            size: '4'
-        }
-    },
-    tag: {
-        title: 'v1.0.0',
-        props: {
-            kind: 'tertiary'
-        }
-    },
-    buttons: [
-        {
-            title: 'GitHub',
-            props: {
-                as: 'a',
-                kind: 'primary',
-                variant: 'small',
-                href: 'https://google.com',
-                target: '_blank',
-                rel: 'noopener'
-            }
-        },
-        {
-            title: 'npm',
-            props: {
-                as: 'a',
-                kind: 'secondary',
-                variant: 'small',
-                href: 'https://google.com',
-                target: '_blank',
-                rel: 'noopener'
-            }
-        },
-        {
-            title: 'Docs',
-            props: {
-                as: 'a',
-                kind: 'secondary',
-                variant: 'small',
-                href: 'https://google.com',
-                target: '_blank',
-                rel: 'noopener'
-            }
-        }
-    ],
-    image: {
-        src: 'https://placekitten.com/800/450',
-        alt: 'A pretty cat'
-    },
+    heading: headingProp,
+    tag: tagProp,
+    buttons: buttonsProp,
+    image: imageProp,
     styles: templateStyles
 };
