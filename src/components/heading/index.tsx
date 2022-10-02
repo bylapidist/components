@@ -31,6 +31,8 @@ const StyledHeading = styled.h1<StyledHeadingProps>`
         font-size: ${theme.fontSizes[getConfig(size).fontSize]};
         font-family: ${theme.fontFamilies.sans};
         line-height: ${theme.lineHeights.tight};
+        font-weight: ${theme.fontWeights['400']};
+        color: ${theme.colors.grey.dark};
     `}
 `;
 

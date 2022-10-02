@@ -53,6 +53,8 @@ exports[`it works with heading 1`] = `
   font-size: 1.875rem;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
+  font-weight: 400;
+  color: #292B3E;
 }
 
 <div
