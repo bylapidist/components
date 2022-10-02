@@ -8,4 +8,5 @@ export type AsPropType =
 export interface BaseProps {
     readonly as?: AsPropType;
     readonly testId?: string;
+    readonly children?: React.ReactNode | React.ReactNode[];
 }

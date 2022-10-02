@@ -3,15 +3,16 @@ import styled, { ThemeProps } from 'styled-components';
 import { Theme } from '@lapidist/styles';
 import { AsPropType, BaseProps } from '../shared-types';
 
-export type HeadingSize = 1 | 2 | 3 | 4 | 5 | 6;
-
 export interface HeadingProps {
     readonly size?: HeadingSize;
 }
 
+export type HeadingSize = 1 | 2 | 3 | 4 | 5 | 6;
+
 export type StyledHeadingProps = BaseProps & HeadingProps & ThemeProps<Theme>;
 
 type HeadingConfigItem = { as: AsPropType; fontSize: string };
+
 type HeadingConfig = { [K: number]: HeadingConfigItem };
 
 const headingConfig: HeadingConfig = {
@@ -31,16 +32,17 @@ const StyledHeading = styled.h1<StyledHeadingProps>`
         font-size: ${theme.fontSizes[getConfig(size).fontSize]};
         font-family: ${theme.fontFamilies.sans};
         line-height: ${theme.lineHeights.tight};
-        font-weight: ${theme.fontWeights['400']};
+        font-weight: ${theme.fontWeights['500']};
         color: ${theme.colors.grey.dark};
+        padding: ${theme.sizes['2']};
     `}
 `;
 
 export const Heading: React.FC<BaseProps & HeadingProps> = (props) => (
     <StyledHeading
+        {...props}
         data-testid={props.testId}
         as={props.as || getConfig(props.size).as}
-        {...props}
     />
 );
 

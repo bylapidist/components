@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { ThemeProvider } from '../theme-provider';
-import { Heading, HeadingProps, BaseProps } from './index';
+import { WithParagraphs as MockText } from '../text/Text.stories';
+import { BaseProps } from '../shared-types';
+import { Heading, HeadingProps } from './index';
 
 export default {
     title: 'Components/Heading',
@@ -17,6 +19,26 @@ const defaultArgs: HeadingProps & BaseProps = {
     testId: 'Heading',
     size: 1
 };
+
+export const Default = () => {
+    return (
+        <>
+            <DefaultTemplate size={1} />
+            <MockText />
+            <DefaultTemplate size={2} />
+            <MockText />
+            <DefaultTemplate size={3} />
+            <MockText />
+            <DefaultTemplate size={4} />
+            <MockText />
+            <DefaultTemplate size={5} />
+            <MockText />
+            <DefaultTemplate size={6} />
+            <MockText />
+        </>
+    );
+};
+Default.args = {};
 
 export const Level1 = DefaultTemplate.bind({});
 Level1.args = {
