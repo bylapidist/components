@@ -1,5 +1,4 @@
 import { Styles } from '@lapidist/styles';
-import { PanelProps } from '../../index';
 
 export const panelBodyStyles = (): Styles => ({
     paddingX: '4',
@@ -14,14 +13,4 @@ export const panelImageStyles = (): Styles => ({
     borderBottomWidth: '2',
     marginBottom: '2',
     width: 'full'
-});
-
-export const panelHeadingStyles = ({
-    image
-}: Pick<PanelProps, 'image'>): Styles => ({
-    padding: '4',
-    paddingTop: image ? '2' : '4',
-    paddingLeft: '4',
-    paddingBottom: '0',
-    fontWeight: 700
 });

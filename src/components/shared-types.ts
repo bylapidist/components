@@ -1,0 +1,11 @@
+import * as React from 'react';
+
+export type AsPropType =
+    | keyof JSX.IntrinsicElements
+    | React.ElementType
+    | string;
+
+export interface BaseProps {
+    readonly as?: AsPropType;
+    readonly testId?: string;
+}
