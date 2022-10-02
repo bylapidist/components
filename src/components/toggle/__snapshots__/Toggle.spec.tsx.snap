@@ -7,15 +7,14 @@ exports[`it works 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -104,15 +103,14 @@ exports[`it works 2`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c2 {
@@ -201,15 +199,14 @@ exports[`it works 3`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c2 {
@@ -298,15 +295,14 @@ exports[`it works 4`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c2 {
@@ -395,15 +391,14 @@ exports[`it works with checked 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -492,15 +487,14 @@ exports[`it works with checked 2`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c2 {
@@ -589,15 +583,14 @@ exports[`it works with checked 3`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c2 {
@@ -686,15 +679,14 @@ exports[`it works with checked 4`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c2 {

@@ -14,12 +14,11 @@ const StyledText = styled.div<StyledTextProps>`
         line-height: ${theme.lineHeights.loose};
         font-weight: ${theme.fontWeights['400']};
         color: ${theme.colors.grey.dark};
-        padding: ${theme.sizes['2']};
-        p {
-            padding-bottom: ${theme.sizes['2']};
+        > p {
+            margin-bottom: ${theme.sizes['2']};
         }
-        p:last-child {
-            padding-bottom: 0;
+        > p:last-child {
+            margin-bottom: 0;
         }
     `}
 `;

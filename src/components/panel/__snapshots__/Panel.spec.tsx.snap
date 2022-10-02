@@ -22,15 +22,14 @@ exports[`it works 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -261,15 +260,14 @@ exports[`it works with button 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -381,15 +379,14 @@ exports[`it works with dismissable 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -452,15 +449,14 @@ exports[`it works with elevation 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -500,15 +496,14 @@ exports[`it works with elevation 2`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -548,15 +543,14 @@ exports[`it works with elevation 3`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -596,15 +590,14 @@ exports[`it works with elevation 4`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -644,24 +637,22 @@ exports[`it works with heading 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c3 p {
-  padding-bottom: 0.5rem;
+.c3 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c3 p:last-child {
-  padding-bottom: 0;
+.c3 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c2 {
   font-size: 1.875rem;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  font-weight: 500;
+  font-weight: 700;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
 <div
@@ -714,15 +705,14 @@ exports[`it works with image 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c3 p {
-  padding-bottom: 0.5rem;
+.c3 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c3 p:last-child {
-  padding-bottom: 0;
+.c3 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -767,15 +757,14 @@ exports[`it works with status 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -842,15 +831,14 @@ exports[`it works with status 2`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -944,15 +932,14 @@ exports[`it works with status 3`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -1046,15 +1033,14 @@ exports[`it works with status 4`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -1161,15 +1147,14 @@ exports[`it works with tag 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div

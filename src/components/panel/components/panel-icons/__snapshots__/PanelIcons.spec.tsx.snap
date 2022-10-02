@@ -52,15 +52,14 @@ exports[`it works with status 2`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c1 p {
-  padding-bottom: 0.5rem;
+.c1 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c1 p:last-child {
-  padding-bottom: 0;
+.c1 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -106,15 +105,14 @@ exports[`it works with status 3`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c1 p {
-  padding-bottom: 0.5rem;
+.c1 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c1 p:last-child {
-  padding-bottom: 0;
+.c1 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -160,15 +158,14 @@ exports[`it works with status 4`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c1 p {
-  padding-bottom: 0.5rem;
+.c1 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c1 p:last-child {
-  padding-bottom: 0;
+.c1 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -227,15 +224,14 @@ exports[`it works with tag 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div

@@ -7,15 +7,14 @@ exports[`it works 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -44,15 +43,14 @@ exports[`it works with href 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -82,15 +80,14 @@ exports[`it works with namespace 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -134,15 +131,14 @@ exports[`it works with namespace and href 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {

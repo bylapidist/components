@@ -1,8 +1,10 @@
 import * as React from 'react';
+import styled from 'styled-components';
 import { ThemeProvider } from '../theme-provider';
-import { WithParagraphs as MockText } from '../text/Text.stories';
+import { WithParagraphs } from '../text/Text.stories';
 import { BaseProps } from '../shared-types';
 import { Heading, HeadingProps } from './index';
+import {StyledTextProps} from "../text";
 
 export default {
     title: 'Components/Heading',
@@ -19,6 +21,12 @@ const defaultArgs: HeadingProps & BaseProps = {
     testId: 'Heading',
     size: 1
 };
+
+const MockText = styled(WithParagraphs)<StyledTextProps>`
+    ${({ theme }) => `
+        margin-bottom: ${theme.sizes['4']};
+    `}
+`;
 
 export const Default = () => {
     return (

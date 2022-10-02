@@ -11,15 +11,14 @@ exports[`it works 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c1 p {
-  padding-bottom: 0.5rem;
+.c1 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c1 p:last-child {
-  padding-bottom: 0;
+.c1 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div
@@ -42,9 +41,8 @@ exports[`it works with heading 1`] = `
   font-size: 1.875rem;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  font-weight: 500;
+  font-weight: 700;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
 .c2 {
@@ -53,15 +51,14 @@ exports[`it works with heading 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c2 p {
-  padding-bottom: 0.5rem;
+.c2 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c2 p:last-child {
-  padding-bottom: 0;
+.c2 > p:last-child {
+  margin-bottom: 0;
 }
 
 <div

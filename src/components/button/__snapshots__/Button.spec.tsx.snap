@@ -7,15 +7,14 @@ exports[`it works 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -85,15 +84,14 @@ exports[`it works with anchor 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -164,15 +162,14 @@ exports[`it works with icon 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -258,15 +255,14 @@ exports[`it works with loading 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -414,15 +410,14 @@ exports[`it works with size large 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -492,15 +487,14 @@ exports[`it works with size medium 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
@@ -570,15 +564,14 @@ exports[`it works with size small 1`] = `
   line-height: 2;
   font-weight: 400;
   color: #292B3E;
-  padding: 0.5rem;
 }
 
-.c0 p {
-  padding-bottom: 0.5rem;
+.c0 > p {
+  margin-bottom: 0.5rem;
 }
 
-.c0 p:last-child {
-  padding-bottom: 0;
+.c0 > p:last-child {
+  margin-bottom: 0;
 }
 
 .c1 {
