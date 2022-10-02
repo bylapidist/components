@@ -3,14 +3,13 @@
 exports[`it works as h1 1`] = `
 .c0 {
   font-size: 1.875rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  color: #292B3E;
 }
 
 <h1
   class="c0"
+  size="1"
 >
   <p>
     Hello world!
@@ -21,14 +20,13 @@ exports[`it works as h1 1`] = `
 exports[`it works as h2 1`] = `
 .c0 {
   font-size: 1.5rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  color: #292B3E;
 }
 
 <h2
   class="c0"
+  size="2"
 >
   <p>
     Hello world!
@@ -39,14 +37,13 @@ exports[`it works as h2 1`] = `
 exports[`it works as h3 1`] = `
 .c0 {
   font-size: 1.25rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  color: #292B3E;
 }
 
 <h3
   class="c0"
+  size="3"
 >
   <p>
     Hello world!
@@ -57,14 +54,13 @@ exports[`it works as h3 1`] = `
 exports[`it works as h4 1`] = `
 .c0 {
   font-size: 1.125rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  color: #292B3E;
 }
 
 <h4
   class="c0"
+  size="4"
 >
   <p>
     Hello world!
@@ -75,14 +71,13 @@ exports[`it works as h4 1`] = `
 exports[`it works as h5 1`] = `
 .c0 {
   font-size: 1rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  color: #292B3E;
 }
 
 <h5
   class="c0"
+  size="5"
 >
   <p>
     Hello world!
@@ -93,14 +88,13 @@ exports[`it works as h5 1`] = `
 exports[`it works as h6 1`] = `
 .c0 {
   font-size: 1rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  color: #292B3E;
 }
 
 <h6
   class="c0"
+  size="6"
 >
   <p>
     Hello world!

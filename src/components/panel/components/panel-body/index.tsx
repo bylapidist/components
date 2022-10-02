@@ -4,11 +4,7 @@ import { Image } from '../../../image';
 import { Box } from '../../../box';
 import { Heading } from '../../../heading';
 import { Text } from '../../../text';
-import {
-    panelBodyStyles,
-    panelHeadingStyles,
-    panelImageStyles
-} from './styles';
+import { panelBodyStyles, panelImageStyles } from './styles';
 
 export const PanelBody = ({
     image,
@@ -21,12 +17,7 @@ export const PanelBody = ({
 
             <Box styles={{ position: 'relative' }}>
                 {heading?.title && (
-                    <Heading
-                        styles={panelHeadingStyles({ image })}
-                        {...heading?.props}
-                    >
-                        {heading.title}
-                    </Heading>
+                    <Heading {...heading?.props}>{heading.title}</Heading>
                 )}
                 {children && <Text styles={panelBodyStyles()}>{children}</Text>}
             </Box>

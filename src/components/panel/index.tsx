@@ -6,7 +6,7 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
 import { Elevated, ElevationHeight } from '../elevated';
 import { BoxProps } from '../box';
 import { Spinner } from '../spinner';
-import { HeadingProps, HeadingPropType } from '../heading';
+import { HeadingProps } from '../heading';
 import { TagProps, TagPropType } from '../tag';
 import { Button, ButtonProps, ButtonPropType } from '../button';
 import {
@@ -15,6 +15,7 @@ import {
     panelLoadingStyles,
     panelCloseButtonStyles
 } from './styles';
+import { BaseProps } from '../shared-types';
 import { ImagePropType } from '../image';
 import { PanelActions } from './components/panel-actions';
 import { PanelBody } from './components/panel-body';
@@ -27,7 +28,7 @@ export type PanelStatusType = 'none' | 'info' | 'warning' | 'error' | 'success';
 
 export type PanelHeadingProp = {
     readonly title: string;
-    readonly props?: Omit<HeadingProps & HeadingPropType, 'ref' | 'theme'>;
+    readonly props?: BaseProps & HeadingProps;
 };
 
 export type PanelTagProp = {

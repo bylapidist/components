@@ -697,18 +697,6 @@ exports[`it works with heading 1`] = `
   position: relative;
 }
 
-.c2 {
-  font-size: 1.875rem;
-  font-weight: 700;
-  font-family: Montserrat,sans-serif;
-  line-height: 1.25;
-  padding: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 0;
-  padding-left: 1rem;
-  color: #292B3E;
-}
-
 .c3 {
   font-size: 1rem;
   font-weight: 400;
@@ -721,6 +709,12 @@ exports[`it works with heading 1`] = `
   padding-right: 1rem;
   padding-left: 1rem;
   color: #292B3E;
+}
+
+.c2 {
+  font-size: 1.875rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.25;
 }
 
 <div
