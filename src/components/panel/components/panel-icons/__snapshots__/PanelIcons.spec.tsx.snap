@@ -47,14 +47,20 @@ exports[`it works with status 2`] = `
 }
 
 .c1 {
-  font-size: 1.875rem;
-  font-weight: 400;
+  font-size: 1rem;
   font-family: Montserrat,sans-serif;
-  line-height: 0;
-  border-radius: 9999px;
-  margin-right: 1rem;
-  background-color: white;
-  color: #73748b;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c1 p {
+  padding-bottom: 0.5rem;
+}
+
+.c1 p:last-child {
+  padding-bottom: 0;
 }
 
 <div
@@ -95,14 +101,20 @@ exports[`it works with status 3`] = `
 }
 
 .c1 {
-  font-size: 1.875rem;
-  font-weight: 400;
+  font-size: 1rem;
   font-family: Montserrat,sans-serif;
-  line-height: 0;
-  border-radius: 9999px;
-  margin-right: 1rem;
-  background-color: white;
-  color: #ebc764;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c1 p {
+  padding-bottom: 0.5rem;
+}
+
+.c1 p:last-child {
+  padding-bottom: 0;
 }
 
 <div
@@ -143,14 +155,20 @@ exports[`it works with status 4`] = `
 }
 
 .c1 {
-  font-size: 1.875rem;
-  font-weight: 400;
+  font-size: 1rem;
   font-family: Montserrat,sans-serif;
-  line-height: 0;
-  border-radius: 9999px;
-  margin-right: 1rem;
-  background-color: white;
-  color: #b41e25;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c1 p {
+  padding-bottom: 0.5rem;
+}
+
+.c1 p:last-child {
+  padding-bottom: 0;
 }
 
 <div
@@ -196,27 +214,28 @@ exports[`it works with tag 1`] = `
   flex: 1 1 auto;
 }
 
-.c2 {
-  border-style: solid;
-  text-align: center;
-  font-size: 0.75rem;
-  font-weight: 500;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  border-radius: 0.6rem;
-  border-width: 0;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  background-color: #135f61;
-  color: white;
-  border-color: #292B3E;
-}
-
 .c3 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c2 p {
+  padding-bottom: 0.5rem;
+}
+
+.c2 p:last-child {
+  padding-bottom: 0;
 }
 
 <div
@@ -227,6 +246,7 @@ exports[`it works with tag 1`] = `
   >
     <span
       class="c2"
+      kind="primary"
     >
       <span
         class="c3"

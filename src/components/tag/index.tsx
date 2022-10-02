@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { withTheme } from 'styled-components';
-import { mergeStyles, Theme } from '@lapidist/styles';
+import { Theme } from '@lapidist/styles';
 import { Text } from '../text';
 import { Box, BoxProps } from '../box';
-import { tagStyles, tagChildrenStyles, tagNamespaceStyles } from './styles';
+import { tagChildrenStyles, tagNamespaceStyles } from './styles';
 
 export * from './styles';
 
@@ -39,18 +39,11 @@ const InnerTag: React.FC<InnerTagProps> = ({ namespace, children }) => (
 
 const BaseTag: React.FC<TagPropType & TagProps> = ({
     as = 'span',
-    styles,
-    kind,
-    theme,
     children,
     namespace,
     ...restProps
 }) => (
-    <Text
-        as={as}
-        styles={mergeStyles(tagStyles({ kind, theme }), styles)}
-        {...restProps}
-    >
+    <Text as={as} {...restProps}>
         <InnerTag namespace={namespace}>{children}</InnerTag>
     </Text>
 );

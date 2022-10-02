@@ -79,44 +79,6 @@ exports[`it works with buttons 1`] = `
   color: white;
 }
 
-.c3 {
-  border-style: solid;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: #17a3a5;
-  color: white;
-  border-color: #17a3a5;
-}
-
-.c3:hover {
-  cursor: pointer;
-  background-color: #135f61;
-  color: white;
-}
-
-.c3:hover:disabled {
-  cursor: not-allowed;
-  background-color: #135f61;
-}
-
-.c3:disabled {
-  opacity: 0.7;
-  background-color: #135f61;
-  color: white;
-}
-
 .c5 {
   opacity: 1;
   display: -webkit-box;
@@ -129,42 +91,6 @@ exports[`it works with buttons 1`] = `
   align-items: center;
 }
 
-.c7 {
-  border-style: solid;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: white;
-  color: #17a3a5;
-  border-color: #d4d4d4;
-}
-
-.c7:hover {
-  cursor: pointer;
-  background-color: #fafafa;
-  color: #135f61;
-}
-
-.c7:hover:disabled {
-  cursor: not-allowed;
-  background-color: #fafafa;
-}
-
-.c7:disabled {
-  opacity: 0.7;
-  background-color: #fafafa;
-  color: #292B3E;
-}
-
 .c6 {
   border-style: solid;
   text-align: center;
@@ -172,8 +98,6 @@ exports[`it works with buttons 1`] = `
   position: relative;
   font-size: 1rem;
   font-weight: 500;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -203,6 +127,23 @@ exports[`it works with buttons 1`] = `
   color: #292B3E;
 }
 
+.c3 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c3 p {
+  padding-bottom: 0.5rem;
+}
+
+.c3 p:last-child {
+  padding-bottom: 0;
+}
+
 <div
   class="c0"
 >
@@ -213,7 +154,7 @@ exports[`it works with buttons 1`] = `
     class="c2"
   >
     <button
-      class="c3 sc-bcXHqe c4"
+      class="c3 c4"
     >
       <div
         class="c5"
@@ -222,7 +163,7 @@ exports[`it works with buttons 1`] = `
       </div>
     </button>
     <button
-      class="c6 sc-bcXHqe c7"
+      class="c3 c6"
     >
       <div
         class="c5"
@@ -265,14 +206,20 @@ exports[`it works with status 2`] = `
 }
 
 .c2 {
-  font-size: 1.875rem;
-  font-weight: 400;
+  font-size: 1rem;
   font-family: Montserrat,sans-serif;
-  line-height: 0;
-  border-radius: 9999px;
-  margin-right: 1rem;
-  background-color: white;
-  color: #73748b;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c2 p {
+  padding-bottom: 0.5rem;
+}
+
+.c2 p:last-child {
+  padding-bottom: 0;
 }
 
 <div
@@ -333,14 +280,20 @@ exports[`it works with status 3`] = `
 }
 
 .c2 {
-  font-size: 1.875rem;
-  font-weight: 400;
+  font-size: 1rem;
   font-family: Montserrat,sans-serif;
-  line-height: 0;
-  border-radius: 9999px;
-  margin-right: 1rem;
-  background-color: white;
-  color: #ebc764;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c2 p {
+  padding-bottom: 0.5rem;
+}
+
+.c2 p:last-child {
+  padding-bottom: 0;
 }
 
 <div
@@ -401,14 +354,20 @@ exports[`it works with status 4`] = `
 }
 
 .c2 {
-  font-size: 1.875rem;
-  font-weight: 400;
+  font-size: 1rem;
   font-family: Montserrat,sans-serif;
-  line-height: 0;
-  border-radius: 9999px;
-  margin-right: 1rem;
-  background-color: white;
-  color: #b41e25;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c2 p {
+  padding-bottom: 0.5rem;
+}
+
+.c2 p:last-child {
+  padding-bottom: 0;
 }
 
 <div
@@ -474,27 +433,28 @@ exports[`it works with tag 1`] = `
   flex: 1 1 auto;
 }
 
-.c3 {
-  border-style: solid;
-  text-align: center;
-  font-size: 0.75rem;
-  font-weight: 500;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  border-radius: 0.6rem;
-  border-width: 0;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  background-color: #135f61;
-  color: white;
-  border-color: #292B3E;
-}
-
 .c4 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c3 p {
+  padding-bottom: 0.5rem;
+}
+
+.c3 p:last-child {
+  padding-bottom: 0;
 }
 
 <div
@@ -508,6 +468,7 @@ exports[`it works with tag 1`] = `
     >
       <span
         class="c3"
+        kind="primary"
       >
         <span
           class="c4"
@@ -554,27 +515,28 @@ exports[`it works with tag 2`] = `
   flex: 1 1 auto;
 }
 
-.c3 {
-  border-style: solid;
-  text-align: center;
-  font-size: 0.75rem;
-  font-weight: 500;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  border-radius: 0.6rem;
-  border-width: 0;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  background-color: #135f61;
-  color: white;
-  border-color: #292B3E;
-}
-
 .c4 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c3 p {
+  padding-bottom: 0.5rem;
+}
+
+.c3 p:last-child {
+  padding-bottom: 0;
 }
 
 <div
@@ -588,6 +550,7 @@ exports[`it works with tag 2`] = `
     >
       <span
         class="c3"
+        kind="primary"
       >
         <span
           class="c4"
