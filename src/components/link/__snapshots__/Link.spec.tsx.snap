@@ -2,19 +2,20 @@
 
 exports[`it works 1`] = `
 .c0 {
-  border-style: solid;
   font-size: 1rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  border-bottom-width: 1px;
-  color: #135f61;
-  border-bottom-color: #4AD6D8;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
 }
 
-.c0:hover {
-  color: #135f61;
-  border-bottom-color: #135f61;
+.c0 p {
+  padding-bottom: 0.5rem;
+}
+
+.c0 p:last-child {
+  padding-bottom: 0;
 }
 
 <a

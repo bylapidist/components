@@ -5,8 +5,9 @@ exports[`it works as h1 1`] = `
   font-size: 1.875rem;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  font-weight: 400;
+  font-weight: 500;
   color: #292B3E;
+  padding: 0.5rem;
 }
 
 <h1
@@ -24,8 +25,9 @@ exports[`it works as h2 1`] = `
   font-size: 1.5rem;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  font-weight: 400;
+  font-weight: 500;
   color: #292B3E;
+  padding: 0.5rem;
 }
 
 <h2
@@ -43,8 +45,9 @@ exports[`it works as h3 1`] = `
   font-size: 1.25rem;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  font-weight: 400;
+  font-weight: 500;
   color: #292B3E;
+  padding: 0.5rem;
 }
 
 <h3
@@ -62,8 +65,9 @@ exports[`it works as h4 1`] = `
   font-size: 1.125rem;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  font-weight: 400;
+  font-weight: 500;
   color: #292B3E;
+  padding: 0.5rem;
 }
 
 <h4
@@ -81,8 +85,9 @@ exports[`it works as h5 1`] = `
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  font-weight: 400;
+  font-weight: 500;
   color: #292B3E;
+  padding: 0.5rem;
 }
 
 <h5
@@ -100,8 +105,9 @@ exports[`it works as h6 1`] = `
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  font-weight: 400;
+  font-weight: 500;
   color: #292B3E;
+  padding: 0.5rem;
 }
 
 <h6

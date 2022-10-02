@@ -7,16 +7,19 @@ exports[`it works 1`] = `
 
 .c1 {
   font-size: 1rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  max-width: 91.666667%;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  font-weight: 400;
   color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c1 p {
+  padding-bottom: 0.5rem;
+}
+
+.c1 p:last-child {
+  padding-bottom: 0;
 }
 
 <div
@@ -35,26 +38,30 @@ exports[`it works with heading 1`] = `
   position: relative;
 }
 
-.c2 {
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  max-width: 91.666667%;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  color: #292B3E;
-}
-
 .c1 {
   font-size: 1.875rem;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
+  font-weight: 500;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c2 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
   font-weight: 400;
   color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c2 p {
+  padding-bottom: 0.5rem;
+}
+
+.c2 p:last-child {
+  padding-bottom: 0;
 }
 
 <div

@@ -2,19 +2,20 @@
 
 exports[`it works 1`] = `
 .c0 {
-  border-style: solid;
-  text-align: center;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  border-radius: 0.6rem;
-  border-width: 0;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  background-color: #135f61;
-  color: white;
-  border-color: #292B3E;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c0 p {
+  padding-bottom: 0.5rem;
+}
+
+.c0 p:last-child {
+  padding-bottom: 0;
 }
 
 .c1 {
@@ -26,6 +27,7 @@ exports[`it works 1`] = `
 
 <span
   class="c0"
+  kind="primary"
 >
   <span
     class="c1"
@@ -37,19 +39,20 @@ exports[`it works 1`] = `
 
 exports[`it works with href 1`] = `
 .c0 {
-  border-style: solid;
-  text-align: center;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  border-radius: 0.6rem;
-  border-width: 0;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  background-color: #135f61;
-  color: white;
-  border-color: #292B3E;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c0 p {
+  padding-bottom: 0.5rem;
+}
+
+.c0 p:last-child {
+  padding-bottom: 0;
 }
 
 .c1 {
@@ -62,6 +65,7 @@ exports[`it works with href 1`] = `
 <span
   class="c0"
   href="https://href.test"
+  kind="primary"
 >
   <span
     class="c1"
@@ -73,19 +77,20 @@ exports[`it works with href 1`] = `
 
 exports[`it works with namespace 1`] = `
 .c0 {
-  border-style: solid;
-  text-align: center;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  border-radius: 0.6rem;
-  border-width: 0;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  background-color: #135f61;
-  color: white;
-  border-color: #292B3E;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c0 p {
+  padding-bottom: 0.5rem;
+}
+
+.c0 p:last-child {
+  padding-bottom: 0;
 }
 
 .c1 {
@@ -107,6 +112,7 @@ exports[`it works with namespace 1`] = `
 
 <span
   class="c0"
+  kind="primary"
 >
   <span
     class="c1"
@@ -123,19 +129,20 @@ exports[`it works with namespace 1`] = `
 
 exports[`it works with namespace and href 1`] = `
 .c0 {
-  border-style: solid;
-  text-align: center;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
-  border-radius: 0.6rem;
-  border-width: 0;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  background-color: #135f61;
-  color: white;
-  border-color: #292B3E;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c0 p {
+  padding-bottom: 0.5rem;
+}
+
+.c0 p:last-child {
+  padding-bottom: 0;
 }
 
 .c1 {
@@ -158,6 +165,7 @@ exports[`it works with namespace and href 1`] = `
 <span
   class="c0"
   href="https://href.test"
+  kind="primary"
 >
   <span
     class="c1"

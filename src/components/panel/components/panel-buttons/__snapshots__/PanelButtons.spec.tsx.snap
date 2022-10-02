@@ -52,44 +52,6 @@ exports[`it works with buttons 1`] = `
   color: white;
 }
 
-.c1 {
-  border-style: solid;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: #17a3a5;
-  color: white;
-  border-color: #17a3a5;
-}
-
-.c1:hover {
-  cursor: pointer;
-  background-color: #135f61;
-  color: white;
-}
-
-.c1:hover:disabled {
-  cursor: not-allowed;
-  background-color: #135f61;
-}
-
-.c1:disabled {
-  opacity: 0.7;
-  background-color: #135f61;
-  color: white;
-}
-
 .c3 {
   opacity: 1;
   display: -webkit-box;
@@ -102,42 +64,6 @@ exports[`it works with buttons 1`] = `
   align-items: center;
 }
 
-.c5 {
-  border-style: solid;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: white;
-  color: #17a3a5;
-  border-color: #d4d4d4;
-}
-
-.c5:hover {
-  cursor: pointer;
-  background-color: #fafafa;
-  color: #135f61;
-}
-
-.c5:hover:disabled {
-  cursor: not-allowed;
-  background-color: #fafafa;
-}
-
-.c5:disabled {
-  opacity: 0.7;
-  background-color: #fafafa;
-  color: #292B3E;
-}
-
 .c4 {
   border-style: solid;
   text-align: center;
@@ -145,8 +71,6 @@ exports[`it works with buttons 1`] = `
   position: relative;
   font-size: 1rem;
   font-weight: 500;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
   border-radius: 0.3rem;
   border-width: 2px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
@@ -176,11 +100,28 @@ exports[`it works with buttons 1`] = `
   color: #292B3E;
 }
 
+.c1 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c1 p {
+  padding-bottom: 0.5rem;
+}
+
+.c1 p:last-child {
+  padding-bottom: 0;
+}
+
 <div
   class="c0"
 >
   <button
-    class="c1 sc-bcXHqe c2"
+    class="c1 c2"
   >
     <div
       class="c3"
@@ -189,7 +130,7 @@ exports[`it works with buttons 1`] = `
     </div>
   </button>
   <button
-    class="c4 sc-bcXHqe c5"
+    class="c1 c4"
   >
     <div
       class="c3"

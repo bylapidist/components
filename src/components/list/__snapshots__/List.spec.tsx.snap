@@ -3,10 +3,19 @@
 exports[`it works with elements 1`] = `
 .c0 {
   font-size: 1rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  font-weight: 400;
   color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c0 p {
+  padding-bottom: 0.5rem;
+}
+
+.c0 p:last-child {
+  padding-bottom: 0;
 }
 
 .c1 {
@@ -41,10 +50,19 @@ exports[`it works with elements 1`] = `
 exports[`it works with ordered 1`] = `
 .c0 {
   font-size: 1rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  font-weight: 400;
   color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c0 p {
+  padding-bottom: 0.5rem;
+}
+
+.c0 p:last-child {
+  padding-bottom: 0;
 }
 
 .c1 {
@@ -75,10 +93,19 @@ exports[`it works with ordered 1`] = `
 exports[`it works with strings 1`] = `
 .c0 {
   font-size: 1rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  font-weight: 400;
   color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c0 p {
+  padding-bottom: 0.5rem;
+}
+
+.c0 p:last-child {
+  padding-bottom: 0;
 }
 
 .c1 {
@@ -109,10 +136,19 @@ exports[`it works with strings 1`] = `
 exports[`it works with unordered 1`] = `
 .c0 {
   font-size: 1rem;
-  font-weight: 400;
   font-family: Montserrat,sans-serif;
   line-height: 2;
+  font-weight: 400;
   color: #292B3E;
+  padding: 0.5rem;
+}
+
+.c0 p {
+  padding-bottom: 0.5rem;
+}
+
+.c0 p:last-child {
+  padding-bottom: 0;
 }
 
 .c1 {
