@@ -17,12 +17,19 @@ exports[`it works 1`] = `
   margin-bottom: 0;
 }
 
+.c1 {
+  border-bottom: 1px solid #4AD6D8;
+  color: #135f61;
+}
+
+.c1:hover {
+  border-bottom: 1px solid #135f61;
+}
+
 <a
-  class="c0"
+  class="c0 c1"
   href="#"
 >
-  <p>
-    Hello world!
-  </p>
+  Hello world!
 </a>
 `;

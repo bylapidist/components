@@ -4,15 +4,12 @@ import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
 import { ThemeProvider } from '../theme-provider';
-import { Link, LinkPropType } from './index';
+import { Link, LinkProps } from './index';
 
-const setup = (
-    props?: LinkPropType,
-    children: React.ReactElement = <p>Hello world!</p>
-) =>
+const setup = (props?: LinkProps) =>
     render(
         <ThemeProvider>
-            <Link {...props}>{children}</Link>
+            <Link {...props}>Hello world!</Link>
         </ThemeProvider>
     );
 
