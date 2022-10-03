@@ -11,12 +11,7 @@ const setup = (Component: React.ReactElement) =>
 
 afterEach(cleanup);
 
-const elevations: ElevationHeight[] = ['1', '2', '3', '4'];
-
-test('it works', () => {
-    const { container } = setup(<Elevated>Hello world</Elevated>);
-    expect(container.firstChild).toMatchSnapshot();
-});
+const elevations: ElevationHeight[] = [0, 1, 2, 3, 4];
 
 test.each(elevations)('it works with elevations', (elevation) => {
     const { container } = setup(

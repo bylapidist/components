@@ -2,58 +2,10 @@
 
 exports[`it works 1`] = `
 .c0 {
-  font-size: 1rem;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  font-weight: 400;
-  color: #292B3E;
-}
-
-.c0 > p {
-  margin-bottom: 0.5rem;
-}
-
-.c0 > p:last-child {
-  margin-bottom: 0;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
 .c1 {
-  border-style: solid;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: #17a3a5;
-  color: white;
-  border-color: #17a3a5;
-}
-
-.c1:hover {
-  cursor: pointer;
-  background-color: #135f61;
-  color: white;
-}
-
-.c1:hover:disabled {
-  cursor: not-allowed;
-  background-color: #135f61;
-}
-
-.c1:disabled {
-  opacity: 0.7;
-  background-color: #135f61;
-  color: white;
-}
-
-.c2 {
   opacity: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -66,11 +18,12 @@ exports[`it works 1`] = `
 }
 
 <button
-  class="c0 c1"
+  class="c0"
+  elevation="1"
   type="button"
 >
   <div
-    class="c2"
+    class="c1"
   >
     Hello world
   </div>
@@ -79,58 +32,10 @@ exports[`it works 1`] = `
 
 exports[`it works with anchor 1`] = `
 .c0 {
-  font-size: 1rem;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  font-weight: 400;
-  color: #292B3E;
-}
-
-.c0 > p {
-  margin-bottom: 0.5rem;
-}
-
-.c0 > p:last-child {
-  margin-bottom: 0;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
 .c1 {
-  border-style: solid;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: white;
-  color: #17a3a5;
-  border-color: #d4d4d4;
-}
-
-.c1:hover {
-  cursor: pointer;
-  background-color: #fafafa;
-  color: #135f61;
-}
-
-.c1:hover:disabled {
-  cursor: not-allowed;
-  background-color: #fafafa;
-}
-
-.c1:disabled {
-  opacity: 0.7;
-  background-color: #fafafa;
-  color: #292B3E;
-}
-
-.c2 {
   opacity: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -143,12 +48,13 @@ exports[`it works with anchor 1`] = `
 }
 
 <a
-  class="c0 c1"
+  class="c0"
+  elevation="1"
   href="https://google.com"
   target="_blank"
 >
   <div
-    class="c2"
+    class="c1"
   >
     Hello world
   </div>
@@ -157,58 +63,10 @@ exports[`it works with anchor 1`] = `
 
 exports[`it works with icon 1`] = `
 .c0 {
-  font-size: 1rem;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  font-weight: 400;
-  color: #292B3E;
-}
-
-.c0 > p {
-  margin-bottom: 0.5rem;
-}
-
-.c0 > p:last-child {
-  margin-bottom: 0;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
 .c1 {
-  border-style: solid;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: white;
-  color: #17a3a5;
-  border-color: #d4d4d4;
-}
-
-.c1:hover {
-  cursor: pointer;
-  background-color: #fafafa;
-  color: #135f61;
-}
-
-.c1:hover:disabled {
-  cursor: not-allowed;
-  background-color: #fafafa;
-}
-
-.c1:disabled {
-  opacity: 0.7;
-  background-color: #fafafa;
-  color: #292B3E;
-}
-
-.c2 {
   opacity: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -221,11 +79,12 @@ exports[`it works with icon 1`] = `
 }
 
 <button
-  class="c0 c1"
+  class="c0"
+  elevation="1"
   type="button"
 >
   <div
-    class="c2"
+    class="c1"
   >
     <svg
       aria-hidden="true"
@@ -250,58 +109,10 @@ exports[`it works with icon 1`] = `
 
 exports[`it works with loading 1`] = `
 .c0 {
-  font-size: 1rem;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  font-weight: 400;
-  color: #292B3E;
-}
-
-.c0 > p {
-  margin-bottom: 0.5rem;
-}
-
-.c0 > p:last-child {
-  margin-bottom: 0;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
 .c1 {
-  border-style: solid;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: white;
-  color: #17a3a5;
-  border-color: #d4d4d4;
-}
-
-.c1:hover {
-  cursor: pointer;
-  background-color: #fafafa;
-  color: #135f61;
-}
-
-.c1:hover:disabled {
-  cursor: not-allowed;
-  background-color: #fafafa;
-}
-
-.c1:disabled {
-  opacity: 0.7;
-  background-color: #fafafa;
-  color: #292B3E;
-}
-
-.c2 {
   opacity: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -313,7 +124,7 @@ exports[`it works with loading 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c2 {
   position: absolute;
   top: calc(50% - 0.375rem);
   right: 0;
@@ -323,7 +134,7 @@ exports[`it works with loading 1`] = `
   padding-right: 0.5rem;
 }
 
-.c4 {
+.c3 {
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -339,7 +150,7 @@ exports[`it works with loading 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   border-style: solid;
   border-radius: 0.6rem;
   border-width: 1px;
@@ -349,7 +160,7 @@ exports[`it works with loading 1`] = `
   border-color: #d4d4d4;
 }
 
-.c6 {
+.c5 {
   position: relative;
   top: -1px;
   left: 0;
@@ -359,7 +170,7 @@ exports[`it works with loading 1`] = `
   background-color: #d4d4d4;
 }
 
-.c7 {
+.c6 {
   -webkit-animation: igSzjp;
   animation: igSzjp;
   -webkit-transform: translateX(50%);
@@ -377,25 +188,26 @@ exports[`it works with loading 1`] = `
 }
 
 <button
-  class="c0 c1"
+  class="c0"
+  elevation="1"
   type="button"
 >
   <div
-    class="c2"
+    class="c1"
   >
     Hello world
   </div>
   <div
-    class="c3"
+    class="c2"
   >
     <div
-      class="c4"
+      class="c3"
     >
       <div
-        class="c5"
+        class="c4"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         />
       </div>
     </div>
@@ -405,58 +217,10 @@ exports[`it works with loading 1`] = `
 
 exports[`it works with size large 1`] = `
 .c0 {
-  font-size: 1rem;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  font-weight: 400;
-  color: #292B3E;
-}
-
-.c0 > p {
-  margin-bottom: 0.5rem;
-}
-
-.c0 > p:last-child {
-  margin-bottom: 0;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
 .c1 {
-  border-style: solid;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: white;
-  color: #17a3a5;
-  border-color: #d4d4d4;
-}
-
-.c1:hover {
-  cursor: pointer;
-  background-color: #fafafa;
-  color: #135f61;
-}
-
-.c1:hover:disabled {
-  cursor: not-allowed;
-  background-color: #fafafa;
-}
-
-.c1:disabled {
-  opacity: 0.7;
-  background-color: #fafafa;
-  color: #292B3E;
-}
-
-.c2 {
   opacity: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -469,11 +233,12 @@ exports[`it works with size large 1`] = `
 }
 
 <button
-  class="c0 c1"
+  class="c0"
+  elevation="1"
   type="button"
 >
   <div
-    class="c2"
+    class="c1"
   >
     Hello world
   </div>
@@ -482,58 +247,10 @@ exports[`it works with size large 1`] = `
 
 exports[`it works with size medium 1`] = `
 .c0 {
-  font-size: 1rem;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  font-weight: 400;
-  color: #292B3E;
-}
-
-.c0 > p {
-  margin-bottom: 0.5rem;
-}
-
-.c0 > p:last-child {
-  margin-bottom: 0;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
 .c1 {
-  border-style: solid;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-size: 0.875rem;
-  font-weight: 500;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  background-color: white;
-  color: #17a3a5;
-  border-color: #d4d4d4;
-}
-
-.c1:hover {
-  cursor: pointer;
-  background-color: #fafafa;
-  color: #135f61;
-}
-
-.c1:hover:disabled {
-  cursor: not-allowed;
-  background-color: #fafafa;
-}
-
-.c1:disabled {
-  opacity: 0.7;
-  background-color: #fafafa;
-  color: #292B3E;
-}
-
-.c2 {
   opacity: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -546,11 +263,12 @@ exports[`it works with size medium 1`] = `
 }
 
 <button
-  class="c0 c1"
+  class="c0"
+  elevation="1"
   type="button"
 >
   <div
-    class="c2"
+    class="c1"
   >
     Hello world
   </div>
@@ -559,58 +277,10 @@ exports[`it works with size medium 1`] = `
 
 exports[`it works with size small 1`] = `
 .c0 {
-  font-size: 1rem;
-  font-family: Montserrat,sans-serif;
-  line-height: 2;
-  font-weight: 400;
-  color: #292B3E;
-}
-
-.c0 > p {
-  margin-bottom: 0.5rem;
-}
-
-.c0 > p:last-child {
-  margin-bottom: 0;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
 .c1 {
-  border-style: solid;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  font-size: 0.75rem;
-  font-weight: 500;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: white;
-  color: #17a3a5;
-  border-color: #d4d4d4;
-}
-
-.c1:hover {
-  cursor: pointer;
-  background-color: #fafafa;
-  color: #135f61;
-}
-
-.c1:hover:disabled {
-  cursor: not-allowed;
-  background-color: #fafafa;
-}
-
-.c1:disabled {
-  opacity: 0.7;
-  background-color: #fafafa;
-  color: #292B3E;
-}
-
-.c2 {
   opacity: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -623,11 +293,12 @@ exports[`it works with size small 1`] = `
 }
 
 <button
-  class="c0 c1"
+  class="c0"
+  elevation="1"
   type="button"
 >
   <div
-    class="c2"
+    class="c1"
   >
     Hello world
   </div>

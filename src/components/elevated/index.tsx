@@ -1,34 +1,28 @@
 import * as React from 'react';
-import { withTheme } from 'styled-components';
-import { mergeStyles, Theme } from '@lapidist/styles';
-import { Box, BoxProps } from '../box';
-import { elevatedStyles } from './styles';
+import styled, { ThemeProps } from 'styled-components';
+import { Theme } from '@lapidist/styles';
+import { BaseProps } from '../shared-types';
 
-export * from './styles';
-
-export type ElevatedPropType = BoxProps;
-
-export type ElevationHeight = '0' | '1' | '2' | '3' | '4';
+export type ElevationHeight = 0 | 1 | 2 | 3 | 4;
 
 export interface ElevatedProps {
-    readonly elevation?: ElevationHeight;
-    readonly theme: Theme;
+    readonly elevation: ElevationHeight;
 }
 
-const BaseElevated: React.FC<ElevatedPropType & ElevatedProps> = ({
-    as = 'div',
-    styles,
-    elevation = '0',
-    theme,
-    ...restProps
-}) => (
-    <Box
-        as={as}
-        styles={mergeStyles(elevatedStyles({ elevation, theme }), styles)}
-        {...restProps}
+export type StyledElevatedProps = BaseProps & ElevatedProps & ThemeProps<Theme>;
+
+export const StyledElevated = styled.div<StyledElevatedProps>`
+    ${({ theme, elevation }) => `
+        box-shadow: ${theme.boxShadows[elevation.toString()]}
+    `}
+`;
+
+export const Elevated = (props: BaseProps & ElevatedProps) => (
+    <StyledElevated
+        {...props}
+        data-testid={props.testId}
+        as={props.as || 'div'}
     />
 );
-
-export const Elevated = withTheme(BaseElevated);
 
 Elevated.displayName = 'Elevated';

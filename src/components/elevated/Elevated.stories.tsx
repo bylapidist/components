@@ -1,6 +1,7 @@
 import * as React from 'react';
+import styled from 'styled-components';
 import { ThemeProvider } from '../theme-provider';
-import { Elevated } from './index';
+import { Elevated, StyledElevated, StyledElevatedProps } from './index';
 import { AspectRatio } from '../aspect-ratio';
 import { Box } from '../box';
 
@@ -10,21 +11,27 @@ export default {
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 };
 
+const ElevatedBox = styled(StyledElevated)<StyledElevatedProps>`
+    ${({ theme }) => `
+        width: ${theme.sizes['64']};
+    `}
+`;
+
 const DefaultTemplate = (args) => (
-    <Elevated styles={{ sizeWidth: '64' }} {...args}>
+    <ElevatedBox {...args}>
         <AspectRatio ratio="1/1">
             <Box styles={{ padding: '4' }} />
         </AspectRatio>
-    </Elevated>
+    </ElevatedBox>
 );
 
 export const ElevationScale = () => (
     <Box styles={{ display: 'flex', sizeGap: '4' }}>
-        <DefaultTemplate elevation="0" />
-        <DefaultTemplate elevation="1" />
-        <DefaultTemplate elevation="2" />
-        <DefaultTemplate elevation="3" />
-        <DefaultTemplate elevation="4" />
+        <DefaultTemplate elevation={0} />
+        <DefaultTemplate elevation={1} />
+        <DefaultTemplate elevation={2} />
+        <DefaultTemplate elevation={3} />
+        <DefaultTemplate elevation={4} />
     </Box>
 );
 ElevationScale.parameters = {
@@ -34,25 +41,25 @@ ElevationScale.parameters = {
 
 export const LowestElevation = DefaultTemplate.bind({});
 LowestElevation.args = {
-    elevation: '0'
+    elevation: 0
 };
 
 export const LowElevation = DefaultTemplate.bind({});
 LowElevation.args = {
-    elevation: '1'
+    elevation: 1
 };
 
 export const MidElevation = DefaultTemplate.bind({});
 MidElevation.args = {
-    elevation: '2'
+    elevation: 2
 };
 
 export const HighElevation = DefaultTemplate.bind({});
 HighElevation.args = {
-    elevation: '3'
+    elevation: 3
 };
 
 export const HighestElevation = DefaultTemplate.bind({});
 HighestElevation.args = {
-    elevation: '4'
+    elevation: 4
 };

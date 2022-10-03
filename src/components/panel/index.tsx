@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { withTheme } from 'styled-components';
-import { mergeStyles, Theme } from '@lapidist/styles';
+import { Theme } from '@lapidist/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 import { Elevated, ElevationHeight } from '../elevated';
@@ -9,12 +9,7 @@ import { Spinner } from '../spinner';
 import { HeadingProps } from '../heading';
 import { TagProps } from '../tag';
 import { Button, ButtonProps, ButtonPropType } from '../button';
-import {
-    panelStyles,
-    panelSpinnerStyles,
-    panelLoadingStyles,
-    panelCloseButtonStyles
-} from './styles';
+import { panelSpinnerStyles, panelCloseButtonStyles } from './styles';
 import { BaseProps } from '../shared-types';
 import { ImagePropType } from '../image';
 import { PanelActions } from './components/panel-actions';
@@ -56,18 +51,16 @@ export interface PanelProps {
 
 const BasePanel: React.FC<PanelPropType & PanelProps> = ({
     as = 'div',
-    styles,
     loading,
     dismissable,
     onDismiss,
     status,
     heading,
-    elevation = '1',
+    elevation = 1,
     tag,
     buttons,
     image,
-    children,
-    ...restProps
+    children
 }) => {
     const [dismissed, setDismissed] = React.useState(false);
 
@@ -82,11 +75,11 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
         <Elevated
             as={as}
             elevation={elevation}
-            styles={mergeStyles(panelStyles({ status, ...restProps }), {
-                ...panelLoadingStyles({ loading, ...restProps }),
-                ...styles
-            })}
-            {...restProps}
+            // styles={mergeStyles(panelStyles({ status, ...restProps }), {
+            //     ...panelLoadingStyles({ loading, ...restProps }),
+            //     ...styles
+            // })}
+            // {...restProps}
         >
             {loading ? (
                 <Spinner styles={panelSpinnerStyles()} />

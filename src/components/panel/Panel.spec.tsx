@@ -13,7 +13,7 @@ const setup = (Component: React.ReactElement) =>
 afterEach(cleanup);
 
 const statuses: PanelStatusType[] = ['none', 'info', 'warning', 'error'];
-const elevations: ElevationHeight[] = ['1', '2', '3', '4'];
+const elevations: ElevationHeight[] = [0, 1, 2, 3, 4];
 
 test('it works', () => {
     const { container } = setup(<Panel>Hello world</Panel>);
