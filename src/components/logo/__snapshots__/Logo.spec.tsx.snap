@@ -2,15 +2,9 @@
 
 exports[`it works 1`] = `
 .c1 {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   height: 100%;
-}
-
-.c1:before {
-  content: '';
-  display: block;
-  padding-bottom: calc(100% / (1 / 1));
 }
 
 .c1 > :first-child {
@@ -18,6 +12,7 @@ exports[`it works 1`] = `
   object-fit: scale-down;
   object-position: 50% 50%;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -25,6 +20,12 @@ exports[`it works 1`] = `
 
 .c1 > img {
   height: auto;
+}
+
+.c1:before {
+  display: block;
+  content: '';
+  padding-bottom: calc(100% / (1 / 1));
 }
 
 .c2 {
@@ -86,15 +87,9 @@ exports[`it works 1`] = `
 
 exports[`it works animated 1`] = `
 .c1 {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   height: 100%;
-}
-
-.c1:before {
-  content: '';
-  display: block;
-  padding-bottom: calc(100% / (1 / 1));
 }
 
 .c1 > :first-child {
@@ -102,6 +97,7 @@ exports[`it works animated 1`] = `
   object-fit: scale-down;
   object-position: 50% 50%;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -109,6 +105,12 @@ exports[`it works animated 1`] = `
 
 .c1 > img {
   height: auto;
+}
+
+.c1:before {
+  display: block;
+  content: '';
+  padding-bottom: calc(100% / (1 / 1));
 }
 
 .c2 {
@@ -194,15 +196,9 @@ exports[`it works animated 1`] = `
 
 exports[`it works thinking 1`] = `
 .c1 {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   height: 100%;
-}
-
-.c1:before {
-  content: '';
-  display: block;
-  padding-bottom: calc(100% / (1 / 1));
 }
 
 .c1 > :first-child {
@@ -210,6 +206,7 @@ exports[`it works thinking 1`] = `
   object-fit: scale-down;
   object-position: 50% 50%;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -217,6 +214,12 @@ exports[`it works thinking 1`] = `
 
 .c1 > img {
   height: auto;
+}
+
+.c1:before {
+  display: block;
+  content: '';
+  padding-bottom: calc(100% / (1 / 1));
 }
 
 .c2 {

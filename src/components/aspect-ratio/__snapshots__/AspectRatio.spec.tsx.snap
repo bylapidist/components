@@ -2,15 +2,9 @@
 
 exports[`it works with an inner image 1`] = `
 .c0 {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   height: 100%;
-}
-
-.c0:before {
-  content: '';
-  display: block;
-  padding-bottom: calc(100% / (1 / 3));
 }
 
 .c0 > :first-child {
@@ -18,6 +12,7 @@ exports[`it works with an inner image 1`] = `
   object-fit: scale-down;
   object-position: 50% 50%;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -25,6 +20,12 @@ exports[`it works with an inner image 1`] = `
 
 .c0 > img {
   height: auto;
+}
+
+.c0:before {
+  display: block;
+  content: '';
+  padding-bottom: calc(100% / (1 / 3));
 }
 
 <div
@@ -39,15 +40,9 @@ exports[`it works with an inner image 1`] = `
 
 exports[`it works with object ratio 1`] = `
 .c0 {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   height: 100%;
-}
-
-.c0:before {
-  content: '';
-  display: block;
-  padding-bottom: calc(100% / (1 / 3));
 }
 
 .c0 > :first-child {
@@ -55,6 +50,7 @@ exports[`it works with object ratio 1`] = `
   object-fit: scale-down;
   object-position: 50% 50%;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -62,6 +58,12 @@ exports[`it works with object ratio 1`] = `
 
 .c0 > img {
   height: auto;
+}
+
+.c0:before {
+  display: block;
+  content: '';
+  padding-bottom: calc(100% / (1 / 3));
 }
 
 <div
@@ -75,15 +77,9 @@ exports[`it works with object ratio 1`] = `
 
 exports[`it works with string ratio 1`] = `
 .c0 {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   height: 100%;
-}
-
-.c0:before {
-  content: '';
-  display: block;
-  padding-bottom: calc(100% / (1 / 3));
 }
 
 .c0 > :first-child {
@@ -91,6 +87,7 @@ exports[`it works with string ratio 1`] = `
   object-fit: scale-down;
   object-position: 50% 50%;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -98,6 +95,12 @@ exports[`it works with string ratio 1`] = `
 
 .c0 > img {
   height: auto;
+}
+
+.c0:before {
+  display: block;
+  content: '';
+  padding-bottom: calc(100% / (1 / 3));
 }
 
 <div

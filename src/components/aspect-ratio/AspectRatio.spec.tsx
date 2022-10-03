@@ -12,7 +12,9 @@ const setup = (
 ) =>
     render(
         <ThemeProvider>
-            <AspectRatio {...props}>{children}</AspectRatio>
+            <AspectRatio ratio="1/1" {...props}>
+                {children}
+            </AspectRatio>
         </ThemeProvider>
     );
 
