@@ -2,37 +2,11 @@
 
 exports[`it works 1`] = `
 .c0 {
-  margin: 0.5rem;
-}
-
-<div
-  class="c0"
->
-  Hello world!
-</div>
-`;
-
-exports[`it works with breakpoints 1`] = `
-.c0 {
-  margin: 0.5rem;
-}
-
-@media only screen and (min-width:1280px) {
-  .c0 {
-    margin: 0.75rem;
-  }
-}
-
-<div
-  class="c0"
->
-  Hello world!
-</div>
-`;
-
-exports[`it works with theme 1`] = `
-.c0 {
-  margin: 20px;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div

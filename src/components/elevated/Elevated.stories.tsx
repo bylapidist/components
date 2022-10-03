@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ThemeProvider } from '../theme-provider';
 import { Elevated, StyledElevated, StyledElevatedProps } from './index';
 import { AspectRatio } from '../aspect-ratio';
-import { Box } from '../box';
+import { Box, StyledBox, StyledBoxProps } from '../box';
 
 export default {
     title: 'Components/Elevated',
@@ -17,22 +17,29 @@ const ElevatedBox = styled(StyledElevated)<StyledElevatedProps>`
     `}
 `;
 
+const GridBox = styled(StyledBox)<StyledBoxProps>`
+    ${({ theme }) => `
+        display: flex;
+        grid-gap: ${theme.sizes['4']};
+    `}
+`;
+
 const DefaultTemplate = (args) => (
     <ElevatedBox {...args}>
         <AspectRatio ratio="1/1">
-            <Box styles={{ padding: '4' }} />
+            <Box gutter={4} />
         </AspectRatio>
     </ElevatedBox>
 );
 
 export const ElevationScale = () => (
-    <Box styles={{ display: 'flex', sizeGap: '4' }}>
+    <GridBox gutter={4}>
         <DefaultTemplate elevation={0} />
         <DefaultTemplate elevation={1} />
         <DefaultTemplate elevation={2} />
         <DefaultTemplate elevation={3} />
         <DefaultTemplate elevation={4} />
-    </Box>
+    </GridBox>
 );
 ElevationScale.parameters = {
     controls: { disable: true },

@@ -14,7 +14,9 @@ export const PanelBody = ({
         <>
             {image && <Image {...image} />}
 
-            <Box styles={{ position: 'relative' }}>
+            <Box
+            // styles={{ position: 'relative' }}
+            >
                 {heading?.title && (
                     <Heading {...heading?.props}>{heading.title}</Heading>
                 )}

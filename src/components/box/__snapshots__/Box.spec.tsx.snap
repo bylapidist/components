@@ -1,129 +1,241 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it works plain 1`] = `
-<div
-  class=""
->
-  <p>
-    Hello world!
-  </p>
-</div>
-`;
-
-exports[`it works with backgroundColor 1`] = `
+exports[`it works 1`] = `
 .c0 {
-  background-color: #73748b;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
   class="c0"
 >
-  <p>
-    Hello world!
-  </p>
+  Hello world!
 </div>
 `;
 
-exports[`it works with borderColor 1`] = `
+exports[`it works 2`] = `
 .c0 {
-  border-color: #73748b;
+  padding: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0;
 }
 
 <div
   class="c0"
 >
-  <p>
-    Hello world!
-  </p>
+  Hello world!
 </div>
 `;
 
-exports[`it works with borderRadius 1`] = `
-.c0 {
-  border-radius: 0.3rem;
-}
-
-<div
-  class="c0"
->
-  <p>
-    Hello world!
-  </p>
-</div>
-`;
-
-exports[`it works with borderWidth 1`] = `
-.c0 {
-  border-width: 4px;
-}
-
-<div
-  class="c0"
->
-  <p>
-    Hello world!
-  </p>
-</div>
-`;
-
-exports[`it works with breakpoints 1`] = `
-@media only screen and (min-width:1280px) {
-  .c0 {
-    font-size: 0.875rem;
-    margin-bottom: 0.5rem;
-  }
-}
-
-<div
-  class="c0"
->
-  <p>
-    Hello world!
-  </p>
-</div>
-`;
-
-exports[`it works with margin 1`] = `
-.c0 {
-  margin: 0.5rem;
-}
-
-<div
-  class="c0"
->
-  <p>
-    Hello world!
-  </p>
-</div>
-`;
-
-exports[`it works with padding 1`] = `
+exports[`it works 3`] = `
 .c0 {
   padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0;
 }
 
 <div
   class="c0"
 >
-  <p>
-    Hello world!
-  </p>
+  Hello world!
 </div>
 `;
 
-exports[`it works with variable borderColors 1`] = `
+exports[`it works 4`] = `
 .c0 {
-  border-top-color: #73748b;
-  border-right-color: #17a3a5;
-  border-bottom-color: #72af5d;
-  border-left-color: #ebc764;
+  padding: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0;
 }
 
 <div
   class="c0"
 >
-  <p>
-    Hello world!
-  </p>
+  Hello world!
+</div>
+`;
+
+exports[`it works 5`] = `
+.c0 {
+  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 0;
+}
+
+<div
+  class="c0"
+>
+  Hello world!
+</div>
+`;
+
+exports[`it works with gutterX 1`] = `
+.c0 {
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+<div
+  class="c0"
+>
+  Hello world!
+</div>
+`;
+
+exports[`it works with gutterX 2`] = `
+.c0 {
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+<div
+  class="c0"
+>
+  Hello world!
+</div>
+`;
+
+exports[`it works with gutterX 3`] = `
+.c0 {
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+<div
+  class="c0"
+>
+  Hello world!
+</div>
+`;
+
+exports[`it works with gutterX 4`] = `
+.c0 {
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+<div
+  class="c0"
+>
+  Hello world!
+</div>
+`;
+
+exports[`it works with gutterX 5`] = `
+.c0 {
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+<div
+  class="c0"
+>
+  Hello world!
+</div>
+`;
+
+exports[`it works with gutterY 1`] = `
+.c0 {
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+<div
+  class="c0"
+>
+  Hello world!
+</div>
+`;
+
+exports[`it works with gutterY 2`] = `
+.c0 {
+  padding: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0;
+  padding-right: 0.25rem;
+}
+
+<div
+  class="c0"
+>
+  Hello world!
+</div>
+`;
+
+exports[`it works with gutterY 3`] = `
+.c0 {
+  padding: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+
+<div
+  class="c0"
+>
+  Hello world!
+</div>
+`;
+
+exports[`it works with gutterY 4`] = `
+.c0 {
+  padding: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0;
+  padding-right: 0.75rem;
+}
+
+<div
+  class="c0"
+>
+  Hello world!
+</div>
+`;
+
+exports[`it works with gutterY 5`] = `
+.c0 {
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+<div
+  class="c0"
+>
+  Hello world!
 </div>
 `;

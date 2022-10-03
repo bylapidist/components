@@ -18,8 +18,11 @@ exports[`it works with elements 1`] = `
 }
 
 .c1 {
-  list-style-type: disc;
-  list-style-position: inside;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -29,14 +32,14 @@ exports[`it works with elements 1`] = `
     class="c1"
   >
     <li
-      class=""
+      class="c1"
     >
       <p>
         hello
       </p>
     </li>
     <li
-      class=""
+      class="c1"
     >
       <p>
         world
@@ -64,8 +67,11 @@ exports[`it works with ordered 1`] = `
 }
 
 .c1 {
-  list-style-type: decimal;
-  list-style-position: inside;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -75,12 +81,12 @@ exports[`it works with ordered 1`] = `
     class="c1"
   >
     <li
-      class=""
+      class="c1"
     >
       hello
     </li>
     <li
-      class=""
+      class="c1"
     >
       world
     </li>
@@ -106,8 +112,11 @@ exports[`it works with strings 1`] = `
 }
 
 .c1 {
-  list-style-type: disc;
-  list-style-position: inside;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -117,12 +126,12 @@ exports[`it works with strings 1`] = `
     class="c1"
   >
     <li
-      class=""
+      class="c1"
     >
       hello
     </li>
     <li
-      class=""
+      class="c1"
     >
       world
     </li>
@@ -148,8 +157,11 @@ exports[`it works with unordered 1`] = `
 }
 
 .c1 {
-  list-style-type: disc;
-  list-style-position: inside;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -159,12 +171,12 @@ exports[`it works with unordered 1`] = `
     class="c1"
   >
     <li
-      class=""
+      class="c1"
     >
       hello
     </li>
     <li
-      class=""
+      class="c1"
     >
       world
     </li>

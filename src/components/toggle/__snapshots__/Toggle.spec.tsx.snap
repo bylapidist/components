@@ -6,20 +6,17 @@ exports[`it works 1`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="primary"
 >
   <div
     class="c1"
@@ -51,20 +48,17 @@ exports[`it works 2`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="secondary"
 >
   <div
     class="c1"
@@ -96,20 +90,17 @@ exports[`it works 3`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="tertiary"
 >
   <div
     class="c1"
@@ -141,20 +132,17 @@ exports[`it works 4`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="danger"
 >
   <div
     class="c1"
@@ -186,20 +174,17 @@ exports[`it works with checked 1`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="primary"
 >
   <div
     class="c1"
@@ -231,20 +216,17 @@ exports[`it works with checked 2`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="secondary"
 >
   <div
     class="c1"
@@ -276,20 +258,17 @@ exports[`it works with checked 3`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="tertiary"
 >
   <div
     class="c1"
@@ -321,20 +300,17 @@ exports[`it works with checked 4`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="danger"
 >
   <div
     class="c1"

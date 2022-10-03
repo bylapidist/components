@@ -2,14 +2,11 @@
 
 exports[`it works 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -19,14 +16,11 @@ exports[`it works 1`] = `
 
 exports[`it works with status 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -36,14 +30,11 @@ exports[`it works with status 1`] = `
 
 exports[`it works with status 2`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
@@ -89,14 +80,11 @@ exports[`it works with status 2`] = `
 
 exports[`it works with status 3`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
@@ -142,14 +130,11 @@ exports[`it works with status 3`] = `
 
 exports[`it works with status 4`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
@@ -195,23 +180,14 @@ exports[`it works with status 4`] = `
 
 exports[`it works with tag 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
@@ -219,15 +195,15 @@ exports[`it works with tag 1`] = `
   color: #292B3E;
 }
 
-.c2 > p {
+.c1 > p {
   margin-bottom: 0.5rem;
 }
 
-.c2 > p:last-child {
+.c1 > p:last-child {
   margin-bottom: 0;
 }
 
-.c3 {
+.c2 {
   text-align: center;
   border-style: solid;
   border-width: 0;
@@ -239,7 +215,7 @@ exports[`it works with tag 1`] = `
   background-color: #135f61;
 }
 
-.c4 {
+.c3 {
   padding: 0.25rem 0.5rem;
 }
 
@@ -247,14 +223,14 @@ exports[`it works with tag 1`] = `
   class="c0"
 >
   <div
-    class="c1"
+    class="c0"
   >
     <span
-      class="c2 c3"
+      class="c1 c2"
       kind="primary"
     >
       <span
-        class="c4"
+        class="c3"
         kind="primary"
       >
         v1.0.0

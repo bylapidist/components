@@ -9,34 +9,8 @@ import { Box } from '../box';
 test('it works', () => {
     const { container } = render(
         <ThemeProvider>
-            <Box styles={{ margin: '2' }}>Hello world!</Box>
-            <Box styles={{ margin: '3' }}>Hello world!</Box>
-        </ThemeProvider>
-    );
-    expect(container.firstChild).toMatchSnapshot();
-});
-
-test('it works with breakpoints', () => {
-    const { container } = render(
-        <ThemeProvider>
-            <Box
-                styles={{
-                    margin: '2',
-                    breakpoints: { xl: { margin: '3' } }
-                }}
-            >
-                Hello world!
-            </Box>
-        </ThemeProvider>
-    );
-    expect(container.firstChild).toMatchSnapshot();
-});
-
-test('it works with theme', () => {
-    const { container } = render(
-        <ThemeProvider theme={{ sizes: { '2': '20px' } }}>
-            <Box styles={{ margin: '2' }}>Hello world!</Box>
-            <Box styles={{ margin: '3' }}>Hello world!</Box>
+            <Box>Hello world!</Box>
+            <Box>Hello world!</Box>
         </ThemeProvider>
     );
     expect(container.firstChild).toMatchSnapshot();

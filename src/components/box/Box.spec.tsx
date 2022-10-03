@@ -1,120 +1,33 @@
 import * as React from 'react';
-import { render } from '@testing-library/react';
+import { cleanup, render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
-import { Box, BoxProps } from './index';
 import { ThemeProvider } from '../theme-provider';
+import { Box, BoxProps, Gutter } from './index';
 
-const setup = (
-    props?: BoxProps,
-    children: React.ReactElement = <p>Hello world!</p>
-) =>
+const setup = (props?: BoxProps) =>
     render(
         <ThemeProvider>
-            <Box {...props}>{children}</Box>
+            <Box {...props}>Hello world!</Box>
         </ThemeProvider>
     );
 
-test('it works plain', () => {
-    const { container } = setup();
+const gutters: Gutter[] = [0, 1, 2, 3, 4];
+
+afterEach(cleanup);
+
+test.each(gutters)('it works', (gutter) => {
+    const { container } = setup({ gutter });
     expect(container.firstChild).toMatchSnapshot();
 });
 
-test('it works with padding', () => {
-    const { container } = setup({
-        styles: {
-            padding: '2'
-        }
-    });
+test.each(gutters)('it works with gutterX', (gutterX) => {
+    const { container } = setup({ gutterX });
     expect(container.firstChild).toMatchSnapshot();
 });
 
-test('it works with margin', () => {
-    const { container } = setup({
-        styles: {
-            margin: '2'
-        }
-    });
-    expect(container.firstChild).toMatchSnapshot();
-});
-
-test('it works with backgroundColor', () => {
-    const { container } = setup({
-        styles: {
-            backgroundColor: {
-                group: 'grey',
-                shade: 'base'
-            }
-        }
-    });
-    expect(container.firstChild).toMatchSnapshot();
-});
-
-test('it works with borderRadius', () => {
-    const { container } = setup({
-        styles: {
-            borderRadius: '2'
-        }
-    });
-    expect(container.firstChild).toMatchSnapshot();
-});
-
-test('it works with borderWidth', () => {
-    const { container } = setup({
-        styles: {
-            borderWidth: '2'
-        }
-    });
-    expect(container.firstChild).toMatchSnapshot();
-});
-
-test('it works with borderColor', () => {
-    const { container } = setup({
-        styles: {
-            borderColor: {
-                group: 'grey',
-                shade: 'base'
-            }
-        }
-    });
-    expect(container.firstChild).toMatchSnapshot();
-});
-
-test('it works with variable borderColors', () => {
-    const { container } = setup({
-        styles: {
-            borderTopColor: {
-                group: 'grey',
-                shade: 'base'
-            },
-            borderRightColor: {
-                group: 'primary',
-                shade: 'base'
-            },
-            borderLeftColor: {
-                group: 'secondary',
-                shade: 'base'
-            },
-            borderBottomColor: {
-                group: 'tertiary',
-                shade: 'base'
-            }
-        }
-    });
-    expect(container.firstChild).toMatchSnapshot();
-});
-
-test('it works with breakpoints', () => {
-    const { container } = setup({
-        styles: {
-            breakpoints: {
-                xl: {
-                    fontSize: '2',
-                    marginBottom: '2'
-                }
-            }
-        }
-    });
+test.each(gutters)('it works with gutterY', (gutterY) => {
+    const { container } = setup({ gutterY });
     expect(container.firstChild).toMatchSnapshot();
 });

@@ -9,7 +9,7 @@ import { Spinner } from '../spinner';
 import { HeadingProps } from '../heading';
 import { TagProps } from '../tag';
 import { Button, ButtonProps, ButtonPropType } from '../button';
-import { panelSpinnerStyles, panelCloseButtonStyles } from './styles';
+// import { panelSpinnerStyles, panelCloseButtonStyles } from './styles';
 import { BaseProps } from '../shared-types';
 import { PanelActions } from './components/panel-actions';
 import { PanelBody } from './components/panel-body';
@@ -17,7 +17,7 @@ import { ImageProps } from '../image';
 
 export * from './styles';
 
-export type PanelPropType = BoxProps;
+export type PanelPropType = BaseProps & BoxProps;
 
 export type PanelStatusType = 'none' | 'info' | 'warning' | 'error' | 'success';
 
@@ -82,7 +82,9 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
             // {...restProps}
         >
             {loading ? (
-                <Spinner styles={panelSpinnerStyles()} />
+                <Spinner
+                // styles={panelSpinnerStyles()}
+                />
             ) : (
                 <>
                     <PanelBody heading={heading} image={image}>
@@ -93,7 +95,7 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
             )}
             {dismissable && (
                 <Button
-                    styles={panelCloseButtonStyles()}
+                    // styles={panelCloseButtonStyles()}
                     kind="tertiary"
                     onClick={handleDismiss}
                 >

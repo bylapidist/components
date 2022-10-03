@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Box } from '../../../box';
 import { PanelProps } from '../../index';
-import { panelActionsStyles } from './styles';
+// import { panelActionsStyles } from './styles';
 import { PanelIcons } from '../panel-icons';
 import { PanelButtons } from '../panel-buttons';
 
@@ -16,7 +16,9 @@ export const PanelActions: React.FC<
     if (!canRender) return null;
 
     return (
-        <Box styles={panelActionsStyles()}>
+        <Box
+        // styles={panelActionsStyles()}
+        >
             <PanelIcons status={status} tag={tag} />
             <PanelButtons buttons={buttons} />
         </Box>

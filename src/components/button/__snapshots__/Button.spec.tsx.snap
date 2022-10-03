@@ -6,20 +6,17 @@ exports[`it works 1`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="primary"
   type="button"
 >
   <div
@@ -36,21 +33,18 @@ exports[`it works with anchor 1`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <a
   class="c0"
   elevation="1"
   href="https://google.com"
+  kind="secondary"
   target="_blank"
 >
   <div
@@ -67,20 +61,17 @@ exports[`it works with icon 1`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="secondary"
   type="button"
 >
   <div
@@ -113,64 +104,14 @@ exports[`it works with loading 1`] = `
 }
 
 .c1 {
-  opacity: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c2 {
-  position: absolute;
-  top: calc(50% - 0.375rem);
-  right: 0;
-  left: 0;
-  width: 100%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.c3 {
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  border-radius: 0.6rem;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  border-style: solid;
-  border-radius: 0.6rem;
-  border-width: 1px;
-  width: 100%;
-  height: 0.75rem;
-  background-color: #fafafa;
-  border-color: #d4d4d4;
-}
-
-.c5 {
-  position: relative;
-  top: -1px;
-  left: 0;
-  border-radius: 0.6rem;
-  width: 1.5rem;
-  height: 0.75rem;
-  background-color: #d4d4d4;
-}
-
-.c6 {
   -webkit-animation: igSzjp;
   animation: igSzjp;
   -webkit-transform: translateX(50%);
@@ -190,6 +131,7 @@ exports[`it works with loading 1`] = `
 <button
   class="c0"
   elevation="1"
+  kind="secondary"
   type="button"
 >
   <div
@@ -198,16 +140,16 @@ exports[`it works with loading 1`] = `
     Hello world
   </div>
   <div
-    class="c2"
+    class="c1"
   >
     <div
-      class="c3"
+      class="c1"
     >
       <div
-        class="c4"
+        class="c1"
       >
         <div
-          class="c5 c6"
+          class="c1 c2"
         />
       </div>
     </div>
@@ -221,20 +163,17 @@ exports[`it works with size large 1`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="secondary"
   type="button"
 >
   <div
@@ -251,20 +190,17 @@ exports[`it works with size medium 1`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="secondary"
   type="button"
 >
   <div
@@ -281,20 +217,17 @@ exports[`it works with size small 1`] = `
 }
 
 .c1 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <button
   class="c0"
   elevation="1"
+  kind="secondary"
   type="button"
 >
   <div

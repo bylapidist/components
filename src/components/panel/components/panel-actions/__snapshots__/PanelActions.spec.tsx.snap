@@ -4,58 +4,14 @@ exports[`it works 1`] = `null`;
 
 exports[`it works with buttons 1`] = `
 .c0 {
-  border-top-style: solid;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-width: 4px;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  margin-top: 0.5rem;
-  padding: 1rem;
-  border-top-color: #fafafa;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-  -webkit-justify-content: end;
-  -ms-flex-pack: end;
-  justify-content: end;
-  gap: 0.5rem;
-}
-
-.c4 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
@@ -63,27 +19,29 @@ exports[`it works with buttons 1`] = `
   class="c0"
 >
   <div
-    class="c1"
+    class="c0"
   />
   <div
-    class="c2"
+    class="c0"
   >
     <button
-      class="c3"
+      class="c1"
       elevation="1"
+      kind="primary"
     >
       <div
-        class="c4"
+        class="c0"
       >
         Button 1
       </div>
     </button>
     <button
-      class="c3"
+      class="c1"
       elevation="1"
+      kind="secondary"
     >
       <div
-        class="c4"
+        class="c0"
       >
         Button 2
       </div>
@@ -96,33 +54,14 @@ exports[`it works with status 1`] = `null`;
 
 exports[`it works with status 2`] = `
 .c0 {
-  border-top-style: solid;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-width: 4px;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  margin-top: 0.5rem;
-  padding: 1rem;
-  border-top-color: #fafafa;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
@@ -130,11 +69,11 @@ exports[`it works with status 2`] = `
   color: #292B3E;
 }
 
-.c2 > p {
+.c1 > p {
   margin-bottom: 0.5rem;
 }
 
-.c2 > p:last-child {
+.c1 > p:last-child {
   margin-bottom: 0;
 }
 
@@ -142,10 +81,10 @@ exports[`it works with status 2`] = `
   class="c0"
 >
   <div
-    class="c1"
+    class="c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <svg
         aria-hidden="true"
@@ -169,33 +108,14 @@ exports[`it works with status 2`] = `
 
 exports[`it works with status 3`] = `
 .c0 {
-  border-top-style: solid;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-width: 4px;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  margin-top: 0.5rem;
-  padding: 1rem;
-  border-top-color: #fafafa;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
@@ -203,11 +123,11 @@ exports[`it works with status 3`] = `
   color: #292B3E;
 }
 
-.c2 > p {
+.c1 > p {
   margin-bottom: 0.5rem;
 }
 
-.c2 > p:last-child {
+.c1 > p:last-child {
   margin-bottom: 0;
 }
 
@@ -215,10 +135,10 @@ exports[`it works with status 3`] = `
   class="c0"
 >
   <div
-    class="c1"
+    class="c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <svg
         aria-hidden="true"
@@ -242,33 +162,14 @@ exports[`it works with status 3`] = `
 
 exports[`it works with status 4`] = `
 .c0 {
-  border-top-style: solid;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-width: 4px;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  margin-top: 0.5rem;
-  padding: 1rem;
-  border-top-color: #fafafa;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
@@ -276,11 +177,11 @@ exports[`it works with status 4`] = `
   color: #292B3E;
 }
 
-.c2 > p {
+.c1 > p {
   margin-bottom: 0.5rem;
 }
 
-.c2 > p:last-child {
+.c1 > p:last-child {
   margin-bottom: 0;
 }
 
@@ -288,10 +189,10 @@ exports[`it works with status 4`] = `
   class="c0"
 >
   <div
-    class="c1"
+    class="c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <svg
         aria-hidden="true"
@@ -315,39 +216,14 @@ exports[`it works with status 4`] = `
 
 exports[`it works with tag 1`] = `
 .c0 {
-  border-top-style: solid;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-width: 4px;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  margin-top: 0.5rem;
-  padding: 1rem;
-  border-top-color: #fafafa;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
@@ -355,15 +231,15 @@ exports[`it works with tag 1`] = `
   color: #292B3E;
 }
 
-.c3 > p {
+.c1 > p {
   margin-bottom: 0.5rem;
 }
 
-.c3 > p:last-child {
+.c1 > p:last-child {
   margin-bottom: 0;
 }
 
-.c4 {
+.c2 {
   text-align: center;
   border-style: solid;
   border-width: 0;
@@ -375,7 +251,7 @@ exports[`it works with tag 1`] = `
   background-color: #135f61;
 }
 
-.c5 {
+.c3 {
   padding: 0.25rem 0.5rem;
 }
 
@@ -383,17 +259,17 @@ exports[`it works with tag 1`] = `
   class="c0"
 >
   <div
-    class="c1"
+    class="c0"
   >
     <div
-      class="c2"
+      class="c0"
     >
       <span
-        class="c3 c4"
+        class="c1 c2"
         kind="primary"
       >
         <span
-          class="c5"
+          class="c3"
           kind="primary"
         >
           v1.0.0
@@ -406,39 +282,14 @@ exports[`it works with tag 1`] = `
 
 exports[`it works with tag 2`] = `
 .c0 {
-  border-top-style: solid;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-width: 4px;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  margin-top: 0.5rem;
-  padding: 1rem;
-  border-top-color: #fafafa;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.c3 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
@@ -446,15 +297,15 @@ exports[`it works with tag 2`] = `
   color: #292B3E;
 }
 
-.c3 > p {
+.c1 > p {
   margin-bottom: 0.5rem;
 }
 
-.c3 > p:last-child {
+.c1 > p:last-child {
   margin-bottom: 0;
 }
 
-.c4 {
+.c2 {
   text-align: center;
   border-style: solid;
   border-width: 0;
@@ -466,7 +317,7 @@ exports[`it works with tag 2`] = `
   background-color: #135f61;
 }
 
-.c5 {
+.c3 {
   padding: 0.25rem 0.5rem;
 }
 
@@ -474,17 +325,17 @@ exports[`it works with tag 2`] = `
   class="c0"
 >
   <div
-    class="c1"
+    class="c0"
   >
     <div
-      class="c2"
+      class="c0"
     >
       <span
-        class="c3 c4"
+        class="c1 c2"
         kind="primary"
       >
         <span
-          class="c5"
+          class="c3"
           kind="primary"
         >
           v1.0.0

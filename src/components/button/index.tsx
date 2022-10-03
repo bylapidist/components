@@ -6,7 +6,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { KindType } from '../shared-types';
 import { Elevated } from '../elevated';
 import { Box, BoxProps } from '../box';
-import { buttonSpinnerStyles } from './styles';
+// import { buttonSpinnerStyles } from './styles';
 import { Spinner } from '../spinner';
 
 export * from './styles';
@@ -29,9 +29,9 @@ export interface ButtonProps {
 
 const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
     as,
-    kind,
-    theme,
-    variant,
+    // kind,
+    // theme,
+    // variant,
     loading,
     icon,
     children,
@@ -45,11 +45,11 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
             elevation={1}
         >
             <Box
-                styles={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    opacity: loading ? '0' : '1'
-                }}
+            // styles={{
+            //     display: 'flex',
+            //     alignItems: 'center',
+            //     opacity: loading ? '0' : '1'
+            // }}
             >
                 {icon && (
                     <FontAwesomeIcon
@@ -61,7 +61,7 @@ const BaseButton: React.FC<ButtonPropType & ButtonProps> = ({
             </Box>
             {loading && (
                 <Spinner
-                    styles={buttonSpinnerStyles({ kind, theme, variant })}
+                // styles={buttonSpinnerStyles({ kind, theme, variant })}
                 />
             )}
         </Elevated>

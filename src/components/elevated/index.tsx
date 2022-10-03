@@ -13,7 +13,7 @@ export type StyledElevatedProps = BaseProps & ElevatedProps & ThemeProps<Theme>;
 
 export const StyledElevated = styled.div<StyledElevatedProps>`
     ${({ theme, elevation }) => `
-        box-shadow: ${theme.boxShadows[elevation.toString()]}
+        box-shadow: ${theme.boxShadows[elevation.toString()]};
     `}
 `;
 

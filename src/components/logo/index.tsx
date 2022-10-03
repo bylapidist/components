@@ -5,7 +5,7 @@ import styled, {
     FlattenInterpolation,
     ThemeProps
 } from 'styled-components';
-import { mergeStyles } from '@lapidist/styles';
+import { BaseProps } from '../shared-types';
 import { Box, BoxProps } from '../box';
 import { AspectRatio } from '../aspect-ratio';
 import {
@@ -16,7 +16,9 @@ import {
     thinking
 } from './animations';
 
-export type LogoPropType = BoxProps & React.HTMLProps<HTMLDivElement>;
+export type LogoPropType = BaseProps &
+    BoxProps &
+    React.HTMLProps<HTMLDivElement>;
 
 export interface LogoProps {
     readonly animated?: boolean;
@@ -69,8 +71,8 @@ const D: React.FC<TriangleProps> = styled(Triangle)`
     fill: ${(props): string => props.theme.colors.secondary.base || ''};
 `;
 
-const LogoBox: React.FC<BoxProps & LogoProps> = styled(Box)<
-    BoxProps & LogoProps
+const LogoBox: React.FC<BoxProps & LogoProps & LogoPropType> = styled(Box)<
+    BoxProps & LogoProps & LogoPropType
 >`
     overflow: hidden;
     ${fadeIn()}
@@ -78,13 +80,13 @@ const LogoBox: React.FC<BoxProps & LogoProps> = styled(Box)<
 
 export const Logo: React.FC<LogoProps & LogoPropType> = ({
     as = 'div',
-    styles,
+    // styles,
     animated = false,
     thinking = false,
     ...restProps
 }) => (
     <>
-        <LogoBox as={as} styles={mergeStyles({}, styles)} {...restProps}>
+        <LogoBox as={as} {...restProps}>
             <AspectRatio ratio="1/1">
                 <svg preserveAspectRatio="none" viewBox="0 0 64 64">
                     <BUp

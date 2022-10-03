@@ -1,11 +1,12 @@
 import React, { Key } from 'react';
 import { Text } from '../text';
 import { Box, BoxProps } from '../box';
-import {
-    listItemStyles,
-    orderedListStyles,
-    unorderedListStyles
-} from './styles';
+// import {
+//     listItemStyles,
+//     orderedListStyles,
+//     unorderedListStyles
+// } from './styles';
+import { BaseProps } from '../shared-types';
 
 export * from './styles';
 
@@ -21,16 +22,28 @@ export interface ListProps {
     readonly type?: ListType;
 }
 
-const Ordered: React.FC<BoxProps> = ({ ...props }) => (
-    <Box as={'ol'} styles={orderedListStyles()} {...props} />
+const Ordered: React.FC<BaseProps & BoxProps> = ({ ...props }) => (
+    <Box
+        as={'ol'}
+        // styles={orderedListStyles()}
+        {...props}
+    />
 );
 
-const Unordered: React.FC<BoxProps> = ({ ...props }) => (
-    <Box as={'ul'} styles={unorderedListStyles()} {...props} />
+const Unordered: React.FC<BaseProps & BoxProps> = ({ ...props }) => (
+    <Box
+        as={'ul'}
+        // styles={unorderedListStyles()}
+        {...props}
+    />
 );
 
-const ListItem: React.FC<BoxProps> = ({ ...props }) => (
-    <Box as={'li'} styles={listItemStyles()} {...props} />
+const ListItem: React.FC<BaseProps & BoxProps> = ({ ...props }) => (
+    <Box
+        as={'li'}
+        // styles={listItemStyles()}
+        {...props}
+    />
 );
 
 const Items: React.FC<{ items: ListItemProps[] }> = ({ items }) => (
@@ -42,7 +55,7 @@ const Items: React.FC<{ items: ListItemProps[] }> = ({ items }) => (
 );
 
 const OrderedOrUnordered = (
-    Component: React.FC<BoxProps>,
+    Component: React.FC<BaseProps & BoxProps>,
     items: ListItemProps[]
 ): JSX.Element => (
     <Component>

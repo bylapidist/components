@@ -11,7 +11,7 @@ import { Box } from '../../../box';
 import { Text } from '../../../text';
 import { Tag } from '../../../tag';
 import { PanelProps, PanelStatusType } from '../../index';
-import { panelIconsStyles, panelTagStyles } from './styles';
+// import { panelIconsStyles, panelTagStyles } from './styles';
 
 export const PanelIcons: React.FC<Pick<PanelProps, 'status' | 'tag'>> = ({
     status,
@@ -35,14 +35,18 @@ export const PanelIcons: React.FC<Pick<PanelProps, 'status' | 'tag'>> = ({
     };
 
     return (
-        <Box styles={panelIconsStyles()}>
+        <Box
+        // styles={panelIconsStyles()}
+        >
             {hasStatus && (
                 <Text>
                     <FontAwesomeIcon icon={getIcon(status)} />
                 </Text>
             )}
             {hasTag && (
-                <Box styles={panelTagStyles()}>
+                <Box
+                // styles={panelTagStyles()}
+                >
                     <Tag kind="primary" {...tag?.props}>
                         {tag.title}
                     </Tag>

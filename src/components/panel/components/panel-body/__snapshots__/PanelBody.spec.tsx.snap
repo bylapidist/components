@@ -2,7 +2,11 @@
 
 exports[`it works 1`] = `
 .c0 {
-  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
@@ -34,7 +38,11 @@ exports[`it works 1`] = `
 
 exports[`it works with heading 1`] = `
 .c0 {
-  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c1 {
