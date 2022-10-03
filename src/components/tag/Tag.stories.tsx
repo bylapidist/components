@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ThemeProvider } from '../theme-provider';
-import { Tag } from './index';
+import { BaseProps } from '../shared-types';
+import { Tag, TagProps } from './index';
 
 export default {
     title: 'Components/Tag',
@@ -8,71 +9,75 @@ export default {
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 };
 
-const templateStyles = {};
+const defaultArgs: BaseProps & TagProps = {
+    as: 'span',
+    testId: 'Tag',
+    kind: 'primary'
+};
 
 const DefaultTemplate = (args) => <Tag {...args}>v1.0.0</Tag>;
 
 export const Primary = DefaultTemplate.bind({});
 Primary.args = {
-    kind: 'primary',
-    styles: templateStyles
+    ...defaultArgs,
+    kind: 'primary'
 };
 
 export const Secondary = DefaultTemplate.bind({});
 Secondary.args = {
-    kind: 'secondary',
-    styles: templateStyles
+    ...defaultArgs,
+    kind: 'secondary'
 };
 
 export const Tertiary = DefaultTemplate.bind({});
 Tertiary.args = {
-    kind: 'tertiary',
-    styles: templateStyles
+    ...defaultArgs,
+    kind: 'tertiary'
 };
 
 export const Danger = DefaultTemplate.bind({});
 Danger.args = {
-    kind: 'danger',
-    styles: templateStyles
+    ...defaultArgs,
+    kind: 'danger'
 };
 
 export const Grey = DefaultTemplate.bind({});
 Grey.args = {
-    kind: 'grey',
-    styles: templateStyles
+    ...defaultArgs,
+    kind: 'grey'
 };
 
 export const PrimaryWithNamespace = DefaultTemplate.bind({});
 PrimaryWithNamespace.args = {
+    ...defaultArgs,
     kind: 'primary',
-    namespace: 'npm',
-    styles: templateStyles
+    namespace: 'npm'
 };
 
 export const SecondaryWithNamespace = DefaultTemplate.bind({});
 SecondaryWithNamespace.args = {
+    ...defaultArgs,
     kind: 'secondary',
-    namespace: 'npm',
-    styles: templateStyles
+    namespace: 'npm'
 };
 
 export const TertiaryWithNamespace = DefaultTemplate.bind({});
 TertiaryWithNamespace.args = {
+    ...defaultArgs,
     kind: 'tertiary',
-    namespace: 'npm',
-    styles: templateStyles
+    namespace: 'npm'
 };
 
 export const DangerWithNamespace = DefaultTemplate.bind({});
 DangerWithNamespace.args = {
+    ...defaultArgs,
     kind: 'danger',
-    namespace: 'npm',
-    styles: templateStyles
+    namespace: 'npm'
 };
 
 export const GreyWithNamespace = DefaultTemplate.bind({});
 GreyWithNamespace.args = {
+    ...defaultArgs,
     kind: 'grey',
-    namespace: 'npm',
-    styles: templateStyles
+    namespace: 'npm'
 };

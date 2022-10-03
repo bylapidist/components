@@ -10,3 +10,5 @@ export interface BaseProps {
     readonly testId?: string;
     readonly children?: React.ReactNode | React.ReactNode[];
 }
+
+export type KindType = 'primary' | 'secondary' | 'tertiary' | 'danger';

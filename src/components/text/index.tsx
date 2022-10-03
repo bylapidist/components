@@ -3,11 +3,12 @@ import styled, { ThemeProps } from 'styled-components';
 import { Theme } from '@lapidist/styles';
 import { BaseProps } from '../shared-types';
 
-// export interface TextProps {}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface TextProps {}
 
-export type StyledTextProps = BaseProps & ThemeProps<Theme>;
+export type StyledTextProps = BaseProps & TextProps & ThemeProps<Theme>;
 
-const StyledText = styled.div<StyledTextProps>`
+export const StyledText = styled.div<StyledTextProps>`
     ${({ theme }) => `
         font-size: ${theme.fontSizes['3']};
         font-family: ${theme.fontFamilies.sans};
@@ -23,7 +24,7 @@ const StyledText = styled.div<StyledTextProps>`
     `}
 `;
 
-export const Text: React.FC<BaseProps> = (props) => (
+export const Text: React.FC<BaseProps & TextProps> = (props) => (
     <StyledText {...props} data-testid={props.testId} as={props.as || 'div'} />
 );
 

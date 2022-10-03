@@ -475,10 +475,6 @@ exports[`it works with elevation 1`] = `
 `;
 
 exports[`it works with elevation 2`] = `
-.c1 {
-  position: relative;
-}
-
 .c0 {
   border-style: solid;
   position: relative;
@@ -488,6 +484,10 @@ exports[`it works with elevation 2`] = `
   min-height: 8rem;
   background-color: white;
   border-color: transparent;
+}
+
+.c1 {
+  position: relative;
 }
 
 .c2 {
@@ -522,10 +522,6 @@ exports[`it works with elevation 2`] = `
 `;
 
 exports[`it works with elevation 3`] = `
-.c1 {
-  position: relative;
-}
-
 .c0 {
   border-style: solid;
   position: relative;
@@ -535,6 +531,10 @@ exports[`it works with elevation 3`] = `
   min-height: 8rem;
   background-color: white;
   border-color: transparent;
+}
+
+.c1 {
+  position: relative;
 }
 
 .c2 {
@@ -569,10 +569,6 @@ exports[`it works with elevation 3`] = `
 `;
 
 exports[`it works with elevation 4`] = `
-.c1 {
-  position: relative;
-}
-
 .c0 {
   border-style: solid;
   position: relative;
@@ -582,6 +578,10 @@ exports[`it works with elevation 4`] = `
   min-height: 8rem;
   background-color: white;
   border-color: transparent;
+}
+
+.c1 {
+  position: relative;
 }
 
 .c2 {
@@ -783,10 +783,6 @@ exports[`it works with status 1`] = `
 `;
 
 exports[`it works with status 2`] = `
-.c1 {
-  position: relative;
-}
-
 .c0 {
   border-style: solid;
   position: relative;
@@ -796,6 +792,10 @@ exports[`it works with status 2`] = `
   min-height: 8rem;
   background-color: white;
   border-color: #73748b;
+}
+
+.c1 {
+  position: relative;
 }
 
 .c3 {
@@ -884,6 +884,17 @@ exports[`it works with status 2`] = `
 `;
 
 exports[`it works with status 3`] = `
+.c0 {
+  border-style: solid;
+  position: relative;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  background-color: white;
+  border-color: #ebc764;
+}
+
 .c1 {
   position: relative;
 }
@@ -913,17 +924,6 @@ exports[`it works with status 3`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c0 {
-  border-style: solid;
-  position: relative;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  min-height: 8rem;
-  background-color: white;
-  border-color: #ebc764;
 }
 
 .c2 {
@@ -985,6 +985,17 @@ exports[`it works with status 3`] = `
 `;
 
 exports[`it works with status 4`] = `
+.c0 {
+  border-style: solid;
+  position: relative;
+  border-radius: 0.3rem;
+  border-width: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  min-height: 8rem;
+  background-color: white;
+  border-color: #b41e25;
+}
+
 .c1 {
   position: relative;
 }
@@ -1014,17 +1025,6 @@ exports[`it works with status 4`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c0 {
-  border-style: solid;
-  position: relative;
-  border-radius: 0.3rem;
-  border-width: 2px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  min-height: 8rem;
-  background-color: white;
-  border-color: #b41e25;
 }
 
 .c2 {
@@ -1134,13 +1134,6 @@ exports[`it works with tag 1`] = `
   flex: 1 1 auto;
 }
 
-.c6 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
@@ -1155,6 +1148,22 @@ exports[`it works with tag 1`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c6 {
+  text-align: center;
+  border-style: solid;
+  border-width: 0;
+  padding: 0.25rem 0;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  background-color: #135f61;
+}
+
+.c7 {
+  padding: 0.25rem 0.5rem;
 }
 
 <div
@@ -1179,11 +1188,12 @@ exports[`it works with tag 1`] = `
         class="c5"
       >
         <span
-          class="c2"
+          class="c2 c6"
           kind="primary"
         >
           <span
-            class="c6"
+            class="c7"
+            kind="primary"
           >
             v1.0.0
           </span>

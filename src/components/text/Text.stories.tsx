@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ThemeProvider } from '../theme-provider';
-import { Text } from './index';
+import { Text, TextProps } from './index';
+import { BaseProps } from '../shared-types';
 
 export default {
     title: 'Components/Text',
@@ -8,7 +9,7 @@ export default {
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 };
 
-const defaultArgs = {
+const defaultArgs: BaseProps & TextProps = {
     as: 'p',
     testId: 'Text'
 };

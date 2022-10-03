@@ -2,9 +2,9 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { ThemeProvider } from '../theme-provider';
 import { WithParagraphs } from '../text/Text.stories';
+import { StyledTextProps } from '../text';
 import { BaseProps } from '../shared-types';
 import { Heading, HeadingProps } from './index';
-import {StyledTextProps} from "../text";
 
 export default {
     title: 'Components/Heading',
@@ -16,7 +16,7 @@ const DefaultTemplate = (args) => (
     <Heading {...args}>Heading {args?.size}</Heading>
 );
 
-const defaultArgs: HeadingProps & BaseProps = {
+const defaultArgs: BaseProps & HeadingProps = {
     as: 'h1',
     testId: 'Heading',
     size: 1

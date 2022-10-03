@@ -113,18 +113,6 @@ exports[`it works 2`] = `
   margin-bottom: 0;
 }
 
-.c2 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
   border-style: solid;
   text-align: center;
@@ -163,6 +151,18 @@ exports[`it works 2`] = `
   opacity: 0.7;
   background-color: #fafafa;
   color: #292B3E;
+}
+
+.c2 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 <button
@@ -209,18 +209,6 @@ exports[`it works 3`] = `
   margin-bottom: 0;
 }
 
-.c2 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
   border-style: solid;
   text-align: center;
@@ -259,6 +247,18 @@ exports[`it works 3`] = `
   opacity: 0.7;
   background-color: #fafafa;
   color: #292B3E;
+}
+
+.c2 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 <button
@@ -305,18 +305,6 @@ exports[`it works 4`] = `
   margin-bottom: 0;
 }
 
-.c2 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
   border-style: solid;
   text-align: center;
@@ -355,6 +343,18 @@ exports[`it works 4`] = `
   opacity: 0.7;
   background-color: #fafafa;
   color: #292B3E;
+}
+
+.c2 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 <button
@@ -497,18 +497,6 @@ exports[`it works with checked 2`] = `
   margin-bottom: 0;
 }
 
-.c2 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
   border-style: solid;
   text-align: center;
@@ -547,6 +535,18 @@ exports[`it works with checked 2`] = `
   opacity: 0.7;
   background-color: #fafafa;
   color: #292B3E;
+}
+
+.c2 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 <button
@@ -593,18 +593,6 @@ exports[`it works with checked 3`] = `
   margin-bottom: 0;
 }
 
-.c2 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
   border-style: solid;
   text-align: center;
@@ -643,6 +631,18 @@ exports[`it works with checked 3`] = `
   opacity: 0.7;
   background-color: #fafafa;
   color: #292B3E;
+}
+
+.c2 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 <button
@@ -689,18 +689,6 @@ exports[`it works with checked 4`] = `
   margin-bottom: 0;
 }
 
-.c2 {
-  opacity: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
   border-style: solid;
   text-align: center;
@@ -739,6 +727,18 @@ exports[`it works with checked 4`] = `
   opacity: 0.7;
   background-color: #fafafa;
   color: #292B3E;
+}
+
+.c2 {
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 <button

@@ -7,8 +7,8 @@ import 'jest-styled-components';
 import { ThemeProvider } from '../theme-provider';
 import { Button } from './index';
 
-const setup = (button: React.ReactElement) =>
-    render(<ThemeProvider>{button}</ThemeProvider>);
+const setup = (Component: React.ReactElement) =>
+    render(<ThemeProvider>{Component}</ThemeProvider>);
 
 test('it works', () => {
     const { container } = setup(

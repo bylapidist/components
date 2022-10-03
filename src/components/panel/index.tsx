@@ -7,7 +7,7 @@ import { Elevated, ElevationHeight } from '../elevated';
 import { BoxProps } from '../box';
 import { Spinner } from '../spinner';
 import { HeadingProps } from '../heading';
-import { TagProps, TagPropType } from '../tag';
+import { TagProps } from '../tag';
 import { Button, ButtonProps, ButtonPropType } from '../button';
 import {
     panelStyles,
@@ -33,7 +33,7 @@ export type PanelHeadingProp = {
 
 export type PanelTagProp = {
     readonly title: string;
-    readonly props?: Omit<TagProps & TagPropType, 'ref' | 'theme'>;
+    readonly props?: BaseProps & TagProps;
 };
 
 export type PanelButtonProp = {

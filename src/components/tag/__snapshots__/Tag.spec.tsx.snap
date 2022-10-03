@@ -18,25 +18,35 @@ exports[`it works 1`] = `
 }
 
 .c1 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  text-align: center;
+  border-style: solid;
+  border-width: 0;
+  padding: 0.25rem 0;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  background-color: #135f61;
+}
+
+.c2 {
+  padding: 0.25rem 0.5rem;
 }
 
 <span
-  class="c0"
+  class="c0 c1"
   kind="primary"
 >
   <span
-    class="c1"
+    class="c2"
+    kind="primary"
   >
     Hello world
   </span>
 </span>
 `;
 
-exports[`it works with href 1`] = `
+exports[`it works 2`] = `
 .c0 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
@@ -54,19 +64,120 @@ exports[`it works with href 1`] = `
 }
 
 .c1 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  text-align: center;
+  border-style: solid;
+  border-width: 0;
+  padding: 0.25rem 0;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  background-color: #937032;
+}
+
+.c2 {
+  padding: 0.25rem 0.5rem;
 }
 
 <span
-  class="c0"
-  href="https://href.test"
-  kind="primary"
+  class="c0 c1"
+  kind="secondary"
 >
   <span
-    class="c1"
+    class="c2"
+    kind="secondary"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`it works 3`] = `
+.c0 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+}
+
+.c0 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c0 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c1 {
+  text-align: center;
+  border-style: solid;
+  border-width: 0;
+  padding: 0.25rem 0;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  background-color: #548230;
+}
+
+.c2 {
+  padding: 0.25rem 0.5rem;
+}
+
+<span
+  class="c0 c1"
+  kind="tertiary"
+>
+  <span
+    class="c2"
+    kind="tertiary"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`it works 4`] = `
+.c0 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+}
+
+.c0 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c0 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c1 {
+  text-align: center;
+  border-style: solid;
+  border-width: 0;
+  padding: 0.25rem 0;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  background-color: #810000;
+}
+
+.c2 {
+  padding: 0.25rem 0.5rem;
+}
+
+<span
+  class="c0 c1"
+  kind="danger"
+>
+  <span
+    class="c2"
+    kind="danger"
   >
     Hello world
   </span>
@@ -91,40 +202,47 @@ exports[`it works with namespace 1`] = `
 }
 
 .c1 {
-  font-size: 0.75rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  background-color: #292B3E;
+  text-align: center;
+  border-style: solid;
+  border-width: 0;
+  padding: 0.25rem 0;
   color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  background-color: #135f61;
 }
 
 .c2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  color: white;
+  background-color: #292B3E;
+  padding: 0.25rem 0.5rem;
+}
+
+.c3 {
+  padding: 0.25rem 0.5rem;
 }
 
 <span
-  class="c0"
+  class="c0 c1"
   kind="primary"
 >
   <span
-    class="c1"
+    class="c2"
+    kind="primary"
   >
     namespace
   </span>
   <span
-    class="c2"
+    class="c3"
+    kind="primary"
   >
     Hello world
   </span>
 </span>
 `;
 
-exports[`it works with namespace and href 1`] = `
+exports[`it works with namespace 2`] = `
 .c0 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
@@ -142,34 +260,156 @@ exports[`it works with namespace and href 1`] = `
 }
 
 .c1 {
-  font-size: 0.75rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  background-color: #292B3E;
+  text-align: center;
+  border-style: solid;
+  border-width: 0;
+  padding: 0.25rem 0;
   color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  background-color: #937032;
 }
 
 .c2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  color: white;
+  background-color: #292B3E;
+  padding: 0.25rem 0.5rem;
+}
+
+.c3 {
+  padding: 0.25rem 0.5rem;
 }
 
 <span
-  class="c0"
-  href="https://href.test"
-  kind="primary"
+  class="c0 c1"
+  kind="secondary"
 >
   <span
-    class="c1"
+    class="c2"
+    kind="secondary"
   >
     namespace
   </span>
   <span
+    class="c3"
+    kind="secondary"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`it works with namespace 3`] = `
+.c0 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+}
+
+.c0 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c0 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c1 {
+  text-align: center;
+  border-style: solid;
+  border-width: 0;
+  padding: 0.25rem 0;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  background-color: #548230;
+}
+
+.c2 {
+  color: white;
+  background-color: #292B3E;
+  padding: 0.25rem 0.5rem;
+}
+
+.c3 {
+  padding: 0.25rem 0.5rem;
+}
+
+<span
+  class="c0 c1"
+  kind="tertiary"
+>
+  <span
     class="c2"
+    kind="tertiary"
+  >
+    namespace
+  </span>
+  <span
+    class="c3"
+    kind="tertiary"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`it works with namespace 4`] = `
+.c0 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: #292B3E;
+}
+
+.c0 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c0 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c1 {
+  text-align: center;
+  border-style: solid;
+  border-width: 0;
+  padding: 0.25rem 0;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  background-color: #810000;
+}
+
+.c2 {
+  color: white;
+  background-color: #292B3E;
+  padding: 0.25rem 0.5rem;
+}
+
+.c3 {
+  padding: 0.25rem 0.5rem;
+}
+
+<span
+  class="c0 c1"
+  kind="danger"
+>
+  <span
+    class="c2"
+    kind="danger"
+  >
+    namespace
+  </span>
+  <span
+    class="c3"
+    kind="danger"
   >
     Hello world
   </span>

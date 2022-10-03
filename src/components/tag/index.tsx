@@ -1,53 +1,57 @@
 import * as React from 'react';
-import { withTheme } from 'styled-components';
+import styled, { ThemeProps } from 'styled-components';
 import { Theme } from '@lapidist/styles';
-import { Text } from '../text';
-import { Box, BoxProps } from '../box';
-import { tagChildrenStyles, tagNamespaceStyles } from './styles';
-
-export * from './styles';
-
-export type TagPropType = BoxProps &
-    React.HTMLAttributes<HTMLSpanElement> &
-    React.HTMLProps<HTMLSpanElement>;
+import { StyledText } from '../text';
+import { BaseProps, KindType } from '../shared-types';
 
 export interface TagProps {
-    readonly kind: string;
-    readonly theme: Theme;
+    readonly kind: KindType;
     readonly namespace?: string;
-    readonly href?: string;
 }
 
-interface InnerTagProps {
-    readonly namespace?: string;
-    readonly children?: React.ReactNode;
-}
+export type StyledTagProps = BaseProps & TagProps & ThemeProps<Theme>;
 
-const InnerTag: React.FC<InnerTagProps> = ({ namespace, children }) => (
-    <>
-        {namespace && (
-            <Box as="span" styles={tagNamespaceStyles()}>
-                {namespace}
-            </Box>
+export const StyledTag = styled(StyledText)<StyledTagProps>`
+    text-align: center;
+    border-style: solid;
+    border-width: 0;
+    ${({ theme, kind }) => `
+        padding: ${theme.sizes['1']} 0;
+        color: ${theme.colors.base.light};
+        font-size: ${theme.fontSizes['1']};
+        font-weight: ${theme.fontWeights['500']};
+        border-radius: ${theme.borderRadii['3']};
+        background-color: ${theme.colors[kind].dark};
+    `}
+`;
+
+export const StyledNamespace = styled.span<StyledTagProps>`
+    ${({ theme }) => `
+        color: ${theme.colors.base.light};
+        background-color: ${theme.colors.grey.dark};
+        padding: ${theme.sizes['1']} ${theme.sizes['2']};
+    `}
+`;
+
+export const StyledChildren = styled.span<StyledTagProps>`
+    ${({ theme }) => `
+        padding: ${theme.sizes['1']} ${theme.sizes['2']};
+    `}
+`;
+
+export const Tag = (props: BaseProps & TagProps) => (
+    <StyledTag {...props} data-testid={props.testId} as={props.as || 'span'}>
+        {props.namespace && (
+            <StyledNamespace {...props} as="span">
+                {props.namespace}
+            </StyledNamespace>
         )}
-
-        <Box as="span" styles={tagChildrenStyles()}>
-            {children}
-        </Box>
-    </>
+        {props.children && (
+            <StyledChildren {...props} as="span">
+                {props.children}
+            </StyledChildren>
+        )}
+    </StyledTag>
 );
-
-const BaseTag: React.FC<TagPropType & TagProps> = ({
-    as = 'span',
-    children,
-    namespace,
-    ...restProps
-}) => (
-    <Text as={as} {...restProps}>
-        <InnerTag namespace={namespace}>{children}</InnerTag>
-    </Text>
-);
-
-export const Tag = withTheme(BaseTag);
 
 Tag.displayName = 'Tag';

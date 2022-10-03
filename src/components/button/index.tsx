@@ -3,6 +3,7 @@ import { withTheme } from 'styled-components';
 import { mergeStyles, Theme } from '@lapidist/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { KindType } from '../shared-types';
 import { Text } from '../text';
 import { Elevated } from '../elevated';
 import { Box, BoxProps } from '../box';
@@ -19,10 +20,8 @@ export type ButtonPropType = BoxProps &
 
 export type ButtonSize = 'small' | 'medium' | 'large';
 
-export type ButtonKind = 'primary' | 'secondary' | 'tertiary' | 'danger';
-
 export interface ButtonProps {
-    readonly kind: ButtonKind;
+    readonly kind: KindType;
     readonly theme: Theme;
     readonly variant?: ButtonSize;
     readonly loading?: boolean;

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { cleanup, render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
@@ -7,8 +7,13 @@ import { ThemeProvider } from '../theme-provider';
 import { Panel, PanelStatusType } from './index';
 import { ElevationHeight } from '../elevated';
 
-const setup = (panel: React.ReactElement) =>
-    render(<ThemeProvider>{panel}</ThemeProvider>);
+const setup = (Component: React.ReactElement) =>
+    render(<ThemeProvider>{Component}</ThemeProvider>);
+
+afterEach(cleanup);
+
+const statuses: PanelStatusType[] = ['none', 'info', 'warning', 'error'];
+const elevations: ElevationHeight[] = ['1', '2', '3', '4'];
 
 test('it works', () => {
     const { container } = setup(<Panel>Hello world</Panel>);
@@ -75,22 +80,14 @@ test('it works with image', () => {
     expect(getByAltText('test')).toBeTruthy();
 });
 
-test('it works with status', () => {
-    const statuses: PanelStatusType[] = ['none', 'info', 'warning', 'error'];
-
-    statuses.forEach((status) => {
-        const { container } = setup(<Panel status={status}>Hello world</Panel>);
-        expect(container.firstChild).toMatchSnapshot();
-    });
+test.each(statuses)('it works with status', (status) => {
+    const { container } = setup(<Panel status={status}>Hello world</Panel>);
+    expect(container.firstChild).toMatchSnapshot();
 });
 
-test('it works with elevation', () => {
-    const elevations: ElevationHeight[] = ['1', '2', '3', '4'];
-
-    elevations.forEach((elevation) => {
-        const { container } = setup(
-            <Panel elevation={elevation}>Hello world</Panel>
-        );
-        expect(container.firstChild).toMatchSnapshot();
-    });
+test.each(elevations)('it works with elevation', (elevation) => {
+    const { container } = setup(
+        <Panel elevation={elevation}>Hello world</Panel>
+    );
+    expect(container.firstChild).toMatchSnapshot();
 });

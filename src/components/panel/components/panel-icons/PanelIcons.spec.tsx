@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render } from '@testing-library/react';
+import { cleanup, render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
@@ -7,8 +7,12 @@ import { ThemeProvider } from '../../../theme-provider';
 import { PanelIcons } from './index';
 import { PanelStatusType } from '../../index';
 
-const setup = (panel: React.ReactElement) =>
-    render(<ThemeProvider>{panel}</ThemeProvider>);
+const setup = (Component: React.ReactElement) =>
+    render(<ThemeProvider>{Component}</ThemeProvider>);
+
+afterEach(cleanup);
+
+const statuses: PanelStatusType[] = ['none', 'info', 'warning', 'error'];
 
 const defaultProps = {
     status: undefined,
@@ -20,13 +24,9 @@ test('it works', () => {
     expect(container.firstChild).toMatchSnapshot();
 });
 
-test('it works with status', () => {
-    const statuses: PanelStatusType[] = ['none', 'info', 'warning', 'error'];
-
-    statuses.forEach((status) => {
-        const { container } = setup(<PanelIcons status={status} />);
-        expect(container.firstChild).toMatchSnapshot();
-    });
+test.each(statuses)('it works with status', (status) => {
+    const { container } = setup(<PanelIcons status={status} />);
+    expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works with tag', () => {

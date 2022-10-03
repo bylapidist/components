@@ -6,8 +6,8 @@ import 'jest-styled-components';
 import { ThemeProvider } from '../../../theme-provider';
 import { PanelBody } from './index';
 
-const setup = (panel: React.ReactElement) =>
-    render(<ThemeProvider>{panel}</ThemeProvider>);
+const setup = (Component: React.ReactElement) =>
+    render(<ThemeProvider>{Component}</ThemeProvider>);
 
 const defaultProps = {
     image: undefined,

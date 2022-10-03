@@ -25,13 +25,13 @@ const headingConfig: HeadingConfig = {
     3: { as: 'h3', fontSize: '5', fontWeight: '500' },
     4: { as: 'h4', fontSize: '4', fontWeight: '500' },
     5: { as: 'h5', fontSize: '3', fontWeight: '500' },
-    6: { as: 'h6', fontSize: '3', fontWeight: '500' }
+    6: { as: 'h6', fontSize: '3', fontWeight: '400' }
 };
 
 const getConfig = (size: HeadingSize = 1): HeadingConfigItem =>
     headingConfig[size];
 
-const StyledHeading = styled.h1<StyledHeadingProps>`
+export const StyledHeading = styled.h1<StyledHeadingProps>`
     ${({ theme, size }) => `
         font-size: ${theme.fontSizes[getConfig(size).fontSize]};
         font-family: ${theme.fontFamilies.sans};

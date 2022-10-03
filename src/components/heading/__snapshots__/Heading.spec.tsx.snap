@@ -100,7 +100,7 @@ exports[`it works as h6 1`] = `
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 1.25;
-  font-weight: 500;
+  font-weight: 400;
   color: #292B3E;
 }
 
