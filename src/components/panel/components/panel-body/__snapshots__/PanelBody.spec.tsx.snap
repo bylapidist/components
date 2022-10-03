@@ -78,17 +78,9 @@ exports[`it works with heading 1`] = `
 `;
 
 exports[`it works with image 1`] = `
-.c0 {
-  border-bottom-style: solid;
-  border-bottom-width: 4px;
-  width: 100%;
-  margin-bottom: 0.5rem;
-  border-bottom-color: #fafafa;
-}
-
 <img
   alt="test"
-  class="c0"
+  class=""
   src=""
 />
 `;

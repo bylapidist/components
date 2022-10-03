@@ -1,6 +1,7 @@
 import * as React from 'react';
+import { BaseProps } from '../shared-types';
 import { ThemeProvider } from '../theme-provider';
-import { Image } from './index';
+import { Image, ImageProps } from './index';
 
 export default {
     title: 'Components/Image',
@@ -8,13 +9,15 @@ export default {
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 };
 
-const templateStyles = {};
+const defaultArgs: BaseProps & ImageProps = {
+    as: 'img',
+    src: 'https://placekitten.com/800/450',
+    alt: 'A pretty cat'
+};
 
 const DefaultTemplate = (args) => <Image {...args} />;
 
 export const Default = DefaultTemplate.bind({});
 Default.args = {
-    src: 'https://placekitten.com/800/450',
-    alt: 'A pretty cat',
-    styles: templateStyles
+    ...defaultArgs
 };

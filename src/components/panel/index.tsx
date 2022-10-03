@@ -11,9 +11,9 @@ import { TagProps } from '../tag';
 import { Button, ButtonProps, ButtonPropType } from '../button';
 import { panelSpinnerStyles, panelCloseButtonStyles } from './styles';
 import { BaseProps } from '../shared-types';
-import { ImagePropType } from '../image';
 import { PanelActions } from './components/panel-actions';
 import { PanelBody } from './components/panel-body';
+import { ImageProps } from '../image';
 
 export * from './styles';
 
@@ -45,7 +45,7 @@ export interface PanelProps {
     readonly elevation?: ElevationHeight;
     readonly tag?: PanelTagProp;
     readonly buttons?: PanelButtonProp[];
-    readonly image?: ImagePropType;
+    readonly image?: ImageProps;
     readonly theme: Theme;
 }
 

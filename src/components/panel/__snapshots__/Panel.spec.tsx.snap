@@ -581,18 +581,10 @@ exports[`it works with image 1`] = `
 }
 
 .c1 {
-  border-bottom-style: solid;
-  border-bottom-width: 4px;
-  width: 100%;
-  margin-bottom: 0.5rem;
-  border-bottom-color: #fafafa;
-}
-
-.c2 {
   position: relative;
 }
 
-.c3 {
+.c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
@@ -600,11 +592,11 @@ exports[`it works with image 1`] = `
   color: #292B3E;
 }
 
-.c3 > p {
+.c2 > p {
   margin-bottom: 0.5rem;
 }
 
-.c3 > p:last-child {
+.c2 > p:last-child {
   margin-bottom: 0;
 }
 
@@ -614,14 +606,14 @@ exports[`it works with image 1`] = `
 >
   <img
     alt="test"
-    class="c1"
+    class=""
     src=""
   />
   <div
-    class="c2"
+    class="c1"
   >
     <div
-      class="c3"
+      class="c2"
     >
       Hello world
     </div>
