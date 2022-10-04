@@ -1,6 +1,9 @@
 import * as React from 'react';
+import styled from 'styled-components';
 import { ThemeProvider } from '../theme-provider';
-import { Spinner } from './index';
+import { StyledBox, StyledBoxProps } from '../box';
+import { BaseProps } from '../shared-types';
+import { Spinner, SpinnerProps } from './index';
 
 export default {
     title: 'Components/Spinner',
@@ -8,13 +11,21 @@ export default {
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 };
 
-const templateStyles = {
-    sizeWidth: '16'
-};
+const defaultArgs: BaseProps & SpinnerProps = {};
 
-const DefaultTemplate = (args) => <Spinner {...args} />;
+const Container = styled(StyledBox)<StyledBoxProps>`
+    ${({ theme }) => `
+        width: ${theme.sizes['16']};
+    `}
+`;
+
+const DefaultTemplate = (args) => (
+    <Container>
+        <Spinner {...args} />
+    </Container>
+);
 
 export const Default = DefaultTemplate.bind({});
 Default.args = {
-    styles: templateStyles
+    ...defaultArgs
 };
