@@ -1,15 +1,14 @@
 import * as React from 'react';
 import { withTheme } from 'styled-components';
-import { Theme } from '@lapidist/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { KindType } from '../shared-types';
+import { KindType, Theme } from '../types';
 import { Elevated } from '../elevated';
 import { Box, BoxProps } from '../box';
 // import { buttonSpinnerStyles } from './styles';
 import { Spinner } from '../spinner';
 
-export * from './styles';
+// export * from './styles';
 
 export type ButtonPropType = BoxProps &
     React.ButtonHTMLAttributes<HTMLButtonElement> &

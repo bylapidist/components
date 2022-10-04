@@ -4,8 +4,7 @@ import styled, {
     FlattenInterpolation,
     ThemeProps
 } from 'styled-components';
-import { Theme } from '@lapidist/styles';
-import { BaseProps } from '../shared-types';
+import { BaseProps, Theme } from '../types';
 import { AspectRatio } from '../aspect-ratio';
 import {
     fadeIn,

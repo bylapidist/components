@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ThemeProvider } from '../theme-provider';
 import { Text, TextProps } from './index';
-import { BaseProps } from '../shared-types';
+import { BaseProps } from '../types';
 
 export default {
     title: 'Components/Text',

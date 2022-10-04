@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BaseProps } from '../shared-types';
+import { BaseProps } from '../types';
 import { ThemeProvider } from '../theme-provider';
 import { List, ListProps } from './index';
 

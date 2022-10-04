@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { withTheme } from 'styled-components';
-import { Theme } from '@lapidist/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 import { Elevated, ElevationHeight } from '../elevated';
@@ -10,12 +9,12 @@ import { HeadingProps } from '../heading';
 import { TagProps } from '../tag';
 import { Button, ButtonProps, ButtonPropType } from '../button';
 // import { panelSpinnerStyles, panelCloseButtonStyles } from './styles';
-import { BaseProps } from '../shared-types';
+import { BaseProps, Theme } from '../types';
 import { PanelActions } from './components/panel-actions';
 import { PanelBody } from './components/panel-body';
 import { ImageProps } from '../image';
 
-export * from './styles';
+// export * from './styles';
 
 export type PanelPropType = BaseProps & BoxProps;
 

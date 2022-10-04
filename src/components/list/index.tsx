@@ -1,8 +1,7 @@
 import * as React from 'react';
 import styled, { ThemeProps } from 'styled-components';
-import { Theme } from '@lapidist/styles';
 import { StyledText } from '../text';
-import { BaseProps } from '../shared-types';
+import { BaseProps, Theme } from '../types';
 
 export type ListType = 'ol' | 'ul';
 

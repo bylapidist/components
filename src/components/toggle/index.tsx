@@ -6,7 +6,7 @@ import { faCircle, faDotCircle } from '@fortawesome/free-solid-svg-icons';
 import { Button, ButtonProps, ButtonPropType } from '../button';
 import { BoxProps } from '../box';
 
-export * from './styles';
+// export * from './styles';
 
 export type TogglePropType = BoxProps & ButtonProps & ButtonPropType;
 

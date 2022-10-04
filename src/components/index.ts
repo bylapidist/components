@@ -15,4 +15,4 @@ export * from './theme-provider';
 export * from './theme-provider/defaultTheme';
 export * from './theme-provider/darkTheme';
 export * from './toggle';
-export * from './shared-types';
+export * from './types';

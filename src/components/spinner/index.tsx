@@ -1,7 +1,6 @@
 import * as React from 'react';
 import styled, { css, keyframes, ThemeProps } from 'styled-components';
-import { Theme } from '@lapidist/styles';
-import { BaseProps } from '../shared-types';
+import { BaseProps, Theme } from '../types';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface SpinnerProps extends React.HTMLProps<HTMLDivElement> {}

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ThemeProvider } from '../theme-provider';
 import { WithParagraphs } from '../text/Text.stories';
 import { StyledTextProps } from '../text';
-import { BaseProps } from '../shared-types';
+import { BaseProps } from '../types';
 import { Heading, HeadingProps } from './index';
 
 export default {

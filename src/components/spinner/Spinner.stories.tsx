@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { ThemeProvider } from '../theme-provider';
 import { StyledBox, StyledBoxProps } from '../box';
-import { BaseProps } from '../shared-types';
+import { BaseProps } from '../types';
 import { Spinner, SpinnerProps } from './index';
 
 export default {

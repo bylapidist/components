@@ -1,8 +1,7 @@
 import * as React from 'react';
 import styled, { ThemeProps } from 'styled-components';
-import { Theme } from '@lapidist/styles';
 import { StyledText } from '../text';
-import { BaseProps, KindType } from '../shared-types';
+import { BaseProps, KindType, Theme } from '../types';
 
 export interface TagProps {
     readonly kind: KindType;

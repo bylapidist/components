@@ -1,7 +1,6 @@
 import * as React from 'react';
 import styled, { ThemeProps } from 'styled-components';
-import { Theme } from '@lapidist/styles';
-import { BaseProps } from '../shared-types';
+import { BaseProps, Theme } from '../types';
 
 export type Ratio = { x: number | string; y: number | string };
 

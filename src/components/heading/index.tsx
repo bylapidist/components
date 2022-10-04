@@ -1,7 +1,6 @@
 import * as React from 'react';
 import styled, { ThemeProps } from 'styled-components';
-import { Theme } from '@lapidist/styles';
-import { AsPropType, BaseProps } from '../shared-types';
+import { AsPropType, BaseProps, Theme } from '../types';
 
 export interface HeadingProps {
     readonly size?: HeadingSize;

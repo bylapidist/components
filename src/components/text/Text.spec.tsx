@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
 import { Text } from './index';
-import { BaseProps } from '../shared-types';
+import { BaseProps } from '../types';
 import { ThemeProvider } from '../theme-provider';
 
 const setup = (

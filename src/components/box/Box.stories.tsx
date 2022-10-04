@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ThemeProvider } from '../theme-provider';
-import { BaseProps } from '../shared-types';
+import { BaseProps } from '../types';
 import { WithParagraphs } from '../text/Text.stories';
 import { Box, BoxProps } from './index';
 

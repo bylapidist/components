@@ -3,7 +3,7 @@ import { cleanup, render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
 
-import { KindType } from '../shared-types';
+import { KindType } from '../types';
 import { ThemeProvider } from '../theme-provider';
 import { Toggle } from './index';
 
