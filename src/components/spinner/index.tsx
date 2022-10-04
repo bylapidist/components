@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled, { css, keyframes, ThemeProps } from 'styled-components';
 import { BaseProps, Theme } from '../types';
+import { StyledElevated, StyledElevatedProps } from '../elevated';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface SpinnerProps extends React.HTMLProps<HTMLDivElement> {}
@@ -52,7 +53,7 @@ const SpinnerInner = styled.div<StyledSpinnerProps>`
     `}
 `;
 
-const SpinnerOuter = styled.div<StyledSpinnerProps>`
+const SpinnerOuter = styled(StyledElevated)<StyledElevatedProps>`
     ${({ theme }) => `
         display: flex;
         position: relative;
@@ -60,7 +61,6 @@ const SpinnerOuter = styled.div<StyledSpinnerProps>`
         align-items: center;
         width: ${theme.widths.full};
         border-radius: ${theme.borderRadii['3']};
-        box-shadow: ${theme.boxShadows['1']};
     `}
 `;
 
@@ -68,7 +68,7 @@ export const StyledSpinner = styled.div<StyledSpinnerProps>``;
 
 export const Spinner = (props: BaseProps & SpinnerProps) => (
     <StyledSpinner {...props} data-testid={props.testId} as={props.as || 'div'}>
-        <SpinnerOuter>
+        <SpinnerOuter elevation={1}>
             <SpinnerInner>
                 <PingPongAnimation />
             </SpinnerInner>

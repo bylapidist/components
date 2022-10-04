@@ -157,7 +157,6 @@ exports[`it works with loading 1`] = `
   align-items: center;
   width: 100%;
   border-radius: 0.6rem;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
 <button
@@ -175,7 +174,8 @@ exports[`it works with loading 1`] = `
     class=""
   >
     <div
-      class="c2"
+      class="c0 c2"
+      elevation="1"
     >
       <div
         class="c3"
