@@ -11,6 +11,7 @@ export default {
 
 const defaultArgs: BaseProps & ListProps = {
     as: 'ul',
+    testId: 'List',
     items: [
         { item: 'hello', key: 'test1' },
         { item: 'world', key: 'test2' }

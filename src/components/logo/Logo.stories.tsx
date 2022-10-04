@@ -1,6 +1,9 @@
 import * as React from 'react';
+import styled from 'styled-components';
 import { ThemeProvider } from '../theme-provider';
-import { Logo } from './index';
+import { BaseProps } from '../shared-types';
+import { StyledBox, StyledBoxProps } from '../box';
+import { Logo, LogoProps } from './index';
 
 export default {
     title: 'Components/Logo',
@@ -8,25 +11,36 @@ export default {
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 };
 
-const templateStyles = {
-    sizeWidth: '16'
+const defaultArgs: BaseProps & LogoProps = {
+    as: 'div',
+    testId: 'Logo'
 };
 
-const DefaultTemplate = (args) => <Logo {...args} />;
+const Container = styled(StyledBox)<StyledBoxProps>`
+    ${({ theme }) => `
+        width: ${theme.sizes['16']};
+    `}
+`;
+
+const DefaultTemplate = (args) => (
+    <Container>
+        <Logo {...args} />
+    </Container>
+);
 
 export const Default = DefaultTemplate.bind({});
 Default.args = {
-    styles: templateStyles
+    ...defaultArgs
 };
 
 export const Animated = DefaultTemplate.bind({});
 Animated.args = {
-    animated: true,
-    styles: templateStyles
+    ...defaultArgs,
+    animated: true
 };
 
 export const Thinking = DefaultTemplate.bind({});
 Thinking.args = {
-    thinking: true,
-    styles: templateStyles
+    ...defaultArgs,
+    thinking: true
 };

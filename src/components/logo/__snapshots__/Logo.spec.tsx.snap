@@ -28,6 +28,18 @@ exports[`it works 1`] = `
   padding-bottom: calc(100% / (1 / 1));
 }
 
+.c0 {
+  -webkit-animation: cPigpe;
+  animation: cPigpe;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  overflow: hidden;
+}
+
 .c2 {
   -webkit-animation-delay: 0;
   animation-delay: 0;
@@ -44,18 +56,6 @@ exports[`it works 1`] = `
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
   fill: #ebc764;
-}
-
-.c0 {
-  overflow: hidden;
-  -webkit-animation: cPigpe;
-  animation: cPigpe;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
 }
 
 <div
@@ -113,6 +113,18 @@ exports[`it works animated 1`] = `
   padding-bottom: calc(100% / (1 / 1));
 }
 
+.c0 {
+  -webkit-animation: cPigpe;
+  animation: cPigpe;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  overflow: hidden;
+}
+
 .c2 {
   -webkit-animation: dTTrEC;
   animation: dTTrEC;
@@ -153,18 +165,6 @@ exports[`it works animated 1`] = `
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
   fill: #ebc764;
-}
-
-.c0 {
-  overflow: hidden;
-  -webkit-animation: cPigpe;
-  animation: cPigpe;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
 }
 
 <div
@@ -222,6 +222,18 @@ exports[`it works thinking 1`] = `
   padding-bottom: calc(100% / (1 / 1));
 }
 
+.c0 {
+  -webkit-animation: cPigpe;
+  animation: cPigpe;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  overflow: hidden;
+}
+
 .c2 {
   -webkit-animation: hzFDkX;
   animation: hzFDkX;
@@ -262,18 +274,6 @@ exports[`it works thinking 1`] = `
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
   fill: #ebc764;
-}
-
-.c0 {
-  overflow: hidden;
-  -webkit-animation: cPigpe;
-  animation: cPigpe;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
 }
 
 <div
