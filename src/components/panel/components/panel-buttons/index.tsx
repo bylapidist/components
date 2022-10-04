@@ -14,7 +14,12 @@ export const PanelButtons: React.FC<Pick<PanelProps, 'buttons'>> = ({
         // styles={panelButtonsStyles()}
         >
             {buttons.map((button) => (
-                <Button key={button.title} kind="primary" {...button?.props}>
+                <Button
+                    key={button.title}
+                    kind="primary"
+                    variant="medium"
+                    {...button?.props}
+                >
                     {button.title}
                 </Button>
             ))}

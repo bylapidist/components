@@ -14,6 +14,7 @@ export type StyledBoxProps = BaseProps & BoxProps & ThemeProps<Theme>;
 
 export const StyledBox = styled.div<StyledBoxProps>`
     ${({ theme, gutter = 0, gutterX = 0, gutterY = 0 }) => `
+        position: relative;
         padding: ${theme.sizes[gutter.toString()]};
         padding-top: ${
             theme.sizes[gutterY ? gutterY.toString() : gutter.toString()]

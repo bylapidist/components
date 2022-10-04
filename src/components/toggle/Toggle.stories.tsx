@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { ThemeProvider } from '../theme-provider';
-import { Toggle } from './index';
-import { Box } from '../box';
+import { Toggle, ToggleProps } from './index';
+import { BaseProps } from '../types';
+import styled from 'styled-components';
 
 export default {
     title: 'Components/Toggle',
@@ -9,14 +10,23 @@ export default {
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 };
 
+const defaultArgs: BaseProps & ToggleProps = {
+    as: 'button',
+    testId: 'Toggle',
+    kind: 'primary',
+    variant: 'medium',
+    checked: false,
+    disabled: false,
+    loading: false
+};
+
 const DefaultTemplate = (args) => {
     const [checked, setChecked] = React.useState(false);
     return (
         <Toggle
-            kind={args?.kind || 'primary'}
+            {...args}
             checked={checked}
             onClick={() => setChecked(!checked)}
-            {...args}
         />
     );
 };
@@ -24,31 +34,38 @@ const DefaultTemplate = (args) => {
 export const SingleToggle = (args) => (
     <DefaultTemplate {...args}>Toggle</DefaultTemplate>
 );
+SingleToggle.args = {
+    ...defaultArgs
+};
+
+const ButtonRow = styled.div`
+    display: flex;
+    grid-gap: ${(props) => props.theme.sizes['2']};
+`;
 
 export const MultiToggle = (args) => {
     const [option1Checked, setOption1Checked] = React.useState(false);
     const [option2Checked, setOption2Checked] = React.useState(false);
 
     return (
-        <Box styles={{ display: 'flex', sizeGap: '2' }}>
+        <ButtonRow>
             <DefaultTemplate
-                kind="tertiary"
-                variant="medium"
+                {...args}
                 checked={option1Checked}
                 onClick={() => setOption1Checked(!option1Checked)}
-                {...args}
             >
                 Option 1
             </DefaultTemplate>
             <DefaultTemplate
-                kind="tertiary"
-                variant="medium"
+                {...args}
                 checked={option2Checked}
                 onClick={() => setOption2Checked(!option2Checked)}
-                {...args}
             >
                 Option 2
             </DefaultTemplate>
-        </Box>
+        </ButtonRow>
     );
+};
+MultiToggle.args = {
+    ...defaultArgs
 };

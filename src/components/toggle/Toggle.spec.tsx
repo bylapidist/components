@@ -15,13 +15,17 @@ afterEach(cleanup);
 const kinds: KindType[] = ['primary', 'secondary', 'tertiary', 'danger'];
 
 test.each(kinds)('it works', (kind) => {
-    const { container } = setup(<Toggle kind={kind}>Hello world</Toggle>);
+    const { container } = setup(
+        <Toggle kind={kind} variant="medium">
+            Hello world
+        </Toggle>
+    );
     expect(container.firstChild).toMatchSnapshot();
 });
 
 test.each(kinds)('it works with checked', (kind) => {
     const { container } = setup(
-        <Toggle kind={kind} checked>
+        <Toggle kind={kind} variant="medium" checked>
             Hello world
         </Toggle>
     );

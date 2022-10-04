@@ -4,7 +4,7 @@ import { BaseProps, Theme } from '../types';
 
 export type ElevationHeight = 0 | 1 | 2 | 3 | 4;
 
-export interface ElevatedProps {
+export interface ElevatedProps extends React.HTMLProps<HTMLDivElement> {
     readonly elevation: ElevationHeight;
 }
 

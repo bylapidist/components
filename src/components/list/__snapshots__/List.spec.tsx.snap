@@ -6,7 +6,7 @@ exports[`it works with elements 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {
@@ -49,7 +49,7 @@ exports[`it works with ordered 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {
@@ -88,7 +88,7 @@ exports[`it works with strings 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {
@@ -127,7 +127,7 @@ exports[`it works with unordered 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {

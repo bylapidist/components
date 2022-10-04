@@ -1,337 +1,1271 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it works 1`] = `
-.c0 {
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+.c4 {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
 }
 
-.c1 {
+.c8 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c8 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c8 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-<button
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.c5 {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #17a3a5;
+  border-color: #135f61;
+  color: white;
+  background-color: #17a3a5;
+  border-color: #17a3a5;
+}
+
+.c2:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #135f61;
+  color: white;
+  background-color: #135f61;
+}
+
+.c2:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
+  color: white;
+  background-color: #135f61;
+}
+
+.c0 .c1 {
+  border-radius: 9999px;
+}
+
+.c0 .c3 {
+  border-radius: 9999px;
+}
+
+<div
   class="c0"
-  elevation="1"
   kind="primary"
 >
-  <div
-    class="c1"
+  <button
+    class="c1 c2"
+    kind="primary"
   >
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-circle "
-      data-icon="circle"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style="margin-right: 0.5rem;"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c3 c4 c5"
+      elevation="2"
+      kind="primary"
     >
-      <path
-        d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
-        fill="currentColor"
-      />
-    </svg>
-    Hello world
-  </div>
-</button>
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          kind="primary"
+        >
+          <div
+            class="c8 c9"
+            kind="primary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-circle "
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            class="c8 c10"
+            kind="primary"
+          >
+            Hello world
+          </div>
+        </div>
+      </div>
+    </div>
+  </button>
+</div>
 `;
 
 exports[`it works 2`] = `
-.c0 {
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+.c4 {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
 }
 
-.c1 {
+.c8 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c8 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c8 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-<button
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.c5 {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #ebc764;
+  border-color: #937032;
+  color: #17a3a5;
+  border-color: #d4d4d4;
+}
+
+.c2:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #937032;
+  color: #135f61;
+}
+
+.c2:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
+}
+
+.c0 .c1 {
+  border-radius: 9999px;
+}
+
+.c0 .c3 {
+  border-radius: 9999px;
+}
+
+<div
   class="c0"
-  elevation="1"
   kind="secondary"
 >
-  <div
-    class="c1"
+  <button
+    class="c1 c2"
+    kind="secondary"
   >
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-circle "
-      data-icon="circle"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style="margin-right: 0.5rem;"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c3 c4 c5"
+      elevation="2"
+      kind="secondary"
     >
-      <path
-        d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
-        fill="currentColor"
-      />
-    </svg>
-    Hello world
-  </div>
-</button>
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          kind="secondary"
+        >
+          <div
+            class="c8 c9"
+            kind="secondary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-circle "
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            class="c8 c10"
+            kind="secondary"
+          >
+            Hello world
+          </div>
+        </div>
+      </div>
+    </div>
+  </button>
+</div>
 `;
 
 exports[`it works 3`] = `
-.c0 {
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+.c4 {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
 }
 
-.c1 {
+.c8 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c8 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c8 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-<button
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.c5 {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #72af5d;
+  border-color: #548230;
+  color: #73748b;
+  border-color: #fafafa;
+}
+
+.c2:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #548230;
+  color: #292B3E;
+}
+
+.c2:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
+}
+
+.c0 .c1 {
+  border-radius: 9999px;
+}
+
+.c0 .c3 {
+  border-radius: 9999px;
+}
+
+<div
   class="c0"
-  elevation="1"
   kind="tertiary"
 >
-  <div
-    class="c1"
+  <button
+    class="c1 c2"
+    kind="tertiary"
   >
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-circle "
-      data-icon="circle"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style="margin-right: 0.5rem;"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c3 c4 c5"
+      elevation="2"
+      kind="tertiary"
     >
-      <path
-        d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
-        fill="currentColor"
-      />
-    </svg>
-    Hello world
-  </div>
-</button>
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          kind="tertiary"
+        >
+          <div
+            class="c8 c9"
+            kind="tertiary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-circle "
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            class="c8 c10"
+            kind="tertiary"
+          >
+            Hello world
+          </div>
+        </div>
+      </div>
+    </div>
+  </button>
+</div>
 `;
 
 exports[`it works 4`] = `
-.c0 {
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+.c4 {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
 }
 
-.c1 {
+.c8 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c8 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c8 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-<button
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.c5 {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #b41e25;
+  border-color: #810000;
+}
+
+.c2:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #810000;
+}
+
+.c2:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
+}
+
+.c0 .c1 {
+  border-radius: 9999px;
+}
+
+.c0 .c3 {
+  border-radius: 9999px;
+}
+
+<div
   class="c0"
-  elevation="1"
   kind="danger"
 >
-  <div
-    class="c1"
+  <button
+    class="c1 c2"
+    kind="danger"
   >
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-circle "
-      data-icon="circle"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style="margin-right: 0.5rem;"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c3 c4 c5"
+      elevation="2"
+      kind="danger"
     >
-      <path
-        d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
-        fill="currentColor"
-      />
-    </svg>
-    Hello world
-  </div>
-</button>
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          kind="danger"
+        >
+          <div
+            class="c8 c9"
+            kind="danger"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-circle "
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            class="c8 c10"
+            kind="danger"
+          >
+            Hello world
+          </div>
+        </div>
+      </div>
+    </div>
+  </button>
+</div>
 `;
 
 exports[`it works with checked 1`] = `
-.c0 {
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+.c4 {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
 }
 
-.c1 {
+.c8 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c8 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c8 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-<button
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.c5 {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #17a3a5;
+  border-color: #135f61;
+  color: white;
+  background-color: #17a3a5;
+  border-color: #17a3a5;
+}
+
+.c2:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #135f61;
+  color: white;
+  background-color: #135f61;
+}
+
+.c2:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
+  color: white;
+  background-color: #135f61;
+}
+
+.c0 .c1 {
+  border-radius: 9999px;
+  border-color: #73748b;
+}
+
+.c0 .c3 {
+  border-radius: 9999px;
+}
+
+<div
   class="c0"
-  elevation="1"
   kind="primary"
 >
-  <div
-    class="c1"
+  <button
+    class="c1 c2"
+    kind="primary"
   >
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-circle-dot "
-      data-icon="circle-dot"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style="margin-right: 0.5rem;"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c3 c4 c5"
+      elevation="2"
+      kind="primary"
     >
-      <path
-        d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 352C309 352 352 309 352 256C352 202.1 309 160 256 160C202.1 160 160 202.1 160 256C160 309 202.1 352 256 352z"
-        fill="currentColor"
-      />
-    </svg>
-    Hello world
-  </div>
-</button>
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          kind="primary"
+        >
+          <div
+            class="c8 c9"
+            kind="primary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-circle-dot "
+              data-icon="circle-dot"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 352C309 352 352 309 352 256C352 202.1 309 160 256 160C202.1 160 160 202.1 160 256C160 309 202.1 352 256 352z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            class="c8 c10"
+            kind="primary"
+          >
+            Hello world
+          </div>
+        </div>
+      </div>
+    </div>
+  </button>
+</div>
 `;
 
 exports[`it works with checked 2`] = `
-.c0 {
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+.c4 {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
 }
 
-.c1 {
+.c8 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c8 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c8 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-<button
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.c5 {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #ebc764;
+  border-color: #937032;
+  color: #17a3a5;
+  border-color: #d4d4d4;
+}
+
+.c2:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #937032;
+  color: #135f61;
+}
+
+.c2:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
+}
+
+.c0 .c1 {
+  border-radius: 9999px;
+  border-color: #73748b;
+}
+
+.c0 .c3 {
+  border-radius: 9999px;
+}
+
+<div
   class="c0"
-  elevation="1"
   kind="secondary"
 >
-  <div
-    class="c1"
+  <button
+    class="c1 c2"
+    kind="secondary"
   >
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-circle-dot "
-      data-icon="circle-dot"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style="margin-right: 0.5rem;"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c3 c4 c5"
+      elevation="2"
+      kind="secondary"
     >
-      <path
-        d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 352C309 352 352 309 352 256C352 202.1 309 160 256 160C202.1 160 160 202.1 160 256C160 309 202.1 352 256 352z"
-        fill="currentColor"
-      />
-    </svg>
-    Hello world
-  </div>
-</button>
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          kind="secondary"
+        >
+          <div
+            class="c8 c9"
+            kind="secondary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-circle-dot "
+              data-icon="circle-dot"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 352C309 352 352 309 352 256C352 202.1 309 160 256 160C202.1 160 160 202.1 160 256C160 309 202.1 352 256 352z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            class="c8 c10"
+            kind="secondary"
+          >
+            Hello world
+          </div>
+        </div>
+      </div>
+    </div>
+  </button>
+</div>
 `;
 
 exports[`it works with checked 3`] = `
-.c0 {
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+.c4 {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
 }
 
-.c1 {
+.c8 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c8 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c8 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-<button
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.c5 {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #72af5d;
+  border-color: #548230;
+  color: #73748b;
+  border-color: #fafafa;
+}
+
+.c2:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #548230;
+  color: #292B3E;
+}
+
+.c2:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
+}
+
+.c0 .c1 {
+  border-radius: 9999px;
+  border-color: #73748b;
+}
+
+.c0 .c3 {
+  border-radius: 9999px;
+}
+
+<div
   class="c0"
-  elevation="1"
   kind="tertiary"
 >
-  <div
-    class="c1"
+  <button
+    class="c1 c2"
+    kind="tertiary"
   >
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-circle-dot "
-      data-icon="circle-dot"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style="margin-right: 0.5rem;"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c3 c4 c5"
+      elevation="2"
+      kind="tertiary"
     >
-      <path
-        d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 352C309 352 352 309 352 256C352 202.1 309 160 256 160C202.1 160 160 202.1 160 256C160 309 202.1 352 256 352z"
-        fill="currentColor"
-      />
-    </svg>
-    Hello world
-  </div>
-</button>
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          kind="tertiary"
+        >
+          <div
+            class="c8 c9"
+            kind="tertiary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-circle-dot "
+              data-icon="circle-dot"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 352C309 352 352 309 352 256C352 202.1 309 160 256 160C202.1 160 160 202.1 160 256C160 309 202.1 352 256 352z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            class="c8 c10"
+            kind="tertiary"
+          >
+            Hello world
+          </div>
+        </div>
+      </div>
+    </div>
+  </button>
+</div>
 `;
 
 exports[`it works with checked 4`] = `
-.c0 {
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+.c4 {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
 }
 
-.c1 {
+.c8 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c8 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c8 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c6 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-<button
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.c5 {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #b41e25;
+  border-color: #810000;
+}
+
+.c2:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #810000;
+}
+
+.c2:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
+}
+
+.c0 .c1 {
+  border-radius: 9999px;
+  border-color: #73748b;
+}
+
+.c0 .c3 {
+  border-radius: 9999px;
+}
+
+<div
   class="c0"
-  elevation="1"
   kind="danger"
 >
-  <div
-    class="c1"
+  <button
+    class="c1 c2"
+    kind="danger"
   >
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-circle-dot "
-      data-icon="circle-dot"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style="margin-right: 0.5rem;"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c3 c4 c5"
+      elevation="2"
+      kind="danger"
     >
-      <path
-        d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 352C309 352 352 309 352 256C352 202.1 309 160 256 160C202.1 160 160 202.1 160 256C160 309 202.1 352 256 352z"
-        fill="currentColor"
-      />
-    </svg>
-    Hello world
-  </div>
-</button>
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          kind="danger"
+        >
+          <div
+            class="c8 c9"
+            kind="danger"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-circle-dot "
+              data-icon="circle-dot"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 352C309 352 352 309 352 256C352 202.1 309 160 256 160C202.1 160 160 202.1 160 256C160 309 202.1 352 256 352z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            class="c8 c10"
+            kind="danger"
+          >
+            Hello world
+          </div>
+        </div>
+      </div>
+    </div>
+  </button>
+</div>
 `;

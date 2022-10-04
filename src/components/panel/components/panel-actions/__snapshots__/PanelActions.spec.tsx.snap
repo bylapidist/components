@@ -4,6 +4,7 @@ exports[`it works 1`] = `null`;
 
 exports[`it works with buttons 1`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -11,8 +12,125 @@ exports[`it works with buttons 1`] = `
   padding-right: 0;
 }
 
+.c4 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.c6 {
+  font-size: 1rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c6 > p {
+  margin-bottom: 0.5rem;
+}
+
+.c6 > p:last-child {
+  margin-bottom: 0;
+}
+
+.c2 {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.c3 {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
 .c1 {
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #17a3a5;
+  border-color: #135f61;
+  color: white;
+  background-color: #17a3a5;
+  border-color: #17a3a5;
+}
+
+.c1:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #135f61;
+  color: white;
+  background-color: #135f61;
+}
+
+.c1:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c1:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
+  color: white;
+  background-color: #135f61;
+}
+
+.c8 {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #ebc764;
+  border-color: #937032;
+  color: #17a3a5;
+  border-color: #d4d4d4;
+}
+
+.c8:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #937032;
+  color: #135f61;
+}
+
+.c8:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c8:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
 }
 
 <div
@@ -26,24 +144,54 @@ exports[`it works with buttons 1`] = `
   >
     <button
       class="c1"
-      elevation="1"
       kind="primary"
     >
       <div
-        class="c0"
+        class="c2 c3"
+        elevation="2"
+        kind="primary"
       >
-        Button 1
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+            kind="primary"
+          >
+            <div
+              class="c6 c7"
+              kind="primary"
+            >
+              Button 1
+            </div>
+          </div>
+        </div>
       </div>
     </button>
     <button
-      class="c1"
-      elevation="1"
+      class="c8"
       kind="secondary"
     >
       <div
-        class="c0"
+        class="c2 c3"
+        elevation="2"
+        kind="secondary"
       >
-        Button 2
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+            kind="secondary"
+          >
+            <div
+              class="c6 c7"
+              kind="secondary"
+            >
+              Button 2
+            </div>
+          </div>
+        </div>
       </div>
     </button>
   </div>
@@ -54,6 +202,7 @@ exports[`it works with status 1`] = `null`;
 
 exports[`it works with status 2`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -66,7 +215,7 @@ exports[`it works with status 2`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c1 > p {
@@ -108,6 +257,7 @@ exports[`it works with status 2`] = `
 
 exports[`it works with status 3`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -120,7 +270,7 @@ exports[`it works with status 3`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c1 > p {
@@ -162,6 +312,7 @@ exports[`it works with status 3`] = `
 
 exports[`it works with status 4`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -174,7 +325,7 @@ exports[`it works with status 4`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c1 > p {
@@ -216,6 +367,7 @@ exports[`it works with status 4`] = `
 
 exports[`it works with tag 1`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -228,7 +380,7 @@ exports[`it works with tag 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c1 > p {
@@ -282,6 +434,7 @@ exports[`it works with tag 1`] = `
 
 exports[`it works with tag 2`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -294,7 +447,7 @@ exports[`it works with tag 2`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c1 > p {

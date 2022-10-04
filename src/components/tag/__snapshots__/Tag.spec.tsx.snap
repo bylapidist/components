@@ -6,7 +6,7 @@ exports[`it works 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {
@@ -52,7 +52,7 @@ exports[`it works 2`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {
@@ -98,7 +98,7 @@ exports[`it works 3`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {
@@ -144,7 +144,7 @@ exports[`it works 4`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {
@@ -190,7 +190,7 @@ exports[`it works with namespace 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {
@@ -248,7 +248,7 @@ exports[`it works with namespace 2`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {
@@ -306,7 +306,7 @@ exports[`it works with namespace 3`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {
@@ -364,7 +364,7 @@ exports[`it works with namespace 4`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {

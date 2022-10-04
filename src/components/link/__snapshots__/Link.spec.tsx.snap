@@ -6,7 +6,7 @@ exports[`it works 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c0 > p {

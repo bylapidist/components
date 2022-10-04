@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { ThemeProvider } from '../theme-provider';
-import { Button } from './index';
+import { BaseProps } from '../types';
+import { Button, ButtonProps } from './index';
 
 export default {
     title: 'Components/Button',
@@ -9,46 +10,53 @@ export default {
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 };
 
-const templateStyles = {};
+const defaultArgs: BaseProps & ButtonProps = {
+    as: 'button',
+    testId: 'Button',
+    kind: 'primary',
+    variant: 'medium',
+    disabled: false,
+    loading: false
+};
 
 const DefaultTemplate = (args) => <Button {...args}>Click Me</Button>;
 
 export const Primary = DefaultTemplate.bind({});
 Primary.args = {
-    kind: 'primary',
-    styles: templateStyles
+    ...defaultArgs,
+    kind: 'primary'
 };
 
 export const Secondary = DefaultTemplate.bind({});
 Secondary.args = {
-    kind: 'secondary',
-    styles: templateStyles
+    ...defaultArgs,
+    kind: 'secondary'
 };
 
 export const Tertiary = DefaultTemplate.bind({});
 Tertiary.args = {
-    kind: 'tertiary',
-    styles: templateStyles
+    ...defaultArgs,
+    kind: 'tertiary'
 };
 
 export const Danger = DefaultTemplate.bind({});
 Danger.args = {
-    kind: 'danger',
-    styles: templateStyles
+    ...defaultArgs,
+    kind: 'danger'
 };
 
 export const WithIcon = DefaultTemplate.bind({});
 WithIcon.args = {
+    ...defaultArgs,
     kind: 'primary',
-    icon: faXmark,
-    styles: templateStyles
+    icon: faXmark
 };
 
 export const AsAnchor = DefaultTemplate.bind({});
 AsAnchor.args = {
+    ...defaultArgs,
     as: 'a',
     kind: 'primary',
     href: 'https://google.com',
-    target: '_blank',
-    styles: templateStyles
+    target: '_blank'
 };

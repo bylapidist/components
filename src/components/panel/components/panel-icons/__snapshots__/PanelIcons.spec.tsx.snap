@@ -2,6 +2,7 @@
 
 exports[`it works 1`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -16,6 +17,7 @@ exports[`it works 1`] = `
 
 exports[`it works with status 1`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -30,6 +32,7 @@ exports[`it works with status 1`] = `
 
 exports[`it works with status 2`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -42,7 +45,7 @@ exports[`it works with status 2`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c1 > p {
@@ -80,6 +83,7 @@ exports[`it works with status 2`] = `
 
 exports[`it works with status 3`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -92,7 +96,7 @@ exports[`it works with status 3`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c1 > p {
@@ -130,6 +134,7 @@ exports[`it works with status 3`] = `
 
 exports[`it works with status 4`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -142,7 +147,7 @@ exports[`it works with status 4`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c1 > p {
@@ -180,6 +185,7 @@ exports[`it works with status 4`] = `
 
 exports[`it works with tag 1`] = `
 .c0 {
+  position: relative;
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -192,7 +198,7 @@ exports[`it works with tag 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c1 > p {

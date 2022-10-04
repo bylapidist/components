@@ -13,7 +13,7 @@ export const StyledText = styled.div<StyledTextProps>`
         font-family: ${theme.fontFamilies.sans};
         line-height: ${theme.lineHeights.loose};
         font-weight: ${theme.fontWeights['400']};
-        color: ${theme.colors.grey.dark};
+        color: inherit;
         > p {
             margin-bottom: ${theme.sizes['2']};
         }

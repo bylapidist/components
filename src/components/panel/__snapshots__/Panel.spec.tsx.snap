@@ -5,20 +5,12 @@ exports[`it works 1`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -27,6 +19,15 @@ exports[`it works 1`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -126,12 +127,8 @@ exports[`it works with button 1`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+.c4 {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
 }
 
 .c2 {
@@ -139,7 +136,7 @@ exports[`it works with button 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -148,6 +145,86 @@ exports[`it works with button 1`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.c5 {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.c3 {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #17a3a5;
+  border-color: #135f61;
+  color: white;
+  background-color: #17a3a5;
+  border-color: #17a3a5;
+}
+
+.c3:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #135f61;
+  color: white;
+  background-color: #135f61;
+}
+
+.c3:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c3:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
+  color: white;
+  background-color: #135f61;
 }
 
 <div
@@ -173,14 +250,29 @@ exports[`it works with button 1`] = `
       class="c1"
     >
       <button
-        class="c0"
-        elevation="1"
+        class="c3"
         kind="primary"
       >
         <div
-          class="c1"
+          class="c4 c5"
+          elevation="2"
+          kind="primary"
         >
-          Edit
+          <div
+            class="c6"
+          >
+            <div
+              class="c7"
+              kind="primary"
+            >
+              <div
+                class="c2 c8"
+                kind="primary"
+              >
+                Edit
+              </div>
+            </div>
+          </div>
         </div>
       </button>
     </div>
@@ -193,12 +285,8 @@ exports[`it works with dismissable 1`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+.c4 {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
 }
 
 .c2 {
@@ -206,7 +294,7 @@ exports[`it works with dismissable 1`] = `
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -215,6 +303,82 @@ exports[`it works with dismissable 1`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.c5 {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.c3 {
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  color: #72af5d;
+  border-color: #548230;
+  color: #73748b;
+  border-color: #fafafa;
+}
+
+.c3:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #548230;
+  color: #292B3E;
+}
+
+.c3:hover:disabled {
+  cursor: not-allowed;
+}
+
+.c3:disabled {
+  opacity: 0.7;
+  color: #292B3E;
+  background-color: #fafafa;
 }
 
 <div
@@ -231,28 +395,43 @@ exports[`it works with dismissable 1`] = `
     </div>
   </div>
   <button
-    class="c0"
-    elevation="1"
+    class="c3"
     kind="tertiary"
   >
     <div
-      class="c1"
+      class="c4 c5"
+      elevation="2"
+      kind="tertiary"
     >
-      <svg
-        aria-hidden="true"
-        class="svg-inline--fa fa-xmark "
-        data-icon="xmark"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        viewBox="0 0 320 512"
-        xmlns="http://www.w3.org/2000/svg"
+      <div
+        class="c6"
       >
-        <path
-          d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
-          fill="currentColor"
-        />
-      </svg>
+        <div
+          class="c7"
+          kind="tertiary"
+        >
+          <div
+            class="c2 c8"
+            kind="tertiary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-xmark "
+              data-icon="xmark"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
   </button>
 </div>
@@ -263,20 +442,12 @@ exports[`it works with elevation 1`] = `
   box-shadow: none;
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -285,6 +456,15 @@ exports[`it works with elevation 1`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -308,20 +488,12 @@ exports[`it works with elevation 2`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -330,6 +502,15 @@ exports[`it works with elevation 2`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -353,20 +534,12 @@ exports[`it works with elevation 3`] = `
   box-shadow: 0 2px 4px rgba(0,0,0,0.12),0 10px 13px rgba(0,0,0,0.02),0 -10px 13px rgba(0,0,0,0.02);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -375,6 +548,15 @@ exports[`it works with elevation 3`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -398,20 +580,12 @@ exports[`it works with elevation 4`] = `
   box-shadow: 0 2px 5px rgba(0,0,0,0.16),-10px 15px 15px rgba(0,0,0,0.03),10px 0px 15px rgba(0,0,0,0.03);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -420,6 +594,15 @@ exports[`it works with elevation 4`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -443,20 +626,12 @@ exports[`it works with elevation 5`] = `
   box-shadow: 0 2px 6px rgba(0,0,0,0.18),-15px 20px 20px rgba(0,0,0,0.04),15px -5px 20px rgba(0,0,0,0.04);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -465,6 +640,15 @@ exports[`it works with elevation 5`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -488,20 +672,12 @@ exports[`it works with heading 1`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c3 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c3 > p {
@@ -510,6 +686,15 @@ exports[`it works with heading 1`] = `
 
 .c3 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c2 {
@@ -546,20 +731,12 @@ exports[`it works with image 1`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -568,6 +745,15 @@ exports[`it works with image 1`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -596,20 +782,12 @@ exports[`it works with status 1`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -618,6 +796,15 @@ exports[`it works with status 1`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -641,20 +828,12 @@ exports[`it works with status 2`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -663,6 +842,15 @@ exports[`it works with status 2`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -713,20 +901,12 @@ exports[`it works with status 3`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -735,6 +915,15 @@ exports[`it works with status 3`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -785,20 +974,12 @@ exports[`it works with status 4`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -807,6 +988,15 @@ exports[`it works with status 4`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 <div
@@ -857,20 +1047,12 @@ exports[`it works with tag 1`] = `
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-.c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .c2 {
   font-size: 1rem;
   font-family: Montserrat,sans-serif;
   line-height: 2;
   font-weight: 400;
-  color: #292B3E;
+  color: inherit;
 }
 
 .c2 > p {
@@ -879,6 +1061,15 @@ exports[`it works with tag 1`] = `
 
 .c2 > p:last-child {
   margin-bottom: 0;
+}
+
+.c1 {
+  position: relative;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .c3 {

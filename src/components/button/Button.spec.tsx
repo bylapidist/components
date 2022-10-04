@@ -10,15 +10,6 @@ import { Button } from './index';
 const setup = (Component: React.ReactElement) =>
     render(<ThemeProvider>{Component}</ThemeProvider>);
 
-test('it works', () => {
-    const { container } = setup(
-        <Button type="button" kind="primary">
-            Hello world
-        </Button>
-    );
-    expect(container.firstChild).toMatchSnapshot();
-});
-
 test('it works with size small', () => {
     const { container } = setup(
         <Button type="button" kind="secondary" variant="small">
@@ -48,7 +39,7 @@ test('it works with size large', () => {
 
 test('it works with loading', () => {
     const { container } = setup(
-        <Button type="button" kind="secondary" loading>
+        <Button type="button" kind="secondary" variant="medium" loading>
             Hello world
         </Button>
     );
@@ -60,6 +51,7 @@ test('it works with anchor', () => {
         <Button
             as="a"
             kind="secondary"
+            variant="medium"
             href="https://google.com"
             target="_blank"
         >
@@ -77,7 +69,7 @@ test('it works with anchor', () => {
 
 test('it works with icon', () => {
     const { container } = setup(
-        <Button type="button" kind="secondary" icon={faCircle}>
+        <Button type="button" kind="secondary" variant="medium" icon={faCircle}>
             Hello world
         </Button>
     );

@@ -7,7 +7,7 @@ import { BoxProps } from '../box';
 import { Spinner } from '../spinner';
 import { HeadingProps } from '../heading';
 import { TagProps } from '../tag';
-import { Button, ButtonProps, ButtonPropType } from '../button';
+import { Button, ButtonProps } from '../button';
 // import { panelSpinnerStyles, panelCloseButtonStyles } from './styles';
 import { BaseProps, Theme } from '../types';
 import { PanelActions } from './components/panel-actions';
@@ -32,7 +32,7 @@ export type PanelTagProp = {
 
 export type PanelButtonProp = {
     readonly title: string;
-    readonly props?: Omit<ButtonProps & ButtonPropType, 'ref' | 'theme'>;
+    readonly props?: BaseProps & ButtonProps;
 };
 
 export interface PanelProps {
@@ -49,7 +49,6 @@ export interface PanelProps {
 }
 
 const BasePanel: React.FC<PanelPropType & PanelProps> = ({
-    as = 'div',
     loading,
     dismissable,
     onDismiss,
@@ -72,7 +71,6 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
 
     return (
         <Elevated
-            as={as}
             elevation={elevation}
             // styles={mergeStyles(panelStyles({ status, ...restProps }), {
             //     ...panelLoadingStyles({ loading, ...restProps }),
@@ -96,6 +94,7 @@ const BasePanel: React.FC<PanelPropType & PanelProps> = ({
                 <Button
                     // styles={panelCloseButtonStyles()}
                     kind="tertiary"
+                    variant="medium"
                     onClick={handleDismiss}
                 >
                     <FontAwesomeIcon icon={faClose} />

@@ -43,7 +43,7 @@ test('it works with tag', () => {
 
 test('it works with button', () => {
     const { container, getByText, getAllByRole } = setup(
-        <Panel buttons={[{ title: 'Edit', props: { kind: 'primary' } }]}>
+        <Panel buttons={[{ title: 'Edit', props: { kind: 'primary', variant: 'medium' } }]}>
             body
         </Panel>
     );

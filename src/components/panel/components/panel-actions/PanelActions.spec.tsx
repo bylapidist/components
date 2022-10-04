@@ -42,8 +42,14 @@ test('it works with buttons', () => {
         <PanelActions
             {...defaultProps}
             buttons={[
-                { title: 'Button 1', props: { kind: 'primary' } },
-                { title: 'Button 2', props: { kind: 'secondary' } }
+                {
+                    title: 'Button 1',
+                    props: { kind: 'primary', variant: 'medium' }
+                },
+                {
+                    title: 'Button 2',
+                    props: { kind: 'secondary', variant: 'medium' }
+                }
             ]}
         />
     );

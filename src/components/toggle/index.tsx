@@ -1,34 +1,74 @@
 import * as React from 'react';
-import { withTheme } from 'styled-components';
-// import { mergeStyles } from '@lapidist/styles';
+import styled, { ThemeProps } from 'styled-components';
 import { faCircle, faDotCircle } from '@fortawesome/free-solid-svg-icons';
-// import { toggleStyles } from './styles';
-import { Button, ButtonProps, ButtonPropType } from '../button';
-import { BoxProps } from '../box';
+import {
+    ButtonProps,
+    StyledButton,
+    Button,
+    StyledButtonProps
+} from '../button';
+import { StyledElevated } from '../elevated';
+import { BaseProps, Theme } from '../types';
+import { borderColour } from '../helpers';
 
-// export * from './styles';
-
-export type TogglePropType = BoxProps & ButtonProps & ButtonPropType;
-
-export interface ToggleProps {
+export interface ToggleProps extends ButtonProps {
     readonly checked?: boolean;
 }
 
-const BaseToggle: React.FC<Omit<TogglePropType & ToggleProps, 'ref'>> = ({
-    // styles,
-    checked,
-    children,
-    ...restProps
-}) => (
-    <Button
-        // styles={mergeStyles(toggleStyles({ checked }), styles)}
-        icon={checked ? faDotCircle : faCircle}
-        {...restProps}
+export type StyledToggleProps = BaseProps & ToggleProps & ThemeProps<Theme>;
+
+export const StyledToggle = styled.div<StyledToggleProps & StyledButtonProps>`
+    ${({ theme, checked = false }) => `
+        ${StyledButton} {
+            border-radius: ${theme.borderRadii.rounded};
+            ${borderColour(checked, theme.colors.grey.base)}
+        }
+        ${StyledElevated} {
+            border-radius: ${theme.borderRadii.rounded};
+        }
+    `}
+`;
+
+export const Toggle = (props: BaseProps & ToggleProps) => (
+    <StyledToggle
+        kind={props.kind}
+        variant={props.variant}
+        checked={props.checked}
+        data-testid={props.testId}
     >
-        {children}
-    </Button>
+        <Button
+            {...props}
+            as={props.as || 'button'}
+            icon={props.checked ? faDotCircle : faCircle}
+        />
+    </StyledToggle>
 );
 
-export const Toggle = withTheme(BaseToggle);
-
 Toggle.displayName = 'Toggle';
+
+// import * as React from 'react';
+// import { faCircle, faDotCircle } from '@fortawesome/free-solid-svg-icons';
+// import { Button, ButtonProps } from '../button';
+// import { BoxProps } from '../box';
+// export type TogglePropType = BoxProps & ButtonProps;
+//
+// export interface ToggleProps {
+//     readonly checked?: boolean;
+// }
+//
+// const Toggle: React.FC<Omit<TogglePropType & ToggleProps, 'ref'>> = ({
+//     // styles,
+//     checked,
+//     children,
+//     ...restProps
+// }) => (
+//     <Button
+//         // styles={mergeStyles(toggleStyles({ checked }), styles)}
+//         icon={checked ? faDotCircle : faCircle}
+//         {...restProps}
+//     >
+//         {children}
+//     </Button>
+// );
+//
+// Toggle.displayName = 'Toggle';
