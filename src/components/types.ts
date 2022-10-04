@@ -6,51 +6,63 @@ export type AsPropType =
     | React.ElementType
     | string;
 
+export type KindType = 'primary' | 'secondary' | 'tertiary' | 'danger';
+
+export type ThemeObjectType<T> = { [K: string]: T };
+
+export type ThemeArrayType<T> = { [K: string]: T[] };
+
+export type NumberOrStringType = string | number | 0 | undefined;
+
+export type ColorGroupType = {
+    group: NumberOrStringType;
+    shade: NumberOrStringType;
+};
+
+export type ColorOrColorGroupType = CSS.Property.Color | ColorGroupType;
+
+export type ThemeObjects =
+    | ColorOrColorGroupType
+    | NumberOrStringType
+    | ThemeObjectType<CSS.Property.Color>;
+
+export type AnyThemeObjectType =
+    | ThemeObjectType<ThemeObjects>
+    | ThemeArrayType<ThemeObjects>
+    | undefined;
+
+export interface Theme {
+    readonly breakpoints?: ThemeObjectType<string>;
+    readonly fontSizes?: ThemeObjectType<CSS.Property.FontSize>;
+    readonly fontFamilies?: ThemeArrayType<CSS.Property.FontFamily>;
+    readonly fontWeights?: ThemeObjectType<
+        CSS.Property.FontWeight | NumberOrStringType
+    >;
+    readonly lineHeights?: ThemeObjectType<
+        CSS.Property.LineHeight<NumberOrStringType> | NumberOrStringType
+    >;
+    readonly letterSpacings?: ThemeObjectType<
+        CSS.Property.LetterSpacing<NumberOrStringType> | NumberOrStringType
+    >;
+    readonly sizes?: ThemeObjectType<string>;
+    readonly borderRadii?: ThemeObjectType<
+        CSS.Property.BorderRadius<NumberOrStringType>
+    >;
+    readonly borderWidths?: ThemeObjectType<
+        | CSS.Property.BorderWidth<NumberOrStringType>
+        | CSS.Property.BorderTopWidth<NumberOrStringType>
+        | CSS.Property.BorderRightWidth<NumberOrStringType>
+        | CSS.Property.BorderBottomWidth<NumberOrStringType>
+        | CSS.Property.BorderLeftWidth<NumberOrStringType>
+    >;
+    readonly boxShadows?: ThemeObjectType<CSS.Property.BoxShadow>;
+    readonly widths?: ThemeObjectType<CSS.Property.Width<NumberOrStringType>>;
+    readonly colors?: ThemeObjectType<ThemeObjectType<CSS.Property.Color>>;
+    [K: string]: AnyThemeObjectType;
+}
+
 export interface BaseProps {
     readonly as?: AsPropType;
     readonly testId?: string;
     readonly children?: React.ReactNode | React.ReactNode[];
-}
-
-export type KindType = 'primary' | 'secondary' | 'tertiary' | 'danger';
-
-export declare type ThemeObject<T> = {
-    [K: string]: T;
-};
-export declare type ThemeArray<T> = {
-    [K: string]: T[];
-};
-export declare type NumberOrString = string | number | 0 | undefined;
-
-export declare type ColorGroup = {
-    group: NumberOrString;
-    shade: NumberOrString;
-};
-
-export type ColorOrColorGroup = NumberOrString | ColorGroup;
-
-export type ThemeObjects =
-    | ColorOrColorGroup
-    | NumberOrString
-    | ThemeObject<NumberOrString>;
-
-export type AnyThemeObject =
-    | ThemeObject<ThemeObjects>
-    | ThemeArray<ThemeObjects>
-    | undefined;
-
-export interface Theme {
-    readonly breakpoints?: ThemeObject<NumberOrString>;
-    readonly fontSizes?: ThemeObject<NumberOrString>;
-    readonly fontFamilies?: ThemeArray<NumberOrString>;
-    readonly fontWeights?: ThemeObject<NumberOrString>;
-    readonly lineHeights?: ThemeObject<NumberOrString>;
-    readonly letterSpacings?: ThemeObject<NumberOrString>;
-    readonly sizes?: ThemeObject<NumberOrString>;
-    readonly borderRadii?: ThemeObject<NumberOrString>;
-    readonly borderWidths?: ThemeObject<NumberOrString>;
-    readonly boxShadows?: ThemeObject<NumberOrString>;
-    readonly widths?: ThemeObject<CSS.Property.Width<NumberOrString>>;
-    readonly colors?: ThemeObject<ThemeObject<NumberOrString>>;
-    [K: string]: AnyThemeObject;
 }
