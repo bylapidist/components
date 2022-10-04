@@ -18,7 +18,8 @@ test('it works with strings', () => {
         items: [
             { item: 'hello', key: 'test1' },
             { item: 'world', key: 'test2' }
-        ]
+        ],
+        type: 'ol'
     });
     expect(container.firstChild).toMatchSnapshot();
 });
@@ -28,7 +29,8 @@ test('it works with elements', () => {
         items: [
             { item: <p>hello</p>, key: 'test1' },
             { item: <p>world</p>, key: 'test2' }
-        ]
+        ],
+        type: 'ol'
     });
     expect(container.firstChild).toMatchSnapshot();
 });

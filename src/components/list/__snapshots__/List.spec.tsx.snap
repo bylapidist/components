@@ -18,35 +18,29 @@ exports[`it works with elements 1`] = `
 }
 
 .c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  list-style-position: inside;
+  list-style-type: decimal;
 }
 
-<div
-  class="c0"
+<ol
+  class="c0 c1"
+  type="ol"
 >
-  <ul
-    class="c1"
+  <li
+    class=""
   >
-    <li
-      class="c1"
-    >
-      <p>
-        hello
-      </p>
-    </li>
-    <li
-      class="c1"
-    >
-      <p>
-        world
-      </p>
-    </li>
-  </ul>
-</div>
+    <p>
+      hello
+    </p>
+  </li>
+  <li
+    class=""
+  >
+    <p>
+      world
+    </p>
+  </li>
+</ol>
 `;
 
 exports[`it works with ordered 1`] = `
@@ -67,31 +61,25 @@ exports[`it works with ordered 1`] = `
 }
 
 .c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  list-style-position: inside;
+  list-style-type: decimal;
 }
 
-<div
-  class="c0"
+<ol
+  class="c0 c1"
+  type="ol"
 >
-  <ol
-    class="c1"
+  <li
+    class=""
   >
-    <li
-      class="c1"
-    >
-      hello
-    </li>
-    <li
-      class="c1"
-    >
-      world
-    </li>
-  </ol>
-</div>
+    hello
+  </li>
+  <li
+    class=""
+  >
+    world
+  </li>
+</ol>
 `;
 
 exports[`it works with strings 1`] = `
@@ -112,31 +100,25 @@ exports[`it works with strings 1`] = `
 }
 
 .c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  list-style-position: inside;
+  list-style-type: decimal;
 }
 
-<div
-  class="c0"
+<ol
+  class="c0 c1"
+  type="ol"
 >
-  <ul
-    class="c1"
+  <li
+    class=""
   >
-    <li
-      class="c1"
-    >
-      hello
-    </li>
-    <li
-      class="c1"
-    >
-      world
-    </li>
-  </ul>
-</div>
+    hello
+  </li>
+  <li
+    class=""
+  >
+    world
+  </li>
+</ol>
 `;
 
 exports[`it works with unordered 1`] = `
@@ -157,29 +139,23 @@ exports[`it works with unordered 1`] = `
 }
 
 .c1 {
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  list-style-position: inside;
+  list-style-type: disc;
 }
 
-<div
-  class="c0"
+<ul
+  class="c0 c1"
+  type="ul"
 >
-  <ul
-    class="c1"
+  <li
+    class=""
   >
-    <li
-      class="c1"
-    >
-      hello
-    </li>
-    <li
-      class="c1"
-    >
-      world
-    </li>
-  </ul>
-</div>
+    hello
+  </li>
+  <li
+    class=""
+  >
+    world
+  </li>
+</ul>
 `;

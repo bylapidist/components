@@ -1,76 +1,43 @@
-import React, { Key } from 'react';
-import { Text } from '../text';
-import { Box, BoxProps } from '../box';
-// import {
-//     listItemStyles,
-//     orderedListStyles,
-//     unorderedListStyles
-// } from './styles';
+import * as React from 'react';
+import styled, { ThemeProps } from 'styled-components';
+import { Theme } from '@lapidist/styles';
+import { StyledText } from '../text';
 import { BaseProps } from '../shared-types';
-
-export * from './styles';
 
 export type ListType = 'ol' | 'ul';
 
-interface ListItemProps {
+export interface ListItemProps {
+    readonly key: React.Key;
     readonly item: JSX.Element | string;
-    readonly key: Key;
 }
 
-export interface ListProps {
+export interface ListProps
+    extends React.HTMLProps<HTMLOListElement | HTMLUListElement> {
     readonly items: ListItemProps[];
-    readonly type?: ListType;
+    readonly type: ListType;
 }
 
-const Ordered: React.FC<BaseProps & BoxProps> = ({ ...props }) => (
-    <Box
-        as={'ol'}
-        // styles={orderedListStyles()}
-        {...props}
-    />
-);
+export type StyledListProps = BaseProps & ListProps & ThemeProps<Theme>;
 
-const Unordered: React.FC<BaseProps & BoxProps> = ({ ...props }) => (
-    <Box
-        as={'ul'}
-        // styles={unorderedListStyles()}
-        {...props}
-    />
-);
+export const StyledList = styled(StyledText)<StyledListProps>`
+    ${({ type }) => `
+        list-style-position: inside;
+        list-style-type: ${type === 'ol' ? `decimal` : `disc`};
+  `}
+`;
 
-const ListItem: React.FC<BaseProps & BoxProps> = ({ ...props }) => (
-    <Box
-        as={'li'}
-        // styles={listItemStyles()}
-        {...props}
-    />
-);
+const ListItem = styled.li``;
 
-const Items: React.FC<{ items: ListItemProps[] }> = ({ items }) => (
-    <>
-        {items.map((props: ListItemProps) => (
-            <ListItem key={props.key}>{props.item}</ListItem>
+export const List = (props: BaseProps & ListProps) => (
+    <StyledList
+        {...props}
+        data-testid={props.testId}
+        as={props.as || (props.type === 'ol' ? 'ol' : 'ul')}
+    >
+        {props.items.map(({ key, item }: ListItemProps) => (
+            <ListItem key={key}>{item}</ListItem>
         ))}
-    </>
-);
-
-const OrderedOrUnordered = (
-    Component: React.FC<BaseProps & BoxProps>,
-    items: ListItemProps[]
-): JSX.Element => (
-    <Component>
-        <Items items={items} />
-    </Component>
-);
-
-export const List: React.FC<ListProps> = ({
-    type = 'ul',
-    items,
-    ...restProps
-}) => (
-    <Text {...restProps}>
-        {OrderedOrUnordered(type == 'ol' ? Ordered : Unordered, items)}
-    </Text>
+    </StyledList>
 );
 
 List.displayName = 'List';

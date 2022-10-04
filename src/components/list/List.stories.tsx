@@ -1,6 +1,7 @@
 import * as React from 'react';
+import { BaseProps } from '../shared-types';
 import { ThemeProvider } from '../theme-provider';
-import { List } from './index';
+import { List, ListProps } from './index';
 
 export default {
     title: 'Components/List',
@@ -8,26 +9,24 @@ export default {
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 };
 
-const templateStyles = {};
+const defaultArgs: BaseProps & ListProps = {
+    as: 'ul',
+    items: [
+        { item: 'hello', key: 'test1' },
+        { item: 'world', key: 'test2' }
+    ]
+};
 
 const DefaultTemplate = (args) => <List {...args} />;
 
 export const Ordered = DefaultTemplate.bind({});
 Ordered.args = {
-    type: 'ol',
-    items: [
-        { item: 'hello', key: 'test1' },
-        { item: 'world', key: 'test2' }
-    ],
-    styles: templateStyles
+    ...defaultArgs,
+    type: 'ol'
 };
 
 export const UnOrdered = DefaultTemplate.bind({});
 UnOrdered.args = {
-    type: 'ul',
-    items: [
-        { item: 'hello', key: 'test1' },
-        { item: 'world', key: 'test2' }
-    ],
-    styles: templateStyles
+    ...defaultArgs,
+    type: 'ul'
 };
