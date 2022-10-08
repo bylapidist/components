@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const env = process.env.NODE_ENV || 'development';
 const develop = env === 'development';
@@ -9,7 +10,7 @@ const production = env === 'production';
 const port = process.env.PORT || 3001;
 const paths = {
     entry: path.resolve(__dirname, 'src/index.ts'),
-    dist: path.resolve(__dirname, 'dist', 'umd')
+    dist: path.resolve(__dirname, 'dist')
 };
 
 module.exports = {
@@ -28,7 +29,7 @@ module.exports = {
         publicPath: '/',
         umdNamedDefine: true
     },
-    externals: ['react', 'react-dom', 'styled-components'],
+    externals: ['react', 'react-dom'],
     devServer: {
         port,
         historyApiFallback: true,
@@ -37,9 +38,16 @@ module.exports = {
         inline: true
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.js', '.json'],
+        extensions: ['.ts', '.tsx', '.js', '.json', '.css'],
         alias: {
             lapidist: path.resolve('./src')
+        },
+        fallback: {
+            path: false,
+            constants: false,
+            stream: false,
+            jsonfile: false,
+            fs: false
         }
     },
     plugins: [
@@ -54,7 +62,8 @@ module.exports = {
             failOnError: true,
             allowAsyncCycles: false,
             cwd: process.cwd()
-        })
+        }),
+        new MiniCssExtractPlugin()
     ],
     module: {
         rules: [
@@ -74,9 +83,21 @@ module.exports = {
                 loader: 'source-map-loader'
             },
             {
-                test: /\.css$/,
-                exclude: /node_modules/,
-                use: ['style-loader', 'css-loader']
+                test: /\.module.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            sourceMap: true,
+                            postcssOptions: {
+                                map: true,
+                                plugins: ['postcss-preset-env']
+                            }
+                        }
+                    }
+                ]
             }
         ]
     }

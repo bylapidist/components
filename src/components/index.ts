@@ -1,17 +1,5 @@
-export * from './aspect-ratio';
-export * from './box';
-export * from './button';
-export * from './elevated';
-export * from './heading';
-export * from './image';
-export * from './link';
-export * from './list';
-export * from './logo';
-export * from './panel';
-export * from './spinner';
-export * from './tag';
-export * from './text';
-export * from './theme-provider';
-export * from './theme-provider/defaultTheme';
-export * from './theme-provider/darkTheme';
-export * from './toggle';
+import styles from './shared.module.css';
+
+export default {
+    test: styles
+};

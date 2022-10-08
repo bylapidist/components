@@ -34,10 +34,10 @@ See [https://components.lapidist.net](https://components.lapidist.net) for the f
 
 ```shell
 // via npm
-npm install @lapidist/components styled-components
+npm install @lapidist/components
 
 // or via yarn
-yarn add @lapidist/components styled-components
+yarn add @lapidist/components
 ```
 
 ### Usage

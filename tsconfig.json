@@ -33,7 +33,8 @@
         "preserveSymlinks": true,
 	    "sourceMap": true,
         "forceConsistentCasingInFileNames": true,
-        "downlevelIteration": true
+        "downlevelIteration": true,
+        "plugins": [{ "name": "typescript-plugin-css-modules" }],
     },
     "files": [
         "./src/index.ts"

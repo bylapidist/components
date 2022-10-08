@@ -1,0 +1,5 @@
+@import url('~@lapidist/styles/dist/css/light.css');
+
+.test {
+    border: 1px solid red;
+}
