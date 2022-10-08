@@ -1,0 +1,21 @@
+@import '../shared.module.css';
+
+.elevation-0 {
+    box-shadow: var(--elevation__none);
+}
+
+.elevation-1 {
+    box-shadow: var(--elevation__lowest);
+}
+
+.elevation-2 {
+    box-shadow: var(--elevation__lower);
+}
+
+.elevation-3 {
+    box-shadow: var(--elevation__higher);
+}
+
+.elevation-4 {
+    box-shadow: var(--elevation__highest);
+}

@@ -6,7 +6,7 @@
         "module": "commonjs",
         "outDir": "dist",
         "lib": ["es2017", "dom"],
-        "typeRoots": ["node_modules/@types", "./types"],
+        "typeRoots": ["node_modules/@types"],
         "jsx": "react",
         "declaration": true,
         "inlineSources": true,
@@ -37,7 +37,8 @@
         "plugins": [{ "name": "typescript-plugin-css-modules" }],
     },
     "files": [
-        "./src/index.ts"
+        "./src/index.ts",
+        "./src/declarations.d.ts"
     ],
     "exclude": [
         "node_modules",

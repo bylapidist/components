@@ -5,10 +5,13 @@ module.exports = {
         '^.+\\.tsx?$': 'ts-jest'
     },
     testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
-    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+    moduleNameMapper: {
+        '\\.css?$': 'identity-obj-proxy'
+    },
+    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node', 'css'],
     collectCoverage: true,
     collectCoverageFrom: [
-        '**/*.{js,tsx}',
+        '**/*.{js,tsx,ts}',
         '!**/node_modules/**',
         '!**/*.stories.tsx'
     ]

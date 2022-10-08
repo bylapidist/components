@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works with elevations 1`] = `
+<div
+  class="elevation-0"
+  data-testid="Elevated"
+>
+  Hello world
+</div>
+`;
+
+exports[`it works with elevations 2`] = `
+<div
+  class="elevation-1"
+  data-testid="Elevated"
+>
+  Hello world
+</div>
+`;
+
+exports[`it works with elevations 3`] = `
+<div
+  class="elevation-2"
+  data-testid="Elevated"
+>
+  Hello world
+</div>
+`;
+
+exports[`it works with elevations 4`] = `
+<div
+  class="elevation-3"
+  data-testid="Elevated"
+>
+  Hello world
+</div>
+`;
+
+exports[`it works with elevations 5`] = `
+<div
+  class="elevation-4"
+  data-testid="Elevated"
+>
+  Hello world
+</div>
+`;
