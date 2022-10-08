@@ -36,7 +36,7 @@ export const StyledHeading = styled.h1<StyledHeadingProps>`
         font-family: ${theme.fontFamilies.sans};
         line-height: ${theme.lineHeights.tight};
         font-weight: ${theme.fontWeights[getConfig(size).fontWeight]};
-        color: ${theme.colors.grey.dark};
+        color: inherit;
     `}
 `;
 

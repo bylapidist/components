@@ -26,7 +26,7 @@ export const StyledBox = styled.div<StyledBoxProps>`
             theme.sizes[gutterX ? gutterX.toString() : gutter.toString()]
         };
         padding-right: ${
-            theme.sizes[gutterX ? gutterX.toString() : gutterY.toString()]
+            theme.sizes[gutterX ? gutterX.toString() : gutter.toString()]
         };
     `}
 `;
