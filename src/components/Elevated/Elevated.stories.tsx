@@ -4,8 +4,7 @@ import Elevated, { ElevatedProps } from './index';
 
 export default {
     title: 'Components/Elevated',
-    component: Elevated,
-    decorators: [(getStory) => getStory()]
+    component: Elevated
 };
 
 const defaultArgs: BaseProps & ElevatedProps = {
@@ -34,8 +33,7 @@ ElevationScale.parameters = {
 
 export const NoElevation = DefaultTemplate.bind({});
 NoElevation.args = {
-    ...defaultArgs,
-    elevation: 0
+    ...defaultArgs
 };
 
 export const LowestElevation = DefaultTemplate.bind({});

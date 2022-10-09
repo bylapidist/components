@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works with ratios 1`] = `
+<div
+  class="aspectratio aspectratio-1-1"
+  data-testid="AspectRatio"
+>
+  <div>
+    Hello world
+  </div>
+</div>
+`;
+
+exports[`it works with ratios 2`] = `
+<div
+  class="aspectratio aspectratio-1-2"
+  data-testid="AspectRatio"
+>
+  <div>
+    Hello world
+  </div>
+</div>
+`;
+
+exports[`it works with ratios 3`] = `
+<div
+  class="aspectratio aspectratio-3-2"
+  data-testid="AspectRatio"
+>
+  <div>
+    Hello world
+  </div>
+</div>
+`;
+
+exports[`it works with ratios 4`] = `
+<div
+  class="aspectratio aspectratio-4-3"
+  data-testid="AspectRatio"
+>
+  <div>
+    Hello world
+  </div>
+</div>
+`;
+
+exports[`it works with ratios 5`] = `
+<div
+  class="aspectratio aspectratio-16-9"
+  data-testid="AspectRatio"
+>
+  <div>
+    Hello world
+  </div>
+</div>
+`;
+
+exports[`it works with ratios 6`] = `
+<div
+  class="aspectratio aspectratio-9-16"
+  data-testid="AspectRatio"
+>
+  <div>
+    Hello world
+  </div>
+</div>
+`;

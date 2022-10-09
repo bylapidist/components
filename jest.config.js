@@ -13,6 +13,8 @@ module.exports = {
     collectCoverageFrom: [
         '**/*.{js,tsx,ts}',
         '!**/node_modules/**',
-        '!**/*.stories.tsx'
+        '!**/*.stories.tsx',
+        '!src/index.ts',
+        '!src/components/index.ts'
     ]
 };

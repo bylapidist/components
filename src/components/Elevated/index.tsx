@@ -1,4 +1,5 @@
 import * as React from 'react';
+import cx from 'classnames';
 import { BaseProps } from '../types';
 import styles from './Elevated.module.css';
 
@@ -11,11 +12,12 @@ export interface ElevatedProps extends React.HTMLProps<HTMLDivElement> {
 const Elevated = ({
     as: Component = 'div',
     testId = 'Elevated',
-    elevation = 0,
+    elevation,
+    className,
     children
 }: BaseProps & ElevatedProps) => (
     <Component
-        className={styles[`elevation-${elevation}`]}
+        className={cx(styles[`elevation-${elevation}`], className)}
         data-testid={testId}
     >
         {children}

@@ -2,51 +2,51 @@ import * as React from 'react';
 import { cleanup, render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import Elevated, { ElevationHeight } from './index';
+import AspectRatio, { Ratio } from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const elevations: ElevationHeight[] = [0, 1, 2, 3, 4];
+const ratios: Ratio[] = ['1/1', '1/2', '3/2', '4/3', '16/9', '9/16'];
 
-test.each(elevations)('it works with elevations', (elevation) => {
+test.each(ratios)('it works with ratios', (ratio) => {
     const { container } = setup(
-        <Elevated elevation={elevation}>Hello world</Elevated>
+        <AspectRatio ratio={ratio}>Hello world</AspectRatio>
     );
     expect(container.firstChild).toMatchSnapshot();
 });
 
 test('it works with default testId', () => {
     const { getByTestId } = setup(
-        <Elevated elevation={elevations[0]}>Hello world</Elevated>
+        <AspectRatio ratio={ratios[0]}>Hello world</AspectRatio>
     );
-    expect(getByTestId('Elevated')).toBeTruthy();
+    expect(getByTestId('AspectRatio')).toBeTruthy();
 });
 
 test('it works with specified testId', () => {
     const { getByTestId } = setup(
-        <Elevated elevation={elevations[0]} testId={'TestId'}>
+        <AspectRatio ratio={ratios[0]} testId={'TestId'}>
             Hello world
-        </Elevated>
+        </AspectRatio>
     );
     expect(getByTestId('TestId')).toBeTruthy();
 });
 
 test('it works with as', () => {
     const { getByTestId } = setup(
-        <Elevated elevation={elevations[0]} as="span">
+        <AspectRatio ratio={ratios[0]} as="span">
             Hello world
-        </Elevated>
+        </AspectRatio>
     );
-    expect(getByTestId('Elevated').nodeName).toBe('SPAN');
+    expect(getByTestId('AspectRatio').nodeName).toBe('SPAN');
 });
 
 test('it works with className', () => {
     const { getByTestId } = setup(
-        <Elevated elevation={elevations[0]} className="test">
+        <AspectRatio ratio={ratios[0]} className="test">
             Hello world
-        </Elevated>
+        </AspectRatio>
     );
-    expect(getByTestId('Elevated').classList.contains('test')).toBeTruthy();
+    expect(getByTestId('AspectRatio').classList.contains('test')).toBeTruthy();
 });
