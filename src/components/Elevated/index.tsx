@@ -10,10 +10,10 @@ export interface ElevatedProps extends React.HTMLProps<HTMLDivElement> {
 }
 
 const Elevated = ({
+    className,
     as: Component = 'div',
     testId = 'Elevated',
     elevation,
-    className,
     children
 }: BaseProps & ElevatedProps) => (
     <Component

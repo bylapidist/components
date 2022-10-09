@@ -10,9 +10,9 @@ export interface AspectRatioProps extends React.HTMLProps<HTMLDivElement> {
 }
 
 const AspectRatio = ({
+    className,
     as: Component = 'div',
     testId = 'AspectRatio',
-    className,
     ratio,
     children
 }: BaseProps & AspectRatioProps) => (
