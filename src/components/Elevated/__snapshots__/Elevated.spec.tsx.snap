@@ -1,5 +1,50 @@
 // Vitest Snapshot v1
 
+exports[`Elevated > it works with elevations 1`] = `
+<div
+  class="_elevation-0_b91ef2"
+  data-testid="Elevated"
+>
+  Hello world
+</div>
+`;
+
+exports[`Elevated > it works with elevations 2`] = `
+<div
+  class="_elevation-1_b91ef2"
+  data-testid="Elevated"
+>
+  Hello world
+</div>
+`;
+
+exports[`Elevated > it works with elevations 3`] = `
+<div
+  class="_elevation-2_b91ef2"
+  data-testid="Elevated"
+>
+  Hello world
+</div>
+`;
+
+exports[`Elevated > it works with elevations 4`] = `
+<div
+  class="_elevation-3_b91ef2"
+  data-testid="Elevated"
+>
+  Hello world
+</div>
+`;
+
+exports[`Elevated > it works with elevations 5`] = `
+<div
+  class="_elevation-4_b91ef2"
+  data-testid="Elevated"
+>
+  Hello world
+</div>
+`;
+
 exports[`it works with elevations 1`] = `
 <div
   class="_elevation-0_b91ef2"
