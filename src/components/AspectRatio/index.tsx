@@ -6,7 +6,7 @@ import styles from './AspectRatio.module.css';
 
 export type Ratio = '1/1' | '1/2' | '3/2' | '4/3' | '16/9' | '9/16';
 
-export interface AspectRatioProps extends React.HTMLProps<HTMLDivElement> {
+export interface AspectRatioProps {
     readonly ratio: Ratio;
 }
 

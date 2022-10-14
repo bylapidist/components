@@ -1,12 +1,12 @@
 import * as React from 'react';
 import cx from 'classnames';
-import type { BaseProps } from '../types';
 import '@lapidist/styles/dist/css/light.css';
+import type { BaseProps } from '../types';
 import styles from './Elevated.module.css';
 
 export type ElevationHeight = 0 | 1 | 2 | 3 | 4;
 
-export interface ElevatedProps extends React.HTMLProps<HTMLDivElement> {
+export interface ElevatedProps {
     readonly elevation: ElevationHeight;
 }
 
