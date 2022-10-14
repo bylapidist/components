@@ -1,3 +1,5 @@
+@import '../global.module.css';
+
 .elevation-0 {
     box-shadow: var(--elevation__none);
 }
