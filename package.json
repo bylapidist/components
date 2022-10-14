@@ -47,7 +47,7 @@
         "test": "npm run lint && npm run test:typecheck && npm run test:unit",
         "test:typecheck": "tsc --noEmit -p tsconfig.json",
         "test:unit": "vitest run --coverage",
-        "update:snapshots": "vitest --update"
+        "update:snapshots": "vitest run --update"
     },
     "dependencies": {
         "@lapidist/styles": "^4.0.0",
