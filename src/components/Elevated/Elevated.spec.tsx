@@ -1,6 +1,6 @@
 import * as React from 'react';
+import { expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
 
 import Elevated, { ElevationHeight } from './index';
 

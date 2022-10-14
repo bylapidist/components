@@ -1,8 +1,8 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
 exports[`it works with ratios 1`] = `
 <div
-  class=""
+  class="_aspectratio_779ae1 _aspectratio-1-1_779ae1"
   data-testid="AspectRatio"
 >
   <div>
@@ -13,7 +13,7 @@ exports[`it works with ratios 1`] = `
 
 exports[`it works with ratios 2`] = `
 <div
-  class=""
+  class="_aspectratio_779ae1 _aspectratio-1-2_779ae1"
   data-testid="AspectRatio"
 >
   <div>
@@ -24,7 +24,7 @@ exports[`it works with ratios 2`] = `
 
 exports[`it works with ratios 3`] = `
 <div
-  class=""
+  class="_aspectratio_779ae1 _aspectratio-3-2_779ae1"
   data-testid="AspectRatio"
 >
   <div>
@@ -35,7 +35,7 @@ exports[`it works with ratios 3`] = `
 
 exports[`it works with ratios 4`] = `
 <div
-  class=""
+  class="_aspectratio_779ae1 _aspectratio-4-3_779ae1"
   data-testid="AspectRatio"
 >
   <div>
@@ -46,7 +46,7 @@ exports[`it works with ratios 4`] = `
 
 exports[`it works with ratios 5`] = `
 <div
-  class=""
+  class="_aspectratio_779ae1 _aspectratio-16-9_779ae1"
   data-testid="AspectRatio"
 >
   <div>
@@ -57,7 +57,7 @@ exports[`it works with ratios 5`] = `
 
 exports[`it works with ratios 6`] = `
 <div
-  class=""
+  class="_aspectratio_779ae1 _aspectratio-9-16_779ae1"
   data-testid="AspectRatio"
 >
   <div>

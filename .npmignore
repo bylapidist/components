@@ -4,7 +4,7 @@
 src
 tsconfig.json
 tsconfig.node.json
-jest.config.cjs
+vite.config.ts
 .prettierrc.cjs
 .eslintrc.cjs
 .editorconfig
