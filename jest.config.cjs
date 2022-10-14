@@ -14,7 +14,6 @@ module.exports = {
         '**/*.{js,tsx,ts}',
         '!**/node_modules/**',
         '!**/*.stories.tsx',
-        '!src/index.ts',
-        '!src/components/index.ts'
+        '!src/index.ts'
     ]
 };

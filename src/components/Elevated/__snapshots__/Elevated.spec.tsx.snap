@@ -2,7 +2,7 @@
 
 exports[`it works with elevations 1`] = `
 <div
-  class="elevation-0"
+  class=""
   data-testid="Elevated"
 >
   Hello world
@@ -11,7 +11,7 @@ exports[`it works with elevations 1`] = `
 
 exports[`it works with elevations 2`] = `
 <div
-  class="elevation-1"
+  class=""
   data-testid="Elevated"
 >
   Hello world
@@ -20,7 +20,7 @@ exports[`it works with elevations 2`] = `
 
 exports[`it works with elevations 3`] = `
 <div
-  class="elevation-2"
+  class=""
   data-testid="Elevated"
 >
   Hello world
@@ -29,7 +29,7 @@ exports[`it works with elevations 3`] = `
 
 exports[`it works with elevations 4`] = `
 <div
-  class="elevation-3"
+  class=""
   data-testid="Elevated"
 >
   Hello world
@@ -38,7 +38,7 @@ exports[`it works with elevations 4`] = `
 
 exports[`it works with elevations 5`] = `
 <div
-  class="elevation-4"
+  class=""
   data-testid="Elevated"
 >
   Hello world

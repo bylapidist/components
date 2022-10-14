@@ -1,11 +1,12 @@
 import * as React from 'react';
+import type { Meta, StoryObj, StoryFn } from '@storybook/react-vite';
 import { BaseProps } from '../types';
 import Elevated, { ElevatedProps } from './index';
 
 export default {
     title: 'Components/Elevated',
     component: Elevated
-};
+} as Meta;
 
 const defaultArgs: BaseProps & ElevatedProps = {
     as: 'div',
@@ -13,48 +14,39 @@ const defaultArgs: BaseProps & ElevatedProps = {
     elevation: 0
 };
 
-const DefaultTemplate = (args: BaseProps & ElevatedProps) => (
+const DefaultTemplate: StoryFn<BaseProps & ElevatedProps> = (args) => (
     <Elevated {...args}>Hello world</Elevated>
 );
 
-export const ElevationScale = () => (
-    <>
-        <DefaultTemplate elevation={0} />
-        <DefaultTemplate elevation={1} />
-        <DefaultTemplate elevation={2} />
-        <DefaultTemplate elevation={3} />
-        <DefaultTemplate elevation={4} />
-    </>
-);
-ElevationScale.parameters = {
-    controls: { disable: true },
-    actions: { disable: true }
-};
-
-export const NoElevation = DefaultTemplate.bind({});
+export const NoElevation: StoryObj<BaseProps & ElevatedProps> =
+    DefaultTemplate.bind({});
 NoElevation.args = {
     ...defaultArgs
 };
 
-export const LowestElevation = DefaultTemplate.bind({});
+export const LowestElevation: StoryObj<BaseProps & ElevatedProps> =
+    DefaultTemplate.bind({});
 LowestElevation.args = {
     ...defaultArgs,
     elevation: 1
 };
 
-export const LowerElevation = DefaultTemplate.bind({});
+export const LowerElevation: StoryObj<BaseProps & ElevatedProps> =
+    DefaultTemplate.bind({});
 LowerElevation.args = {
     ...defaultArgs,
     elevation: 2
 };
 
-export const HigherElevation = DefaultTemplate.bind({});
+export const HigherElevation: StoryObj<BaseProps & ElevatedProps> =
+    DefaultTemplate.bind({});
 HigherElevation.args = {
     ...defaultArgs,
     elevation: 3
 };
 
-export const HighestElevation = DefaultTemplate.bind({});
+export const HighestElevation: StoryObj<BaseProps & ElevatedProps> =
+    DefaultTemplate.bind({});
 HighestElevation.args = {
     ...defaultArgs,
     elevation: 4

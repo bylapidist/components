@@ -1,2 +1,2 @@
-export * from '@lapidist/styles';
-export * from './components';
+export { default as AspectRatio } from './components/AspectRatio';
+export { default as Elevated } from './components/Elevated';

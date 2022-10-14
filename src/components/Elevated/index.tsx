@@ -1,6 +1,7 @@
 import * as React from 'react';
 import cx from 'classnames';
-import { BaseProps } from '../types';
+import type { BaseProps } from '../types';
+import '@lapidist/styles/dist/css/light.css';
 import styles from './Elevated.module.css';
 
 export type ElevationHeight = 0 | 1 | 2 | 3 | 4;

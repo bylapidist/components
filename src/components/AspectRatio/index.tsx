@@ -1,6 +1,7 @@
 import * as React from 'react';
 import cx from 'classnames';
-import { BaseProps } from '../types';
+import '@lapidist/styles/dist/css/light.css';
+import type { BaseProps } from '../types';
 import styles from './AspectRatio.module.css';
 
 export type Ratio = '1/1' | '1/2' | '3/2' | '4/3' | '16/9' | '9/16';

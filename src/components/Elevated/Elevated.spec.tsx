@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { cleanup, render } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import Elevated, { ElevationHeight } from './index';
@@ -18,35 +18,35 @@ test.each(elevations)('it works with elevations', (elevation) => {
 });
 
 test('it works with default testId', () => {
-    const { getByTestId } = setup(
-        <Elevated elevation={elevations[0]}>Hello world</Elevated>
-    );
-    expect(getByTestId('Elevated')).toBeTruthy();
+    setup(<Elevated elevation={elevations[0]}>Hello world</Elevated>);
+    expect(screen.getByTestId('Elevated')).toBeTruthy();
 });
 
 test('it works with specified testId', () => {
-    const { getByTestId } = setup(
+    setup(
         <Elevated elevation={elevations[0]} testId={'TestId'}>
             Hello world
         </Elevated>
     );
-    expect(getByTestId('TestId')).toBeTruthy();
+    expect(screen.getByTestId('TestId')).toBeTruthy();
 });
 
 test('it works with as', () => {
-    const { getByTestId } = setup(
+    setup(
         <Elevated elevation={elevations[0]} as="span">
             Hello world
         </Elevated>
     );
-    expect(getByTestId('Elevated').nodeName).toBe('SPAN');
+    expect(screen.getByTestId('Elevated').nodeName).toBe('SPAN');
 });
 
 test('it works with className', () => {
-    const { getByTestId } = setup(
+    setup(
         <Elevated elevation={elevations[0]} className="test">
             Hello world
         </Elevated>
     );
-    expect(getByTestId('Elevated').classList.contains('test')).toBeTruthy();
+    expect(
+        screen.getByTestId('Elevated').classList.contains('test')
+    ).toBeTruthy();
 });

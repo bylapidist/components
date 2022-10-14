@@ -2,7 +2,7 @@
 
 exports[`it works with ratios 1`] = `
 <div
-  class="aspectratio aspectratio-1-1"
+  class=""
   data-testid="AspectRatio"
 >
   <div>
@@ -13,7 +13,7 @@ exports[`it works with ratios 1`] = `
 
 exports[`it works with ratios 2`] = `
 <div
-  class="aspectratio aspectratio-1-2"
+  class=""
   data-testid="AspectRatio"
 >
   <div>
@@ -24,7 +24,7 @@ exports[`it works with ratios 2`] = `
 
 exports[`it works with ratios 3`] = `
 <div
-  class="aspectratio aspectratio-3-2"
+  class=""
   data-testid="AspectRatio"
 >
   <div>
@@ -35,7 +35,7 @@ exports[`it works with ratios 3`] = `
 
 exports[`it works with ratios 4`] = `
 <div
-  class="aspectratio aspectratio-4-3"
+  class=""
   data-testid="AspectRatio"
 >
   <div>
@@ -46,7 +46,7 @@ exports[`it works with ratios 4`] = `
 
 exports[`it works with ratios 5`] = `
 <div
-  class="aspectratio aspectratio-16-9"
+  class=""
   data-testid="AspectRatio"
 >
   <div>
@@ -57,7 +57,7 @@ exports[`it works with ratios 5`] = `
 
 exports[`it works with ratios 6`] = `
 <div
-  class="aspectratio aspectratio-9-16"
+  class=""
   data-testid="AspectRatio"
 >
   <div>
