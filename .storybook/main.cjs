@@ -6,6 +6,12 @@ module.exports = {
   ],
   addons: [
       '@storybook/addon-links',
-      '@storybook/addon-essentials'
+      '@storybook/addon-backgrounds',
+      '@storybook/addon-controls',
+      '@storybook/addon-highlight',
+      '@storybook/addon-measure',
+      '@storybook/addon-outline',
+      '@storybook/addon-toolbars',
+      '@storybook/addon-viewport'
   ]
 };
