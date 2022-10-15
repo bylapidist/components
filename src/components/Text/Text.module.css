@@ -1,6 +1,6 @@
 @import '../global.module.css';
 
-.text {
+.Text {
     font-size: var(--font-size__300);
     font-family: var(--font-family__sans);
     font-weight: var(--font-weight__400);
@@ -8,11 +8,11 @@
     color: var(--color-grey__darkest);
 }
 
-.text > p {
+.Text > p {
     color: inherit;
     margin-bottom: var(--size__2);
 }
 
-.text > p:last-child {
+.Text > p:last-child {
     margin-bottom: 0;
 }

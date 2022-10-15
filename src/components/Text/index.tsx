@@ -13,7 +13,7 @@ const Text = ({
     testId = 'Text',
     children
 }: BaseProps & TextProps) => (
-    <Component className={cx(styles.text, className)} data-testid={testId}>
+    <Component className={cx(styles.Text, className)} data-testid={testId}>
         {children}
     </Component>
 );

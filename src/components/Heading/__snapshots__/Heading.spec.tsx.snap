@@ -1,0 +1,64 @@
+// Vitest Snapshot v1
+
+exports[`Heading > it works with defaults 1`] = `
+<h1
+  class="_Heading_f5e8bd _Heading--1_f5e8bd"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with sizes 1`] = `
+<h1
+  class="_Heading_f5e8bd _Heading--1_f5e8bd"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with sizes 2`] = `
+<h2
+  class="_Heading_f5e8bd _Heading--2_f5e8bd"
+  data-testid="Heading"
+>
+  Hello world
+</h2>
+`;
+
+exports[`Heading > it works with sizes 3`] = `
+<h3
+  class="_Heading_f5e8bd _Heading--3_f5e8bd"
+  data-testid="Heading"
+>
+  Hello world
+</h3>
+`;
+
+exports[`Heading > it works with sizes 4`] = `
+<h4
+  class="_Heading_f5e8bd _Heading--4_f5e8bd"
+  data-testid="Heading"
+>
+  Hello world
+</h4>
+`;
+
+exports[`Heading > it works with sizes 5`] = `
+<h5
+  class="_Heading_f5e8bd _Heading--5_f5e8bd"
+  data-testid="Heading"
+>
+  Hello world
+</h5>
+`;
+
+exports[`Heading > it works with sizes 6`] = `
+<h6
+  class="_Heading_f5e8bd _Heading--6_f5e8bd"
+  data-testid="Heading"
+>
+  Hello world
+</h6>
+`;

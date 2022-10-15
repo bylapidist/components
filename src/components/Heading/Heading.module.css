@@ -1,0 +1,35 @@
+@import '../global.module.css';
+
+.Heading {
+    font-family: var(--font-family__sans);
+    font-weight: var(--font-weight__500);
+    line-height: var(--line-height__tighter);
+    color: var(--color-grey__darkest);
+}
+
+.Heading--1 {
+    font-size: var(--font-size__700);
+    font-weight: var(--font-weight__700);
+}
+
+.Heading--2 {
+    font-size: var(--font-size__600);
+}
+
+.Heading--3 {
+    font-size: var(--font-size__500);
+}
+
+.Heading--4 {
+    font-size: var(--font-size__400);
+}
+
+.Heading--5 {
+    font-size: var(--font-size__300);
+}
+
+.Heading--6 {
+    font-size: var(--font-size__300);
+    font-weight: var(--font-weight__400);
+}
+

@@ -1,21 +1,21 @@
 @import '../global.module.css';
 
-.elevation-0 {
+.Elevated--elevation-0 {
     box-shadow: var(--elevation__none);
 }
 
-.elevation-1 {
+.Elevated--elevation-1 {
     box-shadow: var(--elevation__lowest);
 }
 
-.elevation-2 {
+.Elevated--elevation-2 {
     box-shadow: var(--elevation__lower);
 }
 
-.elevation-3 {
+.Elevated--elevation-3 {
     box-shadow: var(--elevation__higher);
 }
 
-.elevation-4 {
+.Elevated--elevation-4 {
     box-shadow: var(--elevation__highest);
 }

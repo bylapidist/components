@@ -18,7 +18,7 @@ const Elevated = ({
     children
 }: BaseProps & ElevatedProps) => (
     <Component
-        className={cx(styles[`elevation-${elevation}`], className)}
+        className={cx(styles[`Elevated--elevation-${elevation}`], className)}
         data-testid={testId}
     >
         {children}

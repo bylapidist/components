@@ -2,7 +2,7 @@
 
 exports[`Elevated > it works with elevations 1`] = `
 <div
-  class="_elevation-0_b91ef2"
+  class="_Elevated--elevation-0_b91ef2"
   data-testid="Elevated"
 >
   Hello world
@@ -11,7 +11,7 @@ exports[`Elevated > it works with elevations 1`] = `
 
 exports[`Elevated > it works with elevations 2`] = `
 <div
-  class="_elevation-1_b91ef2"
+  class="_Elevated--elevation-1_b91ef2"
   data-testid="Elevated"
 >
   Hello world
@@ -20,7 +20,7 @@ exports[`Elevated > it works with elevations 2`] = `
 
 exports[`Elevated > it works with elevations 3`] = `
 <div
-  class="_elevation-2_b91ef2"
+  class="_Elevated--elevation-2_b91ef2"
   data-testid="Elevated"
 >
   Hello world
@@ -29,7 +29,7 @@ exports[`Elevated > it works with elevations 3`] = `
 
 exports[`Elevated > it works with elevations 4`] = `
 <div
-  class="_elevation-3_b91ef2"
+  class="_Elevated--elevation-3_b91ef2"
   data-testid="Elevated"
 >
   Hello world
@@ -38,7 +38,7 @@ exports[`Elevated > it works with elevations 4`] = `
 
 exports[`Elevated > it works with elevations 5`] = `
 <div
-  class="_elevation-4_b91ef2"
+  class="_Elevated--elevation-4_b91ef2"
   data-testid="Elevated"
 >
   Hello world
