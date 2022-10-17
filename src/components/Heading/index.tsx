@@ -2,6 +2,7 @@ import * as React from 'react';
 import cx from 'classnames';
 import '@lapidist/styles/dist/css/light.css';
 import type { AsPropType, BaseProps } from '../types';
+import Text from '../Text';
 import styles from './Heading.module.css';
 
 export type HeadingSize = 1 | 2 | 3 | 4 | 5 | 6;
@@ -27,23 +28,19 @@ const Heading = ({
     as,
     testId = 'Heading',
     size,
-    children
-}: BaseProps & HeadingProps) => {
-    const Component = getHeadingElement(as, size);
-
-    return (
-        <Component
-            className={cx(
-                styles.Heading,
-                styles[`Heading--${size || 1}`],
-                className
-            )}
-            data-testid={testId}
-        >
-            {children}
-        </Component>
-    );
-};
+    ...restProps
+}: BaseProps & HeadingProps) => (
+    <Text
+        as={getHeadingElement(as, size)}
+        className={cx(
+            styles.Heading,
+            styles[`Heading--${size || 1}`],
+            className
+        )}
+        data-testid={testId}
+        {...restProps}
+    />
+);
 
 Heading.displayName = 'Heading';
 export default Heading;

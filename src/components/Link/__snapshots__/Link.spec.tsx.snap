@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`Link > it works 1`] = `
+<a
+  class="_Text_c6fd40 _Link_379d57"
+  data-testid="Link"
+  href="#"
+>
+  Hello world
+</a>
+`;

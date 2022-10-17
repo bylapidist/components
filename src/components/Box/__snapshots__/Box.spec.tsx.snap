@@ -1,0 +1,136 @@
+// Vitest Snapshot v1
+
+exports[`Box > it works with gutterXs 1`] = `
+<div
+  class="_Box--gutter-0_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterXs 2`] = `
+<div
+  class="_Box--gutter-0_77a981 _Box--gutterX-1_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterXs 3`] = `
+<div
+  class="_Box--gutter-0_77a981 _Box--gutterX-2_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterXs 4`] = `
+<div
+  class="_Box--gutter-0_77a981 _Box--gutterX-3_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterXs 5`] = `
+<div
+  class="_Box--gutter-0_77a981 _Box--gutterX-4_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterYs 1`] = `
+<div
+  class="_Box--gutter-0_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterYs 2`] = `
+<div
+  class="_Box--gutter-0_77a981 _Box--gutterY-1_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterYs 3`] = `
+<div
+  class="_Box--gutter-0_77a981 _Box--gutterY-2_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterYs 4`] = `
+<div
+  class="_Box--gutter-0_77a981 _Box--gutterY-3_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterYs 5`] = `
+<div
+  class="_Box--gutter-0_77a981 _Box--gutterY-4_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutters 1`] = `
+<div
+  class="_Box--gutter-0_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutters 2`] = `
+<div
+  class="_Box--gutter-1_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutters 3`] = `
+<div
+  class="_Box--gutter-2_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutters 4`] = `
+<div
+  class="_Box--gutter-3_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutters 5`] = `
+<div
+  class="_Box--gutter-4_77a981"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;

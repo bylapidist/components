@@ -1,7 +1,6 @@
 @import '../global.module.css';
 
 .Heading {
-    font-family: var(--font-family__sans);
     font-weight: var(--font-weight__500);
     line-height: var(--line-height__tighter);
     color: var(--color-grey__darkest);

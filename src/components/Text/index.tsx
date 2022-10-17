@@ -11,11 +11,13 @@ const Text = ({
     className,
     as: Component = 'div',
     testId = 'Text',
-    children
+    ...restProps
 }: BaseProps & TextProps) => (
-    <Component className={cx(styles.Text, className)} data-testid={testId}>
-        {children}
-    </Component>
+    <Component
+        className={cx(styles.Text, className)}
+        data-testid={testId}
+        {...restProps}
+    />
 );
 
 Text.displayName = 'Text';

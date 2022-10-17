@@ -1,0 +1,11 @@
+@import '../global.module.css';
+
+.Link {
+    border-bottom: var(--border-width__thinner) solid var(--color-primary__light);
+    color: var(--color-primary__darkest);
+}
+
+.Link:hover {
+    border-bottom-color: var(--color-primary__dark);
+    cursor: pointer;
+}

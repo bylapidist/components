@@ -15,14 +15,13 @@ const Elevated = ({
     as: Component = 'div',
     testId = 'Elevated',
     elevation,
-    children
+    ...restProps
 }: BaseProps & ElevatedProps) => (
     <Component
         className={cx(styles[`Elevated--elevation-${elevation}`], className)}
         data-testid={testId}
-    >
-        {children}
-    </Component>
+        {...restProps}
+    />
 );
 
 Elevated.displayName = 'Elevated';
