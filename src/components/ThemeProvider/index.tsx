@@ -36,7 +36,7 @@ const ThemeProvider = ({
                 window.matchMedia('(prefers-color-scheme: dark)')?.matches) ||
             localStorage.getItem('prefersDarkMode') === 'true'
         ) {
-            setThemeContext('dark');
+            setThemeContext(theme || 'dark');
         }
     }, []);
 
