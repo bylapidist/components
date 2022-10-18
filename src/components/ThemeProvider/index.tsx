@@ -27,17 +27,11 @@ const ThemeProvider = ({
     );
 
     React.useEffect(() => {
-        setThemeContext(theme || defaultTheme);
-    }, [theme]);
-
-    React.useEffect(() => {
-        if (
+        const prefersDarkMode =
             (typeof window.matchMedia === 'function' &&
                 window.matchMedia('(prefers-color-scheme: dark)')?.matches) ||
-            localStorage.getItem('prefersDarkMode') === 'true'
-        ) {
-            setThemeContext(theme || 'dark');
-        }
+            localStorage.getItem('prefersDarkMode') === 'true';
+        setThemeContext(theme || (prefersDarkMode ? 'dark' : defaultTheme));
     }, [theme]);
 
     return (
