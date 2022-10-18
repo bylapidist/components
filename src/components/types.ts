@@ -7,4 +7,5 @@ export type BaseProps = {
     readonly as?: AsPropType;
     readonly testId?: string;
     readonly children?: React.ReactNode | React.ReactNode[];
+    readonly style?: React.CSSProperties;
 };

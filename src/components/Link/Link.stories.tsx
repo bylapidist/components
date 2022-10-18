@@ -1,11 +1,13 @@
 import * as React from 'react';
 import type { Meta, StoryObj, StoryFn } from '@storybook/react-vite';
 import { BaseProps } from '../types';
+import ThemeProvider from '../ThemeProvider';
 import Link, { LinkProps } from './index';
 
 export default {
     title: 'Components/Link',
-    component: Link
+    component: Link,
+    decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;
 
 const defaultArgs: BaseProps & LinkProps = {

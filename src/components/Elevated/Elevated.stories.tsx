@@ -1,11 +1,13 @@
 import * as React from 'react';
 import type { Meta, StoryObj, StoryFn } from '@storybook/react-vite';
 import { BaseProps } from '../types';
+import ThemeProvider from '../ThemeProvider';
 import Elevated, { ElevatedProps } from './index';
 
 export default {
     title: 'Components/Elevated',
-    component: Elevated
+    component: Elevated,
+    decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;
 
 const defaultArgs: BaseProps & ElevatedProps = {

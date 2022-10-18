@@ -1,11 +1,13 @@
 import * as React from 'react';
 import type { Meta, StoryObj, StoryFn } from '@storybook/react-vite';
 import { BaseProps } from '../types';
+import ThemeProvider from '../ThemeProvider';
 import Box, { BoxProps } from './index';
 
 export default {
     title: 'Components/Box',
-    component: Box
+    component: Box,
+    decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;
 
 const defaultArgs: BaseProps & BoxProps = {

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import cx from 'classnames';
-import '@lapidist/styles/dist/css/light.css';
 import type { BaseProps } from '../types';
 import styles from './Text.module.css';
 

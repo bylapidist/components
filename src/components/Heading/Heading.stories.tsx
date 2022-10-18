@@ -1,11 +1,13 @@
 import * as React from 'react';
 import type { Meta, StoryObj, StoryFn } from '@storybook/react-vite';
 import { BaseProps } from '../types';
+import ThemeProvider from '../ThemeProvider';
 import Heading, { HeadingProps } from './index';
 
 export default {
     title: 'Components/Heading',
-    component: Heading
+    component: Heading,
+    decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;
 
 const defaultArgs: BaseProps & HeadingProps = {
