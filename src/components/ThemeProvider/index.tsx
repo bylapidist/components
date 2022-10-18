@@ -38,7 +38,7 @@ const ThemeProvider = ({
         ) {
             setThemeContext(theme || 'dark');
         }
-    }, []);
+    }, [theme]);
 
     return (
         <Component
