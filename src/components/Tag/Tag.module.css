@@ -1,0 +1,37 @@
+@import '../global.module.css';
+
+.Tag {
+    text-align: center;
+    padding: var(--size__1) 0;
+    color: var(--color-grey__lightest);
+    font-size: var(--font-size__100);
+    font-weight: var(--font-weight__500);
+    border-radius: var(--border-radius__rounder);
+}
+
+.Tag--primary {
+    background-color: var(--color-primary__darkest);
+}
+
+.Tag--secondary {
+    background-color: var(--color-secondary__darkest);
+}
+
+.Tag--tertiary {
+    background-color: var(--color-tertiary__darkest);
+}
+
+.Tag--danger {
+    background-color: var(--color-danger__darkest);
+}
+
+.Tag--namespace {
+    font-weight: var(--font-weight__700);
+    color: var(--color-grey__lightest);
+    background-color: var(--color-grey__darkest);
+    padding: var(--size__1) var(--size__2);
+}
+
+.Tag--children {
+    padding: var(--size__1) var(--size__2);
+}

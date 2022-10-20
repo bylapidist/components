@@ -1,0 +1,125 @@
+// Vitest Snapshot v1
+
+exports[`Tag > it works with kind 1`] = `
+<span
+  class="_Text_c6fd40 _Tag_f783ef _Tag--primary_f783ef"
+  data-testid="Tag"
+>
+  <span
+    class="_Tag--children_f783ef"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`Tag > it works with kind 2`] = `
+<span
+  class="_Text_c6fd40 _Tag_f783ef _Tag--secondary_f783ef"
+  data-testid="Tag"
+>
+  <span
+    class="_Tag--children_f783ef"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`Tag > it works with kind 3`] = `
+<span
+  class="_Text_c6fd40 _Tag_f783ef _Tag--tertiary_f783ef"
+  data-testid="Tag"
+>
+  <span
+    class="_Tag--children_f783ef"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`Tag > it works with kind 4`] = `
+<span
+  class="_Text_c6fd40 _Tag_f783ef _Tag--danger_f783ef"
+  data-testid="Tag"
+>
+  <span
+    class="_Tag--children_f783ef"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`Tag > it works with namespace 1`] = `
+<span
+  class="_Text_c6fd40 _Tag_f783ef _Tag--primary_f783ef"
+  data-testid="Tag"
+>
+  <span
+    class="_Tag--namespace_f783ef"
+  >
+    npm
+  </span>
+  <span
+    class="_Tag--children_f783ef"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`Tag > it works with namespace 2`] = `
+<span
+  class="_Text_c6fd40 _Tag_f783ef _Tag--secondary_f783ef"
+  data-testid="Tag"
+>
+  <span
+    class="_Tag--namespace_f783ef"
+  >
+    npm
+  </span>
+  <span
+    class="_Tag--children_f783ef"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`Tag > it works with namespace 3`] = `
+<span
+  class="_Text_c6fd40 _Tag_f783ef _Tag--tertiary_f783ef"
+  data-testid="Tag"
+>
+  <span
+    class="_Tag--namespace_f783ef"
+  >
+    npm
+  </span>
+  <span
+    class="_Tag--children_f783ef"
+  >
+    Hello world
+  </span>
+</span>
+`;
+
+exports[`Tag > it works with namespace 4`] = `
+<span
+  class="_Text_c6fd40 _Tag_f783ef _Tag--danger_f783ef"
+  data-testid="Tag"
+>
+  <span
+    class="_Tag--namespace_f783ef"
+  >
+    npm
+  </span>
+  <span
+    class="_Tag--children_f783ef"
+  >
+    Hello world
+  </span>
+</span>
+`;
