@@ -1,0 +1,87 @@
+@import '../global.module.css';
+
+@keyframes fadeIn {
+    0% { opacity: 0 }
+    50% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
+@keyframes thinking {
+    0% { opacity: 1 }
+    50% { opacity: 0.6 }
+    100% { opacity: 1 }
+}
+
+@keyframes slideRight {
+    0% { transform: translate3d(-100%,0,0) }
+    80% { transform: translateZ(0) }
+    90% { transform: translate3d(-5%,0,0) }
+    to { transform: translateZ(0) }
+}
+
+@keyframes slideUpLeft {
+    0% { transform: translate3d(100%,100%,0) }
+    80% { transform: translateZ(0) }
+    90% { transform: translate3d(5%,5%,0) }
+    to { transform: translateZ(0) }
+}
+
+@keyframes slideDown {
+    0% { transform: translate3d(0,-100%,0) }
+    80% { transform: translateZ(0) }
+    90% { transform: translate3d(0,-5%,0) }
+    to { transform: translateZ(0) }
+}
+
+.Logo {
+    width: var(--size__16);
+    overflow: hidden;
+    animation: fadeIn;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+.Logo--thinking {
+    animation: thinking;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.Logo--bUp {
+    fill: var(--color-tertiary__dark);
+    animation-delay: 0.1s;
+}
+
+.Logo--bDown {
+    fill: var(--color-primary__dark);
+    animation-delay: 0.2s;
+}
+
+.Logo--d {
+    fill: var(--color-secondary__dark);
+    animation-delay: 0.3s;
+}
+
+.Logo--bUp-animated {
+    animation: slideRight;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.Logo--bDown-animated {
+    animation: slideUpLeft;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+.Logo--d-animated {
+    animation: slideDown;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}

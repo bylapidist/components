@@ -1,0 +1,76 @@
+// Vitest Snapshot v1
+
+exports[`Logo > it works 1`] = `
+<div
+  class="_Box_77a981 _Box--gutter-0_77a981 _Logo_16f863"
+  data-testid="Logo"
+>
+  <svg
+    preserveAspectRatio="none"
+    viewBox="0 0 64 64"
+  >
+    <polygon
+      class="_Logo--bUp_16f863"
+      points="0,0 0,32 32,32"
+    />
+    <polygon
+      class="_Logo--bDown_16f863"
+      points="0,32 0,64 32,64"
+    />
+    <polygon
+      class="_Logo--d_16f863"
+      points="32,0 32,64 64,32"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Logo > it works animated 1`] = `
+<div
+  class="_Box_77a981 _Box--gutter-0_77a981 _Logo_16f863"
+  data-testid="Logo"
+>
+  <svg
+    preserveAspectRatio="none"
+    viewBox="0 0 64 64"
+  >
+    <polygon
+      class="_Logo--bUp_16f863 _Logo--bUp-animated_16f863"
+      points="0,0 0,32 32,32"
+    />
+    <polygon
+      class="_Logo--bDown_16f863 _Logo--bDown-animated_16f863"
+      points="0,32 0,64 32,64"
+    />
+    <polygon
+      class="_Logo--d_16f863 _Logo--d-animated_16f863"
+      points="32,0 32,64 64,32"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Logo > it works thinking 1`] = `
+<div
+  class="_Box_77a981 _Box--gutter-0_77a981 _Logo_16f863"
+  data-testid="Logo"
+>
+  <svg
+    preserveAspectRatio="none"
+    viewBox="0 0 64 64"
+  >
+    <polygon
+      class="_Logo--bUp_16f863 _Logo--thinking_16f863"
+      points="0,0 0,32 32,32"
+    />
+    <polygon
+      class="_Logo--bDown_16f863 _Logo--thinking_16f863"
+      points="0,32 0,64 32,64"
+    />
+    <polygon
+      class="_Logo--d_16f863 _Logo--thinking_16f863"
+      points="32,0 32,64 64,32"
+    />
+  </svg>
+</div>
+`;
