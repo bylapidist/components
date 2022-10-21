@@ -1,0 +1,83 @@
+// Vitest Snapshot v1
+
+exports[`Button > it works disabled 1`] = `
+<button
+  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--medium_2a1efe"
+  data-testid="Button"
+  disabled=""
+>
+  Hello world
+</button>
+`;
+
+exports[`Button > it works loading 1`] = `
+<button
+  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--medium_2a1efe"
+  data-testid="Button"
+>
+  Hello world
+</button>
+`;
+
+exports[`Button > it works with kinds 1`] = `
+<button
+  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--medium_2a1efe"
+  data-testid="Button"
+>
+  Hello world
+</button>
+`;
+
+exports[`Button > it works with kinds 2`] = `
+<button
+  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--secondary_2a1efe _Button--medium_2a1efe"
+  data-testid="Button"
+>
+  Hello world
+</button>
+`;
+
+exports[`Button > it works with kinds 3`] = `
+<button
+  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--tertiary_2a1efe _Button--medium_2a1efe"
+  data-testid="Button"
+>
+  Hello world
+</button>
+`;
+
+exports[`Button > it works with kinds 4`] = `
+<button
+  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--danger_2a1efe _Button--medium_2a1efe"
+  data-testid="Button"
+>
+  Hello world
+</button>
+`;
+
+exports[`Button > it works with variants 1`] = `
+<button
+  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--small_2a1efe"
+  data-testid="Button"
+>
+  Hello world
+</button>
+`;
+
+exports[`Button > it works with variants 2`] = `
+<button
+  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--medium_2a1efe"
+  data-testid="Button"
+>
+  Hello world
+</button>
+`;
+
+exports[`Button > it works with variants 3`] = `
+<button
+  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--large_2a1efe"
+  data-testid="Button"
+>
+  Hello world
+</button>
+`;
