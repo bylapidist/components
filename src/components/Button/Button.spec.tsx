@@ -16,7 +16,7 @@ const kinds: KindType[] = ['primary', 'secondary', 'tertiary', 'danger'];
 describe('Button', () => {
     test('it works with defaults', () => {
         const { container } = setup(<Button>Hello world</Button>);
-        expect(screen.getByRole('Button').nodeName).toBe('BUTTON');
+        expect(screen.getByRole('button')).toBeTruthy();
         expect(container.firstChild).toMatchSnapshot();
     });
 
