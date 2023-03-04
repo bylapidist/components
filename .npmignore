@@ -16,3 +16,4 @@ vite.config.ts
 coverage
 *.tgz
 storybook-static
+vite.config.ts.timestamp-*
