@@ -5,7 +5,7 @@ import ThemeProvider from '../ThemeProvider';
 import Box, { BoxProps } from './index';
 
 export default {
-    title: 'Components/Box',
+    title: 'Primitives/Box',
     component: Box,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;

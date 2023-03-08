@@ -5,7 +5,7 @@ import ThemeProvider from '../ThemeProvider';
 import Logo, { LogoProps } from './index';
 
 export default {
-    title: 'Components/Logo',
+    title: 'Primitives/Logo',
     component: Logo,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;

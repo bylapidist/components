@@ -8,7 +8,7 @@ import Heading from '../Heading';
 import ThemeProvider, { ThemeProviderProps } from './index';
 
 export default {
-    title: 'Components/ThemeProvider',
+    title: 'Utility/ThemeProvider',
     component: Text,
     argTypes: {
         theme: { control: 'select', options: ['light', 'dark'] }

@@ -5,7 +5,7 @@ import ThemeProvider from '../ThemeProvider';
 import Text, { TextProps } from './index';
 
 export default {
-    title: 'Components/Text',
+    title: 'Typography/Text',
     component: Text,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;

@@ -27,11 +27,12 @@ const ThemeProvider = ({
     );
 
     React.useEffect(() => {
-        const prefersDarkMode =
-            (typeof window.matchMedia === 'function' &&
-                window.matchMedia('(prefers-color-scheme: dark)')?.matches) ||
-            localStorage.getItem('prefersDarkMode') === 'true';
-        setThemeContext(theme || (prefersDarkMode ? 'dark' : defaultTheme));
+        // const prefersDarkMode =
+        //     (typeof window.matchMedia === 'function' &&
+        //         window.matchMedia('(prefers-color-scheme: dark)')?.matches) ||
+        //     localStorage.getItem('prefersDarkMode') === 'true';
+        // setThemeContext(theme || (prefersDarkMode ? 'dark' : defaultTheme));
+        setThemeContext(theme || defaultTheme);
     }, [theme]);
 
     return (

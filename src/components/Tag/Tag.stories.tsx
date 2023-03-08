@@ -5,7 +5,7 @@ import ThemeProvider from '../ThemeProvider';
 import Tag, { TagProps } from './index';
 
 export default {
-    title: 'Components/Tag',
+    title: 'Status/Tag',
     component: Tag,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;

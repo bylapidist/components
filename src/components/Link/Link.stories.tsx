@@ -5,7 +5,7 @@ import ThemeProvider from '../ThemeProvider';
 import Link, { LinkProps } from './index';
 
 export default {
-    title: 'Components/Link',
+    title: 'Typography/Link',
     component: Link,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;

@@ -5,7 +5,7 @@ import ThemeProvider from '../ThemeProvider';
 import Button, { ButtonProps } from './index';
 
 export default {
-    title: 'Components/Button',
+    title: 'Inputs/Button',
     component: Button,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;

@@ -5,7 +5,7 @@ import ThemeProvider from '../ThemeProvider';
 import Elevated, { ElevatedProps } from './index';
 
 export default {
-    title: 'Components/Elevated',
+    title: 'Primitives/Elevated',
     component: Elevated,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;

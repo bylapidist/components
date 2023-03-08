@@ -1,10 +1,11 @@
-module.exports = {
+export default {
   framework: '@storybook/react-vite',
   stories: [
-      '../src/**/*.stories.mdx',
+      '../src/**/*.mdx',
       '../src/**/*.stories.@(js|jsx|ts|tsx)'
   ],
   addons: [
+      '@storybook/addon-docs',
       '@storybook/addon-links',
       '@storybook/addon-backgrounds',
       '@storybook/addon-controls',
@@ -13,5 +14,8 @@ module.exports = {
       '@storybook/addon-outline',
       '@storybook/addon-toolbars',
       '@storybook/addon-viewport'
-  ]
+  ],
+  docs: {
+      defaultName: 'Documentation'
+  }
 };
