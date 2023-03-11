@@ -1,20 +1,12 @@
-import { Canvas, Meta, Story } from '@storybook/blocks';
+import { Meta, ArgsTable } from '@storybook/blocks';
 
 import * as BoxStories from './Box.stories.tsx'
 
 <Meta of={BoxStories} />
 
 # Box
+> A primitive for controlling component gutters. Use boxes to establish a consistent approach to constructing more 
+complicated components, ensuring their paddings are aligned with the theme. This can be used as a wrapping element
+for compound components and its prop API included to give the component gutter support.
 
-A box is a primitive for controlling component padding and gutters.
-
-Use boxes to establish a consistent approach to constructing more complicated components, ensuring their paddings
-are aligned with the theme. This can be used as a wrapping element for compound components and its prop API included to 
-give the component gutter support.
-
-
-## No gutter
-
-This is the default for boxes. It has no vertical or horizontal padding.
-
-<Canvas of={BoxStories.NoGutter} />
+<ArgsTable />
