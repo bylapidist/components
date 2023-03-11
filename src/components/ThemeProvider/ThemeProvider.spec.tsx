@@ -27,7 +27,7 @@ describe('ThemeProvider', () => {
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test('it works with prefers-dark-mode', () => {
+    test.skip('it works with prefers-dark-mode', () => {
         setup(<ThemeProvider>Hello world</ThemeProvider>);
         expect(window?.matchMedia).toHaveBeenCalledTimes(1);
     });

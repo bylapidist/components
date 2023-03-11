@@ -2,7 +2,7 @@
 
 exports[`Link > it works 1`] = `
 <a
-  class="_Text_c6fd40 _Link_379d57"
+  class="_Text_c6fd40 _medium_c6fd40 _Link_379d57"
   data-testid="Link"
   href="#"
 >

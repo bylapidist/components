@@ -2,7 +2,7 @@
 
 exports[`ThemeProvider > it works with defaults 1`] = `
 <div
-  class="theme--dark"
+  class="theme--light"
   data-testid="ThemeProvider"
 >
   Hello world

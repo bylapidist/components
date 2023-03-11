@@ -1,24 +1,25 @@
 import * as React from 'react';
 import cx from 'classnames';
-import type { BaseProps } from '../types';
+import type {BaseProps, SizeType} from '../types';
 import styles from './Text.module.css';
 
+export type TextSize = SizeType;
 export interface TextProps {
-    readonly small: boolean;
+    readonly variant?: TextSize;
 }
 
 const Text = ({
     className,
     as: Component = 'div',
     testId = 'Text',
-    small,
+    variant = 'medium',
     ...restProps
 }: BaseProps & TextProps) => (
     <Component
         className={
         cx(
             styles.Text,
-            { [styles[`Text--small`]]: small },
+            styles[variant],
             className
         )}
         data-testid={testId}

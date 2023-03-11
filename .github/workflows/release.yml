@@ -47,6 +47,17 @@ jobs:
                   touch storybook-static/.nojekyll
                   echo "components.lapidist.net" >> storybook-static/CNAME
 
+            - name: Serve Storybook and run tests
+              run: |
+                  npx playwright install --with-deps
+                  npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
+                    "npx http-server storybook-static --port 6006 --silent" \
+                    "npx wait-on tcp:6006 && yarn test-storybook"
+
+            - name: Publish to Chromatic
+              run: |
+                  npm run chromatic -- --ci
+
             - name: Release
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

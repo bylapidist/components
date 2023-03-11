@@ -1,16 +1,20 @@
 @import '../global.module.css';
 
 .Text {
-    display: flex;
-    flex-direction: column;
-    grid-gap: var(--size__2);
-    font-size: var(--font-size__300);
+    color: var(--color-grey__darkest);
     font-family: var(--font-family__sans);
     font-weight: var(--font-weight__400);
     line-height: var(--line-height__tighter);
-    color: var(--color-grey__darkest);
 }
 
-.Text--small {
+.small {
     font-size: var(--font-size__200);
+}
+
+.medium {
+    font-size: var(--font-size__300);
+}
+
+.large {
+    font-size: var(--font-size__400);
 }

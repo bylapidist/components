@@ -2,26 +2,36 @@
 
 exports[`Text > it works with defaults 1`] = `
 <div
-  class="_Text_c6fd40"
+  class="_Text_c6fd40 _medium_c6fd40"
   data-testid="Text"
 >
   Hello world
 </div>
 `;
 
-exports[`Text > it works with paragraphs 1`] = `
+exports[`Text > it works with variants 1`] = `
 <div
-  class="_Text_c6fd40"
+  class="_Text_c6fd40 _small_c6fd40"
   data-testid="Text"
 >
-  <p>
-    Hello world
-  </p>
-  <p>
-    Hello world
-  </p>
-  <p>
-    Hello world
-  </p>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with variants 2`] = `
+<div
+  class="_Text_c6fd40 _medium_c6fd40"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with variants 3`] = `
+<div
+  class="_Text_c6fd40 _large_c6fd40"
+  data-testid="Text"
+>
+  Hello world
 </div>
 `;

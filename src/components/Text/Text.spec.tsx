@@ -2,11 +2,13 @@ import * as React from 'react';
 import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
-import Text from './index';
+import Text, {TextSize} from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
+
+const variants: TextSize[] = ['small', 'medium', 'large'];
 
 describe('Text', () => {
     test('it works with defaults', () => {
@@ -14,16 +16,11 @@ describe('Text', () => {
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test('it works with paragraphs', () => {
-        const { container } = setup(
-            <Text>
-                <p>Hello world</p>
-                <p>Hello world</p>
-                <p>Hello world</p>
-            </Text>
-        );
+    test.each(variants)('it works with variants', (variant) => {
+        const { container } = setup(<Text variant={variant}>Hello world</Text>);
         expect(container.firstChild).toMatchSnapshot();
     });
+
 
     test('it works with default testId', () => {
         setup(<Text>Hello world</Text>);

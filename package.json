@@ -1,107 +1,116 @@
 {
-    "name": "@lapidist/components",
-    "version": "0.0.0",
-    "description": "Lapidist components",
-    "author": "Brett Dorrans <hello@lapidist.net>",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/bylapidist/components.git"
-    },
-    "bugs": {
-        "url": "https://github.com/bylapidist/components/issues"
-    },
-    "homepage": "https://github.com/bylapidist/components#readme",
-    "keywords": [
-        "react",
-        "components",
-        "component library",
-        "lapidist"
-    ],
-    "publishConfig": {
-        "access": "public"
-    },
-    "type": "module",
-    "files": [
-        "dist"
-    ],
-    "main": "./dist/lapidist.umd.js",
-    "module": "./dist/lapidist.es.js",
-    "types": "./dist/index.d.ts",
-    "exports": {
-        ".": {
-            "import": "./dist/lapidist.es.js",
-            "require": "./dist/lapidist.umd.js"
-        }
-    },
-    "scripts": {
-        "storybook": "sb dev",
-        "build": "tsc && vite build",
-        "build:storybook": "sb build",
-        "lint": "npm run lint:js && npm run lint:css",
-        "lint:js": "eslint . --ext js,cjs,ts,tsx",
-        "lint:css": "stylelint './src/**/*.module.css'",
-        "fix": "eslint --fix . --ext js,cjs,ts,tsx",
-        "watch": "tsc -w",
-        "watch:tests": "vitest",
-        "test": "npm run lint && npm run test:typecheck && npm run test:unit",
-        "test:typecheck": "tsc --noEmit -p tsconfig.json",
-        "test:unit": "vitest run --coverage",
-        "update:snapshots": "vitest run --update"
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^6.3.0",
-        "@fortawesome/free-solid-svg-icons": "^6.3.0",
-        "@fortawesome/react-fontawesome": "^0.2.0",
-        "@lapidist/styles": "^4.2.1",
-        "classnames": "^2.3.2",
-        "react": "18.x",
-        "react-dom": "18.x"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.21.0",
-        "@lapidist/linting": "^3.3.0",
-        "@storybook/addon-backgrounds": "7.0.0-beta.62",
-        "@storybook/addon-controls": "7.0.0-beta.62",
-        "@storybook/addon-docs": "^7.0.0-beta.62",
-        "@storybook/addon-highlight": "7.0.0-beta.62",
-        "@storybook/addon-links": "^7.0.0-beta.62",
-        "@storybook/addon-measure": "7.0.0-beta.62",
-        "@storybook/addon-outline": "7.0.0-beta.62",
-        "@storybook/addon-toolbars": "7.0.0-beta.62",
-        "@storybook/addon-viewport": "7.0.0-beta.62",
-        "@storybook/addons": "7.0.0-beta.62",
-        "@storybook/api": "7.0.0-beta.62",
-        "@storybook/blocks": "^7.0.0-beta.62",
-        "@storybook/cli": "^7.0.0-beta.62",
-        "@storybook/core-common": "7.0.0-beta.62",
-        "@storybook/node-logger": "7.0.0-beta.62",
-        "@storybook/react-vite": "^7.0.0-beta.62",
-        "@storybook/theming": "^7.0.0-beta.62",
-        "@testing-library/react": "^14.0.0",
-        "@types/react": "^18.0.28",
-        "@types/react-dom": "^18.0.11",
-        "@vitejs/plugin-react": "^3.1.0",
-        "@vitest/coverage-c8": "^0.29.2",
-        "babel-loader": "^9.1.2",
-        "husky": "^8.0.3",
-        "jsdom": "^21.1.0",
-        "lint-staged": "^13.1.2",
-        "typescript": "^4.9.5",
-        "vite": "^4.1.4",
-        "vite-plugin-dts": "^2.1.0",
-        "vitest": "^0.29.2"
-    },
-    "peerDependencies": {
-        "react": "18.x",
-        "react-dom": "18.x"
-    },
-    "engines": {
-        "node": "^18.0.0"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "tsc --noEmit && lint-staged"
-        }
+  "name": "@lapidist/components",
+  "version": "0.0.0",
+  "description": "Lapidist components",
+  "author": {
+    "name": "Brett Dorrans",
+    "email": "hello@lapidist.net"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bylapidist/components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bylapidist/components/issues"
+  },
+  "homepage": "https://github.com/bylapidist/components#readme",
+  "keywords": [
+    "react",
+    "components",
+    "component library",
+    "lapidist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/lapidist.umd.js",
+  "module": "./dist/lapidist.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/lapidist.es.js",
+      "require": "./dist/lapidist.umd.js"
     }
+  },
+  "scripts": {
+    "storybook": "sb dev --port 6006",
+    "build": "tsc && vite build",
+    "build:storybook": "sb build",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint . --ext js,cjs,ts,tsx",
+    "lint:css": "stylelint './src/**/*.module.css'",
+    "fix": "eslint --fix . --ext js,cjs,ts,tsx",
+    "watch": "tsc -w",
+    "watch:tests": "vitest",
+    "test": "npm run lint && npm run test:typecheck && npm run test:unit",
+    "test:typecheck": "tsc --noEmit -p tsconfig.json",
+    "test:unit": "vitest run --coverage",
+    "test:storybook": "test-storybook",
+    "update:snapshots": "vitest run --update",
+    "chromatic": "npx chromatic --exit-zero-on-changes --build-script-name build:storybook"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@lapidist/styles": "^4.2.1",
+    "classnames": "^2.3.2",
+    "react": "18.x",
+    "react-dom": "18.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@lapidist/linting": "^3.3.0",
+    "@storybook/addon-a11y": "^7.0.0-rc.1",
+    "@storybook/addon-backgrounds": "7.0.0-beta.62",
+    "@storybook/addon-controls": "7.0.0-beta.62",
+    "@storybook/addon-docs": "^7.0.0-beta.62",
+    "@storybook/addon-highlight": "7.0.0-beta.62",
+    "@storybook/addon-links": "^7.0.0-beta.62",
+    "@storybook/addon-measure": "7.0.0-beta.62",
+    "@storybook/addon-outline": "7.0.0-beta.62",
+    "@storybook/addon-toolbars": "7.0.0-beta.62",
+    "@storybook/addon-viewport": "7.0.0-beta.62",
+    "@storybook/addons": "7.0.0-beta.62",
+    "@storybook/api": "7.0.0-beta.62",
+    "@storybook/blocks": "^7.0.0-beta.62",
+    "@storybook/cli": "^7.0.0-beta.62",
+    "@storybook/core-common": "7.0.0-beta.62",
+    "@storybook/node-logger": "7.0.0-beta.62",
+    "@storybook/react-vite": "^7.0.0-beta.62",
+    "@storybook/test-runner": "^0.10.0-next.10",
+    "@storybook/theming": "^7.0.0-beta.62",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "@vitest/coverage-c8": "^0.29.2",
+    "axe-playwright": "^1.2.3",
+    "babel-loader": "^9.1.2",
+    "chromatic": "^6.17.1",
+    "husky": "^8.0.3",
+    "jsdom": "^21.1.0",
+    "lint-staged": "^13.1.2",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4",
+    "vite-plugin-dts": "^2.1.0",
+    "vitest": "^0.29.2"
+  },
+  "peerDependencies": {
+    "react": "18.x",
+    "react-dom": "18.x"
+  },
+  "engines": {
+    "node": "^18.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsc --noEmit && lint-staged"
+    }
+  }
 }

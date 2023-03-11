@@ -1,11 +1,11 @@
 import * as React from 'react';
 import cx from 'classnames';
 import type { IconProp } from '@fortawesome/fontawesome-svg-core';
-import type { BaseProps, KindType } from '../types';
+import type {BaseProps, KindType, SizeType} from '../types';
 import Elevated from '../Elevated';
 import styles from './Button.module.css';
 
-export type ButtonSize = 'small' | 'medium' | 'large';
+export type ButtonSize = SizeType;
 
 export interface ButtonProps {
     readonly kind?: KindType;
