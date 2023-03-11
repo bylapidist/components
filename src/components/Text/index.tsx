@@ -3,17 +3,24 @@ import cx from 'classnames';
 import type { BaseProps } from '../types';
 import styles from './Text.module.css';
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface TextProps {}
+export interface TextProps {
+    readonly small: boolean;
+}
 
 const Text = ({
     className,
     as: Component = 'div',
     testId = 'Text',
+    small,
     ...restProps
 }: BaseProps & TextProps) => (
     <Component
-        className={cx(styles.Text, className)}
+        className={
+        cx(
+            styles.Text,
+            { [styles[`Text--small`]]: small },
+            className
+        )}
         data-testid={testId}
         {...restProps}
     />

@@ -12,7 +12,8 @@ export default {
 
 const defaultArgs: BaseProps & TextProps = {
     as: 'div',
-    testId: 'Text'
+    testId: 'Text',
+    small: false
 };
 
 const DefaultTemplate: StoryFn<BaseProps & TextProps> = (args) => (
