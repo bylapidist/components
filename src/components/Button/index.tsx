@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cx from 'classnames';
 import type { IconProp } from '@fortawesome/fontawesome-svg-core';
-import type {BaseProps, KindType, SizeType} from '../types';
+import type { BaseProps, KindType, SizeType } from '../types';
 import Elevated from '../Elevated';
 import styles from './Button.module.css';
 

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
-import Text, {TextSize} from './index';
+import Text, { TextSize } from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
@@ -20,7 +20,6 @@ describe('Text', () => {
         const { container } = setup(<Text variant={variant}>Hello world</Text>);
         expect(container.firstChild).toMatchSnapshot();
     });
-
 
     test('it works with default testId', () => {
         setup(<Text>Hello world</Text>);

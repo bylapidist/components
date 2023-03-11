@@ -17,30 +17,24 @@ const defaultArgs: BaseProps & TextProps = {
 
 const DefaultTemplate: StoryFn<BaseProps & TextProps> = (args) => (
     <Text {...args}>
-        Nunc porttitor lectus ex, eu pharetra elit placerat non. Suspendisse
-        nec ultrices augue, et varius velit. Vestibulum ante ipsum primis in
+        Nunc porttitor lectus ex, eu pharetra elit placerat non. Suspendisse nec
+        ultrices augue, et varius velit. Vestibulum ante ipsum primis in
         faucibus orci luctus et ultrices posuere cubilia curae.
     </Text>
 );
 
-export const Small: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind(
-    {}
-);
+export const Small: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
 Small.args = {
     ...defaultArgs,
     variant: 'small'
 };
-export const Medium: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind(
-    {}
-);
+export const Medium: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
 Medium.args = {
     ...defaultArgs,
     variant: 'medium'
 };
 
-export const Large: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind(
-    {}
-);
+export const Large: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
 Large.args = {
     ...defaultArgs,
     variant: 'large'

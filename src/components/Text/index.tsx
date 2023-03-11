@@ -1,6 +1,6 @@
 import * as React from 'react';
 import cx from 'classnames';
-import type {BaseProps, SizeType} from '../types';
+import type { BaseProps, SizeType } from '../types';
 import styles from './Text.module.css';
 
 export type TextSize = SizeType;
@@ -16,12 +16,7 @@ const Text = ({
     ...restProps
 }: BaseProps & TextProps) => (
     <Component
-        className={
-        cx(
-            styles.Text,
-            styles[variant],
-            className
-        )}
+        className={cx(styles.Text, styles[variant], className)}
         data-testid={testId}
         {...restProps}
     />

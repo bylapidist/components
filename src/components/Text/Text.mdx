@@ -1,0 +1,36 @@
+import { Meta, ArgsTable, Story, Source, Canvas } from '@storybook/blocks';
+import * as TextStories from './Text.stories.tsx'; 
+
+<Meta of={TextStories} />
+
+# Text
+> A primitive for controlling text. Use text to establish a consistent approach to constructing more 
+complicated components, ensuring their typography is aligned with the theme. This can be used as a wrapping element
+for compound components and its prop API included to give the component text size support.
+
+## Example
+<Source dark />
+
+## Controlling font size
+The `variant` prop controls font size. There are three available font sizes, defined as `small`, `medium` and `large`.
+
+### Small
+> The `small` variant sets the font size to `--font-size__200`/`0.875rem`/`14px`
+<Canvas>
+    <Story of={TextStories.Small} />
+</Canvas>
+
+### Medium
+> The `medium` variant sets the font size to `--font-size__300`/`1rem`/`16px`
+<Canvas>
+    <Story of={TextStories.Medium} />
+</Canvas>
+
+### Large
+> The `large` variant sets the font size to `--font-size__400`/`1.125rem`/`18px`
+<Canvas>
+    <Story of={TextStories.Large} />
+</Canvas>
+
+## Props
+<ArgsTable />
