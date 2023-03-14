@@ -22,6 +22,7 @@ const Tag = ({
         as={as}
         className={cx(styles.Tag, styles[`Tag--${kind}`], className)}
         data-testid={testId}
+        variant="small"
         {...restProps}
     >
         {namespace && (

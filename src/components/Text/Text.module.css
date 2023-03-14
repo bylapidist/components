@@ -4,7 +4,8 @@
     color: var(--color-grey__darkest);
     font-family: var(--font-family__sans);
     font-weight: var(--font-weight__400);
-    line-height: var(--line-height__tighter);
+    line-height: var(--line-height__looser);
+    letter-spacing: var(--letter-spacing__looser);
 }
 
 .small {
