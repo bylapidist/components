@@ -2,91 +2,141 @@
 
 exports[`Button > it works disabled 1`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--medium_2a1efe"
+  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
   data-testid="Button"
   disabled=""
 >
-  Hello world
+  <span
+    class="_Text_c6fd40 _medium_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
+    data-testid="ButtonText"
+  >
+    Hello world
+  </span>
 </button>
 `;
 
 exports[`Button > it works loading 1`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--medium_2a1efe"
+  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
-  Hello world
+  <span
+    class="_Text_c6fd40 _medium_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
+    data-testid="ButtonText"
+  >
+    Hello world
+  </span>
 </button>
 `;
 
 exports[`Button > it works with defaults 1`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--medium_2a1efe"
+  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
-  Hello world
+  <span
+    class="_Text_c6fd40 _medium_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
+    data-testid="ButtonText"
+  >
+    Hello world
+  </span>
 </button>
 `;
 
 exports[`Button > it works with kinds 1`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--medium_2a1efe"
+  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
-  Hello world
+  <span
+    class="_Text_c6fd40 _medium_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
+    data-testid="ButtonText"
+  >
+    Hello world
+  </span>
 </button>
 `;
 
 exports[`Button > it works with kinds 2`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--secondary_2a1efe _Button--medium_2a1efe"
+  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
-  Hello world
+  <span
+    class="_Text_c6fd40 _medium_c6fd40 _ButtonInner_2a1efe _secondary_2a1efe _medium_2a1efe"
+    data-testid="ButtonText"
+  >
+    Hello world
+  </span>
 </button>
 `;
 
 exports[`Button > it works with kinds 3`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--tertiary_2a1efe _Button--medium_2a1efe"
+  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
-  Hello world
+  <span
+    class="_Text_c6fd40 _medium_c6fd40 _ButtonInner_2a1efe _tertiary_2a1efe _medium_2a1efe"
+    data-testid="ButtonText"
+  >
+    Hello world
+  </span>
 </button>
 `;
 
 exports[`Button > it works with kinds 4`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--danger_2a1efe _Button--medium_2a1efe"
+  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
-  Hello world
+  <span
+    class="_Text_c6fd40 _medium_c6fd40 _ButtonInner_2a1efe _danger_2a1efe _medium_2a1efe"
+    data-testid="ButtonText"
+  >
+    Hello world
+  </span>
 </button>
 `;
 
 exports[`Button > it works with variants 1`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--small_2a1efe"
+  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
-  Hello world
+  <span
+    class="_Text_c6fd40 _small_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _small_2a1efe"
+    data-testid="ButtonText"
+  >
+    Hello world
+  </span>
 </button>
 `;
 
 exports[`Button > it works with variants 2`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--medium_2a1efe"
+  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
-  Hello world
+  <span
+    class="_Text_c6fd40 _medium_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
+    data-testid="ButtonText"
+  >
+    Hello world
+  </span>
 </button>
 `;
 
 exports[`Button > it works with variants 3`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _Button_2a1efe _Button--primary_2a1efe _Button--large_2a1efe"
+  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
-  Hello world
+  <span
+    class="_Text_c6fd40 _large_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _large_2a1efe"
+    data-testid="ButtonText"
+  >
+    Hello world
+  </span>
 </button>
 `;

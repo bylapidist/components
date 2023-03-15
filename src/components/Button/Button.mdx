@@ -44,12 +44,36 @@ The `kind` prop controls button appearance. There are four available kinds, defi
 The `variant` prop controls button size. There are three available sizes, defined as `small`, `medium` and `large`.
 
 ### Small
-> The `small` variant sets the font size to `--font-size__200`/`0.875rem`/`14px`
+> Use the small variant for toolbars or where space is constrained.
 <Canvas>
-    <ThemeProvider>
+    <ThemeProvider style={{ display: 'flex', gridGap: 'var(--size__2)' }}>
         <Button
             as="button"
             kind="primary"
+            testId="Button"
+            variant="small"
+        >
+            Click Me
+        </Button>
+        <Button
+            as="button"
+            kind="secondary"
+            testId="Button"
+            variant="small"
+        >
+            Click Me
+        </Button>
+        <Button
+            as="button"
+            kind="tertiary"
+            testId="Button"
+            variant="small"
+        >
+            Click Me
+        </Button>
+        <Button
+            as="button"
+            kind="danger"
             testId="Button"
             variant="small"
         >
@@ -59,12 +83,36 @@ The `variant` prop controls button size. There are three available sizes, define
 </Canvas>
 
 ### Medium
-> The `medium` variant sets the font size to `--font-size__300`/`1rem`/`16px`
+> Use the `medium` variant for most forms, modals, and primary actions within a section of a page.
 <Canvas>
-    <ThemeProvider>
+    <ThemeProvider style={{ display: 'flex', gridGap: 'var(--size__2)' }}>
         <Button
             as="button"
             kind="primary"
+            testId="Button"
+            variant="medium"
+        >
+            Click Me
+        </Button>
+        <Button
+            as="button"
+            kind="secondary"
+            testId="Button"
+            variant="medium"
+        >
+            Click Me
+        </Button>
+        <Button
+            as="button"
+            kind="tertiary"
+            testId="Button"
+            variant="medium"
+        >
+            Click Me
+        </Button>
+        <Button
+            as="button"
+            kind="danger"
             testId="Button"
             variant="medium"
         >
@@ -74,12 +122,36 @@ The `variant` prop controls button size. There are three available sizes, define
 </Canvas>
 
 ### Large
-> The `large` variant sets the font size to `--font-size__400`/`1.125rem`/`18px`
+> Use the `large` variant within a hero banner, or as the main action on the page.
 <Canvas>
-    <ThemeProvider>
+    <ThemeProvider style={{ display: 'flex', gridGap: 'var(--size__2)' }}>
         <Button
             as="button"
             kind="primary"
+            testId="Button"
+            variant="large"
+        >
+            Click Me
+        </Button>
+        <Button
+            as="button"
+            kind="secondary"
+            testId="Button"
+            variant="large"
+        >
+            Click Me
+        </Button>
+        <Button
+            as="button"
+            kind="tertiary"
+            testId="Button"
+            variant="large"
+        >
+            Click Me
+        </Button>
+        <Button
+            as="button"
+            kind="danger"
             testId="Button"
             variant="large"
         >

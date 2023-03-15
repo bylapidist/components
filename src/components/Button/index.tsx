@@ -32,6 +32,7 @@ const Button = ({
     >
         <Text
             as="span"
+            data-testid={`${testId}Text`}
             className={cx(styles.ButtonInner, styles[kind], styles[variant])}
             variant={variant}
         >
