@@ -1,5 +1,6 @@
 import * as React from 'react';
 import cx from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import type { BaseProps, KindType, SizeType } from '../types';
 import Elevated from '../Elevated';
@@ -9,7 +10,6 @@ import styles from './Button.module.css';
 export interface ButtonProps {
     readonly kind?: KindType;
     readonly variant?: SizeType;
-    readonly loading?: boolean;
     readonly icon?: IconProp;
     readonly disabled?: boolean;
 }
@@ -20,6 +20,7 @@ const Button = ({
     testId = 'Button',
     kind = 'primary',
     variant = 'medium',
+    icon,
     children,
     ...restProps
 }: BaseProps & ButtonProps) => (
@@ -36,6 +37,7 @@ const Button = ({
             className={cx(styles.ButtonInner, styles[kind], styles[variant])}
             variant={variant}
         >
+            {icon && <FontAwesomeIcon icon={icon} />}
             {children}
         </Text>
     </Elevated>

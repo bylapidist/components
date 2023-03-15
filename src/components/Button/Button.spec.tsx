@@ -1,15 +1,16 @@
 import * as React from 'react';
 import { describe, expect, test, afterEach } from 'vitest';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { cleanup, render, screen } from '@testing-library/react';
 
-import { KindType } from '../types';
-import Button, { ButtonSize } from './index';
+import { KindType, SizeType } from '../types';
+import Button from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const variants: ButtonSize[] = ['small', 'medium', 'large'];
+const variants: SizeType[] = ['small', 'medium', 'large'];
 
 const kinds: KindType[] = ['primary', 'secondary', 'tertiary', 'danger'];
 
@@ -32,8 +33,8 @@ describe('Button', () => {
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test('it works loading', () => {
-        const { container } = setup(<Button loading>Hello world</Button>);
+    test('it works with icon', () => {
+        const { container } = setup(<Button icon={faXmark}>Hello world</Button>);
         expect(container.firstChild).toMatchSnapshot();
     });
 

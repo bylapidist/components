@@ -10,7 +10,10 @@
 }
 
 .ButtonInner {
+    display: flex;
+    align-items: center;
     border-style: solid;
+    grid-gap: var(--size__2);
     border-width: var(--border-width__thinner);
     border-radius: var(--border-radius__squarer);
     background-color: var(--color-grey__lightest);
@@ -36,7 +39,7 @@
 }
 
 .ButtonInner.small {
-    padding: var(--size__1);
+    padding: var(--size__1) var(--size__2);
 }
 
 .ButtonInner.medium {
@@ -44,7 +47,7 @@
 }
 
 .ButtonInner.large {
-    padding: var(--size__3);
+    padding: var(--size__3) var(--size__2);
 }
 
 .ButtonInner.primary {

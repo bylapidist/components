@@ -1,7 +1,6 @@
 import { Meta, ArgsTable, Story, Source, Canvas } from '@storybook/blocks';
 import ThemeProvider from '../ThemeProvider';
-import * as ButtonStories from './Button.stories.tsx';
-import Button from './index'; 
+import * as ButtonStories from './Button.stories.tsx'; 
 
 <Meta of={ButtonStories} />
 
@@ -19,25 +18,25 @@ The `kind` prop controls button appearance. There are four available kinds, defi
 ### Primary
 > The `primary` kind should be used as the main call to action within a page or button group.
 <Canvas>
-    <Story of={ButtonStories.Primary} />
+    <Story of={ButtonStories.PrimaryMedium} />
 </Canvas>
 
 ### Secondary
 > The `secondary` kind should be used as a secondary call to action within a page or button group.
 <Canvas>
-    <Story of={ButtonStories.Secondary} />
+    <Story of={ButtonStories.SecondaryMedium} />
 </Canvas>
 
 ### Tertiary
 > The `tertiary` kind should be used as any button that is not a call to action or destructive.
 <Canvas>
-    <Story of={ButtonStories.Tertiary} />
+    <Story of={ButtonStories.TertiaryMedium} />
 </Canvas>
 
 ### Danger
 > The `danger` kind should be used for triggering any destructive action.
 <Canvas>
-    <Story of={ButtonStories.Danger} />
+    <Story of={ButtonStories.DangerMedium} />
 </Canvas>
 
 ## Controlling size
@@ -47,38 +46,10 @@ The `variant` prop controls button size. There are three available sizes, define
 > Use the small variant for toolbars or where space is constrained.
 <Canvas>
     <ThemeProvider style={{ display: 'flex', gridGap: 'var(--size__2)' }}>
-        <Button
-            as="button"
-            kind="primary"
-            testId="Button"
-            variant="small"
-        >
-            Click Me
-        </Button>
-        <Button
-            as="button"
-            kind="secondary"
-            testId="Button"
-            variant="small"
-        >
-            Click Me
-        </Button>
-        <Button
-            as="button"
-            kind="tertiary"
-            testId="Button"
-            variant="small"
-        >
-            Click Me
-        </Button>
-        <Button
-            as="button"
-            kind="danger"
-            testId="Button"
-            variant="small"
-        >
-            Click Me
-        </Button>
+        <Story of={ButtonStories.PrimarySmall} />
+        <Story of={ButtonStories.SecondarySmall} />
+        <Story of={ButtonStories.TertiarySmall} />
+        <Story of={ButtonStories.DangerSmall} />
     </ThemeProvider>
 </Canvas>
 
@@ -86,38 +57,10 @@ The `variant` prop controls button size. There are three available sizes, define
 > Use the `medium` variant for most forms, modals, and primary actions within a section of a page.
 <Canvas>
     <ThemeProvider style={{ display: 'flex', gridGap: 'var(--size__2)' }}>
-        <Button
-            as="button"
-            kind="primary"
-            testId="Button"
-            variant="medium"
-        >
-            Click Me
-        </Button>
-        <Button
-            as="button"
-            kind="secondary"
-            testId="Button"
-            variant="medium"
-        >
-            Click Me
-        </Button>
-        <Button
-            as="button"
-            kind="tertiary"
-            testId="Button"
-            variant="medium"
-        >
-            Click Me
-        </Button>
-        <Button
-            as="button"
-            kind="danger"
-            testId="Button"
-            variant="medium"
-        >
-            Click Me
-        </Button>
+        <Story of={ButtonStories.PrimaryMedium} />
+        <Story of={ButtonStories.SecondaryMedium} />
+        <Story of={ButtonStories.TertiaryMedium} />
+        <Story of={ButtonStories.DangerMedium} />
     </ThemeProvider>
 </Canvas>
 
@@ -125,38 +68,27 @@ The `variant` prop controls button size. There are three available sizes, define
 > Use the `large` variant within a hero banner, or as the main action on the page.
 <Canvas>
     <ThemeProvider style={{ display: 'flex', gridGap: 'var(--size__2)' }}>
-        <Button
-            as="button"
-            kind="primary"
-            testId="Button"
-            variant="large"
-        >
-            Click Me
-        </Button>
-        <Button
-            as="button"
-            kind="secondary"
-            testId="Button"
-            variant="large"
-        >
-            Click Me
-        </Button>
-        <Button
-            as="button"
-            kind="tertiary"
-            testId="Button"
-            variant="large"
-        >
-            Click Me
-        </Button>
-        <Button
-            as="button"
-            kind="danger"
-            testId="Button"
-            variant="large"
-        >
-            Click Me
-        </Button>
+        <Story of={ButtonStories.PrimaryLarge} />
+        <Story of={ButtonStories.SecondaryLarge} />
+        <Story of={ButtonStories.TertiaryLarge} />
+        <Story of={ButtonStories.DangerLarge} />
+    </ThemeProvider>
+</Canvas>
+
+## Icons
+> We use the `@fortawesome/fontawesome-svg-core` library for icon support.
+<Canvas>
+    <Story of={ButtonStories.WithIcon} />
+</Canvas>
+
+## Disabled
+> Where possible, avoid using disabled buttons as they are invisible to screen readers and present accessibility concerns.
+<Canvas>
+    <ThemeProvider style={{ display: 'flex', gridGap: 'var(--size__2)' }}>
+        <Story of={ButtonStories.PrimaryDisabled} />
+        <Story of={ButtonStories.SecondaryDisabled} />
+        <Story of={ButtonStories.TertiaryDisabled} />
+        <Story of={ButtonStories.DangerDisabled} />
     </ThemeProvider>
 </Canvas>
 
