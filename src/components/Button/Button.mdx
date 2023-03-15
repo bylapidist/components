@@ -1,5 +1,7 @@
 import { Meta, ArgsTable, Story, Source, Canvas } from '@storybook/blocks';
+import ThemeProvider from '../ThemeProvider';
 import * as ButtonStories from './Button.stories.tsx';
+import Button from './index'; 
 
 <Meta of={ButtonStories} />
 
@@ -9,6 +11,82 @@ a [Link](?path=/docs/typography-link--documentation) in these scenarios instead.
 
 ## Example
 <Source dark />
+
+## Controlling kind
+The `kind` prop controls button appearance. There are four available kinds, defined as `primary`, `secondary`,
+`tertiary` and `danger`.
+
+### Primary
+> The `primary` kind should be used as the main call to action within a page or button group.
+<Canvas>
+    <Story of={ButtonStories.Primary} />
+</Canvas>
+
+### Secondary
+> The `secondary` kind should be used as a secondary call to action within a page or button group.
+<Canvas>
+    <Story of={ButtonStories.Secondary} />
+</Canvas>
+
+### Tertiary
+> The `tertiary` kind should be used as any button that is not a call to action or destructive.
+<Canvas>
+    <Story of={ButtonStories.Tertiary} />
+</Canvas>
+
+### Danger
+> The `danger` kind should be used for triggering any destructive action.
+<Canvas>
+    <Story of={ButtonStories.Danger} />
+</Canvas>
+
+## Controlling size
+The `variant` prop controls button size. There are three available sizes, defined as `small`, `medium` and `large`.
+
+### Small
+> The `small` variant sets the font size to `--font-size__200`/`0.875rem`/`14px`
+<Canvas>
+    <ThemeProvider>
+        <Button
+            as="button"
+            kind="primary"
+            testId="Button"
+            variant="small"
+        >
+            Click Me
+        </Button>
+    </ThemeProvider>
+</Canvas>
+
+### Medium
+> The `medium` variant sets the font size to `--font-size__300`/`1rem`/`16px`
+<Canvas>
+    <ThemeProvider>
+        <Button
+            as="button"
+            kind="primary"
+            testId="Button"
+            variant="medium"
+        >
+            Click Me
+        </Button>
+    </ThemeProvider>
+</Canvas>
+
+### Large
+> The `large` variant sets the font size to `--font-size__400`/`1.125rem`/`18px`
+<Canvas>
+    <ThemeProvider>
+        <Button
+            as="button"
+            kind="primary"
+            testId="Button"
+            variant="large"
+        >
+            Click Me
+        </Button>
+    </ThemeProvider>
+</Canvas>
 
 ## Props
 <ArgsTable />

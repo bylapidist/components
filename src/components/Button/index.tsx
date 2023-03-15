@@ -3,13 +3,12 @@ import cx from 'classnames';
 import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import type { BaseProps, KindType, SizeType } from '../types';
 import Elevated from '../Elevated';
+import Text from '../Text';
 import styles from './Button.module.css';
-
-export type ButtonSize = SizeType;
 
 export interface ButtonProps {
     readonly kind?: KindType;
-    readonly variant?: ButtonSize;
+    readonly variant?: SizeType;
     readonly loading?: boolean;
     readonly icon?: IconProp;
     readonly disabled?: boolean;
@@ -28,15 +27,16 @@ const Button = ({
         as={as}
         elevation={2}
         data-testid={testId}
-        className={cx(
-            styles.Button,
-            styles[`Button--${kind}`],
-            styles[`Button--${variant}`],
-            className
-        )}
+        className={cx(styles.ButtonOuter, className)}
         {...restProps}
     >
-        {children}
+        <Text
+            as="span"
+            className={cx(styles.ButtonInner, styles[kind], styles[variant])}
+            variant={variant}
+        >
+            {children}
+        </Text>
     </Elevated>
 );
 

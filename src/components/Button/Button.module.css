@@ -1,108 +1,88 @@
 @import '../global.module.css';
 
-.Button {
-    display: inline-block;
-    position: relative;
-    border-style: solid;
-    font-family: var(--font-family__sans);
-    background-color: var(--color-grey__lightest);
-    border-width: var(--border-width__thinner);
-    border-radius: var(--border-radius__squarer);
-    overflow: hidden;
+.ButtonOuter {
+    display: inline-flex;
+    transition: box-shadow 0.08s ease-in 0s;
 }
 
-.Button:disabled {
-    opacity: 0.7;
-    color: var(--color-grey__darkest);
-    background-color: var(--color-grey__lightest);
+.ButtonOuter:disabled {
+    opacity: 0.75;
 }
 
-.Button:hover {
+.ButtonOuter:disabled > .ButtonInner:not(.primary) {
+    background-color: var(--color-grey__light);
+}
+
+.ButtonOuter:hover,
+.ButtonOuter:focus {
     cursor: pointer;
-    background-color: var(--color-grey__lightest);
+    transition: box-shadow 0.08s ease-out 0s;
+    box-shadow: var(--elevation__higher);
 }
 
-.Button:hover:disabled {
+.ButtonOuter:hover:disabled {
     cursor: not-allowed;
 }
 
-.Button--primary {
+.ButtonOuter > .ButtonInner {
     font-weight: var(--font-weight__500);
-    color: var(--color-grey__lightest);
-    background-color: var(--color-primary__dark);
-    border-color: var(--color-primary__dark);
 }
 
-.Button--primary:hover {
-    color: var(--color-grey__lightest);
-    background-color: var(--color-primary__darkest);
-    border-color: var(--color-primary__darkest);
-}
-
-.Button--primary:disabled {
-    color: var(--color-grey__lightest);
-    background-color: var(--color-primary__darkest);
-    border-color: var(--color-primary__darkest);
-}
-
-.Button--secondary {
-    font-weight: var(--font-weight__500);
-    color: var(--color-primary__dark);
+.ButtonInner {
+    border-style: solid;
+    border-width: var(--border-width__thinner);
+    border-radius: var(--border-radius__squarer);
     background-color: var(--color-grey__lightest);
-    border-color: var(--color-primary__dark);
 }
 
-.Button--secondary:hover {
+.ButtonInner.small {
+    padding: var(--size__1);
+}
+
+.ButtonInner.medium {
+    padding: var(--size__2);
+}
+
+.ButtonInner.large {
+    padding: var(--size__3);
+}
+
+.ButtonInner.primary {
+    color: var(--color-grey__lightest);
+    background-color: var(--color-primary__darkest);
+    border-color: var(--color-primary__darkest);
+}
+
+.ButtonInner.primary:hover {
+    border-color: var(--color-grey__darkest);
+}
+
+.ButtonInner.secondary {
     color: var(--color-primary__darkest);
     background-color: var(--color-grey__lightest);
+    border-color: var(--color-primary__dark);
+}
+
+.ButtonInner.secondary:hover {
     border-color: var(--color-primary__darkest);
 }
 
-.Button--secondary:disabled {
-    color: var(--color-grey__darkest);
-}
-
-.Button--tertiary {
-    font-weight: var(--font-weight__500);
-    color: var(--color-grey__dark);
-    background-color: var(--color-grey__lightest);
-    border-color: var(--color-grey__lightest);
-}
-
-.Button--tertiary:hover {
+.ButtonInner.tertiary {
     color: var(--color-grey__darkest);
     background-color: var(--color-grey__lightest);
-    border-color: var(--color-grey__lightest);
+    border-color: var(--color-grey__dark);
 }
 
-.Button--tertiary:disabled {
-    color: var(--color-grey__darkest);
+.ButtonInner.tertiary:hover {
+    border-color: var(--color-grey__darkest);
 }
 
-.Button--danger {
-    font-weight: var(--font-weight__500);
-    color: var(--color-danger__dark);
+.ButtonInner.danger {
+    color: var(--color-danger__darkest);
     background-color: var(--color-grey__lightest);
     border-color: var(--color-danger__dark);
 }
 
-.Button--danger:hover {
-    color: var(--color-danger__darkest);
-    background-color: var(--color-grey__lightest);
+.ButtonInner.danger:hover {
     border-color: var(--color-danger__darkest);
-}
-
-.Button--small {
-    font-size: var(--font-size__200);
-    padding: var(--size__1);
-}
-
-.Button--medium {
-    font-size: var(--font-size__300);
-    padding: var(--size__2);
-}
-
-.Button--large {
-    font-size: var(--font-size__400);
-    padding: var(--size__3);
 }
