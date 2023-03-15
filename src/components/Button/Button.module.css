@@ -9,6 +9,17 @@
     opacity: 0.75;
 }
 
+.ButtonInner {
+    border-style: solid;
+    border-width: var(--border-width__thinner);
+    border-radius: var(--border-radius__squarer);
+    background-color: var(--color-grey__lightest);
+}
+
+.ButtonOuter > .ButtonInner {
+    font-weight: var(--font-weight__500);
+}
+
 .ButtonOuter:disabled > .ButtonInner:not(.primary) {
     background-color: var(--color-grey__light);
 }
@@ -22,17 +33,6 @@
 
 .ButtonOuter:hover:disabled {
     cursor: not-allowed;
-}
-
-.ButtonOuter > .ButtonInner {
-    font-weight: var(--font-weight__500);
-}
-
-.ButtonInner {
-    border-style: solid;
-    border-width: var(--border-width__thinner);
-    border-radius: var(--border-radius__squarer);
-    background-color: var(--color-grey__lightest);
 }
 
 .ButtonInner.small {
