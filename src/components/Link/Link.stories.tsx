@@ -20,9 +20,19 @@ const DefaultTemplate: StoryFn<BaseProps & LinkProps> = (args) => (
     <Link {...args}>Hello world</Link>
 );
 
-export const Default: StoryObj<BaseProps & LinkProps> = DefaultTemplate.bind(
-    {}
-);
-Default.args = {
-    ...defaultArgs
+export const Small: StoryObj<BaseProps & LinkProps> = DefaultTemplate.bind({});
+Small.args = {
+    ...defaultArgs,
+    variant: 'small'
+};
+export const Medium: StoryObj<BaseProps & LinkProps> = DefaultTemplate.bind({});
+Medium.args = {
+    ...defaultArgs,
+    variant: 'medium'
+};
+
+export const Large: StoryObj<BaseProps & LinkProps> = DefaultTemplate.bind({});
+Large.args = {
+    ...defaultArgs,
+    variant: 'large'
 };

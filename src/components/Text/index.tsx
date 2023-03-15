@@ -3,9 +3,8 @@ import cx from 'classnames';
 import type { BaseProps, SizeType } from '../types';
 import styles from './Text.module.css';
 
-export type TextSize = SizeType;
 export interface TextProps {
-    readonly variant?: TextSize;
+    readonly variant?: SizeType;
 }
 
 const Text = ({

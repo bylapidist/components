@@ -2,13 +2,14 @@ import * as React from 'react';
 import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
-import Text, { TextSize } from './index';
+import { SizeType } from '../types';
+import Text from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const variants: TextSize[] = ['small', 'medium', 'large'];
+const variants: SizeType[] = ['small', 'medium', 'large'];
 
 describe('Text', () => {
     test('it works with defaults', () => {

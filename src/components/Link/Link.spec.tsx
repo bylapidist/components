@@ -2,15 +2,27 @@ import * as React from 'react';
 import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
+import { SizeType } from '../types';
 import Link from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
+const variants: SizeType[] = ['small', 'medium', 'large'];
+
 describe('Link', () => {
-    test('it works', () => {
+    test('it works with defaults', () => {
         const { container } = setup(<Link href="#">Hello world</Link>);
+        expect(container.firstChild).toMatchSnapshot();
+    });
+
+    test.each(variants)('it works with variants', (variant) => {
+        const { container } = setup(
+            <Link href="#" variant={variant}>
+                Hello world
+            </Link>
+        );
         expect(container.firstChild).toMatchSnapshot();
     });
 

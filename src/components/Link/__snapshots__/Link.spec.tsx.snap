@@ -1,8 +1,38 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Link > it works 1`] = `
+exports[`Link > it works with defaults 1`] = `
 <a
   class="_Text_c6fd40 _medium_c6fd40 _Link_379d57"
+  data-testid="Link"
+  href="#"
+>
+  Hello world
+</a>
+`;
+
+exports[`Link > it works with variants 1`] = `
+<a
+  class="_Text_c6fd40 _small_c6fd40 _Link_379d57"
+  data-testid="Link"
+  href="#"
+>
+  Hello world
+</a>
+`;
+
+exports[`Link > it works with variants 2`] = `
+<a
+  class="_Text_c6fd40 _medium_c6fd40 _Link_379d57"
+  data-testid="Link"
+  href="#"
+>
+  Hello world
+</a>
+`;
+
+exports[`Link > it works with variants 3`] = `
+<a
+  class="_Text_c6fd40 _large_c6fd40 _Link_379d57"
   data-testid="Link"
   href="#"
 >
