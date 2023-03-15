@@ -18,7 +18,8 @@ time, mark, audio, video {
     font-size: 100%;
     vertical-align: baseline;
     transition: border 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s,
-    background-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s;
+    background-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s,
+    text-decoration-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s;
 }
 html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
