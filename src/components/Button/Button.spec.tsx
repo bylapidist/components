@@ -34,7 +34,9 @@ describe('Button', () => {
     });
 
     test('it works with icon', () => {
-        const { container } = setup(<Button icon={faXmark}>Hello world</Button>);
+        const { container } = setup(
+            <Button icon={faXmark}>Hello world</Button>
+        );
         expect(container.firstChild).toMatchSnapshot();
     });
 

@@ -23,31 +23,27 @@ const DefaultTemplate: StoryFn<BaseProps & ButtonProps> = (args) => (
     <Button {...args}>Click Me</Button>
 );
 
-export const PrimarySmall: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const PrimarySmall: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 PrimarySmall.args = {
     ...defaultArgs,
     variant: 'small'
 };
-export const PrimaryMedium: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const PrimaryMedium: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 PrimaryMedium.args = {
     ...defaultArgs,
     variant: 'medium'
 };
-export const PrimaryLarge: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const PrimaryLarge: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 PrimaryLarge.args = {
     ...defaultArgs,
     variant: 'large'
 };
 
-export const PrimaryDisabled: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const PrimaryDisabled: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 PrimaryDisabled.args = {
     ...defaultArgs,
     disabled: true
@@ -77,81 +73,72 @@ SecondaryLarge.args = {
     variant: 'large'
 };
 
-export const SecondaryDisabled: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const SecondaryDisabled: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 SecondaryDisabled.args = {
     ...defaultArgs,
     kind: 'secondary',
     disabled: true
 };
 
-export const TertiarySmall: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const TertiarySmall: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 TertiarySmall.args = {
     ...defaultArgs,
     kind: 'tertiary',
     variant: 'small'
 };
 
-export const TertiaryMedium: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const TertiaryMedium: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 TertiaryMedium.args = {
     ...defaultArgs,
     kind: 'tertiary',
     variant: 'medium'
 };
 
-export const TertiaryLarge: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const TertiaryLarge: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 TertiaryLarge.args = {
     ...defaultArgs,
     kind: 'tertiary',
     variant: 'large'
 };
 
-export const TertiaryDisabled: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const TertiaryDisabled: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 TertiaryDisabled.args = {
     ...defaultArgs,
     kind: 'tertiary',
     disabled: true
 };
 
-export const DangerSmall: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const DangerSmall: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 DangerSmall.args = {
     ...defaultArgs,
     kind: 'danger',
     variant: 'small'
 };
 
-export const DangerMedium: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const DangerMedium: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 DangerMedium.args = {
     ...defaultArgs,
     kind: 'danger',
     variant: 'medium'
 };
 
-export const DangerLarge: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const DangerLarge: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 DangerLarge.args = {
     ...defaultArgs,
     kind: 'danger',
     variant: 'large'
 };
 
-export const DangerDisabled: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
+export const DangerDisabled: StoryObj<BaseProps & ButtonProps> =
+    DefaultTemplate.bind({});
 DangerDisabled.args = {
     ...defaultArgs,
     kind: 'danger',
@@ -166,4 +153,3 @@ WithIcon.args = {
     kind: 'danger',
     icon: faXmark
 };
-
