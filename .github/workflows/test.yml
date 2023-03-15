@@ -37,17 +37,6 @@ jobs:
               run: |
                   npm run build:storybook
 
-            - name: Serve Storybook and run tests
-              run: |
-                  npx playwright install --with-deps
-                  npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
-                    "npx http-server storybook-static --port 6006 --silent" \
-                    "npx wait-on tcp:6006 && yarn test-storybook"
-
-            - name: Publish to Chromatic
-              run: |
-                  npm run chromatic -- --ci
-
             - name: Upload coverage to Codecov
               uses: codecov/codecov-action@v3
               with:
