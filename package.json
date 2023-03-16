@@ -52,7 +52,7 @@
         "@lapidist/styles": "^3.9.0"
     },
     "devDependencies": {
-        "@lapidist/linting": "2.137.1",
+        "@lapidist/linting": "3.3.1",
         "@storybook/addon-actions": "6.5.16",
         "@storybook/addon-essentials": "6.5.16",
         "@storybook/addon-links": "6.5.16",
