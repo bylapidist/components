@@ -9,7 +9,7 @@ const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const variants: SizeType[] = ['small', 'medium', 'large'];
+const sizes: SizeType[] = ['small', 'medium', 'large'];
 
 describe('Link', () => {
     test('it works with defaults', () => {
@@ -17,9 +17,9 @@ describe('Link', () => {
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test.each(variants)('it works with variants', (variant) => {
+    test.each(sizes)('it works with sizes', (size) => {
         const { container } = setup(
-            <Link href="#" variant={variant}>
+            <Link href="#" size={size}>
                 Hello world
             </Link>
         );

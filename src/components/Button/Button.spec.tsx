@@ -3,16 +3,15 @@ import { describe, expect, test, afterEach } from 'vitest';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { cleanup, render, screen } from '@testing-library/react';
 
-import { KindType, SizeType } from '../types';
+import { LevelType, SizeType } from '../types';
 import Button from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const variants: SizeType[] = ['small', 'medium', 'large'];
-
-const kinds: KindType[] = ['primary', 'secondary', 'tertiary', 'danger'];
+const sizes: SizeType[] = ['small', 'medium', 'large'];
+const levels: LevelType[] = ['primary', 'secondary', 'tertiary', 'danger'];
 
 describe('Button', () => {
     test('it works with defaults', () => {
@@ -21,15 +20,13 @@ describe('Button', () => {
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test.each(variants)('it works with variants', (variant) => {
-        const { container } = setup(
-            <Button variant={variant}>Hello world</Button>
-        );
+    test.each(sizes)('it works with sizes', (size) => {
+        const { container } = setup(<Button size={size}>Hello world</Button>);
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test.each(kinds)('it works with kinds', (kind) => {
-        const { container } = setup(<Button kind={kind}>Hello world</Button>);
+    test.each(levels)('it works with levels', (level) => {
+        const { container } = setup(<Button level={level}>Hello world</Button>);
         expect(container.firstChild).toMatchSnapshot();
     });
 
@@ -42,6 +39,11 @@ describe('Button', () => {
 
     test('it works disabled', () => {
         const { container } = setup(<Button disabled>Hello world</Button>);
+        expect(container.firstChild).toMatchSnapshot();
+    });
+
+    test('it works block', () => {
+        const { container } = setup(<Button block>Hello world</Button>);
         expect(container.firstChild).toMatchSnapshot();
     });
 

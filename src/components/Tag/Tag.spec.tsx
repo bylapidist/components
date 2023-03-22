@@ -2,14 +2,14 @@ import * as React from 'react';
 import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
-import type { KindType } from '../types';
+import type { LevelType } from '../types';
 import Tag from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const kinds: KindType[] = ['primary', 'secondary', 'tertiary', 'danger'];
+const kinds: LevelType[] = ['primary', 'secondary', 'tertiary', 'danger'];
 
 describe('Tag', () => {
     test.each(kinds)('it works with kind', (kind) => {

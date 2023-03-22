@@ -26,16 +26,34 @@ const DefaultTemplate: StoryFn<BaseProps & TextProps> = (args) => (
 export const Small: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
 Small.args = {
     ...defaultArgs,
-    variant: 'small'
+    size: 'small'
 };
 export const Medium: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
 Medium.args = {
     ...defaultArgs,
-    variant: 'medium'
+    size: 'medium'
 };
 
 export const Large: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
 Large.args = {
     ...defaultArgs,
-    variant: 'large'
+    size: 'large'
+};
+
+export const Sans: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
+Sans.args = {
+    ...defaultArgs,
+    variant: 'sans'
+};
+
+export const Serif: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
+Serif.args = {
+    ...defaultArgs,
+    variant: 'serif'
+};
+
+export const Mono: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
+Mono.args = {
+    ...defaultArgs,
+    variant: 'mono'
 };

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export type AsPropType = keyof JSX.IntrinsicElements;
 
-export type KindType = 'primary' | 'secondary' | 'tertiary' | 'danger';
+export type LevelType = 'primary' | 'secondary' | 'tertiary' | 'danger';
 
 export type SizeType = 'small' | 'medium' | 'large';
 

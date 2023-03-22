@@ -2,7 +2,7 @@
 
 exports[`Link > it works with defaults 1`] = `
 <a
-  class="_Text_c6fd40 _medium_c6fd40 _Link_379d57"
+  class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40 _Link_379d57"
   data-testid="Link"
   href="#"
 >
@@ -10,9 +10,9 @@ exports[`Link > it works with defaults 1`] = `
 </a>
 `;
 
-exports[`Link > it works with variants 1`] = `
+exports[`Link > it works with sizes 1`] = `
 <a
-  class="_Text_c6fd40 _small_c6fd40 _Link_379d57"
+  class="_Text_c6fd40 _small_c6fd40 _sans_c6fd40 _Link_379d57"
   data-testid="Link"
   href="#"
 >
@@ -20,9 +20,9 @@ exports[`Link > it works with variants 1`] = `
 </a>
 `;
 
-exports[`Link > it works with variants 2`] = `
+exports[`Link > it works with sizes 2`] = `
 <a
-  class="_Text_c6fd40 _medium_c6fd40 _Link_379d57"
+  class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40 _Link_379d57"
   data-testid="Link"
   href="#"
 >
@@ -30,9 +30,9 @@ exports[`Link > it works with variants 2`] = `
 </a>
 `;
 
-exports[`Link > it works with variants 3`] = `
+exports[`Link > it works with sizes 3`] = `
 <a
-  class="_Text_c6fd40 _large_c6fd40 _Link_379d57"
+  class="_Text_c6fd40 _large_c6fd40 _sans_c6fd40 _Link_379d57"
   data-testid="Link"
   href="#"
 >

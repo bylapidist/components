@@ -3,17 +3,23 @@ import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
 import { SizeType } from '../types';
-import Text from './index';
+import Text, { TextVariantType } from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const variants: SizeType[] = ['small', 'medium', 'large'];
+const sizes: SizeType[] = ['small', 'medium', 'large'];
+const variants: TextVariantType[] = ['sans', 'serif', 'mono'];
 
 describe('Text', () => {
     test('it works with defaults', () => {
         const { container } = setup(<Text>Hello world</Text>);
+        expect(container.firstChild).toMatchSnapshot();
+    });
+
+    test.each(sizes)('it works with sizes', (size) => {
+        const { container } = setup(<Text size={size}>Hello world</Text>);
         expect(container.firstChild).toMatchSnapshot();
     });
 

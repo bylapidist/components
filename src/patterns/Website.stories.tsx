@@ -35,7 +35,7 @@ export const WebsiteCard: StoryFn<BaseProps> = () => (
             <Heading as="h2" size={3}>
                 @lapidist/components
             </Heading>
-            <Text variant="medium">
+            <Text size="medium">
                 Nunc porttitor lectus ex, eu pharetra elit placerat non.
                 Suspendisse nec ultrices augue, et varius velit. Vestibulum ante
                 ipsum primis in faucibus orci luctus et ultrices posuere cubilia

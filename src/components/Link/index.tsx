@@ -5,21 +5,21 @@ import Text, { TextProps } from '../Text';
 import styles from './Link.module.css';
 
 export interface LinkProps
-    extends React.HTMLProps<HTMLAnchorElement>,
+    extends Omit<React.HTMLProps<HTMLAnchorElement>, 'size'>,
         TextProps {}
 
 const Link = ({
     className,
     as = 'a',
     testId = 'Link',
-    variant = 'medium',
+    size = 'medium',
     ...restProps
 }: BaseProps & LinkProps) => (
     <Text
         as={as}
         className={cx(styles.Link, className)}
         data-testid={testId}
-        variant={variant}
+        size={size}
         {...restProps}
     />
 );

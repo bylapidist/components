@@ -1,11 +1,11 @@
 import * as React from 'react';
 import cx from 'classnames';
-import type { BaseProps, KindType } from '../types';
+import type { BaseProps, LevelType } from '../types';
 import Text from '../Text';
 import styles from './Tag.module.css';
 
 export interface TagProps {
-    readonly kind?: KindType;
+    readonly kind?: LevelType;
     readonly namespace?: string;
 }
 
@@ -22,7 +22,7 @@ const Tag = ({
         as={as}
         className={cx(styles.Tag, styles[`Tag--${kind}`], className)}
         data-testid={testId}
-        variant="small"
+        size="small"
         {...restProps}
     >
         {namespace && (

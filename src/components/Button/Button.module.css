@@ -11,7 +11,9 @@
 
 .ButtonInner {
     display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: center;
     border-style: solid;
     grid-gap: var(--size__2);
     border-width: var(--border-width__thinner);
@@ -88,4 +90,9 @@
 
 .ButtonInner.danger:hover {
     border-color: var(--color-danger__darkest);
+}
+
+.block {
+    display: block;
+    width: 100%;
 }

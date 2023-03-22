@@ -23,16 +23,16 @@ const DefaultTemplate: StoryFn<BaseProps & LinkProps> = (args) => (
 export const Small: StoryObj<BaseProps & LinkProps> = DefaultTemplate.bind({});
 Small.args = {
     ...defaultArgs,
-    variant: 'small'
+    size: 'small'
 };
 export const Medium: StoryObj<BaseProps & LinkProps> = DefaultTemplate.bind({});
 Medium.args = {
     ...defaultArgs,
-    variant: 'medium'
+    size: 'medium'
 };
 
 export const Large: StoryObj<BaseProps & LinkProps> = DefaultTemplate.bind({});
 Large.args = {
     ...defaultArgs,
-    variant: 'large'
+    size: 'large'
 };

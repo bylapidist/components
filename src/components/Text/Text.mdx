@@ -12,24 +12,45 @@ for compound components and its prop API included to give the component text siz
 <Source dark />
 
 ## Controlling font size
-The `variant` prop controls font size. There are three available font sizes, defined as `small`, `medium` and `large`.
+The `size` prop controls font size. There are three available font sizes, defined as `small`, `medium` and `large`.
 
 ### Small
-> The `small` variant sets the font size to `--font-size__200`/`0.875rem`/`14px`
+> The `small` size sets the font size to `--font-size__200`
 <Canvas>
     <Story of={TextStories.Small} />
 </Canvas>
 
 ### Medium
-> The `medium` variant sets the font size to `--font-size__300`/`1rem`/`16px`
+> The `medium` size sets the font size to `--font-size__300`
 <Canvas>
     <Story of={TextStories.Medium} />
 </Canvas>
 
 ### Large
-> The `large` variant sets the font size to `--font-size__400`/`1.125rem`/`18px`
+> The `large` size sets the font size to `--font-size__400`
 <Canvas>
     <Story of={TextStories.Large} />
+</Canvas>
+
+## Controlling font family
+The `variant` prop controls font family. There are three available font families, defined as `sans`, `serif` and `mono`.
+
+### Sans
+> The `sans` variant sets the font family to `--font-family__sans`
+<Canvas>
+    <Story of={TextStories.Sans} />
+</Canvas>
+
+### Serif
+> The `sans` variant sets the font family to `--font-family__serif`
+<Canvas>
+    <Story of={TextStories.Serif} />
+</Canvas>
+
+### Mono
+> The `sans` variant sets the font family to `--font-family__mono`
+<Canvas>
+    <Story of={TextStories.Mono} />
 </Canvas>
 
 ## Props

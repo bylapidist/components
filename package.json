@@ -50,7 +50,6 @@
     "test": "npm run lint && npm run test:typecheck && npm run test:unit",
     "test:typecheck": "tsc --noEmit -p tsconfig.json",
     "test:unit": "vitest run --coverage",
-    "test:storybook": "test-storybook",
     "update:snapshots": "vitest run --update"
   },
   "dependencies": {
