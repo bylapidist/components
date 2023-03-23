@@ -3,7 +3,7 @@ import cx from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import type { BaseProps, LevelType, SizeType } from '../types';
-import Elevated from '../Elevated';
+import Box from '../Box';
 import Text from '../Text';
 import styles from './Button.module.css';
 
@@ -26,7 +26,7 @@ const Button = ({
     children,
     ...restProps
 }: BaseProps & ButtonProps) => (
-    <Elevated
+    <Box
         as={as}
         elevation={2}
         data-testid={testId}
@@ -42,7 +42,7 @@ const Button = ({
             {icon && <FontAwesomeIcon icon={icon} />}
             {children}
         </Text>
-    </Elevated>
+    </Box>
 );
 
 Button.displayName = 'Button';

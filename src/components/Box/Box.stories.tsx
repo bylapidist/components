@@ -15,7 +15,8 @@ const defaultArgs: BaseProps & BoxProps = {
     testId: 'Box',
     gutter: 0,
     gutterX: undefined,
-    gutterY: undefined
+    gutterY: undefined,
+    elevation: 0
 };
 
 const DefaultTemplate: StoryFn<BaseProps & BoxProps> = (args) => (

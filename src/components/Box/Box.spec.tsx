@@ -2,17 +2,25 @@ import * as React from 'react';
 import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
-import Box, { Gutter } from './index';
+import Box, { GutterType, ElevationType } from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const gutters: Gutter[] = [0, 1, 2, 3, 4];
+const gutters: GutterType[] = [0, 1, 2, 3, 4];
+const elevations: ElevationType[] = [0, 1, 2, 3, 4];
 
 describe('Box', () => {
     test.each(gutters)('it works with gutters', (gutter) => {
         const { container } = setup(<Box gutter={gutter}>Hello world</Box>);
+        expect(container.firstChild).toMatchSnapshot();
+    });
+
+    test.each(elevations)('it works with elevations', (elevation) => {
+        const { container } = setup(
+            <Box elevation={elevation}>Hello world</Box>
+        );
         expect(container.firstChild).toMatchSnapshot();
     });
 

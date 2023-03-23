@@ -3,12 +3,15 @@ import cx from 'classnames';
 import type { BaseProps } from '../types';
 import styles from './Box.module.css';
 
-export type Gutter = 0 | 1 | 2 | 3 | 4;
+export type GutterType = 0 | 1 | 2 | 3 | 4;
+
+export type ElevationType = 0 | 1 | 2 | 3 | 4;
 
 export interface BoxProps {
-    readonly gutter?: Gutter;
-    readonly gutterX?: Gutter;
-    readonly gutterY?: Gutter;
+    readonly gutter?: GutterType;
+    readonly gutterX?: GutterType;
+    readonly gutterY?: GutterType;
+    readonly elevation?: ElevationType;
 }
 
 const Box = ({
@@ -16,17 +19,18 @@ const Box = ({
     as: Component = 'div',
     testId = 'Box',
     gutter = 0,
+    elevation = 0,
     gutterX,
     gutterY,
     ...restProps
 }: BaseProps & BoxProps) => (
     <Component
         className={cx(
-            styles.Box,
-            styles[`Box--gutter-${gutter}`],
+            styles[`gutter-${gutter}`],
+            styles[`elevation-${elevation}`],
             {
-                [styles[`Box--gutterX-${gutterX}`]]: gutterX,
-                [styles[`Box--gutterY-${gutterY}`]]: gutterY
+                [styles[`gutterX-${gutterX}`]]: gutterX,
+                [styles[`gutterY-${gutterY}`]]: gutterY
             },
             className
         )}

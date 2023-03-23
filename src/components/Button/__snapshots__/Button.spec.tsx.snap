@@ -2,7 +2,7 @@
 
 exports[`Button > it works block 1`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe _block_2a1efe"
+  class="_gutter-0_77a981 _elevation-2_77a981 _ButtonOuter_2a1efe _block_2a1efe"
   data-testid="Button"
 >
   <span
@@ -16,7 +16,7 @@ exports[`Button > it works block 1`] = `
 
 exports[`Button > it works disabled 1`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
+  class="_gutter-0_77a981 _elevation-2_77a981 _ButtonOuter_2a1efe"
   data-testid="Button"
   disabled=""
 >
@@ -31,7 +31,7 @@ exports[`Button > it works disabled 1`] = `
 
 exports[`Button > it works with defaults 1`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
+  class="_gutter-0_77a981 _elevation-2_77a981 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
   <span
@@ -45,7 +45,7 @@ exports[`Button > it works with defaults 1`] = `
 
 exports[`Button > it works with icon 1`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
+  class="_gutter-0_77a981 _elevation-2_77a981 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
   <span
@@ -74,7 +74,7 @@ exports[`Button > it works with icon 1`] = `
 
 exports[`Button > it works with levels 1`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
+  class="_gutter-0_77a981 _elevation-2_77a981 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
   <span
@@ -88,7 +88,7 @@ exports[`Button > it works with levels 1`] = `
 
 exports[`Button > it works with levels 2`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
+  class="_gutter-0_77a981 _elevation-2_77a981 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
   <span
@@ -102,7 +102,7 @@ exports[`Button > it works with levels 2`] = `
 
 exports[`Button > it works with levels 3`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
+  class="_gutter-0_77a981 _elevation-2_77a981 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
   <span
@@ -116,7 +116,7 @@ exports[`Button > it works with levels 3`] = `
 
 exports[`Button > it works with levels 4`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
+  class="_gutter-0_77a981 _elevation-2_77a981 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
   <span
@@ -130,7 +130,7 @@ exports[`Button > it works with levels 4`] = `
 
 exports[`Button > it works with sizes 1`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
+  class="_gutter-0_77a981 _elevation-2_77a981 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
   <span
@@ -144,7 +144,7 @@ exports[`Button > it works with sizes 1`] = `
 
 exports[`Button > it works with sizes 2`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
+  class="_gutter-0_77a981 _elevation-2_77a981 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
   <span
@@ -158,7 +158,7 @@ exports[`Button > it works with sizes 2`] = `
 
 exports[`Button > it works with sizes 3`] = `
 <button
-  class="_Elevated--elevation-2_b91ef2 _ButtonOuter_2a1efe"
+  class="_gutter-0_77a981 _elevation-2_77a981 _ButtonOuter_2a1efe"
   data-testid="Button"
 >
   <span
