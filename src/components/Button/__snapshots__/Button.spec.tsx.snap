@@ -6,7 +6,7 @@ exports[`Button > it works block 1`] = `
   data-testid="Button"
 >
   <span
-    class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
+    class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
     data-testid="ButtonText"
   >
     Hello world
@@ -21,7 +21,7 @@ exports[`Button > it works disabled 1`] = `
   disabled=""
 >
   <span
-    class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
+    class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
     data-testid="ButtonText"
   >
     Hello world
@@ -35,7 +35,7 @@ exports[`Button > it works with defaults 1`] = `
   data-testid="Button"
 >
   <span
-    class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
+    class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
     data-testid="ButtonText"
   >
     Hello world
@@ -49,7 +49,7 @@ exports[`Button > it works with icon 1`] = `
   data-testid="Button"
 >
   <span
-    class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
+    class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
     data-testid="ButtonText"
   >
     <svg
@@ -78,7 +78,7 @@ exports[`Button > it works with levels 1`] = `
   data-testid="Button"
 >
   <span
-    class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
+    class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
     data-testid="ButtonText"
   >
     Hello world
@@ -92,7 +92,7 @@ exports[`Button > it works with levels 2`] = `
   data-testid="Button"
 >
   <span
-    class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40 _ButtonInner_2a1efe _secondary_2a1efe _medium_2a1efe"
+    class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _ButtonInner_2a1efe _secondary_2a1efe _medium_2a1efe"
     data-testid="ButtonText"
   >
     Hello world
@@ -106,7 +106,7 @@ exports[`Button > it works with levels 3`] = `
   data-testid="Button"
 >
   <span
-    class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40 _ButtonInner_2a1efe _tertiary_2a1efe _medium_2a1efe"
+    class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _ButtonInner_2a1efe _tertiary_2a1efe _medium_2a1efe"
     data-testid="ButtonText"
   >
     Hello world
@@ -120,7 +120,7 @@ exports[`Button > it works with levels 4`] = `
   data-testid="Button"
 >
   <span
-    class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40 _ButtonInner_2a1efe _danger_2a1efe _medium_2a1efe"
+    class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _ButtonInner_2a1efe _danger_2a1efe _medium_2a1efe"
     data-testid="ButtonText"
   >
     Hello world
@@ -134,7 +134,7 @@ exports[`Button > it works with sizes 1`] = `
   data-testid="Button"
 >
   <span
-    class="_Text_c6fd40 _small_c6fd40 _sans_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _small_2a1efe"
+    class="_Text_c6fd40 _size-small_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _small_2a1efe"
     data-testid="ButtonText"
   >
     Hello world
@@ -148,7 +148,7 @@ exports[`Button > it works with sizes 2`] = `
   data-testid="Button"
 >
   <span
-    class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
+    class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _medium_2a1efe"
     data-testid="ButtonText"
   >
     Hello world
@@ -162,7 +162,7 @@ exports[`Button > it works with sizes 3`] = `
   data-testid="Button"
 >
   <span
-    class="_Text_c6fd40 _large_c6fd40 _sans_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _large_2a1efe"
+    class="_Text_c6fd40 _size-large_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _ButtonInner_2a1efe _primary_2a1efe _large_2a1efe"
     data-testid="ButtonText"
   >
     Hello world

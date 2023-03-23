@@ -2,7 +2,34 @@
 
 exports[`Text > it works with defaults 1`] = `
 <div
-  class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40"
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with families 1`] = `
+<div
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with families 2`] = `
+<div
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-serif_c6fd40 _weight-regular_c6fd40"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with families 3`] = `
+<div
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-mono_c6fd40 _weight-regular_c6fd40"
   data-testid="Text"
 >
   Hello world
@@ -11,7 +38,7 @@ exports[`Text > it works with defaults 1`] = `
 
 exports[`Text > it works with sizes 1`] = `
 <div
-  class="_Text_c6fd40 _small_c6fd40 _sans_c6fd40"
+  class="_Text_c6fd40 _size-small_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
   data-testid="Text"
 >
   Hello world
@@ -20,7 +47,7 @@ exports[`Text > it works with sizes 1`] = `
 
 exports[`Text > it works with sizes 2`] = `
 <div
-  class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40"
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
   data-testid="Text"
 >
   Hello world
@@ -29,34 +56,34 @@ exports[`Text > it works with sizes 2`] = `
 
 exports[`Text > it works with sizes 3`] = `
 <div
-  class="_Text_c6fd40 _large_c6fd40 _sans_c6fd40"
+  class="_Text_c6fd40 _size-large_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
   data-testid="Text"
 >
   Hello world
 </div>
 `;
 
-exports[`Text > it works with variants 1`] = `
+exports[`Text > it works with weights 1`] = `
 <div
-  class="_Text_c6fd40 _medium_c6fd40 _sans_c6fd40"
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
   data-testid="Text"
 >
   Hello world
 </div>
 `;
 
-exports[`Text > it works with variants 2`] = `
+exports[`Text > it works with weights 2`] = `
 <div
-  class="_Text_c6fd40 _medium_c6fd40 _serif_c6fd40"
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-medium_c6fd40"
   data-testid="Text"
 >
   Hello world
 </div>
 `;
 
-exports[`Text > it works with variants 3`] = `
+exports[`Text > it works with weights 3`] = `
 <div
-  class="_Text_c6fd40 _medium_c6fd40 _mono_c6fd40"
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-bold_c6fd40"
   data-testid="Text"
 >
   Hello world

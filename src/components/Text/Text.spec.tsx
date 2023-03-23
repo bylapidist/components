@@ -3,14 +3,15 @@ import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
 import { SizeType } from '../types';
-import Text, { TextVariantType } from './index';
+import Text, { TextFamilyType, TextWeightType } from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
 const sizes: SizeType[] = ['small', 'medium', 'large'];
-const variants: TextVariantType[] = ['sans', 'serif', 'mono'];
+const families: TextFamilyType[] = ['sans', 'serif', 'mono'];
+const weights: TextWeightType[] = ['regular', 'medium', 'bold'];
 
 describe('Text', () => {
     test('it works with defaults', () => {
@@ -23,8 +24,13 @@ describe('Text', () => {
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test.each(variants)('it works with variants', (variant) => {
-        const { container } = setup(<Text variant={variant}>Hello world</Text>);
+    test.each(families)('it works with families', (family) => {
+        const { container } = setup(<Text family={family}>Hello world</Text>);
+        expect(container.firstChild).toMatchSnapshot();
+    });
+
+    test.each(weights)('it works with weights', (weight) => {
+        const { container } = setup(<Text weight={weight}>Hello world</Text>);
         expect(container.firstChild).toMatchSnapshot();
     });
 

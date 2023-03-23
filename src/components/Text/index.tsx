@@ -3,10 +3,14 @@ import cx from 'classnames';
 import type { BaseProps, SizeType } from '../types';
 import styles from './Text.module.css';
 
-export type TextVariantType = 'sans' | 'serif' | 'mono';
+export type TextFamilyType = 'sans' | 'serif' | 'mono';
+
+export type TextWeightType = 'regular' | 'medium' | 'bold';
+
 export interface TextProps {
     readonly size?: SizeType;
-    readonly variant?: TextVariantType;
+    readonly family?: TextFamilyType;
+    readonly weight?: TextWeightType;
 }
 
 const Text = ({
@@ -14,11 +18,18 @@ const Text = ({
     as: Component = 'div',
     testId = 'Text',
     size = 'medium',
-    variant = 'sans',
+    family = 'sans',
+    weight = 'regular',
     ...restProps
 }: BaseProps & TextProps) => (
     <Component
-        className={cx(styles.Text, styles[size], styles[variant], className)}
+        className={cx(
+            styles.Text,
+            styles[`size-${size}`],
+            styles[`family-${family}`],
+            styles[`weight-${weight}`],
+            className
+        )}
         data-testid={testId}
         {...restProps}
     />

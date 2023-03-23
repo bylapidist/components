@@ -12,7 +12,10 @@ export default {
 
 const defaultArgs: BaseProps & TextProps = {
     as: 'p',
-    testId: 'Text'
+    testId: 'Text',
+    size: 'medium',
+    weight: 'regular',
+    family: 'sans'
 };
 
 const DefaultTemplate: StoryFn<BaseProps & TextProps> = (args) => (
@@ -23,37 +26,69 @@ const DefaultTemplate: StoryFn<BaseProps & TextProps> = (args) => (
     </Text>
 );
 
-export const Small: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
-Small.args = {
+export const SmallSize: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind(
+    {}
+);
+SmallSize.args = {
     ...defaultArgs,
     size: 'small'
 };
-export const Medium: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
-Medium.args = {
+export const MediumSize: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind(
+    {}
+);
+MediumSize.args = {
     ...defaultArgs,
     size: 'medium'
 };
 
-export const Large: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
-Large.args = {
+export const LargeSize: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind(
+    {}
+);
+LargeSize.args = {
     ...defaultArgs,
     size: 'large'
 };
 
-export const Sans: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
-Sans.args = {
+export const RegularWeight: StoryObj<BaseProps & TextProps> =
+    DefaultTemplate.bind({});
+RegularWeight.args = {
     ...defaultArgs,
-    variant: 'sans'
+    weight: 'regular'
+};
+export const MediumWeight: StoryObj<BaseProps & TextProps> =
+    DefaultTemplate.bind({});
+MediumWeight.args = {
+    ...defaultArgs,
+    weight: 'medium'
 };
 
-export const Serif: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
-Serif.args = {
+export const BoldWeight: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind(
+    {}
+);
+BoldWeight.args = {
     ...defaultArgs,
-    variant: 'serif'
+    weight: 'bold'
 };
 
-export const Mono: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind({});
-Mono.args = {
+export const SansFamily: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind(
+    {}
+);
+SansFamily.args = {
     ...defaultArgs,
-    variant: 'mono'
+    family: 'sans'
+};
+
+export const SerifFamily: StoryObj<BaseProps & TextProps> =
+    DefaultTemplate.bind({});
+SerifFamily.args = {
+    ...defaultArgs,
+    family: 'serif'
+};
+
+export const MonoFamily: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind(
+    {}
+);
+MonoFamily.args = {
+    ...defaultArgs,
+    family: 'mono'
 };

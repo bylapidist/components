@@ -1,6 +1,6 @@
 import * as React from 'react';
 import cx from 'classnames';
-import type { AsPropType, BaseProps } from '../types';
+import type { AsType, BaseProps } from '../types';
 import Text from '../Text';
 import styles from './Heading.module.css';
 
@@ -10,8 +10,8 @@ export interface HeadingProps {
     readonly size?: HeadingSize;
 }
 
-const getHeadingElement = (as?: AsPropType, size: HeadingSize = 1) => {
-    const sizeMap: { readonly [K: number]: AsPropType } = {
+const getHeadingElement = (as?: AsType, size: HeadingSize = 1) => {
+    const sizeMap: { readonly [K: number]: AsType } = {
         1: 'h1',
         2: 'h2',
         3: 'h3',

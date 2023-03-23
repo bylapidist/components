@@ -2,31 +2,42 @@
 
 .Text {
     color: var(--color-grey__darkest);
-    font-weight: var(--font-weight__400);
     line-height: var(--line-height__looser);
     letter-spacing: var(--letter-spacing__looser);
 }
 
-.small {
+.size-small {
     font-size: var(--font-size__200);
 }
 
-.medium {
+.size-medium {
     font-size: var(--font-size__300);
 }
 
-.large {
+.size-large {
     font-size: var(--font-size__400);
 }
 
-.sans {
+.family-sans {
     font-family: var(--font-family__sans);
 }
 
-.serif {
+.family-serif {
     font-family: var(--font-family__serif);
 }
 
-.mono {
+.family-mono {
     font-family: var(--font-family__mono);
+}
+
+.weight-regular {
+    font-weight: var(--font-weight__400);
+}
+
+.weight-medium {
+    font-weight: var(--font-weight__500);
+}
+
+.weight-bold {
+    font-weight: var(--font-weight__600);
 }
