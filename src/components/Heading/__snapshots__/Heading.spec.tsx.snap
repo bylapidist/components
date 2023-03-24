@@ -2,7 +2,34 @@
 
 exports[`Heading > it works with defaults 1`] = `
 <h1
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _Heading--1_f5e8bd"
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _size-large_f5e8bd"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with families 1`] = `
+<h1
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _size-large_f5e8bd"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with families 2`] = `
+<h1
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-serif_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _size-large_f5e8bd"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with families 3`] = `
+<h1
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-mono_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _size-large_f5e8bd"
   data-testid="Heading"
 >
   Hello world
@@ -11,7 +38,7 @@ exports[`Heading > it works with defaults 1`] = `
 
 exports[`Heading > it works with sizes 1`] = `
 <h1
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _Heading--1_f5e8bd"
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _size-large_f5e8bd"
   data-testid="Heading"
 >
   Hello world
@@ -20,7 +47,7 @@ exports[`Heading > it works with sizes 1`] = `
 
 exports[`Heading > it works with sizes 2`] = `
 <h2
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _Heading--2_f5e8bd"
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _size-medium_f5e8bd"
   data-testid="Heading"
 >
   Hello world
@@ -29,36 +56,36 @@ exports[`Heading > it works with sizes 2`] = `
 
 exports[`Heading > it works with sizes 3`] = `
 <h3
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _Heading--3_f5e8bd"
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _size-small_f5e8bd"
   data-testid="Heading"
 >
   Hello world
 </h3>
 `;
 
-exports[`Heading > it works with sizes 4`] = `
-<h4
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _Heading--4_f5e8bd"
+exports[`Heading > it works with weights 1`] = `
+<h1
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _size-large_f5e8bd"
   data-testid="Heading"
 >
   Hello world
-</h4>
+</h1>
 `;
 
-exports[`Heading > it works with sizes 5`] = `
-<h5
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _Heading--5_f5e8bd"
+exports[`Heading > it works with weights 2`] = `
+<h1
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-medium_c6fd40 _Heading_f5e8bd _size-large_f5e8bd"
   data-testid="Heading"
 >
   Hello world
-</h5>
+</h1>
 `;
 
-exports[`Heading > it works with sizes 6`] = `
-<h6
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Heading_f5e8bd _Heading--6_f5e8bd"
+exports[`Heading > it works with weights 3`] = `
+<h1
+  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-bold_c6fd40 _Heading_f5e8bd _size-large_f5e8bd"
   data-testid="Heading"
 >
   Hello world
-</h6>
+</h1>
 `;

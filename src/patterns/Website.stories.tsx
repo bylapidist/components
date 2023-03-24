@@ -31,9 +31,7 @@ export const WebsiteCard: StoryFn<BaseProps> = () => (
             gridGap: 'var(--size__2)'
         }}
     >
-        <Heading as="h2" size={3}>
-            @lapidist/components
-        </Heading>
+        <Heading size="medium">@lapidist/components</Heading>
         <Text size="medium">
             Opinionated React UI library, built with @lapidist/styles and
             TypeScript.

@@ -2,13 +2,17 @@ import * as React from 'react';
 import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
-import Heading, { HeadingSize } from './index';
+import Heading from './index';
+import { TextFamilyType, TextWeightType } from '../Text';
+import { SizeType } from '../types';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const sizes: HeadingSize[] = [1, 2, 3, 4, 5, 6];
+const sizes: SizeType[] = ['large', 'medium', 'small'];
+const families: TextFamilyType[] = ['sans', 'serif', 'mono'];
+const weights: TextWeightType[] = ['regular', 'medium', 'bold'];
 
 describe('Heading', () => {
     test('it works with defaults', () => {
@@ -19,7 +23,20 @@ describe('Heading', () => {
 
     test.each(sizes)('it works with sizes', (size) => {
         const { container } = setup(<Heading size={size}>Hello world</Heading>);
-        expect(screen.getByRole('heading').nodeName).toBe(`H${size}`);
+        expect(container.firstChild).toMatchSnapshot();
+    });
+
+    test.each(families)('it works with families', (family) => {
+        const { container } = setup(
+            <Heading family={family}>Hello world</Heading>
+        );
+        expect(container.firstChild).toMatchSnapshot();
+    });
+
+    test.each(weights)('it works with weights', (weight) => {
+        const { container } = setup(
+            <Heading weight={weight}>Hello world</Heading>
+        );
         expect(container.firstChild).toMatchSnapshot();
     });
 

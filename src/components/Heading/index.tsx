@@ -1,23 +1,20 @@
 import * as React from 'react';
 import cx from 'classnames';
-import type { AsType, BaseProps } from '../types';
-import Text from '../Text';
+import type { AsType, BaseProps, SizeType } from '../types';
+import Text, { TextFamilyType, TextWeightType } from '../Text';
 import styles from './Heading.module.css';
 
-export type HeadingSize = 1 | 2 | 3 | 4 | 5 | 6;
-
 export interface HeadingProps {
-    readonly size?: HeadingSize;
+    readonly size?: SizeType;
+    readonly weight?: TextWeightType;
+    readonly family?: TextFamilyType;
 }
 
-const getHeadingElement = (as?: AsType, size: HeadingSize = 1) => {
-    const sizeMap: { readonly [K: number]: AsType } = {
-        1: 'h1',
-        2: 'h2',
-        3: 'h3',
-        4: 'h4',
-        5: 'h5',
-        6: 'h6'
+const getHeadingElement = (size: SizeType, as?: AsType) => {
+    const sizeMap: { readonly [K: string]: AsType } = {
+        large: 'h1',
+        medium: 'h2',
+        small: 'h3'
     };
     return as || sizeMap[size];
 };
@@ -26,16 +23,16 @@ const Heading = ({
     className,
     as,
     testId = 'Heading',
-    size,
+    size = 'large',
+    weight,
+    family = 'sans',
     ...restProps
 }: BaseProps & HeadingProps) => (
     <Text
-        as={getHeadingElement(as, size)}
-        className={cx(
-            styles.Heading,
-            styles[`Heading--${size || 1}`],
-            className
-        )}
+        as={getHeadingElement(size, as)}
+        className={cx(styles.Heading, styles[`size-${size}`], className)}
+        weight={weight}
+        family={family}
         data-testid={testId}
         {...restProps}
     />

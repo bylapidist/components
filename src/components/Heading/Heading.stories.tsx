@@ -13,61 +13,72 @@ export default {
 const defaultArgs: BaseProps & HeadingProps = {
     as: 'h1',
     testId: 'Heading',
-    size: 1
+    size: 'large',
+    family: 'sans',
+    weight: 'regular'
 };
 
 const DefaultTemplate: StoryFn<BaseProps & HeadingProps> = (args) => (
     <Heading {...args}>Heading {args?.size}</Heading>
 );
 
-export const Level1: StoryObj<BaseProps & HeadingProps> = DefaultTemplate.bind(
-    {}
-);
-Level1.args = {
+export const LargeSize: StoryObj<BaseProps & HeadingProps> =
+    DefaultTemplate.bind({});
+LargeSize.args = {
     ...defaultArgs
 };
 
-export const Level2: StoryObj<BaseProps & HeadingProps> = DefaultTemplate.bind(
-    {}
-);
-Level2.args = {
+export const MediumSize: StoryObj<BaseProps & HeadingProps> =
+    DefaultTemplate.bind({});
+MediumSize.args = {
     ...defaultArgs,
-    as: 'h2',
-    size: 2
+    size: 'medium'
 };
 
-export const Level3: StoryObj<BaseProps & HeadingProps> = DefaultTemplate.bind(
-    {}
-);
-Level3.args = {
+export const SmallSize: StoryObj<BaseProps & HeadingProps> =
+    DefaultTemplate.bind({});
+SmallSize.args = {
     ...defaultArgs,
-    as: 'h3',
-    size: 3
+    size: 'small'
 };
 
-export const Level4: StoryObj<BaseProps & HeadingProps> = DefaultTemplate.bind(
-    {}
-);
-Level4.args = {
+export const RegularWeight: StoryObj<BaseProps & HeadingProps> =
+    DefaultTemplate.bind({});
+RegularWeight.args = {
     ...defaultArgs,
-    as: 'h4',
-    size: 4
+    weight: 'regular'
+};
+export const MediumWeight: StoryObj<BaseProps & HeadingProps> =
+    DefaultTemplate.bind({});
+MediumWeight.args = {
+    ...defaultArgs,
+    weight: 'medium'
 };
 
-export const Level5: StoryObj<BaseProps & HeadingProps> = DefaultTemplate.bind(
-    {}
-);
-Level5.args = {
+export const BoldWeight: StoryObj<BaseProps & HeadingProps> =
+    DefaultTemplate.bind({});
+BoldWeight.args = {
     ...defaultArgs,
-    as: 'h5',
-    size: 5
+    weight: 'bold'
 };
 
-export const Level6: StoryObj<BaseProps & HeadingProps> = DefaultTemplate.bind(
-    {}
-);
-Level6.args = {
+export const SansFamily: StoryObj<BaseProps & HeadingProps> =
+    DefaultTemplate.bind({});
+SansFamily.args = {
     ...defaultArgs,
-    as: 'h6',
-    size: 6
+    family: 'sans'
+};
+
+export const SerifFamily: StoryObj<BaseProps & HeadingProps> =
+    DefaultTemplate.bind({});
+SerifFamily.args = {
+    ...defaultArgs,
+    family: 'serif'
+};
+
+export const MonoFamily: StoryObj<BaseProps & HeadingProps> =
+    DefaultTemplate.bind({});
+MonoFamily.args = {
+    ...defaultArgs,
+    family: 'mono'
 };

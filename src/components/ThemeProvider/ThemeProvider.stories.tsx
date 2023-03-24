@@ -29,7 +29,7 @@ const DefaultTemplate: StoryFn<BaseProps & ThemeProviderProps> = (args) => (
     >
         <Box gutter={4}>
             <Box elevation={4} gutter={4}>
-                <Heading size={1}>Heading</Heading>
+                <Heading>Heading</Heading>
                 <Text>
                     Nunc porttitor lectus ex, eu pharetra elit placerat non.
                     Suspendisse nec ultrices augue, et varius velit. Vestibulum
