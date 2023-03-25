@@ -24,15 +24,17 @@ time, mark, audio, video {
     text-decoration-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s;
 }
 html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }
+*, *::before, *::after { box-sizing: inherit; }
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, main, menu, nav, section { display: block; }
 *[hidden] { display: none; }
 body { line-height: 1; font-size: 62.5%; }
 menu, ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
-blockquote:before, blockquote:after,
-q:before, q:after { content: ''; }
+
+blockquote::before, blockquote::after,
+q::before, q::after { content: ''; }
 table { border-collapse: collapse; border-spacing: 0; }
 img { display: block; max-width: 100%; }
 a, button { text-decoration: none; outline-offset: 2px; outline: transparent solid 2px; }

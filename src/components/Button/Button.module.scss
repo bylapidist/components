@@ -1,21 +1,18 @@
-@import '../global.module.scss';
+@import '../global.module';
 
 .ButtonOuter {
     --primary__text-color: var(--color-grey__lightest);
     --secondary__text-color: var(--color-primary__darkest);
     --tertiary__text-color: var(--color-grey__darkest);
     --danger__text-color: var(--color-danger__darkest);
-
     --primary__background-color: var(--color-primary__darkest);
     --secondary__background-color: var(--color-grey__lightest);
     --tertiary__background-color: var(--color-grey__lightest);
     --danger__background-color: var(--color-grey__lightest);
-
     --primary__border-color: var(--color-primary__darkest);
     --secondary__border-color: var(--color-primary__dark);
     --tertiary__border-color: var(--color-grey__dark);
     --danger__border-color: var(--color-danger__dark);
-
     --primary__border-hover-color: var(--color-grey__darkest);
     --secondary__border-hover-color: var(--color-primary__darkest);
     --tertiary__border-hover-color: var(--color-grey__darkest);

@@ -11,8 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
-./src/**/*.css
-./src/**/*.css.map
+**/*.css
+**/*.css.map
 
 # Editor directories and files
 .vscode/*
