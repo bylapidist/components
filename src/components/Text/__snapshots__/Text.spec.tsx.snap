@@ -2,7 +2,7 @@
 
 exports[`Text > it works with defaults 1`] = `
 <div
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
+  class="_Text_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-regular_b26e6e"
   data-testid="Text"
 >
   Hello world
@@ -11,7 +11,7 @@ exports[`Text > it works with defaults 1`] = `
 
 exports[`Text > it works with families 1`] = `
 <div
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
+  class="_Text_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-regular_b26e6e"
   data-testid="Text"
 >
   Hello world
@@ -20,7 +20,7 @@ exports[`Text > it works with families 1`] = `
 
 exports[`Text > it works with families 2`] = `
 <div
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-serif_c6fd40 _weight-regular_c6fd40"
+  class="_Text_b26e6e _size-medium_b26e6e _family-serif_b26e6e _weight-regular_b26e6e"
   data-testid="Text"
 >
   Hello world
@@ -29,7 +29,7 @@ exports[`Text > it works with families 2`] = `
 
 exports[`Text > it works with families 3`] = `
 <div
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-mono_c6fd40 _weight-regular_c6fd40"
+  class="_Text_b26e6e _size-medium_b26e6e _family-mono_b26e6e _weight-regular_b26e6e"
   data-testid="Text"
 >
   Hello world
@@ -38,7 +38,7 @@ exports[`Text > it works with families 3`] = `
 
 exports[`Text > it works with sizes 1`] = `
 <div
-  class="_Text_c6fd40 _size-small_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
+  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e"
   data-testid="Text"
 >
   Hello world
@@ -47,7 +47,7 @@ exports[`Text > it works with sizes 1`] = `
 
 exports[`Text > it works with sizes 2`] = `
 <div
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
+  class="_Text_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-regular_b26e6e"
   data-testid="Text"
 >
   Hello world
@@ -56,7 +56,7 @@ exports[`Text > it works with sizes 2`] = `
 
 exports[`Text > it works with sizes 3`] = `
 <div
-  class="_Text_c6fd40 _size-large_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
+  class="_Text_b26e6e _size-large_b26e6e _family-sans_b26e6e _weight-regular_b26e6e"
   data-testid="Text"
 >
   Hello world
@@ -65,7 +65,7 @@ exports[`Text > it works with sizes 3`] = `
 
 exports[`Text > it works with weights 1`] = `
 <div
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40"
+  class="_Text_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-regular_b26e6e"
   data-testid="Text"
 >
   Hello world
@@ -74,7 +74,7 @@ exports[`Text > it works with weights 1`] = `
 
 exports[`Text > it works with weights 2`] = `
 <div
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-medium_c6fd40"
+  class="_Text_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e"
   data-testid="Text"
 >
   Hello world
@@ -83,7 +83,7 @@ exports[`Text > it works with weights 2`] = `
 
 exports[`Text > it works with weights 3`] = `
 <div
-  class="_Text_c6fd40 _size-medium_c6fd40 _family-sans_c6fd40 _weight-bold_c6fd40"
+  class="_Text_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-bold_b26e6e"
   data-testid="Text"
 >
   Hello world

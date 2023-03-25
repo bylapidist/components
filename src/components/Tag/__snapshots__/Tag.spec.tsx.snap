@@ -2,11 +2,11 @@
 
 exports[`Tag > it works with kind 1`] = `
 <span
-  class="_Text_c6fd40 _size-small_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Tag_f783ef _Tag--primary_f783ef"
+  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--primary_2dd11e"
   data-testid="Tag"
 >
   <span
-    class="_Tag--children_f783ef"
+    class="_Tag--children_2dd11e"
   >
     Hello world
   </span>
@@ -15,11 +15,11 @@ exports[`Tag > it works with kind 1`] = `
 
 exports[`Tag > it works with kind 2`] = `
 <span
-  class="_Text_c6fd40 _size-small_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Tag_f783ef _Tag--secondary_f783ef"
+  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--secondary_2dd11e"
   data-testid="Tag"
 >
   <span
-    class="_Tag--children_f783ef"
+    class="_Tag--children_2dd11e"
   >
     Hello world
   </span>
@@ -28,11 +28,11 @@ exports[`Tag > it works with kind 2`] = `
 
 exports[`Tag > it works with kind 3`] = `
 <span
-  class="_Text_c6fd40 _size-small_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Tag_f783ef _Tag--tertiary_f783ef"
+  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--tertiary_2dd11e"
   data-testid="Tag"
 >
   <span
-    class="_Tag--children_f783ef"
+    class="_Tag--children_2dd11e"
   >
     Hello world
   </span>
@@ -41,11 +41,11 @@ exports[`Tag > it works with kind 3`] = `
 
 exports[`Tag > it works with kind 4`] = `
 <span
-  class="_Text_c6fd40 _size-small_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Tag_f783ef _Tag--danger_f783ef"
+  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--danger_2dd11e"
   data-testid="Tag"
 >
   <span
-    class="_Tag--children_f783ef"
+    class="_Tag--children_2dd11e"
   >
     Hello world
   </span>
@@ -54,16 +54,16 @@ exports[`Tag > it works with kind 4`] = `
 
 exports[`Tag > it works with namespace 1`] = `
 <span
-  class="_Text_c6fd40 _size-small_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Tag_f783ef _Tag--primary_f783ef"
+  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--primary_2dd11e"
   data-testid="Tag"
 >
   <span
-    class="_Tag--namespace_f783ef"
+    class="_Tag--namespace_2dd11e"
   >
     npm
   </span>
   <span
-    class="_Tag--children_f783ef"
+    class="_Tag--children_2dd11e"
   >
     Hello world
   </span>
@@ -72,16 +72,16 @@ exports[`Tag > it works with namespace 1`] = `
 
 exports[`Tag > it works with namespace 2`] = `
 <span
-  class="_Text_c6fd40 _size-small_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Tag_f783ef _Tag--secondary_f783ef"
+  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--secondary_2dd11e"
   data-testid="Tag"
 >
   <span
-    class="_Tag--namespace_f783ef"
+    class="_Tag--namespace_2dd11e"
   >
     npm
   </span>
   <span
-    class="_Tag--children_f783ef"
+    class="_Tag--children_2dd11e"
   >
     Hello world
   </span>
@@ -90,16 +90,16 @@ exports[`Tag > it works with namespace 2`] = `
 
 exports[`Tag > it works with namespace 3`] = `
 <span
-  class="_Text_c6fd40 _size-small_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Tag_f783ef _Tag--tertiary_f783ef"
+  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--tertiary_2dd11e"
   data-testid="Tag"
 >
   <span
-    class="_Tag--namespace_f783ef"
+    class="_Tag--namespace_2dd11e"
   >
     npm
   </span>
   <span
-    class="_Tag--children_f783ef"
+    class="_Tag--children_2dd11e"
   >
     Hello world
   </span>
@@ -108,16 +108,16 @@ exports[`Tag > it works with namespace 3`] = `
 
 exports[`Tag > it works with namespace 4`] = `
 <span
-  class="_Text_c6fd40 _size-small_c6fd40 _family-sans_c6fd40 _weight-regular_c6fd40 _Tag_f783ef _Tag--danger_f783ef"
+  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--danger_2dd11e"
   data-testid="Tag"
 >
   <span
-    class="_Tag--namespace_f783ef"
+    class="_Tag--namespace_2dd11e"
   >
     npm
   </span>
   <span
-    class="_Tag--children_f783ef"
+    class="_Tag--children_2dd11e"
   >
     Hello world
   </span>

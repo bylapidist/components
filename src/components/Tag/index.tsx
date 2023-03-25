@@ -2,7 +2,7 @@ import * as React from 'react';
 import cx from 'classnames';
 import type { BaseProps, LevelType } from '../types';
 import Text from '../Text';
-import styles from './Tag.module.css';
+import styles from './Tag.module.scss';
 
 export interface TagProps {
     readonly kind?: LevelType;

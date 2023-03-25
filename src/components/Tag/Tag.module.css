@@ -1,36 +1,113 @@
-@import '../global.module.scss';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, button,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  transition: border 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s, background-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s, text-decoration-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+  font-size: 62.5%;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a, button {
+  text-decoration: none;
+  outline-offset: 2px;
+  outline: transparent solid 2px;
+}
+
+a:focus, button:focus {
+  outline: var(--color-secondary__dark) solid 2px;
+}
 
 .Tag {
-    text-align: center;
-    padding: var(--size__1) 0;
-    color: var(--color-grey__lightest);
-    font-weight: var(--font-weight__500);
-    border-radius: var(--border-radius__rounder);
+  text-align: center;
+  padding: var(--size__1) 0;
+  color: var(--color-grey__lightest);
+  font-weight: var(--font-weight__500);
+  border-radius: var(--border-radius__rounder);
 }
 
 .Tag--primary {
-    background-color: var(--color-primary__darkest);
+  background-color: var(--color-primary__darkest);
 }
 
 .Tag--secondary {
-    background-color: var(--color-secondary__darkest);
+  background-color: var(--color-secondary__darkest);
 }
 
 .Tag--tertiary {
-    background-color: var(--color-tertiary__darkest);
+  background-color: var(--color-tertiary__darkest);
 }
 
 .Tag--danger {
-    background-color: var(--color-danger__darkest);
+  background-color: var(--color-danger__darkest);
 }
 
 .Tag--namespace {
-    font-weight: var(--font-weight__700);
-    color: var(--color-grey__lightest);
-    background-color: var(--color-grey__darkest);
-    padding: var(--size__1) var(--size__2);
+  font-weight: var(--font-weight__700);
+  color: var(--color-grey__lightest);
+  background-color: var(--color-grey__darkest);
+  padding: var(--size__1) var(--size__2);
 }
 
 .Tag--children {
-    padding: var(--size__1) var(--size__2);
+  padding: var(--size__1) var(--size__2);
 }
+
+/*# sourceMappingURL=Tag.module.css.map */

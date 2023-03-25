@@ -2,7 +2,7 @@ import * as React from 'react';
 import cx from 'classnames';
 import type { BaseProps } from '../types';
 import Text, { TextProps } from '../Text';
-import styles from './Link.module.css';
+import styles from './Link.module.scss';
 
 export interface LinkProps
     extends Omit<React.HTMLProps<HTMLAnchorElement>, 'size'>,

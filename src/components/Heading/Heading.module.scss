@@ -1,0 +1,16 @@
+@import '../global.module.scss';
+
+.Heading {
+    --size__small: var(--font-size__500);
+    --size__medium: var(--font-size__600);
+    --size__large: var(--font-size__700);
+
+    line-height: var(--line-height__tighter);
+    color: var(--color-grey__darkest);
+
+    @each $size in $sizes {
+        &.size-#{$size} {
+            font-size: var(--size__#{$size});
+        }
+    }
+}

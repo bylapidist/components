@@ -1,43 +1,123 @@
-@import '../global.module.scss';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, button,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  transition: border 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s, background-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s, text-decoration-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+  font-size: 62.5%;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a, button {
+  text-decoration: none;
+  outline-offset: 2px;
+  outline: transparent solid 2px;
+}
+
+a:focus, button:focus {
+  outline: var(--color-secondary__dark) solid 2px;
+}
 
 .Text {
-    color: var(--color-grey__darkest);
-    line-height: var(--line-height__looser);
-    letter-spacing: var(--letter-spacing__looser);
+  --size__small: var(--font-size__200);
+  --size__medium: var(--font-size__300);
+  --size__large: var(--font-size__400);
+  --family__sans: var(--font-family__sans);
+  --family__serif: var(--font-family__serif);
+  --family__mono: var(--font-family__mono);
+  --weight__regular: var(--font-weight__400);
+  --weight__medium: var(--font-weight__500);
+  --weight__bold: var(--font-weight__700);
+  color: var(--color-grey__darkest);
+  line-height: var(--line-height__looser);
+  letter-spacing: var(--letter-spacing__looser);
+}
+.Text.size-none {
+  font-size: var(--size__none);
+}
+.Text.size-small {
+  font-size: var(--size__small);
+}
+.Text.size-medium {
+  font-size: var(--size__medium);
+}
+.Text.size-large {
+  font-size: var(--size__large);
+}
+.Text.family-sans {
+  font-family: var(--family__sans);
+}
+.Text.family-serif {
+  font-family: var(--family__serif);
+}
+.Text.family-mono {
+  font-family: var(--family__mono);
+}
+.Text.weight-regular {
+  font-weight: var(--weight__regular);
+}
+.Text.weight-medium {
+  font-weight: var(--weight__medium);
+}
+.Text.weight-bold {
+  font-weight: var(--weight__bold);
 }
 
-.size-small {
-    font-size: var(--font-size__200);
-}
-
-.size-medium {
-    font-size: var(--font-size__300);
-}
-
-.size-large {
-    font-size: var(--font-size__400);
-}
-
-.family-sans {
-    font-family: var(--font-family__sans);
-}
-
-.family-serif {
-    font-family: var(--font-family__serif);
-}
-
-.family-mono {
-    font-family: var(--font-family__mono);
-}
-
-.weight-regular {
-    font-weight: var(--font-weight__400);
-}
-
-.weight-medium {
-    font-weight: var(--font-weight__500);
-}
-
-.weight-bold {
-    font-weight: var(--font-weight__600);
-}
+/*# sourceMappingURL=Text.module.css.map */

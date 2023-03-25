@@ -2,7 +2,7 @@ import * as React from 'react';
 import cx from 'classnames';
 import type { AsType, BaseProps, SizeType } from '../types';
 import Text, { TextFamilyType, TextWeightType } from '../Text';
-import styles from './Heading.module.css';
+import styles from './Heading.module.scss';
 
 export interface HeadingProps {
     readonly size?: SizeType;
@@ -24,7 +24,7 @@ const Heading = ({
     as,
     testId = 'Heading',
     size = 'large',
-    weight,
+    weight = 'medium',
     family = 'sans',
     ...restProps
 }: BaseProps & HeadingProps) => (

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cx from 'classnames';
 import type { BaseProps, SizeType } from '../types';
-import styles from './Text.module.css';
+import styles from './Text.module.scss';
 
 export type TextFamilyType = 'sans' | 'serif' | 'mono';
 
