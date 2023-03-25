@@ -2,7 +2,7 @@
 
 exports[`Box > it works with elevations 1`] = `
 <div
-  class="_Box_d62db4 _elevation-0_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -11,7 +11,7 @@ exports[`Box > it works with elevations 1`] = `
 
 exports[`Box > it works with elevations 2`] = `
 <div
-  class="_Box_d62db4 _elevation-1_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -20,7 +20,7 @@ exports[`Box > it works with elevations 2`] = `
 
 exports[`Box > it works with elevations 3`] = `
 <div
-  class="_Box_d62db4 _elevation-2_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-medium_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -29,16 +29,7 @@ exports[`Box > it works with elevations 3`] = `
 
 exports[`Box > it works with elevations 4`] = `
 <div
-  class="_Box_d62db4 _elevation-3_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
-  data-testid="Box"
->
-  Hello world
-</div>
-`;
-
-exports[`Box > it works with elevations 5`] = `
-<div
-  class="_Box_d62db4 _elevation-4_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-large_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -47,7 +38,7 @@ exports[`Box > it works with elevations 5`] = `
 
 exports[`Box > it works with gutterXs 1`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -56,7 +47,7 @@ exports[`Box > it works with gutterXs 1`] = `
 
 exports[`Box > it works with gutterXs 2`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-1_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-small_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -65,7 +56,7 @@ exports[`Box > it works with gutterXs 2`] = `
 
 exports[`Box > it works with gutterXs 3`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-2_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -74,16 +65,7 @@ exports[`Box > it works with gutterXs 3`] = `
 
 exports[`Box > it works with gutterXs 4`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-3_d62db4 _gutterY-none_d62db4"
-  data-testid="Box"
->
-  Hello world
-</div>
-`;
-
-exports[`Box > it works with gutterXs 5`] = `
-<div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-4_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-large_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -92,7 +74,7 @@ exports[`Box > it works with gutterXs 5`] = `
 
 exports[`Box > it works with gutterYs 1`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -101,7 +83,7 @@ exports[`Box > it works with gutterYs 1`] = `
 
 exports[`Box > it works with gutterYs 2`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-1_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -110,7 +92,7 @@ exports[`Box > it works with gutterYs 2`] = `
 
 exports[`Box > it works with gutterYs 3`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-2_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -119,16 +101,7 @@ exports[`Box > it works with gutterYs 3`] = `
 
 exports[`Box > it works with gutterYs 4`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-3_d62db4"
-  data-testid="Box"
->
-  Hello world
-</div>
-`;
-
-exports[`Box > it works with gutterYs 5`] = `
-<div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-4_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -137,7 +110,7 @@ exports[`Box > it works with gutterYs 5`] = `
 
 exports[`Box > it works with gutters 1`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-0_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -146,7 +119,7 @@ exports[`Box > it works with gutters 1`] = `
 
 exports[`Box > it works with gutters 2`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-1_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-small_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -155,7 +128,7 @@ exports[`Box > it works with gutters 2`] = `
 
 exports[`Box > it works with gutters 3`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-2_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world
@@ -164,16 +137,7 @@ exports[`Box > it works with gutters 3`] = `
 
 exports[`Box > it works with gutters 4`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-3_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
-  data-testid="Box"
->
-  Hello world
-</div>
-`;
-
-exports[`Box > it works with gutters 5`] = `
-<div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-4_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-large_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
   data-testid="Box"
 >
   Hello world

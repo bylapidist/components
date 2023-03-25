@@ -23,8 +23,8 @@ export default {
 
 export const WebsiteCard: StoryFn<BaseProps> = () => (
     <Box
-        elevation={2}
-        gutter={4}
+        elevation="medium"
+        gutter="large"
         style={{
             display: 'flex',
             flexDirection: 'column',

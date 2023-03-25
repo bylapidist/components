@@ -2,14 +2,15 @@ import * as React from 'react';
 import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
-import Box, { GutterType, ElevationType } from './index';
+import { SizeType } from '../types';
+import Box from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const gutters: GutterType[] = [0, 1, 2, 3, 4];
-const elevations: ElevationType[] = [0, 1, 2, 3, 4];
+const gutters: SizeType[] = ['none', 'small', 'medium', 'large'];
+const elevations: SizeType[] = ['none', 'small', 'medium', 'large'];
 
 describe('Box', () => {
     test.each(gutters)('it works with gutters', (gutter) => {

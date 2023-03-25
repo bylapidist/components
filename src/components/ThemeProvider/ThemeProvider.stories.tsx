@@ -27,8 +27,8 @@ const DefaultTemplate: StoryFn<BaseProps & ThemeProviderProps> = (args) => (
         }}
         {...args}
     >
-        <Box gutter={4}>
-            <Box elevation={4} gutter={4}>
+        <Box gutter="large">
+            <Box elevation="large" gutter="large">
                 <Heading>Heading</Heading>
                 <Text>
                     Nunc porttitor lectus ex, eu pharetra elit placerat non.
