@@ -1,4 +1,4 @@
-@import '../global.module.css';
+@import '../global.module.scss';
 
 .Heading {
     line-height: var(--line-height__tighter);

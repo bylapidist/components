@@ -2,6 +2,7 @@ import * as React from 'react';
 import type { Meta, StoryObj, StoryFn } from '@storybook/react';
 import { BaseProps } from '../types';
 import ThemeProvider from '../ThemeProvider';
+import Text from '../Text';
 import Box, { BoxProps } from './index';
 
 export default {
@@ -13,47 +14,84 @@ export default {
 const defaultArgs: BaseProps & BoxProps = {
     as: 'div',
     testId: 'Box',
-    gutter: 0,
+    gutter: undefined,
     gutterX: undefined,
     gutterY: undefined,
-    elevation: 0
+    elevation: undefined
 };
 
 const DefaultTemplate: StoryFn<BaseProps & BoxProps> = (args) => (
-    <Box {...args}>Hello world</Box>
+    <Box {...args}>
+        <Text>
+            Nunc porttitor lectus ex, eu pharetra elit placerat non. Suspendisse
+            nec ultrices augue, et varius velit. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia curae.
+        </Text>
+    </Box>
 );
 
 export const NoGutter: StoryObj<BaseProps & BoxProps> = DefaultTemplate.bind(
     {}
 );
 NoGutter.args = {
-    ...defaultArgs
+    ...defaultArgs,
+    elevation: 'small'
 };
 
-export const SmallestGutter: StoryObj<BaseProps & BoxProps> =
-    DefaultTemplate.bind({});
-SmallestGutter.args = {
+export const SmallGutter: StoryObj<BaseProps & BoxProps> = DefaultTemplate.bind(
+    {}
+);
+SmallGutter.args = {
     ...defaultArgs,
-    gutter: 1
+    gutter: 'small',
+    elevation: 'small'
 };
 
-export const SmallerGutter: StoryObj<BaseProps & BoxProps> =
+export const MediumGutter: StoryObj<BaseProps & BoxProps> =
     DefaultTemplate.bind({});
-SmallerGutter.args = {
+MediumGutter.args = {
     ...defaultArgs,
-    gutter: 2
+    gutter: 'medium',
+    elevation: 'small'
+};
+export const LargeGutter: StoryObj<BaseProps & BoxProps> = DefaultTemplate.bind(
+    {}
+);
+LargeGutter.args = {
+    ...defaultArgs,
+    gutter: 'large',
+    elevation: 'small'
 };
 
-export const LargerGutter: StoryObj<BaseProps & BoxProps> =
-    DefaultTemplate.bind({});
-LargerGutter.args = {
+export const NoElevation: StoryObj<BaseProps & BoxProps> = DefaultTemplate.bind(
+    {}
+);
+NoElevation.args = {
     ...defaultArgs,
-    gutter: 3
+    gutter: 'medium',
+    elevation: 'small'
 };
 
-export const LargestGutter: StoryObj<BaseProps & BoxProps> =
+export const SmallElevation: StoryObj<BaseProps & BoxProps> =
     DefaultTemplate.bind({});
-LargestGutter.args = {
+SmallElevation.args = {
     ...defaultArgs,
-    gutter: 4
+    elevation: 'small',
+    gutter: 'medium'
+};
+
+export const MediumElevation: StoryObj<BaseProps & BoxProps> =
+    DefaultTemplate.bind({});
+MediumElevation.args = {
+    ...defaultArgs,
+    elevation: 'medium',
+    gutter: 'medium'
+};
+
+export const LargeElevation: StoryObj<BaseProps & BoxProps> =
+    DefaultTemplate.bind({});
+LargeElevation.args = {
+    ...defaultArgs,
+    elevation: 'large',
+    gutter: 'medium'
 };

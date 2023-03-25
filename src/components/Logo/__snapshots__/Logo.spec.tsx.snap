@@ -2,7 +2,7 @@
 
 exports[`Logo > it works 1`] = `
 <div
-  class="_gutter-0_77a981 _elevation-0_77a981 _Logo_16f863"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _Logo_16f863"
   data-testid="Logo"
 >
   <svg
@@ -27,7 +27,7 @@ exports[`Logo > it works 1`] = `
 
 exports[`Logo > it works animated 1`] = `
 <div
-  class="_gutter-0_77a981 _elevation-0_77a981 _Logo_16f863"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _Logo_16f863"
   data-testid="Logo"
 >
   <svg
@@ -52,7 +52,7 @@ exports[`Logo > it works animated 1`] = `
 
 exports[`Logo > it works thinking 1`] = `
 <div
-  class="_gutter-0_77a981 _elevation-0_77a981 _Logo_16f863"
+  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _Logo_16f863"
   data-testid="Logo"
 >
   <svg

@@ -1,4 +1,4 @@
-@import '../global.module.css';
+@import '../global.module.scss';
 
 .Tag {
     text-align: center;

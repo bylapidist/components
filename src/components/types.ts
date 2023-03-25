@@ -4,7 +4,7 @@ export type AsType = keyof JSX.IntrinsicElements;
 
 export type LevelType = 'primary' | 'secondary' | 'tertiary' | 'danger';
 
-export type SizeType = 'small' | 'medium' | 'large';
+export type SizeType = 'none' | 'small' | 'medium' | 'large';
 
 export type BaseProps = {
     readonly className?: string;

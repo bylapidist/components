@@ -1,91 +1,161 @@
-@import '../global.module.css';
-
-.gutter-0 {
-    padding: var(--size__0);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, button,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  transition: border 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s, background-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s, text-decoration-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s;
 }
 
-.gutter-1 {
-    padding: var(--size__1);
+html {
+  box-sizing: border-box;
 }
 
-.gutter-2 {
-    padding: var(--size__2);
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.gutter-3 {
-    padding: var(--size__3);
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
 }
 
-.gutter-4 {
-    padding: var(--size__4);
+*[hidden] {
+  display: none;
 }
 
-.gutterX-0 {
-    padding-left: var(--size__0);
-    padding-right: var(--size__0);
+body {
+  line-height: 1;
+  font-size: 62.5%;
 }
 
-.gutterX-1 {
-    padding-left: var(--size__1);
-    padding-right: var(--size__1);
+menu, ol, ul {
+  list-style: none;
 }
 
-.gutterX-2 {
-    padding-left: var(--size__2);
-    padding-right: var(--size__2);
+blockquote, q {
+  quotes: none;
 }
 
-.gutterX-3 {
-    padding-left: var(--size__3);
-    padding-right: var(--size__3);
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
 }
 
-.gutterX-4 {
-    padding-left: var(--size__4);
-    padding-right: var(--size__4);
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.gutterY-0 {
-    padding-top: var(--size__0);
-    padding-bottom: var(--size__0);
+img {
+  display: block;
+  max-width: 100%;
 }
 
-.gutterY-1 {
-    padding-top: var(--size__1);
-    padding-bottom: var(--size__1);
+a, button {
+  text-decoration: none;
+  outline-offset: 2px;
+  outline: transparent solid 2px;
 }
 
-.gutterY-2 {
-    padding-top: var(--size__2);
-    padding-bottom: var(--size__2);
+a:focus, button:focus {
+  outline: var(--color-secondary__dark) solid 2px;
 }
 
-.gutterY-3 {
-    padding-top: var(--size__3);
-    padding-bottom: var(--size__3);
+.Box {
+  --gutter__none: var(--size__0);
+  --gutter__small: var(--size__1);
+  --gutter__medium: var(--size__2);
+  --gutter__large: var(--size__3);
+  --elevation__none: var(--elevation__none);
+  --elevation__small: var(--elevation__lower);
+  --elevation__medium: var(--elevation__higher);
+  --elevation__large: var(--elevation__highest);
 }
 
-.gutterY-4 {
-    padding-top: var(--size__4);
-    padding-bottom: var(--size__4);
+.gutter-none {
+  padding: var(--gutter__none);
 }
 
-.elevation-0 {
-    box-shadow: var(--elevation__none);
+.gutterX-none {
+  padding-left: var(--gutter__none);
+  padding-right: var(--gutter__none);
 }
 
-.elevation-1 {
-    box-shadow: var(--elevation__lowest);
+.gutterY-none {
+  padding-top: var(--gutter__none);
+  padding-bottom: var(--gutter__none);
 }
 
-.elevation-2 {
-    box-shadow: var(--elevation__lower);
+.elevation-none {
+  box-shadow: var(--elevation__none);
 }
 
-.elevation-3 {
-    box-shadow: var(--elevation__higher);
+.gutter-small {
+  padding: var(--gutter__small);
 }
 
-.elevation-4 {
-    box-shadow: var(--elevation__highest);
+.gutterX-small {
+  padding-left: var(--gutter__small);
+  padding-right: var(--gutter__small);
 }
+
+.gutterY-small {
+  padding-top: var(--gutter__small);
+  padding-bottom: var(--gutter__small);
+}
+
+.elevation-small {
+  box-shadow: var(--elevation__small);
+}
+
+.gutter-medium {
+  padding: var(--gutter__medium);
+}
+
+.gutterX-medium {
+  padding-left: var(--gutter__medium);
+  padding-right: var(--gutter__medium);
+}
+
+.gutterY-medium {
+  padding-top: var(--gutter__medium);
+  padding-bottom: var(--gutter__medium);
+}
+
+.elevation-medium {
+  box-shadow: var(--elevation__medium);
+}
+
+.gutter-large {
+  padding: var(--gutter__large);
+}
+
+.gutterX-large {
+  padding-left: var(--gutter__large);
+  padding-right: var(--gutter__large);
+}
+
+.gutterY-large {
+  padding-top: var(--gutter__large);
+  padding-bottom: var(--gutter__large);
+}
+
+.elevation-large {
+  box-shadow: var(--elevation__large);
+}
+
+/*# sourceMappingURL=Box.module.css.map */
