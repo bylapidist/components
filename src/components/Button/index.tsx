@@ -5,7 +5,7 @@ import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import type { BaseProps, LevelType, SizeType } from '../types';
 import Box from '../Box';
 import Text from '../Text';
-import styles from './Button.module.css';
+import styles from './Button.module.scss';
 
 export interface ButtonProps {
     readonly level?: LevelType;
@@ -26,23 +26,25 @@ const Button = ({
     children,
     ...restProps
 }: BaseProps & ButtonProps) => (
-    <Box
+    <Text
         as={as}
-        elevation={2}
         data-testid={testId}
+        size={size}
+        weight="medium"
         className={cx(styles.ButtonOuter, { [styles.block]: block }, className)}
         {...restProps}
     >
-        <Text
+        <Box
             as="span"
-            data-testid={`${testId}Text`}
-            className={cx(styles.ButtonInner, styles[level], styles[size])}
-            size={size}
+            gutter={size}
+            elevation="medium"
+            data-testid={`${testId}Inner`}
+            className={cx(styles.ButtonInner, styles[`level-${level}`])}
         >
             {icon && <FontAwesomeIcon icon={icon} />}
             {children}
-        </Text>
-    </Box>
+        </Box>
+    </Text>
 );
 
 Button.displayName = 'Button';

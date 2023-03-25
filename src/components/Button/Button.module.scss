@@ -1,12 +1,50 @@
 @import '../global.module.scss';
 
 .ButtonOuter {
+    --primary__text-color: var(--color-grey__lightest);
+    --secondary__text-color: var(--color-primary__darkest);
+    --tertiary__text-color: var(--color-grey__darkest);
+    --danger__text-color: var(--color-danger__darkest);
+
+    --primary__background-color: var(--color-primary__darkest);
+    --secondary__background-color: var(--color-grey__lightest);
+    --tertiary__background-color: var(--color-grey__lightest);
+    --danger__background-color: var(--color-grey__lightest);
+
+    --primary__border-color: var(--color-primary__darkest);
+    --secondary__border-color: var(--color-primary__dark);
+    --tertiary__border-color: var(--color-grey__dark);
+    --danger__border-color: var(--color-danger__dark);
+
+    --primary__border-hover-color: var(--color-grey__darkest);
+    --secondary__border-hover-color: var(--color-primary__darkest);
+    --tertiary__border-hover-color: var(--color-grey__darkest);
+    --danger__border-hover-color: var(--color-danger__darkest);
+
     display: inline-flex;
     transition: box-shadow 0.08s ease-in 0s;
-}
 
-.ButtonOuter:disabled {
-    opacity: 0.75;
+    &:disabled {
+        opacity: 0.75;
+    }
+
+    &:disabled > :not(.level-primary) {
+        background-color: var(--color-grey__light);
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        transition: box-shadow 0.08s ease-out 0s;
+        box-shadow: var(--elevation__higher);
+
+        &:disabled { cursor: not-allowed; }
+    }
+
+    &.block {
+        display: block;
+        width: 100%;
+    }
 }
 
 .ButtonInner {
@@ -19,80 +57,17 @@
     border-width: var(--border-width__thinner);
     border-radius: var(--border-radius__squarer);
     background-color: var(--color-grey__lightest);
+
+    @each $level in $levels {
+        &.level-#{$level} {
+            color: var(--#{$level}__text-color);
+            background-color: var(--#{$level}__background-color);
+            border-color: var(--#{$level}__border-color);
+
+            &:hover {
+                border-color: var(--#{$level}__border-hover-color);
+            }
+        }
+    }
 }
 
-.ButtonOuter > .ButtonInner {
-    font-weight: var(--font-weight__500);
-}
-
-.ButtonOuter:disabled > .ButtonInner:not(.primary) {
-    background-color: var(--color-grey__light);
-}
-
-.ButtonOuter:hover,
-.ButtonOuter:focus {
-    cursor: pointer;
-    transition: box-shadow 0.08s ease-out 0s;
-    box-shadow: var(--elevation__higher);
-}
-
-.ButtonOuter:hover:disabled {
-    cursor: not-allowed;
-}
-
-.ButtonInner.small {
-    padding: var(--size__1) var(--size__2);
-}
-
-.ButtonInner.medium {
-    padding: var(--size__2);
-}
-
-.ButtonInner.large {
-    padding: var(--size__3) var(--size__2);
-}
-
-.ButtonInner.primary {
-    color: var(--color-grey__lightest);
-    background-color: var(--color-primary__darkest);
-    border-color: var(--color-primary__darkest);
-}
-
-.ButtonInner.primary:hover {
-    border-color: var(--color-grey__darkest);
-}
-
-.ButtonInner.secondary {
-    color: var(--color-primary__darkest);
-    background-color: var(--color-grey__lightest);
-    border-color: var(--color-primary__dark);
-}
-
-.ButtonInner.secondary:hover {
-    border-color: var(--color-primary__darkest);
-}
-
-.ButtonInner.tertiary {
-    color: var(--color-grey__darkest);
-    background-color: var(--color-grey__lightest);
-    border-color: var(--color-grey__dark);
-}
-
-.ButtonInner.tertiary:hover {
-    border-color: var(--color-grey__darkest);
-}
-
-.ButtonInner.danger {
-    color: var(--color-danger__darkest);
-    background-color: var(--color-grey__lightest);
-    border-color: var(--color-danger__dark);
-}
-
-.ButtonInner.danger:hover {
-    border-color: var(--color-danger__darkest);
-}
-
-.block {
-    display: block;
-    width: 100%;
-}

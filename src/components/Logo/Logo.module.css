@@ -147,38 +147,35 @@ a:focus, button:focus {
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
 }
+.Logo .A {
+  fill: var(--color-tertiary__dark);
+}
+.Logo .B {
+  fill: var(--color-primary__dark);
+}
+.Logo .C {
+  fill: var(--color-secondary__dark);
+}
 .Logo.animation-slide .A {
-  animation-delay: 0.1s;
   animation: slideRight;
+  animation-delay: 0.1s;
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
 .Logo.animation-slide .B {
-  animation-delay: 0.2s;
   animation: slideUpLeft;
+  animation-delay: 0.2s;
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
 .Logo.animation-slide .C {
-  animation-delay: 0.3s;
   animation: slideDown;
+  animation-delay: 0.3s;
   animation-duration: 0.6s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-}
-
-.A {
-  fill: var(--color-tertiary__dark);
-}
-
-.B {
-  fill: var(--color-primary__dark);
-}
-
-.C {
-  fill: var(--color-secondary__dark);
 }
 
 /*# sourceMappingURL=Logo.module.css.map */
