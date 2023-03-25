@@ -20,16 +20,14 @@ const DefaultTemplate: StoryFn<BaseProps & LogoProps> = (args) => (
     <Logo {...args} />
 );
 
-export const FadeAnimation: StoryObj<BaseProps & LogoProps> = DefaultTemplate.bind(
-    {}
-);
+export const FadeAnimation: StoryObj<BaseProps & LogoProps> =
+    DefaultTemplate.bind({});
 FadeAnimation.args = {
     ...defaultArgs
 };
 
-export const SlideAnimation: StoryObj<BaseProps & LogoProps> = DefaultTemplate.bind(
-    {}
-);
+export const SlideAnimation: StoryObj<BaseProps & LogoProps> =
+    DefaultTemplate.bind({});
 SlideAnimation.args = {
     ...defaultArgs,
     animation: 'slide'

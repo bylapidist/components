@@ -2,7 +2,7 @@ import * as React from 'react';
 import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
-import Logo, {LogoAnimationType} from './index';
+import Logo, { LogoAnimationType } from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
