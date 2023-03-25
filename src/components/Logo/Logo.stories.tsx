@@ -13,33 +13,24 @@ export default {
 const defaultArgs: BaseProps & LogoProps = {
     as: 'div',
     testId: 'Logo',
-    animated: false,
-    thinking: false
+    animation: 'fade'
 };
 
 const DefaultTemplate: StoryFn<BaseProps & LogoProps> = (args) => (
     <Logo {...args} />
 );
 
-export const Default: StoryObj<BaseProps & LogoProps> = DefaultTemplate.bind(
+export const FadeAnimation: StoryObj<BaseProps & LogoProps> = DefaultTemplate.bind(
     {}
 );
-Default.args = {
+FadeAnimation.args = {
     ...defaultArgs
 };
 
-export const Animated: StoryObj<BaseProps & LogoProps> = DefaultTemplate.bind(
+export const SlideAnimation: StoryObj<BaseProps & LogoProps> = DefaultTemplate.bind(
     {}
 );
-Animated.args = {
+SlideAnimation.args = {
     ...defaultArgs,
-    animated: true
-};
-
-export const Thinking: StoryObj<BaseProps & LogoProps> = DefaultTemplate.bind(
-    {}
-);
-Thinking.args = {
-    ...defaultArgs,
-    thinking: true
+    animation: 'slide'
 };

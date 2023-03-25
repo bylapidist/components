@@ -2,11 +2,13 @@ import * as React from 'react';
 import { describe, expect, test, afterEach } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 
-import Logo from './index';
+import Logo, {LogoAnimationType} from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
+
+const animations: LogoAnimationType[] = ['fade', 'slide'];
 
 describe('Logo', () => {
     test('it works', () => {
@@ -14,13 +16,8 @@ describe('Logo', () => {
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test('it works animated', () => {
-        const { container } = setup(<Logo animated />);
-        expect(container.firstChild).toMatchSnapshot();
-    });
-
-    test('it works thinking', () => {
-        const { container } = setup(<Logo thinking />);
+    test.each(animations)('it works with animations', (animation) => {
+        const { container } = setup(<Logo animation={animation} />);
         expect(container.firstChild).toMatchSnapshot();
     });
 

@@ -1,87 +1,184 @@
-@import '../global.module.scss';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, button,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  transition: border 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s, background-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s, text-decoration-color 0.08s cubic-bezier(0.6, 0.04, 0.98, 0.7) 0s;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+  font-size: 62.5%;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a, button {
+  text-decoration: none;
+  outline-offset: 2px;
+  outline: transparent solid 2px;
+}
+
+a:focus, button:focus {
+  outline: var(--color-secondary__dark) solid 2px;
+}
 
 @keyframes fadeIn {
-    0% { opacity: 0 }
-    50% { opacity: 0 }
-    100% { opacity: 1 }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 @keyframes thinking {
-    0% { opacity: 1 }
-    50% { opacity: 0.6 }
-    100% { opacity: 1 }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 @keyframes slideRight {
-    0% { transform: translate3d(-100%,0,0) }
-    80% { transform: translateZ(0) }
-    90% { transform: translate3d(-5%,0,0) }
-    to { transform: translateZ(0) }
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  80% {
+    transform: translateZ(0);
+  }
+  90% {
+    transform: translate3d(-5%, 0, 0);
+  }
+  to {
+    transform: translateZ(0);
+  }
 }
-
 @keyframes slideUpLeft {
-    0% { transform: translate3d(100%,100%,0) }
-    80% { transform: translateZ(0) }
-    90% { transform: translate3d(5%,5%,0) }
-    to { transform: translateZ(0) }
+  0% {
+    transform: translate3d(100%, 100%, 0);
+  }
+  80% {
+    transform: translateZ(0);
+  }
+  90% {
+    transform: translate3d(5%, 5%, 0);
+  }
+  to {
+    transform: translateZ(0);
+  }
 }
-
 @keyframes slideDown {
-    0% { transform: translate3d(0,-100%,0) }
-    80% { transform: translateZ(0) }
-    90% { transform: translate3d(0,-5%,0) }
-    to { transform: translateZ(0) }
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  80% {
+    transform: translateZ(0);
+  }
+  90% {
+    transform: translate3d(0, -5%, 0);
+  }
+  to {
+    transform: translateZ(0);
+  }
 }
-
 .Logo {
-    width: var(--size__16);
-    overflow: hidden;
-    animation: fadeIn;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
+  width: var(--size__16);
+  overflow: hidden;
+  animation: fadeIn;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+.Logo.animation-slide .A {
+  animation-delay: 0.1s;
+  animation: slideRight;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+.Logo.animation-slide .B {
+  animation-delay: 0.2s;
+  animation: slideUpLeft;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+.Logo.animation-slide .C {
+  animation-delay: 0.3s;
+  animation: slideDown;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 
-.Logo--thinking {
-    animation: thinking;
-    animation-duration: 0.8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+.A {
+  fill: var(--color-tertiary__dark);
 }
 
-.Logo--bUp {
-    fill: var(--color-tertiary__dark);
-    animation-delay: 0.1s;
+.B {
+  fill: var(--color-primary__dark);
 }
 
-.Logo--bDown {
-    fill: var(--color-primary__dark);
-    animation-delay: 0.2s;
+.C {
+  fill: var(--color-secondary__dark);
 }
 
-.Logo--d {
-    fill: var(--color-secondary__dark);
-    animation-delay: 0.3s;
-}
-
-.Logo--bUp-animated {
-    animation: slideRight;
-    animation-duration: 0.8s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-}
-
-.Logo--bDown-animated {
-    animation: slideUpLeft;
-    animation-duration: 0.8s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-
-}
-
-.Logo--d-animated {
-    animation: slideDown;
-    animation-duration: 0.6s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-}
+/*# sourceMappingURL=Logo.module.css.map */
