@@ -1,125 +1,57 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Tag > it works with kind 1`] = `
+exports[`Tag > it works with level 1`] = `
 <span
-  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--primary_2dd11e"
+  class="_this_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2dd11e _level-primary_2dd11e"
   data-testid="Tag"
 >
-  <span
-    class="_Tag--children_2dd11e"
+  <div
+    class="_this_d62db4 _elevation-small_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    data-testid="Box"
   >
     Hello world
-  </span>
+  </div>
 </span>
 `;
 
-exports[`Tag > it works with kind 2`] = `
+exports[`Tag > it works with level 2`] = `
 <span
-  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--secondary_2dd11e"
+  class="_this_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2dd11e _level-secondary_2dd11e"
   data-testid="Tag"
 >
-  <span
-    class="_Tag--children_2dd11e"
+  <div
+    class="_this_d62db4 _elevation-small_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    data-testid="Box"
   >
     Hello world
-  </span>
+  </div>
 </span>
 `;
 
-exports[`Tag > it works with kind 3`] = `
+exports[`Tag > it works with level 3`] = `
 <span
-  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--tertiary_2dd11e"
+  class="_this_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2dd11e _level-tertiary_2dd11e"
   data-testid="Tag"
 >
-  <span
-    class="_Tag--children_2dd11e"
+  <div
+    class="_this_d62db4 _elevation-small_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    data-testid="Box"
   >
     Hello world
-  </span>
+  </div>
 </span>
 `;
 
-exports[`Tag > it works with kind 4`] = `
+exports[`Tag > it works with level 4`] = `
 <span
-  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--danger_2dd11e"
+  class="_this_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2dd11e _level-danger_2dd11e"
   data-testid="Tag"
 >
-  <span
-    class="_Tag--children_2dd11e"
+  <div
+    class="_this_d62db4 _elevation-small_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    data-testid="Box"
   >
     Hello world
-  </span>
-</span>
-`;
-
-exports[`Tag > it works with namespace 1`] = `
-<span
-  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--primary_2dd11e"
-  data-testid="Tag"
->
-  <span
-    class="_Tag--namespace_2dd11e"
-  >
-    npm
-  </span>
-  <span
-    class="_Tag--children_2dd11e"
-  >
-    Hello world
-  </span>
-</span>
-`;
-
-exports[`Tag > it works with namespace 2`] = `
-<span
-  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--secondary_2dd11e"
-  data-testid="Tag"
->
-  <span
-    class="_Tag--namespace_2dd11e"
-  >
-    npm
-  </span>
-  <span
-    class="_Tag--children_2dd11e"
-  >
-    Hello world
-  </span>
-</span>
-`;
-
-exports[`Tag > it works with namespace 3`] = `
-<span
-  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--tertiary_2dd11e"
-  data-testid="Tag"
->
-  <span
-    class="_Tag--namespace_2dd11e"
-  >
-    npm
-  </span>
-  <span
-    class="_Tag--children_2dd11e"
-  >
-    Hello world
-  </span>
-</span>
-`;
-
-exports[`Tag > it works with namespace 4`] = `
-<span
-  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Tag_2dd11e _Tag--danger_2dd11e"
-  data-testid="Tag"
->
-  <span
-    class="_Tag--namespace_2dd11e"
-  >
-    npm
-  </span>
-  <span
-    class="_Tag--children_2dd11e"
-  >
-    Hello world
-  </span>
+  </div>
 </span>
 `;

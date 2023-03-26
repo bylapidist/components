@@ -31,15 +31,15 @@ const Button = ({
         data-testid={testId}
         size={size}
         weight="medium"
-        className={cx(styles.ButtonOuter, { [styles.block]: block }, className)}
+        className={cx(styles.this, { [styles.block]: block }, className)}
         {...restProps}
     >
         <Box
             as="span"
             gutter={size}
             elevation="medium"
-            data-testid={`${testId}Inner`}
-            className={cx(styles.ButtonInner, styles[`level-${level}`])}
+            data-testid={`${testId}-inner`}
+            className={cx(styles.inner, styles[`level-${level}`])}
         >
             {icon && <FontAwesomeIcon icon={icon} />}
             {children}

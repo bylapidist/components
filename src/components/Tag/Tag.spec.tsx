@@ -9,20 +9,11 @@ const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const kinds: LevelType[] = ['primary', 'secondary', 'tertiary', 'danger'];
+const levels: LevelType[] = ['primary', 'secondary', 'tertiary', 'danger'];
 
 describe('Tag', () => {
-    test.each(kinds)('it works with kind', (kind) => {
-        const { container } = setup(<Tag kind={kind}>Hello world</Tag>);
-        expect(container.firstChild).toMatchSnapshot();
-    });
-
-    test.each(kinds)('it works with namespace', (kind) => {
-        const { container } = setup(
-            <Tag kind={kind} namespace="npm">
-                Hello world
-            </Tag>
-        );
+    test.each(levels)('it works with level', (level) => {
+        const { container } = setup(<Tag level={level}>Hello world</Tag>);
         expect(container.firstChild).toMatchSnapshot();
     });
 

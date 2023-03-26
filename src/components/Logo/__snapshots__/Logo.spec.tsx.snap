@@ -2,7 +2,7 @@
 
 exports[`Logo > it works 1`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _Logo_f7d212 _animation-fade_f7d212"
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _this_f7d212 _animation-fade_f7d212"
   data-testid="Logo"
 >
   <svg
@@ -10,15 +10,15 @@ exports[`Logo > it works 1`] = `
     viewBox="0 0 64 64"
   >
     <polygon
-      class="_A_f7d212"
+      class="_a_f7d212"
       points="0,0 0,32 32,32"
     />
     <polygon
-      class="_B_f7d212"
+      class="_b_f7d212"
       points="0,32 0,64 32,64"
     />
     <polygon
-      class="_C_f7d212"
+      class="_c_f7d212"
       points="32,0 32,64 64,32"
     />
   </svg>
@@ -27,7 +27,7 @@ exports[`Logo > it works 1`] = `
 
 exports[`Logo > it works with animations 1`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _Logo_f7d212 _animation-fade_f7d212"
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _this_f7d212 _animation-fade_f7d212"
   data-testid="Logo"
 >
   <svg
@@ -35,15 +35,15 @@ exports[`Logo > it works with animations 1`] = `
     viewBox="0 0 64 64"
   >
     <polygon
-      class="_A_f7d212"
+      class="_a_f7d212"
       points="0,0 0,32 32,32"
     />
     <polygon
-      class="_B_f7d212"
+      class="_b_f7d212"
       points="0,32 0,64 32,64"
     />
     <polygon
-      class="_C_f7d212"
+      class="_c_f7d212"
       points="32,0 32,64 64,32"
     />
   </svg>
@@ -52,7 +52,7 @@ exports[`Logo > it works with animations 1`] = `
 
 exports[`Logo > it works with animations 2`] = `
 <div
-  class="_Box_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _Logo_f7d212 _animation-slide_f7d212"
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _this_f7d212 _animation-slide_f7d212"
   data-testid="Logo"
 >
   <svg
@@ -60,15 +60,15 @@ exports[`Logo > it works with animations 2`] = `
     viewBox="0 0 64 64"
   >
     <polygon
-      class="_A_f7d212"
+      class="_a_f7d212"
       points="0,0 0,32 32,32"
     />
     <polygon
-      class="_B_f7d212"
+      class="_b_f7d212"
       points="0,32 0,64 32,64"
     />
     <polygon
-      class="_C_f7d212"
+      class="_c_f7d212"
       points="32,0 32,64 64,32"
     />
   </svg>

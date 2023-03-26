@@ -5,6 +5,7 @@ import Text from '../Text';
 import Box from '../Box';
 import Heading from '../Heading';
 import ThemeProvider, { ThemeProviderProps } from './index';
+import Button from '../Button';
 
 export default {
     title: 'Utility/ThemeProvider',
@@ -39,13 +40,23 @@ const DefaultTemplate: StoryFn<BaseProps & ThemeProviderProps> = (args) => (
                     ultricies enim at eros accumsan interdum. Aenean egestas
                     enim mi, nec tincidunt libero gravida et.
                 </Text>
+                <Box gutterY="large">
+                    <Button level="primary">Click Me</Button>
+                </Box>
             </Box>
         </Box>
     </ThemeProvider>
 );
 
-export const Default: StoryObj<BaseProps & ThemeProviderProps> =
+export const Light: StoryObj<BaseProps & ThemeProviderProps> =
     DefaultTemplate.bind({});
-Default.args = {
+Light.args = {
     ...defaultArgs
+};
+
+export const Dark: StoryObj<BaseProps & ThemeProviderProps> =
+    DefaultTemplate.bind({});
+Dark.args = {
+    ...defaultArgs,
+    theme: 'dark'
 };

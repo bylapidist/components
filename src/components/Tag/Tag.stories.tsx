@@ -13,7 +13,7 @@ export default {
 const defaultArgs: BaseProps & TagProps = {
     as: 'span',
     testId: 'Tag',
-    kind: 'primary'
+    level: 'primary'
 };
 
 const DefaultTemplate: StoryFn<BaseProps & TagProps> = (args) => (
@@ -30,7 +30,7 @@ export const Secondary: StoryObj<BaseProps & TagProps> = DefaultTemplate.bind(
 );
 Secondary.args = {
     ...defaultArgs,
-    kind: 'secondary'
+    level: 'secondary'
 };
 
 export const Tertiary: StoryObj<BaseProps & TagProps> = DefaultTemplate.bind(
@@ -38,42 +38,11 @@ export const Tertiary: StoryObj<BaseProps & TagProps> = DefaultTemplate.bind(
 );
 Tertiary.args = {
     ...defaultArgs,
-    kind: 'tertiary'
+    level: 'tertiary'
 };
 
 export const Danger: StoryObj<BaseProps & TagProps> = DefaultTemplate.bind({});
 Danger.args = {
     ...defaultArgs,
-    kind: 'danger'
-};
-
-export const PrimaryWithNamespace: StoryObj<BaseProps & TagProps> =
-    DefaultTemplate.bind({});
-PrimaryWithNamespace.args = {
-    ...defaultArgs,
-    namespace: 'npm'
-};
-
-export const SecondaryWithNamespace: StoryObj<BaseProps & TagProps> =
-    DefaultTemplate.bind({});
-SecondaryWithNamespace.args = {
-    ...defaultArgs,
-    kind: 'secondary',
-    namespace: 'npm'
-};
-
-export const TertiaryWithNamespace: StoryObj<BaseProps & TagProps> =
-    DefaultTemplate.bind({});
-TertiaryWithNamespace.args = {
-    ...defaultArgs,
-    kind: 'tertiary',
-    namespace: 'npm'
-};
-
-export const DangerWithNamespace: StoryObj<BaseProps & TagProps> =
-    DefaultTemplate.bind({});
-DangerWithNamespace.args = {
-    ...defaultArgs,
-    kind: 'danger',
-    namespace: 'npm'
+    level: 'danger'
 };

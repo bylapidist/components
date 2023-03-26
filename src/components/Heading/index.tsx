@@ -30,7 +30,7 @@ const Heading = ({
 }: BaseProps & HeadingProps) => (
     <Text
         as={getHeadingElement(size, as)}
-        className={cx(styles.Heading, styles[`size-${size}`], className)}
+        className={cx(styles.this, styles[`size-${size}`], className)}
         weight={weight}
         family={family}
         data-testid={testId}

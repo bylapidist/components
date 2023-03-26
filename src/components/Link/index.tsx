@@ -17,7 +17,7 @@ const Link = ({
 }: BaseProps & LinkProps) => (
     <Text
         as={as}
-        className={cx(styles.Link, className)}
+        className={cx(styles.this, className)}
         data-testid={testId}
         size={size}
         {...restProps}

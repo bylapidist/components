@@ -2,7 +2,7 @@
 
 exports[`Link > it works with defaults 1`] = `
 <a
-  class="_Text_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Link_a14c64"
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _this_a14c64"
   data-testid="Link"
   href="#"
 >
@@ -12,7 +12,7 @@ exports[`Link > it works with defaults 1`] = `
 
 exports[`Link > it works with sizes 1`] = `
 <a
-  class="_Text_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Link_a14c64"
+  class="_this_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _this_a14c64"
   data-testid="Link"
   href="#"
 >
@@ -22,7 +22,7 @@ exports[`Link > it works with sizes 1`] = `
 
 exports[`Link > it works with sizes 2`] = `
 <a
-  class="_Text_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Link_a14c64"
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _this_a14c64"
   data-testid="Link"
   href="#"
 >
@@ -32,7 +32,7 @@ exports[`Link > it works with sizes 2`] = `
 
 exports[`Link > it works with sizes 3`] = `
 <a
-  class="_Text_b26e6e _size-large_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _Link_a14c64"
+  class="_this_b26e6e _size-large_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _this_a14c64"
   data-testid="Link"
   href="#"
 >

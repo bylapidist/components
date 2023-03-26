@@ -1,25 +1,26 @@
 @import '../global.module';
 
-.ButtonOuter {
-    --primary__text-color: var(--color-grey__lightest);
-    --secondary__text-color: var(--color-primary__darkest);
-    --tertiary__text-color: var(--color-grey__darkest);
-    --danger__text-color: var(--color-danger__darkest);
-    --primary__background-color: var(--color-primary__darkest);
-    --secondary__background-color: var(--color-grey__lightest);
-    --tertiary__background-color: var(--color-grey__lightest);
-    --danger__background-color: var(--color-grey__lightest);
-    --primary__border-color: var(--color-primary__darkest);
-    --secondary__border-color: var(--color-primary__dark);
-    --tertiary__border-color: var(--color-grey__dark);
-    --danger__border-color: var(--color-danger__dark);
-    --primary__border-hover-color: var(--color-grey__darkest);
-    --secondary__border-hover-color: var(--color-primary__darkest);
-    --tertiary__border-hover-color: var(--color-grey__darkest);
-    --danger__border-hover-color: var(--color-danger__darkest);
+.this {
+    --text-color__primary: var(--color-grey__lightest);
+    --text-color__secondary: var(--color-primary__darkest);
+    --text-color__tertiary: var(--color-grey__darkest);
+    --text-color__danger: var(--color-danger__darkest);
+    --background-color__primary: var(--color-primary__darkest);
+    --background-color__secondary: var(--color-grey__lightest);
+    --background-color__tertiary: var(--color-grey__lightest);
+    --background-color__danger: var(--color-grey__lightest);
+    --border-color__primary: var(--color-primary__darkest);
+    --border-color__secondary: var(--color-primary__dark);
+    --border-color__tertiary: var(--color-grey__dark);
+    --border-color__danger: var(--color-danger__dark);
+    --border-hover-color__primary: var(--color-grey__darkest);
+    --border-hover-color__secondary: var(--color-primary__darkest);
+    --border-hover-color__tertiary: var(--color-grey__darkest);
+    --border-hover-color__danger: var(--color-danger__darkest);
 
     display: inline-flex;
     transition: box-shadow 0.08s ease-in 0s;
+    border-radius: var(--border-radius__squarer);
 
     &:disabled {
         opacity: 0.75;
@@ -44,7 +45,7 @@
     }
 }
 
-.ButtonInner {
+.inner {
     display: flex;
     width: 100%;
     align-items: center;
@@ -52,17 +53,17 @@
     border-style: solid;
     grid-gap: var(--size__2);
     border-width: var(--border-width__thinner);
-    border-radius: var(--border-radius__squarer);
     background-color: var(--color-grey__lightest);
+    border-radius: inherit;
 
     @each $level in $levels {
         &.level-#{$level} {
-            color: var(--#{$level}__text-color);
-            background-color: var(--#{$level}__background-color);
-            border-color: var(--#{$level}__border-color);
+            color: var(--text-color__#{$level});
+            background-color: var(--background-color__#{$level});
+            border-color: var(--border-color__#{$level});
 
             &:hover {
-                border-color: var(--#{$level}__border-hover-color);
+                border-color: var(--border-hover-color__#{$level});
             }
         }
     }

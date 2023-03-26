@@ -18,14 +18,14 @@ const Logo = ({
 }: BaseProps & LogoProps) => (
     <Box
         as={as}
-        className={cx(styles.Logo, styles[`animation-${animation}`], className)}
+        className={cx(styles.this, styles[`animation-${animation}`], className)}
         data-testid={testId}
         {...restProps}
     >
         <svg preserveAspectRatio="none" viewBox="0 0 64 64">
-            <polygon className={cx(styles.A)} points="0,0 0,32 32,32" />
-            <polygon className={cx(styles.B)} points="0,32 0,64 32,64" />
-            <polygon className={cx(styles.C)} points="32,0 32,64 64,32" />
+            <polygon className={cx(styles.a)} points="0,0 0,32 32,32" />
+            <polygon className={cx(styles.b)} points="0,32 0,64 32,64" />
+            <polygon className={cx(styles.c)} points="32,0 32,64 64,32" />
         </svg>
     </Box>
 );

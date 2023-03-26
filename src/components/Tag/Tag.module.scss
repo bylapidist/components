@@ -1,36 +1,35 @@
 @import '../global.module';
 
-.Tag {
+.this {
+    --text-color__primary: var(--color-grey__lightest);
+    --text-color__secondary: var(--color-primary__darkest);
+    --text-color__tertiary: var(--color-grey__darkest);
+    --text-color__danger: var(--color-danger__darkest);
+    --background-color__primary: var(--color-primary__darkest);
+    --background-color__secondary: var(--color-grey__lightest);
+    --background-color__tertiary: var(--color-grey__lightest);
+    --background-color__danger: var(--color-grey__lightest);
+    --border-color__primary: var(--color-primary__darkest);
+    --border-color__secondary: var(--color-primary__dark);
+    --border-color__tertiary: var(--color-grey__dark);
+    --border-color__danger: var(--color-danger__dark);
+
+    display: inline-flex;
     text-align: center;
-    padding: var(--size__1) 0;
-    color: var(--color-grey__lightest);
-    font-weight: var(--font-weight__500);
-    border-radius: var(--border-radius__rounder);
+    border-style: solid;
+    border-radius: var(--border-radius__roundest);
+    border-width: var(--border-width__thinnest);
+
+    .children {
+        border-radius: inherit;
+    }
+
+    @each $level in $levels {
+        &.level-#{$level} {
+            color: var(--text-color__#{$level});
+            background-color: var(--background-color__#{$level});
+            border-color: var(--border-color__#{$level});
+        }
+    }
 }
 
-.Tag--primary {
-    background-color: var(--color-primary__darkest);
-}
-
-.Tag--secondary {
-    background-color: var(--color-secondary__darkest);
-}
-
-.Tag--tertiary {
-    background-color: var(--color-tertiary__darkest);
-}
-
-.Tag--danger {
-    background-color: var(--color-danger__darkest);
-}
-
-.Tag--namespace {
-    font-weight: var(--font-weight__700);
-    color: var(--color-grey__lightest);
-    background-color: var(--color-grey__darkest);
-    padding: var(--size__1) var(--size__2);
-}
-
-.Tag--children {
-    padding: var(--size__1) var(--size__2);
-}

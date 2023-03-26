@@ -24,7 +24,7 @@ const Text = ({
 }: BaseProps & TextProps) => (
     <Component
         className={cx(
-            styles.Text,
+            styles.this,
             styles[`size-${size}`],
             styles[`family-${family}`],
             styles[`weight-${weight}`],

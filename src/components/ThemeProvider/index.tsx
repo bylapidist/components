@@ -9,40 +9,19 @@ export interface ThemeProviderProps {
     readonly theme?: Themes;
 }
 
-export const ThemeContext: React.Context<Themes> =
-    React.createContext<Themes>('light');
-
-export const useThemeContext = (): Themes => React.useContext(ThemeContext);
-
 const ThemeProvider = ({
     className,
     as: Component = 'div',
     testId = 'ThemeProvider',
-    theme,
+    theme = 'light',
     ...restProps
-}: BaseProps & ThemeProviderProps) => {
-    const defaultTheme: Themes = useThemeContext();
-    const [themeContext, setThemeContext] = React.useState<Themes>(
-        theme || defaultTheme
-    );
-
-    React.useEffect(() => {
-        // const prefersDarkMode =
-        //     (typeof window.matchMedia === 'function' &&
-        //         window.matchMedia('(prefers-color-scheme: dark)')?.matches) ||
-        //     localStorage.getItem('prefersDarkMode') === 'true';
-        // setThemeContext(theme || (prefersDarkMode ? 'dark' : defaultTheme));
-        setThemeContext(theme || defaultTheme);
-    }, [theme]);
-
-    return (
-        <Component
-            className={cx(`theme--${themeContext}`, className)}
-            data-testid={testId}
-            {...restProps}
-        />
-    );
-};
+}: BaseProps & ThemeProviderProps) => (
+    <Component
+        className={cx(`theme--${theme}`, className)}
+        data-testid={testId}
+        {...restProps}
+    />
+);
 
 ThemeProvider.displayName = 'ThemeProvider';
 export default ThemeProvider;

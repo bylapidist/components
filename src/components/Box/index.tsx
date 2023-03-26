@@ -23,7 +23,7 @@ const Box = ({
 }: BaseProps & BoxProps) => (
     <Component
         className={cx(
-            styles.Box,
+            styles.this,
             styles[`elevation-${elevation}`],
             styles[`gutter-${gutter}`],
             {

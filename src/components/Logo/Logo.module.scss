@@ -1,6 +1,6 @@
 @import '../global.module';
 
-@keyframes fadeIn {
+@keyframes fade-in {
     0% { opacity: 0 }
     50% { opacity: 0 }
     100% { opacity: 1 }
@@ -12,68 +12,66 @@
     100% { opacity: 1 }
 }
 
-@keyframes slideRight {
+@keyframes slide-right {
     0% { transform: translate3d(-100%,0,0) }
     80% { transform: translateZ(0) }
     90% { transform: translate3d(-5%,0,0) }
     100% { transform: translateZ(0) }
 }
 
-@keyframes slideUpLeft {
+@keyframes slide-up-left {
     0% { transform: translate3d(100%,100%,0) }
     80% { transform: translateZ(0) }
     90% { transform: translate3d(5%,5%,0) }
     100% { transform: translateZ(0) }
 }
 
-@keyframes slideDown {
+@keyframes slide-down {
     0% { transform: translate3d(0,-100%,0) }
     80% { transform: translateZ(0) }
     90% { transform: translate3d(0,-5%,0) }
     100% { transform: translateZ(0) }
 }
 
-.Logo {
+.this {
     width: var(--size__16);
     overflow: hidden;
-    animation: fadeIn;
+    animation: fade-in;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
 
-    .A {
+    .a {
         fill: var(--color-tertiary__dark);
     }
 
-    .B {
+    .b {
         fill: var(--color-primary__dark);
     }
 
-    .C {
+    .c {
         fill: var(--color-secondary__dark);
     }
 
-    &.animation-fade {}
-
     &.animation-slide {
-        .A {
-            animation: slideRight;
+        .a {
+            animation: slide-right;
             animation-delay: 0.1s;
             animation-duration: 0.8s;
             animation-iteration-count: 1;
             animation-timing-function: linear;
         }
 
-        .B {
-            animation: slideUpLeft;
+        .b {
+            animation: slide-up-left;
             animation-delay: 0.2s;
             animation-duration: 0.8s;
             animation-iteration-count: 1;
             animation-timing-function: linear;
         }
 
-        .C {
-            animation: slideDown;
+        .c {
+            animation: slide-down;
             animation-delay: 0.3s;
             animation-duration: 0.6s;
             animation-iteration-count: 1;

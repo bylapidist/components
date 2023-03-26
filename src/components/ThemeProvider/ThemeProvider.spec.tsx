@@ -1,16 +1,10 @@
 import * as React from 'react';
-import { vi, describe, expect, test, afterEach } from 'vitest';
-import { cleanup, render, screen } from '@testing-library/react';
+import { describe, expect, test } from 'vitest';
+import { render, screen } from '@testing-library/react';
 import { Themes } from '@lapidist/styles';
-import './matchMedia.mock';
 import ThemeProvider from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
-
-afterEach(() => {
-    vi.resetAllMocks();
-    cleanup();
-});
 
 const themes: Themes[] = ['light', 'dark'];
 
@@ -25,11 +19,6 @@ describe('ThemeProvider', () => {
             <ThemeProvider theme={theme}>Hello world</ThemeProvider>
         );
         expect(container.firstChild).toMatchSnapshot();
-    });
-
-    test.skip('it works with prefers-dark-mode', () => {
-        setup(<ThemeProvider>Hello world</ThemeProvider>);
-        expect(window?.matchMedia).toHaveBeenCalledTimes(1);
     });
 
     test('it works with default testId', () => {
