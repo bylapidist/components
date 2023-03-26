@@ -1,12 +1,12 @@
-<p style="text-align: center">
+<p align="center">
     <a href="https://components.lapidist.net/" target="_blank" rel="noopener">
         <img width="120" src="https://lapidist.net/logo.svg" alt="Lapidist Logo"/>
     </a>
 </p>
 
-<h2 style="text-align: center">@lapidist/components</h2>
+<h2 align="center">@lapidist/components</h2>
 
-<div style="text-align: center">
+<div align="center">
 
 Opinionated [React](https://reactjs.org/) UI library, built with [@lapidist/styles](https://github.com/bylapidist/styles) and [TypeScript](https://www.typescriptlang.org/).
 
