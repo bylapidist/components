@@ -1,78 +1,102 @@
 import { Meta, ArgsTable, Story, Source, Canvas } from '@storybook/blocks';
-import * as TextStories from './Text.stories.tsx'; 
+import * as TextStories from './Text.stories.tsx';
 
 <Meta of={TextStories} />
 
 # Text
-> A primitive for controlling text. Use text to establish a consistent approach to constructing more 
-complicated components, ensuring their typography is aligned with the theme. This can be used as a wrapping element
-for compound components and its prop API included to give the component text size, weight or family support.
+
+> A primitive for controlling text. Use text to establish a consistent approach to constructing more
+> complicated components, ensuring their typography is aligned with the theme. This can be used as a wrapping element
+> for compound components and its prop API included to give the component text size, weight or family support.
 
 ## Example
+
 <Source dark />
 
 ## Controlling font size
+
 The `size` prop controls font size. There are three available font sizes, defined as `small`, `medium` and `large`.
 
 ### Small
+
 > The `small` size sets the font size to `--font-size__200`
+
 <Canvas>
     <Story of={TextStories.SmallSize} />
 </Canvas>
 
 ### Medium
+
 > The `medium` size sets the font size to `--font-size__300`
+
 <Canvas>
     <Story of={TextStories.MediumSize} />
 </Canvas>
 
 ### Large
+
 > The `large` size sets the font size to `--font-size__400`
+
 <Canvas>
     <Story of={TextStories.LargeSize} />
 </Canvas>
 
 ## Controlling font weight
+
 The `weight` prop controls font weight. There are three available font weights, defined as `regular`, `medium` and `bold`.
 
 ### Regular
+
 > The `regular` size sets the font weight to `--font-weight__400`
+
 <Canvas>
     <Story of={TextStories.RegularWeight} />
 </Canvas>
 
 ### Medium
+
 > The `medium` size sets the font weight to `--font-weight__500`
+
 <Canvas>
     <Story of={TextStories.MediumWeight} />
 </Canvas>
 
 ### Bold
+
 > The `bold` size sets the font weight to `--font-weight__700`
+
 <Canvas>
     <Story of={TextStories.BoldWeight} />
 </Canvas>
 
 ## Controlling font family
+
 The `variant` prop controls font family. There are three available font families, defined as `sans`, `serif` and `mono`.
 
 ### Sans
+
 > The `sans` variant sets the font family to `--font-family__sans`
+
 <Canvas>
     <Story of={TextStories.SansFamily} />
 </Canvas>
 
 ### Serif
+
 > The `serif` variant sets the font family to `--font-family__serif`
+
 <Canvas>
     <Story of={TextStories.SerifFamily} />
 </Canvas>
 
 ### Mono
+
 > The `mono` variant sets the font family to `--font-family__mono`
+
 <Canvas>
     <Story of={TextStories.MonoFamily} />
 </Canvas>
 
 ## Props
+
 <ArgsTable />

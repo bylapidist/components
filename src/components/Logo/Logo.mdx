@@ -1,29 +1,37 @@
 import { Meta, ArgsTable, Story, Source, Canvas } from '@storybook/blocks';
 
-import * as LogoStories from './Logo.stories.tsx'
+import * as LogoStories from './Logo.stories.tsx';
 
 <Meta of={LogoStories} />
 
 # Logo
+
 > A primitive for rendering the Lapidist logo. The logo always 'appears' rather than render immediately.
 
 ## Example
+
 <Source dark />
 
 ## Controlling animation
+
 The `animation` prop controls the way the logo appears. There are two available gutters, defined as `fade` and `slide`.
 
 ### Fade
+
 > Use the `fade` animation for logos that aren't the primary logo of the page.
+
 <Canvas>
     <Story of={LogoStories.FadeAnimation} />
 </Canvas>
 
 ### Slide
+
 > Use the `slide` animation for the primary logo on the page (e.g. within the header).
+
 <Canvas>
     <Story of={LogoStories.SlideAnimation} />
 </Canvas>
 
 ## Props
+
 <ArgsTable />
