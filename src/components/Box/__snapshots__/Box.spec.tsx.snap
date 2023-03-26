@@ -1,0 +1,145 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Box > it works with elevations 1`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with elevations 2`] = `
+<div
+  class="_this_d62db4 _elevation-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with elevations 3`] = `
+<div
+  class="_this_d62db4 _elevation-medium_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with elevations 4`] = `
+<div
+  class="_this_d62db4 _elevation-large_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterXs 1`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterXs 2`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-small_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterXs 3`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterXs 4`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-large_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterYs 1`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterYs 2`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterYs 3`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutterYs 4`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutters 1`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutters 2`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-small_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutters 3`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;
+
+exports[`Box > it works with gutters 4`] = `
+<div
+  class="_this_d62db4 _elevation-none_d62db4 _gutter-large_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+  data-testid="Box"
+>
+  Hello world
+</div>
+`;

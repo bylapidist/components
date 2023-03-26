@@ -1,0 +1,14 @@
+@import '../global.module';
+
+.this {
+    color: var(--color-primary__darkest);
+    text-underline-offset: var(--size__1);
+    text-decoration-color: var(--color-primary__light);
+    text-decoration-thickness: var(--border-width__thinner);
+    text-decoration-line: underline;
+
+    &:hover {
+        text-decoration-color: var(--color-primary__dark);
+        cursor: pointer;
+    }
+}

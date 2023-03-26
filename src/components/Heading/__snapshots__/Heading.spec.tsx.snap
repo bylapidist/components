@@ -1,0 +1,91 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Heading > it works with defaults 1`] = `
+<h1
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2bdcc0 _size-large_2bdcc0"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with families 1`] = `
+<h1
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2bdcc0 _size-large_2bdcc0"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with families 2`] = `
+<h1
+  class="_this_b26e6e _size-medium_b26e6e _family-serif_b26e6e _weight-medium_b26e6e _this_2bdcc0 _size-large_2bdcc0"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with families 3`] = `
+<h1
+  class="_this_b26e6e _size-medium_b26e6e _family-mono_b26e6e _weight-medium_b26e6e _this_2bdcc0 _size-large_2bdcc0"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with sizes 1`] = `
+<h1
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2bdcc0 _size-large_2bdcc0"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with sizes 2`] = `
+<h2
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2bdcc0 _size-medium_2bdcc0"
+  data-testid="Heading"
+>
+  Hello world
+</h2>
+`;
+
+exports[`Heading > it works with sizes 3`] = `
+<h3
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2bdcc0 _size-small_2bdcc0"
+  data-testid="Heading"
+>
+  Hello world
+</h3>
+`;
+
+exports[`Heading > it works with weights 1`] = `
+<h1
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-regular_b26e6e _this_2bdcc0 _size-large_2bdcc0"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with weights 2`] = `
+<h1
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2bdcc0 _size-large_2bdcc0"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with weights 3`] = `
+<h1
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-bold_b26e6e _this_2bdcc0 _size-large_2bdcc0"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;

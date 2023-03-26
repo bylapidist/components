@@ -1,0 +1,32 @@
+@import '../global.module';
+
+.this {
+    --gutter__none: var(--size__0);
+    --gutter__small: var(--size__1);
+    --gutter__medium: var(--size__2);
+    --gutter__large: var(--size__3);
+    --elevation__none: var(--elevation__none);
+    --elevation__small: var(--elevation__lower);
+    --elevation__medium: var(--elevation__higher);
+    --elevation__large: var(--elevation__highest);
+}
+
+@each $size in $sizes {
+    .gutter-#{$size} {
+        padding: var(--gutter__#{$size});
+    }
+
+    .gutterX-#{$size} {
+        padding-left: var(--gutter__#{$size});
+        padding-right: var(--gutter__#{$size});
+    }
+
+    .gutterY-#{$size} {
+        padding-top: var(--gutter__#{$size});
+        padding-bottom: var(--gutter__#{$size});
+    }
+
+    .elevation-#{$size} {
+        box-shadow: var(--elevation__#{$size});
+    }
+}

@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ThemeProvider > it works with defaults 1`] = `
+<div
+  class="theme--light"
+  data-testid="ThemeProvider"
+>
+  Hello world
+</div>
+`;
+
+exports[`ThemeProvider > it works with themes 1`] = `
+<div
+  class="theme--light"
+  data-testid="ThemeProvider"
+>
+  Hello world
+</div>
+`;
+
+exports[`ThemeProvider > it works with themes 2`] = `
+<div
+  class="theme--dark"
+  data-testid="ThemeProvider"
+>
+  Hello world
+</div>
+`;

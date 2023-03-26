@@ -1,0 +1,35 @@
+@import '../global.module';
+
+.this {
+    --size__small: var(--font-size__200);
+    --size__medium: var(--font-size__300);
+    --size__large: var(--font-size__400);
+    --family__sans: var(--font-family__sans);
+    --family__serif: var(--font-family__serif);
+    --family__mono: var(--font-family__mono);
+    --weight__regular: var(--font-weight__400);
+    --weight__medium: var(--font-weight__500);
+    --weight__bold: var(--font-weight__700);
+
+    color: var(--color-grey__darkest);
+    line-height: var(--line-height__looser);
+    letter-spacing: var(--letter-spacing__looser);
+
+    @each $size in $sizes {
+        &.size-#{$size} {
+            font-size: var(--size__#{$size});
+        }
+    }
+
+    @each $family in $families {
+        &.family-#{$family} {
+            font-family: var(--family__#{$family});
+        }
+    }
+
+    @each $weight in $weights {
+        &.weight-#{$weight} {
+            font-weight: var(--weight__#{$weight});
+        }
+    }
+}

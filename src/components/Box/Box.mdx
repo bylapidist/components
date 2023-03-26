@@ -1,0 +1,93 @@
+import { Meta, ArgsTable, Story, Source, Canvas } from '@storybook/blocks';
+
+import * as BoxStories from './Box.stories.tsx';
+
+<Meta of={BoxStories} />
+
+# Box
+
+> A primitive for controlling gutters and elevation. Use boxes to establish a consistent approach to constructing more
+> complicated components, ensuring their paddings and shadows are aligned with the theme. This can be used as a wrapping element
+> for compound components and its prop API included to give the component gutter and shadow support.
+
+## Example
+
+<Source dark />
+
+## Controlling gutter
+
+The `gutter`, `gutterX`, and `gutterY` props controls the padding of the box. There are four available gutters,
+defined as `none`, `small`, `medium`, and `large`.
+
+### None
+
+> Setting `gutter`, `gutterX` or `gutterY` to `none` sets the gutter to `var(--size__0)`
+
+<Canvas>
+    <Story of={BoxStories.NoGutter} />
+</Canvas>
+
+### Small
+
+> Setting `gutter`, `gutterX` or `gutterY` to `small` sets the gutter to `var(--size__1)`
+
+<Canvas>
+    <Story of={BoxStories.SmallGutter} />
+</Canvas>
+
+### Medium
+
+> Setting `gutter`, `gutterX` or `gutterY` to `medium` sets the gutter to `var(--size__2)`
+
+<Canvas>
+    <Story of={BoxStories.MediumGutter} />
+</Canvas>
+
+### Large
+
+> Setting `gutter`, `gutterX` or `gutterY` to `large` sets the gutter to `var(--size__3)`
+
+<Canvas>
+    <Story of={BoxStories.LargeGutter} />
+</Canvas>
+
+## Controlling elevation
+
+The `elevation` props controls shadow of the box. There are four available elevations,
+defined as `none`, `small`, `medium`, and `large`.
+
+### None
+
+> Setting `elevation`, to `none` sets the elevation to `var(--elevation__none)`
+
+<Canvas>
+    <Story of={BoxStories.NoElevation} />
+</Canvas>
+
+### Small
+
+> Setting `elevation`, to `small` sets the elevation to `var(--elevation__lower)`
+
+<Canvas>
+    <Story of={BoxStories.SmallElevation} />
+</Canvas>
+
+### Medium
+
+> Setting `elevation`, to `medium` sets the elevation to `var(--elevation__higher)`
+
+<Canvas>
+    <Story of={BoxStories.MediumElevation} />
+</Canvas>
+
+### Large
+
+> Setting `elevation`, to `large` sets the elevation to `var(--elevation__highest)`
+
+<Canvas>
+    <Story of={BoxStories.LargeElevation} />
+</Canvas>
+
+## Props
+
+<ArgsTable />
