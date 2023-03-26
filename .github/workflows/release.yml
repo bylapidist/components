@@ -40,9 +40,11 @@ jobs:
                   file: ./coverage/coverage-final.json
                   flags: unittests
 
+            - name: Run build
+              run: npm run build
+
             - name: Build storybook
               run: |
-                  git fetch --depth=1 origin +refs/tags/*:refs/tags/*
                   npm run build:storybook
                   touch storybook-static/.nojekyll
                   echo "components.lapidist.net" >> storybook-static/CNAME
