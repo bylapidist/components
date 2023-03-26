@@ -19,7 +19,6 @@ Opinionated [React](https://reactjs.org/) UI library, built with [@lapidist/styl
 [![Node](https://img.shields.io/node/v/@lapidist/components)](https://www.npmjs.com/package/@lapidist/components)
 [![GitHub Issues](https://img.shields.io/github/issues/bylapidist/components.svg?style=flat)](https://github.com/bylapidist/components/issues)
 ![GitHub](https://img.shields.io/github/license/bylapidist/components)
-[![GitHub Release](https://img.shields.io/github/release/bylapidist/components.svg?style=flat)](https://github.com/bylapidist/components/releases)
 [![Build Status](https://github.com/bylapidist/components/workflows/Release/badge.svg)](https://github.com/bylapidist/components/actions?query=workflow%3ARelease)
 
 </div>
