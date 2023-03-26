@@ -12,7 +12,7 @@ Opinionated [React](https://reactjs.org/) UI library, built with [@lapidist/styl
 
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@lapidist/components)
 [![npm](https://img.shields.io/npm/v/@lapidist/components)](https://www.npmjs.com/package/@lapidist/components)
-![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/bylapidist/components/dev/react)
+![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/bylapidist/components/react)
 ![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/bylapidist/components/dev/typescript)
 [![codecov](https://codecov.io/gh/bylapidist/components/branch/master/graph/badge.svg)](https://codecov.io/gh/bylapidist/components)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e149e6bee07174eae6ad/maintainability)](https://codeclimate.com/github/bylapidist/components/maintainability)
