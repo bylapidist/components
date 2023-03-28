@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { describe, expect, test, afterEach } from 'vitest';
+import { describe, expect, test, afterEach, vi } from 'vitest';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 
 import { LevelType, SizeType } from '../types';
 import Button from './index';
@@ -65,6 +65,13 @@ describe('Button', () => {
     test('it works with as', () => {
         setup(<Button as="span">Hello world</Button>);
         expect(screen.getByTestId('Button').nodeName).toBe('SPAN');
+    });
+
+    test('it works with native button props', () => {
+        const handleOnClick = vi.fn();
+        const { getByRole } = setup(<Button onClick={handleOnClick} />);
+        fireEvent.click(getByRole('button'));
+        expect(handleOnClick).toHaveBeenCalledOnce();
     });
 
     test('it works with className', () => {

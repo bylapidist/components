@@ -7,7 +7,8 @@ import Box from '../Box';
 import Text from '../Text';
 import styles from './Button.module.scss';
 
-export interface ButtonProps {
+export interface ButtonProps
+    extends Omit<React.HTMLProps<HTMLButtonElement>, 'size'> {
     readonly level?: LevelType;
     readonly size?: SizeType;
     readonly icon?: IconProp;

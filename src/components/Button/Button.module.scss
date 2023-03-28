@@ -19,7 +19,7 @@
     --border-hover-color__danger: var(--color-danger__darkest);
 
     display: inline-flex;
-    transition: box-shadow 0.08s ease-in 0s;
+    transition: box-shadow var(--transition__ease-in-slow);
     border-radius: var(--border-radius__squarer);
 
     &:disabled {
@@ -33,7 +33,7 @@
     &:hover,
     &:focus {
         cursor: pointer;
-        transition: box-shadow 0.08s ease-out 0s;
+        transition: box-shadow var(--transition__ease-out-slow);
         box-shadow: var(--elevation__higher);
 
         &:disabled { cursor: not-allowed; }
