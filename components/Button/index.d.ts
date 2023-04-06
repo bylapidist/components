@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import type { BaseProps, LevelType, SizeType } from '../types';
 export interface ButtonProps extends Omit<React.HTMLProps<HTMLButtonElement>, 'size'> {
