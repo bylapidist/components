@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import cx from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { IconProp } from '@fortawesome/fontawesome-svg-core';

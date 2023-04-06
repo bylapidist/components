@@ -37,7 +37,7 @@
       "import": "./dist/lapidist.es.js",
       "require": "./dist/lapidist.umd.js"
     },
-    "./dist/style.css": {
+    "./style.css": {
       "import": "./dist/style.css",
       "require": "./dist/style.css"
     }

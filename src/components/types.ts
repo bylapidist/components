@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 export type AsType = keyof JSX.IntrinsicElements;
 
@@ -12,4 +12,5 @@ export type BaseProps = {
     readonly testId?: string;
     readonly children?: React.ReactNode | React.ReactNode[];
     readonly style?: React.CSSProperties;
+    readonly htmlFor?: string;
 };

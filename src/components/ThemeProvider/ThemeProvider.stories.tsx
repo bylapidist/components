@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import type { Meta, StoryObj, StoryFn } from '@storybook/react';
 import { BaseProps } from '../types';
 import Text from '../Text';

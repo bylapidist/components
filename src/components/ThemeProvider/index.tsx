@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import cx from 'classnames';
 import { Themes } from '@lapidist/styles';
 import '@lapidist/styles/dist/css/light.css';

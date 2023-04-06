@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { describe, expect, test, afterEach, vi } from 'vitest';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
