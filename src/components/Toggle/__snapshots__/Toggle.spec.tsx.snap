@@ -1,0 +1,362 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Toggle > it works disabled 1`] = `
+<label
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479 _disabled_dc1479"
+  data-testid="Toggle"
+  for=":rg:"
+>
+  <span
+    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    data-testid="Toggle-inner"
+  >
+    <input
+      aria-describedby=":rh:"
+      class="_checkbox_dc1479"
+      disabled=""
+      id=":rg:"
+      type="checkbox"
+    />
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-xmark "
+      data-icon="circle-xmark"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+        fill="currentColor"
+      />
+    </svg>
+    <span
+      id=":rh:"
+    >
+      Hello world
+    </span>
+  </span>
+</label>
+`;
+
+exports[`Toggle > it works with defaults 1`] = `
+<label
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  data-testid="Toggle"
+  for=":r0:"
+>
+  <span
+    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    data-testid="Toggle-inner"
+  >
+    <input
+      aria-describedby=":r1:"
+      class="_checkbox_dc1479"
+      id=":r0:"
+      type="checkbox"
+    />
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-xmark "
+      data-icon="circle-xmark"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+        fill="currentColor"
+      />
+    </svg>
+    <span
+      id=":r1:"
+    >
+      Hello world
+    </span>
+  </span>
+</label>
+`;
+
+exports[`Toggle > it works with levels 1`] = `
+<label
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  data-testid="Toggle"
+  for=":r8:"
+>
+  <span
+    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    data-testid="Toggle-inner"
+  >
+    <input
+      aria-describedby=":r9:"
+      class="_checkbox_dc1479"
+      id=":r8:"
+      type="checkbox"
+    />
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-xmark "
+      data-icon="circle-xmark"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+        fill="currentColor"
+      />
+    </svg>
+    <span
+      id=":r9:"
+    >
+      Hello world
+    </span>
+  </span>
+</label>
+`;
+
+exports[`Toggle > it works with levels 2`] = `
+<label
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  data-testid="Toggle"
+  for=":ra:"
+>
+  <span
+    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-secondary_dc1479"
+    data-testid="Toggle-inner"
+  >
+    <input
+      aria-describedby=":rb:"
+      class="_checkbox_dc1479"
+      id=":ra:"
+      type="checkbox"
+    />
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-xmark "
+      data-icon="circle-xmark"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+        fill="currentColor"
+      />
+    </svg>
+    <span
+      id=":rb:"
+    >
+      Hello world
+    </span>
+  </span>
+</label>
+`;
+
+exports[`Toggle > it works with levels 3`] = `
+<label
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  data-testid="Toggle"
+  for=":rc:"
+>
+  <span
+    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-tertiary_dc1479"
+    data-testid="Toggle-inner"
+  >
+    <input
+      aria-describedby=":rd:"
+      class="_checkbox_dc1479"
+      id=":rc:"
+      type="checkbox"
+    />
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-xmark "
+      data-icon="circle-xmark"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+        fill="currentColor"
+      />
+    </svg>
+    <span
+      id=":rd:"
+    >
+      Hello world
+    </span>
+  </span>
+</label>
+`;
+
+exports[`Toggle > it works with levels 4`] = `
+<label
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  data-testid="Toggle"
+  for=":re:"
+>
+  <span
+    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-danger_dc1479"
+    data-testid="Toggle-inner"
+  >
+    <input
+      aria-describedby=":rf:"
+      class="_checkbox_dc1479"
+      id=":re:"
+      type="checkbox"
+    />
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-xmark "
+      data-icon="circle-xmark"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+        fill="currentColor"
+      />
+    </svg>
+    <span
+      id=":rf:"
+    >
+      Hello world
+    </span>
+  </span>
+</label>
+`;
+
+exports[`Toggle > it works with sizes 1`] = `
+<label
+  class="_this_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  data-testid="Toggle"
+  for=":r2:"
+>
+  <span
+    class="_this_d62db4 _elevation-medium_d62db4 _gutter-small_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    data-testid="Toggle-inner"
+  >
+    <input
+      aria-describedby=":r3:"
+      class="_checkbox_dc1479"
+      id=":r2:"
+      type="checkbox"
+    />
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-xmark "
+      data-icon="circle-xmark"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+        fill="currentColor"
+      />
+    </svg>
+    <span
+      id=":r3:"
+    >
+      Hello world
+    </span>
+  </span>
+</label>
+`;
+
+exports[`Toggle > it works with sizes 2`] = `
+<label
+  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  data-testid="Toggle"
+  for=":r4:"
+>
+  <span
+    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    data-testid="Toggle-inner"
+  >
+    <input
+      aria-describedby=":r5:"
+      class="_checkbox_dc1479"
+      id=":r4:"
+      type="checkbox"
+    />
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-xmark "
+      data-icon="circle-xmark"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+        fill="currentColor"
+      />
+    </svg>
+    <span
+      id=":r5:"
+    >
+      Hello world
+    </span>
+  </span>
+</label>
+`;
+
+exports[`Toggle > it works with sizes 3`] = `
+<label
+  class="_this_b26e6e _size-large_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  data-testid="Toggle"
+  for=":r6:"
+>
+  <span
+    class="_this_d62db4 _elevation-medium_d62db4 _gutter-large_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    data-testid="Toggle-inner"
+  >
+    <input
+      aria-describedby=":r7:"
+      class="_checkbox_dc1479"
+      id=":r6:"
+      type="checkbox"
+    />
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-circle-xmark "
+      data-icon="circle-xmark"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+        fill="currentColor"
+      />
+    </svg>
+    <span
+      id=":r7:"
+    >
+      Hello world
+    </span>
+  </span>
+</label>
+`;
