@@ -44,6 +44,7 @@
     &:hover,
     &:focus {
         cursor: pointer;
+        box-shadow: var(--elevation__higher);
     }
 
     &.toggled {
