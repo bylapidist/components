@@ -1,57 +1,56 @@
 import React from 'react';
 import type { Meta, StoryObj, StoryFn } from '@storybook/react';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { BaseProps } from '../types';
 import ThemeProvider from '../ThemeProvider';
-import Button, { ButtonProps } from './index';
+import Toggle, { ToggleProps } from './index';
 
 export default {
-    title: 'Inputs/Button',
-    component: Button,
+    title: 'Inputs/Toggle',
+    component: Toggle,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
 } as Meta;
 
-const defaultArgs: BaseProps & ButtonProps = {
-    as: 'button',
-    testId: 'Button',
+const defaultArgs: BaseProps & ToggleProps = {
+    as: 'label',
+    testId: 'Toggle',
     level: 'primary',
     size: 'medium',
     disabled: false,
-    block: false,
-    children: 'Click Me'
+    children: 'Toggle Me'
 };
 
-const DefaultTemplate: StoryFn<BaseProps & ButtonProps> = (args) => (
-    <Button {...args} />
+const DefaultTemplate: StoryFn<BaseProps & ToggleProps> = (args) => (
+    <Toggle {...args} />
 );
 
-export const PrimarySmall: StoryObj<BaseProps & ButtonProps> =
+export const PrimarySmall: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 PrimarySmall.args = {
     ...defaultArgs,
     size: 'small'
 };
-export const PrimaryMedium: StoryObj<BaseProps & ButtonProps> =
+
+export const PrimaryMedium: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 PrimaryMedium.args = {
     ...defaultArgs,
     size: 'medium'
 };
-export const PrimaryLarge: StoryObj<BaseProps & ButtonProps> =
+export const PrimaryLarge: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 PrimaryLarge.args = {
     ...defaultArgs,
     size: 'large'
 };
 
-export const PrimaryDisabled: StoryObj<BaseProps & ButtonProps> =
+export const PrimaryDisabled: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 PrimaryDisabled.args = {
     ...defaultArgs,
     disabled: true
 };
 
-export const SecondarySmall: StoryObj<BaseProps & ButtonProps> =
+export const SecondarySmall: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 SecondarySmall.args = {
     ...defaultArgs,
@@ -59,7 +58,7 @@ SecondarySmall.args = {
     size: 'small'
 };
 
-export const SecondaryMedium: StoryObj<BaseProps & ButtonProps> =
+export const SecondaryMedium: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 SecondaryMedium.args = {
     ...defaultArgs,
@@ -67,7 +66,7 @@ SecondaryMedium.args = {
     size: 'medium'
 };
 
-export const SecondaryLarge: StoryObj<BaseProps & ButtonProps> =
+export const SecondaryLarge: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 SecondaryLarge.args = {
     ...defaultArgs,
@@ -75,7 +74,7 @@ SecondaryLarge.args = {
     size: 'large'
 };
 
-export const SecondaryDisabled: StoryObj<BaseProps & ButtonProps> =
+export const SecondaryDisabled: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 SecondaryDisabled.args = {
     ...defaultArgs,
@@ -83,7 +82,7 @@ SecondaryDisabled.args = {
     disabled: true
 };
 
-export const TertiarySmall: StoryObj<BaseProps & ButtonProps> =
+export const TertiarySmall: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 TertiarySmall.args = {
     ...defaultArgs,
@@ -91,7 +90,7 @@ TertiarySmall.args = {
     size: 'small'
 };
 
-export const TertiaryMedium: StoryObj<BaseProps & ButtonProps> =
+export const TertiaryMedium: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 TertiaryMedium.args = {
     ...defaultArgs,
@@ -99,7 +98,7 @@ TertiaryMedium.args = {
     size: 'medium'
 };
 
-export const TertiaryLarge: StoryObj<BaseProps & ButtonProps> =
+export const TertiaryLarge: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 TertiaryLarge.args = {
     ...defaultArgs,
@@ -107,7 +106,7 @@ TertiaryLarge.args = {
     size: 'large'
 };
 
-export const TertiaryDisabled: StoryObj<BaseProps & ButtonProps> =
+export const TertiaryDisabled: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 TertiaryDisabled.args = {
     ...defaultArgs,
@@ -115,7 +114,7 @@ TertiaryDisabled.args = {
     disabled: true
 };
 
-export const DangerSmall: StoryObj<BaseProps & ButtonProps> =
+export const DangerSmall: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 DangerSmall.args = {
     ...defaultArgs,
@@ -123,7 +122,7 @@ DangerSmall.args = {
     size: 'small'
 };
 
-export const DangerMedium: StoryObj<BaseProps & ButtonProps> =
+export const DangerMedium: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 DangerMedium.args = {
     ...defaultArgs,
@@ -131,7 +130,7 @@ DangerMedium.args = {
     size: 'medium'
 };
 
-export const DangerLarge: StoryObj<BaseProps & ButtonProps> =
+export const DangerLarge: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 DangerLarge.args = {
     ...defaultArgs,
@@ -139,28 +138,10 @@ DangerLarge.args = {
     size: 'large'
 };
 
-export const DangerDisabled: StoryObj<BaseProps & ButtonProps> =
+export const DangerDisabled: StoryObj<BaseProps & ToggleProps> =
     DefaultTemplate.bind({});
 DangerDisabled.args = {
     ...defaultArgs,
     level: 'danger',
     disabled: true
-};
-
-export const WithIcon: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
-WithIcon.args = {
-    ...defaultArgs,
-    level: 'danger',
-    icon: faXmark
-};
-
-export const Block: StoryObj<BaseProps & ButtonProps> = DefaultTemplate.bind(
-    {}
-);
-Block.args = {
-    ...defaultArgs,
-    level: 'primary',
-    block: true
 };

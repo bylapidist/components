@@ -1,0 +1,111 @@
+import { Meta, ArgsTable, Story, Source, Canvas } from '@storybook/blocks';
+import ThemeProvider from '../ThemeProvider';
+import * as ToggleStories from './Toggle.stories.tsx';
+
+<Meta of={ToggleStories} />
+
+# Toggle
+
+> A primitive for toggling between two states. They are functionally an individual checkbox under the hood, but styled more like
+> a [Button](?path=/docs/inputs-toggle--documentation).
+
+## Example
+
+<Source dark />
+
+## Controlling level
+
+The `level` prop controls the toggle appearance. There are four available levels, defined as `primary`, `secondary`,
+`tertiary` and `danger`.
+
+### Primary
+
+> The `primary` level should be used as the main call to action within a page or toggle group.
+
+<Canvas>
+    <Story of={ToggleStories.PrimaryMedium} />
+</Canvas>
+
+### Secondary
+
+> The `secondary` level should be used as a secondary call to action within a page or toggle group.
+
+<Canvas>
+    <Story of={ToggleStories.SecondaryMedium} />
+</Canvas>
+
+### Tertiary
+
+> The `tertiary` level should be used as any toggle that is not a call to action or destructive.
+
+<Canvas>
+    <Story of={ToggleStories.TertiaryMedium} />
+</Canvas>
+
+### Danger
+
+> The `danger` level should be used for toggling any destructive action.
+
+<Canvas>
+    <Story of={ToggleStories.DangerMedium} />
+</Canvas>
+
+## Controlling size
+
+The `size` prop controls toggle size. There are three available sizes, defined as `small`, `medium` and `large`.
+
+### Small
+
+> Use the small size for toolbars or where space is constrained.
+
+<Canvas>
+    <ThemeProvider style={{ display: 'flex', gridGap: 'var(--size__2)' }}>
+        <Story of={ToggleStories.PrimarySmall} />
+        <Story of={ToggleStories.SecondarySmall} />
+        <Story of={ToggleStories.TertiarySmall} />
+        <Story of={ToggleStories.DangerSmall} />
+    </ThemeProvider>
+</Canvas>
+
+### Medium
+
+> Use the `medium` size for most forms, modals, and primary actions within a section of a page.
+
+<Canvas>
+    <ThemeProvider style={{ display: 'flex', gridGap: 'var(--size__2)' }}>
+        <Story of={ToggleStories.PrimaryMedium} />
+        <Story of={ToggleStories.SecondaryMedium} />
+        <Story of={ToggleStories.TertiaryMedium} />
+        <Story of={ToggleStories.DangerMedium} />
+    </ThemeProvider>
+</Canvas>
+
+### Large
+
+> Use the `large` size within a hero banner, or as the main action on the page.
+
+<Canvas>
+    <ThemeProvider style={{ display: 'flex', gridGap: 'var(--size__2)' }}>
+        <Story of={ToggleStories.PrimaryLarge} />
+        <Story of={ToggleStories.SecondaryLarge} />
+        <Story of={ToggleStories.TertiaryLarge} />
+        <Story of={ToggleStories.DangerLarge} />
+    </ThemeProvider>
+</Canvas>
+
+## Disabled
+
+> Where possible, avoid using disabled toggles as they are invisible to screen readers and present accessibility concerns.
+
+<Canvas>
+    <ThemeProvider style={{ display: 'flex', gridGap: 'var(--size__2)' }}>
+        <Story of={ToggleStories.PrimaryDisabled} />
+        <Story of={ToggleStories.SecondaryDisabled} />
+        <Story of={ToggleStories.TertiaryDisabled} />
+        <Story of={ToggleStories.DangerDisabled} />
+    </ThemeProvider>
+</Canvas>
+
+## Props
+
+<ArgsTable />

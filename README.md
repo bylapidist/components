@@ -32,11 +32,7 @@ See [https://components.lapidist.net](https://components.lapidist.net) for the f
 ### Installation
 
 ```shell
-// via npm
 npm install @lapidist/components
-
-// or via yarn
-yarn add @lapidist/components
 ```
 
 ### Usage
@@ -45,9 +41,10 @@ Ensure you wrap your application with the `<ThemeProvider>` component.
 Here is a quick example to get you started:
 
 ```jsx static
-import * as React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import { ThemeProvider, Text } from '@lapidist/components';
+import '@lapidist/components/style.css';
 
 const App = () => (
     <ThemeProvider>
@@ -55,7 +52,8 @@ const App = () => (
     </ThemeProvider>
 );
 
-ReactDOM.render(<App />, document.querySelector('#app'));
+const root = createRoot(document.querySelector('#app'));
+root.render(<App />);
 ```
 
 ## Philosophy
