@@ -1,0 +1,54 @@
+@import '../../global.module';
+
+.this {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    width: var(--fraction__full);
+    grid-gap: var(--size__4);
+    outline-offset: var(--border-width__thinner);
+    outline: transparent solid var(--border-width__thinner);
+    transition: box-shadow var(--transition__ease-in-slow);
+    background: var(--color-grey__lightest);
+
+    &:focus-within {
+        outline: var(--color-secondary__dark) solid var(--border-width__thinner);
+        transition: box-shadow var(--transition__ease-out-slow);
+        box-shadow: var(--elevation__higher);
+    }
+
+    .icon {
+        color: var(--color-primary__dark);
+        transition: color var(--transition__ease-out-slow);
+    }
+
+    &.disabled {
+        opacity: 0.75;
+
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
+
+    &.checked {
+    }
+
+    &.indeterminate {
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .icon {
+            color: var(--color-primary__darkest);
+            transition: color var(--transition__ease-in-slow);
+        }
+    }
+}
+
+.checkbox {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}

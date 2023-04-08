@@ -1,0 +1,61 @@
+import { Meta, ArgsTable, Story, Source, Canvas } from '@storybook/blocks';
+import * as CheckboxStories from './Checkbox.stories.tsx';
+
+<Meta of={CheckboxStories} />
+
+# Checkbox
+
+> A primitive for toggling between two states. They are functionally an individual checkbox under the hood, but styled more like
+> a [Button](?path=/docs/inputs-checkbox--documentation).
+
+## Example
+
+<Source dark />
+
+## States
+
+There are four checkbox states, defined as `unchecked`, `checked`, `indeterminate` and `disabled`.
+
+### Unchecked
+
+> The `primary` level should be used as the main call to action within a page or checkbox group.
+
+<Canvas>
+    <Story of={CheckboxStories.Unchecked} />
+</Canvas>
+
+#### Description
+
+> The `primary` level should be used as the main call to action within a page or checkbox group.
+
+<Canvas>
+    <Story of={CheckboxStories.Description} />
+</Canvas>
+
+### Checked
+
+> The `secondary` level should be used as a secondary call to action within a page or checkbox group.
+
+<Canvas>
+    <Story of={CheckboxStories.Checked} />
+</Canvas>
+
+### Indeterminate
+
+> The `tertiary` level should be used as any checkbox that is not a call to action or destructive.
+
+<Canvas>
+    <Story of={CheckboxStories.Indeterminate} />
+</Canvas>
+
+### Disabled
+
+> The `danger` level should be used for toggling any destructive action.
+
+<Canvas>
+    <Story of={CheckboxStories.Disabled} />
+</Canvas>
+
+## Props
+
+<ArgsTable />

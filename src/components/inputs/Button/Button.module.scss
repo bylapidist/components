@@ -1,0 +1,71 @@
+@import '../../global.module';
+
+.this {
+    --text-color__primary: var(--color-grey__lightest);
+    --text-color__secondary: var(--color-primary__darkest);
+    --text-color__tertiary: var(--color-grey__darkest);
+    --text-color__danger: var(--color-danger__darkest);
+    --background-color__primary: var(--color-primary__darkest);
+    --background-color__secondary: var(--color-grey__lightest);
+    --background-color__tertiary: var(--color-grey__lightest);
+    --background-color__danger: var(--color-grey__lightest);
+    --border-color__primary: var(--color-primary__darkest);
+    --border-color__secondary: var(--color-primary__dark);
+    --border-color__tertiary: var(--color-grey__dark);
+    --border-color__danger: var(--color-danger__dark);
+    --border-hover-color__primary: var(--color-grey__darkest);
+    --border-hover-color__secondary: var(--color-primary__darkest);
+    --border-hover-color__tertiary: var(--color-grey__darkest);
+    --border-hover-color__danger: var(--color-danger__darkest);
+
+    display: inline-flex;
+    transition: box-shadow var(--transition__ease-in-slow);
+    border-radius: var(--border-radius__squarer);
+
+    &:disabled {
+        opacity: 0.75;
+    }
+
+    &:disabled > :not(.level-primary) {
+        background-color: var(--color-grey__light);
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        transition: box-shadow var(--transition__ease-out-slow);
+        box-shadow: var(--elevation__higher);
+
+        &:disabled { cursor: not-allowed; }
+    }
+
+    &.block {
+        display: block;
+        width: 100%;
+    }
+}
+
+.inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    grid-gap: var(--size__2);
+    border-width: var(--border-width__thinner);
+    background-color: var(--color-grey__lightest);
+    border-radius: inherit;
+
+    @each $level in $levels {
+        &.level-#{$level} {
+            color: var(--text-color__#{$level});
+            background-color: var(--background-color__#{$level});
+            border-color: var(--border-color__#{$level});
+
+            &:hover {
+                border-color: var(--border-hover-color__#{$level});
+            }
+        }
+    }
+}
+

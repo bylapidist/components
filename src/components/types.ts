@@ -7,6 +7,7 @@ export type LevelType = 'primary' | 'secondary' | 'tertiary' | 'danger';
 export type SizeType = 'none' | 'small' | 'medium' | 'large';
 
 export type BaseProps = {
+    readonly id?: string;
     readonly className?: string;
     readonly as?: AsType;
     readonly testId?: string;
