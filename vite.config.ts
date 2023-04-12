@@ -19,9 +19,9 @@ export default defineConfig({
     build: {
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
-            name: 'lapidist',
+            name: 'components',
             formats: ['es', 'umd'],
-            fileName: (format) => `lapidist.${format}.js`
+            fileName: (format) => `components.${format}.js`
         },
         rollupOptions: {
             external: ['react', 'react-dom'],

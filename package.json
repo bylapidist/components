@@ -29,13 +29,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/lapidist.umd.js",
-  "module": "./dist/lapidist.es.js",
+  "main": "./dist/components.umd.js",
+  "module": "./dist/components.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/lapidist.es.js",
-      "require": "./dist/lapidist.umd.js"
+      "import": "./dist/components.es.js",
+      "require": "./dist/components.umd.js"
     },
     "./style.css": {
       "import": "./dist/style.css",

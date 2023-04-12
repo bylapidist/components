@@ -1,5 +1,7 @@
-<p align="center">
-    <a href="https://components.lapidist.net/" target="_blank" rel="noopener">
+
+
+
+<a href="https://components.lapidist.net/" target="_blank" rel="noopener">
         <img width="120" src="https://lapidist.net/logo.svg" alt="Lapidist Logo"/>
     </a>
 </p>

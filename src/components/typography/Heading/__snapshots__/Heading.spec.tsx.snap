@@ -1,0 +1,91 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Heading > it works with defaults 1`] = `
+<h1
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_4f5d0a _size-large_4f5d0a"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with families 1`] = `
+<h1
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_4f5d0a _size-large_4f5d0a"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with families 2`] = `
+<h1
+  class="_this_3c9018 _size-medium_3c9018 _family-serif_3c9018 _weight-medium_3c9018 _this_4f5d0a _size-large_4f5d0a"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with families 3`] = `
+<h1
+  class="_this_3c9018 _size-medium_3c9018 _family-mono_3c9018 _weight-medium_3c9018 _this_4f5d0a _size-large_4f5d0a"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with sizes 1`] = `
+<h1
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_4f5d0a _size-large_4f5d0a"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with sizes 2`] = `
+<h2
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_4f5d0a _size-medium_4f5d0a"
+  data-testid="Heading"
+>
+  Hello world
+</h2>
+`;
+
+exports[`Heading > it works with sizes 3`] = `
+<h3
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_4f5d0a _size-small_4f5d0a"
+  data-testid="Heading"
+>
+  Hello world
+</h3>
+`;
+
+exports[`Heading > it works with weights 1`] = `
+<h1
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-regular_3c9018 _this_4f5d0a _size-large_4f5d0a"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with weights 2`] = `
+<h1
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_4f5d0a _size-large_4f5d0a"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Heading > it works with weights 3`] = `
+<h1
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-bold_3c9018 _this_4f5d0a _size-large_4f5d0a"
+  data-testid="Heading"
+>
+  Hello world
+</h1>
+`;

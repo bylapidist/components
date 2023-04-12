@@ -1,0 +1,76 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Logo > it works 1`] = `
+<div
+  class="_this_a92f34 _elevation-none_a92f34 _gutter-none_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _this_7fb5df _animation-fade_7fb5df"
+  data-testid="Logo"
+>
+  <svg
+    preserveAspectRatio="none"
+    viewBox="0 0 64 64"
+  >
+    <polygon
+      class="_a_7fb5df"
+      points="0,0 0,32 32,32"
+    />
+    <polygon
+      class="_b_7fb5df"
+      points="0,32 0,64 32,64"
+    />
+    <polygon
+      class="_c_7fb5df"
+      points="32,0 32,64 64,32"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Logo > it works with animations 1`] = `
+<div
+  class="_this_a92f34 _elevation-none_a92f34 _gutter-none_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _this_7fb5df _animation-fade_7fb5df"
+  data-testid="Logo"
+>
+  <svg
+    preserveAspectRatio="none"
+    viewBox="0 0 64 64"
+  >
+    <polygon
+      class="_a_7fb5df"
+      points="0,0 0,32 32,32"
+    />
+    <polygon
+      class="_b_7fb5df"
+      points="0,32 0,64 32,64"
+    />
+    <polygon
+      class="_c_7fb5df"
+      points="32,0 32,64 64,32"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Logo > it works with animations 2`] = `
+<div
+  class="_this_a92f34 _elevation-none_a92f34 _gutter-none_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _this_7fb5df _animation-slide_7fb5df"
+  data-testid="Logo"
+>
+  <svg
+    preserveAspectRatio="none"
+    viewBox="0 0 64 64"
+  >
+    <polygon
+      class="_a_7fb5df"
+      points="0,0 0,32 32,32"
+    />
+    <polygon
+      class="_b_7fb5df"
+      points="0,32 0,64 32,64"
+    />
+    <polygon
+      class="_c_7fb5df"
+      points="32,0 32,64 64,32"
+    />
+  </svg>
+</div>
+`;

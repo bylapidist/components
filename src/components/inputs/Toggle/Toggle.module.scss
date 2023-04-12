@@ -1,0 +1,84 @@
+@import '../../global.module';
+
+.this {
+    --text-color__primary: var(--color-grey__lightest);
+    --text-color__secondary: var(--color-primary__darkest);
+    --text-color__tertiary: var(--color-grey__darkest);
+    --text-color__danger: var(--color-danger__darkest);
+    --background-color__primary: var(--color-primary__darkest);
+    --background-color__secondary: var(--color-grey__lightest);
+    --background-color__tertiary: var(--color-grey__lightest);
+    --background-color__danger: var(--color-grey__lightest);
+    --border-color__primary: var(--color-primary__darkest);
+    --border-color__secondary: var(--color-primary__dark);
+    --border-color__tertiary: var(--color-grey__dark);
+    --border-color__danger: var(--color-danger__dark);
+    --border-hover-color__primary: var(--color-grey__darkest);
+    --border-hover-color__secondary: var(--color-primary__darkest);
+    --border-hover-color__tertiary: var(--color-grey__darkest);
+    --border-hover-color__danger: var(--color-danger__darkest);
+
+    display: inline-flex;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    grid-gap: var(--size__2);
+    outline-offset: var(--border-width__thinner);
+    outline: transparent solid var(--border-width__thinner);
+    transition: box-shadow var(--transition__ease-in-slow), border var(--transition__ease-in-fast);
+    border-radius: var(--border-radius__roundest);
+    border-width: var(--border-width__thinner);
+    border-style: solid;
+    border-color: transparent;
+
+    &:focus-within {
+        outline: var(--color-secondary__dark) solid var(--border-width__thinner);
+        transition: box-shadow var(--transition__ease-out-slow), border var(--transition__ease-in-fast);
+        box-shadow: var(--elevation__higher);
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: var(--elevation__higher);
+    }
+
+    &.toggled {
+        transition: border var(--transition__ease-out-fast);
+    }
+
+    @each $level in $levels {
+        &.level-#{$level} {
+            color: var(--text-color__#{$level});
+            background-color: var(--background-color__#{$level});
+            border-color: var(--border-color__#{$level});
+
+            &.toggled {
+                border-color: var(--border-hover-color__#{$level});
+            }
+        }
+    }
+}
+
+.disabled {
+    opacity: 0.75;
+
+    .inner:hover {
+        cursor: not-allowed;
+    }
+}
+
+.checkbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+}

@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Link > it works with defaults 1`] = `
+<a
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-regular_3c9018 _this_e2491e"
+  data-testid="Link"
+  href="#"
+>
+  Hello world
+</a>
+`;
+
+exports[`Link > it works with sizes 1`] = `
+<a
+  class="_this_3c9018 _size-small_3c9018 _family-sans_3c9018 _weight-regular_3c9018 _this_e2491e"
+  data-testid="Link"
+  href="#"
+>
+  Hello world
+</a>
+`;
+
+exports[`Link > it works with sizes 2`] = `
+<a
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-regular_3c9018 _this_e2491e"
+  data-testid="Link"
+  href="#"
+>
+  Hello world
+</a>
+`;
+
+exports[`Link > it works with sizes 3`] = `
+<a
+  class="_this_3c9018 _size-large_3c9018 _family-sans_3c9018 _weight-regular_3c9018 _this_e2491e"
+  data-testid="Link"
+  href="#"
+>
+  Hello world
+</a>
+`;

@@ -1,0 +1,91 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Text > it works with defaults 1`] = `
+<div
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-regular_3c9018"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with families 1`] = `
+<div
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-regular_3c9018"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with families 2`] = `
+<div
+  class="_this_3c9018 _size-medium_3c9018 _family-serif_3c9018 _weight-regular_3c9018"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with families 3`] = `
+<div
+  class="_this_3c9018 _size-medium_3c9018 _family-mono_3c9018 _weight-regular_3c9018"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with sizes 1`] = `
+<div
+  class="_this_3c9018 _size-small_3c9018 _family-sans_3c9018 _weight-regular_3c9018"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with sizes 2`] = `
+<div
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-regular_3c9018"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with sizes 3`] = `
+<div
+  class="_this_3c9018 _size-large_3c9018 _family-sans_3c9018 _weight-regular_3c9018"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with weights 1`] = `
+<div
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-regular_3c9018"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with weights 2`] = `
+<div
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;
+
+exports[`Text > it works with weights 3`] = `
+<div
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-bold_3c9018"
+  data-testid="Text"
+>
+  Hello world
+</div>
+`;

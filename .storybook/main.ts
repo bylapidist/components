@@ -17,6 +17,7 @@ export default {
       '@storybook/addon-viewport'
   ],
   docs: {
-      defaultName: 'Documentation'
+      defaultName: 'Documentation',
+      autodocs: 'tag'
   }
 };

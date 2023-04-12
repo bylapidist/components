@@ -1,0 +1,57 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tag > it works with level 1`] = `
+<span
+  class="_this_3c9018 _size-small_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_894f39 _level-primary_894f39"
+  data-testid="Tag"
+>
+  <div
+    class="_this_a92f34 _elevation-small_a92f34 _gutter-none_a92f34 _gutterX-medium_a92f34 _gutterY-small_a92f34 _children_894f39"
+    data-testid="Box"
+  >
+    Hello world
+  </div>
+</span>
+`;
+
+exports[`Tag > it works with level 2`] = `
+<span
+  class="_this_3c9018 _size-small_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_894f39 _level-secondary_894f39"
+  data-testid="Tag"
+>
+  <div
+    class="_this_a92f34 _elevation-small_a92f34 _gutter-none_a92f34 _gutterX-medium_a92f34 _gutterY-small_a92f34 _children_894f39"
+    data-testid="Box"
+  >
+    Hello world
+  </div>
+</span>
+`;
+
+exports[`Tag > it works with level 3`] = `
+<span
+  class="_this_3c9018 _size-small_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_894f39 _level-tertiary_894f39"
+  data-testid="Tag"
+>
+  <div
+    class="_this_a92f34 _elevation-small_a92f34 _gutter-none_a92f34 _gutterX-medium_a92f34 _gutterY-small_a92f34 _children_894f39"
+    data-testid="Box"
+  >
+    Hello world
+  </div>
+</span>
+`;
+
+exports[`Tag > it works with level 4`] = `
+<span
+  class="_this_3c9018 _size-small_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_894f39 _level-danger_894f39"
+  data-testid="Tag"
+>
+  <div
+    class="_this_a92f34 _elevation-small_a92f34 _gutter-none_a92f34 _gutterX-medium_a92f34 _gutterY-small_a92f34 _children_894f39"
+    data-testid="Box"
+  >
+    Hello world
+  </div>
+</span>
+`;

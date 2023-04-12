@@ -1,0 +1,171 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > it works block 1`] = `
+<button
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_9708a1 _block_9708a1"
+  data-testid="Button"
+>
+  <span
+    class="_this_a92f34 _elevation-medium_a92f34 _gutter-medium_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _inner_9708a1 _level-primary_9708a1"
+    data-testid="Button-inner"
+  >
+    Hello world
+  </span>
+</button>
+`;
+
+exports[`Button > it works disabled 1`] = `
+<button
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_9708a1"
+  data-testid="Button"
+  disabled=""
+>
+  <span
+    class="_this_a92f34 _elevation-medium_a92f34 _gutter-medium_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _inner_9708a1 _level-primary_9708a1"
+    data-testid="Button-inner"
+  >
+    Hello world
+  </span>
+</button>
+`;
+
+exports[`Button > it works with defaults 1`] = `
+<button
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_9708a1"
+  data-testid="Button"
+>
+  <span
+    class="_this_a92f34 _elevation-medium_a92f34 _gutter-medium_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _inner_9708a1 _level-primary_9708a1"
+    data-testid="Button-inner"
+  >
+    Hello world
+  </span>
+</button>
+`;
+
+exports[`Button > it works with icon 1`] = `
+<button
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_9708a1"
+  data-testid="Button"
+>
+  <span
+    class="_this_a92f34 _elevation-medium_a92f34 _gutter-medium_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _inner_9708a1 _level-primary_9708a1"
+    data-testid="Button-inner"
+  >
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-xmark "
+      data-icon="xmark"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+        fill="currentColor"
+      />
+    </svg>
+    Hello world
+  </span>
+</button>
+`;
+
+exports[`Button > it works with levels 1`] = `
+<button
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_9708a1"
+  data-testid="Button"
+>
+  <span
+    class="_this_a92f34 _elevation-medium_a92f34 _gutter-medium_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _inner_9708a1 _level-primary_9708a1"
+    data-testid="Button-inner"
+  >
+    Hello world
+  </span>
+</button>
+`;
+
+exports[`Button > it works with levels 2`] = `
+<button
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_9708a1"
+  data-testid="Button"
+>
+  <span
+    class="_this_a92f34 _elevation-medium_a92f34 _gutter-medium_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _inner_9708a1 _level-secondary_9708a1"
+    data-testid="Button-inner"
+  >
+    Hello world
+  </span>
+</button>
+`;
+
+exports[`Button > it works with levels 3`] = `
+<button
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_9708a1"
+  data-testid="Button"
+>
+  <span
+    class="_this_a92f34 _elevation-medium_a92f34 _gutter-medium_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _inner_9708a1 _level-tertiary_9708a1"
+    data-testid="Button-inner"
+  >
+    Hello world
+  </span>
+</button>
+`;
+
+exports[`Button > it works with levels 4`] = `
+<button
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_9708a1"
+  data-testid="Button"
+>
+  <span
+    class="_this_a92f34 _elevation-medium_a92f34 _gutter-medium_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _inner_9708a1 _level-danger_9708a1"
+    data-testid="Button-inner"
+  >
+    Hello world
+  </span>
+</button>
+`;
+
+exports[`Button > it works with sizes 1`] = `
+<button
+  class="_this_3c9018 _size-small_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_9708a1"
+  data-testid="Button"
+>
+  <span
+    class="_this_a92f34 _elevation-medium_a92f34 _gutter-small_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _inner_9708a1 _level-primary_9708a1"
+    data-testid="Button-inner"
+  >
+    Hello world
+  </span>
+</button>
+`;
+
+exports[`Button > it works with sizes 2`] = `
+<button
+  class="_this_3c9018 _size-medium_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_9708a1"
+  data-testid="Button"
+>
+  <span
+    class="_this_a92f34 _elevation-medium_a92f34 _gutter-medium_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _inner_9708a1 _level-primary_9708a1"
+    data-testid="Button-inner"
+  >
+    Hello world
+  </span>
+</button>
+`;
+
+exports[`Button > it works with sizes 3`] = `
+<button
+  class="_this_3c9018 _size-large_3c9018 _family-sans_3c9018 _weight-medium_3c9018 _this_9708a1"
+  data-testid="Button"
+>
+  <span
+    class="_this_a92f34 _elevation-medium_a92f34 _gutter-large_a92f34 _gutterX-none_a92f34 _gutterY-none_a92f34 _inner_9708a1 _level-primary_9708a1"
+    data-testid="Button-inner"
+  >
+    Hello world
+  </span>
+</button>
+`;
