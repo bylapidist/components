@@ -35,27 +35,45 @@ describe('Box', () => {
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test('it works with default testId', () => {
-        setup(<Box gutter={gutters[0]}>Hello world</Box>);
-        expect(screen.getByTestId('Box')).toBeTruthy();
+    describe('as prop', () => {
+        test('it falls back to div', () => {
+            setup(<Box gutter={gutters[0]}>Hello world</Box>);
+            expect(screen.getByTestId('Component').nodeName).toBe('DIV');
+        });
+
+        test('it works with HTML element', () => {
+            setup(
+                <Box gutter={gutters[0]} as="button">
+                    Hello world
+                </Box>
+            );
+            expect(screen.getByTestId('Box').nodeName).toBe('BUTTON');
+            expect(screen.getByRole('button')).toBeTruthy();
+        });
+
+        test('it works with React component', () => {
+            const TestComponent = ({ status }: { status: string }) => (
+                <p>test {status}</p>
+            );
+            setup(<Box gutter={gutters[0]} as={TestComponent} status="info" />);
+            expect(screen.getByText('test info')).toBeTruthy();
+        });
     });
 
-    test('it works with specified testId', () => {
-        setup(
-            <Box gutter={gutters[0]} testId={'TestId'}>
-                Hello world
-            </Box>
-        );
-        expect(screen.getByTestId('TestId')).toBeTruthy();
-    });
+    describe('testId prop', () => {
+        test('it works with default testId', () => {
+            setup(<Box gutter={gutters[0]}>Hello world</Box>);
+            expect(screen.getByTestId('Box')).toBeTruthy();
+        });
 
-    test('it works with as', () => {
-        setup(
-            <Box gutter={gutters[0]} as="span">
-                Hello world
-            </Box>
-        );
-        expect(screen.getByTestId('Box').nodeName).toBe('SPAN');
+        test('it works with specified testId', () => {
+            setup(
+                <Box gutter={gutters[0]} data-testid="TestId">
+                    Hello world
+                </Box>
+            );
+            expect(screen.getByTestId('TestId')).toBeTruthy();
+        });
     });
 
     test('it works with className', () => {
