@@ -1,27 +1,29 @@
-import React from 'react';
+import React, { ComponentProps, ElementType } from 'react';
 import cx from 'classnames';
 import type { BaseProps, SizeType } from '../types';
 import styles from './Box.module.scss';
+import Component, { CommonComponentProps } from '../Component';
 
-export interface BoxProps {
-    readonly elevation?: SizeType;
-    readonly stroke?: SizeType;
-    readonly gutter?: SizeType;
-    readonly gutterX?: SizeType;
-    readonly gutterY?: SizeType;
-}
+export type BoxProps<T> = {
+    elevation?: SizeType;
+    stroke?: SizeType;
+    gutter?: SizeType;
+    gutterX?: SizeType;
+    gutterY?: SizeType;
+} & CommonComponentProps<T>;
 
-const Box = ({
+const Box = <T extends ElementType = 'div'>({
+    as,
     className,
-    as: Component = 'div',
     testId = 'Box',
     elevation = 'none',
     gutter = 'none',
     gutterX = 'none',
     gutterY = 'none',
-    ...restProps
-}: BaseProps & BoxProps) => (
+    ...props
+}: BoxProps<T>) => (
     <Component
+        as={as}
         className={cx(
             styles.this,
             styles[`elevation-${elevation}`],
@@ -32,8 +34,8 @@ const Box = ({
             },
             className
         )}
-        data-testid={testId}
-        {...restProps}
+        testId={testId}
+        {...props}
     />
 );
 
