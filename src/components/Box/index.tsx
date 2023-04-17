@@ -5,7 +5,6 @@ import styles from './Box.module.scss';
 
 export interface BoxProps {
     readonly elevation?: SizeType;
-    readonly stroke?: SizeType;
     readonly gutter?: SizeType;
     readonly gutterX?: SizeType;
     readonly gutterY?: SizeType;
