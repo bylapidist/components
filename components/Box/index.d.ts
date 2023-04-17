@@ -2,7 +2,6 @@
 import type { BaseProps, SizeType } from '../types';
 export interface BoxProps {
     readonly elevation?: SizeType;
-    readonly stroke?: SizeType;
     readonly gutter?: SizeType;
     readonly gutterX?: SizeType;
     readonly gutterY?: SizeType;
