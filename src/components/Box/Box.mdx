@@ -6,25 +6,24 @@ import * as BoxStories from './Box.stories.tsx';
 
 # Box
 
-> The `Box` component is a foundational building block for creating other components in your application. It provides 
-a simple way to control gutters and elevation, ensuring that your designs remain consistent and aligned with the theme.
-By using `Box` as a wrapping element for compound components, you can manage their padding and shadows without needing 
-to define these properties repeatedly.
+> The `Box` component is a foundational building block for creating other components in your application. It provides
+> a simple way to control gutters and elevation, ensuring that your designs remain consistent and aligned with the theme.
+> By using `Box` as a wrapping element for compound components, you can manage their padding and shadows without needing
+> to define these properties repeatedly.
 
 ## Basic Usage
 
-To use the `Box` component, simply import it into your file and use it as a wrapping element around other components. 
+To use the `Box` component, simply import it into your file and use it as a wrapping element around other components.
 Here's an example that will render a `div` by default:
 
 <Source dark code={`
 import { Box } from '@lapidist/components';
 
 function App() {
-    return (
-        <Box>Hello, World!</Box>
-    );
-}
-`} />
+return (
+
+<Box>Hello, World!</Box>
+); } `} />
 
 And here's a full example which shows all valid props:
 
@@ -32,18 +31,17 @@ And here's a full example which shows all valid props:
 
 ## Controlling gutters
 
-To control the padding of the Box, you can use the `gutter`, `gutterX`, and `gutterY` props. These props accept one of 
+To control the padding of the Box, you can use the `gutter`, `gutterX`, and `gutterY` props. These props accept one of
 four available gutters: `none`, `small`, `medium`, and `large`. Here's an example of how to use the `gutter` prop:
 
 <Source dark code={`
 import { Box } from '@lapidist/components';
 
 function App() {
-    return (
-        <Box gutter="small">Hello, World!</Box>
-    );
-}
-`} />
+return (
+
+<Box gutter="small">Hello, World!</Box>
+); } `} />
 
 This will add a small padding to the `Box` like this example:
 
@@ -85,18 +83,17 @@ Setting `gutter`, `gutterX` or `gutterY` to `large` sets the gutter to `var(--si
 
 ## Controlling elevation
 
-To control the shadow of the Box, you can use the elevation prop. This prop accepts one of four available elevations: 
+To control the shadow of the Box, you can use the elevation prop. This prop accepts one of four available elevations:
 `none`, `small`, `medium`, and `large`. Here's an example of how to use the `elevation` prop:
 
 <Source dark code={`
 import { Box } from '@lapidist/components';
 
 function App() {
-  return (
-      <Box elevation="medium">Hello, World!</Box>
-  );
-}
-`} />
+return (
+
+<Box elevation="medium">Hello, World!</Box>
+); } `} />
 
 > This will add a medium shadow to the `Box` like this example:
 
