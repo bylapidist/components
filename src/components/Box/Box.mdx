@@ -6,46 +6,78 @@ import * as BoxStories from './Box.stories.tsx';
 
 # Box
 
-> A primitive for controlling gutters and elevation. Use boxes to establish a consistent approach to constructing more
-> complicated components, ensuring their paddings and shadows are aligned with the theme. This can be used as a wrapping element
-> for compound components and its prop API included to give the component gutter and shadow support.
+> The `Box` component is a foundational building block for creating other components in your application. It provides 
+a simple way to control gutters and elevation, ensuring that your designs remain consistent and aligned with the theme.
+By using `Box` as a wrapping element for compound components, you can manage their padding and shadows without needing 
+to define these properties repeatedly.
 
-## Example
+## Basic Usage
+
+To use the `Box` component, simply import it into your file and use it as a wrapping element around other components. 
+Here's an example that will render a `div` by default:
+
+<Source dark code={`
+import { Box } from '@lapidist/components';
+
+function App() {
+    return (
+        <Box>Hello, World!</Box>
+    );
+}
+`} />
+
+And here's a full example which shows all valid props:
 
 <Source dark />
 
-## Controlling gutter
+## Controlling gutters
 
-The `gutter`, `gutterX`, and `gutterY` props controls the padding of the box. There are four available gutters,
-defined as `none`, `small`, `medium`, and `large`.
+To control the padding of the Box, you can use the `gutter`, `gutterX`, and `gutterY` props. These props accept one of 
+four available gutters: `none`, `small`, `medium`, and `large`. Here's an example of how to use the `gutter` prop:
 
-### None
+<Source dark code={`
+import { Box } from '@lapidist/components';
 
-> Setting `gutter`, `gutterX` or `gutterY` to `none` sets the gutter to `var(--size__0)`
+function App() {
+    return (
+        <Box gutter="small">Hello, World!</Box>
+    );
+}
+`} />
 
-<Canvas>
-    <Story of={BoxStories.NoGutter} />
-</Canvas>
-
-### Small
-
-> Setting `gutter`, `gutterX` or `gutterY` to `small` sets the gutter to `var(--size__1)`
+This will add a small padding to the `Box` like this example:
 
 <Canvas>
     <Story of={BoxStories.SmallGutter} />
 </Canvas>
 
-### Medium
+### No gutter
 
-> Setting `gutter`, `gutterX` or `gutterY` to `medium` sets the gutter to `var(--size__2)`
+Setting `gutter`, `gutterX` or `gutterY` to `none` sets the gutter to `var(--size__0)`
+
+<Canvas>
+    <Story of={BoxStories.NoGutter} />
+</Canvas>
+
+### Small gutter
+
+Setting `gutter`, `gutterX` or `gutterY` to `small` sets the gutter to `var(--size__1)`
+
+<Canvas>
+    <Story of={BoxStories.SmallGutter} />
+</Canvas>
+
+### Medium gutter
+
+Setting `gutter`, `gutterX` or `gutterY` to `medium` sets the gutter to `var(--size__2)`
 
 <Canvas>
     <Story of={BoxStories.MediumGutter} />
 </Canvas>
 
-### Large
+### Large gutter
 
-> Setting `gutter`, `gutterX` or `gutterY` to `large` sets the gutter to `var(--size__3)`
+Setting `gutter`, `gutterX` or `gutterY` to `large` sets the gutter to `var(--size__3)`
 
 <Canvas>
     <Story of={BoxStories.LargeGutter} />
@@ -53,36 +85,52 @@ defined as `none`, `small`, `medium`, and `large`.
 
 ## Controlling elevation
 
-The `elevation` props controls shadow of the box. There are four available elevations,
-defined as `none`, `small`, `medium`, and `large`.
+To control the shadow of the Box, you can use the elevation prop. This prop accepts one of four available elevations: 
+`none`, `small`, `medium`, and `large`. Here's an example of how to use the `elevation` prop:
 
-### None
+<Source dark code={`
+import { Box } from '@lapidist/components';
 
-> Setting `elevation`, to `none` sets the elevation to `var(--elevation__none)`
+function App() {
+  return (
+      <Box elevation="medium">Hello, World!</Box>
+  );
+}
+`} />
 
-<Canvas>
-    <Story of={BoxStories.NoElevation} />
-</Canvas>
-
-### Small
-
-> Setting `elevation`, to `small` sets the elevation to `var(--elevation__lower)`
-
-<Canvas>
-    <Story of={BoxStories.SmallElevation} />
-</Canvas>
-
-### Medium
-
-> Setting `elevation`, to `medium` sets the elevation to `var(--elevation__higher)`
+> This will add a medium shadow to the `Box` like this example:
 
 <Canvas>
     <Story of={BoxStories.MediumElevation} />
 </Canvas>
 
-### Large
+### No elevation
 
-> Setting `elevation`, to `large` sets the elevation to `var(--elevation__highest)`
+Setting `elevation` to `none` sets the elevation to `var(--elevation__none)`
+
+<Canvas>
+    <Story of={BoxStories.NoElevation} />
+</Canvas>
+
+### Small elevation
+
+Setting `elevation` to `small` sets the elevation to `var(--elevation__lower)`
+
+<Canvas>
+    <Story of={BoxStories.SmallElevation} />
+</Canvas>
+
+### Medium elevation
+
+Setting `elevation` to `medium` sets the elevation to `var(--elevation__higher)`
+
+<Canvas>
+    <Story of={BoxStories.MediumElevation} />
+</Canvas>
+
+### Large elevation
+
+Setting `elevation` to `large` sets the elevation to `var(--elevation__highest)`
 
 <Canvas>
     <Story of={BoxStories.LargeElevation} />

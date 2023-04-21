@@ -69,7 +69,7 @@ export const NoElevation: StoryObj<BaseProps & BoxProps> = DefaultTemplate.bind(
 NoElevation.args = {
     ...defaultArgs,
     gutter: 'medium',
-    elevation: 'small'
+    elevation: 'none'
 };
 
 export const SmallElevation: StoryObj<BaseProps & BoxProps> =
