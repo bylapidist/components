@@ -4,7 +4,7 @@ import { TextProps } from '../Text';
 export interface LinkProps extends Omit<React.HTMLProps<HTMLAnchorElement>, 'size'>, TextProps {
 }
 declare const Link: {
-    ({ className, as, testId, size, ...restProps }: BaseProps & LinkProps): JSX.Element;
+    ({ className, as, testId, size, ...restProps }: BaseProps & LinkProps): import("react/jsx-runtime").JSX.Element;
     displayName: string;
 };
 export default Link;

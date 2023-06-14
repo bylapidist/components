@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type { BaseProps, SizeType } from '../types';
 import { TextFamilyType, TextWeightType } from '../Text';
 export interface HeadingProps {
@@ -7,7 +6,7 @@ export interface HeadingProps {
     readonly family?: TextFamilyType;
 }
 declare const Heading: {
-    ({ className, as, testId, size, weight, family, ...restProps }: BaseProps & HeadingProps): JSX.Element;
+    ({ className, as, testId, size, weight, family, ...restProps }: BaseProps & HeadingProps): import("react/jsx-runtime").JSX.Element;
     displayName: string;
 };
 export default Heading;

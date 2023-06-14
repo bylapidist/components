@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type { BaseProps, SizeType } from '../types';
 export interface BoxProps {
     readonly elevation?: SizeType;
@@ -7,7 +6,7 @@ export interface BoxProps {
     readonly gutterY?: SizeType;
 }
 declare const Box: {
-    ({ className, as: Component, testId, elevation, gutter, gutterX, gutterY, ...restProps }: BaseProps & BoxProps): JSX.Element;
+    ({ className, as: Component, testId, elevation, gutter, gutterX, gutterY, ...restProps }: BaseProps & BoxProps): import("react/jsx-runtime").JSX.Element;
     displayName: string;
 };
 export default Box;

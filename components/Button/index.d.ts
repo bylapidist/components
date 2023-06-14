@@ -9,7 +9,7 @@ export interface ButtonProps extends Omit<React.HTMLProps<HTMLButtonElement>, 's
     readonly disabled?: boolean;
 }
 declare const Button: {
-    ({ className, as, testId, level, size, block, icon, children, ...restProps }: BaseProps & ButtonProps): JSX.Element;
+    ({ className, as, testId, level, size, block, icon, children, ...restProps }: BaseProps & ButtonProps): import("react/jsx-runtime").JSX.Element;
     displayName: string;
 };
 export default Button;
