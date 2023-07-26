@@ -1,9 +1,6 @@
 export default {
   framework: '@storybook/react-vite',
-  stories: [
-      '../src/**/*.mdx',
-      '../src/**/*.stories.@(js|jsx|ts|tsx)'
-  ],
+  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
       '@storybook/addon-a11y',
       '@storybook/addon-docs',
@@ -17,6 +14,7 @@ export default {
       '@storybook/addon-viewport'
   ],
   docs: {
-      defaultName: 'Documentation'
+    defaultName: 'Documentation',
+    autodocs: true
   }
 };
