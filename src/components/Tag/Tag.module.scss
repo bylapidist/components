@@ -1,24 +1,24 @@
 @import '../global.module';
 
 .this {
-    --text-color__primary: var(--color-grey__lightest);
-    --text-color__secondary: var(--color-primary__darkest);
-    --text-color__tertiary: var(--color-grey__darkest);
-    --text-color__danger: var(--color-danger__darkest);
-    --background-color__primary: var(--color-primary__darkest);
-    --background-color__secondary: var(--color-grey__lightest);
-    --background-color__tertiary: var(--color-grey__lightest);
-    --background-color__danger: var(--color-grey__lightest);
-    --border-color__primary: var(--color-primary__darkest);
-    --border-color__secondary: var(--color-primary__dark);
-    --border-color__tertiary: var(--color-grey__dark);
-    --border-color__danger: var(--color-danger__dark);
+    --text-color-primary: var(--color-neutral-lightest);
+    --text-color-secondary: var(--color-primary-darkest);
+    --text-color-tertiary: var(--color-neutral-darkest);
+    --text-color-danger: var(--color-danger-darkest);
+    --background-color-primary: var(--color-primary-darkest);
+    --background-color-secondary: var(--color-neutral-lightest);
+    --background-color-tertiary: var(--color-neutral-lightest);
+    --background-color-danger: var(--color-neutral-lightest);
+    --border-color-primary: var(--color-primary-darkest);
+    --border-color-secondary: var(--color-primary-dark);
+    --border-color-tertiary: var(--color-neutral-dark);
+    --border-color-danger: var(--color-danger-dark);
 
     display: inline-flex;
     text-align: center;
     border-style: solid;
-    border-radius: var(--border-radius__roundest);
-    border-width: var(--border-width__thinnest);
+    border-radius: var(--border-radius-roundest);
+    border-width: var(--border-width-thinnest);
 
     .children {
         border-radius: inherit;
@@ -26,9 +26,9 @@
 
     @each $level in $levels {
         &.level-#{$level} {
-            color: var(--text-color__#{$level});
-            background-color: var(--background-color__#{$level});
-            border-color: var(--border-color__#{$level});
+            color: var(--text-color-#{$level});
+            background-color: var(--background-color-#{$level});
+            border-color: var(--border-color-#{$level});
         }
     }
 }

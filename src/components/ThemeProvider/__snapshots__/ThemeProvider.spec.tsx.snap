@@ -2,7 +2,7 @@
 
 exports[`ThemeProvider > it works with defaults 1`] = `
 <div
-  class="theme--light"
+  class="theme-light"
   data-testid="ThemeProvider"
 >
   Hello world
@@ -11,7 +11,7 @@ exports[`ThemeProvider > it works with defaults 1`] = `
 
 exports[`ThemeProvider > it works with themes 1`] = `
 <div
-  class="theme--light"
+  class="theme-light"
   data-testid="ThemeProvider"
 >
   Hello world
@@ -20,7 +20,7 @@ exports[`ThemeProvider > it works with themes 1`] = `
 
 exports[`ThemeProvider > it works with themes 2`] = `
 <div
-  class="theme--dark"
+  class="theme-dark"
   data-testid="ThemeProvider"
 >
   Hello world

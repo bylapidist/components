@@ -1,35 +1,35 @@
 @import '../global.module';
 
 .this {
-    --size__small: var(--font-size__200);
-    --size__medium: var(--font-size__300);
-    --size__large: var(--font-size__400);
-    --family__sans: var(--font-family__sans);
-    --family__serif: var(--font-family__serif);
-    --family__mono: var(--font-family__mono);
-    --weight__regular: var(--font-weight__400);
-    --weight__medium: var(--font-weight__500);
-    --weight__bold: var(--font-weight__700);
+    --size-small: var(--font-size-200);
+    --size-medium: var(--font-size-300);
+    --size-large: var(--font-size-400);
+    --family-sans: var(--font-family-sans);
+    --family-serif: var(--font-family-serif);
+    --family-mono: var(--font-family-mono);
+    --weight-regular: var(--font-weight-400);
+    --weight-medium: var(--font-weight-500);
+    --weight-bold: var(--font-weight-700);
 
-    color: var(--color-grey__darkest);
-    line-height: var(--line-height__looser);
-    letter-spacing: var(--letter-spacing__looser);
+    color: var(--color-neutral-darkest);
+    line-height: var(--line-height-looser);
+    letter-spacing: var(--letter-spacing-looser);
 
     @each $size in $sizes {
         &.size-#{$size} {
-            font-size: var(--size__#{$size});
+            font-size: var(--size-#{$size});
         }
     }
 
     @each $family in $families {
         &.family-#{$family} {
-            font-family: var(--family__#{$family});
+            font-family: var(--family-#{$family});
         }
     }
 
     @each $weight in $weights {
         &.weight-#{$weight} {
-            font-weight: var(--weight__#{$weight});
+            font-weight: var(--weight-#{$weight});
         }
     }
 }
