@@ -34,7 +34,7 @@
 }
 
 .this {
-    width: var(--size__16);
+    width: var(--size-16);
     overflow: hidden;
     animation: fade-in;
     animation-duration: 0.5s;
@@ -42,15 +42,15 @@
     animation-timing-function: ease-in;
 
     .a {
-        fill: var(--color-tertiary__dark);
+        fill: var(--color-tertiary-dark);
     }
 
     .b {
-        fill: var(--color-primary__dark);
+        fill: var(--color-primary-dark);
     }
 
     .c {
-        fill: var(--color-secondary__dark);
+        fill: var(--color-secondary-dark);
     }
 
     &.animation-slide {

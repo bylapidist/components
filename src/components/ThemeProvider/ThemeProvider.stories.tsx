@@ -24,7 +24,7 @@ const defaultArgs: BaseProps & ThemeProviderProps = {
 const DefaultTemplate: StoryFn<BaseProps & ThemeProviderProps> = (args) => (
     <ThemeProvider
         style={{
-            backgroundColor: 'var(--color-grey__lightest)'
+            backgroundColor: 'var(--color-neutral-lightest)'
         }}
         {...args}
     >

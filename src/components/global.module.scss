@@ -19,9 +19,9 @@ time, mark, audio, video {
     font: inherit;
     font-size: 100%;
     vertical-align: baseline;
-    transition: border var(--transition__ease-in-fast),
-    background-color var(--transition__ease-in-fast),
-    text-decoration-color var(--transition__ease-in-fast);
+    transition: border var(--transition-ease-in-fast),
+    background-color var(--transition-ease-in-fast),
+    text-decoration-color var(--transition-ease-in-fast);
 }
 
 html {
@@ -90,12 +90,12 @@ a,
 button,
 input {
     text-decoration: none;
-    outline-offset: var(--border-width__thinner);
-    outline: transparent solid var(--border-width__thinner);
+    outline-offset: var(--border-width-thinner);
+    outline: transparent solid var(--border-width-thinner);
 }
 
 a:focus,
 button:focus,
 input:focus {
-    outline: var(--color-secondary__dark) solid var(--border-width__thinner);
+    outline: var(--color-secondary-dark) solid var(--border-width-thinner);
 }

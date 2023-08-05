@@ -1,12 +1,10 @@
 import React from 'react';
 import cx from 'classnames';
-import { Themes } from '@lapidist/styles';
-import '@lapidist/styles/dist/css/light.css';
-import '@lapidist/styles/dist/css/dark.css';
+import '@lapidist/styles/dist/index.css';
 import type { BaseProps } from '../types';
 
 export interface ThemeProviderProps {
-    readonly theme?: Themes;
+    readonly theme?: 'light' | 'dark';
 }
 
 const ThemeProvider = ({
@@ -17,7 +15,7 @@ const ThemeProvider = ({
     ...restProps
 }: BaseProps & ThemeProviderProps) => (
     <Component
-        className={cx(`theme--${theme}`, className)}
+        className={cx(`theme-${theme}`, className)}
         data-testid={testId}
         {...restProps}
     />

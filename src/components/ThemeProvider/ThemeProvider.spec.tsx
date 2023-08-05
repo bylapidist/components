@@ -1,12 +1,11 @@
 import React from 'react';
 import { describe, expect, test } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import { Themes } from '@lapidist/styles';
 import ThemeProvider from './index';
 
 const setup = (Component: React.ReactElement) => render(Component);
 
-const themes: Themes[] = ['light', 'dark'];
+const themes: ('light' | 'dark')[] = ['light', 'dark'];
 
 describe('ThemeProvider', () => {
     test('it works with defaults', () => {
