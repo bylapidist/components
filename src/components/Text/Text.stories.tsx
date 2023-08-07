@@ -15,7 +15,7 @@ const defaultArgs: BaseProps & TextProps = {
     testId: 'Text',
     size: 'medium',
     weight: 'regular',
-    family: 'sans'
+    family: 'body'
 };
 
 const DefaultTemplate: StoryFn<BaseProps & TextProps> = (args) => (
@@ -70,12 +70,19 @@ BoldWeight.args = {
     weight: 'bold'
 };
 
-export const SansFamily: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind(
+export const BodyFamily: StoryObj<BaseProps & TextProps> = DefaultTemplate.bind(
     {}
 );
-SansFamily.args = {
+BodyFamily.args = {
     ...defaultArgs,
-    family: 'sans'
+    family: 'body'
+};
+
+export const HeadingFamily: StoryObj<BaseProps & TextProps> =
+    DefaultTemplate.bind({});
+HeadingFamily.args = {
+    ...defaultArgs,
+    family: 'heading'
 };
 
 export const SerifFamily: StoryObj<BaseProps & TextProps> =

@@ -2,7 +2,7 @@
 
 exports[`Tag > it works with level 1`] = `
 <span
-  class="_this_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2dd11e _level-primary_2dd11e"
+  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_2dd11e _level-primary_2dd11e"
   data-testid="Tag"
 >
   <div
@@ -16,7 +16,7 @@ exports[`Tag > it works with level 1`] = `
 
 exports[`Tag > it works with level 2`] = `
 <span
-  class="_this_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2dd11e _level-secondary_2dd11e"
+  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_2dd11e _level-secondary_2dd11e"
   data-testid="Tag"
 >
   <div
@@ -30,7 +30,7 @@ exports[`Tag > it works with level 2`] = `
 
 exports[`Tag > it works with level 3`] = `
 <span
-  class="_this_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2dd11e _level-tertiary_2dd11e"
+  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_2dd11e _level-tertiary_2dd11e"
   data-testid="Tag"
 >
   <div
@@ -44,7 +44,7 @@ exports[`Tag > it works with level 3`] = `
 
 exports[`Tag > it works with level 4`] = `
 <span
-  class="_this_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_2dd11e _level-danger_2dd11e"
+  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_2dd11e _level-danger_2dd11e"
   data-testid="Tag"
 >
   <div

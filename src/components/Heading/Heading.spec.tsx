@@ -11,7 +11,7 @@ const setup = (Component: React.ReactElement) => render(Component);
 afterEach(cleanup);
 
 const sizes: SizeType[] = ['large', 'medium', 'small'];
-const families: TextFamilyType[] = ['sans', 'serif', 'mono'];
+const families: TextFamilyType[] = ['body', 'heading', 'serif', 'mono'];
 const weights: TextWeightType[] = ['regular', 'medium', 'bold'];
 
 describe('Heading', () => {

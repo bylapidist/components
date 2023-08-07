@@ -25,7 +25,7 @@ const Heading = ({
     testId = 'Heading',
     size = 'large',
     weight = 'medium',
-    family = 'sans',
+    family = 'heading',
     ...restProps
 }: BaseProps & HeadingProps) => (
     <Text

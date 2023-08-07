@@ -2,7 +2,7 @@
 
 exports[`Toggle > it works disabled 1`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479 _disabled_dc1479"
+  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479 _disabled_dc1479"
   data-testid="Toggle"
   for=":rg:"
 >
@@ -43,7 +43,7 @@ exports[`Toggle > it works disabled 1`] = `
 
 exports[`Toggle > it works with defaults 1`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
   data-testid="Toggle"
   for=":r0:"
 >
@@ -83,7 +83,7 @@ exports[`Toggle > it works with defaults 1`] = `
 
 exports[`Toggle > it works with levels 1`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
   data-testid="Toggle"
   for=":r8:"
 >
@@ -123,7 +123,7 @@ exports[`Toggle > it works with levels 1`] = `
 
 exports[`Toggle > it works with levels 2`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
   data-testid="Toggle"
   for=":ra:"
 >
@@ -163,7 +163,7 @@ exports[`Toggle > it works with levels 2`] = `
 
 exports[`Toggle > it works with levels 3`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
   data-testid="Toggle"
   for=":rc:"
 >
@@ -203,7 +203,7 @@ exports[`Toggle > it works with levels 3`] = `
 
 exports[`Toggle > it works with levels 4`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
   data-testid="Toggle"
   for=":re:"
 >
@@ -243,7 +243,7 @@ exports[`Toggle > it works with levels 4`] = `
 
 exports[`Toggle > it works with sizes 1`] = `
 <label
-  class="_this_b26e6e _size-small_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
   data-testid="Toggle"
   for=":r2:"
 >
@@ -283,7 +283,7 @@ exports[`Toggle > it works with sizes 1`] = `
 
 exports[`Toggle > it works with sizes 2`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
   data-testid="Toggle"
   for=":r4:"
 >
@@ -323,7 +323,7 @@ exports[`Toggle > it works with sizes 2`] = `
 
 exports[`Toggle > it works with sizes 3`] = `
 <label
-  class="_this_b26e6e _size-large_b26e6e _family-sans_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
   data-testid="Toggle"
   for=":r6:"
 >
