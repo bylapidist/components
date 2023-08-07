@@ -3,7 +3,7 @@ import cx from 'classnames';
 import type { BaseProps, SizeType } from '../types';
 import styles from './Text.module.scss';
 
-export type TextFamilyType = 'sans' | 'serif' | 'mono';
+export type TextFamilyType = 'body' | 'heading' | 'serif' | 'mono';
 
 export type TextWeightType = 'regular' | 'medium' | 'bold';
 
@@ -18,7 +18,7 @@ const Text = ({
     as: Component = 'div',
     testId = 'Text',
     size = 'medium',
-    family = 'sans',
+    family = 'body',
     weight = 'regular',
     ...restProps
 }: BaseProps & TextProps) => (

@@ -14,7 +14,7 @@ const defaultArgs: BaseProps & HeadingProps = {
     as: 'h1',
     testId: 'Heading',
     size: 'large',
-    family: 'sans',
+    family: 'heading',
     weight: 'regular'
 };
 
@@ -62,11 +62,18 @@ BoldWeight.args = {
     weight: 'bold'
 };
 
-export const SansFamily: StoryObj<BaseProps & HeadingProps> =
+export const BodyFamily: StoryObj<BaseProps & HeadingProps> =
     DefaultTemplate.bind({});
-SansFamily.args = {
+BodyFamily.args = {
     ...defaultArgs,
-    family: 'sans'
+    family: 'body'
+};
+
+export const HeadingFamily: StoryObj<BaseProps & HeadingProps> =
+    DefaultTemplate.bind({});
+HeadingFamily.args = {
+    ...defaultArgs,
+    family: 'heading'
 };
 
 export const SerifFamily: StoryObj<BaseProps & HeadingProps> =
