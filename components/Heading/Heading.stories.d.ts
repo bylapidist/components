@@ -9,6 +9,7 @@ export declare const SmallSize: StoryObj<BaseProps & HeadingProps>;
 export declare const RegularWeight: StoryObj<BaseProps & HeadingProps>;
 export declare const MediumWeight: StoryObj<BaseProps & HeadingProps>;
 export declare const BoldWeight: StoryObj<BaseProps & HeadingProps>;
-export declare const SansFamily: StoryObj<BaseProps & HeadingProps>;
+export declare const BodyFamily: StoryObj<BaseProps & HeadingProps>;
+export declare const HeadingFamily: StoryObj<BaseProps & HeadingProps>;
 export declare const SerifFamily: StoryObj<BaseProps & HeadingProps>;
 export declare const MonoFamily: StoryObj<BaseProps & HeadingProps>;
