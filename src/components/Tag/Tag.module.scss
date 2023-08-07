@@ -1,18 +1,18 @@
 @import '../global.module';
 
 .this {
-    --text-color-primary: var(--color-neutral-lightest);
-    --text-color-secondary: var(--color-primary-darkest);
-    --text-color-tertiary: var(--color-neutral-darkest);
-    --text-color-danger: var(--color-danger-darkest);
-    --background-color-primary: var(--color-primary-darkest);
-    --background-color-secondary: var(--color-neutral-lightest);
-    --background-color-tertiary: var(--color-neutral-lightest);
-    --background-color-danger: var(--color-neutral-lightest);
-    --border-color-primary: var(--color-primary-darkest);
-    --border-color-secondary: var(--color-primary-dark);
-    --border-color-tertiary: var(--color-neutral-dark);
-    --border-color-danger: var(--color-danger-dark);
+    --text-color-primary: var(--colour-neutral-lightest);
+    --text-color-secondary: var(--colour-primary-darkest);
+    --text-color-tertiary: var(--colour-neutral-darkest);
+    --text-color-danger: var(--colour-danger-darkest);
+    --background-color-primary: var(--colour-primary-darkest);
+    --background-color-secondary: var(--colour-neutral-lightest);
+    --background-color-tertiary: var(--colour-neutral-lightest);
+    --background-color-danger: var(--colour-neutral-lightest);
+    --border-color-primary: var(--colour-primary-darkest);
+    --border-color-secondary: var(--colour-primary-dark);
+    --border-color-tertiary: var(--colour-neutral-dark);
+    --border-color-danger: var(--colour-danger-dark);
 
     display: inline-flex;
     text-align: center;

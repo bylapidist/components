@@ -1,22 +1,22 @@
 @import '../global.module';
 
 .this {
-    --text-color-primary: var(--color-neutral-lightest);
-    --text-color-secondary: var(--color-primary-darkest);
-    --text-color-tertiary: var(--color-neutral-darkest);
-    --text-color-danger: var(--color-danger-darkest);
-    --background-color-primary: var(--color-primary-darkest);
-    --background-color-secondary: var(--color-neutral-lightest);
-    --background-color-tertiary: var(--color-neutral-lightest);
-    --background-color-danger: var(--color-neutral-lightest);
-    --border-color-primary: var(--color-primary-darkest);
-    --border-color-secondary: var(--color-primary-dark);
-    --border-color-tertiary: var(--color-neutral-dark);
-    --border-color-danger: var(--color-danger-dark);
-    --border-hover-color-primary: var(--color-neutral-darkest);
-    --border-hover-color-secondary: var(--color-primary-darkest);
-    --border-hover-color-tertiary: var(--color-neutral-darkest);
-    --border-hover-color-danger: var(--color-danger-darkest);
+    --text-color-primary: var(--colour-neutral-lightest);
+    --text-color-secondary: var(--colour-primary-darkest);
+    --text-color-tertiary: var(--colour-neutral-darkest);
+    --text-color-danger: var(--colour-danger-darkest);
+    --background-color-primary: var(--colour-primary-darkest);
+    --background-color-secondary: var(--colour-neutral-lightest);
+    --background-color-tertiary: var(--colour-neutral-lightest);
+    --background-color-danger: var(--colour-neutral-lightest);
+    --border-color-primary: var(--colour-primary-darkest);
+    --border-color-secondary: var(--colour-primary-dark);
+    --border-color-tertiary: var(--colour-neutral-dark);
+    --border-color-danger: var(--colour-danger-dark);
+    --border-hover-color-primary: var(--colour-neutral-darkest);
+    --border-hover-color-secondary: var(--colour-primary-darkest);
+    --border-hover-color-tertiary: var(--colour-neutral-darkest);
+    --border-hover-color-danger: var(--colour-danger-darkest);
 
     display: inline-flex;
     transition: box-shadow var(--transition-ease-in-slow);
@@ -27,7 +27,7 @@
     }
 
     &:disabled > :not(.level-primary) {
-        background-color: var(--color-neutral-light);
+        background-color: var(--colour-neutral-light);
     }
 
     &:hover,
@@ -53,7 +53,7 @@
     border-style: solid;
     grid-gap: var(--size-2);
     border-width: var(--border-width-thinner);
-    background-color: var(--color-neutral-lightest);
+    background-color: var(--colour-neutral-lightest);
     border-radius: inherit;
 
     @each $level in $levels {

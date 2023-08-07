@@ -6,7 +6,7 @@
     --size-large: var(--font-size-700);
 
     line-height: var(--line-height-tighter);
-    color: var(--color-neutral-darkest);
+    color: var(--colour-neutral-darkest);
 
     @each $size in $sizes {
         &.size-#{$size} {
