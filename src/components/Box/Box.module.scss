@@ -1,16 +1,52 @@
+// @import '../global.module';
+
+// .this {
+//     --gutter-none: var(--size-0);
+//     --gutter-small: var(--size-1);
+//     --gutter-medium: var(--size-2);
+//     --gutter-large: var(--size-3);
+//     --elevation-none: var(--elevation-none);
+//     --elevation-small: var(--elevation-lower);
+//     --elevation-medium: var(--elevation-higher);
+//     --elevation-large: var(--elevation-highest);
+// }
+
+// @each $size in $sizes {
+//     .gutter-#{$size} {
+//         padding: var(--gutter-#{$size});
+//     }
+
+//     .gutterX-#{$size} {
+//         padding-left: var(--gutter-#{$size});
+//         padding-right: var(--gutter-#{$size});
+//     }
+
+//     .gutterY-#{$size} {
+//         padding-top: var(--gutter-#{$size});
+//         padding-bottom: var(--gutter-#{$size});
+//     }
+
+//     .elevation-#{$size} {
+//         box-shadow: var(--elevation-#{$size});
+//     }
+// }
+
+// Import global module for shared variables
 @import '../global.module';
 
-.this {
-    --gutter-none: var(--size-0);
-    --gutter-small: var(--size-1);
-    --gutter-medium: var(--size-2);
-    --gutter-large: var(--size-3);
-    --elevation-none: var(--elevation-none);
-    --elevation-small: var(--elevation-lower);
-    --elevation-medium: var(--elevation-higher);
-    --elevation-large: var(--elevation-highest);
+// Define custom CSS variables for gutter sizes and elevations
+:root {
+    --gutter-none: 0;
+    --gutter-small: 0.5rem;
+    --gutter-medium: 1rem;
+    --gutter-large: 1.5rem;
+    --elevation-none: none;
+    --elevation-small: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    --elevation-medium: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    --elevation-large: 8px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+// Generate utility classes for gutter and elevation based on predefined sizes
 @each $size in $sizes {
     .gutter-#{$size} {
         padding: var(--gutter-#{$size});

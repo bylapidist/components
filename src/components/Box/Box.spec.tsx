@@ -5,62 +5,79 @@ import { cleanup, render, screen } from '@testing-library/react';
 import { SizeType } from '../types';
 import Box from './index';
 
-const setup = (Component: React.ReactElement) => render(Component);
+// Helper function to render the component
+const renderComponent = (component: React.ReactElement) => render(component);
 
+// Clean up after each test
 afterEach(cleanup);
 
-const gutters: SizeType[] = ['none', 'small', 'medium', 'large'];
-const elevations: SizeType[] = ['none', 'small', 'medium', 'large'];
+// Define arrays for gutter and elevation sizes
+const gutterSizes: SizeType[] = ['none', 'small', 'medium', 'large'];
+const elevationSizes: SizeType[] = ['none', 'small', 'medium', 'large'];
 
-describe('Box', () => {
-    test.each(gutters)('it works with gutters', (gutter) => {
-        const { container } = setup(<Box gutter={gutter}>Hello world</Box>);
+describe('Box Component', () => {
+    // Test gutter variations
+    test.each(gutterSizes)('it works with gutter: %s', (gutter) => {
+        const { container } = renderComponent(
+            <Box gutter={gutter}>Hello world</Box>
+        );
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test.each(elevations)('it works with elevations', (elevation) => {
-        const { container } = setup(
+    // Test elevation variations
+    test.each(elevationSizes)('it works with elevation: %s', (elevation) => {
+        const { container } = renderComponent(
             <Box elevation={elevation}>Hello world</Box>
         );
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test.each(gutters)('it works with gutterXs', (gutterX) => {
-        const { container } = setup(<Box gutterX={gutterX}>Hello world</Box>);
+    // Test gutterX variations
+    test.each(gutterSizes)('it works with gutterX: %s', (gutterX) => {
+        const { container } = renderComponent(
+            <Box gutterX={gutterX}>Hello world</Box>
+        );
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test.each(gutters)('it works with gutterYs', (gutterY) => {
-        const { container } = setup(<Box gutterY={gutterY}>Hello world</Box>);
+    // Test gutterY variations
+    test.each(gutterSizes)('it works with gutterY: %s', (gutterY) => {
+        const { container } = renderComponent(
+            <Box gutterY={gutterY}>Hello world</Box>
+        );
         expect(container.firstChild).toMatchSnapshot();
     });
 
+    // Test default testId
     test('it works with default testId', () => {
-        setup(<Box gutter={gutters[0]}>Hello world</Box>);
+        renderComponent(<Box gutter={gutterSizes[0]}>Hello world</Box>);
         expect(screen.getByTestId('Box')).toBeTruthy();
     });
 
+    // Test specified testId
     test('it works with specified testId', () => {
-        setup(
-            <Box gutter={gutters[0]} testId={'TestId'}>
+        renderComponent(
+            <Box gutter={gutterSizes[0]} testId={'TestId'}>
                 Hello world
             </Box>
         );
         expect(screen.getByTestId('TestId')).toBeTruthy();
     });
 
-    test('it works with as', () => {
-        setup(
-            <Box gutter={gutters[0]} as="span">
+    // Test 'as' prop
+    test('it works with as prop', () => {
+        renderComponent(
+            <Box gutter={gutterSizes[0]} as="span">
                 Hello world
             </Box>
         );
         expect(screen.getByTestId('Box').nodeName).toBe('SPAN');
     });
 
-    test('it works with className', () => {
-        setup(
-            <Box gutter={gutters[0]} className="test">
+    // Test className prop
+    test('it works with className prop', () => {
+        renderComponent(
+            <Box gutter={gutterSizes[0]} className="test">
                 Hello world
             </Box>
         );

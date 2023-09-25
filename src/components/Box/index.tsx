@@ -11,7 +11,7 @@ export interface BoxProps {
 }
 
 const Box = ({
-    className,
+    className: customClassName,
     as: Component = 'div',
     testId = 'Box',
     elevation = 'none',
@@ -29,7 +29,7 @@ const Box = ({
                 [styles[`gutterX-${gutterX}`]]: gutterX,
                 [styles[`gutterY-${gutterY}`]]: gutterY
             },
-            className
+            customClassName // Renamed className to customClassName
         )}
         data-testid={testId}
         {...restProps}
