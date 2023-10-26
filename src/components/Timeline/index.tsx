@@ -37,13 +37,15 @@ const Timeline = ({
                 as="li"
                 key={`${item.urlTitle}-${item.title}`}
                 className={styles.item}
-                gutter={size}
+                gutterY={size}
             >
                 <Box gutterY={size}>
                     {item.from} &ndash; {item.to}
                 </Box>
                 <Box className={styles.meta} gutterY={size}>
-                    <Box>{item.title}</Box>
+                    <Text size={size} weight="medium">
+                        {item.title}
+                    </Text>
                     <Box>
                         <Link
                             className={styles.urlTitle}
