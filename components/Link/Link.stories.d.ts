@@ -6,3 +6,4 @@ export default _default;
 export declare const Small: StoryObj<BaseProps & LinkProps>;
 export declare const Medium: StoryObj<BaseProps & LinkProps>;
 export declare const Large: StoryObj<BaseProps & LinkProps>;
+export declare const WithIcon: StoryObj<BaseProps & LinkProps>;
