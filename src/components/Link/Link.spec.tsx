@@ -1,6 +1,7 @@
 import React from 'react';
-import { describe, expect, test, afterEach } from 'vitest';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { cleanup, render, screen } from '@testing-library/react';
+import { describe, expect, test, afterEach } from 'vitest';
 
 import { SizeType } from '../types';
 import Link from './index';
@@ -20,6 +21,15 @@ describe('Link', () => {
     test.each(sizes)('it works with sizes', (size) => {
         const { container } = setup(
             <Link href="#" size={size}>
+                Hello world
+            </Link>
+        );
+        expect(container.firstChild).toMatchSnapshot();
+    });
+
+    test('it works with icon', () => {
+        const { container } = setup(
+            <Link href="#" icon={faXmark}>
                 Hello world
             </Link>
         );

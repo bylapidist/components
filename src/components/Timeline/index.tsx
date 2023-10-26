@@ -1,4 +1,5 @@
 import React from 'react';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import type { BaseProps, SizeType } from '../types';
 import Box from '../Box';
 import Link from '../Link';
@@ -51,6 +52,7 @@ const Timeline = ({
                             className={styles.urlTitle}
                             href={item.url}
                             size={size}
+                            icon={faArrowUpRightFromSquare}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
