@@ -1,5 +1,4 @@
 import React from 'react';
-import cx from 'classnames';
 import type { BaseProps, SizeType } from '../types';
 import Box from '../Box';
 import Link from '../Link';
@@ -27,39 +26,38 @@ const Timeline = ({
     ...restProps
 }: BaseProps & TimelineProps) => (
     <Text
+        as="ol"
         size={size}
-        className={cx(styles.this, className)}
+        className={className}
         data-testid={testId}
         {...restProps}
     >
-        <ul>
-            {items.map((item) => (
-                <Box
-                    as="li"
-                    key={`${item.urlTitle}-${item.title}`}
-                    className={styles.item}
-                    gutter={size}
-                >
-                    <Box gutterY={size}>
-                        {item.from} &ndash; {item.to}
-                    </Box>
-                    <Box className={styles.meta} gutterY={size}>
-                        <Box>{item.title}</Box>
-                        <Box>
-                            <Link
-                                className={styles.urlTitle}
-                                href={item.url}
-                                size={size}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {item.urlTitle}
-                            </Link>
-                        </Box>
+        {items.map((item) => (
+            <Box
+                as="li"
+                key={`${item.urlTitle}-${item.title}`}
+                className={styles.item}
+                gutter={size}
+            >
+                <Box gutterY={size}>
+                    {item.from} &ndash; {item.to}
+                </Box>
+                <Box className={styles.meta} gutterY={size}>
+                    <Box>{item.title}</Box>
+                    <Box>
+                        <Link
+                            className={styles.urlTitle}
+                            href={item.url}
+                            size={size}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {item.urlTitle}
+                        </Link>
                     </Box>
                 </Box>
-            ))}
-        </ul>
+            </Box>
+        ))}
     </Text>
 );
 

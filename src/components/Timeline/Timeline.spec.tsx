@@ -48,11 +48,6 @@ describe('Timeline', () => {
         expect(screen.getByTestId('TestId')).toBeTruthy();
     });
 
-    test('it works with as', () => {
-        setup(<Timeline items={mockItems} as="span" />);
-        expect(screen.getByTestId('Timeline').nodeName).toBe('SPAN');
-    });
-
     test('it works with className', () => {
         setup(<Timeline items={mockItems} className="test" />);
         expect(
