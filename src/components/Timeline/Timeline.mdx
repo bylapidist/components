@@ -1,0 +1,44 @@
+import { Meta, ArgsTable, Story, Source, Canvas } from '@storybook/blocks';
+import * as TimelineStories from './Timeline.stories.tsx';
+
+<Meta of={TimelineStories} />
+
+# Timeline
+
+> A primitive for displaying chronological data.
+
+## Example
+
+<Source dark />
+
+## Controlling font size
+
+The `size` prop controls font size. There are three available font sizes, defined as `small`, `medium` and `large`.
+
+### Small
+
+> The `small` size sets the font size to `--font-size-200`
+
+<Canvas>
+    <Story of={TimelineStories.SmallSize} />
+</Canvas>
+
+### Medium
+
+> The `medium` size sets the font size to `--font-size-300`
+
+<Canvas>
+    <Story of={TimelineStories.MediumSize} />
+</Canvas>
+
+### Large
+
+> The `large` size sets the font size to `--font-size-400`
+
+<Canvas>
+    <Story of={TimelineStories.LargeSize} />
+</Canvas>
+
+## Props
+
+<ArgsTable />

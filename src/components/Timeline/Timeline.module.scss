@@ -1,0 +1,20 @@
+@import '../global.module';
+
+.this {}
+
+.item, .meta {
+    display: grid;
+    align-items: flex-start;
+}
+
+.item {
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (min-width: 800px) {
+        grid-template-columns: .5fr 1fr;
+    }
+}
+
+.meta {
+    grid-template-columns: 1fr;
+}
