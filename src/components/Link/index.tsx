@@ -1,18 +1,25 @@
 import React from 'react';
 import cx from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import type { BaseProps } from '../types';
+import Box from '../Box';
 import Text, { TextProps } from '../Text';
 import styles from './Link.module.scss';
 
 export interface LinkProps
     extends Omit<React.HTMLProps<HTMLAnchorElement>, 'size'>,
-        TextProps {}
+        TextProps {
+    readonly icon?: IconProp;
+}
 
 const Link = ({
     className,
     as = 'a',
     testId = 'Link',
     size = 'medium',
+    icon,
+    children,
     ...restProps
 }: BaseProps & LinkProps) => (
     <Text
@@ -21,7 +28,12 @@ const Link = ({
         data-testid={testId}
         size={size}
         {...restProps}
-    />
+    >
+        <Box as="span" data-testid={`${testId}-inner`} className={styles.inner}>
+            {icon && <FontAwesomeIcon icon={icon} />}
+            {children}
+        </Box>
+    </Text>
 );
 
 Link.displayName = 'Link';
