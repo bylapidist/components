@@ -6,7 +6,7 @@ exports[`Timeline > it works with defaults 1`] = `
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
@@ -22,8 +22,8 @@ exports[`Timeline > it works with defaults 1`] = `
       data-testid="Box"
     >
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
-        data-testid="Box"
+        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        data-testid="Text"
       >
         Senior Software Engineer
       </div>
@@ -44,7 +44,7 @@ exports[`Timeline > it works with defaults 1`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
@@ -60,8 +60,8 @@ exports[`Timeline > it works with defaults 1`] = `
       data-testid="Box"
     >
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
-        data-testid="Box"
+        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        data-testid="Text"
       >
         Frontend Software Developer
       </div>
@@ -90,7 +90,7 @@ exports[`Timeline > it works with sizes 1`] = `
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-small_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
@@ -106,8 +106,8 @@ exports[`Timeline > it works with sizes 1`] = `
       data-testid="Box"
     >
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
-        data-testid="Box"
+        class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        data-testid="Text"
       >
         Senior Software Engineer
       </div>
@@ -128,7 +128,7 @@ exports[`Timeline > it works with sizes 1`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-small_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
@@ -144,8 +144,8 @@ exports[`Timeline > it works with sizes 1`] = `
       data-testid="Box"
     >
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
-        data-testid="Box"
+        class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        data-testid="Text"
       >
         Frontend Software Developer
       </div>
@@ -174,7 +174,7 @@ exports[`Timeline > it works with sizes 2`] = `
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
@@ -190,8 +190,8 @@ exports[`Timeline > it works with sizes 2`] = `
       data-testid="Box"
     >
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
-        data-testid="Box"
+        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        data-testid="Text"
       >
         Senior Software Engineer
       </div>
@@ -212,7 +212,7 @@ exports[`Timeline > it works with sizes 2`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
@@ -228,8 +228,8 @@ exports[`Timeline > it works with sizes 2`] = `
       data-testid="Box"
     >
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
-        data-testid="Box"
+        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        data-testid="Text"
       >
         Frontend Software Developer
       </div>
@@ -258,7 +258,7 @@ exports[`Timeline > it works with sizes 3`] = `
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-large_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
@@ -274,8 +274,8 @@ exports[`Timeline > it works with sizes 3`] = `
       data-testid="Box"
     >
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
-        data-testid="Box"
+        class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        data-testid="Text"
       >
         Senior Software Engineer
       </div>
@@ -296,7 +296,7 @@ exports[`Timeline > it works with sizes 3`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-large_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
@@ -312,8 +312,8 @@ exports[`Timeline > it works with sizes 3`] = `
       data-testid="Box"
     >
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
-        data-testid="Box"
+        class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        data-testid="Text"
       >
         Frontend Software Developer
       </div>
