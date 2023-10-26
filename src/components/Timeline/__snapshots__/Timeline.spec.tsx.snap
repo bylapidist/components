@@ -38,7 +38,27 @@ exports[`Timeline > it works with defaults 1`] = `
           rel="noopener noreferrer"
           target="_blank"
         >
-          LendInvest
+          <span
+            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            data-testid="Link-inner"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-arrow-up-right-from-square "
+              data-icon="arrow-up-right-from-square"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                fill="currentColor"
+              />
+            </svg>
+            LendInvest
+          </span>
         </a>
       </div>
     </div>
@@ -76,7 +96,27 @@ exports[`Timeline > it works with defaults 1`] = `
           rel="noopener noreferrer"
           target="_blank"
         >
-          Golden Charter
+          <span
+            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            data-testid="Link-inner"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-arrow-up-right-from-square "
+              data-icon="arrow-up-right-from-square"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                fill="currentColor"
+              />
+            </svg>
+            Golden Charter
+          </span>
         </a>
       </div>
     </div>
@@ -122,7 +162,27 @@ exports[`Timeline > it works with sizes 1`] = `
           rel="noopener noreferrer"
           target="_blank"
         >
-          LendInvest
+          <span
+            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            data-testid="Link-inner"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-arrow-up-right-from-square "
+              data-icon="arrow-up-right-from-square"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                fill="currentColor"
+              />
+            </svg>
+            LendInvest
+          </span>
         </a>
       </div>
     </div>
@@ -160,7 +220,27 @@ exports[`Timeline > it works with sizes 1`] = `
           rel="noopener noreferrer"
           target="_blank"
         >
-          Golden Charter
+          <span
+            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            data-testid="Link-inner"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-arrow-up-right-from-square "
+              data-icon="arrow-up-right-from-square"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                fill="currentColor"
+              />
+            </svg>
+            Golden Charter
+          </span>
         </a>
       </div>
     </div>
@@ -206,7 +286,27 @@ exports[`Timeline > it works with sizes 2`] = `
           rel="noopener noreferrer"
           target="_blank"
         >
-          LendInvest
+          <span
+            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            data-testid="Link-inner"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-arrow-up-right-from-square "
+              data-icon="arrow-up-right-from-square"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                fill="currentColor"
+              />
+            </svg>
+            LendInvest
+          </span>
         </a>
       </div>
     </div>
@@ -244,7 +344,27 @@ exports[`Timeline > it works with sizes 2`] = `
           rel="noopener noreferrer"
           target="_blank"
         >
-          Golden Charter
+          <span
+            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            data-testid="Link-inner"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-arrow-up-right-from-square "
+              data-icon="arrow-up-right-from-square"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                fill="currentColor"
+              />
+            </svg>
+            Golden Charter
+          </span>
         </a>
       </div>
     </div>
@@ -290,7 +410,27 @@ exports[`Timeline > it works with sizes 3`] = `
           rel="noopener noreferrer"
           target="_blank"
         >
-          LendInvest
+          <span
+            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            data-testid="Link-inner"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-arrow-up-right-from-square "
+              data-icon="arrow-up-right-from-square"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                fill="currentColor"
+              />
+            </svg>
+            LendInvest
+          </span>
         </a>
       </div>
     </div>
@@ -328,7 +468,27 @@ exports[`Timeline > it works with sizes 3`] = `
           rel="noopener noreferrer"
           target="_blank"
         >
-          Golden Charter
+          <span
+            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            data-testid="Link-inner"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-arrow-up-right-from-square "
+              data-icon="arrow-up-right-from-square"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                fill="currentColor"
+              />
+            </svg>
+            Golden Charter
+          </span>
         </a>
       </div>
     </div>
