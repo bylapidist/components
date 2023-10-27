@@ -27,7 +27,7 @@ exports[`Link > it works with icon 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="svg-inline--fa fa-xmark "
+      class="svg-inline--fa fa-xmark _icon_a14c64"
       data-icon="xmark"
       data-prefix="fas"
       focusable="false"
