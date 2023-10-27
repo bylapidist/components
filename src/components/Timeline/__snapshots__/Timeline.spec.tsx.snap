@@ -44,7 +44,7 @@ exports[`Timeline > it works with defaults 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square "
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -102,7 +102,7 @@ exports[`Timeline > it works with defaults 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square "
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -168,7 +168,7 @@ exports[`Timeline > it works with sizes 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square "
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -226,7 +226,7 @@ exports[`Timeline > it works with sizes 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square "
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -292,7 +292,7 @@ exports[`Timeline > it works with sizes 2`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square "
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -350,7 +350,7 @@ exports[`Timeline > it works with sizes 2`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square "
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -416,7 +416,7 @@ exports[`Timeline > it works with sizes 3`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square "
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -474,7 +474,7 @@ exports[`Timeline > it works with sizes 3`] = `
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square "
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"

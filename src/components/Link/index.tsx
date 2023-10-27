@@ -30,7 +30,7 @@ const Link = ({
         {...restProps}
     >
         <Box as="span" data-testid={`${testId}-inner`} className={styles.inner}>
-            {icon && <FontAwesomeIcon icon={icon} />}
+            {icon && <FontAwesomeIcon className={styles.icon} icon={icon} />}
             {children}
         </Box>
     </Text>
