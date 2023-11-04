@@ -10,7 +10,7 @@
     background-color: var(--colour-core-lightest);
     flex-direction: column;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (width >= 480px) {
         flex-direction: row;
     }
 }
