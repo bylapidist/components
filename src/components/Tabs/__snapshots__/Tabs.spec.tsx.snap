@@ -1,0 +1,229 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tabs > it works with defaults 1`] = `
+<div
+  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_40c7a2"
+  data-testid="Tabs"
+>
+  <ul
+    class="_this_d62db4 _elevation-large_d62db4 _roundness-small_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_40c7a2"
+    data-testid="Tabs-list"
+  >
+    <li
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      data-testid="Tabs-item"
+    >
+      <a
+        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        data-testid="Tabs-link"
+        href="#tab1"
+      >
+        <span
+          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          data-testid="Link-inner"
+        >
+          <div
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            data-testid="Box"
+          >
+            Tab1
+          </div>
+        </span>
+      </a>
+    </li>
+    <li
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      data-testid="Tabs-item"
+    >
+      <a
+        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        data-testid="Tabs-link"
+        href="#tab2"
+      >
+        <span
+          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          data-testid="Link-inner"
+        >
+          <div
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            data-testid="Box"
+          >
+            Tab2
+          </div>
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Tabs > it works with sizes 1`] = `
+<div
+  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_40c7a2"
+  data-testid="Tabs"
+>
+  <ul
+    class="_this_d62db4 _elevation-large_d62db4 _roundness-small_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_40c7a2"
+    data-testid="Tabs-list"
+  >
+    <li
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      data-testid="Tabs-item"
+    >
+      <a
+        class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        data-testid="Tabs-link"
+        href="#tab1"
+      >
+        <span
+          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          data-testid="Link-inner"
+        >
+          <div
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            data-testid="Box"
+          >
+            Tab1
+          </div>
+        </span>
+      </a>
+    </li>
+    <li
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      data-testid="Tabs-item"
+    >
+      <a
+        class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        data-testid="Tabs-link"
+        href="#tab2"
+      >
+        <span
+          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          data-testid="Link-inner"
+        >
+          <div
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            data-testid="Box"
+          >
+            Tab2
+          </div>
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Tabs > it works with sizes 2`] = `
+<div
+  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_40c7a2"
+  data-testid="Tabs"
+>
+  <ul
+    class="_this_d62db4 _elevation-large_d62db4 _roundness-small_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_40c7a2"
+    data-testid="Tabs-list"
+  >
+    <li
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      data-testid="Tabs-item"
+    >
+      <a
+        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        data-testid="Tabs-link"
+        href="#tab1"
+      >
+        <span
+          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          data-testid="Link-inner"
+        >
+          <div
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            data-testid="Box"
+          >
+            Tab1
+          </div>
+        </span>
+      </a>
+    </li>
+    <li
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      data-testid="Tabs-item"
+    >
+      <a
+        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        data-testid="Tabs-link"
+        href="#tab2"
+      >
+        <span
+          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          data-testid="Link-inner"
+        >
+          <div
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            data-testid="Box"
+          >
+            Tab2
+          </div>
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Tabs > it works with sizes 3`] = `
+<div
+  class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_40c7a2"
+  data-testid="Tabs"
+>
+  <ul
+    class="_this_d62db4 _elevation-large_d62db4 _roundness-small_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_40c7a2"
+    data-testid="Tabs-list"
+  >
+    <li
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      data-testid="Tabs-item"
+    >
+      <a
+        class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        data-testid="Tabs-link"
+        href="#tab1"
+      >
+        <span
+          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          data-testid="Link-inner"
+        >
+          <div
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            data-testid="Box"
+          >
+            Tab1
+          </div>
+        </span>
+      </a>
+    </li>
+    <li
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      data-testid="Tabs-item"
+    >
+      <a
+        class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        data-testid="Tabs-link"
+        href="#tab2"
+      >
+        <span
+          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          data-testid="Link-inner"
+        >
+          <div
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            data-testid="Box"
+          >
+            Tab2
+          </div>
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+`;

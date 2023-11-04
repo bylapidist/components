@@ -7,7 +7,7 @@ exports[`Toggle > it works disabled 1`] = `
   for=":rg:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
     data-testid="Toggle-inner"
   >
     <input
@@ -48,7 +48,7 @@ exports[`Toggle > it works with defaults 1`] = `
   for=":r0:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
     data-testid="Toggle-inner"
   >
     <input
@@ -88,7 +88,7 @@ exports[`Toggle > it works with levels 1`] = `
   for=":r8:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
     data-testid="Toggle-inner"
   >
     <input
@@ -128,7 +128,7 @@ exports[`Toggle > it works with levels 2`] = `
   for=":ra:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-secondary_dc1479"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-secondary_dc1479"
     data-testid="Toggle-inner"
   >
     <input
@@ -168,7 +168,7 @@ exports[`Toggle > it works with levels 3`] = `
   for=":rc:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-tertiary_dc1479"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-tertiary_dc1479"
     data-testid="Toggle-inner"
   >
     <input
@@ -208,7 +208,7 @@ exports[`Toggle > it works with levels 4`] = `
   for=":re:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-danger_dc1479"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-danger_dc1479"
     data-testid="Toggle-inner"
   >
     <input
@@ -248,7 +248,7 @@ exports[`Toggle > it works with sizes 1`] = `
   for=":r2:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-small_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-small_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
     data-testid="Toggle-inner"
   >
     <input
@@ -288,7 +288,7 @@ exports[`Toggle > it works with sizes 2`] = `
   for=":r4:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
     data-testid="Toggle-inner"
   >
     <input
@@ -328,7 +328,7 @@ exports[`Toggle > it works with sizes 3`] = `
   for=":r6:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-large_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-large_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
     data-testid="Toggle-inner"
   >
     <input

@@ -6,11 +6,11 @@ exports[`Timeline > it works with defaults 1`] = `
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
       data-testid="Box"
     >
       Apr 2021
@@ -18,7 +18,7 @@ exports[`Timeline > it works with defaults 1`] = `
       Present
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
       data-testid="Box"
     >
       <div
@@ -28,7 +28,7 @@ exports[`Timeline > it works with defaults 1`] = `
         Senior Software Engineer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
         data-testid="Box"
       >
         <a
@@ -39,7 +39,7 @@ exports[`Timeline > it works with defaults 1`] = `
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
             data-testid="Link-inner"
           >
             <svg
@@ -64,11 +64,11 @@ exports[`Timeline > it works with defaults 1`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
       data-testid="Box"
     >
       Feb 2020
@@ -76,7 +76,7 @@ exports[`Timeline > it works with defaults 1`] = `
       Apr 2021
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
       data-testid="Box"
     >
       <div
@@ -86,7 +86,7 @@ exports[`Timeline > it works with defaults 1`] = `
         Frontend Software Developer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
         data-testid="Box"
       >
         <a
@@ -97,7 +97,7 @@ exports[`Timeline > it works with defaults 1`] = `
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
             data-testid="Link-inner"
           >
             <svg
@@ -130,11 +130,11 @@ exports[`Timeline > it works with sizes 1`] = `
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4"
       data-testid="Box"
     >
       Apr 2021
@@ -142,7 +142,7 @@ exports[`Timeline > it works with sizes 1`] = `
       Present
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _meta_254c0f"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _meta_254c0f"
       data-testid="Box"
     >
       <div
@@ -152,7 +152,7 @@ exports[`Timeline > it works with sizes 1`] = `
         Senior Software Engineer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
         data-testid="Box"
       >
         <a
@@ -163,7 +163,7 @@ exports[`Timeline > it works with sizes 1`] = `
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
             data-testid="Link-inner"
           >
             <svg
@@ -188,11 +188,11 @@ exports[`Timeline > it works with sizes 1`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4"
       data-testid="Box"
     >
       Feb 2020
@@ -200,7 +200,7 @@ exports[`Timeline > it works with sizes 1`] = `
       Apr 2021
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _meta_254c0f"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _meta_254c0f"
       data-testid="Box"
     >
       <div
@@ -210,7 +210,7 @@ exports[`Timeline > it works with sizes 1`] = `
         Frontend Software Developer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
         data-testid="Box"
       >
         <a
@@ -221,7 +221,7 @@ exports[`Timeline > it works with sizes 1`] = `
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
             data-testid="Link-inner"
           >
             <svg
@@ -254,11 +254,11 @@ exports[`Timeline > it works with sizes 2`] = `
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
       data-testid="Box"
     >
       Apr 2021
@@ -266,7 +266,7 @@ exports[`Timeline > it works with sizes 2`] = `
       Present
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
       data-testid="Box"
     >
       <div
@@ -276,7 +276,7 @@ exports[`Timeline > it works with sizes 2`] = `
         Senior Software Engineer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
         data-testid="Box"
       >
         <a
@@ -287,7 +287,7 @@ exports[`Timeline > it works with sizes 2`] = `
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
             data-testid="Link-inner"
           >
             <svg
@@ -312,11 +312,11 @@ exports[`Timeline > it works with sizes 2`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
       data-testid="Box"
     >
       Feb 2020
@@ -324,7 +324,7 @@ exports[`Timeline > it works with sizes 2`] = `
       Apr 2021
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
       data-testid="Box"
     >
       <div
@@ -334,7 +334,7 @@ exports[`Timeline > it works with sizes 2`] = `
         Frontend Software Developer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
         data-testid="Box"
       >
         <a
@@ -345,7 +345,7 @@ exports[`Timeline > it works with sizes 2`] = `
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
             data-testid="Link-inner"
           >
             <svg
@@ -378,11 +378,11 @@ exports[`Timeline > it works with sizes 3`] = `
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4"
       data-testid="Box"
     >
       Apr 2021
@@ -390,7 +390,7 @@ exports[`Timeline > it works with sizes 3`] = `
       Present
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _meta_254c0f"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _meta_254c0f"
       data-testid="Box"
     >
       <div
@@ -400,7 +400,7 @@ exports[`Timeline > it works with sizes 3`] = `
         Senior Software Engineer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
         data-testid="Box"
       >
         <a
@@ -411,7 +411,7 @@ exports[`Timeline > it works with sizes 3`] = `
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
             data-testid="Link-inner"
           >
             <svg
@@ -436,11 +436,11 @@ exports[`Timeline > it works with sizes 3`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _item_254c0f"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _item_254c0f"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4"
       data-testid="Box"
     >
       Feb 2020
@@ -448,7 +448,7 @@ exports[`Timeline > it works with sizes 3`] = `
       Apr 2021
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _meta_254c0f"
+      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _meta_254c0f"
       data-testid="Box"
     >
       <div
@@ -458,7 +458,7 @@ exports[`Timeline > it works with sizes 3`] = `
         Frontend Software Developer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
         data-testid="Box"
       >
         <a
@@ -469,7 +469,7 @@ exports[`Timeline > it works with sizes 3`] = `
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
             data-testid="Link-inner"
           >
             <svg

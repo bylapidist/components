@@ -13,7 +13,7 @@ export default {
 const defaultArgs: BaseProps & LinkProps = {
     as: 'a',
     testId: 'Link',
-    href: 'javascript:void(0)'
+    href: 'javascript:void'
 };
 
 const DefaultTemplate: StoryFn<BaseProps & LinkProps> = (args) => (

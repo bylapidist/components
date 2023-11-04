@@ -17,7 +17,8 @@ const defaultArgs: BaseProps & BoxProps = {
     gutter: undefined,
     gutterX: undefined,
     gutterY: undefined,
-    elevation: undefined
+    elevation: undefined,
+    roundness: undefined
 };
 
 const DefaultTemplate: StoryFn<BaseProps & BoxProps> = (args) => (
@@ -94,4 +95,40 @@ LargeElevation.args = {
     ...defaultArgs,
     elevation: 'large',
     gutter: 'medium'
+};
+
+export const NoRoundness: StoryObj<BaseProps & BoxProps> = DefaultTemplate.bind(
+    {}
+);
+NoRoundness.args = {
+    ...defaultArgs,
+    gutter: 'medium',
+    elevation: 'medium',
+    roundness: 'none'
+};
+
+export const SmallRoundness: StoryObj<BaseProps & BoxProps> =
+    DefaultTemplate.bind({});
+SmallRoundness.args = {
+    ...defaultArgs,
+    gutter: 'medium',
+    elevation: 'medium',
+    roundness: 'small'
+};
+
+export const MediumRoundness: StoryObj<BaseProps & BoxProps> =
+    DefaultTemplate.bind({});
+MediumRoundness.args = {
+    ...defaultArgs,
+    gutter: 'medium',
+    elevation: 'medium',
+    roundness: 'medium'
+};
+export const LargeRoundness: StoryObj<BaseProps & BoxProps> =
+    DefaultTemplate.bind({});
+LargeRoundness.args = {
+    ...defaultArgs,
+    gutter: 'medium',
+    elevation: 'medium',
+    roundness: 'large'
 };

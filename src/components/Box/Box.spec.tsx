@@ -9,40 +9,46 @@ const setup = (Component: React.ReactElement) => render(Component);
 
 afterEach(cleanup);
 
-const gutters: SizeType[] = ['none', 'small', 'medium', 'large'];
-const elevations: SizeType[] = ['none', 'small', 'medium', 'large'];
+const sizes: SizeType[] = ['none', 'small', 'medium', 'large'];
 
 describe('Box', () => {
-    test.each(gutters)('it works with gutters', (gutter) => {
+    test.each(sizes)('it works with gutters', (gutter) => {
         const { container } = setup(<Box gutter={gutter}>Hello world</Box>);
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test.each(elevations)('it works with elevations', (elevation) => {
+    test.each(sizes)('it works with elevations', (elevation) => {
         const { container } = setup(
             <Box elevation={elevation}>Hello world</Box>
         );
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test.each(gutters)('it works with gutterXs', (gutterX) => {
+    test.each(sizes)('it works with roundness', (roundness) => {
+        const { container } = setup(
+            <Box roundness={roundness}>Hello world</Box>
+        );
+        expect(container.firstChild).toMatchSnapshot();
+    });
+
+    test.each(sizes)('it works with gutterXs', (gutterX) => {
         const { container } = setup(<Box gutterX={gutterX}>Hello world</Box>);
         expect(container.firstChild).toMatchSnapshot();
     });
 
-    test.each(gutters)('it works with gutterYs', (gutterY) => {
+    test.each(sizes)('it works with gutterYs', (gutterY) => {
         const { container } = setup(<Box gutterY={gutterY}>Hello world</Box>);
         expect(container.firstChild).toMatchSnapshot();
     });
 
     test('it works with default testId', () => {
-        setup(<Box gutter={gutters[0]}>Hello world</Box>);
+        setup(<Box gutter={sizes[0]}>Hello world</Box>);
         expect(screen.getByTestId('Box')).toBeTruthy();
     });
 
     test('it works with specified testId', () => {
         setup(
-            <Box gutter={gutters[0]} testId={'TestId'}>
+            <Box gutter={sizes[0]} testId={'TestId'}>
                 Hello world
             </Box>
         );
@@ -51,7 +57,7 @@ describe('Box', () => {
 
     test('it works with as', () => {
         setup(
-            <Box gutter={gutters[0]} as="span">
+            <Box gutter={sizes[0]} as="span">
                 Hello world
             </Box>
         );
@@ -60,7 +66,7 @@ describe('Box', () => {
 
     test('it works with className', () => {
         setup(
-            <Box gutter={gutters[0]} className="test">
+            <Box gutter={sizes[0]} className="test">
                 Hello world
             </Box>
         );

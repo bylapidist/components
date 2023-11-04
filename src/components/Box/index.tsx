@@ -8,6 +8,7 @@ export interface BoxProps {
     readonly gutter?: SizeType;
     readonly gutterX?: SizeType;
     readonly gutterY?: SizeType;
+    readonly roundness?: SizeType;
 }
 
 const Box = ({
@@ -18,12 +19,14 @@ const Box = ({
     gutter = 'none',
     gutterX = 'none',
     gutterY = 'none',
+    roundness = 'none',
     ...restProps
 }: BaseProps & BoxProps) => (
     <Component
         className={cx(
             styles.this,
             styles[`elevation-${elevation}`],
+            styles[`roundness-${roundness}`],
             styles[`gutter-${gutter}`],
             {
                 [styles[`gutterX-${gutterX}`]]: gutterX,
