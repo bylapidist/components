@@ -11,3 +11,7 @@ export declare const NoElevation: StoryObj<BaseProps & BoxProps>;
 export declare const SmallElevation: StoryObj<BaseProps & BoxProps>;
 export declare const MediumElevation: StoryObj<BaseProps & BoxProps>;
 export declare const LargeElevation: StoryObj<BaseProps & BoxProps>;
+export declare const NoRoundness: StoryObj<BaseProps & BoxProps>;
+export declare const SmallRoundness: StoryObj<BaseProps & BoxProps>;
+export declare const MediumRoundness: StoryObj<BaseProps & BoxProps>;
+export declare const LargeRoundness: StoryObj<BaseProps & BoxProps>;
