@@ -6,22 +6,20 @@
 
 .inner {
     display: flex;
-    flex-direction: row;
     grid-gap: var(--gutter-small);
     background-color: var(--colour-core-lightest);
+    flex-direction: column;
+
+    @media screen and (min-width: 480px) {
+        flex-direction: row;
+    }
+}
+
+.link {
+    width: 100%;
 }
 
 .active {
     background-color: var(--colour-neutral-lightest);
     box-shadow: var(--elevation-lowest);
 }
-
-.link {
-    border: transparent solid var(--border-width-thinner);
-    border-radius: var(--border-radius-squarer);
-}
-
-.link:focus {
-    border: var(--colour-secondary-dark) solid var(--border-width-thinner);
-}
-
