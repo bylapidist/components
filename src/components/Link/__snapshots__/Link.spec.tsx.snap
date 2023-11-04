@@ -7,7 +7,7 @@ exports[`Link > it works with defaults 1`] = `
   href="#"
 >
   <span
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
     data-testid="Link-inner"
   >
     Hello world
@@ -22,7 +22,7 @@ exports[`Link > it works with icon 1`] = `
   href="#"
 >
   <span
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
     data-testid="Link-inner"
   >
     <svg
@@ -52,7 +52,7 @@ exports[`Link > it works with sizes 1`] = `
   href="#"
 >
   <span
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
     data-testid="Link-inner"
   >
     Hello world
@@ -67,7 +67,7 @@ exports[`Link > it works with sizes 2`] = `
   href="#"
 >
   <span
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
     data-testid="Link-inner"
   >
     Hello world
@@ -82,7 +82,7 @@ exports[`Link > it works with sizes 3`] = `
   href="#"
 >
   <span
-    class="_this_d62db4 _elevation-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
     data-testid="Link-inner"
   >
     Hello world

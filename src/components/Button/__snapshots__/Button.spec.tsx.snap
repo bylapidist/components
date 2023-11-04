@@ -6,7 +6,7 @@ exports[`Button > it works block 1`] = `
   data-testid="Button"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
     data-testid="Button-inner"
   >
     Hello world
@@ -21,7 +21,7 @@ exports[`Button > it works disabled 1`] = `
   disabled=""
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
     data-testid="Button-inner"
   >
     Hello world
@@ -35,7 +35,7 @@ exports[`Button > it works with defaults 1`] = `
   data-testid="Button"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
     data-testid="Button-inner"
   >
     Hello world
@@ -49,7 +49,7 @@ exports[`Button > it works with icon 1`] = `
   data-testid="Button"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
     data-testid="Button-inner"
   >
     <svg
@@ -78,7 +78,7 @@ exports[`Button > it works with levels 1`] = `
   data-testid="Button"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
     data-testid="Button-inner"
   >
     Hello world
@@ -92,7 +92,7 @@ exports[`Button > it works with levels 2`] = `
   data-testid="Button"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-secondary_f8f296"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-secondary_f8f296"
     data-testid="Button-inner"
   >
     Hello world
@@ -106,7 +106,7 @@ exports[`Button > it works with levels 3`] = `
   data-testid="Button"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-tertiary_f8f296"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-tertiary_f8f296"
     data-testid="Button-inner"
   >
     Hello world
@@ -120,7 +120,7 @@ exports[`Button > it works with levels 4`] = `
   data-testid="Button"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-danger_f8f296"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-danger_f8f296"
     data-testid="Button-inner"
   >
     Hello world
@@ -134,7 +134,7 @@ exports[`Button > it works with sizes 1`] = `
   data-testid="Button"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-small_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-small_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
     data-testid="Button-inner"
   >
     Hello world
@@ -148,7 +148,7 @@ exports[`Button > it works with sizes 2`] = `
   data-testid="Button"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
     data-testid="Button-inner"
   >
     Hello world
@@ -162,7 +162,7 @@ exports[`Button > it works with sizes 3`] = `
   data-testid="Button"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _gutter-large_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
+    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-large_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_f8f296 _level-primary_f8f296"
     data-testid="Button-inner"
   >
     Hello world

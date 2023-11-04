@@ -6,7 +6,7 @@ exports[`Tag > it works with level 1`] = `
   data-testid="Tag"
 >
   <div
-    class="_this_d62db4 _elevation-small_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    class="_this_d62db4 _elevation-small_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
     data-testid="Box"
   >
     Hello world
@@ -20,7 +20,7 @@ exports[`Tag > it works with level 2`] = `
   data-testid="Tag"
 >
   <div
-    class="_this_d62db4 _elevation-small_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    class="_this_d62db4 _elevation-small_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
     data-testid="Box"
   >
     Hello world
@@ -34,7 +34,7 @@ exports[`Tag > it works with level 3`] = `
   data-testid="Tag"
 >
   <div
-    class="_this_d62db4 _elevation-small_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    class="_this_d62db4 _elevation-small_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
     data-testid="Box"
   >
     Hello world
@@ -48,7 +48,7 @@ exports[`Tag > it works with level 4`] = `
   data-testid="Tag"
 >
   <div
-    class="_this_d62db4 _elevation-small_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    class="_this_d62db4 _elevation-small_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
     data-testid="Box"
   >
     Hello world

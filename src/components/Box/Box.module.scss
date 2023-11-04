@@ -9,6 +9,12 @@
     --elevation-small: var(--elevation-lower);
     --elevation-medium: var(--elevation-higher);
     --elevation-large: var(--elevation-highest);
+    --roundness-none: var(--border-radius-none);
+    --roundness-small: var(--border-radius-squarer);
+    --roundness-medium: var(--border-radius-rounder);
+    --roundness-large: var(--border-radius-roundest);
+
+    overflow: hidden;
 }
 
 @each $size in $sizes {
@@ -28,5 +34,9 @@
 
     .elevation-#{$size} {
         box-shadow: var(--elevation-#{$size});
+    }
+
+    .roundness-#{$size} {
+        border-radius: var(--roundness-#{$size});
     }
 }
