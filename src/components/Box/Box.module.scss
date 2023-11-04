@@ -13,8 +13,6 @@
     --roundness-small: var(--border-radius-squarer);
     --roundness-medium: var(--border-radius-rounder);
     --roundness-large: var(--border-radius-roundest);
-
-    overflow: hidden;
 }
 
 @each $size in $sizes {
