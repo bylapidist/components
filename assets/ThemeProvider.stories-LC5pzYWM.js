@@ -39,4 +39,3 @@ import{j as e}from"./jsx-runtime-vNq4Oc-g.js";import{T as c}from"./index-DaVMXFM
             </Box>
         </Box>
     </ThemeProvider>`,...(n=(l=r.parameters)==null?void 0:l.docs)==null?void 0:n.source}}};const b=["Light","Dark"],P=Object.freeze(Object.defineProperty({__proto__:null,Dark:r,Light:t,__namedExportsOrder:b,default:h},Symbol.toStringTag,{value:"Module"}));export{r as D,t as L,P as T};
-//# sourceMappingURL=ThemeProvider.stories-LC5pzYWM.js.map

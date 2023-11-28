@@ -71,4 +71,3 @@ import{j as x}from"./jsx-runtime-vNq4Oc-g.js";import{T as $}from"./index-VJLTAas
             faucibus orci luctus et ultrices posuere cubilia curae.
         </Text>
     </Box>`,...(W=(U=d.parameters)==null?void 0:U.docs)==null?void 0:W.source}}};const se=["NoGutter","SmallGutter","MediumGutter","LargeGutter","NoElevation","SmallElevation","MediumElevation","LargeElevation","NoRoundness","SmallRoundness","MediumRoundness","LargeRoundness"],oe=Object.freeze(Object.defineProperty({__proto__:null,LargeElevation:c,LargeGutter:a,LargeRoundness:d,MediumElevation:n,MediumGutter:u,MediumRoundness:p,NoElevation:i,NoGutter:s,NoRoundness:l,SmallElevation:o,SmallGutter:t,SmallRoundness:m,__namedExportsOrder:se,default:re},Symbol.toStringTag,{value:"Module"}));export{oe as B,a as L,u as M,s as N,t as S,i as a,o as b,n as c,c as d};
-//# sourceMappingURL=Box.stories-i5sOEYDq.js.map

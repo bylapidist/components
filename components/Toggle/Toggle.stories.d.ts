@@ -1,7 +1,7 @@
 import type { StoryObj } from '@storybook/react';
 import { BaseProps } from '../types';
 import { ToggleProps } from './index';
-declare const _default: import("@storybook/types").ComponentAnnotations<import("@storybook/react/dist/types-0a347bb9").R, import("@storybook/types").Args>;
+declare const _default: import("@storybook/types").ComponentAnnotations<import("@storybook/react/dist/types-0fc72a6d").R, import("@storybook/types").Args>;
 export default _default;
 export declare const PrimarySmall: StoryObj<BaseProps & ToggleProps>;
 export declare const PrimaryMedium: StoryObj<BaseProps & ToggleProps>;

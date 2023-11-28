@@ -39,4 +39,3 @@ import{j as q}from"./jsx-runtime-vNq4Oc-g.js";import{T as G}from"./index-VJLTAas
         ultrices augue, et varius velit. Vestibulum ante ipsum primis in
         faucibus orci luctus et ultrices posuere cubilia curae.
     </Text>`,...(k=(I=p.parameters)==null?void 0:I.docs)==null?void 0:k.source}}};const K=["SmallSize","MediumSize","LargeSize","RegularWeight","MediumWeight","BoldWeight","BodyFamily","HeadingFamily","SerifFamily","MonoFamily"],Y=Object.freeze(Object.defineProperty({__proto__:null,BodyFamily:o,BoldWeight:c,HeadingFamily:n,LargeSize:t,MediumSize:a,MediumWeight:u,MonoFamily:p,RegularWeight:i,SerifFamily:l,SmallSize:s,__namedExportsOrder:K,default:J},Symbol.toStringTag,{value:"Module"}));export{c as B,n as H,t as L,a as M,i as R,s as S,Y as T,u as a,o as b,l as c,p as d};
-//# sourceMappingURL=Text.stories-YkYlo91x.js.map
