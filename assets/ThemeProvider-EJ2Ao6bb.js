@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-vNq4Oc-g.js";import{M as h,b as d,C as n,d as t,A as c}from"./index-E9RxNCiH.js";import{T as l,L as m,D as a}from"./ThemeProvider.stories-yl6J9ptG.js";import{u as i}from"./index-Dbo06S9W.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./iframe-o2QwroK6.js";import"../sb-preview/runtime.js";import"./index-jmm5gWkb.js";import"./index-ogXoivrg.js";import"./index-MI7UZ4bI.js";import"./index-PPLHz8o0.js";import"./index-DaVMXFMm.js";import"./index-VJLTAasT.js";import"./index-o1DlYkt9.js";import"./index-_mYTEs0h.js";import"./index-_VymAT2m.js";import"./index.es-mkP0U3fZ.js";import"./index-tvtfaFq4.js";function s(o){const r=Object.assign({h1:"h1",blockquote:"blockquote",p:"p",h2:"h2",code:"code",h3:"h3"},i(),o.components);return e.jsxs(e.Fragment,{children:[e.jsx(h,{of:l}),`
+import{j as e}from"./jsx-runtime-vNq4Oc-g.js";import{M as h,b as d,C as n,d as t,A as c}from"./index-FKhbIPI3.js";import{T as l,L as m,D as p}from"./ThemeProvider.stories-yl6J9ptG.js";import{useMDXComponents as i}from"./index-_VGcpBFS.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./iframe-lrUkirVs.js";import"../sb-preview/runtime.js";import"./index-jmm5gWkb.js";import"./index-ogXoivrg.js";import"./index-MI7UZ4bI.js";import"./index-PPLHz8o0.js";import"./index-DaVMXFMm.js";import"./index-VJLTAasT.js";import"./index-o1DlYkt9.js";import"./index-_mYTEs0h.js";import"./index-_VymAT2m.js";import"./index.es-mkP0U3fZ.js";import"./index-tvtfaFq4.js";function s(o){const r=Object.assign({h1:"h1",blockquote:"blockquote",p:"p",h2:"h2",code:"code",h3:"h3"},i(),o.components);return e.jsxs(e.Fragment,{children:[e.jsx(h,{of:l}),`
 `,e.jsx(r.h1,{id:"themeprovider",children:"ThemeProvider"}),`
 `,e.jsxs(r.blockquote,{children:[`
 `,e.jsx(r.p,{children:"A wrapper for providing theming support to all children."}),`
@@ -16,6 +16,6 @@ import{j as e}from"./jsx-runtime-vNq4Oc-g.js";import{M as h,b as d,C as n,d as t
 `,e.jsxs(r.blockquote,{children:[`
 `,e.jsxs(r.p,{children:["Use the ",e.jsx(r.code,{children:"dark"})," theme for users who prefer dark mode."]}),`
 `]}),`
-`,e.jsx(n,{children:e.jsx(t,{of:a})}),`
+`,e.jsx(n,{children:e.jsx(t,{of:p})}),`
 `,e.jsx(r.h2,{id:"props",children:"Props"}),`
 `,e.jsx(c,{})]})}function P(o={}){const{wrapper:r}=Object.assign({},i(),o.components);return r?e.jsx(r,Object.assign({},o,{children:e.jsx(s,o)})):s(o)}export{P as default};
