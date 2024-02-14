@@ -1,0 +1,1 @@
+import{j as n}from"./jsx-runtime-CKrituN3.js";import{useMDXComponents as r}from"./index-DI5IigMn.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";function o(t){return n.jsx(n.Fragment,{})}function c(t={}){const{wrapper:e}=Object.assign({},r(),t.components);return e?n.jsx(e,Object.assign({},t,{children:n.jsx(o,t)})):o()}export{c as default};
