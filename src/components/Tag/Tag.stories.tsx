@@ -8,7 +8,7 @@ export default {
     title: 'Status/Tag',
     component: Tag,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
-} as Meta;
+} as Meta<typeof Tag>;
 
 const defaultArgs: BaseProps & TagProps = {
     as: 'span',
@@ -20,29 +20,37 @@ const DefaultTemplate: StoryFn<BaseProps & TagProps> = (args) => (
     <Tag {...args}>v1.0.0</Tag>
 );
 
-export const Primary: StoryObj<BaseProps & TagProps> = DefaultTemplate.bind({});
-Primary.args = {
-    ...defaultArgs
+export const Primary: StoryObj<BaseProps & TagProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs
+    }
 };
 
-export const Secondary: StoryObj<BaseProps & TagProps> = DefaultTemplate.bind(
-    {}
-);
-Secondary.args = {
-    ...defaultArgs,
-    level: 'secondary'
+export const Secondary: StoryObj<BaseProps & TagProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        level: 'secondary'
+    }
 };
 
-export const Tertiary: StoryObj<BaseProps & TagProps> = DefaultTemplate.bind(
-    {}
-);
-Tertiary.args = {
-    ...defaultArgs,
-    level: 'tertiary'
+export const Tertiary: StoryObj<BaseProps & TagProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        level: 'tertiary'
+    }
 };
 
-export const Danger: StoryObj<BaseProps & TagProps> = DefaultTemplate.bind({});
-Danger.args = {
-    ...defaultArgs,
-    level: 'danger'
+export const Danger: StoryObj<BaseProps & TagProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        level: 'danger'
+    }
 };

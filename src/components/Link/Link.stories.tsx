@@ -8,7 +8,7 @@ export default {
     title: 'Typography/Link',
     component: Link,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
-} as Meta;
+} as Meta<typeof Link>;
 
 const defaultArgs: BaseProps & LinkProps = {
     as: 'a',
@@ -20,27 +20,38 @@ const DefaultTemplate: StoryFn<BaseProps & LinkProps> = (args) => (
     <Link {...args}>Hello world</Link>
 );
 
-export const Small: StoryObj<BaseProps & LinkProps> = DefaultTemplate.bind({});
-Small.args = {
-    ...defaultArgs,
-    size: 'small'
-};
-export const Medium: StoryObj<BaseProps & LinkProps> = DefaultTemplate.bind({});
-Medium.args = {
-    ...defaultArgs,
-    size: 'medium'
+export const Small: StoryObj<BaseProps & LinkProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        size: 'small'
+    }
 };
 
-export const Large: StoryObj<BaseProps & LinkProps> = DefaultTemplate.bind({});
-Large.args = {
-    ...defaultArgs,
-    size: 'large'
+export const Medium: StoryObj<BaseProps & LinkProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        size: 'medium'
+    }
 };
 
-export const WithIcon: StoryObj<BaseProps & LinkProps> = DefaultTemplate.bind(
-    {}
-);
-WithIcon.args = {
-    ...defaultArgs,
-    icon: faXmark
+export const Large: StoryObj<BaseProps & LinkProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        size: 'large'
+    }
+};
+
+export const WithIcon: StoryObj<BaseProps & LinkProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        icon: faXmark
+    }
 };

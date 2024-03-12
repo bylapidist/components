@@ -8,7 +8,7 @@ export default {
     title: 'Typography/Heading',
     component: Heading,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
-} as Meta;
+} as Meta<typeof Heading>;
 
 const defaultArgs: BaseProps & HeadingProps = {
     as: 'h1',
@@ -22,70 +22,91 @@ const DefaultTemplate: StoryFn<BaseProps & HeadingProps> = (args) => (
     <Heading {...args}>Heading {args?.size}</Heading>
 );
 
-export const LargeSize: StoryObj<BaseProps & HeadingProps> =
-    DefaultTemplate.bind({});
-LargeSize.args = {
-    ...defaultArgs
+export const LargeSize: StoryObj<BaseProps & HeadingProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs
+    }
 };
 
-export const MediumSize: StoryObj<BaseProps & HeadingProps> =
-    DefaultTemplate.bind({});
-MediumSize.args = {
-    ...defaultArgs,
-    size: 'medium'
+export const MediumSize: StoryObj<BaseProps & HeadingProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        size: 'medium'
+    }
 };
 
-export const SmallSize: StoryObj<BaseProps & HeadingProps> =
-    DefaultTemplate.bind({});
-SmallSize.args = {
-    ...defaultArgs,
-    size: 'small'
+export const SmallSize: StoryObj<BaseProps & HeadingProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        size: 'small'
+    }
 };
 
-export const RegularWeight: StoryObj<BaseProps & HeadingProps> =
-    DefaultTemplate.bind({});
-RegularWeight.args = {
-    ...defaultArgs,
-    weight: 'regular'
-};
-export const MediumWeight: StoryObj<BaseProps & HeadingProps> =
-    DefaultTemplate.bind({});
-MediumWeight.args = {
-    ...defaultArgs,
-    weight: 'medium'
+export const RegularWeight: StoryObj<BaseProps & HeadingProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        weight: 'regular'
+    }
 };
 
-export const BoldWeight: StoryObj<BaseProps & HeadingProps> =
-    DefaultTemplate.bind({});
-BoldWeight.args = {
-    ...defaultArgs,
-    weight: 'bold'
+export const MediumWeight: StoryObj<BaseProps & HeadingProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        weight: 'medium'
+    }
 };
 
-export const BodyFamily: StoryObj<BaseProps & HeadingProps> =
-    DefaultTemplate.bind({});
-BodyFamily.args = {
-    ...defaultArgs,
-    family: 'body'
+export const BoldWeight: StoryObj<BaseProps & HeadingProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        weight: 'bold'
+    }
 };
 
-export const HeadingFamily: StoryObj<BaseProps & HeadingProps> =
-    DefaultTemplate.bind({});
-HeadingFamily.args = {
-    ...defaultArgs,
-    family: 'heading'
+export const BodyFamily: StoryObj<BaseProps & HeadingProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        family: 'body'
+    }
 };
 
-export const SerifFamily: StoryObj<BaseProps & HeadingProps> =
-    DefaultTemplate.bind({});
-SerifFamily.args = {
-    ...defaultArgs,
-    family: 'serif'
+export const HeadingFamily: StoryObj<BaseProps & HeadingProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        family: 'heading'
+    }
 };
 
-export const MonoFamily: StoryObj<BaseProps & HeadingProps> =
-    DefaultTemplate.bind({});
-MonoFamily.args = {
-    ...defaultArgs,
-    family: 'mono'
+export const SerifFamily: StoryObj<BaseProps & HeadingProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        family: 'serif'
+    }
+};
+
+export const MonoFamily: StoryObj<BaseProps & HeadingProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        family: 'mono'
+    }
 };

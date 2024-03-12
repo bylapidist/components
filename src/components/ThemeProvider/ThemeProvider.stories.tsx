@@ -13,7 +13,7 @@ export default {
     argTypes: {
         theme: { control: 'select', options: ['light', 'dark'] }
     }
-} as Meta;
+} as Meta<typeof ThemeProvider>;
 
 const defaultArgs: BaseProps & ThemeProviderProps = {
     as: 'div',
@@ -48,15 +48,19 @@ const DefaultTemplate: StoryFn<BaseProps & ThemeProviderProps> = (args) => (
     </ThemeProvider>
 );
 
-export const Light: StoryObj<BaseProps & ThemeProviderProps> =
-    DefaultTemplate.bind({});
-Light.args = {
-    ...defaultArgs
+export const Light: StoryObj<BaseProps & ThemeProviderProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs
+    }
 };
 
-export const Dark: StoryObj<BaseProps & ThemeProviderProps> =
-    DefaultTemplate.bind({});
-Dark.args = {
-    ...defaultArgs,
-    theme: 'dark'
+export const Dark: StoryObj<BaseProps & ThemeProviderProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        theme: 'dark'
+    }
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Meta, StoryObj, StoryFn } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { BaseProps } from '../types';
 import ThemeProvider from '../ThemeProvider';
 import Timeline, { TimelineProps } from './index';
@@ -8,7 +8,7 @@ export default {
     title: 'Primitives/Timeline',
     component: Timeline,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
-} as Meta;
+} as Meta<typeof Timeline>;
 
 const defaultArgs: BaseProps & TimelineProps = {
     items: [
@@ -31,26 +31,23 @@ const defaultArgs: BaseProps & TimelineProps = {
     size: 'medium'
 };
 
-const DefaultTemplate: StoryFn<BaseProps & TimelineProps> = (args) => (
-    <Timeline {...args} />
-);
-
-export const SmallSize: StoryObj<BaseProps & TimelineProps> =
-    DefaultTemplate.bind({});
-SmallSize.args = {
-    ...defaultArgs,
-    size: 'small'
-};
-export const MediumSize: StoryObj<BaseProps & TimelineProps> =
-    DefaultTemplate.bind({});
-MediumSize.args = {
-    ...defaultArgs,
-    size: 'medium'
+export const SmallSize: StoryObj<BaseProps & TimelineProps> = {
+    args: {
+        ...defaultArgs,
+        size: 'small'
+    }
 };
 
-export const LargeSize: StoryObj<BaseProps & TimelineProps> =
-    DefaultTemplate.bind({});
-LargeSize.args = {
-    ...defaultArgs,
-    size: 'large'
+export const MediumSize: StoryObj<BaseProps & TimelineProps> = {
+    args: {
+        ...defaultArgs,
+        size: 'medium'
+    }
+};
+
+export const LargeSize: StoryObj<BaseProps & TimelineProps> = {
+    args: {
+        ...defaultArgs,
+        size: 'large'
+    }
 };
