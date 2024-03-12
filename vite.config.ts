@@ -17,7 +17,7 @@ export default defineConfig({
         environment: 'jsdom',
         coverage: {
             provider: 'v8',
-            exclude: ['src/**/*.stories.tsx']
+            exclude: ['src/**/*.stories.tsx', 'storybook-static']
         }
     },
     build: {

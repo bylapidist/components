@@ -9,7 +9,7 @@ export default {
     title: 'Primitives/Box',
     component: Box,
     decorators: [(getStory) => <ThemeProvider>{getStory()}</ThemeProvider>]
-} as Meta;
+} as Meta<typeof Box>;
 
 const defaultArgs: BaseProps & BoxProps = {
     as: 'div',
@@ -31,104 +31,125 @@ const DefaultTemplate: StoryFn<BaseProps & BoxProps> = (args) => (
     </Box>
 );
 
-export const NoGutter: StoryObj<BaseProps & BoxProps> = DefaultTemplate.bind(
-    {}
-);
-NoGutter.args = {
-    ...defaultArgs,
-    elevation: 'small'
+export const NoGutter: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        elevation: 'small'
+    }
 };
 
-export const SmallGutter: StoryObj<BaseProps & BoxProps> = DefaultTemplate.bind(
-    {}
-);
-SmallGutter.args = {
-    ...defaultArgs,
-    gutter: 'small',
-    elevation: 'small'
+export const SmallGutter: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        gutter: 'small',
+        elevation: 'small'
+    }
 };
 
-export const MediumGutter: StoryObj<BaseProps & BoxProps> =
-    DefaultTemplate.bind({});
-MediumGutter.args = {
-    ...defaultArgs,
-    gutter: 'medium',
-    elevation: 'small'
-};
-export const LargeGutter: StoryObj<BaseProps & BoxProps> = DefaultTemplate.bind(
-    {}
-);
-LargeGutter.args = {
-    ...defaultArgs,
-    gutter: 'large',
-    elevation: 'small'
+export const MediumGutter: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        gutter: 'medium',
+        elevation: 'small'
+    }
 };
 
-export const NoElevation: StoryObj<BaseProps & BoxProps> = DefaultTemplate.bind(
-    {}
-);
-NoElevation.args = {
-    ...defaultArgs,
-    gutter: 'medium',
-    elevation: 'small'
+export const LargeGutter: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        gutter: 'large',
+        elevation: 'small'
+    }
 };
 
-export const SmallElevation: StoryObj<BaseProps & BoxProps> =
-    DefaultTemplate.bind({});
-SmallElevation.args = {
-    ...defaultArgs,
-    elevation: 'small',
-    gutter: 'medium'
+export const NoElevation: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        gutter: 'medium',
+        elevation: 'small'
+    }
 };
 
-export const MediumElevation: StoryObj<BaseProps & BoxProps> =
-    DefaultTemplate.bind({});
-MediumElevation.args = {
-    ...defaultArgs,
-    elevation: 'medium',
-    gutter: 'medium'
+export const SmallElevation: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        elevation: 'small',
+        gutter: 'medium'
+    }
 };
 
-export const LargeElevation: StoryObj<BaseProps & BoxProps> =
-    DefaultTemplate.bind({});
-LargeElevation.args = {
-    ...defaultArgs,
-    elevation: 'large',
-    gutter: 'medium'
+export const MediumElevation: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        elevation: 'medium',
+        gutter: 'medium'
+    }
 };
 
-export const NoRoundness: StoryObj<BaseProps & BoxProps> = DefaultTemplate.bind(
-    {}
-);
-NoRoundness.args = {
-    ...defaultArgs,
-    gutter: 'medium',
-    elevation: 'medium',
-    roundness: 'none'
+export const LargeElevation: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        elevation: 'large',
+        gutter: 'medium'
+    }
 };
 
-export const SmallRoundness: StoryObj<BaseProps & BoxProps> =
-    DefaultTemplate.bind({});
-SmallRoundness.args = {
-    ...defaultArgs,
-    gutter: 'medium',
-    elevation: 'medium',
-    roundness: 'small'
+export const NoRoundness: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        gutter: 'medium',
+        elevation: 'medium',
+        roundness: 'none'
+    }
 };
 
-export const MediumRoundness: StoryObj<BaseProps & BoxProps> =
-    DefaultTemplate.bind({});
-MediumRoundness.args = {
-    ...defaultArgs,
-    gutter: 'medium',
-    elevation: 'medium',
-    roundness: 'medium'
+export const SmallRoundness: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        gutter: 'medium',
+        elevation: 'medium',
+        roundness: 'small'
+    }
 };
-export const LargeRoundness: StoryObj<BaseProps & BoxProps> =
-    DefaultTemplate.bind({});
-LargeRoundness.args = {
-    ...defaultArgs,
-    gutter: 'medium',
-    elevation: 'medium',
-    roundness: 'large'
+
+export const MediumRoundness: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        gutter: 'medium',
+        elevation: 'medium',
+        roundness: 'medium'
+    }
+};
+
+export const LargeRoundness: StoryObj<BaseProps & BoxProps> = {
+    render: DefaultTemplate,
+
+    args: {
+        ...defaultArgs,
+        gutter: 'medium',
+        elevation: 'medium',
+        roundness: 'large'
+    }
 };
