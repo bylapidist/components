@@ -6,7 +6,7 @@ export interface ToggleProps {
     readonly disabled?: boolean;
 }
 declare const Toggle: {
-    ({ className, as, testId, level, size, onToggle, disabled, children, ...restProps }: BaseProps & ToggleProps): import("react/jsx-runtime").JSX.Element;
+    ({ className, as, testId, level, size, onToggle, disabled, children, ...restProps }: BaseProps & ToggleProps): import('../../../node_modules/react/jsx-runtime').JSX.Element;
     displayName: string;
 };
 export default Toggle;

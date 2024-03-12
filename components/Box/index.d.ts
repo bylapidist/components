@@ -7,7 +7,7 @@ export interface BoxProps {
     readonly roundness?: SizeType;
 }
 declare const Box: {
-    ({ className, as: Component, testId, elevation, gutter, gutterX, gutterY, roundness, ...restProps }: BaseProps & BoxProps): import("react/jsx-runtime").JSX.Element;
+    ({ className, as: Component, testId, elevation, gutter, gutterX, gutterY, roundness, ...restProps }: BaseProps & BoxProps): import('../../../node_modules/react/jsx-runtime').JSX.Element;
     displayName: string;
 };
 export default Box;

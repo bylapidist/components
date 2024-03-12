@@ -1,4 +1,4 @@
-import React from 'react';
+import React from '../../node_modules/react';
 export type AsType = keyof JSX.IntrinsicElements;
 export type LevelType = 'primary' | 'secondary' | 'tertiary' | 'danger';
 export type SizeType = 'none' | 'small' | 'medium' | 'large';

@@ -7,7 +7,7 @@ export interface TextProps {
     readonly weight?: TextWeightType;
 }
 declare const Text: {
-    ({ className, as: Component, testId, size, family, weight, ...restProps }: BaseProps & TextProps): import("react/jsx-runtime").JSX.Element;
+    ({ className, as: Component, testId, size, family, weight, ...restProps }: BaseProps & TextProps): import('../../../node_modules/react/jsx-runtime').JSX.Element;
     displayName: string;
 };
 export default Text;
