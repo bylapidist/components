@@ -70,9 +70,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
-    "@commitlint/cli": "19.1.0",
+    "@commitlint/cli": "19.2.0",
     "@commitlint/config-conventional": "19.1.0",
-    "@commitlint/cz-commitlint": "19.1.0",
+    "@commitlint/cz-commitlint": "19.2.0",
     "@lapidist/linting": "^3.17.2",
     "@storybook/addon-a11y": "^8.0.0",
     "@storybook/addon-backgrounds": "^8.0.0",
