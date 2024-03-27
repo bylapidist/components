@@ -1,7 +1,8 @@
-import type { StoryObj } from '@storybook/react';
-import { BaseProps } from '../types';
 import { HeadingProps } from './index';
-declare const _default: import("@storybook/types").ComponentAnnotations<import("@storybook/react").ReactRenderer, BaseProps & HeadingProps>;
+import { BaseProps } from '../types';
+import { StoryObj } from '@storybook/react';
+
+declare const _default: import('@storybook/types').ComponentAnnotations<import("@storybook/react").ReactRenderer, BaseProps & HeadingProps>;
 export default _default;
 export declare const LargeSize: StoryObj<BaseProps & HeadingProps>;
 export declare const MediumSize: StoryObj<BaseProps & HeadingProps>;
