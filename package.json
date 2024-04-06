@@ -35,7 +35,8 @@
   "exports": {
     ".": {
       "import": "./dist/lapidist.es.js",
-      "require": "./dist/lapidist.umd.js"
+      "require": "./dist/lapidist.umd.js",
+      "types": "./dist/index.d.ts"
     },
     "./style.css": {
       "import": "./dist/style.css",
