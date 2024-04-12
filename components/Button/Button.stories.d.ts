@@ -2,7 +2,7 @@ import { ButtonProps } from './index';
 import { BaseProps } from '../types';
 import { StoryObj } from '@storybook/react';
 
-declare const _default: import('@storybook/types').ComponentAnnotations<import("@storybook/react").ReactRenderer, BaseProps & ButtonProps>;
+declare const _default: import('@storybook/types').ComponentAnnotations<import('@storybook/react').ReactRenderer, BaseProps & ButtonProps>;
 export default _default;
 export declare const PrimarySmall: StoryObj<BaseProps & ButtonProps>;
 export declare const PrimaryMedium: StoryObj<BaseProps & ButtonProps>;

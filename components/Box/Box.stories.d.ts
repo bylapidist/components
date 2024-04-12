@@ -2,7 +2,7 @@ import { BoxProps } from './index';
 import { BaseProps } from '../types';
 import { StoryObj } from '@storybook/react';
 
-declare const _default: import('@storybook/types').ComponentAnnotations<import("@storybook/react").ReactRenderer, BaseProps & BoxProps>;
+declare const _default: import('@storybook/types').ComponentAnnotations<import('@storybook/react').ReactRenderer, BaseProps & BoxProps>;
 export default _default;
 export declare const NoGutter: StoryObj<BaseProps & BoxProps>;
 export declare const SmallGutter: StoryObj<BaseProps & BoxProps>;

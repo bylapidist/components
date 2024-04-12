@@ -2,7 +2,7 @@ import { LinkProps } from './index';
 import { BaseProps } from '../types';
 import { StoryObj } from '@storybook/react';
 
-declare const _default: import('@storybook/types').ComponentAnnotations<import("@storybook/react").ReactRenderer, BaseProps & LinkProps>;
+declare const _default: import('@storybook/types').ComponentAnnotations<import('@storybook/react').ReactRenderer, BaseProps & LinkProps>;
 export default _default;
 export declare const Small: StoryObj<BaseProps & LinkProps>;
 export declare const Medium: StoryObj<BaseProps & LinkProps>;

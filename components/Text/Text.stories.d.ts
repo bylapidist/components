@@ -2,7 +2,7 @@ import { TextProps } from './index';
 import { BaseProps } from '../types';
 import { StoryObj } from '@storybook/react';
 
-declare const _default: import('@storybook/types').ComponentAnnotations<import("@storybook/react").ReactRenderer, BaseProps & TextProps>;
+declare const _default: import('@storybook/types').ComponentAnnotations<import('@storybook/react').ReactRenderer, BaseProps & TextProps>;
 export default _default;
 export declare const SmallSize: StoryObj<BaseProps & TextProps>;
 export declare const MediumSize: StoryObj<BaseProps & TextProps>;
