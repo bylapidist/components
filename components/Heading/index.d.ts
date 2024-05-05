@@ -1,5 +1,5 @@
-import { TextFamilyType, TextWeightType } from '../Text';
 import { BaseProps, SizeType } from '../types';
+import { TextFamilyType, TextWeightType } from '../Text';
 
 export interface HeadingProps {
     readonly size?: SizeType;

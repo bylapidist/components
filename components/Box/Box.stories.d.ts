@@ -1,6 +1,6 @@
-import { BoxProps } from './index';
-import { BaseProps } from '../types';
 import { StoryObj } from '@storybook/react';
+import { BaseProps } from '../types';
+import { BoxProps } from './index';
 
 declare const _default: import('@storybook/types').ComponentAnnotations<import('@storybook/react').ReactRenderer, BaseProps & BoxProps>;
 export default _default;

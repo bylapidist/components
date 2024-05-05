@@ -1,6 +1,6 @@
-import { LinkProps } from './index';
-import { BaseProps } from '../types';
 import { StoryObj } from '@storybook/react';
+import { BaseProps } from '../types';
+import { LinkProps } from './index';
 
 declare const _default: import('@storybook/types').ComponentAnnotations<import('@storybook/react').ReactRenderer, BaseProps & LinkProps>;
 export default _default;

@@ -1,7 +1,7 @@
-import { TextProps } from '../Text';
-import { BaseProps, SizeType } from '../types';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { default as React } from '../../../node_modules/react';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { BaseProps, SizeType } from '../types';
+import { TextProps } from '../Text';
 
 export interface LinkProps extends Omit<React.HTMLProps<HTMLAnchorElement>, 'size'>, TextProps {
     readonly icon?: IconProp;

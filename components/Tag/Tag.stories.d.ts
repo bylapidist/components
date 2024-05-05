@@ -1,6 +1,6 @@
-import { TagProps } from './index';
-import { BaseProps } from '../types';
 import { StoryObj } from '@storybook/react';
+import { BaseProps } from '../types';
+import { TagProps } from './index';
 
 declare const _default: import('@storybook/types').ComponentAnnotations<import('@storybook/react').ReactRenderer, BaseProps & TagProps>;
 export default _default;

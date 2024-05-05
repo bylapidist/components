@@ -1,6 +1,6 @@
-import { ButtonProps } from './index';
-import { BaseProps } from '../types';
 import { StoryObj } from '@storybook/react';
+import { BaseProps } from '../types';
+import { ButtonProps } from './index';
 
 declare const _default: import('@storybook/types').ComponentAnnotations<import('@storybook/react').ReactRenderer, BaseProps & ButtonProps>;
 export default _default;

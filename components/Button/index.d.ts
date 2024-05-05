@@ -1,6 +1,6 @@
-import { BaseProps, LevelType, SizeType } from '../types';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { default as React } from '../../../node_modules/react';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { BaseProps, LevelType, SizeType } from '../types';
 
 export interface ButtonProps extends Omit<React.HTMLProps<HTMLButtonElement>, 'size'> {
     readonly level?: LevelType;
