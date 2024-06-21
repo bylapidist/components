@@ -1,8 +1,8 @@
-import { StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { BaseProps } from '../types';
-import { TagProps } from './index';
+import { default as Tag, TagProps } from './index';
 
-declare const _default: import('@storybook/types').ComponentAnnotations<import('@storybook/react').ReactRenderer, BaseProps & TagProps>;
+declare const _default: Meta<typeof Tag>;
 export default _default;
 export declare const Primary: StoryObj<BaseProps & TagProps>;
 export declare const Secondary: StoryObj<BaseProps & TagProps>;

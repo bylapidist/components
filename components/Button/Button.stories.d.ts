@@ -1,8 +1,8 @@
-import { StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { BaseProps } from '../types';
-import { ButtonProps } from './index';
+import { default as Button, ButtonProps } from './index';
 
-declare const _default: import('@storybook/types').ComponentAnnotations<import('@storybook/react').ReactRenderer, BaseProps & ButtonProps>;
+declare const _default: Meta<typeof Button>;
 export default _default;
 export declare const PrimarySmall: StoryObj<BaseProps & ButtonProps>;
 export declare const PrimaryMedium: StoryObj<BaseProps & ButtonProps>;

@@ -1,8 +1,8 @@
-import { StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { BaseProps } from '../types';
-import { LogoProps } from './index';
+import { default as Logo, LogoProps } from './index';
 
-declare const _default: import('@storybook/types').ComponentAnnotations<import('@storybook/react').ReactRenderer, BaseProps & LogoProps>;
+declare const _default: Meta<typeof Logo>;
 export default _default;
 export declare const FadeAnimation: StoryObj<BaseProps & LogoProps>;
 export declare const SlideAnimation: StoryObj<BaseProps & LogoProps>;
