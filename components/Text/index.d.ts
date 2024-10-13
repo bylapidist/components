@@ -1,5 +1,4 @@
 import { BaseProps, SizeType } from '../types';
-
 export type TextFamilyType = 'body' | 'heading' | 'serif' | 'mono';
 export type TextWeightType = 'regular' | 'medium' | 'bold';
 export interface TextProps {

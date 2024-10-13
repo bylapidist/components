@@ -1,5 +1,4 @@
 import { BaseProps, LevelType } from '../types';
-
 export interface TagProps {
     readonly level?: LevelType;
     readonly namespace?: string;

@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { BaseProps } from '../types';
 import { default as Text, TextProps } from './index';
-
 declare const _default: Meta<typeof Text>;
 export default _default;
 export declare const SmallSize: StoryObj<BaseProps & TextProps>;

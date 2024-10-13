@@ -1,5 +1,4 @@
 import { BaseProps } from '../types';
-
 export interface ThemeProviderProps {
     readonly theme?: 'light' | 'dark';
 }

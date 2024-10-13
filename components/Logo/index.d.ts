@@ -1,5 +1,4 @@
 import { BaseProps } from '../types';
-
 export type LogoAnimationType = 'fade' | 'slide';
 export interface LogoProps {
     readonly animation?: LogoAnimationType;

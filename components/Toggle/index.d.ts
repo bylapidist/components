@@ -1,5 +1,4 @@
 import { BaseProps, LevelType, SizeType } from '../types';
-
 export interface ToggleProps {
     readonly level?: LevelType;
     readonly size?: SizeType;

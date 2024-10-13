@@ -1,6 +1,5 @@
 import { BaseProps, SizeType } from '../types';
 import { LinkProps } from '../Link';
-
 export interface TabsProps {
     readonly size?: SizeType;
     readonly links?: (LinkProps & BaseProps)[];

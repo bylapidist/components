@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { BaseProps } from '../types';
 import { default as Heading, HeadingProps } from './index';
-
 declare const _default: Meta<typeof Heading>;
 export default _default;
 export declare const LargeSize: StoryObj<BaseProps & HeadingProps>;

@@ -1,5 +1,4 @@
 import { BaseProps, SizeType } from '../types';
-
 export interface TimelineItem {
     readonly from: string;
     readonly to: string;

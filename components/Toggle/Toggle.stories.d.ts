@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { BaseProps } from '../types';
 import { default as Toggle, ToggleProps } from './index';
-
 declare const _default: Meta<typeof Toggle>;
 export default _default;
 export declare const PrimarySmall: StoryObj<BaseProps & ToggleProps>;
