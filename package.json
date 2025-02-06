@@ -115,7 +115,7 @@
     "react-dom": "18.x"
   },
   "engines": {
-    "node": "^20.0.0"
+    "node": "^22.0.0"
   },
   "husky": {
     "hooks": {
