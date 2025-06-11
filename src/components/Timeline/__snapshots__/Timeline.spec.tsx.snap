@@ -2,15 +2,15 @@
 
 exports[`Timeline > it works with defaults 1`] = `
 <ol
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6"
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26 _item_926827"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26"
       data-testid="Box"
     >
       Apr 2021
@@ -18,33 +18,33 @@ exports[`Timeline > it works with defaults 1`] = `
       Present
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26 _meta_926827"
       data-testid="Box"
     >
       <div
-        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6"
         data-testid="Text"
       >
         Senior Software Engineer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
         data-testid="Box"
       >
         <a
-          class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _urlTitle_254c0f"
+          class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _urlTitle_926827"
           data-testid="Link"
           href="https://www.lendinvest.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
             data-testid="Link-inner"
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_ef752c"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -64,11 +64,11 @@ exports[`Timeline > it works with defaults 1`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26 _item_926827"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26"
       data-testid="Box"
     >
       Feb 2020
@@ -76,33 +76,33 @@ exports[`Timeline > it works with defaults 1`] = `
       Apr 2021
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26 _meta_926827"
       data-testid="Box"
     >
       <div
-        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6"
         data-testid="Text"
       >
         Frontend Software Developer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
         data-testid="Box"
       >
         <a
-          class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _urlTitle_254c0f"
+          class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _urlTitle_926827"
           data-testid="Link"
           href="https://www.goldencharter.co.uk/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
             data-testid="Link-inner"
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_ef752c"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -126,15 +126,15 @@ exports[`Timeline > it works with defaults 1`] = `
 
 exports[`Timeline > it works with sizes 1`] = `
 <ol
-  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-regular_b26e6e"
+  class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6"
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _item_254c0f"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-small_6f2e26 _item_926827"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-small_6f2e26"
       data-testid="Box"
     >
       Apr 2021
@@ -142,33 +142,33 @@ exports[`Timeline > it works with sizes 1`] = `
       Present
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _meta_254c0f"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-small_6f2e26 _meta_926827"
       data-testid="Box"
     >
       <div
-        class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6"
         data-testid="Text"
       >
         Senior Software Engineer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
         data-testid="Box"
       >
         <a
-          class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _urlTitle_254c0f"
+          class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _urlTitle_926827"
           data-testid="Link"
           href="https://www.lendinvest.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
             data-testid="Link-inner"
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_ef752c"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -188,11 +188,11 @@ exports[`Timeline > it works with sizes 1`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _item_254c0f"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-small_6f2e26 _item_926827"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-small_6f2e26"
       data-testid="Box"
     >
       Feb 2020
@@ -200,33 +200,33 @@ exports[`Timeline > it works with sizes 1`] = `
       Apr 2021
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-small_d62db4 _meta_254c0f"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-small_6f2e26 _meta_926827"
       data-testid="Box"
     >
       <div
-        class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6"
         data-testid="Text"
       >
         Frontend Software Developer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
         data-testid="Box"
       >
         <a
-          class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _urlTitle_254c0f"
+          class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _urlTitle_926827"
           data-testid="Link"
           href="https://www.goldencharter.co.uk/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
             data-testid="Link-inner"
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_ef752c"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -250,15 +250,15 @@ exports[`Timeline > it works with sizes 1`] = `
 
 exports[`Timeline > it works with sizes 2`] = `
 <ol
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6"
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26 _item_926827"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26"
       data-testid="Box"
     >
       Apr 2021
@@ -266,33 +266,33 @@ exports[`Timeline > it works with sizes 2`] = `
       Present
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26 _meta_926827"
       data-testid="Box"
     >
       <div
-        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6"
         data-testid="Text"
       >
         Senior Software Engineer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
         data-testid="Box"
       >
         <a
-          class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _urlTitle_254c0f"
+          class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _urlTitle_926827"
           data-testid="Link"
           href="https://www.lendinvest.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
             data-testid="Link-inner"
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_ef752c"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -312,11 +312,11 @@ exports[`Timeline > it works with sizes 2`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _item_254c0f"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26 _item_926827"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26"
       data-testid="Box"
     >
       Feb 2020
@@ -324,33 +324,33 @@ exports[`Timeline > it works with sizes 2`] = `
       Apr 2021
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-medium_d62db4 _meta_254c0f"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-medium_6f2e26 _meta_926827"
       data-testid="Box"
     >
       <div
-        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6"
         data-testid="Text"
       >
         Frontend Software Developer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
         data-testid="Box"
       >
         <a
-          class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _urlTitle_254c0f"
+          class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _urlTitle_926827"
           data-testid="Link"
           href="https://www.goldencharter.co.uk/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
             data-testid="Link-inner"
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_ef752c"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -374,15 +374,15 @@ exports[`Timeline > it works with sizes 2`] = `
 
 exports[`Timeline > it works with sizes 3`] = `
 <ol
-  class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-regular_b26e6e"
+  class="_this_d6c5f6 _size-large_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6"
   data-testid="Timeline"
 >
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _item_254c0f"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-large_6f2e26 _item_926827"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-large_6f2e26"
       data-testid="Box"
     >
       Apr 2021
@@ -390,33 +390,33 @@ exports[`Timeline > it works with sizes 3`] = `
       Present
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _meta_254c0f"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-large_6f2e26 _meta_926827"
       data-testid="Box"
     >
       <div
-        class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        class="_this_d6c5f6 _size-large_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6"
         data-testid="Text"
       >
         Senior Software Engineer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
         data-testid="Box"
       >
         <a
-          class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _urlTitle_254c0f"
+          class="_this_d6c5f6 _size-large_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _urlTitle_926827"
           data-testid="Link"
           href="https://www.lendinvest.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
             data-testid="Link-inner"
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_ef752c"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
@@ -436,11 +436,11 @@ exports[`Timeline > it works with sizes 3`] = `
     </div>
   </li>
   <li
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _item_254c0f"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-large_6f2e26 _item_926827"
     data-testid="Box"
   >
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-large_6f2e26"
       data-testid="Box"
     >
       Feb 2020
@@ -448,33 +448,33 @@ exports[`Timeline > it works with sizes 3`] = `
       Apr 2021
     </div>
     <div
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-large_d62db4 _meta_254c0f"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-large_6f2e26 _meta_926827"
       data-testid="Box"
     >
       <div
-        class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-medium_b26e6e"
+        class="_this_d6c5f6 _size-large_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6"
         data-testid="Text"
       >
         Frontend Software Developer
       </div>
       <div
-        class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+        class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
         data-testid="Box"
       >
         <a
-          class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _urlTitle_254c0f"
+          class="_this_d6c5f6 _size-large_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _urlTitle_926827"
           data-testid="Link"
           href="https://www.goldencharter.co.uk/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
             data-testid="Link-inner"
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-arrow-up-right-from-square _icon_a14c64"
+              class="svg-inline--fa fa-arrow-up-right-from-square _icon_ef752c"
               data-icon="arrow-up-right-from-square"
               data-prefix="fas"
               focusable="false"
