@@ -2,28 +2,28 @@
 
 exports[`Tabs > it works with defaults 1`] = `
 <div
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_40c7a2"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_307da9"
   data-testid="Tabs"
 >
   <ul
-    class="_this_d62db4 _elevation-large_d62db4 _roundness-small_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_40c7a2"
+    class="_this_6f2e26 _elevation-large_6f2e26 _roundness-small_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_307da9"
     data-testid="Tabs-list"
   >
     <li
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-small_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
       data-testid="Tabs-item"
     >
       <a
-        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _link_307da9"
         data-testid="Tabs-link"
         href="#tab1"
       >
         <span
-          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
           data-testid="Link-inner"
         >
           <div
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
             data-testid="Box"
           >
             Tab1
@@ -32,20 +32,20 @@ exports[`Tabs > it works with defaults 1`] = `
       </a>
     </li>
     <li
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-small_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
       data-testid="Tabs-item"
     >
       <a
-        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _link_307da9"
         data-testid="Tabs-link"
         href="#tab2"
       >
         <span
-          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
           data-testid="Link-inner"
         >
           <div
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
             data-testid="Box"
           >
             Tab2
@@ -59,28 +59,28 @@ exports[`Tabs > it works with defaults 1`] = `
 
 exports[`Tabs > it works with sizes 1`] = `
 <div
-  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_40c7a2"
+  class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_307da9"
   data-testid="Tabs"
 >
   <ul
-    class="_this_d62db4 _elevation-large_d62db4 _roundness-small_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_40c7a2"
+    class="_this_6f2e26 _elevation-large_6f2e26 _roundness-small_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_307da9"
     data-testid="Tabs-list"
   >
     <li
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-small_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
       data-testid="Tabs-item"
     >
       <a
-        class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _link_307da9"
         data-testid="Tabs-link"
         href="#tab1"
       >
         <span
-          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
           data-testid="Link-inner"
         >
           <div
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
             data-testid="Box"
           >
             Tab1
@@ -89,20 +89,20 @@ exports[`Tabs > it works with sizes 1`] = `
       </a>
     </li>
     <li
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-small_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
       data-testid="Tabs-item"
     >
       <a
-        class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _link_307da9"
         data-testid="Tabs-link"
         href="#tab2"
       >
         <span
-          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
           data-testid="Link-inner"
         >
           <div
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
             data-testid="Box"
           >
             Tab2
@@ -116,28 +116,28 @@ exports[`Tabs > it works with sizes 1`] = `
 
 exports[`Tabs > it works with sizes 2`] = `
 <div
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_40c7a2"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_307da9"
   data-testid="Tabs"
 >
   <ul
-    class="_this_d62db4 _elevation-large_d62db4 _roundness-small_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_40c7a2"
+    class="_this_6f2e26 _elevation-large_6f2e26 _roundness-small_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_307da9"
     data-testid="Tabs-list"
   >
     <li
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-small_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
       data-testid="Tabs-item"
     >
       <a
-        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _link_307da9"
         data-testid="Tabs-link"
         href="#tab1"
       >
         <span
-          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
           data-testid="Link-inner"
         >
           <div
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
             data-testid="Box"
           >
             Tab1
@@ -146,20 +146,20 @@ exports[`Tabs > it works with sizes 2`] = `
       </a>
     </li>
     <li
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-small_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
       data-testid="Tabs-item"
     >
       <a
-        class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _link_307da9"
         data-testid="Tabs-link"
         href="#tab2"
       >
         <span
-          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
           data-testid="Link-inner"
         >
           <div
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
             data-testid="Box"
           >
             Tab2
@@ -173,28 +173,28 @@ exports[`Tabs > it works with sizes 2`] = `
 
 exports[`Tabs > it works with sizes 3`] = `
 <div
-  class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_40c7a2"
+  class="_this_d6c5f6 _size-large_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_307da9"
   data-testid="Tabs"
 >
   <ul
-    class="_this_d62db4 _elevation-large_d62db4 _roundness-small_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_40c7a2"
+    class="_this_6f2e26 _elevation-large_6f2e26 _roundness-small_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_307da9"
     data-testid="Tabs-list"
   >
     <li
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-small_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
       data-testid="Tabs-item"
     >
       <a
-        class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        class="_this_d6c5f6 _size-large_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _link_307da9"
         data-testid="Tabs-link"
         href="#tab1"
       >
         <span
-          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
           data-testid="Link-inner"
         >
           <div
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
             data-testid="Box"
           >
             Tab1
@@ -203,20 +203,20 @@ exports[`Tabs > it works with sizes 3`] = `
       </a>
     </li>
     <li
-      class="_this_d62db4 _elevation-none_d62db4 _roundness-small_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+      class="_this_6f2e26 _elevation-none_6f2e26 _roundness-small_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
       data-testid="Tabs-item"
     >
       <a
-        class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64 _link_40c7a2"
+        class="_this_d6c5f6 _size-large_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c _link_307da9"
         data-testid="Tabs-link"
         href="#tab2"
       >
         <span
-          class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+          class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
           data-testid="Link-inner"
         >
           <div
-            class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4"
+            class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26"
             data-testid="Box"
           >
             Tab2
