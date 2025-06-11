@@ -1,10 +1,10 @@
-import{j as q}from"./jsx-runtime-CfatFE5O.js";import{T as G}from"./index-DFtwby5x.js";import{T as C}from"./index-NxxeHpGg.js";import"./index-ClcD9ViR.js";import"./_commonjsHelpers-Cpj98o6Y.js";const Y={title:"Typography/Text",component:C,decorators:[u=>q.jsx(G,{children:u()})]},e={as:"p",testId:"Text",size:"medium",weight:"regular",family:"body"},r=u=>q.jsx(C,{...u,children:"Nunc porttitor lectus ex, eu pharetra elit placerat non. Suspendisse nec ultrices augue, et varius velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."}),a={render:r,args:{...e,size:"small"}},s={render:r,args:{...e,size:"medium"}},t={render:r,args:{...e,size:"large"}},n={render:r,args:{...e,weight:"regular"}},o={render:r,args:{...e,weight:"medium"}},i={render:r,args:{...e,weight:"bold"}},m={render:r,args:{...e,family:"body"}},d={render:r,args:{...e,family:"heading"}},l={render:r,args:{...e,family:"serif"}},c={render:r,args:{...e,family:"mono"}};var p,g,f;a.parameters={...a.parameters,docs:{...(p=a.parameters)==null?void 0:p.docs,source:{originalSource:`{
+import{j as q}from"./jsx-runtime-BjG_zV1W.js";import{T as G}from"./index-9OixZ9d5.js";import{T as C}from"./index-DGVQz28I.js";import"./_commonjsHelpers-Cpj98o6Y.js";const X={title:"Typography/Text",component:C,decorators:[u=>q.jsx(G,{children:u()})]},e={as:"p",testId:"Text",size:"medium",weight:"regular",family:"body"},r=u=>q.jsx(C,{...u,children:"Nunc porttitor lectus ex, eu pharetra elit placerat non. Suspendisse nec ultrices augue, et varius velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."}),a={render:r,args:{...e,size:"small"}},s={render:r,args:{...e,size:"medium"}},t={render:r,args:{...e,size:"large"}},n={render:r,args:{...e,weight:"regular"}},o={render:r,args:{...e,weight:"medium"}},i={render:r,args:{...e,weight:"bold"}},m={render:r,args:{...e,family:"body"}},d={render:r,args:{...e,family:"heading"}},l={render:r,args:{...e,family:"serif"}},c={render:r,args:{...e,family:"mono"}};var g,p,f;a.parameters={...a.parameters,docs:{...(g=a.parameters)==null?void 0:g.docs,source:{originalSource:`{
   render: DefaultTemplate,
   args: {
     ...defaultArgs,
     size: 'small'
   }
-}`,...(f=(g=a.parameters)==null?void 0:g.docs)==null?void 0:f.source}}};var y,S,h;s.parameters={...s.parameters,docs:{...(y=s.parameters)==null?void 0:y.docs,source:{originalSource:`{
+}`,...(f=(p=a.parameters)==null?void 0:p.docs)==null?void 0:f.source}}};var y,S,h;s.parameters={...s.parameters,docs:{...(y=s.parameters)==null?void 0:y.docs,source:{originalSource:`{
   render: DefaultTemplate,
   args: {
     ...defaultArgs,
@@ -58,4 +58,4 @@ import{j as q}from"./jsx-runtime-CfatFE5O.js";import{T as G}from"./index-DFtwby5
     ...defaultArgs,
     family: 'mono'
   }
-}`,...(k=(V=c.parameters)==null?void 0:V.docs)==null?void 0:k.source}}};const Z=["SmallSize","MediumSize","LargeSize","RegularWeight","MediumWeight","BoldWeight","BodyFamily","HeadingFamily","SerifFamily","MonoFamily"];export{m as BodyFamily,i as BoldWeight,d as HeadingFamily,t as LargeSize,s as MediumSize,o as MediumWeight,c as MonoFamily,n as RegularWeight,l as SerifFamily,a as SmallSize,Z as __namedExportsOrder,Y as default};
+}`,...(k=(V=c.parameters)==null?void 0:V.docs)==null?void 0:k.source}}};const Y=["SmallSize","MediumSize","LargeSize","RegularWeight","MediumWeight","BoldWeight","BodyFamily","HeadingFamily","SerifFamily","MonoFamily"];export{m as BodyFamily,i as BoldWeight,d as HeadingFamily,t as LargeSize,s as MediumSize,o as MediumWeight,c as MonoFamily,n as RegularWeight,l as SerifFamily,a as SmallSize,Y as __namedExportsOrder,X as default};
