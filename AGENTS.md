@@ -45,6 +45,7 @@ npm run build
 ```
 
 Pre-commit hooks will also execute `npm run fix`, `npm run test:typecheck`, and `npm run test:unit` automatically.
+Run `npm run update:snapshots` when you need to regenerate snapshot tests.
 
 ## Further Reading
 
