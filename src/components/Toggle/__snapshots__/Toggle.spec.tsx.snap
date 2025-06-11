@@ -2,17 +2,17 @@
 
 exports[`Toggle > it works disabled 1`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479 _disabled_dc1479"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373 _disabled_9a3373"
   data-testid="Toggle"
   for=":rg:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
       aria-describedby=":rh:"
-      class="_checkbox_dc1479"
+      class="_checkbox_9a3373"
       disabled=""
       id=":rg:"
       type="checkbox"
@@ -43,17 +43,17 @@ exports[`Toggle > it works disabled 1`] = `
 
 exports[`Toggle > it works with defaults 1`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
   for=":r0:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
       aria-describedby=":r1:"
-      class="_checkbox_dc1479"
+      class="_checkbox_9a3373"
       id=":r0:"
       type="checkbox"
     />
@@ -83,17 +83,17 @@ exports[`Toggle > it works with defaults 1`] = `
 
 exports[`Toggle > it works with levels 1`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
   for=":r8:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
       aria-describedby=":r9:"
-      class="_checkbox_dc1479"
+      class="_checkbox_9a3373"
       id=":r8:"
       type="checkbox"
     />
@@ -123,17 +123,17 @@ exports[`Toggle > it works with levels 1`] = `
 
 exports[`Toggle > it works with levels 2`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
   for=":ra:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-secondary_dc1479"
+    class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-secondary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
       aria-describedby=":rb:"
-      class="_checkbox_dc1479"
+      class="_checkbox_9a3373"
       id=":ra:"
       type="checkbox"
     />
@@ -163,17 +163,17 @@ exports[`Toggle > it works with levels 2`] = `
 
 exports[`Toggle > it works with levels 3`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
   for=":rc:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-tertiary_dc1479"
+    class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-tertiary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
       aria-describedby=":rd:"
-      class="_checkbox_dc1479"
+      class="_checkbox_9a3373"
       id=":rc:"
       type="checkbox"
     />
@@ -203,17 +203,17 @@ exports[`Toggle > it works with levels 3`] = `
 
 exports[`Toggle > it works with levels 4`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
   for=":re:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-danger_dc1479"
+    class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-danger_9a3373"
     data-testid="Toggle-inner"
   >
     <input
       aria-describedby=":rf:"
-      class="_checkbox_dc1479"
+      class="_checkbox_9a3373"
       id=":re:"
       type="checkbox"
     />
@@ -243,17 +243,17 @@ exports[`Toggle > it works with levels 4`] = `
 
 exports[`Toggle > it works with sizes 1`] = `
 <label
-  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
   for=":r2:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-small_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-small_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
       aria-describedby=":r3:"
-      class="_checkbox_dc1479"
+      class="_checkbox_9a3373"
       id=":r2:"
       type="checkbox"
     />
@@ -283,17 +283,17 @@ exports[`Toggle > it works with sizes 1`] = `
 
 exports[`Toggle > it works with sizes 2`] = `
 <label
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
   for=":r4:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-medium_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
       aria-describedby=":r5:"
-      class="_checkbox_dc1479"
+      class="_checkbox_9a3373"
       id=":r4:"
       type="checkbox"
     />
@@ -323,17 +323,17 @@ exports[`Toggle > it works with sizes 2`] = `
 
 exports[`Toggle > it works with sizes 3`] = `
 <label
-  class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_dc1479"
+  class="_this_d6c5f6 _size-large_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
   for=":r6:"
 >
   <span
-    class="_this_d62db4 _elevation-medium_d62db4 _roundness-none_d62db4 _gutter-large_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_dc1479 _level-primary_dc1479"
+    class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-large_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
       aria-describedby=":r7:"
-      class="_checkbox_dc1479"
+      class="_checkbox_9a3373"
       id=":r6:"
       type="checkbox"
     />

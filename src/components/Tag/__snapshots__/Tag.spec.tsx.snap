@@ -2,11 +2,11 @@
 
 exports[`Tag > it works with level 1`] = `
 <span
-  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_2dd11e _level-primary_2dd11e"
+  class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_68e16a _level-primary_68e16a"
   data-testid="Tag"
 >
   <div
-    class="_this_d62db4 _elevation-small_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    class="_this_6f2e26 _elevation-small_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-medium_6f2e26 _gutterY-small_6f2e26 _children_68e16a"
     data-testid="Box"
   >
     Hello world
@@ -16,11 +16,11 @@ exports[`Tag > it works with level 1`] = `
 
 exports[`Tag > it works with level 2`] = `
 <span
-  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_2dd11e _level-secondary_2dd11e"
+  class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_68e16a _level-secondary_68e16a"
   data-testid="Tag"
 >
   <div
-    class="_this_d62db4 _elevation-small_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    class="_this_6f2e26 _elevation-small_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-medium_6f2e26 _gutterY-small_6f2e26 _children_68e16a"
     data-testid="Box"
   >
     Hello world
@@ -30,11 +30,11 @@ exports[`Tag > it works with level 2`] = `
 
 exports[`Tag > it works with level 3`] = `
 <span
-  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_2dd11e _level-tertiary_2dd11e"
+  class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_68e16a _level-tertiary_68e16a"
   data-testid="Tag"
 >
   <div
-    class="_this_d62db4 _elevation-small_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    class="_this_6f2e26 _elevation-small_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-medium_6f2e26 _gutterY-small_6f2e26 _children_68e16a"
     data-testid="Box"
   >
     Hello world
@@ -44,11 +44,11 @@ exports[`Tag > it works with level 3`] = `
 
 exports[`Tag > it works with level 4`] = `
 <span
-  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-medium_b26e6e _this_2dd11e _level-danger_2dd11e"
+  class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_68e16a _level-danger_68e16a"
   data-testid="Tag"
 >
   <div
-    class="_this_d62db4 _elevation-small_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-medium_d62db4 _gutterY-small_d62db4 _children_2dd11e"
+    class="_this_6f2e26 _elevation-small_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-medium_6f2e26 _gutterY-small_6f2e26 _children_68e16a"
     data-testid="Box"
   >
     Hello world

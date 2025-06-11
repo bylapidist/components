@@ -2,12 +2,12 @@
 
 exports[`Link > it works with defaults 1`] = `
 <a
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c"
   data-testid="Link"
   href="#"
 >
   <span
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
     data-testid="Link-inner"
   >
     Hello world
@@ -17,17 +17,17 @@ exports[`Link > it works with defaults 1`] = `
 
 exports[`Link > it works with icon 1`] = `
 <a
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c"
   data-testid="Link"
   href="#"
 >
   <span
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
     data-testid="Link-inner"
   >
     <svg
       aria-hidden="true"
-      class="svg-inline--fa fa-xmark _icon_a14c64"
+      class="svg-inline--fa fa-xmark _icon_ef752c"
       data-icon="xmark"
       data-prefix="fas"
       focusable="false"
@@ -47,12 +47,12 @@ exports[`Link > it works with icon 1`] = `
 
 exports[`Link > it works with sizes 1`] = `
 <a
-  class="_this_b26e6e _size-small_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64"
+  class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c"
   data-testid="Link"
   href="#"
 >
   <span
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
     data-testid="Link-inner"
   >
     Hello world
@@ -62,12 +62,12 @@ exports[`Link > it works with sizes 1`] = `
 
 exports[`Link > it works with sizes 2`] = `
 <a
-  class="_this_b26e6e _size-medium_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64"
+  class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c"
   data-testid="Link"
   href="#"
 >
   <span
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
     data-testid="Link-inner"
   >
     Hello world
@@ -77,12 +77,12 @@ exports[`Link > it works with sizes 2`] = `
 
 exports[`Link > it works with sizes 3`] = `
 <a
-  class="_this_b26e6e _size-large_b26e6e _family-body_b26e6e _weight-regular_b26e6e _this_a14c64"
+  class="_this_d6c5f6 _size-large_d6c5f6 _family-body_d6c5f6 _weight-regular_d6c5f6 _this_ef752c"
   data-testid="Link"
   href="#"
 >
   <span
-    class="_this_d62db4 _elevation-none_d62db4 _roundness-none_d62db4 _gutter-none_d62db4 _gutterX-none_d62db4 _gutterY-none_d62db4 _inner_a14c64"
+    class="_this_6f2e26 _elevation-none_6f2e26 _roundness-none_6f2e26 _gutter-none_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_ef752c"
     data-testid="Link-inner"
   >
     Hello world
