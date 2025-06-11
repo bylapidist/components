@@ -4,17 +4,17 @@ exports[`Toggle > it works disabled 1`] = `
 <label
   class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373 _disabled_9a3373"
   data-testid="Toggle"
-  for=":rg:"
+  for="«rg»"
 >
   <span
     class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
-      aria-describedby=":rh:"
+      aria-describedby="«rh»"
       class="_checkbox_9a3373"
       disabled=""
-      id=":rg:"
+      id="«rg»"
       type="checkbox"
     />
     <svg
@@ -33,7 +33,7 @@ exports[`Toggle > it works disabled 1`] = `
       />
     </svg>
     <span
-      id=":rh:"
+      id="«rh»"
     >
       Hello world
     </span>
@@ -45,16 +45,16 @@ exports[`Toggle > it works with defaults 1`] = `
 <label
   class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
-  for=":r0:"
+  for="«r0»"
 >
   <span
     class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
-      aria-describedby=":r1:"
+      aria-describedby="«r1»"
       class="_checkbox_9a3373"
-      id=":r0:"
+      id="«r0»"
       type="checkbox"
     />
     <svg
@@ -73,7 +73,7 @@ exports[`Toggle > it works with defaults 1`] = `
       />
     </svg>
     <span
-      id=":r1:"
+      id="«r1»"
     >
       Hello world
     </span>
@@ -85,16 +85,16 @@ exports[`Toggle > it works with levels 1`] = `
 <label
   class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
-  for=":r8:"
+  for="«r8»"
 >
   <span
     class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
-      aria-describedby=":r9:"
+      aria-describedby="«r9»"
       class="_checkbox_9a3373"
-      id=":r8:"
+      id="«r8»"
       type="checkbox"
     />
     <svg
@@ -113,7 +113,7 @@ exports[`Toggle > it works with levels 1`] = `
       />
     </svg>
     <span
-      id=":r9:"
+      id="«r9»"
     >
       Hello world
     </span>
@@ -125,16 +125,16 @@ exports[`Toggle > it works with levels 2`] = `
 <label
   class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
-  for=":ra:"
+  for="«ra»"
 >
   <span
     class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-secondary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
-      aria-describedby=":rb:"
+      aria-describedby="«rb»"
       class="_checkbox_9a3373"
-      id=":ra:"
+      id="«ra»"
       type="checkbox"
     />
     <svg
@@ -153,7 +153,7 @@ exports[`Toggle > it works with levels 2`] = `
       />
     </svg>
     <span
-      id=":rb:"
+      id="«rb»"
     >
       Hello world
     </span>
@@ -165,16 +165,16 @@ exports[`Toggle > it works with levels 3`] = `
 <label
   class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
-  for=":rc:"
+  for="«rc»"
 >
   <span
     class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-tertiary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
-      aria-describedby=":rd:"
+      aria-describedby="«rd»"
       class="_checkbox_9a3373"
-      id=":rc:"
+      id="«rc»"
       type="checkbox"
     />
     <svg
@@ -193,7 +193,7 @@ exports[`Toggle > it works with levels 3`] = `
       />
     </svg>
     <span
-      id=":rd:"
+      id="«rd»"
     >
       Hello world
     </span>
@@ -205,16 +205,16 @@ exports[`Toggle > it works with levels 4`] = `
 <label
   class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
-  for=":re:"
+  for="«re»"
 >
   <span
     class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-danger_9a3373"
     data-testid="Toggle-inner"
   >
     <input
-      aria-describedby=":rf:"
+      aria-describedby="«rf»"
       class="_checkbox_9a3373"
-      id=":re:"
+      id="«re»"
       type="checkbox"
     />
     <svg
@@ -233,7 +233,7 @@ exports[`Toggle > it works with levels 4`] = `
       />
     </svg>
     <span
-      id=":rf:"
+      id="«rf»"
     >
       Hello world
     </span>
@@ -245,16 +245,16 @@ exports[`Toggle > it works with sizes 1`] = `
 <label
   class="_this_d6c5f6 _size-small_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
-  for=":r2:"
+  for="«r2»"
 >
   <span
     class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-small_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
-      aria-describedby=":r3:"
+      aria-describedby="«r3»"
       class="_checkbox_9a3373"
-      id=":r2:"
+      id="«r2»"
       type="checkbox"
     />
     <svg
@@ -273,7 +273,7 @@ exports[`Toggle > it works with sizes 1`] = `
       />
     </svg>
     <span
-      id=":r3:"
+      id="«r3»"
     >
       Hello world
     </span>
@@ -285,16 +285,16 @@ exports[`Toggle > it works with sizes 2`] = `
 <label
   class="_this_d6c5f6 _size-medium_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
-  for=":r4:"
+  for="«r4»"
 >
   <span
     class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-medium_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
-      aria-describedby=":r5:"
+      aria-describedby="«r5»"
       class="_checkbox_9a3373"
-      id=":r4:"
+      id="«r4»"
       type="checkbox"
     />
     <svg
@@ -313,7 +313,7 @@ exports[`Toggle > it works with sizes 2`] = `
       />
     </svg>
     <span
-      id=":r5:"
+      id="«r5»"
     >
       Hello world
     </span>
@@ -325,16 +325,16 @@ exports[`Toggle > it works with sizes 3`] = `
 <label
   class="_this_d6c5f6 _size-large_d6c5f6 _family-body_d6c5f6 _weight-medium_d6c5f6 _this_9a3373"
   data-testid="Toggle"
-  for=":r6:"
+  for="«r6»"
 >
   <span
     class="_this_6f2e26 _elevation-medium_6f2e26 _roundness-none_6f2e26 _gutter-large_6f2e26 _gutterX-none_6f2e26 _gutterY-none_6f2e26 _inner_9a3373 _level-primary_9a3373"
     data-testid="Toggle-inner"
   >
     <input
-      aria-describedby=":r7:"
+      aria-describedby="«r7»"
       class="_checkbox_9a3373"
-      id=":r6:"
+      id="«r6»"
       type="checkbox"
     />
     <svg
@@ -353,7 +353,7 @@ exports[`Toggle > it works with sizes 3`] = `
       />
     </svg>
     <span
-      id=":r7:"
+      id="«r7»"
     >
       Hello world
     </span>
