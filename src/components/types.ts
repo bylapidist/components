@@ -1,6 +1,6 @@
-import React from 'react';
+import type React from 'react';
 
-export type AsType = keyof JSX.IntrinsicElements;
+export type AsType = React.ElementType;
 
 export type LevelType = 'primary' | 'secondary' | 'tertiary' | 'danger';
 
