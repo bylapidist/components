@@ -12,7 +12,7 @@ This repository contains the source for the `@lapidist/components` React compone
     - `*.stories.tsx` – Storybook stories
   - `global.module.scss` and shared `types.ts` are also located here.
 - **.github/** – contains workflows and pull request template.
-- Configuration files for ESLint, Stylelint and Prettier extend from `@lapidist/linting`.
+- Linting is handled by [Biome](https://biomejs.dev) with local Stylelint and Prettier configuration.
 
 ## Getting Started
 
